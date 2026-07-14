@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Instagram, Menu } from "lucide-react";
+import { ArrowUpRight, Calculator, Instagram, Menu, MessageCircle, Phone } from "lucide-react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#contenu">Aller au contenu</a>
         <header className="site-header">
           <Link className="brand" href="/" aria-label="Émilie Cauvier, accueil">
-            <Image className="agency-logo" src="/the-agency-logo.png" alt="The Agency" width={96} height={42}/><span>Émilie Cauvier<small>Courtière immobilière résidentielle</small></span>
+            <span className="logo-glass"><Image className="agency-logo" src="/the-agency-logo.png" alt="The Agency" width={112} height={49}/></span><span className="brand-person">Émilie Cauvier<small>Courtière immobilière résidentielle</small></span>
           </Link>
           <nav aria-label="Navigation principale">
             {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
@@ -34,6 +34,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </details>
         </header>
         {children}
+        <nav className="action-dock" aria-label="Actions rapides">
+          <a href="tel:+15147749818" aria-label="Appeler Émilie"><Phone/></a>
+          <a href="sms:+15147749818" aria-label="Envoyer un message texte"><MessageCircle/></a>
+          <Link href="/outils" aria-label="Ouvrir les outils"><Calculator/></Link>
+          <Link className="dock-main" href="/demandes-sur-mesure">Estimation <ArrowUpRight/></Link>
+        </nav>
         <footer>
           <div className="footer-top">
             <div><Image className="footer-agency-logo" src="/the-agency-logo.png" alt="The Agency" width={160} height={70}/><p className="eyebrow">La prochaine étape commence ici.</p><h2>Un projet en tête?<br/>Rendons-le concret.</h2></div>
