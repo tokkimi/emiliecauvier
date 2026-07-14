@@ -1,55 +1,58 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Building2, Compass, Handshake, Home, KeyRound, Sparkles } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Building2, Check, Compass, Handshake, Home, KeyRound, MessageCircle, ShieldCheck } from "lucide-react";
 
-const paths = [
-  { n: "01", title: "Acheter", text: "Décoder le marché, visiter mieux et négocier avec confiance.", icon: KeyRound, tone: "lime" },
-  { n: "02", title: "Vendre", text: "Positionner votre propriété et orchestrer une mise en marché mémorable.", icon: Home, tone: "coral" },
-  { n: "03", title: "Investir", text: "Transformer les données en décisions claires et durables.", icon: Building2, tone: "blue" },
-  { n: "04", title: "Projet atypique", text: "Relocalisation, intergénération, hors marché : on bâtit le bon plan.", icon: Sparkles, tone: "cream" }
+const services = [
+  { title: "Acheter", text: "Une recherche mieux ciblée, des visites plus utiles et une négociation menée avec méthode.", icon: KeyRound },
+  { title: "Vendre", text: "Un positionnement juste, une mise en marché soignée et un suivi clair du début à la signature.", icon: Home },
+  { title: "Investir", text: "Une lecture structurée des occasions pour décider avec des données, pas avec la pression.", icon: Building2 }
 ];
 
 export default function HomePage() {
   return <main id="contenu">
     <section className="hero wrap">
-      <div className="hero-copy">
-        <p className="eyebrow"><span className="live-dot"/> Montréal · Laval · Rive-Nord</p>
-        <h1>L’immobilier,<br/><em>autrement.</em></h1>
-        <p className="hero-lead">Une approche précise, humaine et franchement plus simple pour transformer votre prochain mouvement en bonne décision.</p>
-        <div className="hero-actions"><Link className="button dark" href="/demandes-sur-mesure">Démarrer mon projet <ArrowUpRight size={18}/></Link><Link className="text-link" href="/outils">Explorer les outils <ArrowRight size={17}/></Link></div>
+      <div className="hero-copy glass-panel">
+        <p className="eyebrow"><span className="live-dot"/> Grand Montréal · Laval</p>
+        <h1>Votre projet immobilier.<br/><em>Notre stratégie.</em></h1>
+        <p className="hero-lead">Émilie vous accompagne avec une approche humaine, précise et personnalisée — pour vendre, acheter ou investir avec confiance.</p>
+        <div className="hero-actions">
+          <Link className="button primary" href="/demandes-sur-mesure">Obtenir une estimation <ArrowUpRight size={17}/></Link>
+          <a className="button secondary" href="mailto:emilie@equipecauvier.com?subject=Planifier%20un%20appel">Planifier un appel <ArrowRight size={17}/></a>
+        </div>
+        <div className="hero-trust"><span><Check/> Plus de 10 ans d’expérience</span><span><Check/> Accompagnement sur mesure</span></div>
       </div>
       <div className="hero-visual">
-        <div className="portrait-frame"><Image src="/emilie.webp" alt="Émilie Cauvier, courtière immobilière" fill priority sizes="(max-width: 800px) 90vw, 42vw"/></div>
-        <div className="floating-card top"><Compass size={20}/><span>Stratégie locale<br/><strong>Vision à 360°</strong></span></div>
-        <div className="floating-card bottom"><span className="mini-avatars">EC</span><span>Votre alliée<br/><strong>du premier café aux clés</strong></span></div>
+        <div className="portrait-frame"><Image src="/emilie.webp" alt="Émilie Cauvier, courtière immobilière" fill priority sizes="(max-width: 800px) 92vw, 42vw"/></div>
+        <div className="floating-card"><span className="monogram">EC</span><span><strong>Émilie Cauvier</strong><small>Courtière immobilière résidentielle</small></span></div>
       </div>
     </section>
 
-    <section className="manifesto"><div className="wrap manifesto-grid"><p className="eyebrow">Plus qu’une transaction</p><h2>Votre projet mérite une stratégie qui vous ressemble — pas une formule toute faite.</h2><p>Émilie relie expertise terrain, réseau local et outils intelligents pour que chaque étape soit plus lisible, plus fluide et plus sereine.</p></div></section>
+    <section className="trust-bar"><div className="wrap"><span><ShieldCheck/> Une représentation rigoureuse</span><span><Compass/> Une expertise locale</span><span><MessageCircle/> Une communication directe</span></div></section>
 
     <section className="section wrap">
-      <div className="section-head"><div><p className="eyebrow">Choisissez votre trajectoire</p><h2>Un point de départ.<br/>Quatre façons d’avancer.</h2></div><p>Dites-nous où vous en êtes. Nous adaptons le parcours, les outils et le rythme à votre réalité.</p></div>
-      <div className="path-grid">{paths.map(({n,title,text,icon:Icon,tone}) => <Link href="/demandes-sur-mesure" className={`path-card ${tone}`} key={title}><span className="card-number">{n}</span><Icon/><div><h3>{title}</h3><p>{text}</p></div><ArrowUpRight className="corner-arrow"/></Link>)}</div>
+      <div className="section-head compact"><div><p className="eyebrow">Votre projet, bien entouré</p><h2>Une approche adaptée à votre réalité.</h2></div><p>Chaque mandat commence par une écoute attentive, puis se transforme en plan d’action simple et concret.</p></div>
+      <div className="service-grid">{services.map(({title,text,icon:Icon},index)=><Link href="/demandes-sur-mesure" className="service-card glass-card" key={title}><span className="service-index">0{index+1}</span><Icon/><h3>{title}</h3><p>{text}</p><span className="card-link">Découvrir le parcours <ArrowRight size={16}/></span></Link>)}</div>
     </section>
 
-    <section className="studio-section">
-      <div className="wrap studio-grid">
-        <div className="studio-intro"><p className="eyebrow">Le studio immobilier</p><h2>Des outils qui rendent les grandes décisions un peu plus légères.</h2><p>Simulez, clarifiez, comparez. Pas pour remplacer une conversation — pour la rendre beaucoup plus utile.</p><Link className="button light" href="/outils">Ouvrir le studio <ArrowUpRight size={18}/></Link></div>
-        <div className="tool-preview">
-          <div className="tool-top"><span>Capacité mensuelle</span><span className="status-pill">Simulation</span></div>
-          <div className="big-number">2 840 <small>$/mois</small></div>
-          <div className="signal-bars"><i/><i/><i/><i/><i/></div>
-          <div className="tool-rows"><span>Hypothèque estimée <b>2 410 $</b></span><span>Taxes & frais <b>430 $</b></span></div>
-          <p>Un aperçu éducatif. Les résultats doivent être validés avec un professionnel qualifié.</p>
-        </div>
+    <section className="listings-band">
+      <div className="wrap listings-inner">
+        <div><p className="eyebrow light">Propriétés</p><h2>Découvrez les occasions actuellement sur le marché.</h2><p>Consultez les inscriptions actives, les détails complets et les nouveautés dans les secteurs desservis par Émilie.</p></div>
+        <a className="button white" href="https://www.emiliecauvier.com/fr/nos-proprietes">Voir les propriétés <ArrowUpRight size={17}/></a>
       </div>
     </section>
 
-    <section className="section wrap split-feature">
-      <div className="feature-card partner"><Handshake/><p className="eyebrow">Marques & partenaires</p><h2>Créer de la valeur, ensemble.</h2><p>Commandites locales, contenus éducatifs, événements de quartier et offres utiles aux propriétaires.</p><Link href="/partenaires">Découvrir les collaborations <ArrowRight size={17}/></Link></div>
-      <div className="feature-card special"><Sparkles/><p className="eyebrow">Rien de standard?</p><h2>Parfait. On aime les projets singuliers.</h2><p>Recherche discrète, vente complexe, arrivée au Québec, propriété multigénérationnelle ou échéancier serré.</p><Link href="/demandes-sur-mesure">Décrire ma situation <ArrowRight size={17}/></Link></div>
+    <section className="section wrap about-grid" id="a-propos">
+      <div className="about-photo"><Image src="/emilie.webp" alt="Portrait d’Émilie Cauvier" fill sizes="(max-width: 800px) 92vw, 38vw"/></div>
+      <div className="about-copy"><p className="eyebrow">À propos</p><h2>Une présence rassurante. Une stratégie qui avance.</h2><p>Pour Émilie, une transaction immobilière est d’abord une décision de vie. Son rôle : rendre le processus compréhensible, protéger vos intérêts et coordonner chaque étape avec constance.</p><ul><li><Check/> Conseils clairs et sans pression</li><li><Check/> Disponibilité et suivi régulier</li><li><Check/> Réseau de professionnels de confiance</li></ul><Link className="text-link" href="/demandes-sur-mesure">Parler de votre projet <ArrowRight size={16}/></Link></div>
     </section>
 
-    <section className="quote-section wrap"><blockquote>« Le bon courtier ne vous pousse pas vers une décision. Il vous donne tout ce qu’il faut pour prendre la vôtre. »</blockquote><div><span className="signature">Émilie</span><p>Écoute. Clarté. Mouvement.</p></div></section>
+    <section className="section surface-section">
+      <div className="wrap dual-grid">
+        <article className="feature-card glass-card"><div className="feature-icon"><Compass/></div><p className="eyebrow">Outils</p><h2>Préparez votre décision.</h2><p>Testez un scénario hypothécaire et arrivez à votre prochain échange avec de meilleures questions.</p><Link className="text-link" href="/outils">Accéder aux outils <ArrowRight size={16}/></Link></article>
+        <article className="feature-card dark-card"><div className="feature-icon"><Handshake/></div><p className="eyebrow light">Partenariats</p><h2>Créons quelque chose d’utile.</h2><p>Marques locales, contenu, événements et collaborations qui apportent une vraie valeur aux propriétaires.</p><Link className="text-link light" href="/partenaires">Découvrir les partenariats <ArrowRight size={16}/></Link></article>
+      </div>
+    </section>
+
+    <section className="final-cta wrap glass-card"><div><p className="eyebrow">Votre prochaine étape</p><h2>Parlons de ce que vous voulez accomplir.</h2></div><div><Link className="button primary" href="/demandes-sur-mesure">Décrire mon projet <ArrowUpRight size={17}/></Link><a href="tel:+15147749818">Ou appeler le 514 774-9818</a></div></section>
   </main>;
 }

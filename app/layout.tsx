@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const nav = [
-  ["Accueil", "/"], ["Outils", "/outils"], ["Demandes sur mesure", "/demandes-sur-mesure"], ["Partenaires", "/partenaires"]
+  ["Accueil", "/"], ["Propriétés", "https://www.emiliecauvier.com/fr/nos-proprietes"], ["Services", "/#a-propos"], ["Outils", "/outils"], ["Partenariats", "/partenaires"]
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <nav aria-label="Navigation principale">
             {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
           </nav>
-          <Link className="header-cta" href="/demandes-sur-mesure">Parlons de votre projet <ArrowUpRight size={16}/></Link>
+          <Link className="header-cta" href="/demandes-sur-mesure">Obtenir une estimation <ArrowUpRight size={16}/></Link>
           <details className="mobile-menu">
             <summary aria-label="Ouvrir le menu"><Menu /></summary>
             <div>{nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</div>
