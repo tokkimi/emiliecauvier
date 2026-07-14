@@ -40,7 +40,7 @@ export default function HomePage() {
     <section className="property-experience scene">
       <div className="wrap property-shell glass-deep">
         <div className="property-image"><Image src="/property-card.webp" alt="Propriété présentée par Émilie Cauvier" fill sizes="(max-width:800px) 90vw, 52vw"/></div>
-        <div className="property-panel"><div className="glass-toolbar"><span>Propriétés</span><span>Inscriptions actives</span></div><div><p className="eyebrow glass-label">Le marché en ce moment</p><h2>Explorez les propriétés avec les bonnes informations.</h2><p>Consultez les inscriptions actuelles et contactez Émilie pour obtenir le contexte qui ne se trouve pas dans une fiche.</p><a className="button red" href="https://www.emiliecauvier.com/fr/nos-proprietes">Voir les propriétés <ArrowUpRight/></a></div></div>
+        <div className="property-panel"><div className="glass-toolbar"><span>Propriétés</span><span>Inscriptions actives</span></div><div><p className="eyebrow glass-label">Le marché en ce moment</p><h2>Explorez les propriétés avec les bonnes informations.</h2><p>Consultez les inscriptions actuelles et contactez Émilie pour obtenir le contexte qui ne se trouve pas dans une fiche.</p><Link className="button red" href="/proprietes">Voir les propriétés <ArrowUpRight/></Link></div></div>
       </div>
     </section>
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const nav = [
-  ["Accueil", "/"], ["Propriétés", "https://www.emiliecauvier.com/fr/nos-proprietes"], ["Services", "/#a-propos"], ["Outils", "/outils"], ["Partenariats", "/partenaires"]
+  ["Accueil", "/"], ["Propriétés", "/proprietes"], ["Services", "/#a-propos"], ["Outils", "/outils"], ["Partenariats", "/partenaires"]
 ];
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
