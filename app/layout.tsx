@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Instagram, Menu } from "lucide-react";
 import "./globals.css";
@@ -21,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#contenu">Aller au contenu</a>
         <header className="site-header">
           <Link className="brand" href="/" aria-label="Émilie Cauvier, accueil">
-            <span className="brand-mark">EC</span><span>Émilie Cauvier<small>Courtière immobilière résidentielle</small></span>
+            <Image className="agency-logo" src="/the-agency-logo.png" alt="The Agency" width={96} height={42}/><span>Émilie Cauvier<small>Courtière immobilière résidentielle</small></span>
           </Link>
           <nav aria-label="Navigation principale">
             {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <footer>
           <div className="footer-top">
-            <div><p className="eyebrow">La prochaine étape commence ici.</p><h2>Un projet en tête?<br/>Rendons-le concret.</h2></div>
+            <div><Image className="footer-agency-logo" src="/the-agency-logo.png" alt="The Agency" width={160} height={70}/><p className="eyebrow">La prochaine étape commence ici.</p><h2>Un projet en tête?<br/>Rendons-le concret.</h2></div>
             <div className="footer-contact"><a href="tel:+15147749818">514 774-9818</a><a href="mailto:emilie@equipecauvier.com">emilie@equipecauvier.com</a><a href="https://www.instagram.com/emiliecauvier/" aria-label="Instagram"><Instagram size={20}/> Instagram</a></div>
           </div>
           <div className="footer-bottom">
