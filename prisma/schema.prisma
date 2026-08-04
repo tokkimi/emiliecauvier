@@ -1,0 +1,206 @@
+// ============================================================
+//  Boutique d'ebooks — Émilie Cauvier
+//  Modèle de données : utilisateurs, ebooks, achats à l'unité,
+//  abonnements mensuels, téléchargements, et données de compta/stats.
+// ============================================================
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------- UTILISATEURS ----------------------
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum SubscriptionStatus {
+  NONE          // aucun abonnement
+  TRIALING      // période d'essai
+  ACTIVE        // abonnement actif
+  PAST_DUE      // paiement en retard
+  CANCELED      // annulé / expiré
+}
+
+model User {
+  id                   String   @id @default(cuid())
+  email                String   @unique
+  name                 String?
+  passwordHash         String
+  role                 Role     @default(USER)
+
+  // Facturation Stripe
+  stripeCustomerId     String?  @unique
+  stripeSubscriptionId String?
+  subscriptionStatus   SubscriptionStatus @default(NONE)
+  subscriptionPriceId  String?
+  currentPeriodEnd     DateTime?
+
+  // Marketing / provenance (utile pour la landing des pubs Meta)
+  source               String?  // ex. "meta-ad", "site", "landing"
+  locale               String   @default("fr")
+
+  purchases            Purchase[]
+  downloads            DownloadEvent[]
+  events               AnalyticsEvent[]
+
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  @@index([subscriptionStatus])
+  @@index([createdAt])
+}
+
+// ---------------------- CATALOGUE ----------------------
+
+enum Collection {
+  ACHETEURS
+  VENDEURS
+  INVESTISSEURS
+  QUEBEC_LEGAL
+  SITUATIONS
+  BILINGUE
+  NICHE
+}
+
+model Ebook {
+  id            String     @id @default(cuid())
+  slug          String     @unique
+  number        Int        @unique          // 1..50, ordre de la collection
+  title         String
+  subtitle      String?
+  description    String    @db.Text
+  collection    Collection
+  language      String     @default("fr")
+
+  // Prix en cents (CAD). 0 = inclus dans l'abonnement uniquement.
+  priceCents    Int        @default(1400)   // 14,00 $
+  compareAtCents Int?                        // prix barré éventuel
+  currency      String     @default("CAD")
+
+  pages         Int?
+  coverImageUrl String?
+  // Fichiers
+  pdfKey        String?    // clé de stockage du PDF complet (privé)
+  previewPdfKey String?    // aperçu gratuit (1 chapitre)
+
+  isPublished   Boolean    @default(false)
+  isFeatured    Boolean    @default(false)
+  includedInSubscription Boolean @default(true)
+
+  stripePriceId String?    // prix Stripe (achat à l'unité)
+
+  purchases     Purchase[]
+  downloads     DownloadEvent[]
+
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([collection])
+  @@index([isPublished])
+}
+
+// ---------------------- ACHATS / COMMANDES ----------------------
+
+enum PurchaseType {
+  ONE_TIME       // achat d'un ebook
+  BUNDLE         // coffret
+  SUBSCRIPTION   // accès via abonnement
+}
+
+enum PurchaseStatus {
+  PENDING
+  PAID
+  REFUNDED
+  FAILED
+}
+
+model Purchase {
+  id                String   @id @default(cuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId           String?
+  ebook             Ebook?   @relation(fields: [ebookId], references: [id])
+
+  type              PurchaseType
+  status            PurchaseStatus @default(PENDING)
+
+  amountCents       Int
+  currency          String   @default("CAD")
+
+  // Stripe
+  stripeSessionId   String?  @unique
+  stripePaymentId   String?
+
+  createdAt         DateTime @default(now())
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// ---------------------- TÉLÉCHARGEMENTS ----------------------
+// Chaque téléchargement passe par un lien signé à durée limitée.
+
+model DownloadEvent {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId   String
+  ebook     Ebook    @relation(fields: [ebookId], references: [id])
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([ebookId])
+}
+
+// ---------------------- ANALYTICS / STATS ----------------------
+
+model AnalyticsEvent {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  name      String   // ex. "page_view", "add_to_cart", "checkout_start", "purchase"
+  path      String?
+  ebookId   String?
+  meta      Json?
+  createdAt DateTime @default(now())
+
+  @@index([name])
+  @@index([createdAt])
+}
+
+// ---------------------- NEWSLETTER ----------------------
+
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  source    String?
+  confirmed Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+// ---------------------- COMPTABILITÉ (agrégats) ----------------------
+// Instantané quotidien des revenus, pour un tableau de bord compta rapide
+// sans recalcul lourd (alimenté par un job/cron).
+
+model DailyRevenue {
+  id                 String   @id @default(cuid())
+  date               DateTime @unique @db.Date
+  oneTimeCents       Int      @default(0)   // ventes à l'unité
+  subscriptionCents  Int      @default(0)   // revenus d'abonnement
+  refundsCents       Int      @default(0)
+  newUsers           Int      @default(0)
+  newSubscribers     Int      @default(0)
+  createdAt          DateTime @default(now())
+
+  @@index([date])
+}
