@@ -11,6 +11,8 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-[var(--color-bordeaux)] text-[var(--color-cream)]">
         <div className="mx-auto max-w-6xl px-5 py-24 sm:py-32">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-signe-em.png" alt="Signé par Émilie Cauvier" className="mb-8 h-24 w-auto animate-fade-up" />
           <p className="font-ui text-xs uppercase tracking-[0.28em] text-[var(--color-gold-soft)] animate-fade-up">
             La Bibliothèque · Édition 2026
           </p>
