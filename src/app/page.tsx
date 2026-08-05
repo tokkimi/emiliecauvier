@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
-import { BRAND, formatPrice } from '@/lib/format';
+import { BRAND, formatPrice, PACK_CENTS } from '@/lib/format';
 
 export default function HomePage() {
   const featured = BOOKS.slice(0, 6);
@@ -103,6 +103,38 @@ export default function HomePage() {
               </span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* PACKS */}
+      <section id="packs" className="mx-auto max-w-6xl px-5 py-16">
+        <h2 className="font-display text-3xl text-[var(--color-ink)]">Packs par collection</h2>
+        <p className="mt-2 mb-8 max-w-2xl font-body text-[var(--color-ink)]/70">
+          Toute une collection d&apos;un coup — {formatPrice(PACK_CENTS)} le pack (au lieu de {formatPrice(BRAND.unitCents)} le guide).
+        </p>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {collections.map((c) => {
+            const n = BOOKS.filter((b) => b.collection === c).length;
+            return (
+              <Link
+                key={c}
+                href={`/catalogue?collection=${c}`}
+                className="group flex flex-col rounded-2xl border border-[var(--color-sand)] bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">Pack</span>
+                <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
+                  {COLLECTIONS[c]}
+                </h3>
+                <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">
+                  Les {n} guides de la collection, réunis.
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <span className="font-display text-lg text-[var(--color-ink)]">{formatPrice(PACK_CENTS)}</span>
+                  <span className="font-ui text-xs text-[var(--color-ink)]/50">au lieu de {formatPrice(n * BRAND.unitCents)}</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
