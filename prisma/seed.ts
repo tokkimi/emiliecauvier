@@ -36,7 +36,7 @@ async function main() {
   }
   console.log(`✓ ${BOOKS.length} guides importés.`);
 
-  // -- Compte administrateur de démo --
+  // -- Compte administrateur (backend) --
   const adminEmail = process.env.ADMIN_EMAIL ?? 'emilie@labibliotheque.ca';
   const adminPass = process.env.ADMIN_PASSWORD ?? 'ChangeMoi2026!';
   await prisma.user.upsert({
@@ -50,6 +50,23 @@ async function main() {
     },
   });
   console.log(`✓ Admin : ${adminEmail} / ${adminPass}`);
+
+  // -- Compte démo à accès illimité (abonnement actif, tous les guides) --
+  const demoEmail = process.env.DEMO_EMAIL ?? 'demo@labibliotheque.ca';
+  const demoPass = process.env.DEMO_PASSWORD ?? 'AccesIllimite2026!';
+  await prisma.user.upsert({
+    where: { email: demoEmail },
+    update: { subscriptionStatus: 'ACTIVE', currentPeriodEnd: new Date('2099-12-31') },
+    create: {
+      email: demoEmail,
+      name: 'Accès illimité',
+      passwordHash: await bcrypt.hash(demoPass, 10),
+      role: 'USER',
+      subscriptionStatus: 'ACTIVE',
+      currentPeriodEnd: new Date('2099-12-31'),
+    },
+  });
+  console.log(`✓ Accès illimité : ${demoEmail} / ${demoPass}`);
 }
 
 main()
