@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { auth } from '@/lib/auth';
 
 export async function SiteHeader() {
-  const session = await auth();
+  const session = await auth().catch(() => null);
   const isAdmin = (session?.user as { role?: string })?.role === 'ADMIN';
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-sand)] bg-[var(--color-cream)]/90 backdrop-blur">

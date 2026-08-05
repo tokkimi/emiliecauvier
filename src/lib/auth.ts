@@ -3,8 +3,14 @@ import Credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { prisma } from './db';
 
+// AUTH_SECRET est requis en production. On fournit un secret de repli pour que
+// l'app démarre en démo sans configuration — À REMPLACER par un vrai secret
+// (openssl rand -base64 32) via la variable d'environnement AUTH_SECRET.
+const AUTH_SECRET = process.env.AUTH_SECRET || 'demo-secret-a-remplacer-par-openssl-rand-base64-32';
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
   trustHost: true,
+  secret: AUTH_SECRET,
   session: { strategy: 'jwt' },
   pages: { signIn: '/connexion' },
   providers: [
