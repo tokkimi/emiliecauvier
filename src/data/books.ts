@@ -11,8 +11,8 @@ export const BOOKS: Book[] = [
   {
     "number": 1,
     "slug": "devenir-proprietaire-au-quebec",
-    "title": "Devenir propriétaire au Québec",
-    "subtitle": "Le guide complet du premier achat — de l'idée aux clés",
+    "title": "Acheter à deux",
+    "subtitle": "Conjoints de fait, indivision et convention.",
     "collection": "ACHETEURS",
     "language": "fr",
     "priceCents": 1000,
