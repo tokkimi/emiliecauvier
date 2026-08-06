@@ -89,18 +89,27 @@ export default function HomePage() {
             <Link
               key={b.slug}
               href={`/livre/${b.slug}`}
-              className="group flex flex-col rounded-2xl border border-[var(--color-sand)] bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg"
             >
-              <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
-                {COLLECTIONS[b.collection]}
-              </span>
-              <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
-                {b.title}
-              </h3>
-              <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{b.subtitle}</p>
-              <span className="mt-4 font-ui text-sm font-medium text-[var(--color-ink)]">
-                {formatPrice(b.priceCents)}
-              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/covers/${b.number}.jpg`}
+                alt={`Couverture — ${b.title}`}
+                loading="lazy"
+                className="aspect-[2/3] w-full border-b border-[var(--color-sand)] object-cover"
+              />
+              <div className="flex flex-1 flex-col p-6">
+                <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
+                  {COLLECTIONS[b.collection]}
+                </span>
+                <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
+                  {b.title}
+                </h3>
+                <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{b.subtitle}</p>
+                <span className="mt-4 font-ui text-sm font-medium text-[var(--color-ink)]">
+                  {formatPrice(b.priceCents)}
+                </span>
+              </div>
             </Link>
           ))}
         </div>

@@ -72,7 +72,7 @@ export default async function CataloguePage({
               src={`/covers/${b.number}.jpg`}
               alt={`Couverture — ${b.title}`}
               loading="lazy"
-              className="aspect-[3/4] w-full border-b border-[var(--color-sand)] object-cover"
+              className="aspect-[2/3] w-full border-b border-[var(--color-sand)] object-cover"
             />
             <div className="flex flex-1 flex-col p-6">
               <div className="flex items-center justify-between">
