@@ -71,7 +71,7 @@ export default async function AproposPage() {
                 {t.about_cta_explore}
               </Link>
               <Link
-                href="/#abonnement"
+                href="/abonnement"
                 className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-medium text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
               >
                 {t.about_cta_sub}

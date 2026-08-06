@@ -5,7 +5,7 @@ import { getT } from '@/lib/i18n';
 export async function SiteFooter() {
   const t = await getT();
   return (
-    <footer className="mt-24 border-t border-[var(--color-sand)] bg-[var(--color-ink)] text-[var(--color-cream)]">
+    <footer className="border-t border-[var(--color-sand)] bg-[var(--color-ink)] text-[var(--color-cream)]">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:grid-cols-3">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -22,7 +22,7 @@ export async function SiteFooter() {
           <ul className="space-y-2 text-white/70">
             <li><Link href="/catalogue" className="hover:text-white">{t.footer_catalogue}</Link></li>
             <li><Link href="/a-propos" className="hover:text-white">{t.footer_about}</Link></li>
-            <li><Link href="/#abonnement" className="hover:text-white">{t.footer_subscription}</Link></li>
+            <li><Link href="/abonnement" className="hover:text-white">{t.footer_subscription}</Link></li>
             <li><Link href="/compte" className="hover:text-white">{t.footer_account}</Link></li>
           </ul>
         </div>

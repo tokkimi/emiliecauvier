@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
-import { BRAND, formatPrice, PACK_CENTS } from '@/lib/format';
+import { BRAND, formatPrice } from '@/lib/format';
 import { SitePromoBanner } from '@/components/SitePromoBanner';
+import { FeaturedCarousel } from '@/components/FeaturedCarousel';
 import { getLocale, getT } from '@/lib/i18n';
 import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
 
@@ -91,70 +92,19 @@ export default async function HomePage() {
             {t.home_see_all}
           </Link>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((b) => {
+        <FeaturedCarousel
+          items={featured.map((b) => {
             const loc = localizeBook(b, locale);
-            return (
-              <Link
-                key={b.slug}
-                href={`/livre/${b.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/covers/${b.number}.jpg`}
-                  alt={`Couverture — ${loc.title}`}
-                  loading="lazy"
-                  className="aspect-[2/3] w-full border-b border-[var(--color-sand)] object-cover"
-                />
-                <div className="flex flex-1 flex-col p-6">
-                  <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
-                    {col(b.collection)}
-                  </span>
-                  <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
-                    {loc.title}
-                  </h3>
-                  <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{loc.subtitle}</p>
-                  <span className="mt-4 font-ui text-sm font-medium text-[var(--color-ink)]">
-                    {formatPrice(b.priceCents)}
-                  </span>
-                </div>
-              </Link>
-            );
+            return {
+              slug: b.slug,
+              number: b.number,
+              collectionLabel: col(b.collection),
+              title: loc.title,
+              subtitle: loc.subtitle,
+              price: formatPrice(b.priceCents),
+            };
           })}
-        </div>
-      </section>
-
-      {/* PACKS */}
-      <section id="packs" className="mx-auto max-w-6xl px-5 py-16">
-        <h2 className="font-display text-3xl text-[var(--color-ink)]">{t.home_packs_title}</h2>
-        <p className="mt-2 mb-8 max-w-2xl font-body text-[var(--color-ink)]/70">
-          {t.home_packs_intro_pre}{formatPrice(PACK_CENTS)}{t.home_packs_intro_mid}{formatPrice(BRAND.unitCents)}{t.home_packs_intro_post}
-        </p>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {collections.map((c) => {
-            const n = BOOKS.filter((b) => b.collection === c).length;
-            return (
-              <Link
-                key={c}
-                href={`/catalogue?collection=${c}`}
-                className="group flex flex-col rounded-2xl border border-[var(--color-sand)] bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.home_pack}</span>
-                <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
-                  {col(c)}
-                </h3>
-                <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">
-                  {t.home_pack_desc_pre}{n}{t.home_pack_desc_post}
-                </p>
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="font-display text-lg text-[var(--color-ink)]">{formatPrice(PACK_CENTS)}</span>
-                  <span className="font-ui text-xs text-[var(--color-ink)]/50">{t.home_pack_instead} {formatPrice(n * BRAND.unitCents)}</span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
+        />
       </section>
 
       {/* COLLECTIONS */}
