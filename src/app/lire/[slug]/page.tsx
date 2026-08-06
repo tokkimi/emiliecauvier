@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { bySlug } from '@/data/books';
 import { localizeBook } from '@/data/booksEn';
 import { getLocale } from '@/lib/i18n';
-import { loadReaderContent } from '@/lib/reader';
+import { loadReaderLocalized } from '@/lib/reader';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { hasAccess } from '@/lib/entitlements';
@@ -34,10 +34,10 @@ export default async function ReaderPage({
   const book = bySlug(slug);
   if (!book) notFound();
 
-  const content = loadReaderContent(book.number);
-  if (!content) notFound();
-
   const locale = await getLocale();
+  const localized = loadReaderLocalized(book.number, locale);
+  if (!localized) notFound();
+  const { content, isEnglish } = localized;
   const loc = localizeBook(book, locale);
 
   const session = await auth();
@@ -63,7 +63,7 @@ export default async function ReaderPage({
       qcm={qcm}
       previewOnly={previewOnly}
       loggedIn={Boolean(userId)}
-      frenchNotice={locale === 'en'}
+      frenchNotice={locale === 'en' && !isEnglish}
     />
   );
 }

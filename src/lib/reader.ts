@@ -20,13 +20,35 @@ export interface ReaderContent {
 }
 
 const DIR = path.join(process.cwd(), 'src', 'data', 'reader');
+const DIR_EN = path.join(process.cwd(), 'src', 'data', 'reader-en');
 
-/** Charge le contenu du lecteur pour un numéro d'ebook (côté serveur uniquement). */
-export function loadReaderContent(number: number): ReaderContent | null {
+function tryLoad(dir: string, number: number): ReaderContent | null {
   try {
-    const raw = fs.readFileSync(path.join(DIR, `${number}.json`), 'utf-8');
+    const raw = fs.readFileSync(path.join(dir, `${number}.json`), 'utf-8');
     return JSON.parse(raw) as ReaderContent;
   } catch {
     return null;
   }
+}
+
+/** Charge le contenu du lecteur pour un numéro d'ebook (français). */
+export function loadReaderContent(number: number): ReaderContent | null {
+  return tryLoad(DIR, number);
+}
+
+/**
+ * Charge le contenu du lecteur dans la langue demandée.
+ * En anglais, sert `reader-en/<n>.json` s'il existe ; sinon repli sur le
+ * français avec `isEnglish=false` (le lecteur affiche alors une note).
+ */
+export function loadReaderLocalized(
+  number: number,
+  locale: 'fr' | 'en',
+): { content: ReaderContent; isEnglish: boolean } | null {
+  if (locale === 'en') {
+    const en = tryLoad(DIR_EN, number);
+    if (en) return { content: en, isEnglish: true };
+  }
+  const fr = tryLoad(DIR, number);
+  return fr ? { content: fr, isEnglish: false } : null;
 }
