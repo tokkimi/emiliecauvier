@@ -19,6 +19,7 @@ export function SiteFooter() {
           <p className="mb-3 uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">Naviguer</p>
           <ul className="space-y-2 text-white/70">
             <li><Link href="/catalogue" className="hover:text-white">Catalogue des 48 guides</Link></li>
+            <li><Link href="/a-propos" className="hover:text-white">À propos d&apos;Émilie</Link></li>
             <li><Link href="/#abonnement" className="hover:text-white">Abonnement mensuel</Link></li>
             <li><Link href="/compte" className="hover:text-white">Mon compte</Link></li>
           </ul>

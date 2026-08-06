@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { BRAND, formatPrice, PACK_CENTS } from '@/lib/format';
+import { SitePromoBanner } from '@/components/SitePromoBanner';
 
 export default function HomePage() {
   const featured = BOOKS.slice(0, 6);
@@ -203,6 +204,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* BANNIÈRE emiliecauvier.com */}
+      <SitePromoBanner />
     </>
   );
 }

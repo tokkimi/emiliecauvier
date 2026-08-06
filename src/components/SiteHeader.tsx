@@ -13,11 +13,14 @@ export async function SiteHeader() {
             Édition 2026
           </span>
         </Link>
-        <nav className="flex items-center gap-6 font-ui text-sm">
+        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 font-ui text-sm sm:gap-x-6">
           <Link href="/catalogue" className="hover:text-[var(--color-bordeaux)]">
             Catalogue
           </Link>
-          <Link href="/#abonnement" className="hover:text-[var(--color-bordeaux)]">
+          <Link href="/a-propos" className="hover:text-[var(--color-bordeaux)]">
+            À propos
+          </Link>
+          <Link href="/#abonnement" className="hidden hover:text-[var(--color-bordeaux)] sm:inline">
             Abonnement
           </Link>
           {session?.user ? (
