@@ -12,6 +12,7 @@ export function Reader({
   qcm,
   previewOnly,
   loggedIn,
+  frenchNotice = false,
 }: {
   slug: string;
   title: string;
@@ -20,6 +21,7 @@ export function Reader({
   qcm: ReaderQCM[];
   previewOnly: boolean;
   loggedIn: boolean;
+  frenchNotice?: boolean;
 }) {
   // En aperçu : seul le premier chapitre est déverrouillé.
   const lastIndex = chapters.length + (qcm.length ? 1 : 0);
@@ -39,6 +41,11 @@ export function Reader({
           </Link>
           <h1 className="mt-3 font-display text-lg leading-snug text-[var(--color-ink)]">{title}</h1>
           <p className="mt-1 font-body text-sm text-[var(--color-ink)]/60">{subtitle}</p>
+          {frenchNotice && (
+            <p className="mt-3 rounded-lg border border-[var(--color-sand)] bg-[var(--color-cream)] px-3 py-2 font-ui text-[0.7rem] leading-snug text-[var(--color-ink)]/70">
+              📖 This guide’s full text is currently available in French. English translation in progress.
+            </p>
+          )}
         </div>
         <nav className="pb-6">
           {chapters.map((c, i) => {

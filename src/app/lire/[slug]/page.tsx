@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { bySlug } from '@/data/books';
+import { localizeBook } from '@/data/booksEn';
+import { getLocale } from '@/lib/i18n';
 import { loadReaderContent } from '@/lib/reader';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
@@ -35,6 +37,9 @@ export default async function ReaderPage({
   const content = loadReaderContent(book.number);
   if (!content) notFound();
 
+  const locale = await getLocale();
+  const loc = localizeBook(book, locale);
+
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
@@ -52,12 +57,13 @@ export default async function ReaderPage({
   return (
     <Reader
       slug={slug}
-      title={book.title}
-      subtitle={book.subtitle}
+      title={loc.title}
+      subtitle={loc.subtitle}
       chapters={chapters}
       qcm={qcm}
       previewOnly={previewOnly}
       loggedIn={Boolean(userId)}
+      frenchNotice={locale === 'en'}
     />
   );
 }

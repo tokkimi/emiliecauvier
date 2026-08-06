@@ -63,11 +63,63 @@ export const COLLECTIONS_EN: Record<string, string> = {
   NICHE: 'Niches',
 };
 
-/** Renvoie le titre/sous-titre d'un livre dans la langue demandée (repli FR). */
-export function localizeBook(book: Book, locale: Locale): { title: string; subtitle: string } {
+/** Traductions anglaises des titres de chapitres (le « Au programme ») par slug. */
+export const CHAPTERS_EN: Record<string, string[]> = {
+  'devenir-proprietaire-au-quebec': ['Are you ready to buy?', 'Funding your down payment (HBP, FHSA, gift)', 'Mortgage pre-approval', 'Finding the right property', 'The visit and the inspection', 'The purchase offer and negotiation', 'Signing at the notary (and closing costs)', 'Moving in and starting off right'],
+  'cinq-erreurs-a-10000-de-l-acheteur': ['Mistake #1 — Shopping without a real pre-approval', 'Mistake #2 — Underestimating the “invisible” costs', 'Mistake #3 — Rushing (or skipping) the inspection', 'Mistake #4 — Letting emotion drive the offer', 'Mistake #5 — Neglecting the neighbourhood, resale and documents'],
+  'la-preapprobation-hypothecaire-decodee': ['Pre-qualification vs pre-approval', 'What the lender really looks at', 'The stress test', 'Mortgage broker or institution?', 'Documents, validity and pitfalls to avoid'],
+  'la-taxe-de-bienvenue-expliquee': ['Where does this tax come from?', 'What value is it calculated on?', 'The bracket-based calculation', 'Exemptions and special cases', 'When and how to pay it (and plan for it)'],
+  'acheter-en-copropriete-condo': ['Divided co-ownership: how it works', 'The declaration of co-ownership and the bylaws', 'The contingency fund: what matters most', 'Insurance and meeting minutes', 'Reviewing the documents before finalizing'],
+  'checklist-visite-inspection': ['Before going in: the exterior and the lot', 'The basement: where everything shows', 'The systems: electrical, plumbing, heating', 'The interior, room by room', 'From the visit to the professional inspection'],
+  'promesse-achat-gagnante': ['What a purchase offer (really) is', 'The conditions that protect you', 'Setting the right offer price', 'Deadlines, deposit and counter-offers', 'Multiple offers: keeping a cool head'],
+  'duplex-triplex-habiter-louer': ['Why a plex is an ideal springboard', 'Owner-occupant financing', 'Calculating the real net cost', 'Existing tenants and leases', 'Becoming a landlord, concretely'],
+  'acheter-neuf-vs-ancien-gcr': ['New vs existing: the real matchup', 'The residential construction warranty (GCR)', 'Buying off-plan: timelines, deposits, choices', 'Checking out an older property'],
+  'financer-mise-de-fonds-rap-celiapp-don': ['How much do you need?', 'The FHSA: often the best starting point', 'The HBP: tapping your RRSP', 'The family gift and the order of withdrawals'],
+  'choisir-son-quartier-laval-rive-nord': ['A method for assessing a neighbourhood', 'Laval: many different faces', 'The North Shore: space and suburban life', 'Thinking resale from the start'],
+  'acheter-a-montreal-arrondissements': ['Understanding Montréal’s logic', 'The main families of boroughs', 'Prices, taxes and Montréal specifics', 'Choosing with resale in mind'],
+  'les-vrais-frais-de-l-achat': ['The fees paid around the transaction', 'The Welcome Tax, separately', 'Start-up expenses', 'Building your complete buying budget'],
+  'sols-argileux-pyrite-drain-francais': ['Clay soils and foundation movement', 'Pyrite and pyrrhotite', 'The French drain and water management', 'Buried tanks, vermiculite and asbestos'],
+  'vendre-au-meilleur-prix-7-etapes': ['Steps 1-2: the right price and preparation', 'Steps 3-4: marketing and showings', 'Steps 5-6: offers and negotiation', 'Step 7: from acceptance to closing'],
+  'home-staging-express': ['The 3 principles that sell', 'Exterior and entrance: the first impression', 'Living areas and kitchen', 'Bedrooms, bathrooms and finishing touches'],
+  'fixer-le-bon-prix-analyse-comparative': ['What (really) drives value', 'The comparative market analysis (CMA)', 'Municipal assessment vs market value', 'The starting-price strategy'],
+  'vendre-seul-duproprio-vs-courtier': ['What a broker really does', 'The costs and risks of going “without an intermediary”', 'The real math, numbers in hand', 'How to decide based on your situation'],
+  'declaration-du-vendeur-vices-caches': ['The legal warranty of quality', 'The seller’s declaration', 'Reducing your risk of a lawsuit', 'What to do if a problem arises'],
+  'vendre-son-condo': ['Preparing the co-ownership file', 'Presenting fees and the contingency fund', 'Marketing a condo', 'The specific pitfalls to avoid'],
+  'photos-video-marketing': ['Photos: your digital storefront', 'Video and the virtual tour', 'The description that makes people want in', 'Distribution: being seen by the right buyers'],
+  'gerer-les-offres-multiples-vendeur': ['How multiple offers arise', 'Comparing offers beyond price', 'The rules of the game: fairness and transparency', 'Deciding without getting carried away'],
+  'vendre-propriete-heritee-succession': ['The liquidator’s role and prerequisites', 'Preparing the property and setting the price', 'The tax issues to know', 'Deciding among several heirs'],
+  'vendre-separation-divorce': ['Understanding the property’s status', 'Deciding: sell, buy out or wait', 'Setting the price and managing a joint sale', 'Splitting the proceeds'],
+  'certificat-de-localisation': ['What is a location certificate?', 'When do you need a new certificate?', 'The irregularities it can reveal', 'Costs, timelines and good planning'],
+  'premier-immeuble-a-revenus': ['Thinking like an investor', 'Assessing a building before making an offer', 'The classic first-time investor mistakes', 'From analysis to offer'],
+  'calculer-la-rentabilite': ['Net operating income (NOI)', 'Cash flow', 'The capitalization rate (cap rate)', 'The GRM and the limits of ratios'],
+  'financer-immeuble-a-revenus': ['1 to 4 units vs 5 units and up', 'The down payment and occupancy', 'Loan insurance and counting the rents', 'Building a solid structure'],
+  'fiscalite-investisseur-immobilier': ['Rental income and deductible expenses', 'Depreciation (CCA)', 'Capital gains on resale', 'Personal ownership or through a corporation'],
+  'locataires-et-tal': ['The lease and tenant selection', 'Rent increases', 'Everyone’s rights and obligations', 'The role of the Rental Tribunal (TAL)'],
+  'reprise-de-logement-et-eviction': ['Repossession vs eviction: two different things', 'The grounds and eligible people', 'Notice, timelines and compensation', 'Anticipating before you buy'],
+  'renover-pour-creer-de-la-valeur-flip': ['Which renovations really create value', 'Budget, schedule and overruns', 'Permits, standards and contractors', 'Calculating a flip’s real margin'],
+  'location-court-terme-airbnb-legalite': ['The provincial framework: registration and posting', 'Municipal zoning: the deciding factor', 'Co-ownership and building bylaws', 'Real profitability and risks'],
+  'batir-un-portefeuille-immobilier': ['Equity, the engine of growth', 'Keeping solid numbers at each step', 'Management that grows with you', 'The long-term vision'],
+  'comprendre-la-loi-sur-le-courtage': ['The OACIQ and its mission', 'Your protections as a consumer', 'Contracts and obligations in a transaction'],
+  'le-role-du-notaire': ['An impartial public officer', 'What the notary checks and prepares', 'The signing and the fees'],
+  'hypotheque-fixe-vs-variable': ['Fixed rate vs variable rate', 'The term and amortization', 'The clauses that matter'],
+  'assurance-habitation-et-titres': ['Home insurance', 'Title insurance', 'Full coverage with no protection gaps'],
+  'marche-grand-montreal-cycles': ['Buyer’s market, seller’s market', 'The factors that move the market', 'Acting without trying to guess the peak'],
+  'acheter-vendre-en-hiver': ['The myth of the “bad season”', 'Selling in winter: showing well', 'Buying in winter: opportunities'],
+  'evaluation-municipale-vs-valeur-marchande': ['The municipal assessment: a tax tool', 'Market value: the market price', 'The comparative factor and good uses'],
+  'copropriete-divise-vs-indivise': ['Divided co-ownership (the classic condo)', 'Undivided co-ownership', 'Choosing well for your situation'],
+  'acheter-a-deux': ['Married vs common-law partners', 'How to hold the property', 'The agreement between partners'],
+  'premier-achat-nouveaux-arrivants': ['Building your credit and financing file', 'Understanding Québec specifics', 'Getting ready and surrounding yourself well'],
+  'acheter-et-vendre-en-meme-temps': ['Sell first or buy first?', 'Bridging the financial gap', 'Coordinating dates and logistics'],
+  'retraite-et-immobilier-downsizing': ['Downsizing: less space, better living', 'Generating income or freeing up cash', 'Thinking transfer and long term'],
+  'aider-son-enfant-a-acheter': ['The gift for the down payment', 'The family loan', 'Co-signing: helping without giving money'],
+  'acheter-un-chalet-residence-secondaire': ['Financing a second home', 'The checks specific to rural areas', 'Waterfront zoning and regulations', 'The reality of upkeep and use'],
+};
+
+/** Renvoie le titre/sous-titre/chapitres d'un livre dans la langue demandée (repli FR). */
+export function localizeBook(book: Book, locale: Locale): { title: string; subtitle: string; chapters: string[] } {
   if (locale === 'en') {
     const en = BOOKS_EN[book.slug];
-    if (en) return en;
+    if (en) return { title: en.title, subtitle: en.subtitle, chapters: CHAPTERS_EN[book.slug] ?? book.chapters };
   }
-  return { title: book.title, subtitle: book.subtitle };
+  return { title: book.title, subtitle: book.subtitle, chapters: book.chapters };
 }

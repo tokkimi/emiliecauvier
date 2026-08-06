@@ -60,7 +60,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 
           <h2 className="mt-10 font-display text-2xl text-[var(--color-bordeaux)]">{t.book_program}</h2>
           <ol className="mt-4 space-y-2">
-            {book.chapters.map((c, i) => (
+            {loc.chapters.map((c, i) => (
               <li key={i} className="flex gap-3 font-body">
                 <span className="font-ui text-sm text-[var(--color-gold)]">{String(i + 1).padStart(2, '0')}</span>
                 <span className="text-[var(--color-ink)]/85">{c}</span>
