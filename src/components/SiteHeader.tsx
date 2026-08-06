@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { auth } from '@/lib/auth';
+import { getT } from '@/lib/i18n';
+import { LangToggle } from '@/components/LangToggle';
 
 export async function SiteHeader() {
   const session = await auth().catch(() => null);
   const isAdmin = (session?.user as { role?: string })?.role === 'ADMIN';
+  const t = await getT();
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-sand)] bg-[var(--color-cream)]/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
@@ -13,40 +16,41 @@ export async function SiteHeader() {
             Édition 2026
           </span>
         </Link>
-        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 font-ui text-sm sm:gap-x-6">
+        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2 font-ui text-sm sm:gap-x-5">
           <Link href="/catalogue" className="hover:text-[var(--color-bordeaux)]">
-            Catalogue
+            {t.nav_catalogue}
           </Link>
           <Link href="/a-propos" className="hover:text-[var(--color-bordeaux)]">
-            À propos
+            {t.nav_about}
           </Link>
           <Link href="/#abonnement" className="hidden hover:text-[var(--color-bordeaux)] sm:inline">
-            Abonnement
+            {t.nav_subscription}
           </Link>
           {session?.user ? (
             <>
               <Link href="/compte" className="hover:text-[var(--color-bordeaux)]">
-                Mon compte
+                {t.nav_account}
               </Link>
               {isAdmin && (
                 <Link href="/admin" className="text-[var(--color-gold)] hover:underline">
-                  Admin
+                  {t.nav_admin}
                 </Link>
               )}
             </>
           ) : (
             <>
               <Link href="/connexion" className="hover:text-[var(--color-bordeaux)]">
-                Connexion
+                {t.nav_login}
               </Link>
               <Link
                 href="/inscription"
-                className="rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white transition hover:bg-[var(--color-bordeaux-dark)]"
+                className="hidden rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white transition hover:bg-[var(--color-bordeaux-dark)] sm:inline"
               >
-                Créer un compte
+                {t.nav_signup}
               </Link>
             </>
           )}
+          <LangToggle />
         </nav>
       </div>
     </header>
