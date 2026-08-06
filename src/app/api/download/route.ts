@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
-import { hasAccess } from '@/lib/entitlements';
+import { canDownload } from '@/lib/entitlements';
 import { bySlug } from '@/data/books';
 
 /**
@@ -26,8 +26,10 @@ export async function GET(req: Request) {
   const ebook = await prisma.ebook.findUnique({ where: { slug } });
   if (!ebook) return NextResponse.json({ error: 'guide non publié' }, { status: 404 });
 
-  const ok = await hasAccess(userId, ebook.id);
-  if (!ok) return NextResponse.redirect(new URL(`/livre/${slug}`, req.url));
+  // Le PDF est réservé à l'achat (unité/coffret/admin) — l'abonnement donne
+  // seulement la lecture en ligne.
+  const ok = await canDownload(userId, ebook.id);
+  if (!ok) return NextResponse.redirect(new URL(`/livre/${slug}?pdf=achat`, req.url));
 
   // Journalise le téléchargement.
   await prisma.downloadEvent.create({

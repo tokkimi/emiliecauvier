@@ -20,7 +20,7 @@ export default function HomePage() {
             Acheter, vendre et investir dans le Grand Montréal — sans angle mort.
           </h1>
           <p className="mt-6 max-w-2xl font-body text-lg text-white/80 animate-fade-up">
-            50 guides clairs et pratiques signés {BRAND.author}, courtière immobilière résidentielle.
+            48 guides clairs et pratiques signés {BRAND.author}, courtière immobilière résidentielle.
             À lire en ligne, chapitre par chapitre, <em>et</em> à télécharger en PDF.
           </p>
           <div className="mt-10 flex flex-wrap gap-4 font-ui animate-fade-up">
@@ -28,7 +28,7 @@ export default function HomePage() {
               href="/catalogue"
               className="rounded-full bg-[var(--color-cream)] px-7 py-3 font-medium text-[var(--color-bordeaux)] transition hover:bg-white"
             >
-              Explorer les 50 guides
+              Explorer les 48 guides
             </Link>
             <Link
               href="/#abonnement"
@@ -189,10 +189,10 @@ export default function HomePage() {
             <div className="rounded-2xl border border-[var(--color-gold)] bg-[var(--color-bordeaux)] p-7">
               <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">Abonnement</p>
               <p className="mt-3 font-display text-4xl">{formatPrice(BRAND.subscriptionCents)}<span className="text-lg">/mois</span></p>
-              <p className="mt-1 font-ui text-sm text-white/70">les 50 guides + nouveautés</p>
+              <p className="mt-1 font-ui text-sm text-white/70">les 48 guides + nouveautés</p>
               <ul className="mt-5 space-y-2 font-body text-sm text-white/90">
                 <li>Accès illimité à toute la collection</li>
-                <li>Lecture en ligne + PDF</li>
+                <li>Lecture en ligne illimitée (sans PDF)</li>
                 <li>Nouvelles éditions incluses</li>
                 <li>Sans engagement</li>
               </ul>

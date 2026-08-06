@@ -1,10 +1,10 @@
 // Catalogue des 50 guides — généré depuis les contenus source.
-export type Collection = 'ACHETEURS'|'VENDEURS'|'INVESTISSEURS'|'QUEBEC_LEGAL'|'SITUATIONS'|'BILINGUE'|'NICHE';
+export type Collection = 'ACHETEURS'|'VENDEURS'|'INVESTISSEURS'|'QUEBEC_LEGAL'|'SITUATIONS'|'NICHE';
 export interface Book { number:number; slug:string; title:string; subtitle:string; collection:Collection; language:string; priceCents:number; pdf:string; chapters:string[]; }
 
 export const COLLECTIONS: Record<Collection,string> = {
   ACHETEURS:'Acheteurs', VENDEURS:'Vendeurs', INVESTISSEURS:'Investisseurs',
-  QUEBEC_LEGAL:'Québec & Légal', SITUATIONS:'Situations de vie', BILINGUE:'Édition bilingue', NICHE:'Niches',
+  QUEBEC_LEGAL:'Québec & Légal', SITUATIONS:'Situations de vie', NICHE:'Niches',
 };
 
 export const BOOKS: Book[] = [
@@ -756,39 +756,6 @@ export const BOOKS: Book[] = [
       "Le don pour la mise de fonds",
       "Le prêt familial",
       "La cosignature : aider sans donner d'argent"
-    ]
-  },
-  {
-    "number": 48,
-    "slug": "buying-your-first-home-in-quebec-en",
-    "title": "Buying Your First Home in Québec",
-    "subtitle": "The complete first-time buyer's guide — from idea to keys",
-    "collection": "BILINGUE",
-    "language": "en",
-    "priceCents": 1000,
-    "pdf": "48_buying-your-first-home-in-quebec-en.pdf",
-    "chapters": [
-      "Are you ready to buy?",
-      "Funding your down payment",
-      "Mortgage pre-approval",
-      "Visiting, inspecting and making an offer",
-      "Closing and the Welcome Tax"
-    ]
-  },
-  {
-    "number": 49,
-    "slug": "selling-your-home-in-greater-montreal-en",
-    "title": "Selling Your Home in Greater Montréal",
-    "subtitle": "Your 7-step game plan — from the right price to closing",
-    "collection": "BILINGUE",
-    "language": "en",
-    "priceCents": 1000,
-    "pdf": "49_selling-your-home-in-greater-montreal-en.pdf",
-    "chapters": [
-      "Steps 1-2: the right price and preparation",
-      "Steps 3-4: marketing and showings",
-      "Steps 5-6: offers and negotiation",
-      "Step 7: from acceptance to closing"
     ]
   },
   {

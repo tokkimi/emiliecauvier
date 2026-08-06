@@ -5,7 +5,7 @@ import { BOOKS } from '../src/data/books';
 const prisma = new PrismaClient();
 
 async function main() {
-  // -- 50 guides --
+  // -- Guides du catalogue --
   for (const b of BOOKS) {
     await prisma.ebook.upsert({
       where: { slug: b.slug },
@@ -35,6 +35,15 @@ async function main() {
     });
   }
   console.log(`✓ ${BOOKS.length} guides importés.`);
+
+  // Dépublie les ebooks qui ne sont plus au catalogue (ex. éditions anglaises
+  // retirées en attendant la traduction complète du site).
+  const slugs = BOOKS.map((b) => b.slug);
+  const removed = await prisma.ebook.updateMany({
+    where: { slug: { notIn: slugs }, isPublished: true },
+    data: { isPublished: false },
+  });
+  if (removed.count > 0) console.log(`↩ ${removed.count} guide(s) hors catalogue dépublié(s).`);
 
   // -- Compte administrateur (backend) --
   const adminEmail = process.env.ADMIN_EMAIL ?? 'emilie@labibliotheque.ca';

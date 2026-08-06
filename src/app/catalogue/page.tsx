@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { formatPrice } from '@/lib/format';
 
-export const metadata: Metadata = { title: 'Catalogue des 50 guides' };
+export const metadata: Metadata = { title: 'Catalogue des 48 guides' };
 
 export default async function CataloguePage({
   searchParams,
@@ -27,7 +27,7 @@ export default async function CataloguePage({
   return (
     <div className="mx-auto max-w-6xl px-5 py-14">
       <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">La Bibliothèque</p>
-      <h1 className="mt-2 font-display text-4xl text-[var(--color-ink)]">Les 50 guides</h1>
+      <h1 className="mt-2 font-display text-4xl text-[var(--color-ink)]">Les 48 guides</h1>
       <p className="mt-3 max-w-2xl font-body text-[var(--color-ink)]/70">
         Chaque guide se lit en ligne (menu de chapitres) et se télécharge en PDF. À l&apos;unité ou via l&apos;abonnement.
       </p>

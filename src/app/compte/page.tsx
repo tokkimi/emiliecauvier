@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
-import { accessibleEbookIds } from '@/lib/entitlements';
+import { accessibleEbookIds, downloadableEbookIds } from '@/lib/entitlements';
 import { bySlug, BOOKS } from '@/data/books';
 import { formatPrice, BRAND } from '@/lib/format';
 import { SubscribeButton, SignOutButton } from '@/components/AccountActions';
@@ -29,7 +29,9 @@ export default async function AccountPage() {
   if (!user) redirect('/connexion');
 
   const ids = await accessibleEbookIds(userId);
+  const dlIds = await downloadableEbookIds(userId);
   const ebooks = await prisma.ebook.findMany({ where: { id: { in: [...ids] } } });
+  const slugToId = new Map(ebooks.map((e) => [e.slug, e.id]));
   const myBooks = ebooks
     .map((e) => bySlug(e.slug))
     .filter((b): b is NonNullable<typeof b> => Boolean(b))
@@ -65,7 +67,7 @@ export default async function AccountPage() {
             )}
             {!subActive && (
               <p className="mt-1 font-body text-sm text-[var(--color-ink)]/60">
-                {formatPrice(BRAND.subscriptionCents)}/mois — accès aux 50 guides.
+                {formatPrice(BRAND.subscriptionCents)}/mois — lecture en ligne des 48 guides.
               </p>
             )}
           </div>
@@ -98,12 +100,22 @@ export default async function AccountPage() {
                   >
                     Lire
                   </Link>
-                  <a
-                    href={`/api/download?slug=${b.slug}`}
-                    className="flex-1 rounded-full border border-[var(--color-bordeaux)] py-2 text-center font-ui text-xs text-[var(--color-bordeaux)] hover:bg-[var(--color-sand)]"
-                  >
-                    PDF
-                  </a>
+                  {dlIds.has(slugToId.get(b.slug) ?? '') ? (
+                    <a
+                      href={`/api/download?slug=${b.slug}`}
+                      className="flex-1 rounded-full border border-[var(--color-bordeaux)] py-2 text-center font-ui text-xs text-[var(--color-bordeaux)] hover:bg-[var(--color-sand)]"
+                    >
+                      PDF
+                    </a>
+                  ) : (
+                    <Link
+                      href={`/livre/${b.slug}?pdf=achat`}
+                      title="Le PDF est réservé à l'achat à l'unité"
+                      className="flex-1 rounded-full border border-dashed border-[var(--color-sand)] py-2 text-center font-ui text-xs text-[var(--color-ink)]/45 hover:border-[var(--color-bordeaux)] hover:text-[var(--color-bordeaux)]"
+                    >
+                      PDF · achat
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}

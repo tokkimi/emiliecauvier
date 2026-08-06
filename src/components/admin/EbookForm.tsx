@@ -1,6 +1,6 @@
 import { saveEbook } from '@/app/admin/livres/actions';
 
-const COLLECTIONS = ['ACHETEURS', 'VENDEURS', 'INVESTISSEURS', 'QUEBEC_LEGAL', 'SITUATIONS', 'BILINGUE', 'NICHE'];
+const COLLECTIONS = ['ACHETEURS', 'VENDEURS', 'INVESTISSEURS', 'QUEBEC_LEGAL', 'SITUATIONS', 'NICHE'];
 
 const field = 'mt-1 w-full rounded-lg border border-[var(--color-sand)] bg-white px-4 py-2.5 font-body outline-none focus:border-[var(--color-bordeaux)]';
 const label = 'block font-ui text-sm text-[var(--color-ink)]/80';

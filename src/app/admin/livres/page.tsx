@@ -58,7 +58,7 @@ export default async function AdminBooks() {
             {ebooks.length === 0 && (
               <tr>
                 <td colSpan={6} className="px-4 py-10 text-center text-[var(--color-ink)]/50">
-                  Aucun guide en base. Lancez <code>npm run seed</code> pour importer les 50 guides.
+                  Aucun guide en base. Lancez <code>npm run seed</code> pour importer les 48 guides.
                 </td>
               </tr>
             )}

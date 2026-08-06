@@ -7,7 +7,7 @@ import { bySlug, BOOKS, COLLECTIONS } from '@/data/books';
 import { formatPrice, BRAND } from '@/lib/format';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
-import { hasAccess } from '@/lib/entitlements';
+import { hasAccess, canDownload } from '@/lib/entitlements';
 import { BuyButtons } from '@/components/BuyButtons';
 
 export async function generateMetadata({
@@ -32,6 +32,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   // L'ebook doit exister en base pour connaître l'accès ; sinon on retombe sur le catalogue statique.
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
   const access = dbEbook ? await hasAccess(userId, dbEbook.id) : false;
+  const downloadable = dbEbook ? await canDownload(userId, dbEbook.id) : false;
 
   const related = BOOKS.filter((b) => b.collection === book.collection && b.slug !== slug).slice(0, 3);
 
@@ -79,11 +80,11 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             <p className="mt-1 font-ui text-sm text-[var(--color-ink)]/60">Accès à vie · lecture en ligne + PDF</p>
 
-            <BuyButtons slug={book.slug} hasAccess={access} loggedIn={Boolean(userId)} />
+            <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} loggedIn={Boolean(userId)} />
 
             <div className="mt-6 border-t border-[var(--color-sand)] pt-5">
               <p className="font-ui text-sm text-[var(--color-ink)]/70">
-                Ou <strong>{formatPrice(BRAND.subscriptionCents)}/mois</strong> pour les 50 guides.
+                Ou <strong>{formatPrice(BRAND.subscriptionCents)}/mois</strong> pour lire les 48 guides en ligne.
               </p>
               <Link href="/inscription?plan=abonnement" className="mt-2 inline-block font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
                 Découvrir l&apos;abonnement →
