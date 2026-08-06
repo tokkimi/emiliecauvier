@@ -6,7 +6,7 @@ import { getT } from '@/lib/i18n';
 export const metadata: Metadata = {
   title: 'À propos · About',
   description:
-    'Courtière immobilière résidentielle dans le Grand Montréal, Émilie Cauvier accompagne acheteurs, vendeurs et investisseurs — et partage son expérience du terrain dans La Bibliothèque.',
+    'Courtier immobilier résidentiel & commercial dans le Grand Montréal, Émilie Cauvier accompagne acheteurs, vendeurs et investisseurs — et partage son expérience du terrain dans La Bibliothèque.',
 };
 
 export default async function AproposPage() {
