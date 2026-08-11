@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s · La Bibliothèque',
   },
   description:
-    'Les guides immobiliers d\'Emilie Cauvier pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (10 $ CAD) ou par abonnement (19 $/mois).',
+    'Les guides immobiliers d\'Emilie Cauvier pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (9,95 $ CAD) ou par abonnement (19 $/mois).',
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
   openGraph: { type: 'website', locale: 'fr_CA', siteName: 'La Bibliothèque' },
 };
@@ -28,6 +28,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
+        {/* Mot manuscrit, sur fond blanc, juste avant le pied de page */}
+        <section className="bg-white">
+          <div className="mx-auto max-w-2xl px-6 py-16">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/manuscrit.png"
+              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilio"
+              className="mx-auto w-full max-w-xl"
+            />
+          </div>
+        </section>
         <SiteFooter />
       </body>
     </html>
