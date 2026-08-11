@@ -62,7 +62,7 @@ export default async function AproposPage() {
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/photos/emilie-1.jpg"
+            src="/photos/emilie-2.jpg"
             alt="Emilie Cauvier"
             className="mx-auto w-full max-w-xs rounded-3xl object-cover shadow-md"
           />
