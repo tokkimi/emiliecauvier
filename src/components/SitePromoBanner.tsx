@@ -1,7 +1,7 @@
 import { getT } from '@/lib/i18n';
 
 /**
- * Bannière de mise en avant du site principal d'Émilie Cauvier (emiliecauvier.com).
+ * Bannière de mise en avant du site principal d'Emilie Cauvier (emiliecauvier.com).
  * La bande visuelle vit dans public/photos/banniere-site.jpg (remplaçable).
  */
 export async function SitePromoBanner() {
@@ -12,7 +12,7 @@ export async function SitePromoBanner() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/photos/banniere-site.jpg"
-        alt="L'univers d'Émilie Cauvier"
+        alt="L'univers d'Emilie Cauvier"
         className="h-40 w-full object-cover sm:h-56"
       />
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-5 py-12 text-center sm:py-14">

@@ -7,10 +7,10 @@ export const PACK_CENTS = 2900; // pack d'une collection complète
 
 export const BRAND = {
   name: 'La Bibliothèque',
-  author: 'Émilie Cauvier',
+  author: 'Emilie Cauvier',
   tagline: 'Guides immobiliers pour le Grand Montréal',
   subscriptionCents: 1900,
-  unitCents: 1000,
+  unitCents: 995,
   packCents: 2900,
   address: '6640, avenue de l\'Esplanade, Montréal (QC) H2V 4L5',
 };

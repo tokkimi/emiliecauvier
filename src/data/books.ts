@@ -15,7 +15,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Conjoints de fait, indivision et convention.",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "01_devenir-proprietaire-au-quebec.pdf",
     "chapters": [
       "Êtes-vous prêt à acheter ?",
@@ -35,7 +35,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Les pièges coûteux du premier achat — et comment les éviter",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "02_cinq-erreurs-a-10000-de-l-acheteur.pdf",
     "chapters": [
       "Erreur n°1 — Magasiner sans vraie préapprobation",
@@ -52,7 +52,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Comprendre, préparer et obtenir un financement solide",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "03_la-preapprobation-hypothecaire-decodee.pdf",
     "chapters": [
       "Préqualification vs préapprobation",
@@ -69,7 +69,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Droits de mutation immobilière au Québec — calcul, échéance et cas particuliers",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "04_la-taxe-de-bienvenue-expliquee.pdf",
     "chapters": [
       "D'où vient cette taxe ?",
@@ -86,7 +86,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Déclaration, fonds de prévoyance et charges — acheter un condo sans mauvaise surprise",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "05_acheter-en-copropriete-condo.pdf",
     "chapters": [
       "Copropriété divise : comment ça fonctionne",
@@ -103,7 +103,7 @@ export const BOOKS: Book[] = [
     "subtitle": "La checklist de l'inspecteur — voir au-delà de la décoration",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "06_checklist-visite-inspection.pdf",
     "chapters": [
       "Avant d'entrer : l'extérieur et le terrain",
@@ -120,7 +120,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Prix, conditions, délais et stratégie d'offre — sans se piéger",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "07_promesse-achat-gagnante.pdf",
     "chapters": [
       "Ce qu'est (vraiment) une promesse d'achat",
@@ -137,7 +137,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Devenir propriétaire-occupant : se loger pendant que ses locataires paient l'hypothèque",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "08_duplex-triplex-habiter-louer.pdf",
     "chapters": [
       "Pourquoi le plex est un tremplin idéal",
@@ -154,7 +154,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Construction neuve, garantie GCR et propriété existante — bien choisir",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "09_acheter-neuf-vs-ancien-gcr.pdf",
     "chapters": [
       "Neuf vs ancien : le vrai match",
@@ -170,7 +170,7 @@ export const BOOKS: Book[] = [
     "subtitle": "RAP, CELIAPP et don familial — rassembler votre mise de fonds intelligemment",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "10_financer-mise-de-fonds-rap-celiapp-don.pdf",
     "chapters": [
       "De combien avez-vous besoin ?",
@@ -186,7 +186,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Laval et la Rive-Nord — trouver le secteur qui vous ressemble",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "11_choisir-son-quartier-laval-rive-nord.pdf",
     "chapters": [
       "La méthode d'évaluation d'un quartier",
@@ -202,7 +202,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Le guide des arrondissements — trouver son quartier dans la métropole",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "12_acheter-a-montreal-arrondissements.pdf",
     "chapters": [
       "Comprendre la logique montréalaise",
@@ -218,7 +218,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Notaire, inspection, ajustements et cie — le vrai coût, sans surprise",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "13_les-vrais-frais-de-l-achat.pdf",
     "chapters": [
       "Les frais payés autour de la transaction",
@@ -234,7 +234,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Les vérifications terrain propres au Québec — acheter les yeux ouverts",
     "collection": "ACHETEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "14_sols-argileux-pyrite-drain-francais.pdf",
     "chapters": [
       "Les sols argileux et le mouvement des fondations",
@@ -250,7 +250,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Le plan de match en 7 étapes — du bon prix au closing",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "15_vendre-au-meilleur-prix-7-etapes.pdf",
     "chapters": [
       "Étapes 1-2 : le bon prix et la préparation",
@@ -266,7 +266,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Préparer sa propriété à vendre en un week-end, pièce par pièce, à petit budget",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "16_home-staging-express.pdf",
     "chapters": [
       "Les 3 principes qui font vendre",
@@ -282,7 +282,7 @@ export const BOOKS: Book[] = [
     "subtitle": "L'analyse comparative de marché expliquée — vendre à la juste valeur",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "17_fixer-le-bon-prix-analyse-comparative.pdf",
     "chapters": [
       "Ce qui détermine (vraiment) la valeur",
@@ -298,7 +298,7 @@ export const BOOKS: Book[] = [
     "subtitle": "DuProprio vs courtier immobilier — le vrai calcul, sans mythe",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "18_vendre-seul-duproprio-vs-courtier.pdf",
     "chapters": [
       "Ce que fait vraiment un courtier",
@@ -314,7 +314,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Éviter les vices cachés et les poursuites — vendre l'esprit tranquille",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "19_declaration-du-vendeur-vices-caches.pdf",
     "chapters": [
       "La garantie légale de qualité",
@@ -330,7 +330,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Documents, charges et pièges spécifiques à la copropriété",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "20_vendre-son-condo.pdf",
     "chapters": [
       "Préparer le dossier de copropriété",
@@ -346,7 +346,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Vendre à l'ère numérique — la première visite se fait en ligne",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "21_photos-video-marketing.pdf",
     "chapters": [
       "Les photos : votre vitrine numérique",
@@ -362,7 +362,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Côté vendeur — transformer la compétition en meilleur résultat",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "22_gerer-les-offres-multiples-vendeur.pdf",
     "chapters": [
       "Comment naissent les offres multiples",
@@ -378,7 +378,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Succession — vendre sereinement une propriété dont on hérite",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "23_vendre-propriete-heritee-succession.pdf",
     "chapters": [
       "Le rôle du liquidateur et les préalables",
@@ -394,7 +394,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Séparation ou divorce — vendre la propriété avec clarté et sérénité",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "24_vendre-separation-divorce.pdf",
     "chapters": [
       "Comprendre le statut de la propriété",
@@ -410,7 +410,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Quand, pourquoi et combien — le document qui peut bloquer une vente",
     "collection": "VENDEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "25_certificat-de-localisation.pdf",
     "chapters": [
       "Qu'est-ce qu'un certificat de localisation ?",
@@ -426,7 +426,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Acheter son premier plex sans se tromper — rentabilité, financement, gestion",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "26_premier-immeuble-a-revenus.pdf",
     "chapters": [
       "Penser comme un investisseur",
@@ -442,7 +442,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Cashflow, taux de capitalisation et MRB — les chiffres qui décident",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "27_calculer-la-rentabilite.pdf",
     "chapters": [
       "Le revenu net d'exploitation (RNE)",
@@ -458,7 +458,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Mise de fonds, SCHL et montage — obtenir le bon financement locatif",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "28_financer-immeuble-a-revenus.pdf",
     "chapters": [
       "1 à 4 logements vs 5 logements et plus",
@@ -474,7 +474,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Revenus locatifs, dépenses, amortissement et gain en capital au Québec",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "29_fiscalite-investisseur-immobilier.pdf",
     "chapters": [
       "Revenus locatifs et dépenses déductibles",
@@ -490,7 +490,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Baux, augmentations et droits — gérer ses locataires au Québec",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "30_locataires-et-tal.pdf",
     "chapters": [
       "Le bail et la sélection des locataires",
@@ -506,7 +506,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Le cadre légal québécois — comprendre ses droits et ses limites",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "31_reprise-de-logement-et-eviction.pdf",
     "chapters": [
       "Reprise vs éviction : deux choses différentes",
@@ -522,7 +522,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Le flip et la plus-value — rénover intelligemment, pas à perte",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "32_renover-pour-creer-de-la-valeur-flip.pdf",
     "chapters": [
       "Quelles rénovations créent vraiment de la valeur",
@@ -538,7 +538,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Ce qui est légal au Québec — avant de se lancer dans le court terme",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "33_location-court-terme-airbnb-legalite.pdf",
     "chapters": [
       "Le cadre provincial : enregistrement et affichage",
@@ -554,7 +554,7 @@ export const BOOKS: Book[] = [
     "subtitle": "De 1 à 5 portes — faire croître son patrimoine immobilier étape par étape",
     "collection": "INVESTISSEURS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "34_batir-un-portefeuille-immobilier.pdf",
     "chapters": [
       "L'équité, moteur de la croissance",
@@ -570,7 +570,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Vos droits de consommateur — l'encadrement du courtage immobilier au Québec",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "35_comprendre-la-loi-sur-le-courtage.pdf",
     "chapters": [
       "L'OACIQ et sa mission",
@@ -585,7 +585,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Ce que fait le notaire dans une transaction immobilière québécoise",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "36_le-role-du-notaire.pdf",
     "chapters": [
       "Un officier public impartial",
@@ -600,7 +600,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Taux, terme et amortissement — comprendre et choisir son prêt",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "37_hypotheque-fixe-vs-variable.pdf",
     "chapters": [
       "Taux fixe vs taux variable",
@@ -615,7 +615,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Bien se protéger — les assurances à connaître à l'achat",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "38_assurance-habitation-et-titres.pdf",
     "chapters": [
       "L'assurance habitation",
@@ -630,7 +630,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Lire les cycles pour acheter et vendre avec discernement",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "39_marche-grand-montreal-cycles.pdf",
     "chapters": [
       "Marché d'acheteurs, marché de vendeurs",
@@ -645,7 +645,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Mythes et réalités de l'immobilier hivernal au Québec",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "40_acheter-vendre-en-hiver.pdf",
     "chapters": [
       "Le mythe de la « mauvaise saison »",
@@ -660,7 +660,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Deux chiffres, deux usages — ne plus les confondre",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "41_evaluation-municipale-vs-valeur-marchande.pdf",
     "chapters": [
       "L'évaluation municipale : un outil fiscal",
@@ -675,7 +675,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Bien choisir — deux façons très différentes de posséder un condo",
     "collection": "QUEBEC_LEGAL",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "42_copropriete-divise-vs-indivise.pdf",
     "chapters": [
       "La copropriété divise (le condo classique)",
@@ -690,7 +690,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Conjoints de fait, indivision et convention — se protéger en couple",
     "collection": "SITUATIONS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "43_acheter-a-deux.pdf",
     "chapters": [
       "Mariés vs conjoints de fait",
@@ -705,7 +705,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Acheter au Québec quand on vient d'ailleurs — repères et démarches",
     "collection": "SITUATIONS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "44_premier-achat-nouveaux-arrivants.pdf",
     "chapters": [
       "Bâtir son dossier de crédit et de financement",
@@ -720,7 +720,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Se reloger sans se retrouver coincé — coordonner les deux transactions",
     "collection": "SITUATIONS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "45_acheter-et-vendre-en-meme-temps.pdf",
     "chapters": [
       "Vendre d'abord ou acheter d'abord ?",
@@ -735,7 +735,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Downsizing, revenus et transmission — l'immobilier au service de votre retraite",
     "collection": "SITUATIONS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "46_retraite-et-immobilier-downsizing.pdf",
     "chapters": [
       "Le downsizing : réduire pour mieux vivre",
@@ -750,7 +750,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Don, prêt ou cosignature — soutenir sans se mettre en danger",
     "collection": "SITUATIONS",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "47_aider-son-enfant-a-acheter.pdf",
     "chapters": [
       "Le don pour la mise de fonds",
@@ -765,7 +765,7 @@ export const BOOKS: Book[] = [
     "subtitle": "Résidence secondaire au Québec — rêve, réalité et vérifications essentielles",
     "collection": "NICHE",
     "language": "fr",
-    "priceCents": 1000,
+    "priceCents": 995,
     "pdf": "50_acheter-un-chalet-residence-secondaire.pdf",
     "chapters": [
       "Financer une résidence secondaire",

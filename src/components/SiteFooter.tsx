@@ -6,18 +6,16 @@ export async function SiteFooter() {
   const t = await getT();
   return (
     <footer className="border-t border-[var(--color-sand)] bg-[var(--color-ink)] text-[var(--color-cream)]">
-      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:grid-cols-2">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-signe-em.png" alt="Signé par Émilie" className="mb-4 h-16 w-auto" />
+          <img src="/logo-signe-em.png" alt="Signé par Emilie" className="mb-4 h-16 w-auto" />
           <p className="font-display text-lg">La Bibliothèque</p>
           <p className="mt-2 font-ui text-sm text-white/60">
             {t.footer_tagline_1}
-            <br />
-            {t.footer_tagline_2}
           </p>
         </div>
-        <div className="font-ui text-sm">
+        <div className="font-ui text-sm sm:text-right">
           <p className="mb-3 uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">{t.footer_navigate}</p>
           <ul className="space-y-2 text-white/70">
             <li><Link href="/catalogue" className="hover:text-white">{t.footer_catalogue}</Link></li>
@@ -25,10 +23,6 @@ export async function SiteFooter() {
             <li><Link href="/abonnement" className="hover:text-white">{t.footer_subscription}</Link></li>
             <li><Link href="/compte" className="hover:text-white">{t.footer_account}</Link></li>
           </ul>
-        </div>
-        <div className="font-ui text-sm">
-          <p className="mb-3 uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">{t.footer_contact}</p>
-          <p className="text-white/70">{BRAND.address}</p>
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center font-ui text-xs text-white/40">

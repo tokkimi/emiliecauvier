@@ -5,11 +5,11 @@ import { SiteFooter } from '@/components/SiteFooter';
 
 export const metadata: Metadata = {
   title: {
-    default: 'La Bibliothèque — Guides immobiliers d\'Émilie Cauvier',
+    default: 'La Bibliothèque — Guides immobiliers d\'Emilie Cauvier',
     template: '%s · La Bibliothèque',
   },
   description:
-    'Les guides immobiliers d\'Émilie Cauvier pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (10 $ CAD) ou par abonnement (19 $/mois).',
+    'Les guides immobiliers d\'Emilie Cauvier pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (10 $ CAD) ou par abonnement (19 $/mois).',
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
   openGraph: { type: 'website', locale: 'fr_CA', siteName: 'La Bibliothèque' },
 };

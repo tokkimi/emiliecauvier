@@ -1,37 +1,19 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { BRAND } from '@/lib/format';
 import { getT } from '@/lib/i18n';
 
 export const metadata: Metadata = {
   title: 'À propos · About',
   description:
-    'Courtier immobilier résidentiel & commercial dans le Grand Montréal, Émilie Cauvier accompagne acheteurs, vendeurs et investisseurs — et partage son expérience du terrain dans La Bibliothèque.',
+    'Courtier immobilier résidentiel & commercial dans le Grand Montréal, Emilie Cauvier accompagne acheteurs, vendeurs et investisseurs — et partage son expérience du terrain dans La Bibliothèque.',
 };
 
 export default async function AproposPage() {
   const t = await getT();
   return (
     <div>
-      {/* HERO */}
-      <section className="bg-[var(--color-bordeaux)] text-[var(--color-cream)]">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-[1fr_1.2fr]">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/photos/emilie-1.jpg"
-            alt="Émilie Cauvier"
-            className="mx-auto w-full max-w-sm rounded-3xl object-cover shadow-lg"
-          />
-          <div>
-            <p className="font-ui text-xs uppercase tracking-[0.28em] text-[var(--color-gold-soft)]">{t.about_eyebrow}</p>
-            <h1 className="mt-4 font-display text-4xl leading-tight sm:text-5xl">Émilie Cauvier</h1>
-            <p className="mt-4 max-w-xl font-body text-lg text-white/85">{t.about_role}</p>
-          </div>
-        </div>
-      </section>
-
       {/* BIO */}
-      <section className="mx-auto max-w-3xl px-5 py-16">
+      <section className="mx-auto max-w-3xl px-5 pt-16 pb-16">
         <div className="space-y-5 font-body text-lg leading-relaxed text-[var(--color-ink)]/85">
           <p>{t.about_p1}</p>
           <p>
@@ -77,12 +59,11 @@ export default async function AproposPage() {
                 {t.about_cta_sub}
               </Link>
             </div>
-            <p className="mt-6 font-ui text-sm text-[var(--color-ink)]/55">{BRAND.address}</p>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/photos/emilie-2.jpg"
-            alt="Émilie Cauvier"
+            src="/photos/emilie-1.jpg"
+            alt="Emilie Cauvier"
             className="mx-auto w-full max-w-xs rounded-3xl object-cover shadow-md"
           />
         </div>

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { BRAND, formatPrice } from '@/lib/format';
-import { SitePromoBanner } from '@/components/SitePromoBanner';
 import { FeaturedCarousel } from '@/components/FeaturedCarousel';
 import { getLocale, getT } from '@/lib/i18n';
 import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
@@ -18,8 +17,6 @@ export default async function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-[var(--color-bordeaux)] text-[var(--color-cream)]">
         <div className="mx-auto max-w-6xl px-5 py-24 sm:py-32">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-signe-em.png" alt="Signé par Émilie Cauvier" className="mb-8 h-24 w-auto animate-fade-up" />
           <p className="font-ui text-xs uppercase tracking-[0.28em] text-[var(--color-gold-soft)] animate-fade-up">
             {t.home_eyebrow}
           </p>
@@ -28,8 +25,6 @@ export default async function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl font-body text-lg text-white/80 animate-fade-up">
             {t.home_subtitle_pre}
-            {BRAND.author}
-            {t.home_subtitle_post}
           </p>
           <div className="mt-10 flex flex-wrap gap-4 font-ui animate-fade-up">
             <Link
@@ -161,9 +156,6 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* BANNIÈRE emiliecauvier.com */}
-      <SitePromoBanner />
     </>
   );
 }
