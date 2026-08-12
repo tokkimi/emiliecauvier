@@ -1,1 +1,158 @@
-{"number": 47, "title": "Aider son enfant à acheter", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>De plus en plus de parents aident leur enfant à accéder à la propriété. C'est un beau geste — qui mérite d'être structuré pour protéger tout le monde. Don, prêt, cosignature : chaque formule a ses implications.</p><p>Ce guide compare les façons d'aider, leurs avantages et leurs risques, et comment se protéger.</p><p>Contenu informatif, non un avis juridique ou fiscal : consultez un notaire et un comptable. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Le don pour la mise de fonds", "objective": "Comprendre la formule la plus simple.", "html": "<p class=\"lede\">Comprendre la formule la plus simple.</p>\n<p>Le don d'une somme pour la mise de fonds est courant et accepté par les prêteurs, à condition de fournir une lettre de don confirmant qu'il ne s'agit pas d'un prêt remboursable. C'est simple, mais l'argent donné n'est plus le vôtre.</p>\n<ul><li>Lettre de don requise par le prêteur.</li><li>Considérer l'équité entre vos enfants (si vous en avez plusieurs).</li><li>Réfléchir à l'impact sur vos propres finances de retraite.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne donnez que ce que vous pouvez vous permettre de ne jamais revoir, sans compromettre votre propre retraite. Aider son enfant est généreux, mais votre sécurité financière passe d'abord.</p></aside>"}, {"title": "Le prêt familial", "objective": "Prêter plutôt que donner, proprement.", "html": "<p class=\"lede\">Prêter plutôt que donner, proprement.</p>\n<p>Vous pouvez prêter (plutôt que donner) à votre enfant. Dans ce cas, mettez les modalités par écrit (montant, remboursement, intérêt éventuel). Attention : un prêt à rembourser peut affecter la capacité d'emprunt de l'enfant et doit être divulgué au prêteur.</p>\n<p>Un prêt familial mal documenté est une source classique de malentendus familiaux : la clarté protège la relation.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si vous prêtez, mettez tout par écrit, même en famille — surtout en famille. Un document clair évite les non-dits et préserve la relation si la situation évolue.</p></aside>"}, {"title": "La cosignature : aider sans donner d'argent", "objective": "Comprendre l'engagement réel d'un cosignataire.", "html": "<p class=\"lede\">Comprendre l'engagement réel d'un cosignataire.</p>\n<p>En cosignant l'hypothèque, vous aidez votre enfant à se qualifier grâce à vos revenus et votre crédit. Mais attention : vous devenez responsable de la dette. Si l'enfant ne paie pas, le prêteur peut se tourner vers vous, et cela affecte votre propre capacité d'emprunt.</p>\n<ul><li>Vous êtes légalement engagé sur le prêt.</li><li>Cela apparaît dans votre dossier de crédit.</li><li>À n'envisager qu'en pleine conscience du risque.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Cosigner n'est pas un simple coup de pouce sur papier : c'est prendre la dette sur vos épaules. Ne le faites que si vous êtes prêt et capable d'assumer les versements en cas de défaut.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Clarifier la forme d'aide envisagée (don, prêt, cosignature).</li><li>Évaluer l'impact sur mes propres finances.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Documenter l'aide (lettre de don ou contrat de prêt).</li><li>Consulter un notaire/comptable sur les implications.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Aider d'une façon qui protège l'enfant ET moi-même.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Lettre de don : document confirmant qu'un don n'est pas remboursable.</li><li>Prêt familial : aide remboursable, à documenter par écrit.</li><li>Cosignature : engagement légal du parent sur l'hypothèque de l'enfant.</li><li>Capacité d'emprunt : influencée par un prêt à rembourser ou une cosignature.</li><li>Équité entre enfants : à considérer quand on aide un seul enfant.</li></ul>"}], "qcm": [{"q": "Un don pour la mise de fonds requiert :", "options": ["A) Rien", "B) Une lettre de don confirmant que ce n'est pas un prêt", "C) Un notaire étranger", "D) Un remboursement"], "answer": 1, "explanation": "Exigée par le prêteur (chap. 1)."}, {"q": "On ne devrait donner que :", "options": ["A) Tout son argent", "B) Ce qu'on peut se permettre de ne jamais revoir", "C) En s'endettant", "D) Sous pression"], "answer": 1, "explanation": "La sécurité de la retraite d'abord (chap. 1)."}, {"q": "Un prêt familial doit être :", "options": ["A) Verbal", "B) Mis par écrit (montant, remboursement)", "C) Secret", "D) Sans conditions"], "answer": 1, "explanation": "La clarté protège la relation (chap. 2)."}, {"q": "Un prêt à rembourser peut :", "options": ["A) Améliorer le crédit", "B) Affecter la capacité d'emprunt de l'enfant", "C) Être ignoré du prêteur", "D) Rien"], "answer": 1, "explanation": "À divulguer au prêteur (chap. 2)."}, {"q": "En cosignant, le parent :", "options": ["A) Ne risque rien", "B) Devient responsable de la dette", "C) Donne de l'argent", "D) Paie la taxe"], "answer": 1, "explanation": "Engagement légal réel (chap. 3)."}, {"q": "La cosignature apparaît :", "options": ["A) Nulle part", "B) Dans le dossier de crédit du parent", "C) Sur la maison", "D) Dans le journal"], "answer": 1, "explanation": "Elle affecte votre crédit (chap. 3)."}]}
+{
+  "number": 47,
+  "title": "Aider son enfant à acheter",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>De plus en plus de parents aident leur enfant à accéder à la propriété. C'est un beau geste — qui mérite d'être structuré pour protéger tout le monde. Don, prêt, cosignature : chaque formule a ses implications.</p><p>Ce guide compare les façons d'aider, leurs avantages et leurs risques, et comment se protéger.</p><p>Contenu informatif, non un avis juridique ou fiscal : consultez un notaire et un comptable. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "Le don pour la mise de fonds",
+      "objective": "Comprendre la formule la plus simple.",
+      "html": "<p class=\"lede\">Comprendre la formule la plus simple.</p>\n<p>Le don d'une somme pour la mise de fonds est courant et <strong>accepté par les prêteurs</strong>, à condition de fournir une <strong>lettre de don</strong> confirmant qu'il ne s'agit pas d'un prêt remboursable.</p><p>C'est simple, mais l'argent donné n'est plus le vôtre. Deux points de vigilance :</p><ul><li>Considérer l'<strong>équité</strong> entre vos enfants (si vous en avez plusieurs).</li><li>Réfléchir à l'impact sur vos propres finances de retraite.</li></ul><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne videz jamais votre coussin de retraite pour aider un enfant. Un don généreux qui vous fragilise n'aide personne à long terme : aidez à hauteur de ce que vous pouvez vraiment vous permettre.</p></aside>"
+    },
+    {
+      "title": "Le prêt familial",
+      "objective": "Prêter plutôt que donner, proprement.",
+      "html": "<p class=\"lede\">Prêter plutôt que donner, proprement.</p>\n<p>Vous pouvez <strong>prêter</strong> plutôt que donner à votre enfant. Dans ce cas, mettez les modalités <strong>par écrit</strong> : montant, remboursement, intérêt éventuel.</p><p>Attention : un prêt à rembourser peut <strong>affecter la capacité d'emprunt</strong> de l'enfant et doit être divulgué au prêteur.</p><p>Un prêt familial mal documenté est une source classique de malentendus : la clarté protège la relation.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Mettez le prêt familial sur papier, même entre parent et enfant. Un simple document qui précise « qui doit combien, remboursé comment » évite des années de non-dits et de rancœur.</p></aside>"
+    },
+    {
+      "title": "La cosignature : aider sans donner d'argent",
+      "objective": "Comprendre l'engagement réel d'un cosignataire.",
+      "html": "<p class=\"lede\">Comprendre l'engagement réel d'un cosignataire.</p>\n<p>En <strong>cosignant</strong> l'hypothèque, vous aidez votre enfant à se qualifier grâce à vos revenus et à votre crédit. Mais l'engagement est réel :</p><ul><li>Vous devenez <strong>responsable de la dette</strong>.</li><li>Si l'enfant ne paie pas, le prêteur peut se tourner vers vous.</li><li>Cela apparaît dans votre dossier de crédit et affecte votre propre capacité d'emprunt.</li></ul><p>La cosignature n'est pas une simple signature de courtoisie : c'est un engagement financier de plein droit.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne cosignez jamais « juste pour aider » sans comprendre que vous vous engagez sur toute la dette. Si l'enfant cesse de payer, c'est vous que la banque appellera. Signez seulement si vous pouvez l'assumer.</p></aside>"
+    },
+    {
+      "title": "Se protéger tout en aidant",
+      "objective": "Aider d'une façon qui protège tout le monde.",
+      "html": "<p class=\"lede\">Aider d'une façon qui protège tout le monde.</p>\n<p>Aider son enfant est un beau geste — qui mérite d'être <strong>structuré</strong>. Quelques réflexes protègent l'enfant <em>et</em> vous :</p><ul><li><strong>Documenter</strong> systématiquement (lettre de don ou contrat de prêt).</li><li>Consulter un <strong>notaire</strong> et un <strong>comptable</strong> sur les implications juridiques et fiscales.</li><li>Prévoir le cas où le couple de l'enfant se sépare (surtout s'il achète à deux).</li></ul><p>Ce n'est pas un manque de confiance : c'est protéger la relation familiale.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si votre enfant achète en couple, pensez à ce qui arrive à votre don en cas de séparation. Une convention entre conjoints peut protéger la somme que vous avez offerte. Le notaire saura vous guider.</p></aside>"
+    },
+    {
+      "title": "Choisir la bonne forme d'aide",
+      "objective": "Décider en connaissance de cause.",
+      "html": "<p class=\"lede\">Décider en connaissance de cause.</p>\n<p>Don, prêt, cosignature : chaque formule a sa logique. Pour choisir :</p><ol><li><strong>Clarifier</strong> la forme d'aide envisagée et votre capacité réelle.</li><li>Évaluer l'<strong>impact</strong> sur vos propres finances.</li><li><strong>Documenter</strong> le tout (lettre de don ou contrat de prêt).</li><li><strong>Consulter</strong> un notaire/comptable avant de vous engager.</li></ol><p>La bonne aide, c'est celle qui fait avancer l'enfant sans vous mettre en péril.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Il n'y a pas de « meilleure » formule universelle : tout dépend de votre situation. L'important est de choisir en connaissance de cause, par écrit, plutôt que sur un coup de cœur.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Clarifier la forme d'aide envisagée (don, prêt, cosignature).</li><li>Évaluer l'impact sur mes propres finances.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Documenter l'aide (lettre de don ou contrat de prêt).</li><li>Consulter un notaire/comptable sur les implications.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Aider d'une façon qui protège l'enfant ET moi-même.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Lettre de don : document confirmant qu'un don n'est pas remboursable.</li><li>Prêt familial : aide remboursable, à documenter par écrit.</li><li>Cosignature : engagement légal du parent sur l'hypothèque de l'enfant.</li><li>Capacité d'emprunt : influencée par un prêt à rembourser ou une cosignature.</li><li>Équité entre enfants : à considérer quand on aide un seul enfant.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Le don pour la mise de fonds exige :",
+      "options": [
+        "A) Rien",
+        "B) Une lettre de don confirmant qu'il n'est pas remboursable",
+        "C) Un notaire uniquement",
+        "D) Un remboursement"
+      ],
+      "answer": 1,
+      "explanation": "Lettre de don (chap. 1)."
+    },
+    {
+      "q": "En aidant un enfant, il ne faut pas :",
+      "options": [
+        "A) Documenter l'aide",
+        "B) Vider son coussin de retraite",
+        "C) Consulter un pro",
+        "D) Réfléchir à l'équité"
+      ],
+      "answer": 1,
+      "explanation": "Aider sans se fragiliser (chap. 1)."
+    },
+    {
+      "q": "Un prêt familial doit être :",
+      "options": [
+        "A) Verbal",
+        "B) Mis par écrit (montant, remboursement, intérêt)",
+        "C) Secret",
+        "D) Ignoré du prêteur"
+      ],
+      "answer": 1,
+      "explanation": "À documenter (chap. 2)."
+    },
+    {
+      "q": "Un prêt à rembourser peut :",
+      "options": [
+        "A) Augmenter la capacité d'emprunt",
+        "B) Affecter la capacité d'emprunt de l'enfant",
+        "C) Réduire les taxes",
+        "D) N'avoir aucun effet"
+      ],
+      "answer": 1,
+      "explanation": "Impact sur le financement (chap. 2)."
+    },
+    {
+      "q": "Cosigner une hypothèque signifie :",
+      "options": [
+        "A) Une simple courtoisie",
+        "B) Devenir responsable de la dette",
+        "C) Donner de l'argent",
+        "D) Louer"
+      ],
+      "answer": 1,
+      "explanation": "Engagement réel (chap. 3)."
+    },
+    {
+      "q": "La cosignature apparaît :",
+      "options": [
+        "A) Nulle part",
+        "B) Dans votre dossier de crédit",
+        "C) Sur la maison",
+        "D) À la ville"
+      ],
+      "answer": 1,
+      "explanation": "Elle affecte votre crédit (chap. 3)."
+    },
+    {
+      "q": "Pour se protéger en aidant, il faut :",
+      "options": [
+        "A) Ne rien écrire",
+        "B) Documenter et consulter notaire/comptable",
+        "C) Payer comptant",
+        "D) Se fier à la parole"
+      ],
+      "answer": 1,
+      "explanation": "Structurer l'aide (chap. 4)."
+    },
+    {
+      "q": "Si l'enfant achète en couple, penser à :",
+      "options": [
+        "A) Rien",
+        "B) Ce qui arrive au don en cas de séparation",
+        "C) Doubler le don",
+        "D) Cacher l'aide"
+      ],
+      "answer": 1,
+      "explanation": "Protéger la somme donnée (chap. 4)."
+    },
+    {
+      "q": "Structurer l'aide, c'est :",
+      "options": [
+        "A) Un manque de confiance",
+        "B) Protéger la relation familiale",
+        "C) Inutile",
+        "D) Illégal"
+      ],
+      "answer": 1,
+      "explanation": "Protège la famille (chap. 4)."
+    },
+    {
+      "q": "La meilleure forme d'aide est :",
+      "options": [
+        "A) Toujours le don",
+        "B) Celle choisie en connaissance de cause, par écrit",
+        "C) Toujours la cosignature",
+        "D) Sur un coup de cœur"
+      ],
+      "answer": 1,
+      "explanation": "Décider en connaissance de cause (chap. 5)."
+    }
+  ]
+}

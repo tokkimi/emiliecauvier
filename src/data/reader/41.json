@@ -1,1 +1,158 @@
-{"number": 41, "title": "Évaluation municipale vs valeur marchande", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>« Ma maison est évaluée à tant à la ville. » Cette phrase, on l'entend souvent — et elle mène à bien des malentendus sur les prix. L'évaluation municipale et la valeur marchande sont deux choses différentes, avec deux usages distincts.</p><p>Ce guide clarifie la différence, explique le facteur comparatif, et vous aide à utiliser le bon chiffre au bon moment.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "L'évaluation municipale : un outil fiscal", "objective": "Comprendre à quoi elle sert vraiment.", "html": "<p class=\"lede\">Comprendre à quoi elle sert vraiment.</p>\n<p>L'évaluation municipale figure au rôle d'évaluation. Elle sert à répartir les taxes municipales et scolaires. Elle est établie en masse, à une date de référence, pour l'ensemble d'un territoire — pas propriété par propriété au prix du jour.</p>\n<p>Elle peut donc être supérieure ou inférieure à la valeur marchande réelle, et souvent avec un décalage dans le temps.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>L'évaluation municipale répond à une question : « combien de taxes je paie ? ». Elle ne répond pas à « combien vaut ma maison sur le marché aujourd'hui ? ». Ne confondez jamais les deux.</p></aside>"}, {"title": "La valeur marchande : le prix du marché", "objective": "Comprendre ce que paie réellement un acheteur.", "html": "<p class=\"lede\">Comprendre ce que paie réellement un acheteur.</p>\n<p>La valeur marchande est le prix qu'un acheteur informé est prêt à payer aujourd'hui, dans les conditions actuelles. Elle se détermine par une analyse comparative de marché (ventes récentes semblables), pas par le rôle d'évaluation.</p>\n<p>C'est ce chiffre — et lui seul — qui doit guider un prix de vente ou une offre d'achat.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Pour acheter ou vendre, fiez-vous à la valeur marchande (analyse comparative), jamais à l'évaluation municipale. Le marché ne consulte pas le rôle d'évaluation pour décider quoi payer.</p></aside>"}, {"title": "Le facteur comparatif et les bons usages", "objective": "Relier les deux notions correctement.", "html": "<p class=\"lede\">Relier les deux notions correctement.</p>\n<p>La municipalité applique un « facteur comparatif » pour tenter de rapprocher le rôle d'évaluation de la valeur marchande (par exemple pour le calcul de la taxe de bienvenue). Cela montre bien que l'évaluation, seule, n'est pas la valeur du marché.</p>\n<ul><li>Évaluation municipale : pour les taxes, et comme base (ajustée) de la taxe de bienvenue.</li><li>Valeur marchande : pour fixer un prix de vente ou une offre.</li><li>Ne jamais négocier un prix sur la seule base de l'évaluation municipale.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si un vendeur ou un acheteur vous parle « évaluation municipale » pour justifier un prix, ramenez la discussion aux comparables. C'est le seul terrain solide pour s'entendre sur une valeur.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Repérer mon évaluation municipale et sa date.</li><li>Demander une analyse comparative pour la valeur marchande.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Utiliser la valeur marchande pour toute décision de prix.</li><li>Comprendre le facteur comparatif pour la taxe de bienvenue.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Ne plus confondre les deux chiffres.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Rôle d'évaluation : registre municipal des valeurs, base des taxes.</li><li>Évaluation municipale : valeur fiscale, distincte du prix de vente.</li><li>Valeur marchande : prix qu'un acheteur informé paie aujourd'hui.</li><li>Facteur comparatif : coefficient rapprochant l'évaluation du marché.</li><li>Analyse comparative : ventes récentes servant à déterminer la valeur marchande.</li></ul>"}], "qcm": [{"q": "L'évaluation municipale sert surtout à :", "options": ["A) Fixer le prix de vente", "B) Répartir les taxes", "C) Assurer la maison", "D) Payer le notaire"], "answer": 1, "explanation": "C'est un outil fiscal (chap. 1)."}, {"q": "Elle est établie :", "options": ["A) Propriété par propriété au prix du jour", "B) En masse, à une date de référence", "C) Chaque semaine", "D) Par l'acheteur"], "answer": 1, "explanation": "D'où les écarts avec le marché (chap. 1)."}, {"q": "La valeur marchande se détermine par :", "options": ["A) Le rôle d'évaluation", "B) Une analyse comparative de marché", "C) La taxe scolaire", "D) L'évaluation municipale"], "answer": 1, "explanation": "Ventes récentes semblables (chap. 2)."}, {"q": "Pour fixer un prix, on utilise :", "options": ["A) L'évaluation municipale", "B) La valeur marchande", "C) Le facteur comparatif seul", "D) Le hasard"], "answer": 1, "explanation": "Seule la valeur marchande (chap. 2)."}, {"q": "Le facteur comparatif sert à :", "options": ["A) Fixer le prix de vente", "B) Rapprocher l'évaluation de la valeur marchande (ex. taxe de bienvenue)", "C) Payer moins de taxes", "D) Rien"], "answer": 1, "explanation": "Ajustement fiscal (chap. 3)."}, {"q": "Négocier un prix sur la seule évaluation municipale est :", "options": ["A) Recommandé", "B) Une erreur", "C) Obligatoire", "D) Sans risque"], "answer": 1, "explanation": "On s'appuie sur les comparables (chap. 3)."}]}
+{
+  "number": 41,
+  "title": "Évaluation municipale vs valeur marchande",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>« Ma maison est évaluée à tant à la ville. » Cette phrase, on l'entend souvent — et elle mène à bien des malentendus sur les prix. L'évaluation municipale et la valeur marchande sont deux choses différentes, avec deux usages distincts.</p><p>Ce guide clarifie la différence, explique le facteur comparatif, et vous aide à utiliser le bon chiffre au bon moment.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "L'évaluation municipale : un outil fiscal",
+      "objective": "Comprendre à quoi elle sert vraiment.",
+      "html": "<p class=\"lede\">Comprendre à quoi elle sert vraiment.</p>\n<p>L'évaluation municipale figure au <strong>rôle d'évaluation</strong>. Son but n'est pas de fixer un prix de vente : elle sert à <strong>répartir les taxes</strong> municipales et scolaires.</p><p>Elle est établie « en masse », à une date de référence, pour l'ensemble d'un territoire — pas propriété par propriété au prix du jour. Conséquence :</p><ul><li>Elle peut être supérieure ou inférieure à la valeur marchande réelle.</li><li>Elle accuse souvent un décalage dans le temps.</li></ul><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>« La ville l'évalue à tant, donc ça vaut tant » : c'est le malentendu numéro un. L'évaluation municipale sert à calculer vos taxes, pas à fixer le prix de vente.</p></aside>"
+    },
+    {
+      "title": "La valeur marchande : le prix du marché",
+      "objective": "Comprendre ce que paie réellement un acheteur.",
+      "html": "<p class=\"lede\">Comprendre ce que paie réellement un acheteur.</p>\n<p>La valeur marchande est le prix qu'un <strong>acheteur informé</strong> est prêt à payer <em>aujourd'hui</em>, dans les conditions actuelles du marché.</p><p>Elle se détermine par une <strong>analyse comparative de marché</strong> (ventes récentes de propriétés semblables), et non par le rôle d'évaluation.</p><p>C'est ce chiffre — et lui seul — qui doit guider un prix de vente ou une offre d'achat.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Pour connaître la vraie valeur de votre propriété, demandez une analyse comparative fondée sur des ventes récentes du secteur. C'est le seul chiffre qui compte quand vient le temps de vendre ou d'acheter.</p></aside>"
+    },
+    {
+      "title": "Le facteur comparatif et les bons usages",
+      "objective": "Relier les deux notions correctement.",
+      "html": "<p class=\"lede\">Relier les deux notions correctement.</p>\n<p>La municipalité applique un <strong>facteur comparatif</strong> pour tenter de rapprocher le rôle d'évaluation de la valeur marchande — par exemple dans le calcul de la taxe de bienvenue.</p><p>Cela montre bien que l'évaluation, seule, n'est pas la valeur du marché. À chaque chiffre son usage :</p><ul><li><strong>Évaluation municipale</strong> : pour les taxes, et comme base (ajustée) de la taxe de bienvenue.</li><li><strong>Valeur marchande</strong> : pour fixer un prix, faire une offre, négocier.</li></ul><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Pour estimer votre taxe de bienvenue, souvenez-vous qu'on retient le plus élevé entre le prix payé et l'évaluation municipale ajustée du facteur comparatif. Ça évite les mauvaises surprises.</p></aside>"
+    },
+    {
+      "title": "Contester son évaluation municipale",
+      "objective": "Agir si le rôle vous semble erroné.",
+      "html": "<p class=\"lede\">Agir si le rôle vous semble erroné.</p>\n<p>Si votre évaluation municipale vous paraît nettement trop élevée par rapport au marché, vous pouvez la <strong>contester</strong> — dans un délai précis suivant le dépôt d'un nouveau rôle.</p><ol><li>Comparer votre évaluation à celle de propriétés semblables.</li><li>Rassembler des preuves (ventes comparables, état réel du bâtiment).</li><li>Déposer une <strong>demande de révision</strong> auprès de la municipalité dans le délai prévu.</li></ol><p>Une évaluation trop haute peut gonfler vos taxes année après année : le jeu peut en valoir la chandelle.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne laissez pas passer le délai de révision. Si votre évaluation dépasse clairement celle de maisons comparables, une contestation bien documentée peut réduire vos taxes pour des années.</p></aside>"
+    },
+    {
+      "title": "Le bon chiffre au bon moment",
+      "objective": "Ne plus jamais confondre les deux.",
+      "html": "<p class=\"lede\">Ne plus jamais confondre les deux.</p>\n<p>En pratique, gardez ce réflexe simple selon la situation :</p><ul><li>Je <strong>vends</strong> ou je fais une <strong>offre</strong> → valeur marchande (analyse comparative).</li><li>Je vérifie mes <strong>taxes</strong> → évaluation municipale (rôle).</li><li>J'estime ma <strong>taxe de bienvenue</strong> → le plus élevé du prix payé ou de l'évaluation ajustée.</li></ul><p>Les deux chiffres sont utiles ; c'est les mélanger qui mène aux erreurs de prix.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Affichez-vous mentalement deux tiroirs : « taxes » pour l'évaluation municipale, « prix » pour la valeur marchande. Ne piochez jamais dans le mauvais tiroir au moment de négocier.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Repérer mon évaluation municipale et sa date.</li><li>Demander une analyse comparative pour la valeur marchande.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Utiliser la valeur marchande pour toute décision de prix.</li><li>Comprendre le facteur comparatif pour la taxe de bienvenue.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Ne plus confondre les deux chiffres.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Rôle d'évaluation : registre municipal des valeurs, base des taxes.</li><li>Évaluation municipale : valeur fiscale, distincte du prix de vente.</li><li>Valeur marchande : prix qu'un acheteur informé paie aujourd'hui.</li><li>Facteur comparatif : coefficient rapprochant l'évaluation du marché.</li><li>Analyse comparative : ventes récentes servant à déterminer la valeur marchande.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "L'évaluation municipale sert surtout à :",
+      "options": [
+        "A) Fixer le prix de vente",
+        "B) Répartir les taxes",
+        "C) Payer le notaire",
+        "D) Assurer la maison"
+      ],
+      "answer": 1,
+      "explanation": "Outil fiscal (chap. 1)."
+    },
+    {
+      "q": "Elle est établie :",
+      "options": [
+        "A) Au prix du jour, propriété par propriété",
+        "B) En masse, à une date de référence",
+        "C) Par l'acheteur",
+        "D) Chaque semaine"
+      ],
+      "answer": 1,
+      "explanation": "Évaluation de masse (chap. 1)."
+    },
+    {
+      "q": "La valeur marchande est :",
+      "options": [
+        "A) Le chiffre du rôle",
+        "B) Le prix qu'un acheteur informé paie aujourd'hui",
+        "C) La taxe de bienvenue",
+        "D) La franchise"
+      ],
+      "answer": 1,
+      "explanation": "Prix réel du marché (chap. 2)."
+    },
+    {
+      "q": "Elle se détermine par :",
+      "options": [
+        "A) Le rôle d'évaluation",
+        "B) Une analyse comparative de marché",
+        "C) Le hasard",
+        "D) La ville"
+      ],
+      "answer": 1,
+      "explanation": "Ventes comparables (chap. 2)."
+    },
+    {
+      "q": "Le facteur comparatif sert à :",
+      "options": [
+        "A) Cacher les taxes",
+        "B) Rapprocher l'évaluation du marché (ex. taxe de bienvenue)",
+        "C) Fixer l'assurance",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Rapprochement évaluation/marché (chap. 3)."
+    },
+    {
+      "q": "Pour fixer un prix de vente, on utilise :",
+      "options": [
+        "A) L'évaluation municipale",
+        "B) La valeur marchande",
+        "C) La taxe scolaire",
+        "D) La franchise"
+      ],
+      "answer": 1,
+      "explanation": "Valeur marchande (chap. 3 et 5)."
+    },
+    {
+      "q": "Une évaluation municipale trop élevée peut :",
+      "options": [
+        "A) Réduire vos taxes",
+        "B) Gonfler vos taxes année après année",
+        "C) Baisser le prix de vente",
+        "D) Être ignorée sans effet"
+      ],
+      "answer": 1,
+      "explanation": "Impact fiscal (chap. 4)."
+    },
+    {
+      "q": "Pour la contester, il faut :",
+      "options": [
+        "A) Attendre dix ans",
+        "B) Déposer une demande de révision dans le délai prévu",
+        "C) Appeler le notaire",
+        "D) Vendre la maison"
+      ],
+      "answer": 1,
+      "explanation": "Demande de révision (chap. 4)."
+    },
+    {
+      "q": "Pour vérifier vos taxes, le bon chiffre est :",
+      "options": [
+        "A) La valeur marchande",
+        "B) L'évaluation municipale",
+        "C) Le prix payé par le voisin",
+        "D) L'assurance"
+      ],
+      "answer": 1,
+      "explanation": "Évaluation municipale (chap. 5)."
+    },
+    {
+      "q": "La taxe de bienvenue se base sur :",
+      "options": [
+        "A) Le plus bas des deux chiffres",
+        "B) Le plus élevé du prix payé ou de l'évaluation ajustée",
+        "C) La franchise",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Le plus élevé des deux (chap. 3 et 5)."
+    }
+  ]
+}

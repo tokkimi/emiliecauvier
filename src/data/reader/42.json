@@ -1,1 +1,158 @@
-{"number": 42, "title": "Copropriété divise ou indivise ?", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Au Québec, « copropriété » recouvre deux réalités bien distinctes : la copropriété divise (le condo classique) et la copropriété indivise. Elles se ressemblent en apparence mais diffèrent profondément sur le plan juridique, financier et pratique.</p><p>Ce guide compare les deux pour vous aider à choisir en connaissance de cause — car la différence a des conséquences réelles.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "La copropriété divise (le condo classique)", "objective": "Comprendre le modèle le plus courant.", "html": "<p class=\"lede\">Comprendre le modèle le plus courant.</p>\n<p>En copropriété divise, chaque unité a son propre titre de propriété distinct et son numéro de lot. Il existe un syndicat, une déclaration de copropriété, des charges et un fonds de prévoyance. Vous financez votre unité avec votre propre hypothèque.</p>\n<ul><li>Titre distinct par unité : plus simple à financer et à revendre.</li><li>Syndicat et fonds de prévoyance encadrés par la loi.</li><li>Le modèle le plus répandu et le mieux balisé.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>La copropriété divise est généralement plus simple à financer et à revendre, car chaque unité a son propre titre. Pour un premier achat, c'est souvent le choix le plus rassurant.</p></aside>"}, {"title": "La copropriété indivise", "objective": "Comprendre ce modèle particulier.", "html": "<p class=\"lede\">Comprendre ce modèle particulier.</p>\n<p>En copropriété indivise, plusieurs personnes possèdent ensemble UN seul immeuble, sans division en lots distincts : chacun détient une quote-part de l'ensemble et jouit d'une portion selon une convention d'indivision. Il n'y a pas de titres séparés par unité.</p>\n<ul><li>Souvent un prix d'entrée plus bas pour un secteur donné.</li><li>Financement plus complexe : parfois une hypothèque commune ou des conditions particulières.</li><li>Repose sur une convention d'indivision entre copropriétaires : sa qualité est cruciale.</li><li>Revente parfois plus limitée (bassin d'acheteurs plus restreint).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En indivise, la convention d'indivision est TOUT : elle règle qui paie quoi, qui décide, et comment on sort. Faites-la examiner par un notaire avant d'acheter ; une mauvaise convention peut devenir un cauchemar.</p></aside>"}, {"title": "Bien choisir selon sa situation", "objective": "Peser les avantages et les risques.", "html": "<p class=\"lede\">Peser les avantages et les risques.</p>\n<ul><li>Divise : plus simple, plus liquide, mieux encadrée — souvent le choix par défaut.</li><li>Indivise : parfois plus abordable, mais plus complexe à financer et à revendre, et très dépendante de la convention et des autres copropriétaires.</li><li>Dans les deux cas : vérifier documents, finances et règles avant d'acheter.</li></ul>\n<p>Le bon choix dépend de votre budget, de votre tolérance à la complexité et de votre horizon.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne choisissez jamais l'indivise seulement parce que c'est moins cher à l'entrée. Le prix plus bas reflète souvent une complexité et une liquidité moindre. Comprenez le compromis avant de signer.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Confirmer le type de copropriété de l'unité visée.</li><li>Rassembler les documents (déclaration ou convention).</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire examiner la déclaration (divise) ou la convention (indivise).</li><li>Vérifier les implications de financement.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Choisir en connaissance de cause, avec Emilie et le notaire.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Copropriété divise : condo classique, titre distinct par unité.</li><li>Copropriété indivise : quote-part d'un seul immeuble, sans lots séparés.</li><li>Convention d'indivision : entente réglant droits et obligations en indivise.</li><li>Fonds de prévoyance : épargne collective (surtout en divise).</li><li>Liquidité : facilité de revente, généralement meilleure en divise.</li></ul>"}], "qcm": [{"q": "En copropriété divise, chaque unité a :", "options": ["A) Aucun titre", "B) Son propre titre de propriété distinct", "C) Un titre commun", "D) Un bail"], "answer": 1, "explanation": "Titre et lot distincts (chap. 1)."}, {"q": "La copropriété divise est généralement :", "options": ["A) Plus difficile à financer", "B) Plus simple à financer et à revendre", "C) Interdite", "D) Sans syndicat"], "answer": 1, "explanation": "Chaque unité a son titre (chap. 1)."}, {"q": "En copropriété indivise :", "options": ["A) Chaque unité a un titre séparé", "B) On détient une quote-part d'un seul immeuble", "C) Il n'y a qu'un propriétaire", "D) On loue"], "answer": 1, "explanation": "Pas de lots distincts (chap. 2)."}, {"q": "En indivise, le document crucial est :", "options": ["A) La déclaration de copropriété", "B) La convention d'indivision", "C) Le bail", "D) Le certificat de localisation seul"], "answer": 1, "explanation": "Elle règle tout (chap. 2)."}, {"q": "L'indivise est souvent :", "options": ["A) Plus simple à financer", "B) Plus complexe à financer et à revendre", "C) Sans risque", "D) Toujours meilleure"], "answer": 1, "explanation": "Bassin d'acheteurs plus restreint (chap. 2 et 3)."}, {"q": "Choisir l'indivise seulement parce que c'est moins cher est :", "options": ["A) Sage", "B) Risqué : le prix reflète la complexité", "C) Obligatoire", "D) Sans conséquence"], "answer": 1, "explanation": "Comprendre le compromis (chap. 3)."}]}
+{
+  "number": 42,
+  "title": "Copropriété divise ou indivise ?",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Au Québec, « copropriété » recouvre deux réalités bien distinctes : la copropriété divise (le condo classique) et la copropriété indivise. Elles se ressemblent en apparence mais diffèrent profondément sur le plan juridique, financier et pratique.</p><p>Ce guide compare les deux pour vous aider à choisir en connaissance de cause — car la différence a des conséquences réelles.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "La copropriété divise (le condo classique)",
+      "objective": "Comprendre le modèle le plus courant.",
+      "html": "<p class=\"lede\">Comprendre le modèle le plus courant.</p>\n<p>En copropriété divise, chaque unité a son <strong>propre titre de propriété</strong> distinct et son numéro de lot.</p><ul><li>Un <strong>syndicat</strong> de copropriété gère l'immeuble.</li><li>Une <strong>déclaration de copropriété</strong> encadre les droits et obligations.</li><li>Des <strong>charges de copropriété</strong> et un <strong>fonds de prévoyance</strong> financent l'entretien.</li></ul><p>Vous financez votre unité avec votre propre hypothèque : plus simple à financer et à revendre.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En divise, lisez la déclaration de copropriété ET les derniers procès-verbaux d'assemblée. Ils révèlent les travaux à venir, les conflits et la santé réelle du fonds de prévoyance.</p></aside>"
+    },
+    {
+      "title": "La copropriété indivise",
+      "objective": "Comprendre ce modèle particulier.",
+      "html": "<p class=\"lede\">Comprendre ce modèle particulier.</p>\n<p>En copropriété indivise, plusieurs personnes possèdent ensemble <strong>UN seul immeuble</strong>, sans division en lots distincts.</p><p>Chacun détient une <strong>quote-part</strong> de l'ensemble et jouit d'une portion selon une <strong>convention d'indivision</strong>. Il n'y a pas de titres séparés par unité.</p><ul><li>Souvent un prix d'entrée plus bas pour un secteur donné.</li><li>Financement plus complexe : parfois une hypothèque commune.</li><li>Forte interdépendance entre copropriétaires.</li></ul><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En indivise, vous êtes lié aux autres copropriétaires, parfois par une hypothèque commune. Assurez-vous de bien les connaître et de comprendre la convention avant de vous engager.</p></aside>"
+    },
+    {
+      "title": "Divise ou indivise : bien choisir",
+      "objective": "Peser les avantages et les risques.",
+      "html": "<p class=\"lede\">Peser les avantages et les risques.</p>\n<p>Les deux modèles se ressemblent en apparence, mais diffèrent profondément :</p><ul><li><strong>Divise</strong> : plus simple, plus liquide, mieux encadrée — souvent le choix par défaut.</li><li><strong>Indivise</strong> : parfois plus abordable, mais plus complexe à financer et à revendre, très dépendante de la convention et des autres copropriétaires.</li></ul><p>Dans les deux cas : vérifier documents, finances et règles avant d'acheter. Le bon choix dépend de votre budget et de votre tolérance à la complexité.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>À prix comparable, la divise offre plus de tranquillité et se revend plus facilement. L'indivise peut être intéressante, mais entrez-y les yeux ouverts, pas seulement pour économiser.</p></aside>"
+    },
+    {
+      "title": "Le fonds de prévoyance et les charges",
+      "objective": "Évaluer la santé financière de la copropriété.",
+      "html": "<p class=\"lede\">Évaluer la santé financière de la copropriété.</p>\n<p>Une copropriété, c'est aussi une petite entreprise collective. Sa santé financière vous concerne directement :</p><ul><li><strong>Charges mensuelles</strong> : couvrent l'entretien courant et les services.</li><li><strong>Fonds de prévoyance</strong> : réserve pour les grosses réparations (toiture, façade, ascenseur).</li><li><strong>Étude du fonds de prévoyance</strong> : évalue si la réserve est suffisante.</li></ul><p>Un fonds sous-financé annonce des <strong>cotisations spéciales</strong> futures : c'est un signal à ne pas ignorer.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Des charges anormalement basses ne sont pas une aubaine : elles cachent souvent un fonds de prévoyance insuffisant. Vous paierez tôt ou tard, sous forme de cotisation spéciale.</p></aside>"
+    },
+    {
+      "title": "Les vérifications avant d'acheter",
+      "objective": "Réduire les mauvaises surprises.",
+      "html": "<p class=\"lede\">Réduire les mauvaises surprises.</p>\n<p>Avant de signer, quel que soit le modèle, faites votre inspection documentaire :</p><ol><li>Lire la <strong>déclaration</strong> (divise) ou la <strong>convention</strong> (indivise).</li><li>Consulter les <strong>procès-verbaux</strong> et le <strong>budget</strong>.</li><li>Vérifier l'état du <strong>fonds de prévoyance</strong> et les travaux prévus.</li><li>Confirmer les <strong>règlements</strong> (animaux, location, rénovations).</li></ol><p>Faites examiner ces documents par votre notaire : c'est le meilleur rempart contre les surprises coûteuses.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Achetez toujours un condo « documents en main ». Une déclaration mal lue peut cacher une interdiction de louer, des travaux imminents ou un litige en cours. Le notaire est votre allié ici.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Confirmer le type de copropriété de l'unité visée.</li><li>Rassembler les documents (déclaration ou convention).</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire examiner la déclaration (divise) ou la convention (indivise).</li><li>Vérifier les implications de financement.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Choisir en connaissance de cause, avec Emilie et le notaire.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Copropriété divise : condo classique, titre distinct par unité.</li><li>Copropriété indivise : quote-part d'un seul immeuble, sans lots séparés.</li><li>Convention d'indivision : entente réglant droits et obligations en indivise.</li><li>Fonds de prévoyance : épargne collective (surtout en divise).</li><li>Liquidité : facilité de revente, généralement meilleure en divise.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "En copropriété divise, chaque unité a :",
+      "options": [
+        "A) Une quote-part",
+        "B) Son propre titre de propriété distinct",
+        "C) Aucun titre",
+        "D) Un bail"
+      ],
+      "answer": 1,
+      "explanation": "Titre distinct par unité (chap. 1)."
+    },
+    {
+      "q": "En copropriété indivise, on détient :",
+      "options": [
+        "A) Un lot séparé",
+        "B) Une quote-part d'un seul immeuble",
+        "C) Un bail",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Quote-part de l'ensemble (chap. 2)."
+    },
+    {
+      "q": "L'indivise est encadrée par :",
+      "options": [
+        "A) Une déclaration de copropriété",
+        "B) Une convention d'indivision",
+        "C) Un bail",
+        "D) Aucun document"
+      ],
+      "answer": 1,
+      "explanation": "Convention d'indivision (chap. 2)."
+    },
+    {
+      "q": "La divise est généralement :",
+      "options": [
+        "A) Moins liquide",
+        "B) Plus simple à financer et à revendre",
+        "C) Interdite",
+        "D) Sans syndicat"
+      ],
+      "answer": 1,
+      "explanation": "Plus liquide (chap. 1 et 3)."
+    },
+    {
+      "q": "L'indivise est souvent :",
+      "options": [
+        "A) Plus simple à financer",
+        "B) Plus abordable mais plus complexe à financer et revendre",
+        "C) Sans copropriétaires",
+        "D) Sans convention"
+      ],
+      "answer": 1,
+      "explanation": "Plus complexe (chap. 3)."
+    },
+    {
+      "q": "Le fonds de prévoyance sert à :",
+      "options": [
+        "A) Payer l'épicerie",
+        "B) Financer les grosses réparations",
+        "C) Réduire le prix",
+        "D) Payer le notaire"
+      ],
+      "answer": 1,
+      "explanation": "Réserve pour réparations (chap. 4)."
+    },
+    {
+      "q": "Des charges anormalement basses peuvent cacher :",
+      "options": [
+        "A) Un fonds de prévoyance insuffisant",
+        "B) Une aubaine sans risque",
+        "C) Une baisse de taxes",
+        "D) Rien"
+      ],
+      "answer": 0,
+      "explanation": "Signal d'un fonds sous-financé (chap. 4)."
+    },
+    {
+      "q": "Un fonds sous-financé annonce souvent :",
+      "options": [
+        "A) Une baisse de charges",
+        "B) Des cotisations spéciales futures",
+        "C) Un remboursement",
+        "D) Aucun effet"
+      ],
+      "answer": 1,
+      "explanation": "Cotisations spéciales (chap. 4)."
+    },
+    {
+      "q": "Avant d'acheter, il faut lire :",
+      "options": [
+        "A) Rien",
+        "B) Déclaration/convention, PV et budget",
+        "C) Le journal",
+        "D) Le bail du voisin"
+      ],
+      "answer": 1,
+      "explanation": "Inspection documentaire (chap. 5)."
+    },
+    {
+      "q": "Pour examiner les documents, le meilleur allié est :",
+      "options": [
+        "A) Le voisin",
+        "B) Le notaire",
+        "C) L'assureur",
+        "D) La ville"
+      ],
+      "answer": 1,
+      "explanation": "Le notaire (chap. 5)."
+    }
+  ]
+}
