@@ -28,14 +28,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
-        {/* Mot manuscrit, sur fond blanc, juste avant le pied de page */}
+        {/* Mot manuscrit d'Emilie, sur fond blanc, juste avant le pied de page.
+            Deux visuels : un pensé pour mobile, un pour ordinateur. */}
         <section className="bg-white">
-          <div className="mx-auto max-w-2xl px-6 py-16">
+          <div className="mx-auto max-w-5xl px-6 py-16">
+            {/* Mobile */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/manuscrit.png"
-              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilio"
-              className="mx-auto w-full max-w-xl"
+              src="/mot-emilie-mobile.png"
+              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
+              className="mx-auto w-full max-w-sm sm:hidden"
+            />
+            {/* Ordinateur */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/mot-emilie-ordi.jpg"
+              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
+              className="mx-auto hidden w-full sm:block"
             />
           </div>
         </section>
