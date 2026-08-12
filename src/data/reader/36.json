@@ -1,1 +1,158 @@
-{"number": 36, "title": "Le rôle du notaire", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Au Québec, aucune vente d'immeuble ne se conclut sans notaire. Ce professionnel du droit sécurise la transaction, protège les parties et rend la vente officielle. Le connaître, c'est aborder la signature l'esprit tranquille.</p><p>Ce guide explique le rôle du notaire, le déroulement de la signature, et les frais qui y sont associés.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Un officier public impartial", "objective": "Comprendre la position particulière du notaire.", "html": "<p class=\"lede\">Comprendre la position particulière du notaire.</p>\n<p>Le notaire est un officier public : il agit avec impartialité pour donner à l'acte de vente sa force officielle. Il vérifie, rédige, authentifie et conserve les actes. Son rôle est de sécuriser la transaction pour toutes les parties, pas d'en défendre une seule.</p>\n<p>Dans un achat, l'acheteur choisit habituellement le notaire (souvent parce que c'est lui qui, avec le prêteur, encadre l'hypothèque).</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Voyez le notaire comme le gardien impartial de la transaction. Il n'est ni « pour » l'acheteur ni « pour » le vendeur : son rôle est que tout soit fait dans les règles.</p></aside>"}, {"title": "Ce que le notaire vérifie et prépare", "objective": "Connaître le travail derrière la signature.", "html": "<p class=\"lede\">Connaître le travail derrière la signature.</p>\n<ul><li>Examen des titres : confirmer que le vendeur est bien propriétaire, sans charges cachées (hypothèques, saisies).</li><li>Analyse du certificat de localisation et des servitudes.</li><li>Rédaction de l'acte de vente et de l'acte hypothécaire.</li><li>Réception et redistribution des fonds (remboursement de l'ancienne hypothèque, versement au vendeur).</li><li>Publication de la vente au Registre foncier.</li></ul>\n<p>Ce travail invisible protège l'acheteur contre de mauvaises surprises juridiques.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>L'examen des titres est crucial : c'est lui qui garantit que vous devenez réellement propriétaire, libre de dettes d'autrui. Ne négligez jamais cette étape « invisible ».</p></aside>"}, {"title": "La signature et les frais", "objective": "Savoir à quoi s'attendre le jour J.", "html": "<p class=\"lede\">Savoir à quoi s'attendre le jour J.</p>\n<p>À la signature, le notaire vous explique l'acte, répond à vos questions, recueille les signatures et procède aux versements. Prévoyez les honoraires du notaire et les débours (frais de publication, copies) dans vos frais de clôture.</p>\n<p>Rappel : la taxe de bienvenue ne se paie pas chez le notaire, mais fait l'objet d'une facture municipale ultérieure.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Posez toutes vos questions au notaire le jour de la signature : c'est le moment de tout clarifier. Un bon notaire prend le temps de vous expliquer l'acte, ligne par ligne si besoin.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Choisir un notaire (souvent recommandé par la courtière ou le prêteur).</li><li>Réunir mes documents et pièces d'identité.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire examiner titres et certificat de localisation.</li><li>Budgéter honoraires et débours.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Signer en ayant compris l'acte, questions posées.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Notaire : officier public qui sécurise et authentifie la vente.</li><li>Examen des titres : vérification de la propriété et des charges.</li><li>Acte de vente : document officiel transférant la propriété.</li><li>Registre foncier : registre public où la vente est publiée.</li><li>Débours : frais de publication et copies, en plus des honoraires.</li></ul>"}], "qcm": [{"q": "Au Québec, la vente d'un immeuble se signe devant :", "options": ["A) Un courtier", "B) Un notaire", "C) Un inspecteur", "D) Un arpenteur"], "answer": 1, "explanation": "Le notaire authentifie l'acte (chap. 1)."}, {"q": "Le notaire agit :", "options": ["A) Pour l'acheteur seul", "B) De façon impartiale, comme officier public", "C) Pour le vendeur seul", "D) Pour la banque seule"], "answer": 1, "explanation": "Il sécurise pour toutes les parties (chap. 1)."}, {"q": "L'examen des titres sert à :", "options": ["A) Fixer le prix", "B) Confirmer la propriété et l'absence de charges cachées", "C) Peindre la maison", "D) Payer les taxes"], "answer": 1, "explanation": "Protection juridique de l'acheteur (chap. 2)."}, {"q": "Le notaire publie la vente :", "options": ["A) Dans le journal", "B) Au Registre foncier", "C) Sur les réseaux sociaux", "D) Nulle part"], "answer": 1, "explanation": "Officialisation de la vente (chap. 2)."}, {"q": "La taxe de bienvenue :", "options": ["A) Se paie chez le notaire", "B) Fait l'objet d'une facture municipale ultérieure", "C) N'existe pas", "D) Est un honoraire"], "answer": 1, "explanation": "Elle arrive après (chap. 3)."}, {"q": "Dans un achat, le notaire est souvent choisi par :", "options": ["A) Le vendeur", "B) L'acheteur", "C) La ville", "D) L'inspecteur"], "answer": 1, "explanation": "Souvent lié à l'hypothèque (chap. 1)."}]}
+{
+  "number": 36,
+  "title": "Le rôle du notaire",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Au Québec, aucune vente d'immeuble ne se conclut sans notaire. Ce professionnel du droit sécurise la transaction, protège les parties et rend la vente officielle. Le connaître, c'est aborder la signature l'esprit tranquille.</p><p>Ce guide explique le rôle du notaire, le déroulement de la signature, et les frais qui y sont associés.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "Un officier public impartial",
+      "objective": "Comprendre sa position particulière.",
+      "html": "<p class=\"lede\">Comprendre sa position particulière.</p>\n<p>Le notaire est un <strong>officier public</strong> : il agit avec impartialité pour donner à l'acte de vente sa force officielle. Il vérifie, rédige, authentifie et conserve les actes.</p><p>Son rôle est de sécuriser la transaction pour <em>toutes</em> les parties, pas d'en défendre une seule. Dans un achat, c'est habituellement l'acheteur qui choisit le notaire — souvent parce que c'est lui (ou son prêteur) qui en assume les frais.</p><ul><li>Impartialité : il ne prend pas parti.</li><li>Force authentique : l'acte qu'il reçoit fait preuve.</li><li>Conservation : il garde l'original (la minute).</li></ul><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Le notaire n'est pas « votre avocat ». Il protège la validité de la vente pour tout le monde. Si un enjeu vous oppose au vendeur, c'est un conseiller à vous qu'il vous faut, pas le notaire.</p></aside>"
+    },
+    {
+      "title": "Ce que le notaire vérifie et prépare",
+      "objective": "Connaître le travail derrière la signature.",
+      "html": "<p class=\"lede\">Connaître le travail derrière la signature.</p>\n<p>L'essentiel du travail du notaire se fait <strong>avant</strong> le jour de la signature :</p><ul><li><strong>Examen des titres</strong> : confirmer que le vendeur est bien propriétaire, sans charge cachée (hypothèque, saisie).</li><li>Analyse du <strong>certificat de localisation</strong> et des servitudes.</li><li>Rédaction de l'<strong>acte de vente</strong> et de l'acte hypothécaire.</li><li>Réception et redistribution des <strong>fonds</strong> (remboursement de l'ancienne hypothèque, versement au vendeur).</li><li><strong>Publication</strong> de la vente au Registre foncier.</li></ul><p>C'est ce travail minutieux qui vous évite de mauvaises surprises après l'achat.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Fournissez vos documents au notaire le plus tôt possible. Un dossier complet et transmis à temps, c'est une signature sans stress et parfois quelques jours gagnés.</p></aside>"
+    },
+    {
+      "title": "La signature et les frais",
+      "objective": "Savoir à quoi s'attendre le jour J.",
+      "html": "<p class=\"lede\">Savoir à quoi s'attendre le jour J.</p>\n<p>Le jour de la signature, le notaire vous explique l'acte, répond à vos questions, recueille les signatures et procède aux versements. C'est aussi le moment où vous recevez les clés (selon la date de possession convenue).</p><p>Côté budget, prévoyez dans vos frais de clôture :</p><ul><li>Les <strong>honoraires</strong> du notaire.</li><li>Les <strong>débours</strong> : frais de publication, copies, recherches.</li></ul><p>Rappel utile : la <strong>taxe de bienvenue</strong> ne se paie pas chez le notaire — elle fait l'objet d'une facture municipale envoyée quelques semaines ou mois plus tard.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Demandez au notaire une estimation écrite des frais dès le départ. Vous éviterez la surprise du « combien je dois apporter » la veille de la signature.</p></aside>"
+    },
+    {
+      "title": "Choisir et bien préparer son notaire",
+      "objective": "Aborder la signature l'esprit tranquille.",
+      "html": "<p class=\"lede\">Aborder la signature l'esprit tranquille.</p>\n<p>Le choix du notaire est souvent laissé à l'acheteur. Quelques repères pour bien décider :</p><ul><li>Une <strong>recommandation</strong> de votre courtière ou de votre prêteur est un bon point de départ.</li><li>Vérifiez sa <strong>disponibilité</strong> par rapport à votre date de clôture.</li><li>Assurez-vous qu'il <strong>répond à vos questions</strong> clairement.</li></ul><p>Préparez de votre côté : pièces d'identité valides, coordonnées bancaires, preuve d'assurance habitation en vigueur pour la date de possession. Un dossier prêt accélère tout.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Contactez le notaire dès que la promesse d'achat est acceptée, pas la semaine d'avant. Les bons notaires sont occupés, et une signature se planifie plusieurs semaines à l'avance.</p></aside>"
+    },
+    {
+      "title": "Après la signature : ce qui reste",
+      "objective": "Comprendre les suites de la vente.",
+      "html": "<p class=\"lede\">Comprendre les suites de la vente.</p>\n<p>La signature n'est pas tout à fait la fin. Le notaire complète encore quelques étapes :</p><ul><li><strong>Publication</strong> officielle de la vente et de l'hypothèque au Registre foncier.</li><li><strong>Radiation</strong> de l'ancienne hypothèque du vendeur.</li><li>Envoi des <strong>copies</strong> de l'acte aux parties.</li></ul><p>De votre côté, conservez précieusement votre copie de l'acte de vente : elle vous servira pour vos taxes, une future revente, ou toute question sur la propriété.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Rangez votre acte de vente et votre certificat de localisation dans un endroit sûr. Le jour où vous revendrez, ces documents vous feront gagner un temps précieux.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Choisir un notaire (souvent recommandé par la courtière ou le prêteur).</li><li>Réunir mes documents et pièces d'identité.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire examiner titres et certificat de localisation.</li><li>Budgéter honoraires et débours.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Signer en ayant compris l'acte, questions posées.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Notaire : officier public qui sécurise et authentifie la vente.</li><li>Examen des titres : vérification de la propriété et des charges.</li><li>Acte de vente : document officiel transférant la propriété.</li><li>Registre foncier : registre public où la vente est publiée.</li><li>Débours : frais de publication et copies, en plus des honoraires.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Au Québec, une vente d'immeuble se conclut :",
+      "options": [
+        "A) Sans notaire",
+        "B) Obligatoirement devant notaire",
+        "C) À la banque seulement",
+        "D) Par courriel"
+      ],
+      "answer": 1,
+      "explanation": "Le notaire est incontournable (intro)."
+    },
+    {
+      "q": "Le notaire agit :",
+      "options": [
+        "A) Pour le vendeur seul",
+        "B) Avec impartialité, pour toutes les parties",
+        "C) Pour la ville",
+        "D) Pour la banque seulement"
+      ],
+      "answer": 1,
+      "explanation": "Officier public impartial (chap. 1)."
+    },
+    {
+      "q": "L'examen des titres sert à :",
+      "options": [
+        "A) Décorer l'acte",
+        "B) Confirmer la propriété et détecter les charges cachées",
+        "C) Fixer le prix",
+        "D) Payer les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Vérification de la propriété (chap. 2)."
+    },
+    {
+      "q": "La vente est ensuite publiée :",
+      "options": [
+        "A) Au journal",
+        "B) Au Registre foncier",
+        "C) À l'OACIQ",
+        "D) Nulle part"
+      ],
+      "answer": 1,
+      "explanation": "Publication au Registre foncier (chap. 2 et 5)."
+    },
+    {
+      "q": "Les débours du notaire sont :",
+      "options": [
+        "A) Ses honoraires",
+        "B) Les frais de publication, copies et recherches",
+        "C) La taxe de bienvenue",
+        "D) L'assurance"
+      ],
+      "answer": 1,
+      "explanation": "Débours distincts des honoraires (chap. 3)."
+    },
+    {
+      "q": "La taxe de bienvenue se paie :",
+      "options": [
+        "A) Chez le notaire",
+        "B) Plus tard, par facture municipale",
+        "C) Jamais",
+        "D) À la banque"
+      ],
+      "answer": 1,
+      "explanation": "Facture municipale ultérieure (chap. 3)."
+    },
+    {
+      "q": "Le choix du notaire revient souvent :",
+      "options": [
+        "A) Au vendeur",
+        "B) À l'acheteur",
+        "C) À la ville",
+        "D) Au voisin"
+      ],
+      "answer": 1,
+      "explanation": "L'acheteur choisit habituellement (chap. 1 et 4)."
+    },
+    {
+      "q": "Pour une signature sans stress, il faut :",
+      "options": [
+        "A) Attendre la veille",
+        "B) Contacter le notaire dès la promesse acceptée",
+        "C) Ne rien préparer",
+        "D) Choisir au hasard"
+      ],
+      "answer": 1,
+      "explanation": "Anticiper (chap. 4)."
+    },
+    {
+      "q": "Après la vente, le notaire :",
+      "options": [
+        "A) Oublie le dossier",
+        "B) Publie la vente et radie l'ancienne hypothèque",
+        "C) Revend la maison",
+        "D) Fixe les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Suites de la vente (chap. 5)."
+    },
+    {
+      "q": "Votre copie de l'acte de vente :",
+      "options": [
+        "A) Est inutile",
+        "B) Se conserve précieusement pour l'avenir",
+        "C) Se jette",
+        "D) Appartient à la banque"
+      ],
+      "answer": 1,
+      "explanation": "À garder pour taxes et revente (chap. 5)."
+    }
+  ]
+}

@@ -1,1 +1,158 @@
-{"number": 40, "title": "Acheter ou vendre en hiver", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>« Il ne faut pas vendre en hiver. » Vraiment ? Au Québec, l'hiver a ses particularités, mais il offre aussi de réelles occasions, à l'achat comme à la vente. Ce guide sépare les mythes de la réalité.</p><p>Vous verrez les avantages et inconvénients de chaque saison, et comment tirer parti de l'hiver plutôt que de le craindre.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Le mythe de la « mauvaise saison »", "objective": "Nuancer l'idée reçue.", "html": "<p class=\"lede\">Nuancer l'idée reçue.</p>\n<p>Il y a généralement moins de propriétés à vendre et moins d'acheteurs en hiver. Mais « moins » ne veut pas dire « mauvais » : les acheteurs d'hiver sont souvent plus sérieux et motivés, et la concurrence entre vendeurs est plus faible.</p>\n<p>Résultat : une bonne propriété bien préparée et bien prix peut très bien se vendre en hiver, parfois avec moins de concurrence.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne retardez pas une vente juste « parce que c'est l'hiver ». Un acheteur qui visite en janvier par -15 °C est rarement un touriste : il est motivé. Moins d'acheteurs, mais souvent plus sérieux.</p></aside>"}, {"title": "Vendre en hiver : bien se présenter", "objective": "Compenser les défis de la saison.", "html": "<p class=\"lede\">Compenser les défis de la saison.</p>\n<ul><li>Déneiger et déglacer : accès sécuritaire et accueillant.</li><li>Maximiser la lumière (jours courts) : ouvrir rideaux, allumer, ampoules chaudes.</li><li>Chaleur et ambiance : une maison bien chauffée et cosy rassure.</li><li>Photos : utiliser aussi des images estivales du terrain, si disponibles.</li></ul>\n<p>L'hiver met en valeur le confort et l'efficacité énergétique : mettez-les en avant.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En hiver, vendez le confort : une maison chaleureuse, bien éclairée et facile d'accès malgré la neige. Montrez aussi à quoi ressemble le terrain l'été avec quelques photos.</p></aside>"}, {"title": "Acheter en hiver : des occasions", "objective": "Profiter des avantages côté acheteur.", "html": "<p class=\"lede\">Profiter des avantages côté acheteur.</p>\n<p>Acheter en hiver, c'est souvent moins de concurrence entre acheteurs et des vendeurs motivés (parfois pressés). C'est aussi l'occasion de voir comment la propriété se comporte par grand froid : isolation, chauffage, infiltrations, déneigement, glace.</p>\n<p>Vous testez la maison dans ses conditions les plus exigeantes — un avantage d'inspection non négligeable.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Acheter en hiver permet de voir la maison sous son pire jour : courants d'air, glace, coûts de chauffage réels. Ce que vous constatez en janvier, vous ne le découvrirez pas par surprise l'hiver suivant.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Décider de ma stratégie sans préjugé de saison.</li><li>Lister les ajustements hivernaux (déneigement, lumière).</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Préparer une présentation chaleureuse et accessible.</li><li>Profiter d'un marché moins encombré.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Agir selon mes besoins, pas selon le calendrier.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Saisonnalité : variation de l'activité du marché selon les saisons.</li><li>Acheteurs motivés : ceux qui visitent en hiver, souvent plus sérieux.</li><li>Curb appeal hivernal : accès déneigé et présentation chaleureuse.</li><li>Test hivernal : observer isolation, chauffage et infiltrations par grand froid.</li><li>Concurrence de vendeurs : plus faible en hiver.</li></ul>"}], "qcm": [{"q": "En hiver, il y a généralement :", "options": ["A) Plus de propriétés et d'acheteurs", "B) Moins des deux, mais des acheteurs plus motivés", "C) Aucune transaction", "D) Des prix nuls"], "answer": 1, "explanation": "Moins nombreux, plus sérieux (chap. 1)."}, {"q": "Un avantage de vendre en hiver est :", "options": ["A) Plus de concurrence", "B) Moins de concurrence entre vendeurs", "C) Aucun acheteur", "D) Des taxes plus hautes"], "answer": 1, "explanation": "Concurrence réduite (chap. 1)."}, {"q": "Pour bien vendre en hiver, il faut :", "options": ["A) Laisser la glace", "B) Déneiger, maximiser lumière et chaleur", "C) Éteindre le chauffage", "D) Fermer les rideaux"], "answer": 1, "explanation": "Confort et accès (chap. 2)."}, {"q": "Acheter en hiver permet de voir :", "options": ["A) Le jardin en fleurs", "B) Le comportement de la maison par grand froid", "C) Rien", "D) La piscine ouverte"], "answer": 1, "explanation": "Test en conditions exigeantes (chap. 3)."}, {"q": "Les vendeurs d'hiver sont souvent :", "options": ["A) Non motivés", "B) Motivés, parfois pressés", "C) Absents", "D) Interdits"], "answer": 1, "explanation": "Occasion pour l'acheteur (chap. 3)."}, {"q": "La bonne décision dépend surtout :", "options": ["A) De la saison", "B) De vos besoins et de la préparation", "C) De la météo seule", "D) Du hasard"], "answer": 1, "explanation": "On agit selon ses besoins (chap. 1)."}]}
+{
+  "number": 40,
+  "title": "Acheter ou vendre en hiver",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>« Il ne faut pas vendre en hiver. » Vraiment ? Au Québec, l'hiver a ses particularités, mais il offre aussi de réelles occasions, à l'achat comme à la vente. Ce guide sépare les mythes de la réalité.</p><p>Vous verrez les avantages et inconvénients de chaque saison, et comment tirer parti de l'hiver plutôt que de le craindre.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "Le mythe de la « mauvaise saison »",
+      "objective": "Nuancer l'idée reçue.",
+      "html": "<p class=\"lede\">Nuancer l'idée reçue.</p>\n<p>Il y a généralement moins de propriétés à vendre et moins d'acheteurs en hiver. Mais « moins » ne veut pas dire « mauvais ».</p><p>Les acheteurs d'hiver sont souvent plus <strong>sérieux et motivés</strong> — on ne visite pas par -15 °C sans raison — et la concurrence entre vendeurs est plus faible.</p><p>Résultat : une bonne propriété, bien préparée et bien prix, peut très bien se vendre en hiver, parfois avec moins de concurrence qu'au printemps.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne retardez pas une vente juste « parce que c'est l'hiver ». Un acheteur qui visite en janvier est rarement un touriste : il est motivé. Moins d'acheteurs, mais souvent plus sérieux.</p></aside>"
+    },
+    {
+      "title": "Vendre en hiver : bien se présenter",
+      "objective": "Compenser les défis de la saison.",
+      "html": "<p class=\"lede\">Compenser les défis de la saison.</p>\n<p>L'hiver impose quelques ajustements de présentation, faciles à maîtriser :</p><ul><li><strong>Déneiger et déglacer</strong> : un accès sécuritaire et accueillant.</li><li><strong>Maximiser la lumière</strong> (jours courts) : ouvrir les rideaux, allumer, ampoules chaudes.</li><li><strong>Chaleur et ambiance</strong> : une maison bien chauffée et cosy rassure.</li><li><strong>Photos</strong> : ajouter aussi des images estivales du terrain, si disponibles.</li></ul><p>L'hiver met en valeur le confort et l'efficacité énergétique : ce sont justement des arguments à mettre en avant.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En hiver, vendez le confort : une maison chaleureuse, bien éclairée et facile d'accès malgré la neige. Montrez aussi à quoi ressemble le terrain l'été avec quelques photos.</p></aside>"
+    },
+    {
+      "title": "Acheter en hiver : des occasions",
+      "objective": "Profiter des avantages côté acheteur.",
+      "html": "<p class=\"lede\">Profiter des avantages côté acheteur.</p>\n<p>Acheter en hiver, c'est souvent <strong>moins de concurrence</strong> entre acheteurs et des vendeurs motivés (parfois pressés).</p><p>C'est aussi l'occasion de voir comment la propriété se comporte par grand froid :</p><ul><li>Isolation et courants d'air.</li><li>Efficacité du chauffage et coûts réels.</li><li>Infiltrations, glace et déneigement.</li></ul><p>Vous testez la maison dans ses conditions les plus exigeantes — un avantage d'inspection non négligeable.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Acheter en hiver permet de voir la maison sous son pire jour : courants d'air, glace, coûts de chauffage réels. Ce que vous constatez en janvier ne vous surprendra pas l'hiver suivant.</p></aside>"
+    },
+    {
+      "title": "Chaque saison a sa logique",
+      "objective": "Choisir le moment selon ses priorités.",
+      "html": "<p class=\"lede\">Choisir le moment selon ses priorités.</p>\n<p>Plutôt que « bonne » ou « mauvaise » saison, pensez en termes de compromis :</p><ul><li><strong>Printemps</strong> : beaucoup de choix et d'acheteurs, mais forte concurrence.</li><li><strong>Été</strong> : marché actif, terrains et extérieurs à leur avantage.</li><li><strong>Automne</strong> : acheteurs sérieux avant l'hiver, rythme qui ralentit.</li><li><strong>Hiver</strong> : moins de volume, mais motivation et concurrence réduite.</li></ul><p>Le « meilleur » moment dépend de vos priorités : maximiser le choix, réduire la concurrence, ou simplement suivre votre calendrier de vie.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Il n'existe pas de saison parfaite universelle. Un vendeur qui veut peu de concurrence et un acheteur qui veut négocier peuvent tous deux trouver leur compte en hiver.</p></aside>"
+    },
+    {
+      "title": "Aspects pratiques de l'hiver québécois",
+      "objective": "Anticiper la logistique de saison.",
+      "html": "<p class=\"lede\">Anticiper la logistique de saison.</p>\n<p>Au Québec, l'hiver ajoute quelques réalités concrètes à ne pas négliger :</p><ul><li><strong>Déménagement</strong> : routes, verglas et délais ; prévoir de la marge.</li><li><strong>Inspection</strong> : la neige peut cacher la toiture, le terrain, le drainage — poser des questions et documenter.</li><li><strong>Prise de possession</strong> : vérifier chauffage et accès dès la remise des clés.</li><li><strong>Assurance</strong> : s'assurer que la couverture est active avant le grand froid.</li></ul><p>Bien anticipés, ces points transforment les « inconvénients » de l'hiver en simple organisation.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si la neige cache le toit ou le terrain lors de la visite, demandez des photos prises l'été et notez-le à l'inspection. On n'achète pas ce qu'on ne peut pas voir sans se poser de questions.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Décider de ma stratégie sans préjugé de saison.</li><li>Lister les ajustements hivernaux (déneigement, lumière).</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Préparer une présentation chaleureuse et accessible.</li><li>Profiter d'un marché moins encombré.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Agir selon mes besoins, pas selon le calendrier.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Saisonnalité : variation de l'activité du marché selon les saisons.</li><li>Acheteurs motivés : ceux qui visitent en hiver, souvent plus sérieux.</li><li>Curb appeal hivernal : accès déneigé et présentation chaleureuse.</li><li>Test hivernal : observer isolation, chauffage et infiltrations par grand froid.</li><li>Concurrence de vendeurs : plus faible en hiver.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "En hiver, il y a généralement :",
+      "options": [
+        "A) Plus de propriétés et d'acheteurs",
+        "B) Moins des deux, mais des acheteurs plus motivés",
+        "C) Aucune transaction",
+        "D) Des prix nuls"
+      ],
+      "answer": 1,
+      "explanation": "Moins nombreux, plus sérieux (chap. 1)."
+    },
+    {
+      "q": "Un avantage de vendre en hiver est :",
+      "options": [
+        "A) Plus de concurrence",
+        "B) Moins de concurrence entre vendeurs",
+        "C) Aucun acheteur",
+        "D) Des taxes plus hautes"
+      ],
+      "answer": 1,
+      "explanation": "Concurrence réduite (chap. 1)."
+    },
+    {
+      "q": "Pour bien vendre en hiver, il faut :",
+      "options": [
+        "A) Laisser la glace",
+        "B) Déneiger, maximiser lumière et chaleur",
+        "C) Éteindre le chauffage",
+        "D) Fermer les rideaux"
+      ],
+      "answer": 1,
+      "explanation": "Confort et accès (chap. 2)."
+    },
+    {
+      "q": "Pour compenser les jours courts, on devrait :",
+      "options": [
+        "A) Baisser les stores",
+        "B) Maximiser la lumière (rideaux ouverts, éclairage chaud)",
+        "C) Visiter la nuit",
+        "D) Rien changer"
+      ],
+      "answer": 1,
+      "explanation": "Maximiser la lumière (chap. 2)."
+    },
+    {
+      "q": "Acheter en hiver permet de voir :",
+      "options": [
+        "A) Le jardin en fleurs",
+        "B) Le comportement de la maison par grand froid",
+        "C) Rien",
+        "D) La piscine ouverte"
+      ],
+      "answer": 1,
+      "explanation": "Test en conditions exigeantes (chap. 3)."
+    },
+    {
+      "q": "Les acheteurs d'hiver sont souvent :",
+      "options": [
+        "A) De simples curieux",
+        "B) Plus motivés et sérieux",
+        "C) Inexistants",
+        "D) Des touristes"
+      ],
+      "answer": 1,
+      "explanation": "Motivation plus forte (chap. 1 et 3)."
+    },
+    {
+      "q": "Le « meilleur » moment pour transiger :",
+      "options": [
+        "A) Est toujours le printemps",
+        "B) Dépend de vos priorités et de votre situation",
+        "C) N'existe jamais",
+        "D) Est fixé par la loi"
+      ],
+      "answer": 1,
+      "explanation": "Chaque saison a sa logique (chap. 4)."
+    },
+    {
+      "q": "Le printemps se caractérise par :",
+      "options": [
+        "A) Aucun acheteur",
+        "B) Beaucoup de choix mais forte concurrence",
+        "C) Des prix nuls",
+        "D) Aucune propriété"
+      ],
+      "answer": 1,
+      "explanation": "Volume et concurrence élevés (chap. 4)."
+    },
+    {
+      "q": "Si la neige cache la toiture à la visite, il faut :",
+      "options": [
+        "A) Ignorer",
+        "B) Demander des photos d'été et le noter à l'inspection",
+        "C) Acheter les yeux fermés",
+        "D) Annuler l'achat"
+      ],
+      "answer": 1,
+      "explanation": "Documenter ce qu'on ne voit pas (chap. 5)."
+    },
+    {
+      "q": "Un déménagement hivernal demande surtout :",
+      "options": [
+        "A) Aucune préparation",
+        "B) De prévoir de la marge (routes, verglas, délais)",
+        "C) De déménager la nuit",
+        "D) D'attendre l'été"
+      ],
+      "answer": 1,
+      "explanation": "Anticiper la logistique (chap. 5)."
+    }
+  ]
+}

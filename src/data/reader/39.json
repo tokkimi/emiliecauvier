@@ -1,1 +1,158 @@
-{"number": 39, "title": "Le marché du Grand Montréal", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Le marché immobilier bouge par cycles : périodes favorables aux vendeurs, périodes favorables aux acheteurs, et transitions. Comprendre ces dynamiques dans le Grand Montréal aide à décider avec discernement plutôt qu'à suivre l'émotion collective.</p><p>Ce guide explique les phases du marché, les indicateurs à surveiller, et comment agir selon le contexte — sans tenter de « timer » parfaitement le marché.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Marché d'acheteurs, marché de vendeurs", "objective": "Reconnaître dans quel type de marché on se trouve.", "html": "<p class=\"lede\">Reconnaître dans quel type de marché on se trouve.</p>\n<p>En marché de vendeurs, la demande dépasse l'offre : peu de propriétés, ventes rapides, surenchères possibles. En marché d'acheteurs, l'offre dépasse la demande : plus de choix, délais plus longs, négociation à la baisse. Entre les deux, un marché équilibré.</p>\n<ul><li>Indice clé : le nombre de mois d'inventaire (combien de temps pour écouler les propriétés à vendre).</li><li>Délai de vente moyen et rapport prix vendu / prix demandé.</li><li>Ces dynamiques varient selon le secteur et le type de propriété.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Adaptez votre stratégie au type de marché. En marché de vendeurs, on offre vite et proprement ; en marché d'acheteurs, on prend son temps et on négocie. Le même comportement ne marche pas dans les deux.</p></aside>"}, {"title": "Les facteurs qui font bouger le marché", "objective": "Comprendre les forces en jeu.", "html": "<p class=\"lede\">Comprendre les forces en jeu.</p>\n<ul><li>Taux d'intérêt : ils influencent fortement la capacité d'emprunt et la demande.</li><li>Économie et emploi : confiance, revenus, migration.</li><li>Offre : mises en chantier, disponibilité des terrains, réglementation.</li><li>Démographie et secteurs : certains quartiers restent recherchés quel que soit le cycle.</li></ul>\n<p>Aucun facteur isolé ne dit tout ; c'est leur combinaison qui façonne le marché.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Surveillez surtout les taux d'intérêt : ils sont le levier le plus puissant à court terme sur la demande et donc sur les prix. Mais ne fondez jamais une décision de vie sur une seule variable.</p></aside>"}, {"title": "Agir sans tenter de deviner le sommet", "objective": "Décider selon ses besoins, pas selon la spéculation.", "html": "<p class=\"lede\">Décider selon ses besoins, pas selon la spéculation.</p>\n<p>Personne ne « time » parfaitement le marché. Pour la plupart des ménages, la bonne décision dépend surtout de leur situation personnelle (besoin, stabilité, capacité) et de leur horizon, plus que d'une tentative de prédire le sommet ou le creux.</p>\n<p>L'immobilier récompense généralement la patience et la détention à long terme, qui lissent les cycles.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>N'attendez pas indéfiniment « le moment parfait » : il ne se reconnaît qu'après coup. Une bonne propriété achetée pour de bonnes raisons, avec un horizon long, traverse les cycles.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Identifier le type de marché actuel dans mon secteur.</li><li>Suivre inventaire, délais et rapport prix vendu/demandé.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Comprendre l'effet des taux sur mon projet.</li><li>Clarifier mes besoins et mon horizon.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Décider selon ma situation, avec l'éclairage d'Emilie sur le marché local.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Marché de vendeurs : demande &gt; offre, ventes rapides.</li><li>Marché d'acheteurs : offre &gt; demande, négociation à la baisse.</li><li>Mois d'inventaire : temps estimé pour écouler les propriétés à vendre.</li><li>Taux d'intérêt : levier majeur sur la demande et les prix.</li><li>Horizon long terme : détention qui lisse les cycles.</li></ul>"}], "qcm": [{"q": "En marché de vendeurs :", "options": ["A) L'offre dépasse la demande", "B) La demande dépasse l'offre, ventes rapides", "C) Rien ne se vend", "D) Les prix chutent"], "answer": 1, "explanation": "Peu de propriétés, surenchères possibles (chap. 1)."}, {"q": "Un indice clé du marché est :", "options": ["A) La couleur des maisons", "B) Le nombre de mois d'inventaire", "C) La météo", "D) Le nom du courtier"], "answer": 1, "explanation": "Temps pour écouler l'offre (chap. 1)."}, {"q": "Le levier le plus puissant à court terme est :", "options": ["A) La peinture", "B) Les taux d'intérêt", "C) La saison des fêtes", "D) La couleur"], "answer": 1, "explanation": "Ils influencent la demande (chap. 2)."}, {"q": "Timer parfaitement le marché est :", "options": ["A) Facile", "B) Quasi impossible ; on décide selon ses besoins", "C) Garanti", "D) Obligatoire"], "answer": 1, "explanation": "La situation personnelle prime (chap. 3)."}, {"q": "L'immobilier récompense surtout :", "options": ["A) La spéculation rapide", "B) La patience et la détention à long terme", "C) L'impatience", "D) Le hasard"], "answer": 1, "explanation": "Le long terme lisse les cycles (chap. 3)."}, {"q": "La stratégie doit :", "options": ["A) Être identique dans tous les marchés", "B) S'adapter au type de marché", "C) Ignorer le marché", "D) Suivre l'émotion"], "answer": 1, "explanation": "Acheteurs vs vendeurs (chap. 1)."}]}
+{
+  "number": 39,
+  "title": "Le marché du Grand Montréal",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Le marché immobilier bouge par cycles : périodes favorables aux vendeurs, périodes favorables aux acheteurs, et transitions. Comprendre ces dynamiques dans le Grand Montréal aide à décider avec discernement plutôt qu'à suivre l'émotion collective.</p><p>Ce guide explique les phases du marché, les indicateurs à surveiller, et comment agir selon le contexte — sans tenter de « timer » parfaitement le marché.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"
+    },
+    {
+      "title": "Marché d'acheteurs, marché de vendeurs",
+      "objective": "Reconnaître dans quel marché on se trouve.",
+      "html": "<p class=\"lede\">Reconnaître dans quel marché on se trouve.</p>\n<p>Le marché oscille entre deux extrêmes, avec un équilibre au milieu :</p><ul><li><strong>Marché de vendeurs</strong> : la demande dépasse l'offre. Peu de propriétés, ventes rapides, surenchères possibles.</li><li><strong>Marché d'acheteurs</strong> : l'offre dépasse la demande. Plus de choix, délais plus longs, négociation à la baisse.</li><li><strong>Marché équilibré</strong> : entre les deux.</li></ul><p>L'indice clé est le <strong>nombre de mois d'inventaire</strong> : combien de temps il faudrait pour écouler toutes les propriétés à vendre au rythme actuel.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne vous fiez pas aux manchettes nationales : le marché est local. Un quartier de Montréal peut favoriser les vendeurs pendant qu'un autre favorise les acheteurs. Regardez VOS chiffres de secteur.</p></aside>"
+    },
+    {
+      "title": "Les facteurs qui font bouger le marché",
+      "objective": "Comprendre les forces en jeu.",
+      "html": "<p class=\"lede\">Comprendre les forces en jeu.</p>\n<p>Aucun facteur isolé ne dit tout ; c'est leur combinaison qui façonne le marché :</p><ul><li><strong>Taux d'intérêt</strong> : ils influencent fortement la capacité d'emprunt et donc la demande.</li><li><strong>Économie et emploi</strong> : confiance, revenus, migration.</li><li><strong>Offre</strong> : mises en chantier, disponibilité des terrains, réglementation.</li><li><strong>Démographie et secteurs</strong> : certains quartiers restent recherchés quel que soit le cycle.</li></ul><p>Comprendre ces leviers vous aide à interpréter ce que vous voyez plutôt qu'à réagir à chaud.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Quand les taux montent, la capacité d'emprunt baisse et la pression sur les prix se relâche souvent. Quand ils baissent, c'est l'inverse. Suivez les taux : c'est le facteur numéro un.</p></aside>"
+    },
+    {
+      "title": "Les indicateurs à surveiller",
+      "objective": "Lire le marché avec des chiffres.",
+      "html": "<p class=\"lede\">Lire le marché avec des chiffres.</p>\n<p>Pour vous situer, quelques indicateurs simples et publics valent mieux que des impressions :</p><ul><li><strong>Mois d'inventaire</strong> : bas = marché de vendeurs, élevé = marché d'acheteurs.</li><li><strong>Délai de vente moyen</strong> : combien de jours sur le marché.</li><li><strong>Rapport prix vendu / prix demandé</strong> : au-dessus de 100 % signale des surenchères.</li><li><strong>Prix médian</strong> par type de propriété et par secteur.</li></ul><p>Suivis dans le temps, ces chiffres racontent la tendance mieux qu'une seule vente spectaculaire.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Une seule maison vendue très cher (ou très bas) ne fait pas une tendance. Regardez le prix médian et le délai de vente sur plusieurs mois : c'est là qu'est la vraie histoire du marché.</p></aside>"
+    },
+    {
+      "title": "Agir sans tenter de deviner le sommet",
+      "objective": "Décider selon ses besoins, pas la spéculation.",
+      "html": "<p class=\"lede\">Décider selon ses besoins, pas la spéculation.</p>\n<p>Personne ne « time » parfaitement le marché — ni les experts, ni les banques. Pour la plupart des ménages, la bonne décision dépend surtout :</p><ul><li>de leur <strong>situation personnelle</strong> (besoin, stabilité, capacité) ;</li><li>de leur <strong>horizon</strong> de détention.</li></ul><p>L'immobilier récompense généralement la patience et la détention à long terme, qui lissent les cycles. Attendre « le creux parfait » fait souvent manquer de bonnes occasions.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>La meilleure question n'est pas « est-ce le bon moment pour le marché ? » mais « est-ce le bon moment pour MOI ? ». Un besoin réel et une détention longue battent presque toujours la spéculation.</p></aside>"
+    },
+    {
+      "title": "Le Grand Montréal : des marchés dans le marché",
+      "objective": "Nuancer selon le secteur.",
+      "html": "<p class=\"lede\">Nuancer selon le secteur.</p>\n<p>Le « marché de Montréal » n'existe pas vraiment : c'est une mosaïque de marchés locaux aux dynamiques distinctes.</p><ul><li><strong>Type de propriété</strong> : condos, plex et unifamiliales ne bougent pas au même rythme.</li><li><strong>Secteur</strong> : centre, couronnes, banlieues et régions ont chacun leur logique.</li><li><strong>Segment de prix</strong> : l'entrée de gamme et le haut de gamme réagissent différemment aux taux.</li></ul><p>Comparer votre projet aux bonnes données locales évite les fausses conclusions tirées de statistiques trop larges.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Demandez à votre courtière les ventes comparables des trois à six derniers mois dans VOTRE secteur et pour VOTRE type de propriété. C'est cent fois plus utile qu'une statistique provinciale.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Identifier le type de marché actuel dans mon secteur.</li><li>Suivre inventaire, délais et rapport prix vendu/demandé.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Comprendre l'effet des taux sur mon projet.</li><li>Clarifier mes besoins et mon horizon.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Décider selon ma situation, avec l'éclairage d'Emilie sur le marché local.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Marché de vendeurs : demande &gt; offre, ventes rapides.</li><li>Marché d'acheteurs : offre &gt; demande, négociation à la baisse.</li><li>Mois d'inventaire : temps estimé pour écouler les propriétés à vendre.</li><li>Taux d'intérêt : levier majeur sur la demande et les prix.</li><li>Horizon long terme : détention qui lisse les cycles.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "En marché de vendeurs :",
+      "options": [
+        "A) L'offre dépasse la demande",
+        "B) La demande dépasse l'offre, ventes rapides",
+        "C) Rien ne se vend",
+        "D) Les prix sont nuls"
+      ],
+      "answer": 1,
+      "explanation": "Demande > offre (chap. 1)."
+    },
+    {
+      "q": "En marché d'acheteurs :",
+      "options": [
+        "A) Surenchères fréquentes",
+        "B) Plus de choix, négociation à la baisse",
+        "C) Aucune propriété",
+        "D) Prix fixés par la ville"
+      ],
+      "answer": 1,
+      "explanation": "Offre > demande (chap. 1)."
+    },
+    {
+      "q": "Les mois d'inventaire mesurent :",
+      "options": [
+        "A) L'âge des maisons",
+        "B) Le temps pour écouler les propriétés à vendre",
+        "C) Les taxes",
+        "D) Le taux d'intérêt"
+      ],
+      "answer": 1,
+      "explanation": "Indicateur clé (chap. 1 et 3)."
+    },
+    {
+      "q": "Le facteur numéro un sur la demande est souvent :",
+      "options": [
+        "A) La couleur des maisons",
+        "B) Les taux d'intérêt",
+        "C) La saison",
+        "D) Le nom des rues"
+      ],
+      "answer": 1,
+      "explanation": "Les taux (chap. 2)."
+    },
+    {
+      "q": "Un rapport prix vendu/demandé au-dessus de 100 % signale :",
+      "options": [
+        "A) Des rabais",
+        "B) Des surenchères",
+        "C) Un marché mort",
+        "D) Une erreur"
+      ],
+      "answer": 1,
+      "explanation": "Surenchères (chap. 3)."
+    },
+    {
+      "q": "Pour lire une tendance, on regarde :",
+      "options": [
+        "A) Une seule vente",
+        "B) Prix médian et délais sur plusieurs mois",
+        "C) Les rumeurs",
+        "D) La météo"
+      ],
+      "answer": 1,
+      "explanation": "Données dans le temps (chap. 3)."
+    },
+    {
+      "q": "« Timer » parfaitement le marché est :",
+      "options": [
+        "A) Facile",
+        "B) Pratiquement impossible",
+        "C) Garanti par les banques",
+        "D) Obligatoire"
+      ],
+      "answer": 1,
+      "explanation": "Personne n'y arrive (chap. 4)."
+    },
+    {
+      "q": "Pour la plupart des ménages, la décision dépend surtout :",
+      "options": [
+        "A) De la spéculation",
+        "B) De leur situation et de leur horizon",
+        "C) Des voisins",
+        "D) Du hasard"
+      ],
+      "answer": 1,
+      "explanation": "Besoins et horizon (chap. 4)."
+    },
+    {
+      "q": "Le « marché de Montréal » est en réalité :",
+      "options": [
+        "A) Un seul marché uniforme",
+        "B) Une mosaïque de marchés locaux",
+        "C) Inexistant",
+        "D) Identique partout"
+      ],
+      "answer": 1,
+      "explanation": "Des marchés dans le marché (chap. 5)."
+    },
+    {
+      "q": "Le plus utile pour situer votre projet, c'est :",
+      "options": [
+        "A) Une statistique provinciale",
+        "B) Les comparables récents de votre secteur et type",
+        "C) Une manchette nationale",
+        "D) Aucune donnée"
+      ],
+      "answer": 1,
+      "explanation": "Données locales ciblées (chap. 5)."
+    }
+  ]
+}
