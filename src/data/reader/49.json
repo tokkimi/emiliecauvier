@@ -1,1 +1,136 @@
-{"number": 49, "title": "Selling Your Home in Greater Montréal", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Selling your home for the best price is not luck — it is method. The right list price, preparation, marketing, negotiation and follow-through to signing all matter. This guide gives you the game plan a broker uses to maximize price and minimize stress.</p><p>You will know what to do, in what order, and why — with the local realities of the Greater Montréal market.</p><p>After each chapter, a full-page lined 'My Notes' section helps you prepare YOUR sale.</p>"}, {"title": "Steps 1-2: the right price and preparation", "objective": "Start on solid ground: fair price and a market-ready home.", "html": "<p class=\"lede\">Start on solid ground: fair price and a market-ready home.</p>\n<h3>Step 1 — Set the right price</h3>\n<p>The list price is the most strategic decision. Too high and the home stalls, goes stale and ultimately sells for less; too low and you leave money on the table. Price from a comparative market analysis (recent comparable sales), not a wish.</p>\n<h3>Step 2 — Prepare the property</h3>\n<ul><li>Declutter, deep-clean, depersonalize.</li><li>Minor repairs that catch the eye.</li><li>Light home staging to showcase the spaces.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>An overpriced home almost always sells for less in the end: it becomes 'the one that lingers.' The right price on day one creates the interest that drives offers up.</p></aside>"}, {"title": "Steps 3-4: marketing and showings", "objective": "Expose the property to the most qualified buyers.", "html": "<p class=\"lede\">Expose the property to the most qualified buyers.</p>\n<ul><li>Professional photos, video, a polished description.</li><li>Broad distribution (Centris, social media, broker network).</li><li>Make showings easy: availability, constant tidiness, owners away.</li></ul>\n<p>The first weeks matter most: that is when interest peaks. A well-prepared, well-priced home often gets its best offers early. Today the first visit happens on a screen, so quality photos are the highest-return investment of the whole sale.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Never skimp on photos. A well-prepared home that is poorly photographed sells for less than it should.</p></aside>"}, {"title": "Steps 5-6: offers and negotiation", "objective": "Turn interest into the best accepted offer.", "html": "<p class=\"lede\">Turn interest into the best accepted offer.</p>\n<p>Evaluate each offer as a whole: price, conditions (inspection, financing), dates, and the strength of the buyer's financing. The highest offer is not always the best if its conditions are shaky.</p>\n<ul><li>Analyze price AND certainty.</li><li>Negotiate or counter while keeping your objective in mind.</li><li>In multiple offers, a fair, transparent process maximizes the result.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Do not be dazzled by the number alone. A slightly lower but near-certain, well-financed offer can be worth more than a high, fragile one.</p></aside>"}, {"title": "Step 7: from acceptance to closing", "objective": "Secure the sale through to signing.", "html": "<p class=\"lede\">Secure the sale through to signing.</p>\n<p>An accepted offer is not a closed sale: conditions remain (inspection, buyer's financing, document review). Good follow-through keeps the deal from derailing in this sensitive window.</p>\n<ul><li>Facilitate the inspection and access to documents.</li><li>Provide the notary with required documents (certificate of location, seller's declaration).</li><li>Prepare your own move and key handover.</li></ul>\n<p>Remember: in Québec the seller's declaration and the legal warranty matter — disclose known defects honestly to reduce the risk of post-sale disputes.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Stay collaborative while conditions are being met: a well-supported transaction reaches the finish line. That is where a broker's experience makes the difference.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Get a comparative market analysis to set the right price.</li><li>Begin decluttering and minor repairs.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Arrange professional photos and marketing.</li><li>Organize flexible, well-prepared showings.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Review offers with Emilie and secure the transaction to the notary.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Comparative market analysis: recent comparable sales used to price the home.</li><li>Home staging: presenting the home to sell faster and for more.</li><li>Seller's declaration: form disclosing what the seller knows about the property.</li><li>Legal warranty of quality: protects the buyer against hidden defects.</li><li>Certificate of location: surveyor's document, often required to close.</li></ul>"}], "qcm": [{"q": "The most strategic selling decision is:", "options": ["A) The sign color", "B) The list price", "C) The moving date", "D) The notary's name"], "answer": 1, "explanation": "The right price creates interest (chapter 1)."}, {"q": "An overpriced home usually:", "options": ["A) Sells for more", "B) Sells for less in the end", "C) Sells faster", "D) Has no impact"], "answer": 1, "explanation": "It becomes 'the one that lingers' (chapter 1)."}, {"q": "The price should be set from:", "options": ["A) A wish", "B) A comparative market analysis", "C) The original purchase price", "D) Neighbours' opinions"], "answer": 1, "explanation": "Comparables give value (chapter 1)."}, {"q": "The most important weeks are:", "options": ["A) The last ones", "B) The first ones, when interest peaks", "C) None", "D) Winter only"], "answer": 1, "explanation": "Interest peaks at launch (chapter 2)."}, {"q": "An offer should be evaluated:", "options": ["A) On price alone", "B) As a whole (price, conditions, dates, financing)", "C) At random", "D) On the signature only"], "answer": 1, "explanation": "Highest is not always best (chapter 3)."}, {"q": "An accepted offer is:", "options": ["A) A closed sale", "B) Still subject to conditions being met", "C) Worthless", "D) Final immediately"], "answer": 1, "explanation": "Inspection, financing, documents remain (chapter 4)."}, {"q": "The highest-return investment in a sale is:", "options": ["A) A new kitchen", "B) Professional photos", "C) A gold sign", "D) Nothing"], "answer": 1, "explanation": "The first visit is on a screen (chapter 2)."}, {"q": "To reduce post-sale disputes, the seller should:", "options": ["A) Hide defects", "B) Disclose known defects honestly (seller's declaration)", "C) Say nothing", "D) Avoid the notary"], "answer": 1, "explanation": "Transparency protects the seller (chapter 4)."}]}
+{
+  "number": 49,
+  "title": "Selling Your Home in Greater Montréal",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Selling your home for the best price is not luck — it is method. The right list price, preparation, marketing, negotiation and follow-through to signing all matter. This guide gives you the game plan a broker uses to maximize price and minimize stress.</p><p>You will know what to do, in what order, and why — with the local realities of the Greater Montréal market.</p><p>After each chapter, a full-page lined 'My Notes' section helps you prepare YOUR sale.</p>"
+    },
+    {
+      "title": "Steps 1-2: the right price and preparation",
+      "objective": "Start on solid ground: fair price and a market-ready home.",
+      "html": "<p class=\"lede\">Start on solid ground: fair price and a market-ready home.</p>\n<h3>Step 1 — Set the right price</h3>\n<p>The list price is the most strategic decision. Too high and the home stalls, goes stale and ultimately sells for less; too low and you leave money on the table. Price from a comparative market analysis (recent comparable sales), not a wish.</p>\n<h3>Step 2 — Prepare the property</h3>\n<ul><li>Declutter, deep-clean, depersonalize.</li><li>Minor repairs that catch the eye.</li><li>Light home staging to showcase the spaces.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>An overpriced home almost always sells for less in the end: it becomes 'the one that lingers.' The right price on day one creates the interest that drives offers up.</p></aside>"
+    },
+    {
+      "title": "Steps 3-4: marketing and showings",
+      "objective": "Expose the property to the most qualified buyers.",
+      "html": "<p class=\"lede\">Expose the property to the most qualified buyers.</p>\n<ul><li>Professional photos, video, a polished description.</li><li>Broad distribution (Centris, social media, broker network).</li><li>Make showings easy: availability, constant tidiness, owners away.</li></ul>\n<p>The first weeks matter most: that is when interest peaks. A well-prepared, well-priced home often gets its best offers early. Today the first visit happens on a screen, so quality photos are the highest-return investment of the whole sale.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Never skimp on photos. A well-prepared home that is poorly photographed sells for less than it should.</p></aside>"
+    },
+    {
+      "title": "Steps 5-6: offers and negotiation",
+      "objective": "Turn interest into the best accepted offer.",
+      "html": "<p class=\"lede\">Turn interest into the best accepted offer.</p>\n<p>Evaluate each offer as a whole: price, conditions (inspection, financing), dates, and the strength of the buyer's financing. The highest offer is not always the best if its conditions are shaky.</p>\n<ul><li>Analyze price AND certainty.</li><li>Negotiate or counter while keeping your objective in mind.</li><li>In multiple offers, a fair, transparent process maximizes the result.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Do not be dazzled by the number alone. A slightly lower but near-certain, well-financed offer can be worth more than a high, fragile one.</p></aside>"
+    },
+    {
+      "title": "Step 7: from acceptance to closing",
+      "objective": "Secure the sale through to signing.",
+      "html": "<p class=\"lede\">Secure the sale through to signing.</p>\n<p>An accepted offer is not a closed sale: conditions remain (inspection, buyer's financing, document review). Good follow-through keeps the deal from derailing in this sensitive window.</p>\n<ul><li>Facilitate the inspection and access to documents.</li><li>Provide the notary with required documents (certificate of location, seller's declaration).</li><li>Prepare your own move and key handover.</li></ul>\n<p>Remember: in Québec the seller's declaration and the legal warranty matter — disclose known defects honestly to reduce the risk of post-sale disputes.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Stay collaborative while conditions are being met: a well-supported transaction reaches the finish line. That is where a broker's experience makes the difference.</p></aside>"
+    },
+    {
+      "title": "Common seller mistakes to avoid",
+      "objective": "Protect your sale from avoidable errors.",
+      "html": "<p class=\"lede\">Protect your sale from avoidable errors.</p>\n<p>A few very common mistakes end up costing sellers real money. Knowing them is half the battle:</p><ul><li><strong>Overpricing</strong> at launch: the property stalls and loses momentum.</li><li>Skipping <strong>preparation</strong> and quality photos.</li><li>Making <strong>showings</strong> hard to schedule.</li><li>Negotiating on <strong>emotion</strong> rather than facts.</li></ul><p>The good news: every one of these is avoidable with a little method and perspective.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>The first weeks on the market are the most valuable — that's when interest peaks. An inflated starting price wastes that momentum, and a listing that lingers usually sells for less in the end.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Get a comparative market analysis to set the right price.</li><li>Begin decluttering and minor repairs.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Arrange professional photos and marketing.</li><li>Organize flexible, well-prepared showings.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Review offers with Emilie and secure the transaction to the notary.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Comparative market analysis: recent comparable sales used to price the home.</li><li>Home staging: presenting the home to sell faster and for more.</li><li>Seller's declaration: form disclosing what the seller knows about the property.</li><li>Legal warranty of quality: protects the buyer against hidden defects.</li><li>Certificate of location: surveyor's document, often required to close.</li></ul>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "The most strategic selling decision is:",
+      "options": [
+        "A) The sign color",
+        "B) The list price",
+        "C) The moving date",
+        "D) The notary's name"
+      ],
+      "answer": 1,
+      "explanation": "The right price creates interest (chapter 1)."
+    },
+    {
+      "q": "An overpriced home usually:",
+      "options": [
+        "A) Sells for more",
+        "B) Sells for less in the end",
+        "C) Sells faster",
+        "D) Has no impact"
+      ],
+      "answer": 1,
+      "explanation": "It becomes 'the one that lingers' (chapter 1)."
+    },
+    {
+      "q": "The price should be set from:",
+      "options": [
+        "A) A wish",
+        "B) A comparative market analysis",
+        "C) The original purchase price",
+        "D) Neighbours' opinions"
+      ],
+      "answer": 1,
+      "explanation": "Comparables give value (chapter 1)."
+    },
+    {
+      "q": "The most important weeks are:",
+      "options": [
+        "A) The last ones",
+        "B) The first ones, when interest peaks",
+        "C) None",
+        "D) Winter only"
+      ],
+      "answer": 1,
+      "explanation": "Interest peaks at launch (chapter 2)."
+    },
+    {
+      "q": "An offer should be evaluated:",
+      "options": [
+        "A) On price alone",
+        "B) As a whole (price, conditions, dates, financing)",
+        "C) At random",
+        "D) On the signature only"
+      ],
+      "answer": 1,
+      "explanation": "Highest is not always best (chapter 3)."
+    },
+    {
+      "q": "An accepted offer is:",
+      "options": [
+        "A) A closed sale",
+        "B) Still subject to conditions being met",
+        "C) Worthless",
+        "D) Final immediately"
+      ],
+      "answer": 1,
+      "explanation": "Inspection, financing, documents remain (chapter 4)."
+    },
+    {
+      "q": "The highest-return investment in a sale is:",
+      "options": [
+        "A) A new kitchen",
+        "B) Professional photos",
+        "C) A gold sign",
+        "D) Nothing"
+      ],
+      "answer": 1,
+      "explanation": "The first visit is on a screen (chapter 2)."
+    },
+    {
+      "q": "To reduce post-sale disputes, the seller should:",
+      "options": [
+        "A) Hide defects",
+        "B) Disclose known defects honestly (seller's declaration)",
+        "C) Say nothing",
+        "D) Avoid the notary"
+      ],
+      "answer": 1,
+      "explanation": "Transparency protects the seller (chapter 4)."
+    }
+  ]
+}
