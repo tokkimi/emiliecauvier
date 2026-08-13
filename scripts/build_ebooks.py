@@ -45,45 +45,45 @@ CSS = f"""
 html, body {{ background: {CREAM}; margin: 0; padding: 0;
   -webkit-print-color-adjust: exact; print-color-adjust: exact; }}
 body {{ font-family: 'Newsreader', Georgia, serif; color: #201a17;
-  font-size: 12pt; line-height: 1.62; }}
+  font-size: 13.5pt; line-height: 1.78; }}
 
 /* Une PARTIE = une page pleine, crème bord à bord, texte en retrait. */
 .page {{ break-before: page; background: {CREAM}; min-height: 12.75in;
-  padding: 0.95in 0.85in 0.9in; }}
+  padding: 1in 0.95in 0.95in; }}
 .page.first {{ break-before: auto; }}
 
-.dochead {{ border-bottom: 2px solid #6e1226; padding-bottom: 16pt; margin-bottom: 26pt; }}
-.dochead .kicker {{ font-family: 'Inter', sans-serif; font-size: 8pt; letter-spacing: .22em;
+.dochead {{ border-bottom: 2px solid #6e1226; padding-bottom: 18pt; margin-bottom: 30pt; }}
+.dochead .kicker {{ font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: .22em;
   text-transform: uppercase; color: #a9743b; }}
 .dochead h1 {{ font-family: 'Fraunces', Georgia, serif; color: #6e1226;
-  font-size: 30pt; line-height: 1.06; margin: 10pt 0 8pt; font-weight: 600; }}
-.dochead .sub {{ font-family: 'Newsreader', serif; font-style: italic; color: #4a3f39; font-size: 13pt; }}
+  font-size: 34pt; line-height: 1.06; margin: 12pt 0 10pt; font-weight: 600; }}
+.dochead .sub {{ font-family: 'Newsreader', serif; font-style: italic; color: #4a3f39; font-size: 15pt; }}
 
-h2.part {{ font-family: 'Fraunces', Georgia, serif; color: #6e1226; font-size: 22pt;
-  margin: 0 0 6pt; font-weight: 600; line-height: 1.12; break-after: avoid; }}
-h2.part .no {{ font-family: 'Inter', sans-serif; font-size: 9pt; color: #a9743b;
-  letter-spacing: .2em; text-transform: uppercase; display: block; margin-bottom: 6pt; }}
+h2.part {{ font-family: 'Fraunces', Georgia, serif; color: #6e1226; font-size: 25pt;
+  margin: 0 0 8pt; font-weight: 600; line-height: 1.12; break-after: avoid; }}
+h2.part .no {{ font-family: 'Inter', sans-serif; font-size: 9.5pt; color: #a9743b;
+  letter-spacing: .2em; text-transform: uppercase; display: block; margin-bottom: 8pt; }}
 
-p {{ margin: 0 0 9pt; }}
-.lede {{ font-size: 13pt; line-height: 1.5; color: #4a3f39; font-style: italic;
-  border-left: 3px solid #a9743b; padding-left: 13pt; margin: 10pt 0 14pt; break-after: avoid; }}
-ul, ol {{ margin: 0 0 11pt 17pt; padding: 0; }}
-li {{ margin-bottom: 5pt; padding-left: 3pt; }}
+p {{ margin: 0 0 12pt; }}
+.lede {{ font-size: 15pt; line-height: 1.55; color: #4a3f39; font-style: italic;
+  border-left: 3px solid #a9743b; padding-left: 15pt; margin: 12pt 0 18pt; break-after: avoid; }}
+ul, ol {{ margin: 0 0 14pt 18pt; padding: 0; }}
+li {{ margin-bottom: 7pt; padding-left: 4pt; }}
 ul li::marker {{ color: #a9743b; }}
 ol li::marker {{ color: #6e1226; font-family: 'Inter', sans-serif; }}
-h3 {{ font-family: 'Fraunces', serif; color: #6e1226; font-size: 13pt; margin: 14pt 0 5pt; break-after: avoid; }}
+h3 {{ font-family: 'Fraunces', serif; color: #6e1226; font-size: 14.5pt; margin: 18pt 0 6pt; break-after: avoid; }}
 
 /* Conseil d'Emilie : encadré doux (pas blanc pur), en fin de partie. */
 .tip {{ background: #fffaf2; border: 1px solid #e7dcc9; border-left: 4px solid #a9743b;
-  border-radius: 0 8px 8px 0; padding: 14pt 16pt; margin: 16pt 0 0; break-inside: avoid; }}
-.tip__label {{ display: block; font-family: 'Inter', sans-serif; font-size: 7.5pt;
-  letter-spacing: .2em; text-transform: uppercase; color: #a9743b; margin-bottom: 5pt; }}
+  border-radius: 0 8px 8px 0; padding: 16pt 18pt; margin: 20pt 0 0; break-inside: avoid; }}
+.tip__label {{ display: block; font-family: 'Inter', sans-serif; font-size: 8pt;
+  letter-spacing: .2em; text-transform: uppercase; color: #a9743b; margin-bottom: 6pt; }}
 .tip p {{ margin: 0; font-style: italic; }}
 
-.q {{ margin: 0 0 12pt; break-inside: avoid; }}
-.q .qq {{ font-weight: 600; margin-bottom: 4pt; }}
-.q .opt {{ font-family: 'Inter', sans-serif; font-size: 10.5pt; margin: 2pt 0 2pt 10pt; color: #333; }}
-.answers .a {{ font-family: 'Inter', sans-serif; font-size: 10.5pt; margin: 3pt 0; color: #4a3f39; }}
+.q {{ margin: 0 0 15pt; break-inside: avoid; }}
+.q .qq {{ font-weight: 600; margin-bottom: 5pt; }}
+.q .opt {{ font-family: 'Inter', sans-serif; font-size: 11.5pt; margin: 3pt 0 3pt 12pt; color: #333; }}
+.answers .a {{ font-family: 'Inter', sans-serif; font-size: 11.5pt; margin: 4pt 0; color: #4a3f39; }}
 p, li {{ orphans: 2; widows: 2; }}
 """
 
