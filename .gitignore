@@ -7,3 +7,6 @@
 /src/generated
 *.log
 .DS_Store
+
+# Livrables ZIP (régénérables)
+/storage/*.zip
