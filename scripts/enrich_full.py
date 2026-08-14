@@ -114,11 +114,65 @@ G5_LEX = ("<li>Partie privative / commune : votre unité vs les espaces partagé
           "<li>Cotisation spéciale : contribution ponctuelle quand le fonds ne suffit pas.</li>"
           "<li>Carnet d'entretien : historique et planification des travaux de l'immeuble.</li>")
 
+# ============================ GUIDE 6 ============================
+G6 = {
+ 0: "Avant même de sonner, prenez trente secondes sur le trottoir : l'implantation, la pente du terrain et l'état général racontent déjà beaucoup. Une propriété bien entretenue à l'extérieur l'est souvent aussi à l'intérieur ; l'inverse est un signal à ne pas ignorer.",
+ 1: "Le sous-sol est l'endroit le plus honnête d'une maison : c'est là que l'eau, les fissures et les réparations bricolées se voient. Méfiez-vous d'un sous-sol fraîchement repeint juste avant la vente — il peut cacher des traces d'infiltration. Un déshumidificateur qui tourne en permanence est aussi un indice.",
+ 2: "Pour les systèmes, notez l'âge des grosses composantes (toiture, chauffage, chauffe-eau, fenêtres) : ce sont elles qui coûtent cher à remplacer. Un panneau électrique daté, une plomberie ancienne ou un système de chauffage en fin de vie doivent entrer dans votre calcul de budget après l'achat.",
+ 3: "À l'intérieur, regardez au-delà de la décoration : planchers de niveau, portes qui ferment bien, absence d'auréoles au plafond, fenêtres sans condensation entre les vitres. La déco se change facilement ; la structure et l'enveloppe, non. Ne tombez pas amoureux d'une cuisine au point d'oublier une fondation qui bouge.",
+ 4: "Votre visite ne remplace pas l'inspection : elle sert à filtrer et à cibler. Dès qu'une propriété vous intéresse sérieusement, faites une promesse d'achat conditionnelle à une inspection par un professionnel reconnu, et accompagnez-le pour poser vos questions et comprendre le rapport.",
+}
+G6_INTRO = ("<p>Une visite réussie, c'est une visite méthodique : on regarde dans le bon ordre, on note les bons indices, et on distingue ce qui se répare facilement de ce qui coûte cher. Ce guide vous donne une grille pièce par pièce, de l'extérieur jusqu'aux systèmes.</p>"
+            "<p>Objectif : repérer les vrais enjeux derrière la mise en scène, et transformer vos observations en questions précises pour l'inspection.</p>")
+G6_PLAN = ("<h3>Ma trousse de visite</h3><ol><li>Apporter une lampe de poche, un niveau (ou une bille) et de quoi prendre des notes et des photos.</li><li>Noter l'âge des composantes majeures et demander les factures des travaux récents.</li></ol>")
+G6_LEX = ("<li>Enveloppe du bâtiment : toiture, murs, fenêtres et isolation — la barrière contre l'eau et le froid.</li>"
+          "<li>Bris de scellant : condensation entre les vitres d'une fenêtre thermos.</li>"
+          "<li>Drain français : drain périphérique évacuant l'eau autour de la fondation.</li>"
+          "<li>Condition d'inspection : clause rendant l'achat dépendant d'un rapport satisfaisant.</li>"
+          "<li>Vice apparent : défaut visible lors d'un examen normal, non couvert par la garantie légale.</li>")
+
+# ============================ GUIDE 7 ============================
+G7 = {
+ 0: "Ne rédigez jamais une promesse « pour voir » : dès que le vendeur l'accepte, vous êtes engagé. Chaque élément compte — prix, inclusions et exclusions, date de possession, conditions. Une promesse bien faite protège vos intérêts autant qu'elle formalise votre offre.",
+ 1: "Vos conditions sont vos portes de sortie légitimes : inspection satisfaisante, obtention du financement, examen des documents (surtout en copropriété). Résister à la tentation de les retirer « pour gagner » en marché tendu est ce qui vous protège d'un achat regretté. Une porte de sortie n'est pas une faiblesse.",
+ 2: "Fixez votre prix à partir d'une analyse comparative (ventes récentes semblables), pas d'un ressenti. C'est votre base rationnelle pour offrir sans surpayer ni vexer le vendeur. En marché équilibré, une offre trop basse peut simplement fermer la porte à la négociation.",
+ 3: "Maîtrisez la mécanique : durée de validité de l'offre, dépôt en fidéicommis (gage de sérieux), et jeu des contre-propositions. Chaque contre-proposition rouvre la négociation : gardez votre plafond en tête et répondez sur les faits, pas sous la pression du délai.",
+ 4: "En offres multiples, décidez d'avance de votre montant maximum ET des conditions que vous refusez d'abandonner. Une offre propre, préapprouvée et aux délais souples rassure souvent autant qu'un dollar de plus. Perdre une propriété se surmonte ; surpayer vous suit des années.",
+}
+G7_INTRO = ("<p>La promesse d'achat est le document qui transforme votre intérêt en engagement. Bien rédigée, elle vous protège ; bâclée, elle vous expose. Ce guide décortique sa portée juridique, les conditions qui vous protègent, la façon de fixer votre prix et de mener la négociation.</p>"
+            "<p>Votre courtière rédige et valide ces documents encadrés : ce guide vous rend acteur et éclairé à chaque clause.</p>")
+G7_PLAN = ("<h3>Avant de déposer mon offre</h3><ol><li>Obtenir une analyse comparative récente et fixer mon prix plafond par écrit.</li><li>Lister mes conditions incontournables (inspection, financement, documents).</li></ol>")
+G7_LEX = ("<li>Promesse d'achat : offre qui devient un contrat dès l'acceptation du vendeur.</li>"
+          "<li>Condition suspensive : clause dont dépend la validité de la vente (inspection, financement).</li>"
+          "<li>Dépôt en fidéicommis : somme déposée en gage de sérieux, dans un compte protégé.</li>"
+          "<li>Contre-proposition : réponse modifiant un terme de l'offre initiale.</li>"
+          "<li>Date de possession : date convenue de remise des clés.</li>")
+
+# ============================ GUIDE 8 ============================
+G8 = {
+ 0: "Le plex propriétaire-occupant combine le meilleur des deux mondes : les règles de financement avantageuses du résidentiel (1 à 4 logements) et des loyers qui allègent votre hypothèque. C'est souvent la porte d'entrée la plus accessible vers l'investissement immobilier.",
+ 1: "Pour un immeuble de 1 à 4 logements que vous habitez, la mise de fonds minimale est nettement plus basse que pour un immeuble purement locatif (5 logements et plus). Le prêteur tient aussi compte d'une partie des loyers dans votre capacité d'emprunt — un levier puissant à valider avec un courtier hypothécaire.",
+ 2: "Calculez le coût net réel : additionnez toutes les dépenses (hypothèque, taxes, assurances, énergie des communs, entretien, réserve) puis soustrayez les loyers encaissés. C'est ce chiffre — pas le prix affiché — qui dit combien vous coûte VRAIMENT votre logement, souvent bien moins qu'une maison équivalente.",
+ 3: "Acheter un plex, c'est hériter de ses baux : au Québec, ils suivent l'immeuble. Vous reprenez les locataires en place et leurs conditions (loyer, durée) ; vous ne repartez pas « à neuf ». Examinez les baux, l'historique des loyers et des paiements AVANT d'offrir.",
+ 4: "Devenir propriétaire-bailleur, c'est un rôle : entretien réactif, communication claire, respect des règles d'augmentation et des droits des locataires. Bien joué, il fidélise de bons locataires et protège votre rendement. Mal joué, il génère vacance, conflits et frais imprévus.",
+}
+G8_INTRO = ("<p>Habiter un logement et louer les autres : le plex est un tremplin réputé vers la propriété et l'investissement. Ce guide explique pourquoi il est si accessible (financement occupant), comment calculer son coût net réel, et ce que signifie hériter de locataires et de baux.</p>"
+            "<p>Objectif : acheter un plex en connaissant à la fois les avantages financiers et les responsabilités de bailleur qui viennent avec.</p>")
+G8_PLAN = ("<h3>Avant d'acheter mon plex</h3><ol><li>Faire valider ma mise de fonds et ma capacité (loyers inclus) par un courtier hypothécaire.</li><li>Obtenir les baux, l'historique des loyers et le détail des dépenses de l'immeuble.</li></ol>")
+G8_LEX = ("<li>Propriétaire-occupant : propriétaire qui habite l'un des logements de son immeuble.</li>"
+          "<li>1 à 4 logements : catégorie résidentielle, financement plus avantageux.</li>"
+          "<li>Coût net : dépenses totales de l'immeuble moins les loyers encaissés.</li>"
+          "<li>Bail : contrat de location qui suit l'immeuble lors de la vente.</li>"
+          "<li>Tribunal administratif du logement (TAL) : instance encadrant les rapports locateur-locataire.</li>")
+
 TABLE = {
     2: (G2, G2_INTRO, G2_PLAN, G2_LEX),
     3: (G3, G3_INTRO, G3_PLAN, G3_LEX),
     4: (G4, G4_INTRO, G4_PLAN, G4_LEX),
     5: (G5, G5_INTRO, G5_PLAN, G5_LEX),
+    6: (G6, G6_INTRO, G6_PLAN, G6_LEX),
+    7: (G7, G7_INTRO, G7_PLAN, G7_LEX),
+    8: (G8, G8_INTRO, G8_PLAN, G8_LEX),
 }
 
 if __name__ == '__main__':
