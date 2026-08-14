@@ -165,6 +165,57 @@ G8_LEX = ("<li>Propriétaire-occupant : propriétaire qui habite l'un des logeme
           "<li>Bail : contrat de location qui suit l'immeuble lors de la vente.</li>"
           "<li>Tribunal administratif du logement (TAL) : instance encadrant les rapports locateur-locataire.</li>")
 
+# ============================ GUIDE 9 ============================
+G9 = {
+ 0: "Au-delà des goûts, pensez revente et coût total : le neuf se paie plus cher au pied carré mais démarre sans surprise ; l'ancien s'achète souvent moins cher mais exige un budget travaux. Le bon choix dépend de votre tolérance aux imprévus et du temps que vous voulez consacrer à l'entretien.",
+ 1: "La GCR couvre par étapes : acompte et parachèvement à la réception, puis vices cachés et vices majeurs sur des périodes plus longues (généralement jusqu'à 5 ans pour les vices majeurs). Elle comporte des limites et des exclusions : lisez le contrat de garantie et conservez vos documents de réception.",
+ 2: "Acheter sur plan comporte des risques propres : délais de livraison, choix figés tôt, et écart possible entre le rendu et le résultat. Vérifiez la protection de vos acomptes, les pénalités de retard et la réputation du constructeur. Faites une inspection de pré-réception et notez toutes les déficiences par écrit.",
+ 3: "Sur l'ancien, ciblez les postes coûteux : toiture, fondation, drain, plomberie, électricité, fenêtres. Un charme d'époque peut cacher des mises aux normes onéreuses. L'inspection et, au besoin, des expertises ciblées transforment l'incertitude en budget clair — et en levier de négociation.",
+ 4: "Quel que soit l'âge, mettez de côté chaque année un petit pourcentage de la valeur pour l'entretien et les imprévus. Une maison « pas chère » avec une toiture en fin de vie peut coûter plus qu'un neuf bien fini. Le vrai prix, c'est le prix d'achat PLUS l'entretien à venir.",
+}
+G9_I = ("<p>Neuf ou ancien : ce n'est pas qu'une question de goût, mais de garantie, de budget et de tolérance aux imprévus. Ce guide compare les deux honnêtement — coûts, garanties, achat sur plan, vérifications — pour un choix éclairé.</p>"
+        "<p>Les repères (édition 2026) servent à comprendre la logique ; validez les détails de garantie et de financement avec les professionnels concernés.</p>")
+G9_P = "<h3>Selon mon choix</h3><ol><li>Neuf/sur plan : vérifier la garantie GCR, la protection des acomptes et la réputation du constructeur.</li><li>Ancien : prévoir l'inspection et un budget travaux réaliste.</li></ol>"
+G9_L = ("<li>GCR : garantie de construction résidentielle des habitations neuves admissibles.</li>"
+        "<li>Vice majeur : défaut compromettant la solidité de l'ouvrage, couvert plus longtemps.</li>"
+        "<li>Achat sur plan : achat avant/pendant la construction, sur la foi des plans.</li>"
+        "<li>Pré-réception : visite avant livraison pour consigner les déficiences.</li>"
+        "<li>Réserve d'entretien : somme mise de côté chaque année pour les travaux.</li>")
+
+# ============================ GUIDE 10 ============================
+G10 = {
+ 0: "Le seuil clé est 20 % : en dessous, une assurance prêt (SCHL, Sagen, Canada Guaranty) s'ajoute à votre financement, ce qui augmente le coût mais permet d'acheter plus tôt. Visez un objectif réaliste plutôt que d'attendre des années pour éviter l'assurance — le marché peut monter plus vite que votre épargne.",
+ 1: "Le CELIAPP combine le meilleur du REER et du CELI : cotisations déductibles d'impôt ET retrait non imposable pour un premier achat, dans les limites annuelles et cumulatives. C'est souvent le tout premier compte à ouvrir quand on épargne pour une première propriété — dès aujourd'hui, pour lancer le compteur.",
+ 2: "Le RAP permet de retirer de votre REER sans impôt immédiat pour l'achat, à condition de rembourser sur plusieurs années. Un remboursement manqué s'ajoute à votre revenu imposable. CELIAPP et RAP peuvent parfois se combiner — un montage à valider avec un conseiller pour maximiser votre mise de fonds.",
+ 3: "Un don d'un proche parent est accepté par les prêteurs avec une lettre de don confirmant qu'il n'est pas remboursable. L'ordre des retraits (CELIAPP, RAP, dons, épargne) a un impact fiscal : planifiez-le pour ne pas déclencher d'impôt inutile ni fragiliser votre dossier de financement.",
+ 4: "Au-delà de la mise de fonds, prévoyez les frais de clôture (notaire, taxe de bienvenue, ajustements) et un coussin d'urgence. Vider ses comptes pour maximiser la mise de fonds, c'est risquer de se retrouver sans marge dès le premier mois de propriété.",
+}
+G10_I = ("<p>La mise de fonds est souvent le principal obstacle au premier achat — mais plusieurs outils, bien combinés, l'allègent : CELIAPP, RAP, dons familiaux. Ce guide explique combien il vous faut vraiment et comment assembler votre mise de fonds intelligemment.</p>"
+         "<p>Les plafonds et seuils (édition 2026) évoluent : ce guide donne la logique, à confirmer avec votre institution ou votre courtier hypothécaire.</p>")
+G10_P = "<h3>Pour bâtir ma mise de fonds</h3><ol><li>Ouvrir un CELIAPP dès maintenant pour lancer le compteur, même avec de petits montants.</li><li>Faire chiffrer par un conseiller la meilleure combinaison CELIAPP/RAP/don pour ma situation.</li></ol>"
+G10_L = ("<li>CELIAPP : compte pour premier achat — cotisation déductible et retrait non imposable.</li>"
+         "<li>RAP : retrait du REER sans impôt immédiat, à rembourser sur plusieurs années.</li>"
+         "<li>Assurance prêt : exigée sous 20 % de mise de fonds ; s'ajoute au financement.</li>"
+         "<li>Lettre de don : document confirmant qu'un don familial n'est pas remboursable.</li>"
+         "<li>Frais de clôture : notaire, taxe de bienvenue, ajustements — en plus de la mise de fonds.</li>")
+
+# ============================ GUIDE 11 ============================
+G11 = {
+ 0: "Notez chaque secteur sur des critères concrets : proximité du travail et des transports, écoles, commerces, sécurité, bruit, projets de développement et potentiel de revente. Une grille objective vous évite de payer une prime pour une jolie rue dont le quotidien ne vous conviendra pas.",
+ 1: "À Laval, la réalité change d'un secteur à l'autre : proximité des stations de métro et des grands axes, quartiers matures vs développements récents, accès aux services. Le prix et le style de vie varient fortement — d'où l'importance de cibler le secteur, pas seulement la ville.",
+ 2: "La Rive-Nord (Terrebonne, Mascouche, Repentigny, Blainville, Boisbriand, Sainte-Thérèse, Mirabel) offre souvent plus d'espace pour son argent, au prix d'un navettage plus long. Pesez le temps de transport quotidien, l'accès aux services et l'offre scolaire selon votre étape de vie.",
+ 3: "Le quartier qui vous plaît doit aussi plaire à votre futur acheteur : les secteurs recherchés (transport, écoles réputées, services) se revendent mieux et résistent aux baisses. Acheter en pensant revente, c'est protéger votre mise même si vos plans changent.",
+ 4: "Rien ne remplace le terrain : visitez à différentes heures, testez le trajet maison-travail à l'heure de pointe, observez l'entretien du voisinage. Vingt minutes le dimanche peuvent devenir cinquante un mardi. On achète un quotidien, pas seulement une adresse.",
+}
+G11_I = ("<p>« L'emplacement, l'emplacement, l'emplacement » : le quartier pèse autant que la propriété sur votre qualité de vie et votre revente. Ce guide vous donne une méthode objective pour comparer les secteurs du Grand Montréal, de Laval à la Rive-Nord.</p>"
+         "<p>L'idée : remplacer le coup de cœur par une grille de critères — puis valider sur le terrain avant de vous engager.</p>")
+G11_P = "<h3>Pour choisir mon secteur</h3><ol><li>Bâtir ma grille de critères et noter chaque quartier visité.</li><li>Tester le trajet quotidien et visiter à différentes heures avant d'offrir.</li></ol>"
+G11_L = ("<li>Mois d'inventaire : indicateur de tension du marché local.</li>"
+         "<li>Navettage : temps de déplacement domicile-travail, à tester aux heures de pointe.</li>"
+         "<li>Potentiel de revente : facilité à revendre selon l'attrait durable du secteur.</li>"
+         "<li>Services de proximité : commerces, écoles, transport, santé, loisirs.</li>"
+         "<li>Projet de développement : chantier ou plan pouvant changer la valeur d'un secteur.</li>")
+
 TABLE = {
     2: (G2, G2_INTRO, G2_PLAN, G2_LEX),
     3: (G3, G3_INTRO, G3_PLAN, G3_LEX),
@@ -173,6 +224,9 @@ TABLE = {
     6: (G6, G6_INTRO, G6_PLAN, G6_LEX),
     7: (G7, G7_INTRO, G7_PLAN, G7_LEX),
     8: (G8, G8_INTRO, G8_PLAN, G8_LEX),
+    9: (G9, G9_I, G9_P, G9_L),
+    10: (G10, G10_I, G10_P, G10_L),
+    11: (G11, G11_I, G11_P, G11_L),
 }
 
 if __name__ == '__main__':
