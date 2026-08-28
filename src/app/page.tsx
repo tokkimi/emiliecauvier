@@ -44,25 +44,6 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-[var(--color-gold)]/20 blur-3xl" />
       </section>
 
-      {/* PHOTOS */}
-      <section className="mx-auto max-w-6xl px-5 pt-16">
-        <div className="grid gap-4 sm:grid-cols-3">
-          {[
-            ['/photos/accueil.jpg', 'Bienvenue chez vous'],
-            ['/photos/immeuble.jpg', 'Immeubles et copropriétés'],
-            ['/photos/conseil.jpg', 'Un accompagnement de terrain'],
-          ].map(([src, alt]) => (
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
-              key={src}
-              src={src}
-              alt={alt}
-              className="h-64 w-full rounded-2xl object-cover shadow-sm"
-            />
-          ))}
-        </div>
-      </section>
-
       {/* PROMESSE */}
       <section className="mx-auto max-w-6xl px-5 py-20">
         <div className="grid gap-8 sm:grid-cols-3">
