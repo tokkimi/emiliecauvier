@@ -1,1 +1,158 @@
-{"number": 43, "title": "Acheter à deux", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Acheter une propriété en couple est une belle étape — et une décision juridique importante. Surtout pour les conjoints de fait, dont les droits diffèrent de ceux des couples mariés, il est essentiel de bien structurer l'achat pour se protéger.</p><p>Ce guide couvre les façons de détenir la propriété à deux, l'importance d'une convention, et les protections à prévoir.</p><p>Contenu informatif, non un avis juridique : consultez un notaire. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Mariés vs conjoints de fait", "objective": "Comprendre pourquoi le statut change tout.", "html": "<p class=\"lede\">Comprendre pourquoi le statut change tout.</p>\n<p>Au Québec, les couples mariés ou unis civilement bénéficient de règles de protection (patrimoine familial) qui encadrent la résidence familiale. Les conjoints de fait, eux, n'ont PAS ces protections automatiques : en cas de séparation ou de décès, leurs droits dépendent surtout de ce qui est écrit (titre, convention, testament).</p>\n<p>Beaucoup de conjoints de fait ignorent cette réalité et se retrouvent démunis. La bonne nouvelle : on peut se protéger par des documents adaptés.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si vous êtes conjoints de fait, ne présumez pas être protégés « comme des mariés » : vous ne l'êtes pas automatiquement. Ce que vous mettez par écrit fait toute la différence.</p></aside>"}, {"title": "Comment détenir la propriété", "objective": "Choisir la structure de détention.", "html": "<p class=\"lede\">Choisir la structure de détention.</p>\n<ul><li>En indivision, à parts égales (50/50) ou selon l'apport de chacun.</li><li>Le titre de propriété doit refléter clairement qui possède quoi.</li><li>Si un seul conjoint est au titre, l'autre peut se retrouver sans droit sur la propriété, même après des années et des paiements.</li></ul>\n<p>La façon d'inscrire la propriété au titre est une décision structurante : faites-la en connaissance de cause, avec le notaire.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Assurez-vous que le titre reflète vraiment votre entente. Si l'un contribue plus à la mise de fonds, dites-le et documentez-le : la mémoire et l'amour ne suffisent pas devant un tribunal.</p></aside>"}, {"title": "La convention entre conjoints", "objective": "Prévoir l'imprévu par écrit.", "html": "<p class=\"lede\">Prévoir l'imprévu par écrit.</p>\n<p>Une convention (souvent appelée convention d'indivision ou contrat de vie commune) précise à l'avance : la répartition des parts, qui paie quoi (hypothèque, taxes, entretien), ce qui arrive en cas de séparation (rachat, vente, délais) et en cas de décès (avec le testament).</p>\n<p>C'est un peu comme une assurance : on espère ne jamais s'en servir, mais elle évite des conflits douloureux si la vie change.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Faites une convention AVANT d'acheter, quand tout va bien. La rédiger sereinement à deux est infiniment plus facile que de négocier dans la douleur d'une séparation.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Clarifier notre statut et nos protections réelles.</li><li>Décider de la répartition des parts.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire rédiger une convention par un notaire.</li><li>Mettre à jour nos testaments en conséquence.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Inscrire la propriété au titre conformément à notre entente.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Patrimoine familial : protections des couples mariés/unis civilement.</li><li>Conjoints de fait : sans protections automatiques ; l'écrit prime.</li><li>Indivision : détention à plusieurs, à parts égales ou selon l'apport.</li><li>Convention d'indivision : entente réglant parts, paiements et sorties.</li><li>Titre de propriété : doit refléter l'entente réelle du couple.</li></ul>"}], "qcm": [{"q": "Les conjoints de fait au Québec :", "options": ["A) Ont les mêmes protections que les mariés", "B) N'ont pas ces protections automatiques", "C) Ne peuvent pas acheter", "D) Sont toujours 50/50"], "answer": 1, "explanation": "Leurs droits dépendent de l'écrit (chap. 1)."}, {"q": "Le patrimoine familial protège :", "options": ["A) Les conjoints de fait", "B) Les couples mariés ou unis civilement", "C) Tout le monde", "D) Personne"], "answer": 1, "explanation": "Pas les conjoints de fait (chap. 1)."}, {"q": "Si un seul conjoint est au titre :", "options": ["A) L'autre est automatiquement copropriétaire", "B) L'autre peut se retrouver sans droit sur la propriété", "C) Rien ne change", "D) La ville décide"], "answer": 1, "explanation": "Le titre est déterminant (chap. 2)."}, {"q": "La répartition des parts peut être :", "options": ["A) Impossible", "B) 50/50 ou selon l'apport de chacun", "C) Toujours imposée", "D) Secrète"], "answer": 1, "explanation": "À décider et documenter (chap. 2)."}, {"q": "Une convention entre conjoints prévoit :", "options": ["A) La couleur des murs", "B) Parts, paiements, séparation et décès", "C) Le taux d'intérêt", "D) Rien"], "answer": 1, "explanation": "Elle anticipe l'imprévu (chap. 3)."}, {"q": "Le meilleur moment pour la convention est :", "options": ["A) Après une séparation", "B) Avant d'acheter, quand tout va bien", "C) Jamais", "D) À la revente"], "answer": 1, "explanation": "Plus facile à froid (chap. 3)."}]}
+{
+  "number": 43,
+  "title": "Acheter à deux",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Acheter une propriété en couple est une belle étape — et une décision juridique importante. Surtout pour les conjoints de fait, dont les droits diffèrent de ceux des couples mariés, il est essentiel de bien structurer l'achat pour se protéger.</p><p>Ce guide couvre les façons de détenir la propriété à deux, l'importance d'une convention, et les protections à prévoir.</p><p>Contenu informatif, non un avis juridique : consultez un notaire. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Acheter en couple est une belle étape — et une décision juridique importante, surtout pour les conjoints de fait, dont les droits diffèrent de ceux des couples mariés. Ce guide couvre les façons de détenir à deux, l'importance d'une convention et les protections à prévoir.</p><p>Contenu informatif, non un avis juridique : consultez un notaire.</p>"
+    },
+    {
+      "title": "Mariés vs conjoints de fait",
+      "objective": "Comprendre pourquoi le statut change tout.",
+      "html": "<p class=\"lede\">Comprendre pourquoi le statut change tout.</p>\n<p>Au Québec, les couples mariés ou unis civilement bénéficient de règles de protection (<strong>patrimoine familial</strong>) qui encadrent la résidence familiale.</p><p>Les <strong>conjoints de fait</strong>, eux, n'ont <em>pas</em> ces protections automatiques : en cas de séparation ou de décès, leurs droits dépendent surtout de ce qui est <strong>écrit</strong> (titre, convention, testament).</p><p>Beaucoup de conjoints de fait ignorent cette réalité — et le découvrent au pire moment.</p><!--enr--><p>Au Québec, mariés et unis civilement bénéficient des protections du patrimoine familial ; les conjoints de fait, non — leurs droits dépendent surtout de l'écrit (titre, convention, testament). Beaucoup l'ignorent et le découvrent au pire moment : pour un couple non marié, tout se joue dans les documents.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>« On est ensemble depuis 15 ans, c'est comme un mariage. » Non : au Québec, l'union de fait ne crée pas les mêmes droits. Pour un couple non marié, tout se joue dans les documents.</p></aside>"
+    },
+    {
+      "title": "Comment détenir la propriété",
+      "objective": "Choisir la structure de détention.",
+      "html": "<p class=\"lede\">Choisir la structure de détention.</p>\n<p>La façon d'inscrire la propriété au titre est une décision <strong>structurante</strong> :</p><ul><li>En <strong>indivision</strong>, à parts égales (50/50) ou selon l'apport de chacun.</li><li>Le <strong>titre</strong> doit refléter clairement qui possède quoi.</li></ul><p>Si un seul conjoint est au titre, l'autre peut se retrouver sans droit sur la propriété — même après des années et de nombreux paiements. Faites ce choix en connaissance de cause.</p><!--enr--><p>La façon d'inscrire la propriété au titre est structurante : en indivision, à parts égales ou selon l'apport de chacun. Si un seul conjoint est au titre, l'autre peut se retrouver sans droit — même après des années de paiements. Si vous payez la moitié, assurez-vous d'être au titre.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si vous payez la moitié de l'hypothèque, assurez-vous d'être au titre. Contribuer financièrement sans figurer sur le titre, c'est le scénario classique où l'on perd tout à la séparation.</p></aside>"
+    },
+    {
+      "title": "La convention entre conjoints",
+      "objective": "Prévoir l'imprévu par écrit.",
+      "html": "<p class=\"lede\">Prévoir l'imprévu par écrit.</p>\n<p>Une convention (souvent une <strong>convention d'indivision</strong> ou un contrat de vie commune) précise à l'avance ce qui pourrait autrement se régler devant les tribunaux :</p><ul><li>La <strong>répartition des parts</strong>.</li><li>Qui paie quoi (hypothèque, taxes, entretien).</li><li>Ce qui arrive en cas de <strong>séparation</strong> (rachat, vente, délais).</li><li>Ce qui arrive en cas de <strong>décès</strong> (avec le testament).</li></ul><p>C'est un peu comme une assurance : on espère ne jamais s'en servir, mais elle évite des conflits douloureux.</p><!--enr--><p>Une convention (d'indivision ou de vie commune) précise à l'avance ce qui, autrement, se réglerait devant les tribunaux : répartition des parts, qui paie quoi, et ce qui arrive en cas de séparation ou de décès. Rédigez-la quand tout va bien, pas en pleine rupture.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Rédigez la convention QUAND tout va bien, pas quand ça va mal. Discuter calmement du « et si un jour… » à l'achat est infiniment plus simple qu'en pleine rupture.</p></aside>"
+    },
+    {
+      "title": "Protéger le survivant : testament et assurance",
+      "objective": "Penser aussi au décès, pas seulement à la rupture.",
+      "html": "<p class=\"lede\">Penser aussi au décès, pas seulement à la rupture.</p>\n<p>Pour les conjoints de fait surtout, le décès d'un partenaire peut laisser l'autre dans une situation précaire s'il n'y a rien de prévu.</p><ul><li><strong>Testament</strong> : sans lui, un conjoint de fait n'hérite pas automatiquement.</li><li><strong>Assurance vie</strong> : peut permettre au survivant de racheter la part ou de rembourser l'hypothèque.</li><li><strong>Clause dans la convention</strong> : coordonner avec le testament.</li></ul><p>Ces outils, mis en place ensemble, forment un vrai filet de sécurité.</p><!--enr--><p>Pensez aussi au décès : sans testament, un conjoint de fait n'hérite pas automatiquement. Une assurance vie peut permettre au survivant de racheter la part ou de rembourser l'hypothèque, évitant une vente en catastrophe. Coordonnez convention, testament et assurance.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Une assurance vie qui couvre le solde de l'hypothèque évite au survivant de devoir vendre en catastrophe. C'est souvent l'un des meilleurs achats de tranquillité d'esprit d'un couple.</p></aside>"
+    },
+    {
+      "title": "Acheter à deux, étape par étape",
+      "objective": "Structurer l'achat sereinement.",
+      "html": "<p class=\"lede\">Structurer l'achat sereinement.</p>\n<p>Pour un achat à deux bien ficelé, suivez cet ordre logique :</p><ol><li><strong>Clarifier</strong> votre statut et vos protections réelles.</li><li>Décider de la <strong>répartition des parts</strong>.</li><li>Faire rédiger une <strong>convention</strong> par un notaire.</li><li>Mettre à jour vos <strong>testaments</strong> en conséquence.</li><li>Inscrire la propriété au <strong>titre</strong> conformément à l'entente.</li></ol><p>Un peu de rigueur au départ protège votre couple — et votre patrimoine — pour longtemps.</p><!--enr--><p>Pour un achat à deux bien ficelé : clarifier votre statut, décider de la répartition, faire rédiger une convention par un notaire, mettre à jour vos testaments, et inscrire la propriété au titre conformément à l'entente. Ce n'est pas un manque de confiance, c'est du respect mutuel.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Traitez l'achat à deux comme un petit projet commun : une entente écrite, des rôles clairs, des documents à jour. Ce n'est pas un manque de confiance, c'est du respect mutuel.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Clarifier notre statut et nos protections réelles.</li><li>Décider de la répartition des parts.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire rédiger une convention par un notaire.</li><li>Mettre à jour nos testaments en conséquence.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Inscrire la propriété au titre conformément à notre entente.</li></ol><!--enr--><h3>Pour bien structurer</h3><ol><li>Clarifier notre statut et décider de la répartition des parts.</li><li>Faire rédiger une convention et mettre nos testaments à jour.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Patrimoine familial : protections des couples mariés/unis civilement.</li><li>Conjoints de fait : sans protections automatiques ; l'écrit prime.</li><li>Indivision : détention à plusieurs, à parts égales ou selon l'apport.</li><li>Convention d'indivision : entente réglant parts, paiements et sorties.</li><li>Titre de propriété : doit refléter l'entente réelle du couple.</li></ul><!--enr--><li>Patrimoine familial : protections des couples mariés/unis civilement.</li><li>Conjoints de fait : sans protections automatiques ; l'écrit prime.</li><li>Indivision : détention à plusieurs, à parts égales ou selon l'apport.</li><li>Convention d'indivision : entente réglant parts, paiements et sorties.</li><li>Titre de propriété : doit refléter l'entente réelle du couple.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Les couples mariés bénéficient :",
+      "options": [
+        "A) D'aucune protection",
+        "B) Des protections du patrimoine familial",
+        "C) De taxes réduites",
+        "D) D'une hypothèque gratuite"
+      ],
+      "answer": 1,
+      "explanation": "Patrimoine familial (chap. 1)."
+    },
+    {
+      "q": "Les conjoints de fait :",
+      "options": [
+        "A) Ont les mêmes protections que les mariés",
+        "B) N'ont pas de protections automatiques ; l'écrit prime",
+        "C) Ne peuvent pas acheter",
+        "D) Héritent automatiquement"
+      ],
+      "answer": 1,
+      "explanation": "L'écrit prime (chap. 1)."
+    },
+    {
+      "q": "Si un seul conjoint est au titre :",
+      "options": [
+        "A) L'autre est protégé d'office",
+        "B) L'autre peut se retrouver sans droit sur la propriété",
+        "C) La ville tranche",
+        "D) Rien ne change"
+      ],
+      "answer": 1,
+      "explanation": "Le titre est structurant (chap. 2)."
+    },
+    {
+      "q": "En indivision, les parts peuvent être :",
+      "options": [
+        "A) Toujours 50/50 obligatoirement",
+        "B) Égales ou selon l'apport de chacun",
+        "C) Fixées par la ville",
+        "D) Inexistantes"
+      ],
+      "answer": 1,
+      "explanation": "Égales ou selon l'apport (chap. 2)."
+    },
+    {
+      "q": "La convention entre conjoints précise :",
+      "options": [
+        "A) La couleur des murs",
+        "B) Parts, paiements, séparation et décès",
+        "C) Les taxes municipales",
+        "D) Le taux d'intérêt"
+      ],
+      "answer": 1,
+      "explanation": "Elle règle les scénarios (chap. 3)."
+    },
+    {
+      "q": "Le meilleur moment pour rédiger la convention est :",
+      "options": [
+        "A) En pleine rupture",
+        "B) Quand tout va bien, à l'achat",
+        "C) Jamais",
+        "D) Après dix ans"
+      ],
+      "answer": 1,
+      "explanation": "Anticiper (chap. 3)."
+    },
+    {
+      "q": "Sans testament, un conjoint de fait :",
+      "options": [
+        "A) Hérite automatiquement",
+        "B) N'hérite pas automatiquement",
+        "C) Paie moins de taxes",
+        "D) Devient marié"
+      ],
+      "answer": 1,
+      "explanation": "Le testament est essentiel (chap. 4)."
+    },
+    {
+      "q": "Une assurance vie peut permettre au survivant de :",
+      "options": [
+        "A) Éviter le notaire",
+        "B) Racheter la part ou rembourser l'hypothèque",
+        "C) Doubler ses taxes",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Filet de sécurité (chap. 4)."
+    },
+    {
+      "q": "Le titre de propriété doit :",
+      "options": [
+        "A) Ignorer l'entente",
+        "B) Refléter l'entente réelle du couple",
+        "C) Être au nom de la banque",
+        "D) Rester vide"
+      ],
+      "answer": 1,
+      "explanation": "Cohérence titre/entente (chap. 2 et 5)."
+    },
+    {
+      "q": "Structurer l'achat à deux, c'est surtout :",
+      "options": [
+        "A) Un manque de confiance",
+        "B) Du respect mutuel et de la prévoyance",
+        "C) Une perte de temps",
+        "D) Illégal"
+      ],
+      "answer": 1,
+      "explanation": "Prévoyance et respect (chap. 5)."
+    }
+  ]
+}

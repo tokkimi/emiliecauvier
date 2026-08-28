@@ -28,25 +28,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
-        {/* Mot manuscrit d'Emilie, sur fond blanc, juste avant le pied de page.
-            Deux visuels : un pensé pour mobile, un pour ordinateur. */}
-        <section className="bg-white">
-          <div className="mx-auto max-w-5xl px-6 py-16">
-            {/* Mobile */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/mot-emilie-mobile.png"
-              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
-              className="mx-auto w-full max-w-sm sm:hidden"
-            />
-            {/* Ordinateur */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/mot-emilie-ordi.jpg"
-              alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
-              className="mx-auto hidden w-full sm:block"
-            />
-          </div>
+        {/* Mot manuscrit d'Emilie, juste avant le pied de page.
+            Visuel pleine largeur, bord à bord, SANS fond blanc ni cadre : le
+            fond crème fait partie de l'image (un visuel mobile, un ordinateur). */}
+        <section>
+          {/* Mobile */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mot-emilie-mobile.png"
+            alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
+            className="block w-full sm:hidden"
+          />
+          {/* Ordinateur */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/mot-emilie-ordi.jpg"
+            alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
+            className="hidden w-full sm:block"
+          />
         </section>
         <SiteFooter />
       </body>

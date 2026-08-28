@@ -1,1 +1,158 @@
-{"number": 44, "title": "Premier achat pour nouveaux arrivants", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Acheter une première propriété au Québec quand on vient d'arriver comporte des défis particuliers : bâtir un crédit local, comprendre un système différent, et naviguer un vocabulaire et des règles propres à la province. Bien accompagné, c'est tout à fait accessible.</p><p>Ce guide donne des repères aux nouveaux arrivants : crédit et financement, spécificités québécoises, et étapes pour se préparer.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Bâtir son dossier de crédit et de financement", "objective": "Se rendre finançable dans le système local.", "html": "<p class=\"lede\">Se rendre finançable dans le système local.</p>\n<p>Les prêteurs regardent votre crédit canadien, vos revenus et votre stabilité. Un historique de crédit local peut prendre du temps à bâtir ; certains programmes existent pour les nouveaux arrivants, avec des conditions particulières.</p>\n<ul><li>Commencer tôt à bâtir un crédit (carte, paiements à temps).</li><li>Rassembler preuves de revenus et d'emploi.</li><li>Explorer les programmes destinés aux nouveaux arrivants avec un courtier hypothécaire.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Commencez à bâtir votre crédit canadien dès votre arrivée, même modestement : c'est le nerf de la guerre pour obtenir un bon financement plus tard. Un courtier hypothécaire connaît les programmes adaptés.</p></aside>"}, {"title": "Comprendre les spécificités québécoises", "objective": "Apprendre les règles du jeu local.", "html": "<p class=\"lede\">Apprendre les règles du jeu local.</p>\n<ul><li>Rôle du notaire (obligatoire), du courtier immobilier (encadré par l'OACIQ).</li><li>Taxe de bienvenue, taxes municipales et scolaires.</li><li>Copropriété divise/indivise, baux et règles locatives si plex.</li><li>Particularités du bâti (sols argileux, drain français, chauffage, hiver).</li></ul>\n<p>Ces éléments diffèrent souvent de ce qui existe ailleurs : les comprendre évite bien des surprises.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne présumez pas que le système fonctionne « comme dans votre pays d'origine ». Posez beaucoup de questions : un bon courtier et un notaire prennent le temps d'expliquer chaque étape aux nouveaux arrivants.</p></aside>"}, {"title": "Se préparer et bien s'entourer", "objective": "Avancer avec confiance.", "html": "<p class=\"lede\">Avancer avec confiance.</p>\n<p>Comme tout premier acheteur, préparez votre budget, obtenez une préapprobation, définissez vos critères et vos secteurs. En prime, entourez-vous de professionnels qui comprennent votre parcours et peuvent vous guider (courtière, courtier hypothécaire, notaire).</p>\n<p>Prendre le temps d'apprendre le marché local avant d'acheter est un investissement qui rapporte.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Entourez-vous de professionnels patients qui prennent le temps de vulgariser. Acheter dans un système qu'on découvre est parfaitement faisable — avec les bonnes personnes autour de soi.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Commencer ou consolider mon crédit canadien.</li><li>Rassembler mes preuves de revenus et d'emploi.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Rencontrer un courtier hypothécaire (programmes nouveaux arrivants).</li><li>M'informer des spécificités québécoises.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Obtenir une préapprobation et lancer ma recherche avec Emilie.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Crédit canadien : historique local, clé du financement.</li><li>Programmes nouveaux arrivants : conditions de prêt adaptées, via un courtier.</li><li>OACIQ : organisme encadrant les courtiers immobiliers.</li><li>Taxe de bienvenue : droits de mutation municipaux.</li><li>Préapprobation : montant et taux confirmés avant de magasiner.</li></ul>"}], "qcm": [{"q": "Les prêteurs regardent surtout :", "options": ["A) Votre pays d'origine", "B) Votre crédit canadien, vos revenus et votre stabilité", "C) Votre accent", "D) Rien"], "answer": 1, "explanation": "Crédit local et revenus (chap. 1)."}, {"q": "Bâtir un crédit canadien :", "options": ["A) Est inutile", "B) Prend du temps ; à commencer tôt", "C) Est instantané", "D) Est interdit"], "answer": 1, "explanation": "On commence dès l'arrivée (chap. 1)."}, {"q": "Au Québec, la vente se signe devant :", "options": ["A) Un avocat étranger", "B) Un notaire", "C) Personne", "D) La ville"], "answer": 1, "explanation": "Le notaire est obligatoire (chap. 2)."}, {"q": "Le courtier immobilier est encadré par :", "options": ["A) La police", "B) L'OACIQ", "C) Personne", "D) La banque"], "answer": 1, "explanation": "Protection du public (chap. 2)."}, {"q": "Une bonne attitude est de :", "options": ["A) Présumer que tout est comme ailleurs", "B) Poser beaucoup de questions et bien s'entourer", "C) Ne rien demander", "D) Éviter les pros"], "answer": 1, "explanation": "On apprend le système local (chap. 2 et 3)."}, {"q": "Comme tout premier acheteur, il faut :", "options": ["A) Ignorer le budget", "B) Préparer budget et préapprobation", "C) Acheter au hasard", "D) Éviter la préapprobation"], "answer": 1, "explanation": "Les bases restent les mêmes (chap. 3)."}]}
+{
+  "number": 44,
+  "title": "Premier achat pour nouveaux arrivants",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Acheter une première propriété au Québec quand on vient d'arriver comporte des défis particuliers : bâtir un crédit local, comprendre un système différent, et naviguer un vocabulaire et des règles propres à la province. Bien accompagné, c'est tout à fait accessible.</p><p>Ce guide donne des repères aux nouveaux arrivants : crédit et financement, spécificités québécoises, et étapes pour se préparer.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Acheter une première propriété au Québec en tant que nouvel arrivant comporte des défis particuliers : bâtir un crédit local, comprendre un système différent, apprendre un vocabulaire propre. Bien accompagné, c'est tout à fait accessible. Ce guide donne les repères clés.</p><p>Contenu informatif : validez votre situation avec les professionnels concernés.</p>"
+    },
+    {
+      "title": "Bâtir son dossier de crédit et de financement",
+      "objective": "Se rendre finançable dans le système local.",
+      "html": "<p class=\"lede\">Se rendre finançable dans le système local.</p>\n<p>Les prêteurs regardent votre <strong>crédit canadien</strong>, vos revenus et votre stabilité. Un historique de crédit local peut prendre du temps à bâtir.</p><ul><li>Commencer tôt à bâtir un crédit (carte, paiements à temps).</li><li>Rassembler preuves de revenus et d'emploi.</li><li>Explorer les <strong>programmes pour nouveaux arrivants</strong>, aux conditions particulières.</li></ul><p>Plus votre dossier est solide et documenté, plus le financement sera simple et avantageux.</p><!--enr--><p>Les prêteurs regardent votre crédit canadien, vos revenus et votre stabilité. Un historique local prend du temps à bâtir : ouvrez une carte dès votre arrivée et payez-la intégralement chaque mois. Certains programmes pour nouveaux arrivants offrent des conditions adaptées, via un courtier hypothécaire.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ouvrez une carte de crédit dès votre arrivée et payez-la intégralement chaque mois. Bâtir un historique canadien prend des mois : commencez bien avant de penser à acheter.</p></aside>"
+    },
+    {
+      "title": "Comprendre les spécificités québécoises",
+      "objective": "Apprendre les règles du jeu local.",
+      "html": "<p class=\"lede\">Apprendre les règles du jeu local.</p>\n<p>Le système québécois a ses particularités, souvent différentes de ce qui existe ailleurs :</p><ul><li>Rôle du <strong>notaire</strong> (obligatoire) et du <strong>courtier</strong> (encadré par l'OACIQ).</li><li><strong>Taxe de bienvenue</strong>, taxes municipales et scolaires.</li><li>Copropriété <strong>divise/indivise</strong>, baux et règles locatives si plex.</li><li>Particularités du bâti (sols argileux, drain français, chauffage, hiver).</li></ul><p>Les comprendre à l'avance évite bien des surprises coûteuses.</p><!--enr--><p>Le système québécois a ses particularités : notaire obligatoire, courtier encadré par l'OACIQ, taxe de bienvenue, copropriété divise/indivise, baux si plex, et un bâti propre au climat (sols argileux, drain français, hiver). Apprendre le vocabulaire local, c'est déjà éviter la moitié des erreurs.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Prenez le temps d'apprendre le vocabulaire local : « taxe de bienvenue », « certificat de localisation », « conditions de la promesse d'achat ». Comprendre les mots, c'est déjà éviter la moitié des erreurs.</p></aside>"
+    },
+    {
+      "title": "Se préparer et bien s'entourer",
+      "objective": "Avancer avec confiance.",
+      "html": "<p class=\"lede\">Avancer avec confiance.</p>\n<p>Comme tout premier acheteur, préparez les fondations :</p><ul><li>Établir un <strong>budget</strong> réaliste.</li><li>Obtenir une <strong>préapprobation</strong> hypothécaire.</li><li>Définir vos <strong>critères</strong> et vos secteurs.</li></ul><p>En prime, entourez-vous de professionnels qui comprennent votre parcours (courtière, courtier hypothécaire, notaire). Apprendre le marché local avant d'acheter est un investissement qui rapporte.</p><!--enr--><p>Comme tout premier acheteur, posez les fondations : budget réaliste, préapprobation, critères et secteurs. En prime, entourez-vous de professionnels habitués à accompagner les nouveaux arrivants — une bonne courtière vous expliquera non seulement les maisons, mais tout le système autour.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Choisissez des professionnels habitués à accompagner les nouveaux arrivants. Une bonne courtière vous expliquera non seulement les maisons, mais tout le système autour — c'est inestimable.</p></aside>"
+    },
+    {
+      "title": "La mise de fonds et les aides disponibles",
+      "objective": "Rassembler et optimiser votre apport.",
+      "html": "<p class=\"lede\">Rassembler et optimiser votre apport.</p>\n<p>La <strong>mise de fonds</strong> minimale dépend du prix de la propriété ; en dessous d'un certain seuil, une <strong>assurance prêt</strong> s'ajoute au financement.</p><ul><li>Épargner tôt et automatiser vos versements.</li><li>Vérifier votre admissibilité à des <strong>programmes d'aide</strong> et incitatifs (selon votre statut et votre situation).</li><li>Un <strong>don</strong> familial est accepté avec une lettre de don.</li></ul><p>Un courtier hypothécaire peut vous aider à assembler le tout de la façon la plus avantageuse.</p><!--enr--><p>La mise de fonds minimale dépend du prix ; sous 20 %, une assurance prêt s'ajoute. Épargnez tôt, vérifiez votre admissibilité aux programmes d'aide, et sachez qu'un don familial est accepté avec une lettre de don. Un courtier hypothécaire vous aide à assembler le tout avantageusement.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Renseignez-vous sur les programmes destinés aux premiers acheteurs et aux nouveaux arrivants : certains offrent des conditions avantageuses. Un courtier hypothécaire connaît ceux auxquels vous avez droit.</p></aside>"
+    },
+    {
+      "title": "De la recherche à la prise de possession",
+      "objective": "Suivre le parcours étape par étape.",
+      "html": "<p class=\"lede\">Suivre le parcours étape par étape.</p>\n<p>Une fois financé et bien entouré, le parcours d'achat suit une logique claire :</p><ol><li><strong>Visiter</strong> selon vos critères et secteurs.</li><li>Faire une <strong>promesse d'achat</strong> avec les bonnes conditions (financement, inspection).</li><li>Réaliser l'<strong>inspection</strong> et lever les conditions.</li><li>Signer chez le <strong>notaire</strong> et prendre possession.</li></ol><p>À chaque étape, posez vos questions : personne n'attend d'un nouvel arrivant qu'il connaisse déjà tout le système.</p><!--enr--><p>Le parcours suit une logique claire : visiter selon vos critères, faire une promesse d'achat avec les bonnes conditions (financement, inspection), lever les conditions après inspection, puis signer chez le notaire. À chaque étape, posez vos questions : personne n'attend d'un nouvel arrivant qu'il sache déjà tout.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>N'ayez pas peur de poser « trop » de questions. Un bon professionnel préfère mille fois répondre à vos interrogations que de vous voir signer sans comprendre. C'est votre plus gros achat.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Commencer ou consolider mon crédit canadien.</li><li>Rassembler mes preuves de revenus et d'emploi.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Rencontrer un courtier hypothécaire (programmes nouveaux arrivants).</li><li>M'informer des spécificités québécoises.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Obtenir une préapprobation et lancer ma recherche avec Emilie.</li></ol><!--enr--><h3>Pour me préparer</h3><ol><li>Bâtir mon crédit canadien et rassembler mes preuves de revenus.</li><li>Rencontrer un courtier hypothécaire (programmes nouveaux arrivants) et obtenir une préapprobation.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Crédit canadien : historique local, clé du financement.</li><li>Programmes nouveaux arrivants : conditions de prêt adaptées, via un courtier.</li><li>OACIQ : organisme encadrant les courtiers immobiliers.</li><li>Taxe de bienvenue : droits de mutation municipaux.</li><li>Préapprobation : montant et taux confirmés avant de magasiner.</li></ul><!--enr--><li>Crédit canadien : historique local, clé du financement.</li><li>Programmes nouveaux arrivants : conditions de prêt adaptées, via un courtier.</li><li>OACIQ : organisme encadrant les courtiers immobiliers.</li><li>Taxe de bienvenue : droits de mutation municipaux.</li><li>Préapprobation : montant et taux confirmés avant de magasiner.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Les prêteurs regardent surtout :",
+      "options": [
+        "A) Votre crédit d'un autre pays",
+        "B) Votre crédit canadien, vos revenus et votre stabilité",
+        "C) Votre âge",
+        "D) Vos loisirs"
+      ],
+      "answer": 1,
+      "explanation": "Crédit canadien (chap. 1)."
+    },
+    {
+      "q": "Pour bâtir un crédit local, il faut :",
+      "options": [
+        "A) Attendre dix ans",
+        "B) Commencer tôt (carte, paiements à temps)",
+        "C) Éviter tout crédit",
+        "D) Payer comptant"
+      ],
+      "answer": 1,
+      "explanation": "Commencer tôt (chap. 1)."
+    },
+    {
+      "q": "Au Québec, le notaire est :",
+      "options": [
+        "A) Facultatif",
+        "B) Obligatoire pour la vente",
+        "C) Interdit",
+        "D) Le vendeur"
+      ],
+      "answer": 1,
+      "explanation": "Notaire obligatoire (chap. 2)."
+    },
+    {
+      "q": "La taxe de bienvenue est :",
+      "options": [
+        "A) Un cadeau",
+        "B) Des droits de mutation municipaux",
+        "C) Une assurance",
+        "D) Un loyer"
+      ],
+      "answer": 1,
+      "explanation": "Droits de mutation (chap. 2)."
+    },
+    {
+      "q": "Avant de magasiner, il est sage d'avoir :",
+      "options": [
+        "A) Aucune préparation",
+        "B) Un budget et une préapprobation",
+        "C) Une seule visite",
+        "D) Un déménageur"
+      ],
+      "answer": 1,
+      "explanation": "Budget + préapprobation (chap. 3)."
+    },
+    {
+      "q": "Bien s'entourer signifie choisir des pros qui :",
+      "options": [
+        "A) Ignorent votre parcours",
+        "B) Comprennent le parcours des nouveaux arrivants",
+        "C) Parlent vite",
+        "D) Ne répondent pas"
+      ],
+      "answer": 1,
+      "explanation": "Accompagnement adapté (chap. 3)."
+    },
+    {
+      "q": "Sous un certain seuil de mise de fonds :",
+      "options": [
+        "A) L'achat est interdit",
+        "B) Une assurance prêt s'ajoute au financement",
+        "C) Les taxes disparaissent",
+        "D) Le notaire est gratuit"
+      ],
+      "answer": 1,
+      "explanation": "Assurance prêt (chap. 4)."
+    },
+    {
+      "q": "Un don familial pour la mise de fonds :",
+      "options": [
+        "A) Est refusé",
+        "B) Est accepté avec une lettre de don",
+        "C) Double les taxes",
+        "D) Est illégal"
+      ],
+      "answer": 1,
+      "explanation": "Lettre de don (chap. 4)."
+    },
+    {
+      "q": "Une promesse d'achat prudente inclut :",
+      "options": [
+        "A) Aucune condition",
+        "B) Des conditions (financement, inspection)",
+        "C) Un prix secret",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Conditions protectrices (chap. 5)."
+    },
+    {
+      "q": "Pour un nouvel arrivant, poser des questions est :",
+      "options": [
+        "A) Gênant",
+        "B) Normal et encouragé",
+        "C) Interdit",
+        "D) Inutile"
+      ],
+      "answer": 1,
+      "explanation": "Personne n'attend qu'il sache tout (chap. 5)."
+    }
+  ]
+}

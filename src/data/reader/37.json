@@ -1,1 +1,158 @@
-{"number": 37, "title": "Hypothèque : fixe ou variable ?", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>L'hypothèque est la plus grande dette de la plupart des ménages. Comprendre taux fixe vs variable, terme et amortissement vous aide à choisir un prêt adapté à votre tolérance au risque et à votre situation.</p><p>Ce guide clarifie ces notions et les questions à se poser avant de signer.</p><p>Note d'édition 2026 : les taux évoluent constamment ; validez avec un courtier hypothécaire. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Taux fixe vs taux variable", "objective": "Comprendre le principal arbitrage.", "html": "<p class=\"lede\">Comprendre le principal arbitrage.</p>\n<p>Le taux fixe reste identique pour toute la durée du terme : versements prévisibles, tranquillité d'esprit, mais souvent un taux de départ un peu plus élevé. Le taux variable suit les fluctuations du marché : il peut coûter moins cher si les taux baissent ou restent bas, mais expose à des hausses de versements ou d'intérêts.</p>\n<ul><li>Fixe : prévisibilité et sécurité.</li><li>Variable : potentiel d'économie, mais risque et incertitude.</li><li>Le bon choix dépend de votre tolérance au risque et de votre budget.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Choisissez selon votre capacité à dormir tranquille. Si une hausse de vos versements vous empêcherait de respirer, le fixe vaut souvent sa légère prime de sécurité.</p></aside>"}, {"title": "Le terme et l'amortissement", "objective": "Distinguer deux notions souvent confondues.", "html": "<p class=\"lede\">Distinguer deux notions souvent confondues.</p>\n<p>L'amortissement est la durée totale pour rembourser le prêt (souvent 25 ans). Le terme est la durée du contrat actuel (souvent 5 ans) au bout duquel vous renouvelez à de nouvelles conditions. Un amortissement plus long réduit le versement mensuel mais augmente les intérêts payés au total.</p>\n<p>À chaque fin de terme, vous renégociez : c'est un moment clé pour magasiner à nouveau.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne confondez pas terme et amortissement. Un amortissement plus court coûte moins cher en intérêts à long terme ; à chaque renouvellement de terme, remagasinez votre taux.</p></aside>"}, {"title": "Les clauses qui comptent", "objective": "Regarder au-delà du taux.", "html": "<p class=\"lede\">Regarder au-delà du taux.</p>\n<ul><li>Pénalités de remboursement anticipé : elles peuvent être élevées si votre vie change.</li><li>Options de remboursement accéléré (versements supplémentaires) pour payer plus vite.</li><li>Portabilité (transférer le prêt à une autre propriété).</li><li>Prêt ouvert vs fermé.</li></ul>\n<p>Le taux le plus bas n'est pas toujours le meilleur prêt : les conditions peuvent coûter cher au mauvais moment.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Lisez les clauses de pénalité avant de signer. Un prêt un peu plus cher mais flexible peut vous faire économiser des milliers de dollars si vous devez vendre ou refinancer plus tôt.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Évaluer ma tolérance au risque (fixe vs variable).</li><li>Rencontrer un courtier hypothécaire.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Comparer taux ET conditions (pénalités, portabilité).</li><li>Choisir amortissement et terme adaptés.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Remagasiner à chaque renouvellement de terme.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Taux fixe : inchangé durant le terme, prévisible.</li><li>Taux variable : suit le marché, potentiel d'économie et de risque.</li><li>Amortissement : durée totale de remboursement (souvent 25 ans).</li><li>Terme : durée du contrat actuel (souvent 5 ans).</li><li>Pénalité de remboursement anticipé : coût pour rembourser ou rompre avant terme.</li></ul>"}], "qcm": [{"q": "Le taux fixe offre surtout :", "options": ["A) De l'incertitude", "B) De la prévisibilité", "C) Toujours le taux le plus bas", "D) Aucun intérêt"], "answer": 1, "explanation": "Versements stables (chap. 1)."}, {"q": "Le taux variable :", "options": ["A) Ne change jamais", "B) Suit les fluctuations du marché", "C) Est sans risque", "D) Est interdit"], "answer": 1, "explanation": "Potentiel d'économie mais risque (chap. 1)."}, {"q": "L'amortissement est :", "options": ["A) La durée du contrat actuel", "B) La durée totale pour rembourser le prêt", "C) Le taux", "D) La pénalité"], "answer": 1, "explanation": "Souvent 25 ans (chap. 2)."}, {"q": "Le terme est :", "options": ["A) La durée totale", "B) La durée du contrat actuel (souvent 5 ans)", "C) Le taux fixe", "D) L'assurance"], "answer": 1, "explanation": "On renouvelle à la fin (chap. 2)."}, {"q": "Un amortissement plus long :", "options": ["A) Réduit les intérêts totaux", "B) Réduit le versement mais augmente les intérêts totaux", "C) N'a aucun effet", "D) Annule le prêt"], "answer": 1, "explanation": "Compromis versement/intérêts (chap. 2)."}, {"q": "Avant de signer, il faut regarder :", "options": ["A) Le taux seulement", "B) Le taux ET les clauses (pénalités, portabilité)", "C) La couleur", "D) Rien"], "answer": 1, "explanation": "Les conditions comptent (chap. 3)."}]}
+{
+  "number": 37,
+  "title": "Hypothèque : fixe ou variable ?",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>L'hypothèque est la plus grande dette de la plupart des ménages. Comprendre taux fixe vs variable, terme et amortissement vous aide à choisir un prêt adapté à votre tolérance au risque et à votre situation.</p><p>Ce guide clarifie ces notions et les questions à se poser avant de signer.</p><p>Note d'édition 2026 : les taux évoluent constamment ; validez avec un courtier hypothécaire. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>L'hypothèque est la plus grande dette de la plupart des ménages. Ce guide clarifie l'arbitrage fixe vs variable, la différence entre terme et amortissement, les clauses qui comptent, et comment adapter le prêt à votre vie.</p><p>Note (édition 2026) : les taux évoluent constamment ; validez toujours avec un courtier hypothécaire.</p>"
+    },
+    {
+      "title": "Taux fixe vs taux variable",
+      "objective": "Comprendre le principal arbitrage.",
+      "html": "<p class=\"lede\">Comprendre le principal arbitrage.</p>\n<p>C'est le grand choix de tout emprunteur, et il tient à votre tolérance au risque :</p><ul><li><strong>Taux fixe</strong> : identique pour toute la durée du terme. Versements prévisibles, tranquillité d'esprit, mais souvent un taux de départ un peu plus élevé.</li><li><strong>Taux variable</strong> : suit les fluctuations du marché. Peut coûter moins cher si les taux baissent ou restent bas, mais expose à des hausses de versements ou d'intérêts.</li></ul><p>En résumé : le fixe achète de la <em>prévisibilité</em>, le variable parie sur le <em>marché</em>. Aucun n'est « meilleur » dans l'absolu.</p><!--enr--><p>Posez-vous une question simple : une hausse de versement vous ferait-elle mal dormir ? Le fixe achète la prévisibilité (au prix d'un taux de départ souvent un peu plus élevé) ; le variable parie sur le marché (économie possible, mais risque de hausse). Aucun n'est « meilleur » dans l'absolu.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Posez-vous une question simple : une hausse de versement de 150 à 300 $ par mois vous ferait-elle mal dormir ? Si oui, le fixe vaut souvent son léger surcoût pour la paix d'esprit.</p></aside>"
+    },
+    {
+      "title": "Le terme et l'amortissement",
+      "objective": "Distinguer deux notions souvent confondues.",
+      "html": "<p class=\"lede\">Distinguer deux notions souvent confondues.</p>\n<p>Ces deux mots se ressemblent mais désignent des choses très différentes :</p><ul><li><strong>Amortissement</strong> : la durée <em>totale</em> pour rembourser le prêt (souvent 25 ans).</li><li><strong>Terme</strong> : la durée du <em>contrat actuel</em> (souvent 5 ans), au bout duquel vous renouvelez à de nouvelles conditions.</li></ul><p>Un amortissement plus long réduit le versement mensuel, mais augmente les intérêts payés au total. À chaque fin de terme, vous renégociez : c'est un moment clé pour ajuster votre stratégie.</p><!--enr--><p>Ne confondez pas amortissement (durée totale du remboursement, souvent 25 ans) et terme (durée du contrat actuel, souvent 5 ans). À chaque fin de terme, vous renégociez : c'est un moment clé pour magasiner. Ne subissez pas votre renouvellement — faites jouer la concurrence deux à trois mois avant l'échéance.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne subissez pas votre renouvellement de terme. Deux ou trois mois avant l'échéance, magasinez et faites jouer la concurrence : c'est souvent là qu'on économise le plus, sans changer de maison.</p></aside>"
+    },
+    {
+      "title": "Les clauses qui comptent",
+      "objective": "Regarder au-delà du taux.",
+      "html": "<p class=\"lede\">Regarder au-delà du taux.</p>\n<p>Le taux affiché n'est que la partie visible. Ces clauses peuvent coûter — ou rapporter — gros :</p><ul><li><strong>Pénalités de remboursement anticipé</strong> : parfois très élevées si votre vie change (déménagement, séparation).</li><li><strong>Remboursement accéléré</strong> : versements supplémentaires permis, pour payer plus vite.</li><li><strong>Portabilité</strong> : transférer le prêt à une autre propriété.</li><li><strong>Prêt ouvert vs fermé</strong> : flexibilité contre taux.</li></ul><p>Le taux le plus bas n'est pas toujours le meilleur prêt : une clause rigide peut coûter cher au mauvais moment.</p><!--enr--><p>Le taux affiché n'est que la partie visible : pénalités de remboursement anticipé (parfois très élevées si votre vie change), remboursements accélérés, portabilité, prêt ouvert vs fermé. Avant de signer pour un taux « imbattable », demandez comment se calcule la pénalité.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Avant de signer pour un taux « imbattable », demandez comment se calcule la pénalité de remboursement. Chez certains prêteurs, elle peut représenter plusieurs milliers de dollars.</p></aside>"
+    },
+    {
+      "title": "Bien s'entourer pour financer",
+      "objective": "Choisir le bon interlocuteur.",
+      "html": "<p class=\"lede\">Choisir le bon interlocuteur.</p>\n<p>Vous n'avez pas à magasiner seul. Deux grandes voies :</p><ul><li><strong>Votre institution financière</strong> : simple si vous y êtes déjà client, mais une seule gamme de produits.</li><li><strong>Le courtier hypothécaire</strong> : compare plusieurs prêteurs pour vous, souvent sans frais pour l'emprunteur.</li></ul><p>Dans les deux cas, comparez le taux <em>et</em> les conditions. Une préapprobation vous donne un montant confirmé et un taux garanti pour magasiner l'esprit tranquille.</p><!--enr--><p>Deux voies pour financer : votre institution (simple si vous y êtes client, mais une seule gamme) ou un courtier hypothécaire (compare plusieurs prêteurs, souvent sans frais pour vous). Dans les deux cas, comparez le taux ET les conditions, et obtenez une préapprobation pour magasiner l'esprit tranquille.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Un bon courtier hypothécaire ne vous coûte généralement rien et peut dénicher des conditions que votre banque ne vous offrira pas spontanément. Ça vaut au moins une conversation.</p></aside>"
+    },
+    {
+      "title": "Adapter son prêt à sa vie",
+      "objective": "Choisir selon sa situation réelle.",
+      "html": "<p class=\"lede\">Choisir selon sa situation réelle.</p>\n<p>Le « bon » prêt dépend moins des manchettes économiques que de <strong>votre</strong> réalité :</p><ul><li><strong>Stabilité d'emploi et de revenus</strong> : plus elle est solide, plus le variable est envisageable.</li><li><strong>Horizon</strong> : comptez-vous garder la propriété longtemps ?</li><li><strong>Coussin financier</strong> : pourriez-vous absorber une hausse de versement ?</li><li><strong>Projets</strong> : agrandissement de la famille, changement de carrière, revente probable.</li></ul><p>Un choix aligné sur votre vie vaut mieux qu'un taux parfait sur papier mais inconfortable au quotidien.</p><!--enr--><p>Le « bon » prêt dépend moins des manchettes que de VOTRE réalité : stabilité d'emploi, horizon de détention, coussin financier, projets de vie. Il n'y a aucune honte à choisir le fixe même quand « tout le monde » vante le variable : le meilleur prêt est celui qui vous laisse dormir tranquille.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Il n'y a pas de honte à choisir le fixe même quand « tout le monde » dit que le variable est gagnant. Le meilleur prêt est celui qui vous laisse dormir tranquille.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Évaluer ma tolérance au risque (fixe vs variable).</li><li>Rencontrer un courtier hypothécaire.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Comparer taux ET conditions (pénalités, portabilité).</li><li>Choisir amortissement et terme adaptés.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Remagasiner à chaque renouvellement de terme.</li></ol><!--enr--><h3>Pour bien choisir</h3><ol><li>Évaluer ma tolérance au risque et rencontrer un courtier hypothécaire.</li><li>Comparer taux ET conditions (pénalités, portabilité) et remagasiner à chaque renouvellement.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Taux fixe : inchangé durant le terme, prévisible.</li><li>Taux variable : suit le marché, potentiel d'économie et de risque.</li><li>Amortissement : durée totale de remboursement (souvent 25 ans).</li><li>Terme : durée du contrat actuel (souvent 5 ans).</li><li>Pénalité de remboursement anticipé : coût pour rembourser ou rompre avant terme.</li></ul><!--enr--><li>Taux fixe : inchangé durant le terme, prévisible.</li><li>Taux variable : suit le marché, potentiel d'économie et de risque.</li><li>Amortissement : durée totale de remboursement (souvent 25 ans).</li><li>Terme : durée du contrat actuel (souvent 5 ans).</li><li>Pénalité de remboursement : coût pour rompre ou rembourser avant l'échéance.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Le taux fixe offre surtout :",
+      "options": [
+        "A) Le risque maximal",
+        "B) La prévisibilité des versements",
+        "C) Aucun intérêt",
+        "D) Des taxes réduites"
+      ],
+      "answer": 1,
+      "explanation": "Prévisibilité et sécurité (chap. 1)."
+    },
+    {
+      "q": "Le taux variable :",
+      "options": [
+        "A) Ne change jamais",
+        "B) Suit le marché, avec potentiel d'économie et de risque",
+        "C) Est interdit",
+        "D) Est toujours plus cher"
+      ],
+      "answer": 1,
+      "explanation": "Il suit le marché (chap. 1)."
+    },
+    {
+      "q": "L'amortissement est :",
+      "options": [
+        "A) La durée du contrat actuel",
+        "B) La durée totale de remboursement",
+        "C) Une pénalité",
+        "D) Un taux"
+      ],
+      "answer": 1,
+      "explanation": "Durée totale, souvent 25 ans (chap. 2)."
+    },
+    {
+      "q": "Le terme est :",
+      "options": [
+        "A) La durée totale du prêt",
+        "B) La durée du contrat actuel (souvent 5 ans)",
+        "C) L'assurance",
+        "D) Le prix de la maison"
+      ],
+      "answer": 1,
+      "explanation": "Durée du contrat en cours (chap. 2)."
+    },
+    {
+      "q": "La fin de terme est un bon moment pour :",
+      "options": [
+        "A) Ne rien faire",
+        "B) Remagasiner et faire jouer la concurrence",
+        "C) Vendre obligatoirement",
+        "D) Payer une amende"
+      ],
+      "answer": 1,
+      "explanation": "On renégocie à chaque terme (chap. 2)."
+    },
+    {
+      "q": "Une pénalité de remboursement anticipé peut être :",
+      "options": [
+        "A) Nulle en tout temps",
+        "B) Élevée si votre vie change",
+        "C) Un cadeau",
+        "D) Interdite"
+      ],
+      "answer": 1,
+      "explanation": "Elle peut coûter cher (chap. 3)."
+    },
+    {
+      "q": "Le taux le plus bas :",
+      "options": [
+        "A) Est toujours le meilleur prêt",
+        "B) N'est pas toujours le meilleur prêt",
+        "C) N'existe pas",
+        "D) Est illégal"
+      ],
+      "answer": 1,
+      "explanation": "Les conditions comptent aussi (chap. 3)."
+    },
+    {
+      "q": "Un courtier hypothécaire :",
+      "options": [
+        "A) Coûte toujours cher à l'emprunteur",
+        "B) Compare plusieurs prêteurs, souvent sans frais pour l'emprunteur",
+        "C) Vend des maisons",
+        "D) Fixe les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Il magasine pour vous (chap. 4)."
+    },
+    {
+      "q": "La préapprobation donne :",
+      "options": [
+        "A) Une maison gratuite",
+        "B) Un montant confirmé et un taux garanti pour magasiner",
+        "C) Une pénalité",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Elle sécurise votre recherche (chap. 4)."
+    },
+    {
+      "q": "Le meilleur prêt est surtout celui qui :",
+      "options": [
+        "A) Impressionne les voisins",
+        "B) Est aligné sur votre situation réelle",
+        "C) A le plus de clauses",
+        "D) Dure le plus longtemps"
+      ],
+      "answer": 1,
+      "explanation": "Adapté à votre vie (chap. 5)."
+    }
+  ]
+}

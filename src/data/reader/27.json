@@ -1,1 +1,136 @@
-{"number": 27, "title": "Calculer la rentabilité", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>En immobilier locatif, la rentabilité ne se devine pas : elle se calcule. Trois indicateurs simples — le cashflow, le taux de capitalisation (cap rate) et le multiplicateur de revenus bruts (MRB) — vous disent en quelques minutes si un immeuble mérite une offre.</p><p>Ce guide explique chaque calcul, avec des exemples clairs, pour comparer des immeubles objectivement.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée pour calculer VOS propres chiffres.</p>"}, {"title": "Le revenu net d'exploitation (RNE)", "objective": "Calculer ce que l'immeuble génère avant financement.", "html": "<p class=\"lede\">Calculer ce que l'immeuble génère avant financement.</p>\n<p>Le revenu net d'exploitation (RNE) est la base de tout : revenus de loyers (moins la vacance) moins les dépenses d'exploitation (taxes, assurances, entretien, gestion, énergie des communs) — MAIS avant les versements hypothécaires.</p>\n<p>Exemple : loyers 36 000 $/an − 5 % vacance (1 800 $) = 34 200 $ ; dépenses 12 000 $ ; RNE = 22 200 $.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne confondez jamais loyers bruts et RNE. Un immeuble aux gros loyers mais aux dépenses élevées peut générer moins de RNE qu'un immeuble plus modeste et efficace.</p></aside>"}, {"title": "Le cashflow", "objective": "Savoir ce qui reste réellement dans vos poches.", "html": "<p class=\"lede\">Savoir ce qui reste réellement dans vos poches.</p>\n<p>Le cashflow, c'est le RNE moins les versements hypothécaires (capital + intérêts). C'est l'argent qui reste chaque année après TOUT payer. Un cashflow positif est généralement l'objectif ; un cashflow négatif signifie que vous financez l'immeuble de votre poche.</p>\n<p>Exemple : RNE 22 200 $ − hypothèque 18 000 $/an = cashflow de 4 200 $/an.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Un cashflow légèrement positif ou neutre peut être acceptable si l'immeuble prend de la valeur et que le locataire rembourse votre capital. Mais un gros cashflow négatif est un risque, surtout si les taux montent.</p></aside>"}, {"title": "Le taux de capitalisation (cap rate)", "objective": "Comparer des immeubles indépendamment du financement.", "html": "<p class=\"lede\">Comparer des immeubles indépendamment du financement.</p>\n<p>Le taux de capitalisation = RNE ÷ prix d'achat, exprimé en pourcentage. Il mesure le rendement de l'immeuble avant financement, ce qui permet de comparer des immeubles entre eux et à leur secteur.</p>\n<p>Exemple : RNE 22 200 $ ÷ prix 400 000 $ = 5,55 % de cap rate. Un cap rate plus élevé signifie (toutes choses égales) un meilleur rendement — mais parfois plus de risque ou un secteur moins prisé.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Comparez toujours le cap rate d'un immeuble à ceux du même secteur. Un cap rate anormalement élevé cache souvent quelque chose : mauvais quartier, gros travaux à venir, ou loyers non soutenables.</p></aside>"}, {"title": "Le MRB et les limites des ratios", "objective": "Utiliser un repère rapide et connaître ses limites.", "html": "<p class=\"lede\">Utiliser un repère rapide et connaître ses limites.</p>\n<p>Le multiplicateur de revenus bruts (MRB) = prix d'achat ÷ revenus bruts annuels. C'est un repère RAPIDE de comparaison (un MRB plus bas est généralement plus intéressant), mais grossier car il ignore les dépenses.</p>\n<ul><li>MRB : bon pour un premier tri rapide, pas pour décider.</li><li>Cap rate et cashflow : plus fiables car ils tiennent compte des dépenses (et du financement pour le cashflow).</li><li>Toujours valider avec les chiffres réels avant d'offrir.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Servez-vous du MRB pour un premier tri, jamais pour une décision finale. Deux immeubles au même MRB peuvent être très différents une fois les dépenses réelles intégrées.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Rassembler loyers et dépenses réels de l'immeuble visé.</li><li>Calculer le RNE.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Calculer cashflow, cap rate et MRB.</li><li>Comparer aux immeubles et au cap rate du secteur.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Décider d'offrir selon des chiffres validés, avec Emilie.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>RNE : revenu net d'exploitation, revenus moins dépenses, avant financement.</li><li>Cashflow : RNE moins les versements hypothécaires.</li><li>Cap rate : RNE ÷ prix d'achat, rendement avant financement.</li><li>MRB : prix ÷ revenus bruts, repère rapide de comparaison.</li><li>Vacance : pourcentage de loyers perdus à prévoir dans les calculs.</li></ul>"}], "qcm": [{"q": "Le RNE est calculé :", "options": ["A) Après l'hypothèque", "B) Avant les versements hypothécaires", "C) Sans les dépenses", "D) Sur le prix seul"], "answer": 1, "explanation": "Revenus moins dépenses, avant financement (chap. 1)."}, {"q": "Le cashflow est :", "options": ["A) Le RNE moins l'hypothèque", "B) Les loyers bruts", "C) Le prix d'achat", "D) La mise de fonds"], "answer": 0, "explanation": "Ce qui reste après tout payer (chap. 2)."}, {"q": "Un cashflow négatif signifie :", "options": ["A) Un gain", "B) Que vous financez l'immeuble de votre poche", "C) Rien", "D) Une exemption"], "answer": 1, "explanation": "Les dépenses dépassent les revenus nets (chap. 2)."}, {"q": "Le cap rate est :", "options": ["A) RNE ÷ prix d'achat", "B) Prix ÷ loyers", "C) Loyers − dépenses", "D) Mise de fonds ÷ prix"], "answer": 0, "explanation": "Rendement avant financement (chap. 3)."}, {"q": "Un cap rate anormalement élevé peut cacher :", "options": ["A) Une aubaine sûre", "B) Un mauvais quartier ou de gros travaux à venir", "C) Rien", "D) Un cadeau"], "answer": 1, "explanation": "À comparer au secteur (chap. 3)."}, {"q": "Le MRB est :", "options": ["A) Prix ÷ revenus bruts", "B) RNE ÷ prix", "C) Cashflow annuel", "D) Le taux d'intérêt"], "answer": 0, "explanation": "Un repère rapide (chap. 4)."}, {"q": "Le MRB sert surtout à :", "options": ["A) Décider seul", "B) Un premier tri rapide", "C) Calculer l'impôt", "D) Fixer le loyer"], "answer": 1, "explanation": "Il ignore les dépenses (chap. 4)."}, {"q": "Pour décider, on se fie surtout à :", "options": ["A) Au MRB seul", "B) Au cap rate et au cashflow réels", "C) À l'apparence", "D) Au hasard"], "answer": 1, "explanation": "Ils intègrent les dépenses (chap. 4)."}]}
+{
+  "number": 27,
+  "title": "Calculer la rentabilité",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>En immobilier locatif, la rentabilité ne se devine pas : elle se calcule. Trois indicateurs simples — le cashflow, le taux de capitalisation (cap rate) et le multiplicateur de revenus bruts (MRB) — vous disent en quelques minutes si un immeuble mérite une offre.</p><p>Ce guide explique chaque calcul, avec des exemples clairs, pour comparer des immeubles objectivement.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée pour calculer VOS propres chiffres.</p><!--enr--><p>La rentabilité d'un immeuble se calcule, elle ne se devine pas. Ce guide décortique les indicateurs clés — RNE, cashflow, taux de capitalisation, MRB, rendement sur mise de fonds — et surtout leurs limites, pour décider sur des faits.</p><p>Le message clé : aucun ratio ne dit tout ; c'est leur ensemble, croisé avec l'état du bâtiment, qui éclaire la décision.</p>"
+    },
+    {
+      "title": "Le revenu net d'exploitation (RNE)",
+      "objective": "Calculer ce que l'immeuble génère avant financement.",
+      "html": "<p class=\"lede\">Calculer ce que l'immeuble génère avant financement.</p>\n<p>Le revenu net d'exploitation (RNE) est la base de tout : revenus de loyers (moins la vacance) moins les dépenses d'exploitation (taxes, assurances, entretien, gestion, énergie des communs) — MAIS avant les versements hypothécaires.</p>\n<p>Exemple : loyers 36 000 $/an − 5 % vacance (1 800 $) = 34 200 $ ; dépenses 12 000 $ ; RNE = 22 200 $.</p>\n<!--enr--><p>Le RNE (revenus moins dépenses d'exploitation, avant financement) est la mesure de base de la performance d'un immeuble. Il permet de comparer des immeubles entre eux sans être faussé par le mode de financement de chacun. Un RNE solide est le socle de tout bon investissement.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne confondez jamais loyers bruts et RNE. Un immeuble aux gros loyers mais aux dépenses élevées peut générer moins de RNE qu'un immeuble plus modeste et efficace.</p></aside>"
+    },
+    {
+      "title": "Le cashflow",
+      "objective": "Savoir ce qui reste réellement dans vos poches.",
+      "html": "<p class=\"lede\">Savoir ce qui reste réellement dans vos poches.</p>\n<p>Le cashflow, c'est le RNE moins les versements hypothécaires (capital + intérêts). C'est l'argent qui reste chaque année après TOUT payer. Un cashflow positif est généralement l'objectif ; un cashflow négatif signifie que vous financez l'immeuble de votre poche.</p>\n<p>Exemple : RNE 22 200 $ − hypothèque 18 000 $/an = cashflow de 4 200 $/an.</p>\n<!--enr--><p>Le cashflow, c'est le RNE moins les versements hypothécaires : l'argent réel qui reste (ou manque) chaque mois. Un cashflow négatif signifie que vous financez l'immeuble de votre poche. Visez au minimum l'équilibre, avec une marge pour les imprévus et la vacance.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Un cashflow légèrement positif ou neutre peut être acceptable si l'immeuble prend de la valeur et que le locataire rembourse votre capital. Mais un gros cashflow négatif est un risque, surtout si les taux montent.</p></aside>"
+    },
+    {
+      "title": "Le taux de capitalisation (cap rate)",
+      "objective": "Comparer des immeubles indépendamment du financement.",
+      "html": "<p class=\"lede\">Comparer des immeubles indépendamment du financement.</p>\n<p>Le taux de capitalisation = RNE ÷ prix d'achat, exprimé en pourcentage. Il mesure le rendement de l'immeuble avant financement, ce qui permet de comparer des immeubles entre eux et à leur secteur.</p>\n<p>Exemple : RNE 22 200 $ ÷ prix 400 000 $ = 5,55 % de cap rate. Un cap rate plus élevé signifie (toutes choses égales) un meilleur rendement — mais parfois plus de risque ou un secteur moins prisé.</p>\n<!--enr--><p>Le taux de capitalisation (RNE ÷ prix) permet de comparer des immeubles indépendamment du financement, comme un « rendement » de l'immeuble. Un cap rate plus élevé peut signaler un meilleur rendement… ou un risque plus élevé. Comparez toujours des immeubles semblables, dans des secteurs semblables.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Comparez toujours le cap rate d'un immeuble à ceux du même secteur. Un cap rate anormalement élevé cache souvent quelque chose : mauvais quartier, gros travaux à venir, ou loyers non soutenables.</p></aside>"
+    },
+    {
+      "title": "Le MRB et les limites des ratios",
+      "objective": "Utiliser un repère rapide et connaître ses limites.",
+      "html": "<p class=\"lede\">Utiliser un repère rapide et connaître ses limites.</p>\n<p>Le multiplicateur de revenus bruts (MRB) = prix d'achat ÷ revenus bruts annuels. C'est un repère RAPIDE de comparaison (un MRB plus bas est généralement plus intéressant), mais grossier car il ignore les dépenses.</p>\n<ul><li>MRB : bon pour un premier tri rapide, pas pour décider.</li><li>Cap rate et cashflow : plus fiables car ils tiennent compte des dépenses (et du financement pour le cashflow).</li><li>Toujours valider avec les chiffres réels avant d'offrir.</li></ul>\n<!--enr--><p>Le MRB (prix ÷ revenus bruts) est un repère rapide, mais grossier : il ignore les dépenses. Utilisez-le pour un premier tri, jamais pour décider. Les ratios sont des outils, pas des verdicts : croisez-les toujours avec les chiffres réels et l'état du bâtiment.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Servez-vous du MRB pour un premier tri, jamais pour une décision finale. Deux immeubles au même MRB peuvent être très différents une fois les dépenses réelles intégrées.</p></aside>"
+    },
+    {
+      "title": "Rendement sur mise de fonds et effet de levier",
+      "objective": "Mesurer ce que rapporte votre argent investi.",
+      "html": "<p class=\"lede\">Mesurer ce que rapporte votre argent investi.</p>\n<p>Au-delà des ratios classiques, un chiffre parle directement à l'investisseur : le <strong>rendement sur mise de fonds</strong> (cash-on-cash) — le cashflow annuel rapporté à l'argent réellement investi.</p><p>C'est là qu'intervient l'<strong>effet de levier</strong> : en finançant une partie du prix, vous investissez moins de votre poche pour contrôler un actif plus gros.</p><ul><li>Le levier <strong>amplifie</strong> le rendement… mais aussi le risque.</li><li>Un cashflow négatif transforme le levier en fardeau.</li></ul><!--enr--><p>Le rendement sur mise de fonds (cash-on-cash) mesure ce que rapporte VOTRE argent investi. C'est là qu'intervient l'effet de levier : financer une partie du prix amplifie le rendement… mais aussi le risque. Un cashflow négatif transforme le levier en fardeau : gardez toujours une marge.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Le levier est une arme à double tranchant : il gonfle vos rendements quand tout va bien, mais amplifie les pertes si le cashflow devient négatif. Gardez toujours une marge pour absorber une mauvaise année.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Rassembler loyers et dépenses réels de l'immeuble visé.</li><li>Calculer le RNE.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Calculer cashflow, cap rate et MRB.</li><li>Comparer aux immeubles et au cap rate du secteur.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Décider d'offrir selon des chiffres validés, avec Emilie.</li></ol><!--enr--><h3>Pour analyser un immeuble</h3><ol><li>Calculer RNE, cashflow et rendement sur mise de fonds à partir des chiffres réels.</li><li>Tester une hausse de taux et une vacance pour vérifier ma marge.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>RNE : revenu net d'exploitation, revenus moins dépenses, avant financement.</li><li>Cashflow : RNE moins les versements hypothécaires.</li><li>Cap rate : RNE ÷ prix d'achat, rendement avant financement.</li><li>MRB : prix ÷ revenus bruts, repère rapide de comparaison.</li><li>Vacance : pourcentage de loyers perdus à prévoir dans les calculs.</li></ul><!--enr--><li>RNE : revenus moins dépenses d'exploitation, avant financement.</li><li>Cashflow : RNE moins les versements hypothécaires.</li><li>Taux de capitalisation : RNE ÷ prix, pour comparer les immeubles.</li><li>MRB : prix ÷ revenus bruts, repère rapide et grossier.</li><li>Effet de levier : usage du financement qui amplifie rendement et risque.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Le RNE est calculé :",
+      "options": [
+        "A) Après l'hypothèque",
+        "B) Avant les versements hypothécaires",
+        "C) Sans les dépenses",
+        "D) Sur le prix seul"
+      ],
+      "answer": 1,
+      "explanation": "Revenus moins dépenses, avant financement (chap. 1)."
+    },
+    {
+      "q": "Le cashflow est :",
+      "options": [
+        "A) Le RNE moins l'hypothèque",
+        "B) Les loyers bruts",
+        "C) Le prix d'achat",
+        "D) La mise de fonds"
+      ],
+      "answer": 0,
+      "explanation": "Ce qui reste après tout payer (chap. 2)."
+    },
+    {
+      "q": "Un cashflow négatif signifie :",
+      "options": [
+        "A) Un gain",
+        "B) Que vous financez l'immeuble de votre poche",
+        "C) Rien",
+        "D) Une exemption"
+      ],
+      "answer": 1,
+      "explanation": "Les dépenses dépassent les revenus nets (chap. 2)."
+    },
+    {
+      "q": "Le cap rate est :",
+      "options": [
+        "A) RNE ÷ prix d'achat",
+        "B) Prix ÷ loyers",
+        "C) Loyers − dépenses",
+        "D) Mise de fonds ÷ prix"
+      ],
+      "answer": 0,
+      "explanation": "Rendement avant financement (chap. 3)."
+    },
+    {
+      "q": "Un cap rate anormalement élevé peut cacher :",
+      "options": [
+        "A) Une aubaine sûre",
+        "B) Un mauvais quartier ou de gros travaux à venir",
+        "C) Rien",
+        "D) Un cadeau"
+      ],
+      "answer": 1,
+      "explanation": "À comparer au secteur (chap. 3)."
+    },
+    {
+      "q": "Le MRB est :",
+      "options": [
+        "A) Prix ÷ revenus bruts",
+        "B) RNE ÷ prix",
+        "C) Cashflow annuel",
+        "D) Le taux d'intérêt"
+      ],
+      "answer": 0,
+      "explanation": "Un repère rapide (chap. 4)."
+    },
+    {
+      "q": "Le MRB sert surtout à :",
+      "options": [
+        "A) Décider seul",
+        "B) Un premier tri rapide",
+        "C) Calculer l'impôt",
+        "D) Fixer le loyer"
+      ],
+      "answer": 1,
+      "explanation": "Il ignore les dépenses (chap. 4)."
+    },
+    {
+      "q": "Pour décider, on se fie surtout à :",
+      "options": [
+        "A) Au MRB seul",
+        "B) Au cap rate et au cashflow réels",
+        "C) À l'apparence",
+        "D) Au hasard"
+      ],
+      "answer": 1,
+      "explanation": "Ils intègrent les dépenses (chap. 4)."
+    }
+  ]
+}

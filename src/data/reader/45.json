@@ -1,1 +1,158 @@
-{"number": 45, "title": "Acheter et vendre en même temps", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Vendre sa propriété actuelle et en acheter une nouvelle en même temps est un exercice d'équilibriste : questions financières, logistiques et de timing s'entremêlent. Bien planifié, ça se fait sereinement.</p><p>Ce guide couvre les scénarios (vendre d'abord, acheter d'abord), les outils pour combler l'écart, et la coordination des dates.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Vendre d'abord ou acheter d'abord ?", "objective": "Choisir la séquence adaptée à votre risque.", "html": "<p class=\"lede\">Choisir la séquence adaptée à votre risque.</p>\n<ul><li>Vendre d'abord : vous connaissez votre budget exact et vendez sans pression, mais risquez de devoir vous reloger temporairement.</li><li>Acheter d'abord : vous sécurisez votre prochaine maison, mais risquez de payer deux propriétés si l'ancienne tarde à se vendre.</li><li>La condition de vente (offrir conditionnellement à la vente de votre propriété) est un outil pour réduire ce risque.</li></ul>\n<p>Le bon choix dépend du marché, de vos finances et de votre tolérance au risque.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>En marché incertain, vendre d'abord (ou acheter en conditionnant à votre vente) protège mieux vos finances. Payer deux propriétés en même temps est le scénario à éviter absolument.</p></aside>"}, {"title": "Combler l'écart financier", "objective": "Gérer le décalage entre les deux transactions.", "html": "<p class=\"lede\">Gérer le décalage entre les deux transactions.</p>\n<p>Si les dates ne coïncident pas, ou si vous achetez avant d'encaisser votre vente, des outils existent : le prêt-relais (financement temporaire jusqu'à la vente), une marge de crédit, ou la négociation de dates de possession compatibles.</p>\n<ul><li>Prêt-relais : couvre l'écart entre l'achat et l'encaissement de la vente.</li><li>Coordonner les dates de possession pour minimiser l'écart.</li><li>Prévoir une marge pour les frais de double détention temporaire.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Parlez de prêt-relais à votre courtier hypothécaire dès le départ. Savoir que ce filet existe vous permet de coordonner les deux transactions sans paniquer si les dates ne s'alignent pas parfaitement.</p></aside>"}, {"title": "Coordonner dates et logistique", "objective": "Orchestrer les deux clôtures et le déménagement.", "html": "<p class=\"lede\">Orchestrer les deux clôtures et le déménagement.</p>\n<p>L'idéal est d'aligner autant que possible les dates de possession (vente et achat) pour un déménagement fluide. À défaut, prévoyez l'entreposage, un hébergement temporaire, et une marge dans le calendrier.</p>\n<p>Une courtière qui gère les deux transactions peut synchroniser les échéances et anticiper les points de friction.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Confiez idéalement les deux transactions à la même courtière : elle peut aligner les dates, anticiper les écarts et vous éviter le stress de deux processus déconnectés.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Déterminer ma séquence (vendre ou acheter d'abord).</li><li>Évaluer ma capacité à absorber un écart.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Explorer le prêt-relais avec mon courtier hypothécaire.</li><li>Coordonner les dates de possession.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Confier les deux transactions à la même courtière pour tout synchroniser.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Condition de vente : offrir conditionnellement à la vente de sa propriété.</li><li>Prêt-relais : financement temporaire couvrant l'écart entre achat et vente.</li><li>Date de possession : date de prise de possession, à coordonner.</li><li>Double détention : période où l'on détient deux propriétés, à minimiser.</li><li>Séquence : vendre d'abord ou acheter d'abord, selon le risque.</li></ul>"}], "qcm": [{"q": "Vendre d'abord permet surtout :", "options": ["A) De payer deux maisons", "B) De connaître son budget et vendre sans pression", "C) D'acheter plus cher", "D) Rien"], "answer": 1, "explanation": "Moins de pression financière (chap. 1)."}, {"q": "Acheter d'abord risque de :", "options": ["A) Rien", "B) Devoir payer deux propriétés si l'ancienne tarde", "C) Baisser le prix", "D) Annuler la vente"], "answer": 1, "explanation": "Double détention (chap. 1)."}, {"q": "La condition de vente sert à :", "options": ["A) Augmenter le prix", "B) Réduire le risque en offrant conditionnellement à sa vente", "C) Éviter le notaire", "D) Payer moins de taxes"], "answer": 1, "explanation": "Outil de protection (chap. 1)."}, {"q": "Un prêt-relais :", "options": ["A) Remplace l'hypothèque", "B) Couvre l'écart entre l'achat et l'encaissement de la vente", "C) Est une assurance", "D) Paie la taxe"], "answer": 1, "explanation": "Financement temporaire (chap. 2)."}, {"q": "L'idéal pour le déménagement est :", "options": ["A) Des dates très éloignées", "B) D'aligner les dates de possession", "C) Aucun plan", "D) Deux déménageurs"], "answer": 1, "explanation": "Transition fluide (chap. 3)."}, {"q": "Le scénario à éviter est :", "options": ["A) Aligner les dates", "B) Payer deux propriétés en même temps", "C) Vendre d'abord", "D) Utiliser un prêt-relais"], "answer": 1, "explanation": "Double détention prolongée (chap. 1)."}]}
+{
+  "number": 45,
+  "title": "Acheter et vendre en même temps",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Vendre sa propriété actuelle et en acheter une nouvelle en même temps est un exercice d'équilibriste : questions financières, logistiques et de timing s'entremêlent. Bien planifié, ça se fait sereinement.</p><p>Ce guide couvre les scénarios (vendre d'abord, acheter d'abord), les outils pour combler l'écart, et la coordination des dates.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Vendre sa propriété et en acheter une autre en même temps est un exercice d'équilibriste : finances, logistique et timing s'entremêlent. Ce guide couvre le choix de la séquence, les outils pour combler l'écart, la coordination des dates et comment éviter la double détention.</p><p>Bien planifié, l'exercice devient une simple suite d'étapes maîtrisées.</p>"
+    },
+    {
+      "title": "Vendre d'abord ou acheter d'abord ?",
+      "objective": "Choisir la séquence adaptée à votre risque.",
+      "html": "<p class=\"lede\">Choisir la séquence adaptée à votre risque.</p>\n<p>Tout se joue sur l'ordre des opérations, et chacun a son revers :</p><ul><li><strong>Vendre d'abord</strong> : vous connaissez votre budget exact et vendez sans pression, mais risquez de devoir vous reloger temporairement.</li><li><strong>Acheter d'abord</strong> : vous sécurisez votre prochaine maison, mais risquez de payer deux propriétés si l'ancienne tarde à se vendre.</li></ul><p>La <strong>condition de vente</strong> (offrir conditionnellement à la vente de votre propriété) est un outil pour réduire ce risque.</p><!--enr--><p>Tout se joue sur l'ordre : vendre d'abord (budget exact connu, sans pression, mais risque de se reloger) ou acheter d'abord (prochaine maison sécurisée, mais risque de payer deux propriétés). La condition de vente (offrir conditionnellement à la vente de sa propriété) réduit ce risque.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Si votre budget ne peut pas absorber deux hypothèques, penchez vers « vendre d'abord » ou utilisez une condition de vente. Le confort d'esprit vaut souvent plus que la maison parfaite trouvée trop tôt.</p></aside>"
+    },
+    {
+      "title": "Combler l'écart financier",
+      "objective": "Gérer le décalage entre les deux transactions.",
+      "html": "<p class=\"lede\">Gérer le décalage entre les deux transactions.</p>\n<p>Si les dates ne coïncident pas, ou si vous achetez avant d'encaisser votre vente, des outils existent :</p><ul><li><strong>Prêt-relais</strong> : financement temporaire jusqu'à l'encaissement de la vente.</li><li><strong>Marge de crédit</strong> : pour couvrir un court décalage.</li><li>Négociation de <strong>dates de possession</strong> compatibles.</li></ul><p>Le prêt-relais est l'outil le plus courant : il couvre précisément l'écart entre l'achat et la vente.</p><!--enr--><p>Si les dates ne coïncident pas, des outils comblent l'écart : le prêt-relais (financement temporaire jusqu'à l'encaissement de la vente), une marge de crédit, ou des dates de possession négociées. Parlez du prêt-relais à votre courtier hypothécaire AVANT de faire une offre.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Parlez du prêt-relais à votre courtier hypothécaire AVANT de faire une offre. Savoir que le pont financier est possible (et à quel coût) change complètement votre marge de manœuvre.</p></aside>"
+    },
+    {
+      "title": "Coordonner dates et logistique",
+      "objective": "Orchestrer les deux clôtures et le déménagement.",
+      "html": "<p class=\"lede\">Orchestrer les deux clôtures et le déménagement.</p>\n<p>L'idéal est d'aligner autant que possible les <strong>dates de possession</strong> (vente et achat) pour un déménagement fluide.</p><p>À défaut, prévoyez :</p><ul><li>De l'<strong>entreposage</strong> temporaire.</li><li>Un <strong>hébergement</strong> de transition.</li><li>Une <strong>marge</strong> dans le calendrier.</li></ul><p>Une courtière qui gère les deux transactions peut synchroniser les échéances et anticiper les points de friction.</p><!--enr--><p>L'idéal est d'aligner les dates de possession pour un déménagement fluide ; à défaut, prévoyez entreposage, hébergement de transition et une marge dans le calendrier. Une courtière qui gère les deux transactions peut synchroniser les échéances et anticiper les frictions.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Confiez idéalement l'achat ET la vente à la même courtière. Elle voit les deux calendriers en même temps et peut caler les dates pour vous éviter un double déménagement.</p></aside>"
+    },
+    {
+      "title": "Éviter la double détention coûteuse",
+      "objective": "Limiter le risque de payer deux propriétés.",
+      "html": "<p class=\"lede\">Limiter le risque de payer deux propriétés.</p>\n<p>Le pire scénario, c'est de se retrouver avec <strong>deux propriétés sur les bras</strong>. Quelques garde-fous :</p><ul><li>Bien <strong>prix</strong> votre propriété actuelle pour qu'elle se vende vite.</li><li>Utiliser une <strong>condition de vente</strong> à l'achat quand c'est possible.</li><li>Négocier des <strong>dates flexibles</strong> côté vendeur.</li><li>Garder un <strong>coussin financier</strong> pour absorber quelques semaines de chevauchement.</li></ul><p>Anticiper le pire scénario, c'est justement ce qui vous évite de le vivre.</p><!--enr--><p>Le pire scénario, c'est deux propriétés sur les bras. Garde-fous : bien prix votre propriété actuelle pour qu'elle se vende vite, utiliser une condition de vente, négocier des dates flexibles et garder un coussin. Ne surévaluez pas « au cas où » : c'est ce qui fait traîner les ventes.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Une propriété bien évaluée et bien présentée se vend plus vite — et c'est votre meilleure protection contre la double détention. Ne surévaluez pas « au cas où » : c'est ce qui fait traîner les ventes.</p></aside>"
+    },
+    {
+      "title": "Le plan de match, étape par étape",
+      "objective": "Enchaîner les deux transactions sereinement.",
+      "html": "<p class=\"lede\">Enchaîner les deux transactions sereinement.</p>\n<p>Un enchaînement réussi suit une trame claire :</p><ol><li><strong>Déterminer la séquence</strong> (vendre ou acheter d'abord) selon votre risque.</li><li><strong>Valider le financement</strong> et explorer le prêt-relais.</li><li><strong>Mettre en marché</strong> ou magasiner en parallèle, selon la séquence.</li><li><strong>Coordonner les dates</strong> de possession.</li><li><strong>Synchroniser</strong> les deux clôtures chez le notaire.</li></ol><p>Bien planifié, l'exercice d'équilibriste devient une simple suite d'étapes maîtrisées.</p><!--enr--><p>Un enchaînement réussi suit une trame : déterminer la séquence selon mon risque, valider le financement et le prêt-relais, mettre en marché ou magasiner en parallèle, coordonner les dates, puis synchroniser les deux clôtures. Écrivez votre plan sur une page avec les dates clés.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Écrivez votre plan de match sur une seule page avec les dates clés. Vue d'ensemble en main, les décisions deviennent évidentes et le stress redescend.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Déterminer ma séquence (vendre ou acheter d'abord).</li><li>Évaluer ma capacité à absorber un écart.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Explorer le prêt-relais avec mon courtier hypothécaire.</li><li>Coordonner les dates de possession.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Confier les deux transactions à la même courtière pour tout synchroniser.</li></ol><!--enr--><h3>Mon plan de match</h3><ol><li>Déterminer ma séquence et explorer le prêt-relais avant d'offrir.</li><li>Coordonner les dates de possession et garder un coussin de sécurité.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Condition de vente : offrir conditionnellement à la vente de sa propriété.</li><li>Prêt-relais : financement temporaire couvrant l'écart entre achat et vente.</li><li>Date de possession : date de prise de possession, à coordonner.</li><li>Double détention : période où l'on détient deux propriétés, à minimiser.</li><li>Séquence : vendre d'abord ou acheter d'abord, selon le risque.</li></ul><!--enr--><li>Condition de vente : offrir conditionnellement à la vente de sa propriété.</li><li>Prêt-relais : financement temporaire couvrant l'écart achat/vente.</li><li>Date de possession : date de prise de possession, à coordonner.</li><li>Double détention : période où l'on détient deux propriétés, à minimiser.</li><li>Séquence : vendre d'abord ou acheter d'abord, selon le risque.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Vendre d'abord permet surtout de :",
+      "options": [
+        "A) Payer deux maisons",
+        "B) Connaître son budget exact et vendre sans pression",
+        "C) Éviter le notaire",
+        "D) Doubler les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Budget connu (chap. 1)."
+    },
+    {
+      "q": "Acheter d'abord risque de :",
+      "options": [
+        "A) Réduire le choix",
+        "B) Faire payer deux propriétés si l'ancienne tarde",
+        "C) Annuler la vente",
+        "D) Baisser les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Risque de double détention (chap. 1)."
+    },
+    {
+      "q": "La condition de vente permet :",
+      "options": [
+        "A) D'acheter sans conditions",
+        "B) D'offrir conditionnellement à la vente de sa propriété",
+        "C) De payer moins",
+        "D) D'éviter le notaire"
+      ],
+      "answer": 1,
+      "explanation": "Outil de réduction du risque (chap. 1)."
+    },
+    {
+      "q": "Le prêt-relais sert à :",
+      "options": [
+        "A) Rénover",
+        "B) Couvrir l'écart entre l'achat et l'encaissement de la vente",
+        "C) Payer les taxes",
+        "D) Assurer la maison"
+      ],
+      "answer": 1,
+      "explanation": "Financement temporaire (chap. 2)."
+    },
+    {
+      "q": "Il faut parler du prêt-relais :",
+      "options": [
+        "A) Après la clôture",
+        "B) Avant de faire une offre",
+        "C) Jamais",
+        "D) À la ville"
+      ],
+      "answer": 1,
+      "explanation": "Anticiper le financement (chap. 2)."
+    },
+    {
+      "q": "L'idéal, côté dates, est de :",
+      "options": [
+        "A) Les ignorer",
+        "B) Aligner les dates de possession",
+        "C) Déménager deux fois",
+        "D) Fixer au hasard"
+      ],
+      "answer": 1,
+      "explanation": "Aligner les possessions (chap. 3)."
+    },
+    {
+      "q": "Confier les deux transactions à la même courtière permet de :",
+      "options": [
+        "A) Payer plus",
+        "B) Synchroniser les échéances",
+        "C) Compliquer le tout",
+        "D) Éviter la vente"
+      ],
+      "answer": 1,
+      "explanation": "Coordination (chap. 3)."
+    },
+    {
+      "q": "La double détention, c'est :",
+      "options": [
+        "A) Un avantage fiscal",
+        "B) Détenir deux propriétés à la fois, à minimiser",
+        "C) Une assurance",
+        "D) Une condition"
+      ],
+      "answer": 1,
+      "explanation": "À limiter (chap. 4)."
+    },
+    {
+      "q": "La meilleure protection contre la double détention est :",
+      "options": [
+        "A) Surévaluer sa propriété",
+        "B) Bien la prix pour qu'elle se vende vite",
+        "C) Ne pas la vendre",
+        "D) Attendre l'hiver"
+      ],
+      "answer": 1,
+      "explanation": "Bon prix = vente rapide (chap. 4)."
+    },
+    {
+      "q": "Un bon plan de match tient idéalement :",
+      "options": [
+        "A) Dans dix classeurs",
+        "B) Sur une page avec les dates clés",
+        "C) Dans la tête seulement",
+        "D) Chez le notaire"
+      ],
+      "answer": 1,
+      "explanation": "Vue d'ensemble (chap. 5)."
+    }
+  ]
+}

@@ -1,1 +1,136 @@
-{"number": 17, "title": "Fixer le bon prix", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Le prix de départ est la décision qui influence le plus le résultat de votre vente. Ni le prix payé jadis, ni vos rénovations, ni vos besoins financiers ne fixent la valeur : c'est le marché qui décide. L'outil pour le lire s'appelle l'analyse comparative de marché (ACM).</p><p>Ce guide vous explique comment se construit une ACM, pourquoi l'évaluation municipale n'est pas la valeur, et comment le prix de départ influence le prix final.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée pour préparer VOTRE stratégie de prix.</p>"}, {"title": "Ce qui détermine (vraiment) la valeur", "objective": "Distinguer valeur marchande et fausses références.", "html": "<p class=\"lede\">Distinguer valeur marchande et fausses références.</p>\n<p>La valeur marchande, c'est le prix qu'un acheteur informé est prêt à payer aujourd'hui, dans les conditions actuelles du marché. Elle n'a rien à voir avec :</p>\n<ul><li>Ce que vous avez payé à l'achat (le passé n'intéresse pas l'acheteur).</li><li>Le coût de vos rénovations (toutes ne se récupèrent pas également).</li><li>Vos besoins financiers (l'acheteur s'en moque).</li><li>L'évaluation municipale (un outil fiscal, pas un prix de vente).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Détachez-vous du prix « émotionnel ». Le marché ne paie pas vos souvenirs ni vos efforts, il paie ce que vaut la propriété aujourd'hui. C'est parfois dur à entendre, mais c'est ce qui fait vendre.</p></aside>"}, {"title": "L'analyse comparative de marché (ACM)", "objective": "Comprendre comment se construit un prix appuyé sur des faits.", "html": "<p class=\"lede\">Comprendre comment se construit un prix appuyé sur des faits.</p>\n<p>L'ACM compare votre propriété à des ventes récentes de propriétés semblables dans le même secteur : type, superficie, nombre de pièces, état, garage, terrain, etc. On ajuste ensuite pour les différences (une propriété comparable avec un garage de plus vaut un peu plus, par exemple).</p>\n<ul><li>Ventes RÉCENTES (le marché bouge) et VRAIMENT comparables.</li><li>Ajustements pour les différences objectives.</li><li>On regarde aussi les propriétés actuellement en vente (votre concurrence) et celles qui n'ont pas trouvé preneur (souvent trop chères).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Méfiez-vous des propriétés « en vente » comme référence : n'importe qui peut DEMANDER un prix. Ce sont les propriétés VENDUES qui disent la vraie valeur.</p></aside>"}, {"title": "Évaluation municipale vs valeur marchande", "objective": "Ne pas confondre l'outil fiscal et le prix de vente.", "html": "<p class=\"lede\">Ne pas confondre l'outil fiscal et le prix de vente.</p>\n<p>L'évaluation municipale sert à calculer vos taxes ; elle est établie en masse, à une date de référence, et peut être supérieure ou inférieure à la valeur marchande réelle. La municipalité applique d'ailleurs un « facteur comparatif » pour tenter de la rapprocher du marché.</p>\n<p>Conclusion : ne fixez jamais votre prix de vente sur l'évaluation municipale. Elle peut servir d'indice, jamais de verdict.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>« Ma maison est évaluée à tant à la ville » n'est pas un argument de prix. L'évaluation municipale et la valeur marchande sont deux choses différentes ; seul le marché fixe le prix de vente.</p></aside>"}, {"title": "La stratégie de prix de départ", "objective": "Choisir un prix qui maximise le résultat final.", "html": "<p class=\"lede\">Choisir un prix qui maximise le résultat final.</p>\n<p>Un prix juste, aligné sur l'ACM, attire rapidement des acheteurs et peut générer de la compétition — ce qui fait souvent monter le prix final. Un prix trop élevé fait fuir les acheteurs, la propriété stagne, et l'on finit par baisser… en vendant plus bas et plus tard qu'avec un bon prix dès le départ.</p>\n<ul><li>Bon prix dès le jour 1 : engouement, visites, offres, parfois surenchère.</li><li>Prix trop haut : peu de visites, image de « propriété qui traîne », baisses successives.</li><li>Le premier acheteur sérieux est souvent le meilleur : ne le laissez pas filer par excès d'optimisme.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Le marché juge votre prix dans les deux premières semaines. Si les visites sont rares ou sans offre, c'est presque toujours une question de prix — écoutez ce signal tôt plutôt que tard.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Demander à Emilie une analyse comparative complète.</li><li>Lister mes rénovations et vérifier lesquelles sont valorisables.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Fixer un prix de départ aligné sur les ventes récentes.</li><li>Définir un plan d'ajustement si le marché ne répond pas.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Surveiller les signaux (visites, offres) et réagir tôt.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Valeur marchande : prix qu'un acheteur informé paie dans les conditions actuelles.</li><li>ACM : analyse comparative de marché, basée sur des ventes récentes semblables.</li><li>Ajustement : correction de prix pour les différences entre propriétés.</li><li>Évaluation municipale : valeur fiscale, différente du prix de vente.</li><li>Prix de départ : décision stratégique qui influence le prix final.</li></ul>"}], "qcm": [{"q": "La valeur marchande est :", "options": ["A) Le prix payé jadis", "B) Ce qu'un acheteur informé paie aujourd'hui", "C) L'évaluation municipale", "D) Le coût des rénovations"], "answer": 1, "explanation": "C'est le marché actuel qui décide (chap. 1)."}, {"q": "L'ACM compare votre propriété à :", "options": ["A) Des maisons d'une autre ville", "B) Des ventes récentes semblables du secteur", "C) Des propriétés fictives", "D) Votre prix d'achat"], "answer": 1, "explanation": "Comparables récents et ajustements (chap. 2)."}, {"q": "La meilleure référence de prix, ce sont les propriétés :", "options": ["A) En vente", "B) Vendues", "C) Retirées", "D) Rêvées"], "answer": 1, "explanation": "N'importe qui peut demander un prix (chap. 2)."}, {"q": "L'évaluation municipale sert surtout à :", "options": ["A) Fixer le prix de vente", "B) Calculer les taxes", "C) Payer le notaire", "D) Assurer la maison"], "answer": 1, "explanation": "C'est un outil fiscal (chap. 3)."}, {"q": "Un prix de départ trop élevé mène souvent à :", "options": ["A) Une vente rapide et chère", "B) Une propriété qui stagne et se vend plus bas et plus tard", "C) Plus d'offres", "D) Aucune conséquence"], "answer": 1, "explanation": "Elle devient « celle qui traîne » (chap. 4)."}, {"q": "Le marché juge votre prix surtout :", "options": ["A) Après six mois", "B) Dans les deux premières semaines", "C) Jamais", "D) Au notaire"], "answer": 1, "explanation": "Les premières semaines sont révélatrices (chap. 4)."}, {"q": "Le coût de vos rénovations :", "options": ["A) Se récupère toujours à 100 %", "B) Ne se récupère pas toujours également", "C) Fixe la valeur", "D) N'existe pas"], "answer": 1, "explanation": "Toutes les rénos ne se valorisent pas pareil (chap. 1)."}, {"q": "Un bon prix dès le départ peut générer :", "options": ["A) De la fuite", "B) De l'engouement et parfois une surenchère", "C) Aucune visite", "D) Une baisse immédiate"], "answer": 1, "explanation": "Il crée la compétition (chap. 4)."}]}
+{
+  "number": 17,
+  "title": "Fixer le bon prix",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Le prix de départ est la décision qui influence le plus le résultat de votre vente. Ni le prix payé jadis, ni vos rénovations, ni vos besoins financiers ne fixent la valeur : c'est le marché qui décide. L'outil pour le lire s'appelle l'analyse comparative de marché (ACM).</p><p>Ce guide vous explique comment se construit une ACM, pourquoi l'évaluation municipale n'est pas la valeur, et comment le prix de départ influence le prix final.</p><p>Chaque chapitre se termine par une page « Mes notes » lignée pour préparer VOTRE stratégie de prix.</p><!--enr--><p>Fixer le bon prix est la décision la plus importante d'une vente. Ce guide explique ce qui détermine vraiment la valeur, comment se construit une analyse comparative, pourquoi l'évaluation municipale n'est pas le prix, et comment le surprix se retourne contre le vendeur.</p><p>Le message clé : le marché récompense un prix juste et punit un prix gonflé.</p>"
+    },
+    {
+      "title": "Ce qui détermine (vraiment) la valeur",
+      "objective": "Distinguer valeur marchande et fausses références.",
+      "html": "<p class=\"lede\">Distinguer valeur marchande et fausses références.</p>\n<p>La valeur marchande, c'est le prix qu'un acheteur informé est prêt à payer aujourd'hui, dans les conditions actuelles du marché. Elle n'a rien à voir avec :</p>\n<ul><li>Ce que vous avez payé à l'achat (le passé n'intéresse pas l'acheteur).</li><li>Le coût de vos rénovations (toutes ne se récupèrent pas également).</li><li>Vos besoins financiers (l'acheteur s'en moque).</li><li>L'évaluation municipale (un outil fiscal, pas un prix de vente).</li></ul>\n<!--enr--><p>La valeur marchande, c'est le prix qu'un acheteur informé paie aujourd'hui — pas votre évaluation municipale, ni ce que vous avez investi, ni ce dont vous « avez besoin ». Ces fausses références mènent au surprix. Seules les ventes récentes comparables disent la vérité du marché.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Détachez-vous du prix « émotionnel ». Le marché ne paie pas vos souvenirs ni vos efforts, il paie ce que vaut la propriété aujourd'hui. C'est parfois dur à entendre, mais c'est ce qui fait vendre.</p></aside>"
+    },
+    {
+      "title": "L'analyse comparative de marché (ACM)",
+      "objective": "Comprendre comment se construit un prix appuyé sur des faits.",
+      "html": "<p class=\"lede\">Comprendre comment se construit un prix appuyé sur des faits.</p>\n<p>L'ACM compare votre propriété à des ventes récentes de propriétés semblables dans le même secteur : type, superficie, nombre de pièces, état, garage, terrain, etc. On ajuste ensuite pour les différences (une propriété comparable avec un garage de plus vaut un peu plus, par exemple).</p>\n<ul><li>Ventes RÉCENTES (le marché bouge) et VRAIMENT comparables.</li><li>Ajustements pour les différences objectives.</li><li>On regarde aussi les propriétés actuellement en vente (votre concurrence) et celles qui n'ont pas trouvé preneur (souvent trop chères).</li></ul>\n<!--enr--><p>L'ACM compare votre propriété à des ventes récentes semblables (secteur, taille, état), avec des ajustements pour les différences. C'est la base rationnelle d'un prix crédible. Une ACM solide vous protège autant contre le surprix (qui fait traîner) que le sous-prix (qui laisse de l'argent sur la table).</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Méfiez-vous des propriétés « en vente » comme référence : n'importe qui peut DEMANDER un prix. Ce sont les propriétés VENDUES qui disent la vraie valeur.</p></aside>"
+    },
+    {
+      "title": "Évaluation municipale vs valeur marchande",
+      "objective": "Ne pas confondre l'outil fiscal et le prix de vente.",
+      "html": "<p class=\"lede\">Ne pas confondre l'outil fiscal et le prix de vente.</p>\n<p>L'évaluation municipale sert à calculer vos taxes ; elle est établie en masse, à une date de référence, et peut être supérieure ou inférieure à la valeur marchande réelle. La municipalité applique d'ailleurs un « facteur comparatif » pour tenter de la rapprocher du marché.</p>\n<p>Conclusion : ne fixez jamais votre prix de vente sur l'évaluation municipale. Elle peut servir d'indice, jamais de verdict.</p>\n<!--enr--><p>L'évaluation municipale sert à calculer vos taxes : établie en masse et avec décalage, elle n'est pas le prix du marché. Ne l'utilisez jamais pour fixer un prix de vente ou faire une offre — c'est le malentendu numéro un, dans les deux sens.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>« Ma maison est évaluée à tant à la ville » n'est pas un argument de prix. L'évaluation municipale et la valeur marchande sont deux choses différentes ; seul le marché fixe le prix de vente.</p></aside>"
+    },
+    {
+      "title": "La stratégie de prix de départ",
+      "objective": "Choisir un prix qui maximise le résultat final.",
+      "html": "<p class=\"lede\">Choisir un prix qui maximise le résultat final.</p>\n<p>Un prix juste, aligné sur l'ACM, attire rapidement des acheteurs et peut générer de la compétition — ce qui fait souvent monter le prix final. Un prix trop élevé fait fuir les acheteurs, la propriété stagne, et l'on finit par baisser… en vendant plus bas et plus tard qu'avec un bon prix dès le départ.</p>\n<ul><li>Bon prix dès le jour 1 : engouement, visites, offres, parfois surenchère.</li><li>Prix trop haut : peu de visites, image de « propriété qui traîne », baisses successives.</li><li>Le premier acheteur sérieux est souvent le meilleur : ne le laissez pas filer par excès d'optimisme.</li></ul>\n<!--enr--><p>La stratégie de prix de départ dépend du marché : un prix juste, aligné sur l'ACM, attire vite et peut susciter plusieurs offres. Les premières semaines sont décisives ; un prix bien calibré au lancement rapporte presque toujours plus qu'un prix gonflé qu'on devra baisser.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Le marché juge votre prix dans les deux premières semaines. Si les visites sont rares ou sans offre, c'est presque toujours une question de prix — écoutez ce signal tôt plutôt que tard.</p></aside>"
+    },
+    {
+      "title": "Pourquoi surévaluer coûte cher",
+      "objective": "Comprendre le risque d'un prix trop élevé.",
+      "html": "<p class=\"lede\">Comprendre le risque d'un prix trop élevé.</p>\n<p>On croit souvent qu'un prix de départ élevé « laisse de la marge pour négocier ». En réalité, c'est risqué :</p><ul><li>La propriété attire moins de visites dès le départ.</li><li>Elle accumule des <strong>jours sur le marché</strong>, ce qui inquiète les acheteurs.</li><li>Elle sert à <strong>vendre les autres</strong> (la vôtre fait bien paraître la voisine mieux prix).</li><li>Les baisses successives envoient un signal de faiblesse.</li></ul><p>Un prix juste dès le départ génère plus d'intérêt — et souvent un meilleur prix final.</p><!--enr--><p>Surévaluer coûte cher : moins de visites, jours qui s'accumulent, signal de faiblesse, et baisses successives qui inquiètent. Pire, votre bien sert à « vendre » les propriétés mieux prix des voisins. Un prix juste dès le départ génère plus d'intérêt — et souvent un meilleur prix final.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Le marché « répond » surtout dans les deux ou trois premières semaines. Mieux vaut un prix juste qui crée de l'engouement qu'un prix gonflé qui fait fuir et qu'on devra baisser plus tard.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Demander à Emilie une analyse comparative complète.</li><li>Lister mes rénovations et vérifier lesquelles sont valorisables.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Fixer un prix de départ aligné sur les ventes récentes.</li><li>Définir un plan d'ajustement si le marché ne répond pas.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Surveiller les signaux (visites, offres) et réagir tôt.</li></ol><!--enr--><h3>Pour fixer mon prix</h3><ol><li>Faire établir une analyse comparative récente et objective.</li><li>Ignorer l'évaluation municipale et mes coûts passés ; suivre le marché.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Valeur marchande : prix qu'un acheteur informé paie dans les conditions actuelles.</li><li>ACM : analyse comparative de marché, basée sur des ventes récentes semblables.</li><li>Ajustement : correction de prix pour les différences entre propriétés.</li><li>Évaluation municipale : valeur fiscale, différente du prix de vente.</li><li>Prix de départ : décision stratégique qui influence le prix final.</li></ul><!--enr--><li>Valeur marchande : prix qu'un acheteur informé paie aujourd'hui.</li><li>ACM : analyse comparative de marché fondée sur des ventes récentes semblables.</li><li>Évaluation municipale : valeur fiscale, distincte du prix de vente.</li><li>Surévaluation : prix trop élevé qui fait traîner et baisser la propriété.</li><li>Jours sur le marché : indicateur clé ; s'allonge avec un prix mal calibré.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "La valeur marchande est :",
+      "options": [
+        "A) Le prix payé jadis",
+        "B) Ce qu'un acheteur informé paie aujourd'hui",
+        "C) L'évaluation municipale",
+        "D) Le coût des rénovations"
+      ],
+      "answer": 1,
+      "explanation": "C'est le marché actuel qui décide (chap. 1)."
+    },
+    {
+      "q": "L'ACM compare votre propriété à :",
+      "options": [
+        "A) Des maisons d'une autre ville",
+        "B) Des ventes récentes semblables du secteur",
+        "C) Des propriétés fictives",
+        "D) Votre prix d'achat"
+      ],
+      "answer": 1,
+      "explanation": "Comparables récents et ajustements (chap. 2)."
+    },
+    {
+      "q": "La meilleure référence de prix, ce sont les propriétés :",
+      "options": [
+        "A) En vente",
+        "B) Vendues",
+        "C) Retirées",
+        "D) Rêvées"
+      ],
+      "answer": 1,
+      "explanation": "N'importe qui peut demander un prix (chap. 2)."
+    },
+    {
+      "q": "L'évaluation municipale sert surtout à :",
+      "options": [
+        "A) Fixer le prix de vente",
+        "B) Calculer les taxes",
+        "C) Payer le notaire",
+        "D) Assurer la maison"
+      ],
+      "answer": 1,
+      "explanation": "C'est un outil fiscal (chap. 3)."
+    },
+    {
+      "q": "Un prix de départ trop élevé mène souvent à :",
+      "options": [
+        "A) Une vente rapide et chère",
+        "B) Une propriété qui stagne et se vend plus bas et plus tard",
+        "C) Plus d'offres",
+        "D) Aucune conséquence"
+      ],
+      "answer": 1,
+      "explanation": "Elle devient « celle qui traîne » (chap. 4)."
+    },
+    {
+      "q": "Le marché juge votre prix surtout :",
+      "options": [
+        "A) Après six mois",
+        "B) Dans les deux premières semaines",
+        "C) Jamais",
+        "D) Au notaire"
+      ],
+      "answer": 1,
+      "explanation": "Les premières semaines sont révélatrices (chap. 4)."
+    },
+    {
+      "q": "Le coût de vos rénovations :",
+      "options": [
+        "A) Se récupère toujours à 100 %",
+        "B) Ne se récupère pas toujours également",
+        "C) Fixe la valeur",
+        "D) N'existe pas"
+      ],
+      "answer": 1,
+      "explanation": "Toutes les rénos ne se valorisent pas pareil (chap. 1)."
+    },
+    {
+      "q": "Un bon prix dès le départ peut générer :",
+      "options": [
+        "A) De la fuite",
+        "B) De l'engouement et parfois une surenchère",
+        "C) Aucune visite",
+        "D) Une baisse immédiate"
+      ],
+      "answer": 1,
+      "explanation": "Il crée la compétition (chap. 4)."
+    }
+  ]
+}

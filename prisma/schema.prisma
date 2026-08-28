@@ -50,11 +50,38 @@ model User {
   purchases            Purchase[]
   downloads            DownloadEvent[]
   events               AnalyticsEvent[]
+  quizAttempts         QuizAttempt[]
 
   createdAt            DateTime @default(now())
   updatedAt            DateTime @updatedAt
 
   @@index([subscriptionStatus])
+  @@index([createdAt])
+}
+
+// ---------------------- QUIZ (façon Coursera) ----------------------
+// Quiz en libre-service, en dehors des guides : l'utilisateur répond,
+// valide, obtient une note /10 et les bonnes réponses. Chaque tentative
+// est enregistrée dans son profil.
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  guideNumber Int
+  guideSlug   String
+  guideTitle  String
+
+  score       Int      // bonnes réponses
+  total       Int      // nombre de questions
+  scoreOn10   Int      // note ramenée sur 10
+  answers     Json     // réponses données (index par question)
+
+  createdAt   DateTime @default(now())
+
+  @@index([userId])
+  @@index([guideSlug])
   @@index([createdAt])
 }
 

@@ -1,1 +1,136 @@
-{"number": 30, "title": "Locataires et Tribunal administratif du logement", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Au Québec, la relation propriétaire-locataire est encadrée par des règles précises et par le Tribunal administratif du logement (TAL). Les connaître, c'est éviter les conflits, les erreurs coûteuses et les mauvaises surprises.</p><p>Ce guide couvre le bail, la sélection des locataires, les augmentations de loyer, les droits et obligations de chacun, et le rôle du TAL.</p><p>Contenu informatif, non un avis juridique. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Le bail et la sélection des locataires", "objective": "Partir sur des bases solides.", "html": "<p class=\"lede\">Partir sur des bases solides.</p>\n<p>Le bail (souvent le formulaire officiel du TAL) encadre la location : loyer, durée, conditions, règlements de l'immeuble. Une sélection rigoureuse des locataires est votre meilleure protection contre les problèmes.</p>\n<ul><li>Vérifier les références et les antécédents de paiement (dans le respect de la loi).</li><li>Remplir un bail clair et complet.</li><li>Remettre les documents obligatoires et le règlement de l'immeuble, le cas échéant.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Un bon locataire bien choisi vaut mieux qu'un logement loué vite et mal. Prenez le temps de la sélection : c'est votre meilleure assurance contre les impayés et les conflits.</p></aside>"}, {"title": "L'augmentation de loyer", "objective": "Augmenter correctement, dans les règles.", "html": "<p class=\"lede\">Augmenter correctement, dans les règles.</p>\n<p>L'augmentation de loyer est encadrée : elle se fait à la reconduction du bail, avec un avis dans les délais requis, et le locataire a le droit de la refuser. En cas de désaccord, la fixation peut être portée au TAL, qui applique des critères (dépenses, travaux, etc.).</p>\n<ul><li>Respecter les délais d'avis d'augmentation.</li><li>Justifier l'augmentation (hausses de taxes, assurances, travaux majeurs).</li><li>Savoir que le locataire peut refuser et que le TAL peut trancher.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>N'improvisez jamais une augmentation « au feeling ». Respectez les délais et documentez vos justifications : c'est ce qui tient la route si le dossier va au TAL.</p></aside>"}, {"title": "Droits et obligations de chacun", "objective": "Connaître le cadre pour éviter les litiges.", "html": "<p class=\"lede\">Connaître le cadre pour éviter les litiges.</p>\n<ul><li>Propriétaire : fournir un logement en bon état, effectuer les réparations nécessaires, respecter la jouissance paisible des lieux.</li><li>Locataire : payer le loyer à temps, entretenir le logement, respecter le règlement.</li><li>Accès au logement : le propriétaire doit respecter des règles d'avis pour visiter ou faire des travaux.</li></ul>\n<p>La plupart des conflits naissent d'une méconnaissance de ces règles de part et d'autre. Les connaître vous évite bien des ennuis.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Respectez scrupuleusement les règles d'accès au logement. Entrer sans avis conforme est une erreur fréquente qui peut vous mettre en tort, même pour une bonne raison.</p></aside>"}, {"title": "Le rôle du TAL", "objective": "Comprendre le tribunal qui tranche les litiges.", "html": "<p class=\"lede\">Comprendre le tribunal qui tranche les litiges.</p>\n<p>Le Tribunal administratif du logement (TAL) tranche les litiges entre propriétaires et locataires : fixation de loyer, non-paiement, reprise de logement, réparations, résiliation de bail, etc. On y dépose une demande, et le tribunal rend une décision.</p>\n<p>Bien documenter vos dossiers (baux, avis, communications, preuves de paiement ou de travaux) est essentiel si vous devez vous adresser au TAL.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Documentez tout, tout le temps : baux, avis, échanges, factures. Au TAL, celui qui a les preuves écrites est en bien meilleure position que celui qui raconte de mémoire.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Mettre en place une procédure de sélection rigoureuse.</li><li>Utiliser un bail clair et conforme.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Documenter systématiquement avis, communications et factures.</li><li>M'informer sur les délais d'augmentation et les règles d'accès.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Consulter au besoin sur une démarche au TAL, dossiers en main.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>TAL : Tribunal administratif du logement, tranche les litiges locatifs.</li><li>Bail : contrat de location, souvent le formulaire officiel du TAL.</li><li>Avis d'augmentation : notification encadrée par des délais.</li><li>Jouissance paisible : droit du locataire à l'usage tranquille du logement.</li><li>Règles d'accès : conditions d'avis pour visiter ou faire des travaux.</li></ul>"}], "qcm": [{"q": "Au Québec, les litiges locatifs sont tranchés par :", "options": ["A) La municipalité", "B) Le Tribunal administratif du logement (TAL)", "C) Le notaire", "D) La police"], "answer": 1, "explanation": "Le TAL est le tribunal compétent (chap. 4)."}, {"q": "La meilleure protection contre les problèmes est :", "options": ["A) Louer vite", "B) Une sélection rigoureuse des locataires", "C) Aucun bail", "D) Un loyer élevé"], "answer": 1, "explanation": "Un bon locataire bien choisi (chap. 1)."}, {"q": "L'augmentation de loyer se fait :", "options": ["A) N'importe quand", "B) À la reconduction, avec avis dans les délais", "C) Sans avis", "D) Interdite"], "answer": 1, "explanation": "Encadrée par des délais (chap. 2)."}, {"q": "Le locataire peut :", "options": ["A) Toujours accepter", "B) Refuser l'augmentation, le TAL pouvant trancher", "C) Rien faire", "D) Fixer le loyer seul"], "answer": 1, "explanation": "Le refus est possible (chap. 2)."}, {"q": "Le propriétaire doit notamment :", "options": ["A) Ignorer les réparations", "B) Fournir un logement en bon état et respecter la jouissance paisible", "C) Entrer sans avis", "D) Augmenter au feeling"], "answer": 1, "explanation": "Obligations de base (chap. 3)."}, {"q": "Pour visiter ou faire des travaux, le propriétaire doit :", "options": ["A) Entrer librement", "B) Respecter des règles d'avis", "C) Prévenir la ville", "D) Rien"], "answer": 1, "explanation": "Règles d'accès à respecter (chap. 3)."}, {"q": "Devant le TAL, l'atout majeur est :", "options": ["A) La mémoire", "B) Des dossiers bien documentés", "C) Le charme", "D) Le hasard"], "answer": 1, "explanation": "Les preuves écrites priment (chap. 4)."}, {"q": "Les conflits naissent souvent :", "options": ["A) D'un bon bail", "B) D'une méconnaissance des règles des deux côtés", "C) De trop de documentation", "D) De rien"], "answer": 1, "explanation": "Connaître le cadre évite les ennuis (chap. 3)."}]}
+{
+  "number": 30,
+  "title": "Locataires et Tribunal administratif du logement",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Au Québec, la relation propriétaire-locataire est encadrée par des règles précises et par le Tribunal administratif du logement (TAL). Les connaître, c'est éviter les conflits, les erreurs coûteuses et les mauvaises surprises.</p><p>Ce guide couvre le bail, la sélection des locataires, les augmentations de loyer, les droits et obligations de chacun, et le rôle du TAL.</p><p>Contenu informatif, non un avis juridique. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Devenir propriétaire-bailleur, c'est entrer dans un cadre légal précis. Ce guide couvre le bail et la sélection des locataires, l'augmentation de loyer, les droits et obligations de chacun, le rôle du TAL et la façon de réagir aux retards et conflits.</p><p>Le fil conducteur : de bonnes pratiques au départ et des écrits rigoureux évitent la majorité des litiges.</p>"
+    },
+    {
+      "title": "Le bail et la sélection des locataires",
+      "objective": "Partir sur des bases solides.",
+      "html": "<p class=\"lede\">Partir sur des bases solides.</p>\n<p>Le bail (souvent le formulaire officiel du TAL) encadre la location : loyer, durée, conditions, règlements de l'immeuble. Une sélection rigoureuse des locataires est votre meilleure protection contre les problèmes.</p>\n<ul><li>Vérifier les références et les antécédents de paiement (dans le respect de la loi).</li><li>Remplir un bail clair et complet.</li><li>Remettre les documents obligatoires et le règlement de l'immeuble, le cas échéant.</li></ul>\n<!--enr--><p>Tout commence par le bail (souvent le formulaire officiel du TAL) et une sélection rigoureuse : vérification des revenus, des références et du dossier de crédit, dans le respect de la loi. Un bon locataire bien choisi au départ vaut mieux que dix démarches au tribunal ensuite.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Un bon locataire bien choisi vaut mieux qu'un logement loué vite et mal. Prenez le temps de la sélection : c'est votre meilleure assurance contre les impayés et les conflits.</p></aside>"
+    },
+    {
+      "title": "L'augmentation de loyer",
+      "objective": "Augmenter correctement, dans les règles.",
+      "html": "<p class=\"lede\">Augmenter correctement, dans les règles.</p>\n<p>L'augmentation de loyer est encadrée : elle se fait à la reconduction du bail, avec un avis dans les délais requis, et le locataire a le droit de la refuser. En cas de désaccord, la fixation peut être portée au TAL, qui applique des critères (dépenses, travaux, etc.).</p>\n<ul><li>Respecter les délais d'avis d'augmentation.</li><li>Justifier l'augmentation (hausses de taxes, assurances, travaux majeurs).</li><li>Savoir que le locataire peut refuser et que le TAL peut trancher.</li></ul>\n<!--enr--><p>L'augmentation de loyer est encadrée : elle se fait à la reconduction du bail, avec un avis dans les délais, et le locataire peut l'accepter, la refuser ou quitter. Des critères (travaux, taxes, assurances) guident une hausse raisonnable. Improviser une hausse expose à un refus au TAL.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>N'improvisez jamais une augmentation « au feeling ». Respectez les délais et documentez vos justifications : c'est ce qui tient la route si le dossier va au TAL.</p></aside>"
+    },
+    {
+      "title": "Droits et obligations de chacun",
+      "objective": "Connaître le cadre pour éviter les litiges.",
+      "html": "<p class=\"lede\">Connaître le cadre pour éviter les litiges.</p>\n<ul><li>Propriétaire : fournir un logement en bon état, effectuer les réparations nécessaires, respecter la jouissance paisible des lieux.</li><li>Locataire : payer le loyer à temps, entretenir le logement, respecter le règlement.</li><li>Accès au logement : le propriétaire doit respecter des règles d'avis pour visiter ou faire des travaux.</li></ul>\n<p>La plupart des conflits naissent d'une méconnaissance de ces règles de part et d'autre. Les connaître vous évite bien des ennuis.</p>\n<!--enr--><p>Chacun a ses droits et obligations : le propriétaire fournit un logement en bon état et respecte la jouissance paisible ; le locataire paie à temps, entretient et respecte le bail. Connaître ce cadre évite la majorité des litiges — la plupart naissent d'un malentendu sur les règles.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Respectez scrupuleusement les règles d'accès au logement. Entrer sans avis conforme est une erreur fréquente qui peut vous mettre en tort, même pour une bonne raison.</p></aside>"
+    },
+    {
+      "title": "Le rôle du TAL",
+      "objective": "Comprendre le tribunal qui tranche les litiges.",
+      "html": "<p class=\"lede\">Comprendre le tribunal qui tranche les litiges.</p>\n<p>Le Tribunal administratif du logement (TAL) tranche les litiges entre propriétaires et locataires : fixation de loyer, non-paiement, reprise de logement, réparations, résiliation de bail, etc. On y dépose une demande, et le tribunal rend une décision.</p>\n<p>Bien documenter vos dossiers (baux, avis, communications, preuves de paiement ou de travaux) est essentiel si vous devez vous adresser au TAL.</p>\n<!--enr--><p>Le Tribunal administratif du logement (TAL) tranche les litiges entre locateurs et locataires (loyers impayés, reprises, réparations, hausses). Ses décisions s'imposent. Un dossier documenté (bail, avis, échanges écrits) est votre meilleur atout si vous devez y recourir.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Documentez tout, tout le temps : baux, avis, échanges, factures. Au TAL, celui qui a les preuves écrites est en bien meilleure position que celui qui raconte de mémoire.</p></aside>"
+    },
+    {
+      "title": "Retards de loyer et conflits : bien réagir",
+      "objective": "Agir correctement en cas de problème.",
+      "html": "<p class=\"lede\">Agir correctement en cas de problème.</p>\n<p>Même avec une bonne sélection, des difficultés peuvent survenir. La clé : réagir <strong>tôt et dans les règles</strong> :</p><ul><li>Communiquer <strong>rapidement</strong> et par écrit dès un retard.</li><li>Documenter les <strong>échanges</strong> et les manquements.</li><li>Connaître les <strong>recours</strong> et délais prévus par la loi.</li><li>Passer par le <strong>Tribunal administratif du logement</strong> au besoin, avec un dossier solide.</li></ul><p>Garder son calme, rester factuel et respecter la procédure protège vos droits comme ceux du locataire.</p><!--enr--><p>Face à un retard ou un conflit, réagissez tôt et dans les règles : communiquez par écrit dès le premier retard, documentez tout, connaissez vos recours et leurs délais. N'attendez pas trois mois d'impayés : un rappel écrit ferme mais courtois règle la majorité des situations avant qu'elles ne dégénèrent.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>N'attendez pas trois mois de loyers impayés pour agir. Un rappel écrit dès le premier retard, courtois mais ferme, règle la majorité des situations avant qu'elles ne dégénèrent.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Mettre en place une procédure de sélection rigoureuse.</li><li>Utiliser un bail clair et conforme.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Documenter systématiquement avis, communications et factures.</li><li>M'informer sur les délais d'augmentation et les règles d'accès.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Consulter au besoin sur une démarche au TAL, dossiers en main.</li></ol><!--enr--><h3>Comme bailleur</h3><ol><li>Utiliser le bail officiel et sélectionner rigoureusement (revenus, références, crédit).</li><li>Documenter tous les échanges et connaître les délais d'avis et de recours.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>TAL : Tribunal administratif du logement, tranche les litiges locatifs.</li><li>Bail : contrat de location, souvent le formulaire officiel du TAL.</li><li>Avis d'augmentation : notification encadrée par des délais.</li><li>Jouissance paisible : droit du locataire à l'usage tranquille du logement.</li><li>Règles d'accès : conditions d'avis pour visiter ou faire des travaux.</li></ul><!--enr--><li>Bail : contrat de location, souvent le formulaire officiel du TAL.</li><li>Reconduction : renouvellement du bail, moment de l'augmentation.</li><li>Jouissance paisible : droit du locataire à un usage tranquille du logement.</li><li>TAL : Tribunal administratif du logement, qui tranche les litiges.</li><li>Avis : notification écrite (hausse, reprise) dans des délais précis.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Au Québec, les litiges locatifs sont tranchés par :",
+      "options": [
+        "A) La municipalité",
+        "B) Le Tribunal administratif du logement (TAL)",
+        "C) Le notaire",
+        "D) La police"
+      ],
+      "answer": 1,
+      "explanation": "Le TAL est le tribunal compétent (chap. 4)."
+    },
+    {
+      "q": "La meilleure protection contre les problèmes est :",
+      "options": [
+        "A) Louer vite",
+        "B) Une sélection rigoureuse des locataires",
+        "C) Aucun bail",
+        "D) Un loyer élevé"
+      ],
+      "answer": 1,
+      "explanation": "Un bon locataire bien choisi (chap. 1)."
+    },
+    {
+      "q": "L'augmentation de loyer se fait :",
+      "options": [
+        "A) N'importe quand",
+        "B) À la reconduction, avec avis dans les délais",
+        "C) Sans avis",
+        "D) Interdite"
+      ],
+      "answer": 1,
+      "explanation": "Encadrée par des délais (chap. 2)."
+    },
+    {
+      "q": "Le locataire peut :",
+      "options": [
+        "A) Toujours accepter",
+        "B) Refuser l'augmentation, le TAL pouvant trancher",
+        "C) Rien faire",
+        "D) Fixer le loyer seul"
+      ],
+      "answer": 1,
+      "explanation": "Le refus est possible (chap. 2)."
+    },
+    {
+      "q": "Le propriétaire doit notamment :",
+      "options": [
+        "A) Ignorer les réparations",
+        "B) Fournir un logement en bon état et respecter la jouissance paisible",
+        "C) Entrer sans avis",
+        "D) Augmenter au feeling"
+      ],
+      "answer": 1,
+      "explanation": "Obligations de base (chap. 3)."
+    },
+    {
+      "q": "Pour visiter ou faire des travaux, le propriétaire doit :",
+      "options": [
+        "A) Entrer librement",
+        "B) Respecter des règles d'avis",
+        "C) Prévenir la ville",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Règles d'accès à respecter (chap. 3)."
+    },
+    {
+      "q": "Devant le TAL, l'atout majeur est :",
+      "options": [
+        "A) La mémoire",
+        "B) Des dossiers bien documentés",
+        "C) Le charme",
+        "D) Le hasard"
+      ],
+      "answer": 1,
+      "explanation": "Les preuves écrites priment (chap. 4)."
+    },
+    {
+      "q": "Les conflits naissent souvent :",
+      "options": [
+        "A) D'un bon bail",
+        "B) D'une méconnaissance des règles des deux côtés",
+        "C) De trop de documentation",
+        "D) De rien"
+      ],
+      "answer": 1,
+      "explanation": "Connaître le cadre évite les ennuis (chap. 3)."
+    }
+  ]
+}

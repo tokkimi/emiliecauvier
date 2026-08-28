@@ -1,1 +1,136 @@
-{"number": 50, "title": "Acheter un chalet", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Un chalet ou une résidence secondaire, c'est un rêve pour beaucoup de Québécois — les Laurentides, la Rive-Nord, un bord de lac. Mais acheter en nature comporte des vérifications bien différentes de celles d'une maison de ville.</p><p>Ce guide couvre le financement particulier, les vérifications propres aux propriétés rurales (eau, égout, accès, zonage riverain), et la réalité de l'entretien saisonnier.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "Financer une résidence secondaire", "objective": "Comprendre les règles différentes de la résidence principale.", "html": "<p class=\"lede\">Comprendre les règles différentes de la résidence principale.</p>\n<p>Une résidence secondaire ne se finance pas toujours comme une résidence principale : la mise de fonds peut être plus élevée et les conditions différentes, surtout pour des propriétés très éloignées, saisonnières ou non habitables à l'année.</p>\n<ul><li>Mise de fonds potentiellement plus importante.</li><li>Certaines propriétés (accès saisonnier, non isolées pour l'hiver) sont plus difficiles à financer et à assurer.</li><li>Valider tôt avec un courtier hypothécaire.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Vérifiez le financement AVANT de tomber amoureux d'un chalet isolé. Une propriété non habitable à l'année ou d'accès saisonnier peut être bien plus difficile à financer et à assurer qu'on l'imagine.</p></aside>"}, {"title": "Les vérifications propres au rural", "objective": "Contrôler ce qui n'existe pas en ville.", "html": "<p class=\"lede\">Contrôler ce qui n'existe pas en ville.</p>\n<ul><li>Eau : puits (débit, potabilité, analyses) plutôt qu'aqueduc municipal.</li><li>Égout : installation septique (âge, conformité, entretien) plutôt que réseau municipal.</li><li>Accès : route privée, déneigement, servitudes de passage, accès saisonnier.</li><li>Bâtiment : isolation et chauffage adaptés à un usage 4 saisons ou non.</li></ul>\n<p>Un puits tari ou une installation septique non conforme peut coûter très cher : ces éléments doivent être vérifiés avant l'achat.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Faites tester le puits (débit et potabilité) et vérifier l'installation septique par des professionnels. En milieu rural, ce sont les deux postes qui réservent les plus mauvaises — et coûteuses — surprises.</p></aside>"}, {"title": "Zonage riverain et réglementation", "objective": "Connaître les règles en bord de lac ou en zone protégée.", "html": "<p class=\"lede\">Connaître les règles en bord de lac ou en zone protégée.</p>\n<p>Les propriétés riveraines et en milieu naturel sont soumises à des règles particulières : bandes de protection riveraine, restrictions de construction ou de rénovation près de l'eau, zones inondables, milieux humides protégés. Ces règles limitent ce que vous pourrez faire.</p>\n<p>Vérifiez le zonage et les contraintes environnementales auprès de la municipalité AVANT d'acheter, surtout si vous avez des projets d'aménagement.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Avant d'acheter au bord de l'eau, renseignez-vous sur la bande de protection riveraine et les zones inondables. Ce que vous rêvez de construire ou d'aménager près de l'eau est souvent strictement encadré.</p></aside>"}, {"title": "La réalité de l'entretien et de l'usage", "objective": "Acheter en connaissance de la charge réelle.", "html": "<p class=\"lede\">Acheter en connaissance de la charge réelle.</p>\n<p>Une résidence secondaire, c'est une deuxième maison à entretenir : ouverture et fermeture saisonnières, chauffage minimal l'hiver, entretien du terrain, gestion à distance. Évaluez honnêtement le temps et le budget que vous y consacrerez, et la fréquence réelle d'utilisation.</p>\n<p>Certains rentabilisent leur chalet par la location (attention aux règles de court terme, voir le guide dédié). D'autres le gardent purement personnel : dans tous les cas, c'est un engagement, pas seulement un rêve.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Soyez honnête sur la fréquence à laquelle vous l'utiliserez vraiment. Un chalet peu fréquenté mais à entretenir peut devenir un fardeau ; bien choisi et réaliste, il est une source de bonheur durable.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Valider le financement d'une résidence secondaire.</li><li>Lister les vérifications rurales à prévoir.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire tester puits et installation septique.</li><li>Vérifier zonage riverain et contraintes environnementales.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Évaluer honnêtement l'usage et l'entretien avant d'offrir.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Résidence secondaire : chalet ou maison de villégiature, financement particulier.</li><li>Puits : source d'eau à tester (débit, potabilité).</li><li>Installation septique : traitement des eaux usées, à vérifier (âge, conformité).</li><li>Bande de protection riveraine : zone réglementée en bord de l'eau.</li><li>Accès saisonnier : route non entretenue l'hiver, impact sur financement et usage.</li></ul>"}], "qcm": [{"q": "Une résidence secondaire se finance :", "options": ["A) Toujours comme une résidence principale", "B) Parfois avec une mise de fonds plus élevée et d'autres conditions", "C) Sans mise de fonds", "D) Gratuitement"], "answer": 1, "explanation": "Règles différentes (chap. 1)."}, {"q": "En milieu rural, l'eau vient souvent :", "options": ["A) De l'aqueduc municipal", "B) D'un puits (à tester)", "C) De la pluie seulement", "D) De nulle part"], "answer": 1, "explanation": "Débit et potabilité à vérifier (chap. 2)."}, {"q": "L'égout en rural est souvent :", "options": ["A) Municipal", "B) Une installation septique (à vérifier)", "C) Inexistant", "D) Partagé avec la ville"], "answer": 1, "explanation": "Âge et conformité importants (chap. 2)."}, {"q": "Les propriétés riveraines sont soumises à :", "options": ["A) Aucune règle", "B) Des règles (bande riveraine, zones inondables)", "C) Moins de taxes", "D) Rien"], "answer": 1, "explanation": "Contraintes environnementales (chap. 3)."}, {"q": "Avant d'acheter au bord de l'eau, il faut vérifier :", "options": ["A) La couleur du quai", "B) Le zonage riverain et les contraintes", "C) Rien", "D) La météo"], "answer": 1, "explanation": "Ce qu'on peut aménager est encadré (chap. 3)."}, {"q": "Une résidence secondaire est :", "options": ["A) Sans entretien", "B) Une deuxième maison à entretenir", "C) Toujours louée", "D) Gratuite à gérer"], "answer": 1, "explanation": "Un vrai engagement (chap. 4)."}]}
+{
+  "number": 50,
+  "title": "Acheter un chalet",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Un chalet ou une résidence secondaire, c'est un rêve pour beaucoup de Québécois — les Laurentides, la Rive-Nord, un bord de lac. Mais acheter en nature comporte des vérifications bien différentes de celles d'une maison de ville.</p><p>Ce guide couvre le financement particulier, les vérifications propres aux propriétés rurales (eau, égout, accès, zonage riverain), et la réalité de l'entretien saisonnier.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Le chalet fait rêver, mais une résidence secondaire répond à des règles bien différentes de la résidence principale : financement, vérifications rurales, zonage riverain, entretien. Ce guide couvre tout, pour acheter les yeux ouverts.</p><p>L'idée : valider le financement, les vérifications et l'usage réel avant de se laisser séduire par la vue.</p>"
+    },
+    {
+      "title": "Financer une résidence secondaire",
+      "objective": "Comprendre les règles différentes de la résidence principale.",
+      "html": "<p class=\"lede\">Comprendre les règles différentes de la résidence principale.</p>\n<p>Une résidence secondaire ne se finance pas toujours comme une résidence principale : la mise de fonds peut être plus élevée et les conditions différentes, surtout pour des propriétés très éloignées, saisonnières ou non habitables à l'année.</p>\n<ul><li>Mise de fonds potentiellement plus importante.</li><li>Certaines propriétés (accès saisonnier, non isolées pour l'hiver) sont plus difficiles à financer et à assurer.</li><li>Valider tôt avec un courtier hypothécaire.</li></ul>\n<!--enr--><p>Une résidence secondaire ne se finance pas comme une résidence principale : la mise de fonds est souvent plus élevée et les conditions différentes, surtout pour un chalet 4 saisons vs 3 saisons, ou selon l'accès (route entretenue à l'année ?). Validez le financement AVANT de tomber amoureux d'un chalet.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Vérifiez le financement AVANT de tomber amoureux d'un chalet isolé. Une propriété non habitable à l'année ou d'accès saisonnier peut être bien plus difficile à financer et à assurer qu'on l'imagine.</p></aside>"
+    },
+    {
+      "title": "Les vérifications propres au rural",
+      "objective": "Contrôler ce qui n'existe pas en ville.",
+      "html": "<p class=\"lede\">Contrôler ce qui n'existe pas en ville.</p>\n<ul><li>Eau : puits (débit, potabilité, analyses) plutôt qu'aqueduc municipal.</li><li>Égout : installation septique (âge, conformité, entretien) plutôt que réseau municipal.</li><li>Accès : route privée, déneigement, servitudes de passage, accès saisonnier.</li><li>Bâtiment : isolation et chauffage adaptés à un usage 4 saisons ou non.</li></ul>\n<p>Un puits tari ou une installation septique non conforme peut coûter très cher : ces éléments doivent être vérifiés avant l'achat.</p>\n<!--enr--><p>Le rural impose des vérifications qui n'existent pas en ville : eau (puits — débit, potabilité, analyses), égout (fosse septique et champ d'épuration, âge et conformité), accès et déneigement, électricité, et parfois servitudes de passage. Ces éléments coûtent cher à régler : inspectez-les sérieusement.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Faites tester le puits (débit et potabilité) et vérifier l'installation septique par des professionnels. En milieu rural, ce sont les deux postes qui réservent les plus mauvaises — et coûteuses — surprises.</p></aside>"
+    },
+    {
+      "title": "Zonage riverain et réglementation",
+      "objective": "Connaître les règles en bord de lac ou en zone protégée.",
+      "html": "<p class=\"lede\">Connaître les règles en bord de lac ou en zone protégée.</p>\n<p>Les propriétés riveraines et en milieu naturel sont soumises à des règles particulières : bandes de protection riveraine, restrictions de construction ou de rénovation près de l'eau, zones inondables, milieux humides protégés. Ces règles limitent ce que vous pourrez faire.</p>\n<p>Vérifiez le zonage et les contraintes environnementales auprès de la municipalité AVANT d'acheter, surtout si vous avez des projets d'aménagement.</p>\n<!--enr--><p>En bord de lac ou en zone protégée, la réglementation est stricte : bandes riveraines, milieux humides, permis pour construire, rénover ou couper des arbres. Ce qui semble anodin peut être interdit. Renseignez-vous auprès de la municipalité et de la MRC avant d'acheter et de planifier des travaux.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Avant d'acheter au bord de l'eau, renseignez-vous sur la bande de protection riveraine et les zones inondables. Ce que vous rêvez de construire ou d'aménager près de l'eau est souvent strictement encadré.</p></aside>"
+    },
+    {
+      "title": "La réalité de l'entretien et de l'usage",
+      "objective": "Acheter en connaissance de la charge réelle.",
+      "html": "<p class=\"lede\">Acheter en connaissance de la charge réelle.</p>\n<p>Une résidence secondaire, c'est une deuxième maison à entretenir : ouverture et fermeture saisonnières, chauffage minimal l'hiver, entretien du terrain, gestion à distance. Évaluez honnêtement le temps et le budget que vous y consacrerez, et la fréquence réelle d'utilisation.</p>\n<p>Certains rentabilisent leur chalet par la location (attention aux règles de court terme, voir le guide dédié). D'autres le gardent purement personnel : dans tous les cas, c'est un engagement, pas seulement un rêve.</p>\n<!--enr--><p>Un chalet, c'est une deuxième propriété à entretenir, souvent à distance : ouverture/fermeture saisonnière, surveillance, chauffage hors gel, assurances spécifiques, temps de trajet. Beaucoup de chalets sont utilisés moins souvent que prévu : évaluez honnêtement la charge réelle vs l'usage.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Soyez honnête sur la fréquence à laquelle vous l'utiliserez vraiment. Un chalet peu fréquenté mais à entretenir peut devenir un fardeau ; bien choisi et réaliste, il est une source de bonheur durable.</p></aside>"
+    },
+    {
+      "title": "Usage familial, location ou les deux ?",
+      "objective": "Clarifier le projet derrière l'achat.",
+      "html": "<p class=\"lede\">Clarifier le projet derrière l'achat.</p>\n<p>Avant d'acheter un chalet, clarifiez ce que vous en attendez vraiment — cela oriente tout le reste :</p><ul><li><strong>Usage familial</strong> : privilégier l'emplacement, le confort et la distance de la maison.</li><li><strong>Revenus de location</strong> : vérifier le zonage, la demande touristique et les règles (voir la location court terme).</li><li><strong>Les deux</strong> : un usage mixte, à équilibrer entre disponibilité familiale et calendrier de location.</li></ul><p>Un chalet acheté « pour la famille » puis loué sans vérifier les règles peut vite tourner au casse-tête.</p><!--enr--><p>Clarifiez le projet derrière l'achat : usage familial (emplacement, confort, distance), revenus de location (zonage, demande, règles du court terme), ou les deux (à équilibrer). Un chalet acheté « pour la famille » puis loué sans vérifier les règles peut vite tourner au casse-tête.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Soyez honnête sur l'usage réel : beaucoup de chalets sont utilisés moins souvent que prévu. Si le budget dépend des revenus de location, validez le zonage et la demande AVANT d'acheter, pas après.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Valider le financement d'une résidence secondaire.</li><li>Lister les vérifications rurales à prévoir.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Faire tester puits et installation septique.</li><li>Vérifier zonage riverain et contraintes environnementales.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Évaluer honnêtement l'usage et l'entretien avant d'offrir.</li></ol><!--enr--><h3>Avant d'acheter</h3><ol><li>Valider le financement d'une résidence secondaire et l'accès à l'année.</li><li>Vérifier eau, égout, zonage riverain et clarifier l'usage prévu.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Résidence secondaire : chalet ou maison de villégiature, financement particulier.</li><li>Puits : source d'eau à tester (débit, potabilité).</li><li>Installation septique : traitement des eaux usées, à vérifier (âge, conformité).</li><li>Bande de protection riveraine : zone réglementée en bord de l'eau.</li><li>Accès saisonnier : route non entretenue l'hiver, impact sur financement et usage.</li></ul><!--enr--><li>Résidence secondaire : propriété de villégiature, au financement différent.</li><li>Fosse septique : système d'égout autonome, à vérifier (âge, conformité).</li><li>Bande riveraine : zone protégée en bord de lac, aux règles strictes.</li><li>Chalet 4 saisons : habitable toute l'année, vs 3 saisons.</li><li>Servitude de passage : droit d'accès traversant un autre terrain.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "Une résidence secondaire se finance :",
+      "options": [
+        "A) Toujours comme une résidence principale",
+        "B) Parfois avec une mise de fonds plus élevée et d'autres conditions",
+        "C) Sans mise de fonds",
+        "D) Gratuitement"
+      ],
+      "answer": 1,
+      "explanation": "Règles différentes (chap. 1)."
+    },
+    {
+      "q": "En milieu rural, l'eau vient souvent :",
+      "options": [
+        "A) De l'aqueduc municipal",
+        "B) D'un puits (à tester)",
+        "C) De la pluie seulement",
+        "D) De nulle part"
+      ],
+      "answer": 1,
+      "explanation": "Débit et potabilité à vérifier (chap. 2)."
+    },
+    {
+      "q": "L'égout en rural est souvent :",
+      "options": [
+        "A) Municipal",
+        "B) Une installation septique (à vérifier)",
+        "C) Inexistant",
+        "D) Partagé avec la ville"
+      ],
+      "answer": 1,
+      "explanation": "Âge et conformité importants (chap. 2)."
+    },
+    {
+      "q": "Les propriétés riveraines sont soumises à :",
+      "options": [
+        "A) Aucune règle",
+        "B) Des règles (bande riveraine, zones inondables)",
+        "C) Moins de taxes",
+        "D) Rien"
+      ],
+      "answer": 1,
+      "explanation": "Contraintes environnementales (chap. 3)."
+    },
+    {
+      "q": "Avant d'acheter au bord de l'eau, il faut vérifier :",
+      "options": [
+        "A) La couleur du quai",
+        "B) Le zonage riverain et les contraintes",
+        "C) Rien",
+        "D) La météo"
+      ],
+      "answer": 1,
+      "explanation": "Ce qu'on peut aménager est encadré (chap. 3)."
+    },
+    {
+      "q": "Une résidence secondaire est :",
+      "options": [
+        "A) Sans entretien",
+        "B) Une deuxième maison à entretenir",
+        "C) Toujours louée",
+        "D) Gratuite à gérer"
+      ],
+      "answer": 1,
+      "explanation": "Un vrai engagement (chap. 4)."
+    },
+    {
+      "q": "Avant d'acheter un chalet, il faut d'abord :",
+      "options": [
+        "A) Le louer aussitôt",
+        "B) Clarifier l'usage prévu (famille, location, mixte)",
+        "C) Ignorer le zonage",
+        "D) Payer comptant"
+      ],
+      "answer": 1,
+      "explanation": "Clarifier le projet (chap. usage)."
+    },
+    {
+      "q": "Compter sur les revenus de location d'un chalet exige de :",
+      "options": [
+        "A) Ne rien vérifier",
+        "B) Valider le zonage et la demande avant d'acheter",
+        "C) Acheter d'abord, vérifier ensuite",
+        "D) Éviter l'assurance"
+      ],
+      "answer": 1,
+      "explanation": "Vérifier avant d'acheter (chap. usage)."
+    }
+  ]
+}

@@ -1,1 +1,158 @@
-{"number": 38, "title": "Assurance habitation et assurance titres", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Deux assurances protègent votre achat sous des angles différents : l'assurance habitation (contre les sinistres) et l'assurance titres (contre les problèmes juridiques liés à la propriété). Les comprendre, c'est éviter des trous de protection coûteux.</p><p>Ce guide explique les deux, ce qu'elles couvrent, et pourquoi elles comptent.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p>"}, {"title": "L'assurance habitation", "objective": "Protéger le bâtiment et vos biens.", "html": "<p class=\"lede\">Protéger le bâtiment et vos biens.</p>\n<p>L'assurance habitation couvre votre propriété et vos biens contre des risques comme l'incendie, le dégât d'eau, le vol, et inclut une responsabilité civile. Elle doit être en vigueur dès la prise de possession — les prêteurs l'exigent.</p>\n<ul><li>Vérifier les protections, exclusions et franchises.</li><li>Certaines situations (réservoir d'huile, toiture âgée, secteur inondable) influencent l'assurabilité et la prime.</li><li>En copropriété, l'assurance du syndicat couvre l'immeuble ; vous assurez vos biens et améliorations.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Obtenez votre assurance habitation AVANT la signature : elle doit être active le jour de la prise de possession. Un certain nombre de propriétés (vieux réservoir, toiture en fin de vie) sont plus difficiles à assurer : vérifiez tôt.</p></aside>"}, {"title": "L'assurance titres", "objective": "Se protéger contre les problèmes juridiques.", "html": "<p class=\"lede\">Se protéger contre les problèmes juridiques.</p>\n<p>L'assurance titres protège contre certains problèmes liés au titre de propriété : vice de titre, empiètement, non-conformité, fraude, ou irrégularité qui n'aurait pas été détectée. Elle peut parfois remplacer ou compléter un certificat de localisation récent, selon les cas.</p>\n<p>C'est une protection ponctuelle (prime unique) souvent proposée par le notaire. Elle ne remplace pas l'assurance habitation.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>L'assurance titres est un filet de sécurité juridique peu coûteux. Discutez-en avec votre notaire : dans certaines situations, elle peut simplifier la transaction et vous protéger d'un problème de titre imprévu.</p></aside>"}, {"title": "Bien se couvrir sans trou de protection", "objective": "Combiner les protections intelligemment.", "html": "<p class=\"lede\">Combiner les protections intelligemment.</p>\n<ul><li>Habitation : sinistres et responsabilité (obligatoire pour le prêteur).</li><li>Titres : problèmes juridiques de propriété (optionnelle mais utile).</li><li>Vérifier qu'aucun risque important n'est laissé sans couverture.</li><li>Réévaluer ses assurances après des rénovations majeures.</li></ul>\n<p>Deux protections complémentaires, deux tranquillités d'esprit.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Faites le point une fois par an et après chaque rénovation majeure : une valeur qui augmente sans couverture ajustée, c'est un risque silencieux.</p></aside>"}, {"title": "Plan d'action", "objective": "", "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Obtenir une soumission d'assurance habitation.</li><li>Vérifier tout élément compliquant l'assurabilité.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Discuter de l'assurance titres avec le notaire.</li><li>S'assurer d'aucun trou de protection.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Réévaluer ses assurances après rénovations.</li></ol>"}, {"title": "Ressources & lexique", "objective": "", "html": "<ul><li>Assurance habitation : couvre sinistres et responsabilité, obligatoire pour le prêteur.</li><li>Assurance titres : couvre les problèmes juridiques liés à la propriété.</li><li>Franchise : montant à votre charge en cas de réclamation.</li><li>Assurabilité : facilité à assurer selon l'état et les risques de la propriété.</li><li>Responsabilité civile : protection en cas de dommages causés à autrui.</li></ul>"}], "qcm": [{"q": "L'assurance habitation couvre :", "options": ["A) Les vices de titre", "B) Sinistres (incendie, dégât d'eau, vol) et responsabilité", "C) L'impôt", "D) Rien"], "answer": 1, "explanation": "Protection contre les sinistres (chap. 1)."}, {"q": "Elle doit être active :", "options": ["A) Un an après", "B) Dès la prise de possession", "C) Jamais", "D) À la revente"], "answer": 1, "explanation": "Exigée par le prêteur (chap. 1)."}, {"q": "L'assurance titres protège contre :", "options": ["A) L'incendie", "B) Les problèmes juridiques de propriété (vice de titre, empiètement)", "C) Le vol", "D) Le dégât d'eau"], "answer": 1, "explanation": "Protection juridique (chap. 2)."}, {"q": "L'assurance titres est souvent proposée par :", "options": ["A) L'inspecteur", "B) Le notaire", "C) La ville", "D) Le voisin"], "answer": 1, "explanation": "Prime unique via le notaire (chap. 2)."}, {"q": "Les deux assurances sont :", "options": ["A) Identiques", "B) Complémentaires", "C) Inutiles", "D) Interdites"], "answer": 1, "explanation": "Elles couvrent des risques différents (chap. 3)."}, {"q": "Après une rénovation majeure, il faut :", "options": ["A) Rien faire", "B) Réévaluer ses assurances", "C) Résilier", "D) Doubler la franchise"], "answer": 1, "explanation": "La valeur change (chap. 3)."}]}
+{
+  "number": 38,
+  "title": "Assurance habitation et assurance titres",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "objective": "",
+      "html": "<p>Deux assurances protègent votre achat sous des angles différents : l'assurance habitation (contre les sinistres) et l'assurance titres (contre les problèmes juridiques liés à la propriété). Les comprendre, c'est éviter des trous de protection coûteux.</p><p>Ce guide explique les deux, ce qu'elles couvrent, et pourquoi elles comptent.</p><p>Contenu informatif. Chaque chapitre se termine par une page « Mes notes » lignée.</p><!--enr--><p>Deux assurances protègent votre achat sous des angles différents : l'habitation (contre les sinistres) et les titres (contre les problèmes juridiques). Ce guide explique les deux, comment bien magasiner et comment réagir après un sinistre.</p><p>Les comprendre, c'est éviter des trous de protection coûteux.</p>"
+    },
+    {
+      "title": "L'assurance habitation",
+      "objective": "Protéger le bâtiment et vos biens.",
+      "html": "<p class=\"lede\">Protéger le bâtiment et vos biens.</p>\n<p>L'assurance habitation couvre votre propriété et vos biens contre des risques comme l'incendie, le dégât d'eau ou le vol, et inclut une <strong>responsabilité civile</strong> (dommages causés à autrui).</p><p>Elle doit être en vigueur <strong>dès la prise de possession</strong> — les prêteurs l'exigent avant de débourser l'hypothèque. Prenez le temps de vérifier :</p><ul><li>Les <strong>protections</strong> incluses et les <strong>exclusions</strong>.</li><li>Le montant des <strong>franchises</strong>.</li><li>Les situations qui influencent l'assurabilité (réservoir d'huile, toiture âgée, secteur inondable).</li></ul><!--enr--><p>L'assurance habitation couvre la propriété et vos biens (incendie, dégât d'eau, vol) et inclut une responsabilité civile. Elle doit être active dès la prise de possession — les prêteurs l'exigent. Vérifiez protections, exclusions et franchises, et signalez tout élément qui complique l'assurabilité (réservoir d'huile, toiture âgée, secteur inondable).</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Obtenez votre soumission d'assurance dès que la promesse d'achat est acceptée. Une propriété difficile à assurer, mieux vaut le découvrir avant la signature qu'après.</p></aside>"
+    },
+    {
+      "title": "L'assurance titres",
+      "objective": "Se protéger contre les problèmes juridiques.",
+      "html": "<p class=\"lede\">Se protéger contre les problèmes juridiques.</p>\n<p>L'assurance titres est différente : elle protège contre certains <strong>problèmes liés au titre de propriété</strong> plutôt que contre les sinistres matériels.</p><ul><li>Vice de titre ou irrégularité non détectée.</li><li>Empiètement ou non-conformité.</li><li>Fraude immobilière.</li></ul><p>Elle peut parfois remplacer ou compléter un certificat de localisation récent, selon les cas. C'est une protection ponctuelle (prime unique) souvent proposée par le notaire lors de la signature.</p><!--enr--><p>L'assurance titres, elle, protège contre des problèmes juridiques du titre : vice de titre, empiètement, non-conformité, fraude. C'est une protection ponctuelle (prime unique), souvent proposée par le notaire, qui peut parfois compléter un certificat de localisation selon les cas.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>L'assurance titres n'est pas obligatoire, mais pour quelques centaines de dollars une seule fois, elle peut vous éviter un litige coûteux. Demandez à votre notaire si elle est pertinente dans votre cas.</p></aside>"
+    },
+    {
+      "title": "Deux protections complémentaires",
+      "objective": "Combiner les couvertures intelligemment.",
+      "html": "<p class=\"lede\">Combiner les couvertures intelligemment.</p>\n<p>Les deux assurances ne se remplacent pas : elles couvrent des angles différents.</p><ul><li><strong>Habitation</strong> : sinistres et responsabilité — obligatoire pour le prêteur.</li><li><strong>Titres</strong> : problèmes juridiques de propriété — optionnelle mais souvent utile.</li></ul><p>L'objectif : qu'aucun risque important ne soit laissé sans couverture. Pensez aussi à réévaluer vos protections après des rénovations majeures qui augmentent la valeur de la propriété.</p><!--enr--><p>Les deux ne se remplacent pas : l'habitation couvre les sinistres (obligatoire pour le prêteur), les titres couvrent le juridique (optionnelle mais utile). L'objectif : qu'aucun risque important ne reste sans couverture. Réévaluez vos protections après des rénovations majeures.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Faites la liste de ce que couvre chaque assurance, côte à côte. Vous verrez immédiatement s'il reste un « trou » entre les deux — et c'est exactement là que se cachent les mauvaises surprises.</p></aside>"
+    },
+    {
+      "title": "Bien magasiner son assurance habitation",
+      "objective": "Payer le juste prix pour la bonne protection.",
+      "html": "<p class=\"lede\">Payer le juste prix pour la bonne protection.</p>\n<p>Les primes varient beaucoup d'un assureur à l'autre pour une couverture semblable. Quelques réflexes :</p><ul><li>Comparer <strong>plusieurs soumissions</strong> pour une protection équivalente.</li><li>Ajuster la <strong>franchise</strong> : plus haute, elle réduit la prime (mais augmente votre part en cas de réclamation).</li><li>Profiter des <strong>rabais</strong> (regroupement auto-habitation, système d'alarme, non-fumeur).</li><li>Déclarer honnêtement les <strong>risques</strong> : une omission peut annuler la couverture.</li></ul><p>La protection la moins chère n'est utile que si elle couvre ce dont vous avez réellement besoin.</p><!--enr--><p>Les primes varient beaucoup pour une couverture semblable : comparez plusieurs soumissions, ajustez la franchise, profitez des rabais (regroupement, alarme) et déclarez honnêtement les risques (une omission peut annuler la couverture). La moins chère n'est utile que si elle couvre ce dont vous avez besoin.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Ne choisissez pas votre assurance uniquement au prix. Une franchise trop élevée « pour économiser » peut vous coûter très cher le jour d'un dégât d'eau. Regardez la protection avant le tarif.</p></aside>"
+    },
+    {
+      "title": "Après un sinistre : réagir sans stress",
+      "objective": "Savoir quoi faire le moment venu.",
+      "html": "<p class=\"lede\">Savoir quoi faire le moment venu.</p>\n<p>Une bonne préparation rend un sinistre beaucoup moins pénible :</p><ol><li><strong>Sécuriser</strong> les lieux et limiter les dégâts (couper l'eau, par exemple).</li><li><strong>Documenter</strong> : photos, vidéos, liste des biens touchés.</li><li><strong>Aviser</strong> rapidement votre assureur.</li><li>Conserver les <strong>reçus</strong> des dépenses engagées.</li></ol><p>Un inventaire à jour de vos biens (photos, factures) accélère grandement le règlement. Faites-le une fois, à tête reposée, avant d'en avoir besoin.</p><!--enr--><p>Après un sinistre : sécurisez les lieux, documentez (photos, vidéos, liste), avisez vite l'assureur et conservez les reçus. Un inventaire à jour de vos biens accélère grandement le règlement — filmez une fois par an le tour de votre logement, tiroirs ouverts, avant d'en avoir besoin.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Filmez une fois par an le tour de votre logement, tiroirs et placards ouverts. En cas de sinistre, cette vidéo vaut mille formulaires pour prouver ce que vous possédiez.</p></aside>"
+    },
+    {
+      "title": "Plan d'action",
+      "objective": "",
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Obtenir une soumission d'assurance habitation.</li><li>Vérifier tout élément compliquant l'assurabilité.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Discuter de l'assurance titres avec le notaire.</li><li>S'assurer d'aucun trou de protection.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Réévaluer ses assurances après rénovations.</li></ol><!--enr--><h3>À faire</h3><ol><li>Obtenir une soumission d'assurance habitation dès la promesse acceptée.</li><li>Discuter de l'assurance titres avec le notaire et vérifier qu'aucun risque n'est laissé sans couverture.</li></ol>"
+    },
+    {
+      "title": "Ressources & lexique",
+      "objective": "",
+      "html": "<ul><li>Assurance habitation : couvre sinistres et responsabilité, obligatoire pour le prêteur.</li><li>Assurance titres : couvre les problèmes juridiques liés à la propriété.</li><li>Franchise : montant à votre charge en cas de réclamation.</li><li>Assurabilité : facilité à assurer selon l'état et les risques de la propriété.</li><li>Responsabilité civile : protection en cas de dommages causés à autrui.</li></ul><!--enr--><li>Assurance habitation : couvre sinistres et responsabilité, exigée par le prêteur.</li><li>Assurance titres : couvre les problèmes juridiques liés à la propriété.</li><li>Franchise : montant à votre charge en cas de réclamation.</li><li>Assurabilité : facilité à assurer selon l'état et les risques.</li><li>Responsabilité civile : protection en cas de dommages causés à autrui.</li>"
+    }
+  ],
+  "qcm": [
+    {
+      "q": "L'assurance habitation couvre :",
+      "options": [
+        "A) Les problèmes de titre",
+        "B) Sinistres et responsabilité civile",
+        "C) La taxe de bienvenue",
+        "D) Le notaire"
+      ],
+      "answer": 1,
+      "explanation": "Sinistres et responsabilité (chap. 1)."
+    },
+    {
+      "q": "Elle doit être en vigueur :",
+      "options": [
+        "A) Un an après l'achat",
+        "B) Dès la prise de possession",
+        "C) Jamais",
+        "D) Seulement pour les condos"
+      ],
+      "answer": 1,
+      "explanation": "Exigée par le prêteur dès la possession (chap. 1)."
+    },
+    {
+      "q": "L'assurance titres protège contre :",
+      "options": [
+        "A) L'incendie",
+        "B) Les problèmes juridiques liés à la propriété",
+        "C) Le vol",
+        "D) Les taxes"
+      ],
+      "answer": 1,
+      "explanation": "Vice de titre, fraude, empiètement (chap. 2)."
+    },
+    {
+      "q": "L'assurance titres est :",
+      "options": [
+        "A) Obligatoire",
+        "B) Optionnelle mais souvent utile",
+        "C) Interdite",
+        "D) Gratuite"
+      ],
+      "answer": 1,
+      "explanation": "Optionnelle, prime unique (chap. 2)."
+    },
+    {
+      "q": "Les deux assurances :",
+      "options": [
+        "A) Se remplacent",
+        "B) Couvrent des angles différents et se complètent",
+        "C) Sont identiques",
+        "D) Sont inutiles"
+      ],
+      "answer": 1,
+      "explanation": "Complémentaires (chap. 3)."
+    },
+    {
+      "q": "Après des rénovations majeures, il faut :",
+      "options": [
+        "A) Ne rien faire",
+        "B) Réévaluer ses assurances",
+        "C) Résilier",
+        "D) Payer une amende"
+      ],
+      "answer": 1,
+      "explanation": "La valeur change (chap. 3)."
+    },
+    {
+      "q": "Une franchise plus élevée :",
+      "options": [
+        "A) Augmente la prime",
+        "B) Réduit la prime mais augmente votre part en réclamation",
+        "C) N'a aucun effet",
+        "D) Est illégale"
+      ],
+      "answer": 1,
+      "explanation": "Arbitrage prime/franchise (chap. 4)."
+    },
+    {
+      "q": "Omettre de déclarer un risque peut :",
+      "options": [
+        "A) Réduire la prime sans risque",
+        "B) Annuler la couverture",
+        "C) Doubler la protection",
+        "D) Être exigé"
+      ],
+      "answer": 1,
+      "explanation": "Déclarer honnêtement (chap. 4)."
+    },
+    {
+      "q": "Après un sinistre, on doit d'abord :",
+      "options": [
+        "A) Tout jeter",
+        "B) Sécuriser les lieux et documenter les dégâts",
+        "C) Attendre un an",
+        "D) Vendre la maison"
+      ],
+      "answer": 1,
+      "explanation": "Sécuriser puis documenter (chap. 5)."
+    },
+    {
+      "q": "Pour accélérer un règlement, il est utile d'avoir :",
+      "options": [
+        "A) Aucun document",
+        "B) Un inventaire à jour (photos, factures)",
+        "C) Un nouveau notaire",
+        "D) Une hypothèque plus grande"
+      ],
+      "answer": 1,
+      "explanation": "Inventaire préalable (chap. 5)."
+    }
+  ]
+}
