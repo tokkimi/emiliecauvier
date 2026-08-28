@@ -93,6 +93,20 @@ h3 {{ font-family: 'Fraunces', serif; color: #6e1226; font-size: 14.5pt; margin:
 .tip p {{ margin: 0; font-style: italic; color: #4a3f39; }}
 .corrige-h {{ margin-top: 22pt; }}
 
+/* Page d'avis important + copyright */
+.legal-wrap {{ max-width: 5.2in; margin: 1.4in auto 0; text-align: center; }}
+.legal-kicker {{ font-family: 'Inter', sans-serif; font-size: 9pt; letter-spacing: .24em;
+  text-transform: uppercase; color: #a9743b; margin-bottom: 14pt; }}
+.legal-title {{ font-family: 'Fraunces', Georgia, serif; color: #6e1226; font-size: 30pt;
+  font-weight: 600; margin: 0 0 22pt; }}
+.legal-notice {{ font-family: 'Newsreader', serif; font-size: 13.5pt; line-height: 1.75;
+  color: #2f2621; text-align: left; margin: 0; }}
+.legal-rule {{ width: 64pt; height: 2px; background: #a9743b; margin: 30pt auto; }}
+.legal-copyright {{ font-family: 'Inter', sans-serif; font-size: 9.5pt; line-height: 1.65;
+  color: #6b5d52; text-align: left; margin: 0; }}
+.legal-ref {{ font-family: 'Inter', sans-serif; font-size: 8.5pt; letter-spacing: .04em;
+  color: #9a8b7d; margin-top: 24pt; }}
+
 .q {{ margin: 0 0 15pt; break-inside: avoid; }}
 .q .qq {{ font-weight: 600; margin-bottom: 5pt; }}
 .q .opt {{ font-family: 'Inter', sans-serif; font-size: 11.5pt; margin: 3pt 0 3pt 12pt; color: #333; }}
@@ -103,6 +117,31 @@ p, li {{ orphans: 2; widows: 2; }}
 
 def esc(s):
     return _html.escape(str(s), quote=False)
+
+
+AVIS = ("Ce guide est fourni à titre informatif et éducatif uniquement. Il présente de "
+        "l'information générale concernant l'immobilier au Québec et ne constitue pas un "
+        "conseil immobilier, juridique, fiscal ou financier personnalisé. Chaque situation "
+        "immobilière étant différente, il est recommandé de consulter les professionnels "
+        "appropriés avant de prendre une décision concernant une transaction immobilière.")
+
+COPYRIGHT = ("© 2026 Émilie Cauvier — La Bibliothèque. Tous droits réservés. "
+             "Toute reproduction, distribution, partage ou revente, en tout ou en partie, "
+             "par quelque moyen que ce soit, est strictement interdit sans autorisation "
+             "écrite préalable. Ce guide est destiné à l'usage personnel de l'acheteur.")
+
+
+def legal_block(num, meta):
+    coll = COLLECTIONS.get(meta['collection'], meta['collection'])
+    return (
+        "<div class='legal-wrap'>"
+        "<div class='legal-kicker'>À lire avant de commencer</div>"
+        "<h2 class='legal-title'>Avis important</h2>"
+        f"<p class='legal-notice'>{esc(AVIS)}</p>"
+        "<div class='legal-rule'></div>"
+        f"<p class='legal-copyright'>{esc(COPYRIGHT)}</p>"
+        f"<p class='legal-ref'>{esc(meta['title'])} &middot; Collection {esc(coll)} &middot; Guide N&deg; {num:02d} &middot; Édition 2026</p>"
+        "</div>")
 
 
 def build_html(num, meta, data, compact=frozenset()):
@@ -124,7 +163,9 @@ def build_html(num, meta, data, compact=frozenset()):
             cls += ' compact'
         return f"<section class='{cls}'><span class='secmark'>&sect;{i}&sect;</span>{inner}</section>"
 
-    # Page 1 de contenu : en-tête du guide + Introduction.
+    # Page d'avis important + copyright (juste après la couverture).
+    P.append(sec(legal_block(num, meta)))
+    # En-tête du guide + Introduction.
     P.append(sec(
         f"<div class='dochead'><div class='kicker'>Collection {esc(coll)} &middot; Guide N&deg; {num:02d}</div>"
         f"<h1>{esc(meta['title'])}</h1><div class='sub'>{esc(meta.get('subtitle',''))}</div></div>"

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import type { ReaderChapter, ReaderQCM } from '@/lib/reader';
+import { ReaderConsent } from '@/components/ReaderConsent';
 
 export function Reader({
   slug,
@@ -32,6 +33,8 @@ export function Reader({
   const onQcm = active === qcmIndex && qcm.length > 0;
 
   return (
+    <>
+    <ReaderConsent />
     <div className="mx-auto flex max-w-6xl flex-col gap-0 lg:flex-row">
       {/* Menu latéral — façon Coursera */}
       <aside className="border-b border-[var(--color-sand)] bg-white lg:w-80 lg:shrink-0 lg:border-b-0 lg:border-r">
@@ -120,6 +123,7 @@ export function Reader({
         )}
       </section>
     </div>
+    </>
   );
 }
 
