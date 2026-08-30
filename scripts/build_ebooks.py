@@ -209,17 +209,19 @@ def html_to_pdf(html_str, out_pdf):
     os.remove(html_path)
 
 
-def cover_page(doc, num):
+def image_page(doc, img_path):
     page = doc.new_page(width=PW_PT, height=PH_PT)
-    page.insert_image(pymupdf.Rect(0, 0, PW_PT, PH_PT), filename=os.path.join(COVERS, f'{num}.jpg'), keep_proportion=False)
+    page.insert_image(pymupdf.Rect(0, 0, PW_PT, PH_PT), filename=img_path, keep_proportion=False)
 
 
-def assemble(num, meta, content_pdf, final_path):
+def assemble(num, meta, content_pdf, final_path, backcover):
     out = pymupdf.open()
-    cover_page(out, num)
-    out.insert_pdf(pymupdf.open(content_pdf))
-    if CLOSING and os.path.exists(CLOSING):
-        out.insert_pdf(pymupdf.open(CLOSING))
+    image_page(out, os.path.join(COVERS, f'{num}.jpg'))   # 1re de couverture
+    out.insert_pdf(pymupdf.open(content_pdf))              # contenu (inchangé)
+    if backcover and os.path.exists(backcover):
+        image_page(out, backcover)                        # 4e de couverture (roulement)
+    elif CLOSING and os.path.exists(CLOSING):
+        out.insert_pdf(pymupdf.open(CLOSING))             # repli
     out.save(final_path, deflate=True, garbage=4)
     n = out.page_count; out.close()
     return n
@@ -251,8 +253,23 @@ def orphan_sections(pdf_path):
     return bad
 
 
+import glob as _glob
+
+# 15 quatrièmes de couverture (roulement) : deux guides consécutifs n'ont jamais
+# la même (tourniquet round-robin sur l'ordre du catalogue).
+BACKCOVERS = sorted(_glob.glob(os.path.join(SITE, 'scripts', 'backcovers_jpg', '*.jpg')))
+
+
+def backcover_for(num, catalog_order):
+    if not BACKCOVERS:
+        return None
+    idx = catalog_order.index(num)
+    return BACKCOVERS[idx % len(BACKCOVERS)]
+
+
 def main(nums, books):
     os.makedirs(OUT, exist_ok=True)
+    catalog_order = sorted(books)          # 1..47, 50 -> ordre du catalogue
     for num in nums:
         meta = books.get(num)
         if not meta:
@@ -268,9 +285,10 @@ def main(nums, books):
                 break
             compact |= new
         final = os.path.join(OUT, f"{num:02d}_{meta['slug']}.pdf")
-        pages = assemble(num, meta, tmp, final)
-        tag = f", compact {sorted(compact)}" if compact else ""
-        print(f"#{num:02d} {meta['title'][:30]:30s} -> {pages:2d} p, {os.path.getsize(final)//1024} Ko{tag}")
+        bc = backcover_for(num, catalog_order)
+        pages = assemble(num, meta, tmp, final, bc)
+        tag = f", 4e={os.path.basename(bc)[:8]}" if bc else ""
+        print(f"#{num:02d} {meta['title'][:26]:26s} -> {pages:2d} p, {os.path.getsize(final)//1024} Ko{tag}")
 
 
 if __name__ == '__main__':
