@@ -75,7 +75,7 @@ export default async function AdminDashboard() {
             {recent.map((p) => (
               <tr key={p.id} className="border-t border-[var(--color-sand)]">
                 <td className="px-5 py-3 text-[var(--color-ink)]/60">{p.createdAt.toLocaleDateString('fr-CA')}</td>
-                <td className="px-5 py-3">{p.user.email}</td>
+                <td className="px-5 py-3">{p.user?.email ?? p.guestEmail ?? 'Achat invité'}</td>
                 <td className="px-5 py-3">{p.ebook?.title ?? (p.type === 'SUBSCRIPTION' ? 'Abonnement' : p.type)}</td>
                 <td className="px-5 py-3 text-right font-medium">{formatPrice(p.amountCents)}</td>
               </tr>

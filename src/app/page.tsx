@@ -4,10 +4,14 @@ import { BRAND, formatPrice } from '@/lib/format';
 import { FeaturedCarousel } from '@/components/FeaturedCarousel';
 import { getLocale, getT } from '@/lib/i18n';
 import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
+import { ProjectPathBuilder } from '@/components/ProjectPathBuilder';
+import { ToolsHub } from '@/components/ToolsHub';
+import { auth } from '@/lib/auth';
 
 export default async function HomePage() {
   const locale = await getLocale();
   const t = await getT();
+  const session = await auth().catch(() => null);
   const featured = BOOKS.slice(0, 6);
   const collections = Object.keys(COLLECTIONS) as Collection[];
   const col = (c: Collection) => (locale === 'en' ? COLLECTIONS_EN[c] ?? COLLECTIONS[c] : COLLECTIONS[c]);
@@ -44,6 +48,22 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-[var(--color-gold)]/20 blur-3xl" />
       </section>
 
+      {/* PARCOURS PERSONNALISÉ */}
+      <section className="border-y border-[var(--color-sand)] bg-[#f7f2ec]">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
+          <div className="mb-10 max-w-3xl">
+            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Votre projet, votre bibliothèque</p>
+            <h2 className="mt-3 font-display text-3xl leading-tight text-[var(--color-ink)] sm:text-5xl">
+              Où en êtes-vous dans votre projet&nbsp;?
+            </h2>
+            <p className="mt-4 font-body text-lg text-[var(--color-ink)]/65">
+              Répondez à quatre questions. Émilie compose un parcours de six guides et votre profil conserve votre progression, vos favoris et vos outils.
+            </p>
+          </div>
+          <ProjectPathBuilder loggedIn={Boolean(session?.user)} />
+        </div>
+      </section>
+
       {/* PROMESSE */}
       <section className="mx-auto max-w-6xl px-5 py-20">
         <div className="grid gap-8 sm:grid-cols-3">
@@ -57,6 +77,23 @@ export default async function HomePage() {
               <p className="mt-3 font-body text-[var(--color-ink)]/75">{d}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* OUTILS */}
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
+        <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+          <div className="lg:sticky lg:top-28">
+            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Mes outils</p>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-[var(--color-ink)]">Le contenu explique. L’outil vous aide à décider.</h2>
+            <p className="mt-4 font-body text-[var(--color-ink)]/65">
+              Estimez votre capacité d’achat, votre mise de fonds et vos mensualités. Une boîte à outils plus complète vous attend dans votre profil.
+            </p>
+            <Link href={session?.user ? '/compte#outils' : '/inscription'} className="mt-6 inline-flex min-h-11 items-center rounded-full bg-[var(--color-bordeaux)] px-6 font-ui text-sm text-white">
+              {session?.user ? 'Ouvrir tous mes outils' : 'Créer mon espace personnel'} →
+            </Link>
+          </div>
+          <ToolsHub compact />
         </div>
       </section>
 

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
+import { AskEmilie } from '@/components/AskEmilie';
+import { CookieConsent } from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </section>
         <SiteFooter />
+        <AskEmilie />
+        <CookieConsent />
       </body>
     </html>
   );

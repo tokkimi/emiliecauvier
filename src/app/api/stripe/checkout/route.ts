@@ -23,9 +23,6 @@ export async function POST(req: Request) {
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   const email = session?.user?.email;
-  if (!userId || !email) {
-    return NextResponse.json({ error: 'Connexion requise.' }, { status: 401 });
-  }
 
   const parsed = schema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return NextResponse.json({ error: 'Requête invalide.' }, { status: 400 });
@@ -37,13 +34,15 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Paiement non configuré (démo).' }, { status: 503 });
   }
 
-  const customerId = await getOrCreateCustomer(userId, email);
-
   // ---- Abonnement mensuel ----
   if (parsed.data.mode === 'subscription') {
+    if (!userId || !email) {
+      return NextResponse.json({ error: 'Un compte est requis pour gérer un abonnement.' }, { status: 401 });
+    }
     if (!SUBSCRIPTION_PRICE_ID) {
       return NextResponse.json({ error: 'Prix d\'abonnement non configuré.' }, { status: 503 });
     }
+    const customerId = await getOrCreateCustomer(userId, email);
     const params: Stripe.Checkout.SessionCreateParams = {
       mode: 'subscription',
       customer: customerId,
@@ -71,7 +70,7 @@ export async function POST(req: Request) {
 
   const purchase = await prisma.purchase.create({
     data: {
-      userId,
+      userId: userId ?? null,
       ebookId: ebook.id,
       type: 'ONE_TIME',
       status: 'PENDING',
@@ -80,9 +79,19 @@ export async function POST(req: Request) {
     },
   });
 
+  const metadata: Record<string, string> = {
+    kind: 'unit',
+    ebookId: ebook.id,
+    purchaseId: purchase.id,
+    slug,
+  };
+  if (userId) metadata.userId = userId;
+
   const unitParams: Stripe.Checkout.SessionCreateParams = {
     mode: 'payment',
-    customer: customerId,
+    ...(userId && email
+      ? { customer: await getOrCreateCustomer(userId, email) }
+      : { customer_creation: 'always' as const }),
     line_items: [
       {
         quantity: 1,
@@ -93,9 +102,9 @@ export async function POST(req: Request) {
         },
       },
     ],
-    success_url: `${APP_URL}/lire/${slug}?success=achat`,
+    success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${APP_URL}/livre/${slug}`,
-    metadata: { userId, kind: 'unit', ebookId: ebook.id, purchaseId: purchase.id },
+    metadata,
   };
   // Idem : Checkout standard, pas de « Managed Payments ».
   (unitParams as Record<string, unknown>).managed_payments = { enabled: false };

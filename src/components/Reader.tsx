@@ -56,9 +56,16 @@ export function Reader({
       {/* Menu latéral — façon Coursera */}
       <aside className="border-b border-[var(--color-sand)] bg-white lg:w-80 lg:shrink-0 lg:border-b-0 lg:border-r">
         <div className="p-6">
-          <Link href={`/livre/${slug}`} className="font-ui text-xs text-[var(--color-bordeaux)] hover:underline">
-            ← Fiche du guide
-          </Link>
+          <div className="flex flex-wrap items-center justify-between gap-3 font-ui text-xs text-[var(--color-bordeaux)]">
+            <Link href={`/livre/${slug}`} className="hover:underline">← Fiche du guide</Link>
+            {loggedIn ? (
+              <Link href="/compte" className="rounded-full border border-[var(--color-sand)] bg-[var(--color-cream)] px-3 py-2 font-medium hover:border-[var(--color-gold)]">
+                Mon profil
+              </Link>
+            ) : (
+              <Link href="/catalogue" className="hover:underline">Catalogue</Link>
+            )}
+          </div>
           <h1 className="mt-3 font-display text-lg leading-snug text-[var(--color-ink)]">{title}</h1>
           <p className="mt-1 font-body text-sm text-[var(--color-ink)]/60">{subtitle}</p>
           {!previewOnly && (

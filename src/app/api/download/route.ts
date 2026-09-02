@@ -5,6 +5,8 @@ import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { canDownload } from '@/lib/entitlements';
 import { bySlug } from '@/data/books';
+import { cookies } from 'next/headers';
+import { GUEST_PURCHASE_COOKIE, guestHasAccess } from '@/lib/guestPurchase';
 
 /**
  * Téléchargement du PDF, réservé aux utilisateurs ayant l'accès.
@@ -21,24 +23,27 @@ export async function GET(req: Request) {
 
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
-  if (!userId) return NextResponse.redirect(new URL(`/connexion?next=/livre/${slug}`, req.url));
 
   const ebook = await prisma.ebook.findUnique({ where: { slug } });
   if (!ebook) return NextResponse.json({ error: 'guide non publié' }, { status: 404 });
 
   // Le PDF est réservé à l'achat (unité/coffret/admin) — l'abonnement donne
   // seulement la lecture en ligne.
-  const ok = await canDownload(userId, ebook.id);
+  const guestLibrary = (await cookies()).get(GUEST_PURCHASE_COOKIE)?.value;
+  const guestAccess = guestHasAccess(guestLibrary, ebook.id);
+  const ok = guestAccess || (await canDownload(userId, ebook.id));
   if (!ok) return NextResponse.redirect(new URL(`/livre/${slug}?pdf=achat`, req.url));
 
   // Journalise le téléchargement.
-  await prisma.downloadEvent.create({
-    data: {
-      userId,
-      ebookId: ebook.id,
-      ip: req.headers.get('x-forwarded-for') ?? undefined,
-    },
-  });
+  if (userId) {
+    await prisma.downloadEvent.create({
+      data: {
+        userId,
+        ebookId: ebook.id,
+        ip: req.headers.get('x-forwarded-for') ?? undefined,
+      },
+    });
+  }
 
   const bucket = process.env.PDF_BUCKET_URL;
   if (bucket) {

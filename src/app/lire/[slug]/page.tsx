@@ -11,6 +11,8 @@ import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { hasAccess } from '@/lib/entitlements';
 import { Reader } from '@/components/Reader';
+import { cookies } from 'next/headers';
+import { GUEST_PURCHASE_COOKIE, guestHasAccess } from '@/lib/guestPurchase';
 
 export async function generateMetadata({
   params,
@@ -43,7 +45,10 @@ export default async function ReaderPage({
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
-  const access = dbEbook ? await hasAccess(userId, dbEbook.id) : false;
+  const guestLibrary = (await cookies()).get(GUEST_PURCHASE_COOKIE)?.value;
+  const access = dbEbook
+    ? guestHasAccess(guestLibrary, dbEbook.id) || (await hasAccess(userId, dbEbook.id))
+    : false;
 
   const previewOnly = !access || apercu === '1';
 

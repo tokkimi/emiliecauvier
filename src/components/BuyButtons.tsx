@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export function BuyButtons({
@@ -15,15 +14,10 @@ export function BuyButtons({
   canDownload: boolean;
   loggedIn: boolean;
 }) {
-  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   async function buy() {
-    if (!loggedIn) {
-      router.push(`/connexion?next=/livre/${slug}`);
-      return;
-    }
     setLoading(true);
     setError('');
     try {
@@ -85,8 +79,13 @@ export function BuyButtons({
         disabled={loading}
         className="w-full rounded-full bg-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:opacity-60"
       >
-        {loading ? 'Redirection…' : 'Acheter ce guide'}
+        {loading ? 'Redirection…' : loggedIn ? 'Acheter ce guide' : 'Acheter maintenant — sans compte'}
       </button>
+      {!loggedIn && (
+        <p className="text-center font-ui text-xs text-[var(--color-ink)]/55">
+          Paiement sécurisé · votre courriel de livraison sera demandé par Stripe.
+        </p>
+      )}
       {error && <p className="text-center font-ui text-xs text-red-600">{error}</p>}
     </div>
   );

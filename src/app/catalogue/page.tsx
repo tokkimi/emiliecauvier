@@ -2,9 +2,10 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { localizeBook, COLLECTIONS_EN, BOOKS_EN } from '@/data/booksEn';
-import { formatPrice } from '@/lib/format';
 import { getLocale, getT } from '@/lib/i18n';
-import { BookCover } from '@/components/BookCover';
+import { CollectionShelf } from '@/components/CollectionShelf';
+import { auth } from '@/lib/auth';
+import { prisma } from '@/lib/db';
 
 export const metadata: Metadata = { title: 'Catalogue' };
 
@@ -16,12 +17,19 @@ export default async function CataloguePage({
   const { collection, q } = await searchParams;
   const locale = await getLocale();
   const t = await getT();
+  const session = await auth().catch(() => null);
+  const userId = (session?.user as { id?: string } | undefined)?.id;
+  const favoriteRows = userId
+    ? await prisma.favorite.findMany({ where: { userId }, include: { ebook: { select: { slug: true } } } }).catch(() => [])
+    : [];
+  const favoriteSlugs = new Set(favoriteRows.map((favorite) => favorite.ebook.slug));
   const collections = Object.keys(COLLECTIONS) as Collection[];
   const query = (q ?? '').toLowerCase().trim();
+  const selectedCollection = collection && collection in COLLECTIONS ? (collection as Collection) : null;
   const col = (c: Collection) => (locale === 'en' ? COLLECTIONS_EN[c] ?? COLLECTIONS[c] : COLLECTIONS[c]);
 
   let books = BOOKS;
-  if (collection && collection in COLLECTIONS) books = books.filter((b) => b.collection === collection);
+  if (selectedCollection) books = books.filter((b) => b.collection === selectedCollection);
   if (query)
     books = books.filter((b) => {
       const en = BOOKS_EN[b.slug];
@@ -35,69 +43,70 @@ export default async function CataloguePage({
       <h1 className="mt-2 font-display text-4xl text-[var(--color-ink)]">{t.cat_title}</h1>
       <p className="mt-3 max-w-2xl font-body text-[var(--color-ink)]/70">{t.cat_intro}</p>
 
-      {/* Filtres */}
-      <div className="mt-8 flex flex-wrap gap-2 font-ui text-sm">
-        <Link
-          href="/catalogue"
-          className={`rounded-full border px-4 py-2 transition ${
-            !collection ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white' : 'border-[var(--color-sand)] bg-white'
-          }`}
-        >
-          {t.cat_all} ({BOOKS.length})
-        </Link>
-        {collections.map((c) => {
-          const n = BOOKS.filter((b) => b.collection === c).length;
-          const active = collection === c;
-          return (
-            <Link
-              key={c}
-              href={`/catalogue?collection=${c}`}
-              className={`rounded-full border px-4 py-2 transition ${
-                active ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white' : 'border-[var(--color-sand)] bg-white hover:border-[var(--color-bordeaux)]'
-              }`}
-            >
-              {col(c)} ({n})
-            </Link>
-          );
-        })}
-      </div>
+      {/* Navigation par collection — une seule rangée, glissable au doigt sur mobile. */}
+      <nav aria-label="Collections" className="-mx-5 mt-8 sm:mx-0">
+        <p className="px-5 font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)] sm:px-0">
+          Explorer par collection
+        </p>
+        <div className="mt-3 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2 font-ui text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:px-0">
+          <Link
+            href="/catalogue"
+            className={`min-h-11 shrink-0 snap-start whitespace-nowrap rounded-full border px-5 py-3 transition ${
+              !selectedCollection
+                ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white shadow-sm'
+                : 'border-[var(--color-sand)] bg-white hover:border-[var(--color-bordeaux)]'
+            }`}
+          >
+            {t.cat_all} <span className="opacity-60">{BOOKS.length}</span>
+          </Link>
+          {collections.map((c) => {
+            const n = BOOKS.filter((b) => b.collection === c).length;
+            const active = collection === c;
+            return (
+              <Link
+                key={c}
+                href={`/catalogue?collection=${c}`}
+                aria-current={active ? 'page' : undefined}
+                className={`min-h-11 shrink-0 snap-start whitespace-nowrap rounded-full border px-5 py-3 transition ${
+                  active
+                    ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white shadow-sm'
+                    : 'border-[var(--color-sand)] bg-white hover:border-[var(--color-bordeaux)]'
+                }`}
+              >
+                {col(c)} <span className="opacity-60">{n}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
 
-      {/* Grille */}
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {books.map((b) => {
-          const loc = localizeBook(b, locale);
+      {selectedCollection ? (
+        <CollectionShelf
+          title={col(selectedCollection)}
+          eyebrow={`${books.length} guides`}
+          books={books.map((book) => ({ ...book, ...localizeBook(book, locale) }))}
+          collectionHref="/catalogue"
+          collectionLabel={col(selectedCollection)}
+          favoriteSlugs={favoriteSlugs}
+          loggedIn={Boolean(userId)}
+        />
+      ) : (
+        collections.map((currentCollection) => {
+          const collectionBooks = books.filter((book) => book.collection === currentCollection);
           return (
-            <Link
-              key={b.slug}
-              href={`/livre/${b.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <BookCover
-                number={b.number}
-                title={loc.title}
-                collection={col(b.collection)}
-                className="w-full border-b border-[var(--color-sand)]"
-              />
-              <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center justify-between">
-                  <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
-                    {col(b.collection)}
-                  </span>
-                  <span className="font-ui text-xs text-[var(--color-ink)]/40">n°{b.number}</span>
-                </div>
-                <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
-                  {loc.title}
-                </h3>
-                <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{loc.subtitle}</p>
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="font-ui text-sm font-medium">{formatPrice(b.priceCents)}</span>
-                  <span className="font-ui text-xs text-[var(--color-ink)]/50">{b.chapters.length} {t.cat_chapters}</span>
-                </div>
-              </div>
-            </Link>
+            <CollectionShelf
+              key={currentCollection}
+              title={col(currentCollection)}
+              eyebrow={`${collectionBooks.length} guides`}
+              books={collectionBooks.map((book) => ({ ...book, ...localizeBook(book, locale) }))}
+              collectionHref={`/catalogue?collection=${currentCollection}`}
+              collectionLabel={col(currentCollection)}
+              favoriteSlugs={favoriteSlugs}
+              loggedIn={Boolean(userId)}
+            />
           );
-        })}
-      </div>
+        })
+      )}
 
       {books.length === 0 && (
         <p className="mt-16 text-center font-body text-[var(--color-ink)]/60">{t.cat_none}</p>

@@ -11,6 +11,9 @@ import { formatPrice, BRAND } from '@/lib/format';
 import { SubscribeButton, SignOutButton } from '@/components/AccountActions';
 import { AccountSettings } from '@/components/AccountSettings';
 import { BookCover } from '@/components/BookCover';
+import { FavoriteButton } from '@/components/FavoriteButton';
+import { recommendBooks, type ProjectAnswers } from '@/lib/recommendations';
+import { ToolsHub } from '@/components/ToolsHub';
 
 export const metadata: Metadata = { title: 'Mon compte' };
 
@@ -32,7 +35,7 @@ export default async function AccountPage() {
   const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) redirect('/connexion');
 
-  const [ids, dlIds, quizAttempts, purchases, progressEntries] = await Promise.all([
+  const [ids, dlIds, quizAttempts, purchases, progressEntries, favorites] = await Promise.all([
     accessibleEbookIds(userId),
     downloadableEbookIds(userId),
     prisma.quizAttempt.findMany({ where: { userId }, orderBy: { createdAt: 'desc' }, take: 6 }),
@@ -47,6 +50,7 @@ export default async function AccountPage() {
       include: { ebook: true },
       orderBy: { updatedAt: 'desc' },
     }),
+    prisma.favorite.findMany({ where: { userId }, include: { ebook: true }, orderBy: { createdAt: 'desc' } }),
   ]);
 
   const ebooks = await prisma.ebook.findMany({ where: { id: { in: [...ids] } } });
@@ -67,6 +71,22 @@ export default async function AccountPage() {
     ? Math.round(quizAttempts.reduce((sum, attempt) => sum + attempt.scoreOn10, 0) / quizAttempts.length)
     : null;
   const subActive = user.subscriptionStatus === 'ACTIVE' || user.subscriptionStatus === 'TRIALING';
+  const favoriteBooks = favorites
+    .map((favorite) => bySlug(favorite.ebook.slug))
+    .filter((book): book is NonNullable<typeof book> => Boolean(book));
+  const journeyAnswers = user.projectStage && user.projectArea && user.propertyType && user.budgetRange
+    ? {
+        stage: user.projectStage,
+        area: user.projectArea,
+        propertyType: user.propertyType,
+        budget: user.budgetRange,
+      } as ProjectAnswers
+    : null;
+  const journeyBooks = journeyAnswers ? recommendBooks(journeyAnswers) : [];
+  const journeyCompleted = journeyBooks.filter((book) => {
+    const ebook = ebooks.find((item) => item.slug === book.slug);
+    return ebook ? progressByEbook.get(ebook.id)?.completed : false;
+  }).length;
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
@@ -85,6 +105,8 @@ export default async function AccountPage() {
 
       <nav className="mt-6 flex flex-wrap gap-2 font-ui text-sm" aria-label="Sections du compte">
         <a href="#bibliotheque" className="rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white">Bibliothèque</a>
+        <a href="#favoris" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Favoris</a>
+        <a href="#outils" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Mes outils</a>
         <a href="#activite" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Activité</a>
         <a href="#profil" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Profil et sécurité</a>
       </nav>
@@ -148,6 +170,52 @@ export default async function AccountPage() {
         </section>
       )}
 
+      {journeyBooks.length > 0 && (
+        <section className="mt-12 overflow-hidden rounded-3xl border border-[var(--color-sand)] bg-[#f7f2ec] p-6 sm:p-8">
+          <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Votre parcours recommandé</p>
+              <h2 className="mt-1 font-display text-3xl">Une bibliothèque qui suit votre projet</h2>
+            </div>
+            <p className="font-display text-2xl text-[var(--color-bordeaux)]">{journeyCompleted} / {journeyBooks.length} terminés</p>
+          </div>
+          <div className="mt-5 h-2 overflow-hidden rounded-full bg-white">
+            <div className="h-full rounded-full bg-[var(--color-gold)]" style={{ width: `${(journeyCompleted / journeyBooks.length) * 100}%` }} />
+          </div>
+          <ol className="mt-6 grid gap-3 md:grid-cols-2">
+            {journeyBooks.map((book, index) => (
+              <li key={book.slug}>
+                <Link href={`/lire/${book.slug}`} className="flex min-h-14 items-center gap-4 rounded-2xl bg-white px-4 py-3 transition hover:shadow-sm">
+                  <span className="font-display text-xl text-[var(--color-gold)]">{String(index + 1).padStart(2, '0')}</span>
+                  <span className="font-body text-[var(--color-bordeaux)]">{book.title}</span>
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      <section id="favoris" className="scroll-mt-24 pt-12">
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">À garder près de vous</p>
+        <h2 className="mt-1 font-display text-3xl">Mes favoris</h2>
+        {favoriteBooks.length ? (
+          <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {favoriteBooks.map((book) => (
+              <article key={book.slug} className="relative overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white">
+                <Link href={`/livre/${book.slug}`}><BookCover number={book.number} title={book.title} collection={COLLECTIONS[book.collection]} /></Link>
+                <div className="absolute right-3 top-3"><FavoriteButton slug={book.slug} initialFavorite loggedIn /></div>
+                <Link href={`/livre/${book.slug}`} className="block p-4 font-display text-base leading-tight text-[var(--color-bordeaux)] sm:text-lg">{book.title}</Link>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="mt-5 rounded-2xl border border-dashed border-[var(--color-sand)] bg-white p-8 text-center">
+            <p className="font-body text-[var(--color-ink)]/60">Touchez le cœur d’un guide pour le retrouver ici.</p>
+            <Link href="/catalogue" className="mt-3 inline-block font-ui text-sm text-[var(--color-bordeaux)] underline">Choisir mes favoris</Link>
+          </div>
+        )}
+      </section>
+
       <section id="bibliotheque" className="scroll-mt-24 pt-12">
         <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
           <div>
@@ -203,6 +271,15 @@ export default async function AccountPage() {
             })}
           </div>
         )}
+      </section>
+
+      <section id="outils" className="scroll-mt-24 pt-14">
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Passer du savoir à l’action</p>
+        <h2 className="mt-1 font-display text-3xl">Mes outils immobiliers</h2>
+        <p className="mt-2 max-w-2xl font-body text-[var(--color-ink)]/60">
+          Calculez, comparez et conservez votre checklist de projet directement dans votre espace.
+        </p>
+        <div className="mt-6"><ToolsHub /></div>
       </section>
 
       <section id="activite" className="scroll-mt-24 pt-14">

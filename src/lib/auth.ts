@@ -11,7 +11,9 @@ const AUTH_SECRET = process.env.AUTH_SECRET || 'demo-secret-a-remplacer-par-open
 export const { handlers, auth, signIn, signOut } = NextAuth({
   trustHost: true,
   secret: AUTH_SECRET,
-  session: { strategy: 'jwt' },
+  // Cookie persistante : la session reste ouverte sur l'appareil jusqu'à la
+  // déconnexion explicite (renouvelée à chaque activité, validité maximale 1 an).
+  session: { strategy: 'jwt', maxAge: 60 * 60 * 24 * 365, updateAge: 60 * 60 * 24 },
   pages: { signIn: '/connexion' },
   providers: [
     Credentials({

@@ -56,7 +56,11 @@ export async function POST(req: Request) {
       if (kind === 'unit' && s.metadata?.purchaseId) {
         await prisma.purchase.update({
           where: { id: s.metadata.purchaseId },
-          data: { status: 'PAID', stripePaymentId: (s.payment_intent as string) ?? undefined },
+          data: {
+            status: 'PAID',
+            stripePaymentId: (s.payment_intent as string) ?? undefined,
+            guestEmail: userId ? undefined : s.customer_details?.email ?? undefined,
+          },
         });
         await prisma.analyticsEvent.create({
           data: { userId, name: 'purchase', ebookId: s.metadata.ebookId, meta: { amount: s.amount_total } },

@@ -47,17 +47,38 @@ model User {
   source String? // ex. "meta-ad", "site", "landing"
   locale String  @default("fr")
 
+  // Parcours personnalisé choisi dans l'assistant d'orientation.
+  projectStage String?
+  projectArea  String?
+  propertyType String?
+  budgetRange  String?
+
   purchases       Purchase[]
   downloads       DownloadEvent[]
   events          AnalyticsEvent[]
   quizAttempts    QuizAttempt[]
   readingProgress ReadingProgress[]
+  favorites       Favorite[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([subscriptionStatus])
   @@index([createdAt])
+}
+
+// ---------------------- FAVORIS ----------------------
+
+model Favorite {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId   String
+  ebook     Ebook    @relation(fields: [ebookId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, ebookId])
+  @@index([userId, createdAt])
 }
 
 // ---------------------- PROGRESSION DE LECTURE ----------------------
@@ -146,6 +167,7 @@ model Ebook {
   purchases       Purchase[]
   downloads       DownloadEvent[]
   readingProgress ReadingProgress[]
+  favorites       Favorite[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -170,11 +192,12 @@ enum PurchaseStatus {
 }
 
 model Purchase {
-  id      String  @id @default(cuid())
-  userId  String
-  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
-  ebookId String?
-  ebook   Ebook?  @relation(fields: [ebookId], references: [id])
+  id         String  @id @default(cuid())
+  userId     String?
+  user       User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+  ebookId    String?
+  ebook      Ebook?  @relation(fields: [ebookId], references: [id])
+  guestEmail String?
 
   type   PurchaseType
   status PurchaseStatus @default(PENDING)
