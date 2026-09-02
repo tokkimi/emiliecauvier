@@ -28,9 +28,11 @@ export async function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-sand)] bg-[var(--color-cream)]/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <Link href="/" className="font-display text-xl leading-none tracking-tight text-[var(--color-bordeaux)]">
-          La Bibliothèque
-          <span className="ml-2 hidden font-ui text-[0.6rem] uppercase tracking-[0.2em] text-[var(--color-gold)] sm:inline">
+        <Link href="/" className="flex items-center gap-2.5 text-[var(--color-bordeaux)]" aria-label="La Bibliothèque — accueil">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-bibliotheque.png" alt="" className="h-10 w-14 shrink-0 object-contain sm:h-11 sm:w-16" />
+          <span className="font-display text-lg leading-none tracking-tight sm:text-xl">La Bibliothèque</span>
+          <span className="hidden font-ui text-[0.6rem] uppercase tracking-[0.2em] text-[var(--color-gold)] lg:inline">
             Édition 2026
           </span>
         </Link>
