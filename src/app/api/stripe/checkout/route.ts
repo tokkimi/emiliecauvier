@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import type Stripe from 'stripe';
 import { z } from 'zod';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
@@ -43,15 +44,23 @@ export async function POST(req: Request) {
     if (!SUBSCRIPTION_PRICE_ID) {
       return NextResponse.json({ error: 'Prix d\'abonnement non configuré.' }, { status: 503 });
     }
-    const checkout = await stripe.checkout.sessions.create({
+    const params: Stripe.Checkout.SessionCreateParams = {
       mode: 'subscription',
       customer: customerId,
       line_items: [{ price: SUBSCRIPTION_PRICE_ID, quantity: 1 }],
       success_url: `${APP_URL}/compte?success=abonnement`,
       cancel_url: `${APP_URL}/#abonnement`,
       metadata: { userId, kind: 'subscription' },
-    });
-    return NextResponse.json({ url: checkout.url });
+    };
+    // Reste sur le Checkout standard : désactive « Managed Payments »
+    // (activé par défaut sur le compte) qui exigerait un code de taxe par produit.
+    (params as Record<string, unknown>).managed_payments = { enabled: false };
+    try {
+      const checkout = await stripe.checkout.sessions.create(params);
+      return NextResponse.json({ url: checkout.url });
+    } catch (err) {
+      return NextResponse.json({ error: (err as Error).message }, { status: 502 });
+    }
   }
 
   // ---- Achat à l'unité ----
@@ -71,7 +80,7 @@ export async function POST(req: Request) {
     },
   });
 
-  const checkout = await stripe.checkout.sessions.create({
+  const unitParams: Stripe.Checkout.SessionCreateParams = {
     mode: 'payment',
     customer: customerId,
     line_items: [
@@ -87,7 +96,16 @@ export async function POST(req: Request) {
     success_url: `${APP_URL}/lire/${slug}?success=achat`,
     cancel_url: `${APP_URL}/livre/${slug}`,
     metadata: { userId, kind: 'unit', ebookId: ebook.id, purchaseId: purchase.id },
-  });
+  };
+  // Idem : Checkout standard, pas de « Managed Payments ».
+  (unitParams as Record<string, unknown>).managed_payments = { enabled: false };
+
+  let checkout;
+  try {
+    checkout = await stripe.checkout.sessions.create(unitParams);
+  } catch (err) {
+    return NextResponse.json({ error: (err as Error).message }, { status: 502 });
+  }
 
   await prisma.purchase.update({ where: { id: purchase.id }, data: { stripeSessionId: checkout.id } });
   return NextResponse.json({ url: checkout.url });
