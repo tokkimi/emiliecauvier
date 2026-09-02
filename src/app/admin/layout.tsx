@@ -17,13 +17,13 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10">
-      <div className="mb-8 flex items-center gap-2 border-b border-[var(--color-sand)] pb-4 font-ui text-sm">
-        <span className="mr-4 font-display text-lg text-[var(--color-bordeaux)]">Back-office</span>
+      <div className="-mx-5 mb-8 flex items-center gap-2 overflow-x-auto border-b border-[var(--color-sand)] px-5 pb-4 font-ui text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <span className="mr-2 shrink-0 font-display text-lg text-[var(--color-bordeaux)]">Back-office</span>
         {nav.map(([href, label]) => (
           <Link
             key={href}
             href={href}
-            className="rounded-full px-4 py-1.5 text-[var(--color-ink)]/70 transition hover:bg-[var(--color-sand)] hover:text-[var(--color-bordeaux)]"
+            className="min-h-11 shrink-0 rounded-full px-4 py-3 text-[var(--color-ink)]/70 transition hover:bg-[var(--color-sand)] hover:text-[var(--color-bordeaux)]"
           >
             {label}
           </Link>

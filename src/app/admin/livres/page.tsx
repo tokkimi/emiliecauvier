@@ -10,7 +10,7 @@ export default async function AdminBooks() {
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="font-display text-3xl text-[var(--color-ink)]">Guides</h1>
           <p className="mt-1 font-body text-[var(--color-ink)]/60">{ebooks.length} guides au catalogue.</p>
@@ -23,8 +23,8 @@ export default async function AdminBooks() {
         </Link>
       </div>
 
-      <div className="mt-8 overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white">
-        <table className="w-full font-ui text-sm">
+      <div className="mt-8 overflow-x-auto rounded-2xl border border-[var(--color-sand)] bg-white">
+        <table className="min-w-[760px] w-full font-ui text-sm">
           <thead className="bg-[var(--color-sand)]/60 text-left text-[var(--color-ink)]/60">
             <tr>
               <th className="px-4 py-3">N°</th>

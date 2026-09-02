@@ -61,8 +61,8 @@ export default async function AdminDashboard() {
       </div>
 
       <h2 className="mt-12 font-display text-2xl text-[var(--color-ink)]">Dernières ventes</h2>
-      <div className="mt-4 overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white">
-        <table className="w-full font-ui text-sm">
+      <div className="mt-4 overflow-x-auto rounded-2xl border border-[var(--color-sand)] bg-white">
+        <table className="min-w-[680px] w-full font-ui text-sm">
           <thead className="bg-[var(--color-sand)]/60 text-left text-[var(--color-ink)]/60">
             <tr>
               <th className="px-5 py-3">Date</th>

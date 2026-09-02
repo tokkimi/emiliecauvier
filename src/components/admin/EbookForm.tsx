@@ -46,7 +46,7 @@ export function EbookForm({ ebook }: { ebook?: EbookData }) {
         Description
         <textarea name="description" defaultValue={ebook?.description} rows={4} className={field} />
       </label>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-4 sm:grid-cols-2">
         <label className={label}>
           Collection
           <select name="collection" defaultValue={ebook?.collection ?? 'ACHETEURS'} className={field}>
