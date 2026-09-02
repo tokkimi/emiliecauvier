@@ -6,11 +6,13 @@ import type { Metadata } from 'next';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { accessibleEbookIds, downloadableEbookIds } from '@/lib/entitlements';
+import { getFavoriteSlugs } from '@/lib/favorites';
 import { bySlug, BOOKS, COLLECTIONS } from '@/data/books';
 import { formatPrice, BRAND } from '@/lib/format';
 import { SubscribeButton, SignOutButton } from '@/components/AccountActions';
 import { AccountSettings } from '@/components/AccountSettings';
 import { BookCover } from '@/components/BookCover';
+import { GuideCard } from '@/components/GuideCard';
 
 export const metadata: Metadata = { title: 'Mon compte' };
 
@@ -32,7 +34,7 @@ export default async function AccountPage() {
   const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) redirect('/connexion');
 
-  const [ids, dlIds, quizAttempts, purchases, progressEntries] = await Promise.all([
+  const [ids, dlIds, quizAttempts, purchases, progressEntries, favoriteSlugs] = await Promise.all([
     accessibleEbookIds(userId),
     downloadableEbookIds(userId),
     prisma.quizAttempt.findMany({ where: { userId }, orderBy: { createdAt: 'desc' }, take: 6 }),
@@ -47,7 +49,12 @@ export default async function AccountPage() {
       include: { ebook: true },
       orderBy: { updatedAt: 'desc' },
     }),
+    getFavoriteSlugs(userId),
   ]);
+
+  const favoriteBooks = favoriteSlugs
+    .map((slug) => bySlug(slug))
+    .filter((book): book is NonNullable<typeof book> => Boolean(book));
 
   const ebooks = await prisma.ebook.findMany({ where: { id: { in: [...ids] } } });
   const slugToId = new Map(ebooks.map((ebook) => [ebook.slug, ebook.id]));
@@ -85,6 +92,7 @@ export default async function AccountPage() {
 
       <nav className="mt-6 flex flex-wrap gap-2 font-ui text-sm" aria-label="Sections du compte">
         <a href="#bibliotheque" className="rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white">Bibliothèque</a>
+        <a href="#favoris" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Favoris</a>
         <a href="#activite" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Activité</a>
         <a href="#profil" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Profil et sécurité</a>
       </nav>
@@ -201,6 +209,40 @@ export default async function AccountPage() {
                 </article>
               );
             })}
+          </div>
+        )}
+      </section>
+
+      <section id="favoris" className="scroll-mt-24 pt-14">
+        <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+          <div>
+            <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Ma sélection</p>
+            <h2 className="mt-1 font-display text-3xl">Mes favoris</h2>
+          </div>
+          <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">Ajouter des guides →</Link>
+        </div>
+
+        {favoriteBooks.length === 0 ? (
+          <div className="mt-5 rounded-2xl border border-dashed border-[var(--color-sand)] bg-white p-10 text-center">
+            <p className="font-display text-2xl text-[var(--color-ink)]">Aucun favori pour l’instant.</p>
+            <p className="mt-2 font-body text-[var(--color-ink)]/60">Touchez le cœur ♥ sur un guide du catalogue pour le retrouver ici.</p>
+            <Link href="/catalogue" className="mt-5 inline-block rounded-full bg-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-white">Parcourir le catalogue</Link>
+          </div>
+        ) : (
+          <div className="mt-5 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+            {favoriteBooks.map((book) => (
+              <GuideCard
+                key={book.slug}
+                b={{
+                  slug: book.slug,
+                  number: book.number,
+                  collectionLabel: COLLECTIONS[book.collection],
+                  title: book.title,
+                  subtitle: book.subtitle,
+                  price: formatPrice(book.priceCents),
+                }}
+              />
+            ))}
           </div>
         )}
       </section>

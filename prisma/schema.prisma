@@ -52,12 +52,30 @@ model User {
   events          AnalyticsEvent[]
   quizAttempts    QuizAttempt[]
   readingProgress ReadingProgress[]
+  favorites       Favorite[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([subscriptionStatus])
   @@index([createdAt])
+}
+
+// ---------------------- FAVORIS ----------------------
+// Un guide mis en favori par un utilisateur. Affiché dans son profil
+// (section « Mes favoris ») et via le cœur sur les cartes du catalogue.
+
+model Favorite {
+  id      String @id @default(cuid())
+  userId  String
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId String
+  ebook   Ebook  @relation(fields: [ebookId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, ebookId])
+  @@index([userId, createdAt])
 }
 
 // ---------------------- PROGRESSION DE LECTURE ----------------------
@@ -146,6 +164,7 @@ model Ebook {
   purchases       Purchase[]
   downloads       DownloadEvent[]
   readingProgress ReadingProgress[]
+  favorites       Favorite[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

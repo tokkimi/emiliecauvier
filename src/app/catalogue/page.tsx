@@ -4,7 +4,8 @@ import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { localizeBook, COLLECTIONS_EN, BOOKS_EN } from '@/data/booksEn';
 import { formatPrice } from '@/lib/format';
 import { getLocale, getT } from '@/lib/i18n';
-import { BookCover } from '@/components/BookCover';
+import { GuideCard, type GuideCardData } from '@/components/GuideCard';
+import { CategoryRow } from '@/components/CategoryRow';
 
 export const metadata: Metadata = { title: 'Catalogue' };
 
@@ -20,14 +21,32 @@ export default async function CataloguePage({
   const query = (q ?? '').toLowerCase().trim();
   const col = (c: Collection) => (locale === 'en' ? COLLECTIONS_EN[c] ?? COLLECTIONS[c] : COLLECTIONS[c]);
 
-  let books = BOOKS;
-  if (collection && collection in COLLECTIONS) books = books.filter((b) => b.collection === collection);
+  const toCard = (b: (typeof BOOKS)[number]): GuideCardData => {
+    const loc = localizeBook(b, locale);
+    return {
+      slug: b.slug,
+      number: b.number,
+      collectionLabel: col(b.collection),
+      title: loc.title,
+      subtitle: loc.subtitle,
+      price: formatPrice(b.priceCents),
+      chaptersLabel: `${b.chapters.length} ${t.cat_chapters}`,
+    };
+  };
+
+  const activeCollection = collection && collection in COLLECTIONS ? (collection as Collection) : null;
+
+  let filtered = BOOKS;
+  if (activeCollection) filtered = filtered.filter((b) => b.collection === activeCollection);
   if (query)
-    books = books.filter((b) => {
+    filtered = filtered.filter((b) => {
       const en = BOOKS_EN[b.slug];
       const hay = [b.title, b.subtitle, en?.title ?? '', en?.subtitle ?? '', ...b.chapters].join(' ').toLowerCase();
       return hay.includes(query);
     });
+
+  // Vue par défaut (aucun filtre) : une rangée horizontale par collection.
+  const showRows = !activeCollection && !query;
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-14">
@@ -40,14 +59,14 @@ export default async function CataloguePage({
         <Link
           href="/catalogue"
           className={`rounded-full border px-4 py-2 transition ${
-            !collection ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white' : 'border-[var(--color-sand)] bg-white'
+            !activeCollection ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white' : 'border-[var(--color-sand)] bg-white hover:border-[var(--color-bordeaux)]'
           }`}
         >
           {t.cat_all} ({BOOKS.length})
         </Link>
         {collections.map((c) => {
           const n = BOOKS.filter((b) => b.collection === c).length;
-          const active = collection === c;
+          const active = activeCollection === c;
           return (
             <Link
               key={c}
@@ -62,44 +81,32 @@ export default async function CataloguePage({
         })}
       </div>
 
-      {/* Grille */}
-      <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {books.map((b) => {
-          const loc = localizeBook(b, locale);
-          return (
-            <Link
-              key={b.slug}
-              href={`/livre/${b.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <BookCover
-                number={b.number}
-                title={loc.title}
-                collection={col(b.collection)}
-                className="w-full border-b border-[var(--color-sand)]"
+      {showRows ? (
+        // Rangées par catégorie (défilement horizontal + « Voir plus »)
+        <div>
+          {collections.map((c) => {
+            const items = BOOKS.filter((b) => b.collection === c).map(toCard);
+            return (
+              <CategoryRow
+                key={c}
+                title={col(c)}
+                href={`/catalogue?collection=${c}`}
+                seeMoreLabel={t.home_see_all ?? 'Voir plus'}
+                items={items}
               />
-              <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center justify-between">
-                  <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
-                    {col(b.collection)}
-                  </span>
-                  <span className="font-ui text-xs text-[var(--color-ink)]/40">n°{b.number}</span>
-                </div>
-                <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
-                  {loc.title}
-                </h3>
-                <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{loc.subtitle}</p>
-                <div className="mt-4 flex items-center justify-between">
-                  <span className="font-ui text-sm font-medium">{formatPrice(b.priceCents)}</span>
-                  <span className="font-ui text-xs text-[var(--color-ink)]/50">{b.chapters.length} {t.cat_chapters}</span>
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      ) : (
+        // Vue filtrée / recherche : grille 4 colonnes (2 sur mobile)
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+          {filtered.map((b) => (
+            <GuideCard key={b.slug} b={toCard(b)} />
+          ))}
+        </div>
+      )}
 
-      {books.length === 0 && (
+      {!showRows && filtered.length === 0 && (
         <p className="mt-16 text-center font-body text-[var(--color-ink)]/60">{t.cat_none}</p>
       )}
     </div>
