@@ -11,3 +11,4 @@
 # Livrables ZIP (régénérables)
 /storage/*.zip
 scripts/backcovers/
+tsconfig.tsbuildinfo
