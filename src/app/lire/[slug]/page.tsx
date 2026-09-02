@@ -52,7 +52,15 @@ export default async function ReaderPage({
   const chapters = previewOnly
     ? content.chapters.map((c, i) => (i === 0 ? c : { ...c, html: '' }))
     : content.chapters;
-  const qcm = previewOnly ? [] : content.qcm;
+  const quizQuestions = previewOnly
+    ? []
+    : content.qcm.map((question) => ({ q: question.q, options: question.options }));
+  const initialProgress = userId && access && dbEbook
+    ? await prisma.readingProgress.findUnique({
+        where: { userId_ebookId: { userId, ebookId: dbEbook.id } },
+        select: { chapterIndex: true },
+      })
+    : null;
 
   return (
     <Reader
@@ -60,9 +68,11 @@ export default async function ReaderPage({
       title={loc.title}
       subtitle={loc.subtitle}
       chapters={chapters}
-      qcm={qcm}
+      quizQuestions={quizQuestions}
+      hasQuiz={content.qcm.length > 0}
       previewOnly={previewOnly}
       loggedIn={Boolean(userId)}
+      initialChapter={initialProgress?.chapterIndex ?? 0}
       frenchNotice={locale === 'en' && !isEnglish}
     />
   );

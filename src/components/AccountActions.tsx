@@ -8,17 +8,19 @@ export function SubscribeButton({ active }: { active: boolean }) {
 
   async function go(mode: 'subscription' | 'portal') {
     setLoading(true);
-    const url = mode === 'subscription' ? '/api/stripe/checkout' : '/api/stripe/portal';
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ mode: 'subscription' }),
-    });
-    const data = await res.json();
-    if (data.url) window.location.href = data.url;
-    else {
+    try {
+      const url = mode === 'subscription' ? '/api/stripe/checkout' : '/api/stripe/portal';
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode: 'subscription' }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.url) throw new Error(data.error ?? 'Action indisponible.');
+      window.location.href = data.url;
+    } catch (error) {
       setLoading(false);
-      alert(data.error ?? 'Action indisponible.');
+      alert(error instanceof Error ? error.message : 'Action indisponible.');
     }
   }
 

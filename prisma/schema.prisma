@@ -22,41 +22,60 @@ enum Role {
 }
 
 enum SubscriptionStatus {
-  NONE          // aucun abonnement
-  TRIALING      // période d'essai
-  ACTIVE        // abonnement actif
-  PAST_DUE      // paiement en retard
-  CANCELED      // annulé / expiré
+  NONE // aucun abonnement
+  TRIALING // période d'essai
+  ACTIVE // abonnement actif
+  PAST_DUE // paiement en retard
+  CANCELED // annulé / expiré
 }
 
 model User {
-  id                   String   @id @default(cuid())
-  email                String   @unique
-  name                 String?
-  passwordHash         String
-  role                 Role     @default(USER)
+  id           String  @id @default(cuid())
+  email        String  @unique
+  name         String?
+  passwordHash String
+  role         Role    @default(USER)
 
   // Facturation Stripe
-  stripeCustomerId     String?  @unique
+  stripeCustomerId     String?            @unique
   stripeSubscriptionId String?
   subscriptionStatus   SubscriptionStatus @default(NONE)
   subscriptionPriceId  String?
   currentPeriodEnd     DateTime?
 
   // Marketing / provenance (utile pour la landing des pubs Meta)
-  source               String?  // ex. "meta-ad", "site", "landing"
-  locale               String   @default("fr")
+  source String? // ex. "meta-ad", "site", "landing"
+  locale String  @default("fr")
 
-  purchases            Purchase[]
-  downloads            DownloadEvent[]
-  events               AnalyticsEvent[]
-  quizAttempts         QuizAttempt[]
+  purchases       Purchase[]
+  downloads       DownloadEvent[]
+  events          AnalyticsEvent[]
+  quizAttempts    QuizAttempt[]
+  readingProgress ReadingProgress[]
 
-  createdAt            DateTime @default(now())
-  updatedAt            DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([subscriptionStatus])
   @@index([createdAt])
+}
+
+// ---------------------- PROGRESSION DE LECTURE ----------------------
+
+model ReadingProgress {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId      String
+  ebook        Ebook    @relation(fields: [ebookId], references: [id], onDelete: Cascade)
+  chapterIndex Int      @default(0)
+  chapterCount Int
+  completed    Boolean  @default(false)
+  updatedAt    DateTime @updatedAt
+  createdAt    DateTime @default(now())
+
+  @@unique([userId, ebookId])
+  @@index([userId, updatedAt])
 }
 
 // ---------------------- QUIZ (façon Coursera) ----------------------
@@ -65,20 +84,20 @@ model User {
 // est enregistrée dans son profil.
 
 model QuizAttempt {
-  id          String   @id @default(cuid())
-  userId      String
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   guideNumber Int
   guideSlug   String
   guideTitle  String
 
-  score       Int      // bonnes réponses
-  total       Int      // nombre de questions
-  scoreOn10   Int      // note ramenée sur 10
-  answers     Json     // réponses données (index par question)
+  score     Int // bonnes réponses
+  total     Int // nombre de questions
+  scoreOn10 Int // note ramenée sur 10
+  answers   Json // réponses données (index par question)
 
-  createdAt   DateTime @default(now())
+  createdAt DateTime @default(now())
 
   @@index([userId])
   @@index([guideSlug])
@@ -98,37 +117,38 @@ enum Collection {
 }
 
 model Ebook {
-  id            String     @id @default(cuid())
-  slug          String     @unique
-  number        Int        @unique          // 1..50, ordre de la collection
-  title         String
-  subtitle      String?
-  description    String    @db.Text
-  collection    Collection
-  language      String     @default("fr")
+  id          String     @id @default(cuid())
+  slug        String     @unique
+  number      Int        @unique // 1..50, ordre de la collection
+  title       String
+  subtitle    String?
+  description String     @db.Text
+  collection  Collection
+  language    String     @default("fr")
 
   // Prix en cents (CAD). 0 = inclus dans l'abonnement uniquement.
-  priceCents    Int        @default(1400)   // 14,00 $
-  compareAtCents Int?                        // prix barré éventuel
-  currency      String     @default("CAD")
+  priceCents     Int    @default(1400) // 14,00 $
+  compareAtCents Int? // prix barré éventuel
+  currency       String @default("CAD")
 
   pages         Int?
   coverImageUrl String?
   // Fichiers
-  pdfKey        String?    // clé de stockage du PDF complet (privé)
-  previewPdfKey String?    // aperçu gratuit (1 chapitre)
+  pdfKey        String? // clé de stockage du PDF complet (privé)
+  previewPdfKey String? // aperçu gratuit (1 chapitre)
 
-  isPublished   Boolean    @default(false)
-  isFeatured    Boolean    @default(false)
+  isPublished            Boolean @default(false)
+  isFeatured             Boolean @default(false)
   includedInSubscription Boolean @default(true)
 
-  stripePriceId String?    // prix Stripe (achat à l'unité)
+  stripePriceId String? // prix Stripe (achat à l'unité)
 
-  purchases     Purchase[]
-  downloads     DownloadEvent[]
+  purchases       Purchase[]
+  downloads       DownloadEvent[]
+  readingProgress ReadingProgress[]
 
-  createdAt     DateTime   @default(now())
-  updatedAt     DateTime   @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([collection])
   @@index([isPublished])
@@ -137,9 +157,9 @@ model Ebook {
 // ---------------------- ACHATS / COMMANDES ----------------------
 
 enum PurchaseType {
-  ONE_TIME       // achat d'un ebook
-  BUNDLE         // coffret
-  SUBSCRIPTION   // accès via abonnement
+  ONE_TIME // achat d'un ebook
+  BUNDLE // coffret
+  SUBSCRIPTION // accès via abonnement
 }
 
 enum PurchaseStatus {
@@ -150,23 +170,23 @@ enum PurchaseStatus {
 }
 
 model Purchase {
-  id                String   @id @default(cuid())
-  userId            String
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  ebookId           String?
-  ebook             Ebook?   @relation(fields: [ebookId], references: [id])
+  id      String  @id @default(cuid())
+  userId  String
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ebookId String?
+  ebook   Ebook?  @relation(fields: [ebookId], references: [id])
 
-  type              PurchaseType
-  status            PurchaseStatus @default(PENDING)
+  type   PurchaseType
+  status PurchaseStatus @default(PENDING)
 
-  amountCents       Int
-  currency          String   @default("CAD")
+  amountCents Int
+  currency    String @default("CAD")
 
   // Stripe
-  stripeSessionId   String?  @unique
-  stripePaymentId   String?
+  stripeSessionId String? @unique
+  stripePaymentId String?
 
-  createdAt         DateTime @default(now())
+  createdAt DateTime @default(now())
 
   @@index([userId])
   @@index([status])
@@ -195,7 +215,7 @@ model AnalyticsEvent {
   id        String   @id @default(cuid())
   userId    String?
   user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
-  name      String   // ex. "page_view", "add_to_cart", "checkout_start", "purchase"
+  name      String // ex. "page_view", "add_to_cart", "checkout_start", "purchase"
   path      String?
   ebookId   String?
   meta      Json?
@@ -220,14 +240,14 @@ model NewsletterSubscriber {
 // sans recalcul lourd (alimenté par un job/cron).
 
 model DailyRevenue {
-  id                 String   @id @default(cuid())
-  date               DateTime @unique @db.Date
-  oneTimeCents       Int      @default(0)   // ventes à l'unité
-  subscriptionCents  Int      @default(0)   // revenus d'abonnement
-  refundsCents       Int      @default(0)
-  newUsers           Int      @default(0)
-  newSubscribers     Int      @default(0)
-  createdAt          DateTime @default(now())
+  id                String   @id @default(cuid())
+  date              DateTime @unique @db.Date
+  oneTimeCents      Int      @default(0) // ventes à l'unité
+  subscriptionCents Int      @default(0) // revenus d'abonnement
+  refundsCents      Int      @default(0)
+  newUsers          Int      @default(0)
+  newSubscribers    Int      @default(0)
+  createdAt         DateTime @default(now())
 
   @@index([date])
 }

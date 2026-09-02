@@ -86,7 +86,7 @@ export function QuizRunner({
           </p>
           {!loggedIn && (
             <Link
-              href={`/connexion?next=/quiz/${slug}`}
+              href={`/connexion?next=/lire/${slug}`}
               className="mt-3 inline-block font-ui text-sm text-[var(--color-bordeaux)] hover:underline"
             >
               Se connecter →

@@ -4,6 +4,7 @@ import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { localizeBook, COLLECTIONS_EN, BOOKS_EN } from '@/data/booksEn';
 import { formatPrice } from '@/lib/format';
 import { getLocale, getT } from '@/lib/i18n';
+import { BookCover } from '@/components/BookCover';
 
 export const metadata: Metadata = { title: 'Catalogue' };
 
@@ -71,12 +72,11 @@ export default async function CataloguePage({
               href={`/livre/${b.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`/covers/${b.number}.jpg`}
-                alt={`Couverture — ${loc.title}`}
-                loading="lazy"
-                className="aspect-[2/3] w-full border-b border-[var(--color-sand)] object-cover"
+              <BookCover
+                number={b.number}
+                title={loc.title}
+                collection={col(b.collection)}
+                className="w-full border-b border-[var(--color-sand)]"
               />
               <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-center justify-between">

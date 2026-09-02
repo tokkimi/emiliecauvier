@@ -11,6 +11,7 @@ import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { hasAccess, canDownload } from '@/lib/entitlements';
 import { BuyButtons } from '@/components/BuyButtons';
+import { BookCover } from '@/components/BookCover';
 
 export async function generateMetadata({
   params,
@@ -82,6 +83,13 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 
         {/* Colonne d'achat */}
         <aside className="lg:sticky lg:top-24 lg:self-start">
+          <BookCover
+            number={book.number}
+            title={loc.title}
+            collection={col(book.collection)}
+            loading="eager"
+            className="mx-auto mb-5 w-full max-w-[260px] rounded-2xl border border-[var(--color-sand)] shadow-sm"
+          />
           <div className="rounded-2xl border border-[var(--color-sand)] bg-white p-7 shadow-sm">
             <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             <p className="mt-1 font-ui text-sm text-[var(--color-ink)]/60">{t.book_lifetime}</p>

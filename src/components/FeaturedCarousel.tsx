@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRef } from 'react';
+import { BookCover } from '@/components/BookCover';
 
 export type FeaturedItem = {
   slug: string;
@@ -44,12 +45,11 @@ export function FeaturedCarousel({ items }: { items: FeaturedItem[] }) {
             href={`/livre/${b.slug}`}
             className="group flex w-[72vw] max-w-[280px] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg sm:w-[300px]"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`/covers/${b.number}.jpg`}
-              alt={`Couverture — ${b.title}`}
-              loading="lazy"
-              className="aspect-[2/3] w-full border-b border-[var(--color-sand)] object-cover"
+            <BookCover
+              number={b.number}
+              title={b.title}
+              collection={b.collectionLabel}
+              className="w-full border-b border-[var(--color-sand)]"
             />
             <div className="flex flex-1 flex-col p-6">
               <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">

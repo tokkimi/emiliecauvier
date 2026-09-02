@@ -28,24 +28,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
-        {/* Mot manuscrit d'Emilie, juste avant le pied de page.
-            Visuel pleine largeur, bord à bord, SANS fond blanc ni cadre : le
-            fond crème fait partie de l'image (un visuel mobile, un ordinateur). */}
-        <section>
-          {/* Mobile */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/mot-emilie-mobile.png"
-            alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
-            className="block w-full sm:hidden"
-          />
-          {/* Ordinateur */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/mot-emilie-ordi.jpg"
-            alt="Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. À bientôt, Emilie"
-            className="hidden w-full sm:block"
-          />
+        <section className="border-t border-[var(--color-sand)] bg-[#f6f1eb]">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 text-center sm:flex-row sm:py-12 sm:text-left">
+            <blockquote className="max-w-3xl font-display text-2xl italic leading-relaxed text-[var(--color-bordeaux)] sm:text-3xl">
+              « Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. »
+            </blockquote>
+            <div className="shrink-0 text-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-signe-em.png" alt="Signé par Emilie" className="mx-auto h-20 w-auto brightness-0 opacity-70" />
+              <p className="mt-1 font-body text-sm italic text-[var(--color-ink)]/60">À bientôt, Emilie</p>
+            </div>
+          </div>
         </section>
         <SiteFooter />
       </body>
