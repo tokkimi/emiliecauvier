@@ -90,7 +90,7 @@ export function ReaderConsent() {
           </button>
 
           <p className="mt-4 text-center font-ui text-[0.68rem] leading-snug text-[var(--color-ink)]/45">
-            © 2026 Émilie Cauvier — La Bibliothèque. Tous droits réservés. Reproduction,
+            © 2026 Emilie Cauvier — La Bibliothèque. Tous droits réservés. Reproduction,
             partage ou revente interdits sans autorisation écrite.
           </p>
         </div>

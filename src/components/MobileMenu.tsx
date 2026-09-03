@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { LangToggle } from './LangToggle';
+import { CartLink } from './CartLink';
 
 type Item = { href: string; label: string; cta?: boolean; admin?: boolean };
 
 /** Menu déroulant (hamburger) affiché uniquement sur mobile. */
-export function MobileMenu({ items }: { items: Item[] }) {
+export function MobileMenu({ items, showCart = false }: { items: Item[]; showCart?: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="sm:hidden">
@@ -33,6 +34,7 @@ export function MobileMenu({ items }: { items: Item[] }) {
           />
           <div className="absolute left-0 right-0 top-full z-40 border-b border-[var(--color-sand)] bg-[var(--color-cream)] shadow-lg">
             <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 font-ui text-base">
+              {showCart && <CartLink mobile />}
               {items.map((it) => (
                 <Link
                   key={it.href}

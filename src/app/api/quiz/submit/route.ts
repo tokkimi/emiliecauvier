@@ -4,7 +4,7 @@ import { prisma } from '@/lib/db';
 import { getQuiz, scoreOutOf10 } from '@/lib/quizzes';
 
 /**
- * Validation d'un quiz (façon Coursera).
+ * Validation d'un quiz (avec menu de chapitres).
  * Entrée : { slug, answers: number[] } (index choisi par question, -1 si vide).
  * Le score fait autorité côté serveur. Si l'utilisateur est connecté, la
  * tentative est enregistrée dans son profil. Renvoie la note /10 et les

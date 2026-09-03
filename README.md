@@ -1,7 +1,7 @@
-# La Bibliothèque — Boutique d'ebooks d'Émilie Cauvier
+# La Bibliothèque — Boutique d'ebooks d'Emilie Cauvier
 
-Boutique e-commerce complète pour les 50 guides immobiliers d'Émilie Cauvier :
-lecture en ligne (façon Coursera) **+** téléchargement PDF, achat à l'unité **et**
+Boutique e-commerce complète pour les 50 guides immobiliers d'Emilie Cauvier :
+lecture en ligne (avec menu de chapitres) **+** téléchargement PDF, achat à l'unité **et**
 abonnement mensuel, comptes utilisateurs, et back-office (catalogue, utilisateurs,
 **stats & compta**).
 

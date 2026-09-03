@@ -3,6 +3,7 @@ import { auth } from '@/lib/auth';
 import { getT } from '@/lib/i18n';
 import { LangToggle } from '@/components/LangToggle';
 import { MobileMenu } from '@/components/MobileMenu';
+import { CartLink } from '@/components/CartLink';
 
 export async function SiteHeader() {
   const session = await auth().catch(() => null);
@@ -39,6 +40,7 @@ export async function SiteHeader() {
 
         {/* Desktop */}
         <nav className="hidden items-center gap-x-5 font-ui text-sm sm:flex">
+          <CartLink />
           {items.map((it) => (
             <Link
               key={it.href}
@@ -58,7 +60,7 @@ export async function SiteHeader() {
         </nav>
 
         {/* Mobile */}
-        <MobileMenu items={items} />
+        <MobileMenu items={items} showCart />
       </div>
     </header>
   );

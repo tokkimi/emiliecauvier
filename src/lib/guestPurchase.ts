@@ -30,17 +30,20 @@ export function readGuestLibrary(value: string | undefined): GuestLibrary | null
   }
 }
 
-export function addGuestPurchase(current: string | undefined, ebookId: string) {
+export function addGuestPurchases(current: string | undefined, ebookIds: string[]) {
   const library = readGuestLibrary(current);
   const payload: GuestLibrary = {
-    ebookIds: [...new Set([...(library?.ebookIds ?? []), ebookId])],
+    ebookIds: [...new Set([...(library?.ebookIds ?? []), ...ebookIds])],
     exp: Date.now() + MAX_AGE_SECONDS * 1000,
   };
   const encoded = Buffer.from(JSON.stringify(payload)).toString('base64url');
   return { value: `${encoded}.${sign(encoded)}`, maxAge: MAX_AGE_SECONDS };
 }
 
+export function addGuestPurchase(current: string | undefined, ebookId: string) {
+  return addGuestPurchases(current, [ebookId]);
+}
+
 export function guestHasAccess(value: string | undefined, ebookId: string) {
   return readGuestLibrary(value)?.ebookIds.includes(ebookId) ?? false;
 }
-

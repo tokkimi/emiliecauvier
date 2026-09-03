@@ -20,7 +20,7 @@
     {
       "title": "Coordonner dates et logistique",
       "objective": "Orchestrer les deux clôtures et le déménagement.",
-      "html": "<p class=\"lede\">Orchestrer les deux clôtures et le déménagement.</p>\n<p>L'idéal est d'aligner autant que possible les <strong>dates de possession</strong> (vente et achat) pour un déménagement fluide.</p><p>À défaut, prévoyez :</p><ul><li>De l'<strong>entreposage</strong> temporaire.</li><li>Un <strong>hébergement</strong> de transition.</li><li>Une <strong>marge</strong> dans le calendrier.</li></ul><p>Une courtière qui gère les deux transactions peut synchroniser les échéances et anticiper les points de friction.</p><!--enr--><p>L'idéal est d'aligner les dates de possession pour un déménagement fluide ; à défaut, prévoyez entreposage, hébergement de transition et une marge dans le calendrier. Une courtière qui gère les deux transactions peut synchroniser les échéances et anticiper les frictions.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Confiez idéalement l'achat ET la vente à la même courtière. Elle voit les deux calendriers en même temps et peut caler les dates pour vous éviter un double déménagement.</p></aside>"
+      "html": "<p class=\"lede\">Orchestrer les deux clôtures et le déménagement.</p>\n<p>L'idéal est d'aligner autant que possible les <strong>dates de possession</strong> (vente et achat) pour un déménagement fluide.</p><p>À défaut, prévoyez :</p><ul><li>De l'<strong>entreposage</strong> temporaire.</li><li>Un <strong>hébergement</strong> de transition.</li><li>Une <strong>marge</strong> dans le calendrier.</li></ul><p>Un courtier qui gère les deux transactions peut synchroniser les échéances et anticiper les points de friction.</p><!--enr--><p>L'idéal est d'aligner les dates de possession pour un déménagement fluide ; à défaut, prévoyez entreposage, hébergement de transition et une marge dans le calendrier. Un courtier qui gère les deux transactions peut synchroniser les échéances et anticiper les frictions.</p><aside class=\"tip\"><span class=\"tip__label\">Le conseil d'Emilie</span><p>Confiez idéalement l'achat ET la vente à le même courtier. Il voit les deux calendriers en même temps et peut caler les dates pour vous éviter un double déménagement.</p></aside>"
     },
     {
       "title": "Éviter la double détention coûteuse",
@@ -35,7 +35,7 @@
     {
       "title": "Plan d'action",
       "objective": "",
-      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Déterminer ma séquence (vendre ou acheter d'abord).</li><li>Évaluer ma capacité à absorber un écart.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Explorer le prêt-relais avec mon courtier hypothécaire.</li><li>Coordonner les dates de possession.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Confier les deux transactions à la même courtière pour tout synchroniser.</li></ol><!--enr--><h3>Mon plan de match</h3><ol><li>Déterminer ma séquence et explorer le prêt-relais avant d'offrir.</li><li>Coordonner les dates de possession et garder un coussin de sécurité.</li></ol>"
+      "html": "<p class=\"lede\">Vos prochains pas, concrètement.</p>\n<h3>Cette semaine</h3>\n<ol><li>Déterminer ma séquence (vendre ou acheter d'abord).</li><li>Évaluer ma capacité à absorber un écart.</li></ol>\n<h3>D'ici 30 jours</h3>\n<ol><li>Explorer le prêt-relais avec mon courtier hypothécaire.</li><li>Coordonner les dates de possession.</li></ol>\n<h3>Ensuite</h3>\n<ol><li>Confier les deux transactions à le même courtier pour tout synchroniser.</li></ol><!--enr--><h3>Mon plan de match</h3><ol><li>Déterminer ma séquence et explorer le prêt-relais avant d'offrir.</li><li>Coordonner les dates de possession et garder un coussin de sécurité.</li></ol>"
     },
     {
       "title": "Ressources & lexique",
@@ -111,7 +111,7 @@
       "explanation": "Aligner les possessions (chap. 3)."
     },
     {
-      "q": "Confier les deux transactions à la même courtière permet de :",
+      "q": "Confier les deux transactions à le même courtier permet de :",
       "options": [
         "A) Payer plus",
         "B) Synchroniser les échéances",

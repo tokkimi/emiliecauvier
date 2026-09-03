@@ -60,6 +60,7 @@ export function RegisterForm() {
   const router = useRouter();
   const params = useSearchParams();
   const plan = params.get('plan');
+  const next = params.get('next') ?? '/compte';
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -100,7 +101,7 @@ export function RegisterForm() {
       }
     }
     setLoading(false);
-    router.push('/compte');
+    router.push(next);
   }
 
   return (
@@ -128,7 +129,7 @@ export function RegisterForm() {
       </button>
       <p className="text-center font-ui text-sm text-[var(--color-ink)]/60">
         Déjà inscrit ?{' '}
-        <Link href="/connexion" className="text-[var(--color-bordeaux)] hover:underline">
+        <Link href={`/connexion?next=${encodeURIComponent(next)}`} className="text-[var(--color-bordeaux)] hover:underline">
           Se connecter
         </Link>
       </p>

@@ -35,7 +35,7 @@ export default async function AccountPage() {
   const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) redirect('/connexion');
 
-  const [ids, dlIds, quizAttempts, purchases, progressEntries, favorites] = await Promise.all([
+  const [ids, dlIds, quizAttempts, purchases, progressEntries, favorites, paidEbookPurchases] = await Promise.all([
     accessibleEbookIds(userId),
     downloadableEbookIds(userId),
     prisma.quizAttempt.findMany({ where: { userId }, orderBy: { createdAt: 'desc' }, take: 6 }),
@@ -51,6 +51,10 @@ export default async function AccountPage() {
       orderBy: { updatedAt: 'desc' },
     }),
     prisma.favorite.findMany({ where: { userId }, include: { ebook: true }, orderBy: { createdAt: 'desc' } }),
+    prisma.purchase.findMany({
+      where: { userId, status: 'PAID', type: 'ONE_TIME', ebookId: { not: null } },
+      select: { ebookId: true },
+    }),
   ]);
 
   const ebooks = await prisma.ebook.findMany({ where: { id: { in: [...ids] } } });
@@ -70,7 +74,12 @@ export default async function AccountPage() {
   const averageQuiz = quizAttempts.length
     ? Math.round(quizAttempts.reduce((sum, attempt) => sum + attempt.scoreOn10, 0) / quizAttempts.length)
     : null;
-  const subActive = user.subscriptionStatus === 'ACTIVE' || user.subscriptionStatus === 'TRIALING';
+  const subActive =
+    user.role === 'ADMIN' ||
+    ((user.subscriptionStatus === 'ACTIVE' || user.subscriptionStatus === 'TRIALING') &&
+      (!user.currentPeriodEnd || user.currentPeriodEnd > new Date()));
+  const paidEbookCount = new Set(paidEbookPurchases.map((purchase) => purchase.ebookId).filter(Boolean)).size;
+  const toolsUnlocked = subActive || paidEbookCount >= 3;
   const favoriteBooks = favorites
     .map((favorite) => bySlug(favorite.ebook.slug))
     .filter((book): book is NonNullable<typeof book> => Boolean(book));
@@ -279,7 +288,33 @@ export default async function AccountPage() {
         <p className="mt-2 max-w-2xl font-body text-[var(--color-ink)]/60">
           Calculez, comparez et conservez votre checklist de projet directement dans votre espace.
         </p>
-        <div className="mt-6"><ToolsHub /></div>
+        <div className="mt-6">
+          {toolsUnlocked ? (
+            <ToolsHub />
+          ) : (
+            <div className="rounded-3xl border border-[var(--color-sand)] bg-white p-6 shadow-[0_12px_40px_rgba(46,31,24,0.06)] sm:p-8">
+              <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
+                <div>
+                  <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Outils verrouillés</p>
+                  <h3 className="mt-2 font-display text-2xl text-[var(--color-bordeaux)]">Débloquez la boîte à outils complète</h3>
+                  <p className="mt-2 max-w-2xl font-body text-[var(--color-ink)]/65">
+                    Disponible avec un abonnement actif ou après 3 ebooks achetés. Vous en avez {paidEbookCount} / 3.
+                  </p>
+                </div>
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-sand)] text-2xl text-[var(--color-bordeaux)]" aria-hidden="true">🔒</span>
+              </div>
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                {['Capacité d’achat', 'Mensualités', 'Taxe de bienvenue', 'Mise de fonds', 'Rentabilité', 'Checklist'].map((label) => (
+                  <div key={label} className="rounded-2xl bg-[#f7f2ec] px-4 py-3 font-ui text-sm text-[var(--color-ink)]/65">{label}</div>
+                ))}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link href="/catalogue" className="rounded-full bg-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-white">Acheter des ebooks</Link>
+                <Link href="/abonnement" className="rounded-full border border-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)]">Voir l’abonnement</Link>
+              </div>
+            </div>
+          )}
+        </div>
       </section>
 
       <section id="activite" className="scroll-mt-24 pt-14">

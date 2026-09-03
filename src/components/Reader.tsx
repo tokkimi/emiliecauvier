@@ -53,7 +53,7 @@ export function Reader({
     <>
     <ReaderConsent />
     <div className="mx-auto flex max-w-6xl flex-col gap-0 lg:flex-row">
-      {/* Menu latéral — façon Coursera */}
+      {/* Menu latéral — avec menu de chapitres */}
       <aside className="border-b border-[var(--color-sand)] bg-white lg:w-80 lg:shrink-0 lg:border-b-0 lg:border-r">
         <div className="p-6">
           <div className="flex flex-wrap items-center justify-between gap-3 font-ui text-xs text-[var(--color-bordeaux)]">

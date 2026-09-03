@@ -8,6 +8,7 @@ import { assertStripe, SUBSCRIPTION_PRICE_ID, APP_URL } from '@/lib/stripe';
 const schema = z.object({
   mode: z.enum(['unit', 'subscription']),
   slug: z.string().optional(),
+  slugs: z.array(z.string()).max(20).optional(),
 });
 
 async function getOrCreateCustomer(userId: string, email: string) {
@@ -62,29 +63,17 @@ export async function POST(req: Request) {
     }
   }
 
-  // ---- Achat à l'unité ----
-  const slug = parsed.data.slug;
-  if (!slug) return NextResponse.json({ error: 'Guide manquant.' }, { status: 400 });
-  const ebook = await prisma.ebook.findUnique({ where: { slug } });
-  if (!ebook) return NextResponse.json({ error: 'Guide introuvable.' }, { status: 404 });
+  // ---- Achat à l'unité / panier ----
+  const requestedSlugs = [...new Set(parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : [])];
+  if (!requestedSlugs.length) return NextResponse.json({ error: 'Guide manquant.' }, { status: 400 });
 
-  const purchase = await prisma.purchase.create({
-    data: {
-      userId: userId ?? null,
-      ebookId: ebook.id,
-      type: 'ONE_TIME',
-      status: 'PENDING',
-      amountCents: ebook.priceCents,
-      currency: ebook.currency,
-    },
+  const ebooks = await prisma.ebook.findMany({
+    where: { slug: { in: requestedSlugs }, isPublished: true },
+    orderBy: { number: 'asc' },
   });
+  if (ebooks.length !== requestedSlugs.length) return NextResponse.json({ error: 'Un guide du panier est introuvable.' }, { status: 404 });
 
-  const metadata: Record<string, string> = {
-    kind: 'unit',
-    ebookId: ebook.id,
-    purchaseId: purchase.id,
-    slug,
-  };
+  const metadata: Record<string, string> = { kind: ebooks.length > 1 ? 'cart' : 'unit' };
   if (userId) metadata.userId = userId;
 
   const unitParams: Stripe.Checkout.SessionCreateParams = {
@@ -92,18 +81,16 @@ export async function POST(req: Request) {
     ...(userId && email
       ? { customer: await getOrCreateCustomer(userId, email) }
       : { customer_creation: 'always' as const }),
-    line_items: [
-      {
-        quantity: 1,
-        price_data: {
-          currency: ebook.currency.toLowerCase(),
-          unit_amount: ebook.priceCents,
-          product_data: { name: ebook.title, description: ebook.subtitle ?? undefined },
-        },
+    line_items: ebooks.map((ebook) => ({
+      quantity: 1,
+      price_data: {
+        currency: ebook.currency.toLowerCase(),
+        unit_amount: ebook.priceCents,
+        product_data: { name: ebook.title, description: ebook.subtitle ?? undefined },
       },
-    ],
+    })),
     success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${APP_URL}/livre/${slug}`,
+    cancel_url: ebooks.length > 1 ? `${APP_URL}/panier` : `${APP_URL}/livre/${ebooks[0].slug}`,
     metadata,
   };
   // Idem : Checkout standard, pas de « Managed Payments ».
@@ -116,6 +103,20 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: (err as Error).message }, { status: 502 });
   }
 
-  await prisma.purchase.update({ where: { id: purchase.id }, data: { stripeSessionId: checkout.id } });
+  await prisma.$transaction(
+    ebooks.map((ebook) =>
+      prisma.purchase.create({
+        data: {
+          userId: userId ?? null,
+          ebookId: ebook.id,
+          type: 'ONE_TIME',
+          status: 'PENDING',
+          amountCents: ebook.priceCents,
+          currency: ebook.currency,
+          stripeSessionId: checkout.id,
+        },
+      }),
+    ),
+  );
   return NextResponse.json({ url: checkout.url });
 }

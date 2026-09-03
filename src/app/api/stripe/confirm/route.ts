@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { assertStripe } from '@/lib/stripe';
 import { prisma } from '@/lib/db';
-import { addGuestPurchase, GUEST_PURCHASE_COOKIE } from '@/lib/guestPurchase';
+import { addGuestPurchases, GUEST_PURCHASE_COOKIE } from '@/lib/guestPurchase';
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -10,16 +10,29 @@ export async function GET(req: Request) {
 
   try {
     const checkout = await assertStripe().checkout.sessions.retrieve(sessionId);
-    const ebookId = checkout.metadata?.ebookId;
-    const purchaseId = checkout.metadata?.purchaseId;
-    if (checkout.payment_status !== 'paid' || checkout.metadata?.kind !== 'unit' || !ebookId || !purchaseId) {
+    const kind = checkout.metadata?.kind;
+    if (checkout.payment_status !== 'paid' || (kind !== 'unit' && kind !== 'cart')) {
       return NextResponse.redirect(new URL('/catalogue?paiement=incomplet', req.url));
     }
-    const ebook = await prisma.ebook.findUnique({ where: { id: ebookId }, select: { slug: true } });
-    if (!ebook) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
+    let purchases = await prisma.purchase.findMany({
+      where: { stripeSessionId: checkout.id },
+      include: { ebook: { select: { id: true, slug: true } } },
+    });
 
-    await prisma.purchase.update({
-      where: { id: purchaseId },
+    if (!purchases.length && checkout.metadata?.purchaseId) {
+      const legacy = await prisma.purchase.findUnique({
+        where: { id: checkout.metadata.purchaseId },
+        include: { ebook: { select: { id: true, slug: true } } },
+      });
+      purchases = legacy ? [legacy] : [];
+    }
+
+    const ebookIds = purchases.map((purchase) => purchase.ebook?.id).filter((id): id is string => Boolean(id));
+    const slugs = purchases.map((purchase) => purchase.ebook?.slug).filter((slug): slug is string => Boolean(slug));
+    if (!ebookIds.length || !slugs.length) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
+
+    await prisma.purchase.updateMany({
+      where: { id: { in: purchases.map((purchase) => purchase.id) } },
       data: {
         status: 'PAID',
         stripeSessionId: checkout.id,
@@ -28,9 +41,9 @@ export async function GET(req: Request) {
       },
     });
 
-    const response = NextResponse.redirect(new URL(`/achat-confirme?slug=${ebook.slug}`, req.url));
+    const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}`, req.url));
     const current = req.headers.get('cookie')?.match(new RegExp(`${GUEST_PURCHASE_COOKIE}=([^;]+)`))?.[1];
-    const token = addGuestPurchase(current, ebookId);
+    const token = addGuestPurchases(current, ebookIds);
     response.cookies.set(GUEST_PURCHASE_COOKIE, token.value, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
@@ -43,4 +56,3 @@ export async function GET(req: Request) {
     return NextResponse.redirect(new URL('/catalogue?paiement=erreur', req.url));
   }
 }
-

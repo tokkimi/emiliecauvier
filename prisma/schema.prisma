@@ -1,5 +1,5 @@
 // ============================================================
-//  Boutique d'ebooks — Émilie Cauvier
+//  Boutique d'ebooks — Emilie Cauvier
 //  Modèle de données : utilisateurs, ebooks, achats à l'unité,
 //  abonnements mensuels, téléchargements, et données de compta/stats.
 // ============================================================
@@ -99,7 +99,7 @@ model ReadingProgress {
   @@index([userId, updatedAt])
 }
 
-// ---------------------- QUIZ (façon Coursera) ----------------------
+// ---------------------- QUIZ (avec menu de chapitres) ----------------------
 // Quiz en libre-service, en dehors des guides : l'utilisateur répond,
 // valide, obtient une note /10 et les bonnes réponses. Chaque tentative
 // est enregistrée dans son profil.
@@ -206,13 +206,14 @@ model Purchase {
   currency    String @default("CAD")
 
   // Stripe
-  stripeSessionId String? @unique
+  stripeSessionId String?
   stripePaymentId String?
 
   createdAt DateTime @default(now())
 
   @@index([userId])
   @@index([status])
+  @@index([stripeSessionId])
   @@index([createdAt])
 }
 

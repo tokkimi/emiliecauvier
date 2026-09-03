@@ -3,6 +3,7 @@ import { BookCover } from '@/components/BookCover';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { formatPrice } from '@/lib/format';
 import type { Book } from '@/data/books';
+import { AddToCartButton } from '@/components/AddToCartButton';
 
 const cardWidth = 'basis-[calc((100%_-_0.75rem)/2)] sm:basis-[calc((100%_-_2rem)/3)] lg:basis-[calc((100%_-_3rem)/4)]';
 
@@ -48,6 +49,9 @@ export function CollectionShelf({
               <p className="mt-2 line-clamp-2 font-body text-sm text-[var(--color-ink)]/65">{book.subtitle}</p>
               <p className="mt-auto pt-4 font-display text-xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             </Link>
+            <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+              <AddToCartButton slug={book.slug} />
+            </div>
           </article>
         ))}
 
@@ -59,4 +63,3 @@ export function CollectionShelf({
     </section>
   );
 }
-

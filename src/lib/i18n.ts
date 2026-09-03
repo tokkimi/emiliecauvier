@@ -41,8 +41,8 @@ const fr = {
   home_promise_1_t: 'Concret, pas théorique',
   home_promise_1_d: 'Chaque guide donne des étapes, des chiffres du Québec et un plan d’action.',
   home_promise_2_t: 'Deux façons de lire',
-  home_promise_2_d: 'En ligne façon Coursera (menu de chapitres) ou en PDF téléchargeable, à vous de choisir.',
-  home_promise_3_t: 'Écrit par une courtière',
+  home_promise_2_d: 'En ligne avec menu de chapitres ou en PDF téléchargeable, à vous de choisir.',
+  home_promise_3_t: 'Écrit par un courtier',
   home_promise_3_d: 'Le vrai terrain.',
   home_selection: 'Guides à découvrir',
   home_see_all: 'Voir tout le catalogue →',
@@ -106,7 +106,7 @@ const fr = {
   about_cta_sub: 'Voir l’abonnement',
   // Promo banner
   promo_eyebrow: 'Le site d’Emilie Cauvier',
-  promo_title: 'Une courtière, une équipe, un accompagnement complet.',
+  promo_title: 'Un courtier, une équipe, un accompagnement complet.',
   promo_desc: 'Au-delà des guides, découvrez les services de courtage d’Emilie Cauvier : achat, vente et investissement immobilier dans le Grand Montréal.',
   promo_cta: 'Visiter emiliecauvier.com →',
 };
@@ -137,7 +137,7 @@ const en: Dict = {
   home_promise_1_t: 'Concrete, not theoretical',
   home_promise_1_d: 'Every guide gives you steps, Québec figures and an action plan.',
   home_promise_2_t: 'Two ways to read',
-  home_promise_2_d: 'Online, Coursera-style (chapter menu), or as a downloadable PDF — your choice.',
+  home_promise_2_d: 'Online with a chapter menu, or as a downloadable PDF — your choice.',
   home_promise_3_t: 'Written by a broker',
   home_promise_3_d: 'Real field experience.',
   home_selection: 'Guides to discover',

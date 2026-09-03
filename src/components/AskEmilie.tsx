@@ -35,13 +35,17 @@ export function AskEmilie() {
   return (
     <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
       {open && (
-        <section role="dialog" aria-label="Demandez à Émilie" className="flex max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] max-w-[390px] flex-col overflow-hidden rounded-3xl border border-white/60 bg-[var(--color-cream)]/95 shadow-2xl backdrop-blur-xl sm:mb-3 sm:max-h-[720px]">
+        <section role="dialog" aria-label="Demandez à Emilie" className="flex max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] max-w-[390px] flex-col overflow-hidden rounded-3xl border border-white/60 bg-[var(--color-cream)]/95 shadow-2xl backdrop-blur-xl sm:mb-3 sm:max-h-[720px]">
           <header className="flex items-center justify-between bg-[#4b4545] px-5 py-4 text-white">
-            <div><p className="font-ui text-sm font-semibold">Demandez à Émilie</p><p className="font-ui text-[0.65rem] text-white/60">Assistant de La Bibliothèque</p></div>
+            <div className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-bibliotheque.png" alt="" className="h-10 w-12 rounded-xl bg-[var(--color-cream)] object-contain p-1.5" />
+              <div><p className="font-ui text-sm font-semibold">Demandez à Emilie</p><p className="font-ui text-[0.65rem] text-white/60">Assistant de La Bibliothèque</p></div>
+            </div>
             <button onClick={() => setOpen(false)} aria-label="Fermer la messagerie" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-xl">×</button>
           </header>
           <div className="min-h-0 flex-1 overscroll-contain overflow-y-auto p-5">
-            {!reply ? <p className="font-body text-sm text-[var(--color-ink)]/65">Posez une question sur l’achat, la vente, le financement ou l’investissement. Je vous orienterai uniquement vers les guides d’Émilie.</p> : (
+            {!reply ? <p className="font-body text-sm text-[var(--color-ink)]/65">Posez une question sur l’achat, la vente, le financement ou l’investissement. Je vous orienterai uniquement vers les guides d’Emilie.</p> : (
               <div>
                 <p className="rounded-2xl bg-[#f3ece5] p-4 font-body text-sm leading-relaxed">{reply.answer}</p>
                 <p className="mt-4 font-ui text-[0.65rem] uppercase tracking-[0.14em] text-[var(--color-gold)]">Pour aller plus loin</p>
@@ -58,8 +62,11 @@ export function AskEmilie() {
         </section>
       )}
       <button onClick={() => setOpen((value) => !value)} aria-expanded={open} className={`${open ? 'hidden sm:flex' : 'flex'} min-h-16 items-center gap-3 rounded-[28px] border border-white/40 bg-[#4b4545]/95 px-3 pr-5 text-left text-white shadow-xl backdrop-blur transition hover:-translate-y-0.5`}>
-        <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-cream)] font-display text-lg text-[var(--color-bordeaux)]">EC</span>
-        <span><strong className="block font-ui text-sm">Demandez à Émilie</strong><span className="font-ui text-[0.68rem] text-white/60">Assistant documentaire</span></span>
+        <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-cream)] p-1.5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-bibliotheque.png" alt="" className="h-full w-full object-contain" />
+        </span>
+        <span><strong className="block font-ui text-sm">Demandez à Emilie</strong><span className="font-ui text-[0.68rem] text-white/60">Assistant documentaire</span></span>
         <span className="ml-1 h-3 w-3 rounded-full border-2 border-white/50 bg-[#9be3a6] shadow-[0_0_0_5px_rgba(155,227,166,0.15)]" />
       </button>
     </div>

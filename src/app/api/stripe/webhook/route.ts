@@ -53,18 +53,40 @@ export async function POST(req: Request) {
       const kind = s.metadata?.kind;
       const userId = s.metadata?.userId;
 
-      if (kind === 'unit' && s.metadata?.purchaseId) {
-        await prisma.purchase.update({
-          where: { id: s.metadata.purchaseId },
-          data: {
-            status: 'PAID',
-            stripePaymentId: (s.payment_intent as string) ?? undefined,
-            guestEmail: userId ? undefined : s.customer_details?.email ?? undefined,
-          },
+      if (kind === 'unit' || kind === 'cart') {
+        const purchases = await prisma.purchase.findMany({
+          where: { stripeSessionId: s.id },
+          select: { id: true, ebookId: true },
         });
-        await prisma.analyticsEvent.create({
-          data: { userId, name: 'purchase', ebookId: s.metadata.ebookId, meta: { amount: s.amount_total } },
-        });
+        if (purchases.length) {
+          await prisma.purchase.updateMany({
+            where: { id: { in: purchases.map((purchase) => purchase.id) } },
+            data: {
+              status: 'PAID',
+              stripePaymentId: (s.payment_intent as string) ?? undefined,
+              guestEmail: userId ? undefined : s.customer_details?.email ?? undefined,
+            },
+          });
+          await Promise.all(
+            purchases.map((purchase) =>
+              prisma.analyticsEvent.create({
+                data: { userId, name: 'purchase', ebookId: purchase.ebookId, meta: { amount: s.amount_total, stripeSessionId: s.id } },
+              }),
+            ),
+          );
+        } else if (s.metadata?.purchaseId) {
+          await prisma.purchase.update({
+            where: { id: s.metadata.purchaseId },
+            data: {
+              status: 'PAID',
+              stripePaymentId: (s.payment_intent as string) ?? undefined,
+              guestEmail: userId ? undefined : s.customer_details?.email ?? undefined,
+            },
+          });
+          await prisma.analyticsEvent.create({
+            data: { userId, name: 'purchase', ebookId: s.metadata.ebookId, meta: { amount: s.amount_total } },
+          });
+        }
         await recordDailyRevenue('oneTimeCents', s.amount_total ?? 0);
       }
 

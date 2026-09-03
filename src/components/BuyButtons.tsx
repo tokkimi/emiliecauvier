@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { addCartSlug } from '@/lib/cart';
 
 export function BuyButtons({
   slug,
@@ -16,6 +17,7 @@ export function BuyButtons({
 }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [added, setAdded] = useState(false);
 
   async function buy() {
     setLoading(true);
@@ -34,6 +36,11 @@ export function BuyButtons({
     } finally {
       setLoading(false);
     }
+  }
+
+  function addToCart() {
+    addCartSlug(slug);
+    setAdded(true);
   }
 
   if (hasAccess) {
@@ -79,13 +86,17 @@ export function BuyButtons({
         disabled={loading}
         className="w-full rounded-full bg-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:opacity-60"
       >
-        {loading ? 'Redirection…' : loggedIn ? 'Acheter ce guide' : 'Acheter maintenant — sans compte'}
+        {loading ? 'Redirection…' : 'Acheter maintenant'}
       </button>
-      {!loggedIn && (
-        <p className="text-center font-ui text-xs text-[var(--color-ink)]/55">
-          Paiement sécurisé · votre courriel de livraison sera demandé par Stripe.
-        </p>
-      )}
+      <button
+        onClick={addToCart}
+        type="button"
+        className="w-full rounded-full border border-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
+      >
+        {added ? 'Ajouté au panier' : 'Ajouter au panier'}
+      </button>
+      {added && <Link href="/panier" className="block text-center font-ui text-xs text-[var(--color-bordeaux)] underline">Voir mon panier</Link>}
+      {!loggedIn && <p className="text-center font-ui text-xs text-[var(--color-ink)]/55">Au panier, vous pourrez créer un compte ou continuer sans compte.</p>}
       {error && <p className="text-center font-ui text-xs text-red-600">{error}</p>}
     </div>
   );

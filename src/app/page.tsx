@@ -5,7 +5,6 @@ import { FeaturedCarousel } from '@/components/FeaturedCarousel';
 import { getLocale, getT } from '@/lib/i18n';
 import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
 import { ProjectPathBuilder } from '@/components/ProjectPathBuilder';
-import { ToolsHub } from '@/components/ToolsHub';
 import { auth } from '@/lib/auth';
 
 export default async function HomePage() {
@@ -57,7 +56,7 @@ export default async function HomePage() {
               Où en êtes-vous dans votre projet&nbsp;?
             </h2>
             <p className="mt-4 font-body text-lg text-[var(--color-ink)]/65">
-              Répondez à quatre questions. Émilie compose un parcours de six guides et votre profil conserve votre progression, vos favoris et vos outils.
+              Répondez à quatre questions. Emilie compose un parcours de six guides et votre profil conserve votre progression, vos favoris et vos outils.
             </p>
           </div>
           <ProjectPathBuilder loggedIn={Boolean(session?.user)} />
@@ -87,13 +86,29 @@ export default async function HomePage() {
             <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Mes outils</p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-[var(--color-ink)]">Le contenu explique. L’outil vous aide à décider.</h2>
             <p className="mt-4 font-body text-[var(--color-ink)]/65">
-              Estimez votre capacité d’achat, votre mise de fonds et vos mensualités. Une boîte à outils plus complète vous attend dans votre profil.
+              Calculateurs, checklist dynamique et repères de projet se débloquent dans votre profil avec un abonnement actif ou après 3 ebooks achetés.
             </p>
             <Link href={session?.user ? '/compte#outils' : '/inscription'} className="mt-6 inline-flex min-h-11 items-center rounded-full bg-[var(--color-bordeaux)] px-6 font-ui text-sm text-white">
-              {session?.user ? 'Ouvrir tous mes outils' : 'Créer mon espace personnel'} →
+              {session?.user ? 'Voir mes outils' : 'Créer mon espace personnel'} →
             </Link>
           </div>
-          <ToolsHub compact />
+          <div className="rounded-3xl border border-[var(--color-sand)] bg-white p-5 shadow-[0_12px_40px_rgba(46,31,24,0.06)] sm:p-8">
+            <div className="flex items-center justify-between border-b border-[var(--color-sand)] pb-4">
+              <div>
+                <p className="font-ui text-[0.65rem] uppercase tracking-[0.14em] text-[var(--color-gold)]">Accès premium</p>
+                <h3 className="mt-1 font-display text-2xl text-[var(--color-bordeaux)]">Mes outils immobiliers</h3>
+              </div>
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-sand)] text-[var(--color-bordeaux)]" aria-hidden="true">🔒</span>
+            </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {['Capacité d’achat', 'Mise de fonds', 'Taxe de bienvenue', 'Mensualités', 'Rentabilité locative', 'Checklist projet'].map((label) => (
+                <div key={label} className="rounded-2xl bg-[#f7f2ec] px-4 py-3 font-ui text-sm text-[var(--color-ink)]/70">{label}</div>
+              ))}
+            </div>
+            <p className="mt-5 font-body text-sm text-[var(--color-ink)]/60">
+              Abonnez-vous ou achetez 3 ebooks pour utiliser les calculateurs complets dans votre espace lecteur.
+            </p>
+          </div>
         </div>
       </section>
 

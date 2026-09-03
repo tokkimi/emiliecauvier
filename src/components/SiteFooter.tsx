@@ -9,7 +9,7 @@ export async function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:grid-cols-2">
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-signe-em.png" alt="Signé par Emilie" className="mb-4 h-16 w-auto" />
+          <img src="/logo-bibliotheque.png" alt="" className="mb-4 h-16 w-auto" />
           <p className="font-display text-lg">La Bibliothèque</p>
           <p className="mt-2 font-ui text-sm text-white/60">
             {t.footer_tagline_1}

@@ -53,7 +53,7 @@ async function main() {
     update: { role: 'ADMIN' },
     create: {
       email: adminEmail,
-      name: 'Émilie Cauvier',
+      name: 'Emilie Cauvier',
       passwordHash: await bcrypt.hash(adminPass, 10),
       role: 'ADMIN',
     },
