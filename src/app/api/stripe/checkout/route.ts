@@ -92,6 +92,9 @@ export async function POST(req: Request) {
     success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: ebooks.length > 1 ? `${APP_URL}/panier` : `${APP_URL}/livre/${ebooks[0].slug}`,
     metadata,
+    payment_intent_data: {
+      description: 'Guides Immo Quebec - ebooks',
+    },
   };
   // Idem : Checkout standard, pas de « Managed Payments ».
   (unitParams as Record<string, unknown>).managed_payments = { enabled: false };

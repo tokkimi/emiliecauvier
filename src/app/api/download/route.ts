@@ -7,6 +7,7 @@ import { canDownload } from '@/lib/entitlements';
 import { bySlug } from '@/data/books';
 import { cookies } from 'next/headers';
 import { GUEST_PURCHASE_COOKIE, guestHasAccess } from '@/lib/guestPurchase';
+import { verifyPurchaseDownloadToken } from '@/lib/purchaseDownloadToken';
 
 /**
  * Téléchargement du PDF, réservé aux utilisateurs ayant l'accès.
@@ -31,7 +32,17 @@ export async function GET(req: Request) {
   // seulement la lecture en ligne.
   const guestLibrary = (await cookies()).get(GUEST_PURCHASE_COOKIE)?.value;
   const guestAccess = guestHasAccess(guestLibrary, ebook.id);
-  const ok = guestAccess || (await canDownload(userId, ebook.id));
+  let signedPurchaseAccess = false;
+  const purchaseId = searchParams.get('purchase');
+  const token = searchParams.get('token');
+  if (purchaseId && verifyPurchaseDownloadToken(token, purchaseId, ebook.id)) {
+    const purchase = await prisma.purchase.findFirst({
+      where: { id: purchaseId, ebookId: ebook.id, status: 'PAID' },
+      select: { id: true },
+    });
+    signedPurchaseAccess = Boolean(purchase);
+  }
+  const ok = guestAccess || signedPurchaseAccess || (await canDownload(userId, ebook.id));
   if (!ok) return NextResponse.redirect(new URL(`/livre/${slug}?pdf=achat`, req.url));
 
   // Journalise le téléchargement.

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import type Stripe from 'stripe';
 import { assertStripe } from '@/lib/stripe';
 import { prisma } from '@/lib/db';
+import { sendPurchaseEmail } from '@/lib/purchaseEmail';
 
 // Stripe a besoin du corps brut pour vérifier la signature.
 export const runtime = 'nodejs';
@@ -56,7 +57,7 @@ export async function POST(req: Request) {
       if (kind === 'unit' || kind === 'cart') {
         const purchases = await prisma.purchase.findMany({
           where: { stripeSessionId: s.id },
-          select: { id: true, ebookId: true },
+          include: { ebook: { select: { id: true, slug: true, title: true } } },
         });
         if (purchases.length) {
           await prisma.purchase.updateMany({
@@ -74,6 +75,17 @@ export async function POST(req: Request) {
               }),
             ),
           );
+          await sendPurchaseEmail({
+            to: s.customer_details?.email,
+            stripeSessionId: s.id,
+            guides: purchases
+              .map((purchase) =>
+                purchase.ebook
+                  ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
+                  : null,
+              )
+              .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
+          });
         } else if (s.metadata?.purchaseId) {
           await prisma.purchase.update({
             where: { id: s.metadata.purchaseId },

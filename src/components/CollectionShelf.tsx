@@ -36,20 +36,20 @@ export function CollectionShelf({
 
       <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {books.map((book) => (
-          <article key={book.slug} className={`group relative min-w-0 shrink-0 snap-start overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white shadow-[0_8px_30px_rgba(46,31,24,0.05)] transition hover:-translate-y-1 hover:shadow-lg ${cardWidth}`}>
+          <article key={book.slug} className={`group relative flex min-w-0 shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white shadow-[0_8px_30px_rgba(46,31,24,0.05)] transition hover:-translate-y-1 hover:shadow-lg ${cardWidth}`}>
             <Link href={`/livre/${book.slug}`} className="block">
               <BookCover number={book.number} title={book.title} collection={collectionLabel} className="w-full border-b border-[var(--color-sand)]" />
             </Link>
             <div className="absolute right-3 top-3">
               <FavoriteButton slug={book.slug} initialFavorite={favoriteSlugs.has(book.slug)} loggedIn={loggedIn} />
             </div>
-            <Link href={`/livre/${book.slug}`} className="flex min-h-44 flex-col p-4 sm:p-5">
+            <Link href={`/livre/${book.slug}`} className="flex min-h-44 flex-1 flex-col p-4 sm:p-5">
               <p className="font-ui text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[var(--color-gold)]">{collectionLabel} · n°{book.number}</p>
               <h3 className="mt-2 font-display text-lg leading-tight text-[var(--color-bordeaux)] group-hover:underline sm:text-xl">{book.title}</h3>
               <p className="mt-2 line-clamp-2 font-body text-sm text-[var(--color-ink)]/65">{book.subtitle}</p>
               <p className="mt-auto pt-4 font-display text-xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             </Link>
-            <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+            <div className="mt-auto px-4 pb-4 sm:px-5 sm:pb-5">
               <AddToCartButton slug={book.slug} />
             </div>
           </article>

@@ -11,6 +11,7 @@ abonnement mensuel, comptes utilisateurs, et back-office (catalogue, utilisateur
 - **Prisma** + PostgreSQL (modèle complet dans `prisma/schema.prisma`)
 - **Auth.js v5** (email + mot de passe, sessions JWT, bcrypt)
 - **Stripe** — achat à l'unité (Checkout `payment`) + abonnement (Checkout `subscription`)
+- **Resend** — email automatique après achat avec liens PDF sécurisés
 - Lecteur en ligne gated + téléchargement PDF par lien signé
 
 ## Modèle de données (résumé)
@@ -42,6 +43,7 @@ npm run dev                  # http://localhost:3000
 3. Ajouter une base **Postgres** (Vercel Postgres / Neon / Supabase) → `DATABASE_URL`.
 4. Renseigner les variables d'environnement (voir `.env.example`).
 5. Configurer le **webhook Stripe** vers `/api/stripe/webhook`.
+6. Configurer `RESEND_API_KEY` et `PURCHASE_EMAIL_FROM` pour envoyer les PDF achetés par email.
 
 ## Structure
 

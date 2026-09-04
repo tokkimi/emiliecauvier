@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { assertStripe } from '@/lib/stripe';
 import { prisma } from '@/lib/db';
 import { addGuestPurchases, GUEST_PURCHASE_COOKIE } from '@/lib/guestPurchase';
+import { sendPurchaseEmail } from '@/lib/purchaseEmail';
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -16,13 +17,13 @@ export async function GET(req: Request) {
     }
     let purchases = await prisma.purchase.findMany({
       where: { stripeSessionId: checkout.id },
-      include: { ebook: { select: { id: true, slug: true } } },
+      include: { ebook: { select: { id: true, slug: true, title: true } } },
     });
 
     if (!purchases.length && checkout.metadata?.purchaseId) {
       const legacy = await prisma.purchase.findUnique({
         where: { id: checkout.metadata.purchaseId },
-        include: { ebook: { select: { id: true, slug: true } } },
+        include: { ebook: { select: { id: true, slug: true, title: true } } },
       });
       purchases = legacy ? [legacy] : [];
     }
@@ -39,6 +40,18 @@ export async function GET(req: Request) {
         stripePaymentId: typeof checkout.payment_intent === 'string' ? checkout.payment_intent : undefined,
         guestEmail: checkout.metadata?.userId ? undefined : checkout.customer_details?.email ?? undefined,
       },
+    });
+
+    await sendPurchaseEmail({
+      to: checkout.customer_details?.email,
+      stripeSessionId: checkout.id,
+      guides: purchases
+        .map((purchase) =>
+          purchase.ebook
+            ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
+            : null,
+        )
+        .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
     });
 
     const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}`, req.url));
