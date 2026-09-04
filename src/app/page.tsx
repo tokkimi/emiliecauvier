@@ -47,6 +47,29 @@ export default async function HomePage() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-[var(--color-gold)]/20 blur-3xl" />
       </section>
 
+      {/* SÉLECTION */}
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+        <div className="mb-8 flex items-end justify-between">
+          <h2 className="font-display text-3xl text-[var(--color-ink)]">{t.home_selection}</h2>
+          <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
+            {t.home_see_all}
+          </Link>
+        </div>
+        <FeaturedCarousel
+          items={featured.map((b) => {
+            const loc = localizeBook(b, locale);
+            return {
+              slug: b.slug,
+              number: b.number,
+              collectionLabel: col(b.collection),
+              title: loc.title,
+              subtitle: loc.subtitle,
+              price: formatPrice(b.priceCents),
+            };
+          })}
+        />
+      </section>
+
       {/* PARCOURS PERSONNALISÉ */}
       <section className="border-y border-[var(--color-sand)] bg-[#f7f2ec]">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
@@ -110,29 +133,6 @@ export default async function HomePage() {
             </p>
           </div>
         </div>
-      </section>
-
-      {/* SÉLECTION */}
-      <section className="mx-auto max-w-6xl px-5 pb-10">
-        <div className="mb-8 flex items-end justify-between">
-          <h2 className="font-display text-3xl text-[var(--color-ink)]">{t.home_selection}</h2>
-          <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
-            {t.home_see_all}
-          </Link>
-        </div>
-        <FeaturedCarousel
-          items={featured.map((b) => {
-            const loc = localizeBook(b, locale);
-            return {
-              slug: b.slug,
-              number: b.number,
-              collectionLabel: col(b.collection),
-              title: loc.title,
-              subtitle: loc.subtitle,
-              price: formatPrice(b.priceCents),
-            };
-          })}
-        />
       </section>
 
       {/* COLLECTIONS */}
