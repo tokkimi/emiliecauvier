@@ -6,7 +6,10 @@ import { ClearCartOnSuccess } from '@/components/ClearCartOnSuccess';
 import { auth } from '@/lib/auth';
 import { getLocale } from '@/lib/i18n';
 
-export const metadata = { title: 'Achat confirmé' };
+export async function generateMetadata() {
+  const locale = await getLocale();
+  return { title: locale === 'en' ? 'Purchase confirmed' : 'Achat confirmé' };
+}
 
 export default async function PurchaseConfirmedPage({ searchParams }: { searchParams: Promise<{ slug?: string; slugs?: string }> }) {
   const locale = await getLocale();
