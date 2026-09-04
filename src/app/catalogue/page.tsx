@@ -46,7 +46,7 @@ export default async function CataloguePage({
       {/* Navigation par collection — une seule rangée, glissable au doigt sur mobile. */}
       <nav aria-label="Collections" className="-mx-5 mt-8 sm:mx-0">
         <p className="px-5 font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)] sm:px-0">
-          Explorer par collection
+          {t.cat_explore_by_collection}
         </p>
         <div className="mt-3 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2 font-ui text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:px-0">
           <Link
@@ -89,6 +89,7 @@ export default async function CataloguePage({
           collectionLabel={col(selectedCollection)}
           favoriteSlugs={favoriteSlugs}
           loggedIn={Boolean(userId)}
+          locale={locale}
         />
       ) : (
         collections.map((currentCollection) => {
@@ -103,6 +104,7 @@ export default async function CataloguePage({
               collectionLabel={col(currentCollection)}
               favoriteSlugs={favoriteSlugs}
               loggedIn={Boolean(userId)}
+              locale={locale}
             />
           );
         })

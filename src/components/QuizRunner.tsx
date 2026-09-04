@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import type { Locale } from '@/lib/i18n';
 
 interface Question {
   q: string;
@@ -20,11 +21,44 @@ export function QuizRunner({
   slug,
   questions,
   loggedIn,
+  locale,
 }: {
   slug: string;
   questions: Question[];
   loggedIn: boolean;
+  locale: Locale;
 }) {
+  const t = locale === 'en'
+    ? {
+        error: 'Something went wrong. Please try again.',
+        result: 'Your result',
+        score: (score: number, total: number) => `${score} correct answer${score > 1 ? 's' : ''} out of ${total}`,
+        saved: '✓ Result saved to your profile.',
+        saveError: 'Result not saved. Please try again.',
+        loginToSave: 'Log in to save your results to your profile.',
+        login: 'Log in →',
+        correct: 'Correct answer',
+        correction: 'Explanation —',
+        validating: 'Checking…',
+        submit: 'Submit my answers',
+        restart: 'Restart quiz',
+        answered: (count: number, total: number) => `${count}/${total} answered`,
+      }
+    : {
+        error: 'Une erreur est survenue. Réessayez.',
+        result: 'Votre résultat',
+        score: (score: number, total: number) => `${score} bonne${score > 1 ? 's' : ''} réponse${score > 1 ? 's' : ''} sur ${total}`,
+        saved: '✓ Résultat enregistré dans votre profil.',
+        saveError: 'Résultat non enregistré (erreur). Réessayez.',
+        loginToSave: 'Connectez-vous pour enregistrer vos résultats dans votre profil.',
+        login: 'Se connecter →',
+        correct: 'Bonne réponse',
+        correction: 'Corrigé —',
+        validating: 'Validation…',
+        submit: 'Valider mes réponses',
+        restart: 'Recommencer le quiz',
+        answered: (count: number, total: number) => `${count}/${total} répondues`,
+      };
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [result, setResult] = useState<Result | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -48,7 +82,7 @@ export function QuizRunner({
       setResult(data);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch {
-      setError('Une erreur est survenue. Réessayez.');
+      setError(t.error);
     } finally {
       setSubmitting(false);
     }
@@ -72,24 +106,24 @@ export function QuizRunner({
     <div className="mx-auto max-w-2xl">
       {result && (
         <div className="mb-8 rounded-2xl border border-[var(--color-sand)] bg-white p-7 text-center">
-          <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Votre résultat</p>
+          <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.result}</p>
           <p className={`mt-2 font-display text-5xl ${noteColor}`}>{result.scoreOn10}/10</p>
           <p className="mt-2 font-body text-[var(--color-ink)]/70">
-            {result.score} bonne{result.score > 1 ? 's' : ''} réponse{result.score > 1 ? 's' : ''} sur {result.total}
+            {t.score(result.score, result.total)}
           </p>
           <p className="mt-3 font-body text-sm text-[var(--color-ink)]/60">
             {result.saved
-              ? '✓ Résultat enregistré dans votre profil.'
+              ? t.saved
               : loggedIn
-                ? 'Résultat non enregistré (erreur). Réessayez.'
-                : 'Connectez-vous pour enregistrer vos résultats dans votre profil.'}
+                ? t.saveError
+                : t.loginToSave}
           </p>
           {!loggedIn && (
             <Link
               href={`/connexion?next=/lire/${slug}`}
               className="mt-3 inline-block font-ui text-sm text-[var(--color-bordeaux)] hover:underline"
             >
-              Se connecter →
+              {t.login}
             </Link>
           )}
         </div>
@@ -130,14 +164,14 @@ export function QuizRunner({
                         className="accent-[var(--color-bordeaux)]"
                       />
                       <span className="flex-1">{opt}</span>
-                      {isCorrect && <span className="font-ui text-xs font-semibold text-green-700">Bonne réponse</span>}
+                      {isCorrect && <span className="font-ui text-xs font-semibold text-green-700">{t.correct}</span>}
                     </label>
                   );
                 })}
               </div>
               {answered && result!.explanations[i] && (
                 <p className="mt-2 font-body text-sm text-[var(--color-ink)]/70">
-                  <span className="font-medium text-[var(--color-gold)]">Corrigé —</span> {result!.explanations[i]}
+                  <span className="font-medium text-[var(--color-gold)]">{t.correction}</span> {result!.explanations[i]}
                 </p>
               )}
             </div>
@@ -154,19 +188,19 @@ export function QuizRunner({
             disabled={!allAnswered || submitting}
             className="rounded-full bg-[var(--color-bordeaux)] px-7 py-3 font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:opacity-40"
           >
-            {submitting ? 'Validation…' : 'Valider mes réponses'}
+            {submitting ? t.validating : t.submit}
           </button>
         ) : (
           <button
             onClick={reset}
             className="rounded-full border border-[var(--color-bordeaux)] px-7 py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
           >
-            Recommencer le quiz
+            {t.restart}
           </button>
         )}
         {!result && !allAnswered && (
           <p className="font-body text-sm text-[var(--color-ink)]/50">
-            {answeredCount}/{questions.length} répondues
+            {t.answered(answeredCount, questions.length)}
           </p>
         )}
       </div>

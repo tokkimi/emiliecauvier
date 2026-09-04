@@ -3,8 +3,9 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CART_CHANGED_EVENT, readCartSlugs } from '@/lib/cart';
+import type { Locale } from '@/lib/i18n';
 
-export function CartQuickBar() {
+export function CartQuickBar({ locale }: { locale: Locale }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -26,8 +27,8 @@ export function CartQuickBar() {
         href="/panier"
         className="flex min-h-12 items-center justify-between gap-4 rounded-full border border-white/50 bg-[var(--color-bordeaux)] px-5 font-ui text-sm font-medium text-white shadow-2xl backdrop-blur transition hover:bg-[var(--color-bordeaux-dark)] sm:min-w-[330px]"
       >
-        <span>{count} guide{count > 1 ? 's' : ''} au panier</span>
-        <span>Finaliser →</span>
+        <span>{locale === 'en' ? `${count} guide${count > 1 ? 's' : ''} in cart` : `${count} guide${count > 1 ? 's' : ''} au panier`}</span>
+        <span>{locale === 'en' ? 'Checkout →' : 'Finaliser →'}</span>
       </Link>
     </div>
   );

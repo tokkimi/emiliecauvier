@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { auth } from '@/lib/auth';
-import { getT } from '@/lib/i18n';
+import { getLocale, getT } from '@/lib/i18n';
 import { LangToggle } from '@/components/LangToggle';
 import { MobileMenu } from '@/components/MobileMenu';
 import { CartLink } from '@/components/CartLink';
@@ -9,6 +9,7 @@ export async function SiteHeader() {
   const session = await auth().catch(() => null);
   const isAdmin = (session?.user as { role?: string })?.role === 'ADMIN';
   const loggedIn = Boolean(session?.user);
+  const locale = await getLocale();
   const t = await getT();
 
   const items = [
@@ -34,13 +35,13 @@ export async function SiteHeader() {
           <img src="/logo-bibliotheque.png" alt="" className="h-10 w-14 shrink-0 object-contain sm:h-11 sm:w-16" />
           <span className="font-display text-lg leading-none tracking-tight sm:text-xl">La Bibliothèque</span>
           <span className="hidden font-ui text-[0.6rem] uppercase tracking-[0.2em] text-[var(--color-gold)] lg:inline">
-            Édition 2026
+            {locale === 'en' ? '2026 Edition' : 'Édition 2026'}
           </span>
         </Link>
 
         {/* Desktop */}
         <nav className="hidden items-center gap-x-5 font-ui text-sm sm:flex">
-          <CartLink />
+          <CartLink locale={locale} />
           {items.map((it) => (
             <Link
               key={it.href}
@@ -60,7 +61,7 @@ export async function SiteHeader() {
         </nav>
 
         {/* Mobile */}
-        <MobileMenu items={items} showCart />
+        <MobileMenu items={items} showCart locale={locale} />
       </div>
     </header>
   );

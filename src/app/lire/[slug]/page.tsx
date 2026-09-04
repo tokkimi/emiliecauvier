@@ -79,6 +79,7 @@ export default async function ReaderPage({
       loggedIn={Boolean(userId)}
       initialChapter={initialProgress?.chapterIndex ?? 0}
       frenchNotice={locale === 'en' && !isEnglish}
+      locale={locale}
     />
   );
 }

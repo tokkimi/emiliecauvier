@@ -5,6 +5,7 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { AskEmilie } from '@/components/AskEmilie';
 import { CookieConsent } from '@/components/CookieConsent';
 import { CartQuickBar } from '@/components/CartQuickBar';
+import { getLocale } from '@/lib/i18n';
 
 export const metadata: Metadata = {
   title: {
@@ -23,9 +24,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale();
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -40,19 +42,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <section className="border-t border-[var(--color-sand)] bg-[#f6f1eb]">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 text-center sm:flex-row sm:py-12 sm:text-left">
             <blockquote className="max-w-3xl font-display text-2xl italic leading-relaxed text-[var(--color-bordeaux)] sm:text-3xl">
-              « Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. »
+              {locale === 'en'
+                ? '“Make informed decisions. Choose with confidence. Live without regret.”'
+                : '« Prenez des décisions éclairées. Choisissez avec confiance. Vivez sans regret. »'}
             </blockquote>
             <div className="shrink-0 text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo-signe-em.png" alt="Signé par Emilie" className="mx-auto h-20 w-auto brightness-0 opacity-70" />
-              <p className="mt-1 font-body text-sm italic text-[var(--color-ink)]/60">À bientôt, Emilie</p>
+              <img src="/logo-signe-em.png" alt={locale === 'en' ? 'Signed by Emilie' : 'Signé par Emilie'} className="mx-auto h-20 w-auto brightness-0 opacity-70" />
+              <p className="mt-1 font-body text-sm italic text-[var(--color-ink)]/60">{locale === 'en' ? 'See you soon, Emilie' : 'À bientôt, Emilie'}</p>
             </div>
           </div>
         </section>
         <SiteFooter />
-        <CartQuickBar />
-        <AskEmilie />
-        <CookieConsent />
+        <CartQuickBar locale={locale} />
+        <AskEmilie locale={locale} />
+        <CookieConsent locale={locale} />
       </body>
     </html>
   );

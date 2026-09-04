@@ -3,18 +3,39 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { addCartSlug } from '@/lib/cart';
+import type { Locale } from '@/lib/i18n';
 
 export function BuyButtons({
   slug,
   hasAccess,
   canDownload,
   loggedIn,
+  locale,
 }: {
   slug: string;
   hasAccess: boolean;
   canDownload: boolean;
   loggedIn: boolean;
+  locale: Locale;
 }) {
+  const t = {
+    readOnline: locale === 'en' ? 'Read online' : 'Lire en ligne',
+    downloadPdf: locale === 'en' ? 'Download the PDF' : 'Télécharger le PDF',
+    subscriptionNotice:
+      locale === 'en'
+        ? '📖 Unlimited online reading is included with your subscription. The downloadable PDF is reserved for single-guide purchases.'
+        : '📖 Lecture en ligne illimitée avec votre abonnement. Le PDF téléchargeable est réservé à l’achat à l’unité.',
+    buyPdf: locale === 'en' ? 'Buy the PDF for this guide' : 'Acheter le PDF de ce guide',
+    access: locale === 'en' ? '✓ You have access to this guide' : '✓ Vous avez accès à ce guide',
+    buyNow: locale === 'en' ? 'Buy now' : 'Acheter maintenant',
+    addCart: locale === 'en' ? 'Add to cart' : 'Ajouter au panier',
+    addedCart: locale === 'en' ? 'Added to cart' : 'Ajouté au panier',
+    viewCart: locale === 'en' ? 'View my cart' : 'Voir mon panier',
+    guestNotice: locale === 'en' ? 'At checkout, you can create an account or continue without one.' : 'Au panier, vous pourrez créer un compte ou continuer sans compte.',
+    redirect: locale === 'en' ? 'Redirecting…' : 'Redirection…',
+    paymentUnavailable: locale === 'en' ? 'Payment is unavailable right now.' : 'Paiement indisponible pour le moment.',
+    networkError: locale === 'en' ? 'Network error. Please try again.' : 'Erreur réseau. Réessayez.',
+  };
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [added, setAdded] = useState(false);
@@ -30,9 +51,9 @@ export function BuyButtons({
       });
       const data = await res.json();
       if (data.url) window.location.href = data.url;
-      else setError(data.error ?? 'Paiement indisponible pour le moment.');
+      else setError(data.error ?? t.paymentUnavailable);
     } catch {
-      setError('Erreur réseau. Réessayez.');
+      setError(t.networkError);
     } finally {
       setLoading(false);
     }
@@ -50,31 +71,31 @@ export function BuyButtons({
           href={`/lire/${slug}`}
           className="block rounded-full bg-[var(--color-bordeaux)] py-3 text-center font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)]"
         >
-          Lire en ligne
+          {t.readOnline}
         </Link>
         {canDownload ? (
           <a
             href={`/api/download?slug=${slug}`}
             className="block rounded-full border border-[var(--color-bordeaux)] py-3 text-center font-ui text-sm text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
           >
-            Télécharger le PDF
+            {t.downloadPdf}
           </a>
         ) : (
           <div className="rounded-2xl border border-dashed border-[var(--color-sand)] bg-[var(--color-sand)]/40 p-4">
             <p className="font-ui text-xs text-[var(--color-ink)]/70">
-              📖 Lecture en ligne illimitée avec votre abonnement. Le <strong>PDF téléchargeable</strong> est réservé à l&apos;achat à l&apos;unité.
+              {t.subscriptionNotice}
             </p>
             <button
               onClick={buy}
               disabled={loading}
               className="mt-3 w-full rounded-full bg-[var(--color-bordeaux)] py-2.5 font-ui text-xs font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:opacity-60"
             >
-              {loading ? 'Redirection…' : 'Acheter le PDF de ce guide'}
+              {loading ? t.redirect : t.buyPdf}
             </button>
             {error && <p className="mt-2 text-center font-ui text-xs text-red-600">{error}</p>}
           </div>
         )}
-        <p className="text-center font-ui text-xs text-green-700">✓ Vous avez accès à ce guide</p>
+        <p className="text-center font-ui text-xs text-green-700">{t.access}</p>
       </div>
     );
   }
@@ -86,17 +107,17 @@ export function BuyButtons({
         disabled={loading}
         className="w-full rounded-full bg-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:opacity-60"
       >
-        {loading ? 'Redirection…' : 'Acheter maintenant'}
+        {loading ? t.redirect : t.buyNow}
       </button>
       <button
         onClick={addToCart}
         type="button"
         className="w-full rounded-full border border-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
       >
-        {added ? 'Ajouté au panier' : 'Ajouter au panier'}
+        {added ? t.addedCart : t.addCart}
       </button>
-      {added && <Link href="/panier" className="block text-center font-ui text-xs text-[var(--color-bordeaux)] underline">Voir mon panier</Link>}
-      {!loggedIn && <p className="text-center font-ui text-xs text-[var(--color-ink)]/55">Au panier, vous pourrez créer un compte ou continuer sans compte.</p>}
+      {added && <Link href="/panier" className="block text-center font-ui text-xs text-[var(--color-bordeaux)] underline">{t.viewCart}</Link>}
+      {!loggedIn && <p className="text-center font-ui text-xs text-[var(--color-ink)]/55">{t.guestNotice}</p>}
       {error && <p className="text-center font-ui text-xs text-red-600">{error}</p>}
     </div>
   );

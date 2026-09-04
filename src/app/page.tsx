@@ -56,6 +56,7 @@ export default async function HomePage() {
           </Link>
         </div>
         <FeaturedCarousel
+          locale={locale}
           items={featured.map((b) => {
             const loc = localizeBook(b, locale);
             return {
@@ -74,15 +75,15 @@ export default async function HomePage() {
       <section className="border-y border-[var(--color-sand)] bg-[#f7f2ec]">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
           <div className="mb-10 max-w-3xl">
-            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Votre projet, votre bibliothèque</p>
+            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.home_project_eyebrow}</p>
             <h2 className="mt-3 font-display text-3xl leading-tight text-[var(--color-ink)] sm:text-5xl">
-              Où en êtes-vous dans votre projet&nbsp;?
+              {t.home_project_title}
             </h2>
             <p className="mt-4 font-body text-lg text-[var(--color-ink)]/65">
-              Répondez à quatre questions. Emilie compose un parcours de six guides et votre profil conserve votre progression, vos favoris et vos outils.
+              {t.home_project_desc}
             </p>
           </div>
-          <ProjectPathBuilder loggedIn={Boolean(session?.user)} />
+          <ProjectPathBuilder loggedIn={Boolean(session?.user)} locale={locale} />
         </div>
       </section>
 
@@ -106,30 +107,30 @@ export default async function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-20 sm:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
-            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Mes outils</p>
-            <h2 className="mt-3 font-display text-4xl leading-tight text-[var(--color-ink)]">Le contenu explique. L’outil vous aide à décider.</h2>
+            <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.home_tools_eyebrow}</p>
+            <h2 className="mt-3 font-display text-4xl leading-tight text-[var(--color-ink)]">{t.home_tools_title}</h2>
             <p className="mt-4 font-body text-[var(--color-ink)]/65">
-              Calculateurs, checklist dynamique et repères de projet se débloquent dans votre profil avec un abonnement actif ou après 3 ebooks achetés.
+              {t.home_tools_desc}
             </p>
             <Link href={session?.user ? '/compte#outils' : '/inscription'} className="mt-6 inline-flex min-h-11 items-center rounded-full bg-[var(--color-bordeaux)] px-6 font-ui text-sm text-white">
-              {session?.user ? 'Voir mes outils' : 'Créer mon espace personnel'} →
+              {session?.user ? t.home_tools_cta_logged : t.home_tools_cta_guest} →
             </Link>
           </div>
           <div className="rounded-3xl border border-[var(--color-sand)] bg-white p-5 shadow-[0_12px_40px_rgba(46,31,24,0.06)] sm:p-8">
             <div className="flex items-center justify-between border-b border-[var(--color-sand)] pb-4">
               <div>
-                <p className="font-ui text-[0.65rem] uppercase tracking-[0.14em] text-[var(--color-gold)]">Accès premium</p>
-                <h3 className="mt-1 font-display text-2xl text-[var(--color-bordeaux)]">Mes outils immobiliers</h3>
+                <p className="font-ui text-[0.65rem] uppercase tracking-[0.14em] text-[var(--color-gold)]">{t.home_tools_access}</p>
+                <h3 className="mt-1 font-display text-2xl text-[var(--color-bordeaux)]">{t.home_tools_card_title}</h3>
               </div>
               <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-sand)] text-[var(--color-bordeaux)]" aria-hidden="true">🔒</span>
             </div>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              {['Capacité d’achat', 'Mise de fonds', 'Taxe de bienvenue', 'Mensualités', 'Rentabilité locative', 'Checklist projet'].map((label) => (
+              {[t.tool_capacity, t.tool_down_payment, t.tool_welcome_tax, t.tool_monthly, t.tool_profitability, t.tool_checklist].map((label) => (
                 <div key={label} className="rounded-2xl bg-[#f7f2ec] px-4 py-3 font-ui text-sm text-[var(--color-ink)]/70">{label}</div>
               ))}
             </div>
             <p className="mt-5 font-body text-sm text-[var(--color-ink)]/60">
-              Abonnez-vous ou achetez 3 ebooks pour utiliser les calculateurs complets dans votre espace lecteur.
+              {t.home_tools_unlock}
             </p>
           </div>
         </div>

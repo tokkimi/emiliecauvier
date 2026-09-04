@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRef } from 'react';
 import { BookCover } from '@/components/BookCover';
+import type { Locale } from '@/lib/i18n';
 
 export type FeaturedItem = {
   slug: string;
@@ -14,7 +15,7 @@ export type FeaturedItem = {
 };
 
 /** Sélection de guides en défilement horizontal, avec deux flèches de chaque côté. */
-export function FeaturedCarousel({ items }: { items: FeaturedItem[] }) {
+export function FeaturedCarousel({ items, locale }: { items: FeaturedItem[]; locale: Locale }) {
   const ref = useRef<HTMLDivElement>(null);
 
   const scroll = (dir: 1 | -1) => {
@@ -28,7 +29,7 @@ export function FeaturedCarousel({ items }: { items: FeaturedItem[] }) {
       {/* Flèche gauche */}
       <button
         type="button"
-        aria-label="Précédent"
+        aria-label={locale === 'en' ? 'Previous' : 'Précédent'}
         onClick={() => scroll(-1)}
         className="absolute -left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[var(--color-sand)] bg-white/90 text-[var(--color-bordeaux)] shadow-md backdrop-blur transition hover:bg-white sm:flex"
       >
@@ -68,7 +69,7 @@ export function FeaturedCarousel({ items }: { items: FeaturedItem[] }) {
       {/* Flèche droite */}
       <button
         type="button"
-        aria-label="Suivant"
+        aria-label={locale === 'en' ? 'Next' : 'Suivant'}
         onClick={() => scroll(1)}
         className="absolute -right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-[var(--color-sand)] bg-white/90 text-[var(--color-bordeaux)] shadow-md backdrop-blur transition hover:bg-white sm:flex"
       >

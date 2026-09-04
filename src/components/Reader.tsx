@@ -5,6 +5,7 @@ import { useState } from 'react';
 import type { ReaderChapter } from '@/lib/reader';
 import { ReaderConsent } from '@/components/ReaderConsent';
 import { QuizRunner } from '@/components/QuizRunner';
+import type { Locale } from '@/lib/i18n';
 
 export function Reader({
   slug,
@@ -17,6 +18,7 @@ export function Reader({
   loggedIn,
   initialChapter = 0,
   frenchNotice = false,
+  locale,
 }: {
   slug: string;
   title: string;
@@ -28,7 +30,19 @@ export function Reader({
   loggedIn: boolean;
   initialChapter?: number;
   frenchNotice?: boolean;
+  locale: Locale;
 }) {
+  const t = {
+    back: locale === 'en' ? '← Guide page' : '← Fiche du guide',
+    profile: locale === 'en' ? 'My profile' : 'Mon profil',
+    catalogue: locale === 'en' ? 'Catalogue' : 'Catalogue',
+    progress: locale === 'en' ? 'Progress' : 'Progression',
+    locked: locale === 'en' ? 'Locked' : 'Verrouillé',
+    quiz: locale === 'en' ? 'Quiz — test yourself' : 'Quiz — testez-vous',
+    chapter: locale === 'en' ? 'Chapter' : 'Chapitre',
+    previous: locale === 'en' ? '← Previous' : '← Précédent',
+    next: locale === 'en' ? 'Next →' : 'Suivant →',
+  };
   // En aperçu : seul le premier chapitre est déverrouillé.
   const lastIndex = chapters.length - 1 + (hasQuiz ? 1 : 0);
   const [active, setActive] = useState(
@@ -51,19 +65,19 @@ export function Reader({
 
   return (
     <>
-    <ReaderConsent />
+    <ReaderConsent locale={locale} />
     <div className="mx-auto flex max-w-6xl flex-col gap-0 lg:flex-row">
       {/* Menu latéral — avec menu de chapitres */}
       <aside className="border-b border-[var(--color-sand)] bg-white lg:w-80 lg:shrink-0 lg:border-b-0 lg:border-r">
         <div className="p-6">
           <div className="flex flex-wrap items-center justify-between gap-3 font-ui text-xs text-[var(--color-bordeaux)]">
-            <Link href={`/livre/${slug}`} className="hover:underline">← Fiche du guide</Link>
+            <Link href={`/livre/${slug}`} className="hover:underline">{t.back}</Link>
             {loggedIn ? (
               <Link href="/compte" className="rounded-full border border-[var(--color-sand)] bg-[var(--color-cream)] px-3 py-2 font-medium hover:border-[var(--color-gold)]">
-                Mon profil
+                {t.profile}
               </Link>
             ) : (
-              <Link href="/catalogue" className="hover:underline">Catalogue</Link>
+              <Link href="/catalogue" className="hover:underline">{t.catalogue}</Link>
             )}
           </div>
           <h1 className="mt-3 font-display text-lg leading-snug text-[var(--color-ink)]">{title}</h1>
@@ -71,7 +85,7 @@ export function Reader({
           {!previewOnly && (
             <div className="mt-5" aria-label={`Progression : chapitre ${Math.min(active + 1, chapters.length)} sur ${chapters.length}`}>
               <div className="flex items-center justify-between font-ui text-[0.68rem] uppercase tracking-[0.12em] text-[var(--color-ink)]/50">
-                <span>Progression</span>
+                <span>{t.progress}</span>
                 <span>{Math.round((Math.min(active + 1, chapters.length) / chapters.length) * 100)} %</span>
               </div>
               <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[var(--color-sand)]">
@@ -102,7 +116,7 @@ export function Reader({
               >
                 <span className="font-ui text-xs text-[var(--color-gold)]">{String(i + 1).padStart(2, '0')}</span>
                 <span className="flex-1">{c.title}</span>
-                {locked && <span title="Verrouillé">🔒</span>}
+                {locked && <span title={t.locked}>🔒</span>}
               </button>
             );
           })}
@@ -114,8 +128,8 @@ export function Reader({
               }`}
             >
               <span className="font-ui text-xs text-[var(--color-gold)]">?</span>
-              <span className="flex-1">Quiz — testez-vous</span>
-              {previewOnly && <span title="Verrouillé">🔒</span>}
+              <span className="flex-1">{t.quiz}</span>
+              {previewOnly && <span title={t.locked}>🔒</span>}
             </button>
           )}
         </nav>
@@ -125,16 +139,16 @@ export function Reader({
       <section className="flex-1 px-5 py-10 sm:px-12">
         {onQcm ? (
           previewOnly ? (
-            <Paywall slug={slug} loggedIn={loggedIn} />
+            <Paywall slug={slug} loggedIn={loggedIn} locale={locale} />
           ) : (
-            <QuizRunner slug={slug} questions={quizQuestions} loggedIn={loggedIn} />
+            <QuizRunner slug={slug} questions={quizQuestions} loggedIn={loggedIn} locale={locale} />
           )
         ) : isLocked(active) ? (
-          <Paywall slug={slug} loggedIn={loggedIn} />
+          <Paywall slug={slug} loggedIn={loggedIn} locale={locale} />
         ) : (
           <article className="mx-auto max-w-2xl">
             <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">
-              Chapitre {active + 1} / {chapters.length}
+              {t.chapter} {active + 1} / {chapters.length}
             </p>
             <h2 className="mt-2 font-display text-3xl text-[var(--color-ink)]">{chapters[active].title}</h2>
             <div
@@ -147,14 +161,14 @@ export function Reader({
                 onClick={() => selectChapter(Math.max(0, active - 1))}
                 className="text-[var(--color-bordeaux)] disabled:opacity-30"
               >
-                ← Précédent
+                {t.previous}
               </button>
               <button
                 disabled={active >= lastIndex}
                 onClick={() => selectChapter(Math.min(lastIndex, active + 1))}
                 className="text-[var(--color-bordeaux)] disabled:opacity-30"
               >
-                Suivant →
+                {t.next}
               </button>
             </div>
           </article>
@@ -165,28 +179,36 @@ export function Reader({
   );
 }
 
-function Paywall({ slug, loggedIn }: { slug: string; loggedIn: boolean }) {
+function Paywall({ slug, loggedIn, locale }: { slug: string; loggedIn: boolean; locale: Locale }) {
+  const t = {
+    title: locale === 'en' ? 'Reserved content' : 'Contenu réservé',
+    desc: locale === 'en'
+      ? 'This chapter is part of the full guide. Buy the guide or subscribe to read everything — and download the PDF.'
+      : 'Ce chapitre fait partie du guide complet. Achetez le guide ou abonnez-vous pour tout lire — et télécharger le PDF.',
+    unlock: locale === 'en' ? 'Unlock this guide' : 'Débloquer ce guide',
+    subscribe: locale === 'en' ? 'Or subscribe ($19/month)' : 'Ou s’abonner (19 $/mois)',
+    haveAccount: locale === 'en' ? 'I already have an account' : 'J’ai déjà un compte',
+  };
   return (
     <div className="mx-auto max-w-md rounded-2xl border border-[var(--color-sand)] bg-white p-10 text-center">
       <p className="text-4xl">🔒</p>
-      <h2 className="mt-4 font-display text-2xl text-[var(--color-bordeaux)]">Contenu réservé</h2>
+      <h2 className="mt-4 font-display text-2xl text-[var(--color-bordeaux)]">{t.title}</h2>
       <p className="mt-3 font-body text-[var(--color-ink)]/70">
-        Ce chapitre fait partie du guide complet. Achetez le guide ou abonnez-vous pour tout lire — et
-        télécharger le PDF.
+        {t.desc}
       </p>
       <div className="mt-6 space-y-3">
         <Link
           href={`/livre/${slug}`}
           className="block rounded-full bg-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-white hover:bg-[var(--color-bordeaux-dark)]"
         >
-          Débloquer ce guide
+          {t.unlock}
         </Link>
         <Link href="/inscription?plan=abonnement" className="block font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
-          Ou s&apos;abonner (19 $/mois)
+          {t.subscribe}
         </Link>
         {!loggedIn && (
           <Link href={`/connexion?next=/lire/${slug}`} className="block font-ui text-xs text-[var(--color-ink)]/50 hover:underline">
-            J&apos;ai déjà un compte
+            {t.haveAccount}
           </Link>
         )}
       </div>

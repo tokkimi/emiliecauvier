@@ -94,7 +94,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             <p className="mt-1 font-ui text-sm text-[var(--color-ink)]/60">{t.book_lifetime}</p>
 
-            <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} loggedIn={Boolean(userId)} />
+            <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} loggedIn={Boolean(userId)} locale={locale} />
 
             <div className="mt-6 border-t border-[var(--color-sand)] pt-5">
               <p className="font-ui text-sm text-[var(--color-ink)]/70">

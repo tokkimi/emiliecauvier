@@ -2,11 +2,11 @@ export const dynamic = 'force-dynamic';
 
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import type { Metadata } from 'next';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { accessibleEbookIds, downloadableEbookIds } from '@/lib/entitlements';
 import { bySlug, BOOKS, COLLECTIONS } from '@/data/books';
+import { COLLECTIONS_EN, localizeBook } from '@/data/booksEn';
 import { formatPrice, BRAND } from '@/lib/format';
 import { SubscribeButton, SignOutButton } from '@/components/AccountActions';
 import { AccountSettings } from '@/components/AccountSettings';
@@ -14,8 +14,12 @@ import { BookCover } from '@/components/BookCover';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { recommendBooks, type ProjectAnswers } from '@/lib/recommendations';
 import { ToolsHub } from '@/components/ToolsHub';
+import { getLocale } from '@/lib/i18n';
 
-export const metadata: Metadata = { title: 'Mon compte' };
+export async function generateMetadata() {
+  const locale = await getLocale();
+  return { title: locale === 'en' ? 'My account' : 'Mon compte' };
+}
 
 const STATUS_LABEL: Record<string, string> = {
   NONE: 'Aucun abonnement',
@@ -25,9 +29,130 @@ const STATUS_LABEL: Record<string, string> = {
   CANCELED: 'Abonnement annulé',
 };
 
-const date = (value: Date) => new Intl.DateTimeFormat('fr-CA', { dateStyle: 'medium' }).format(value);
+const STATUS_LABEL_EN: Record<string, string> = {
+  NONE: 'No subscription',
+  TRIALING: 'Trial active',
+  ACTIVE: 'Active subscription',
+  PAST_DUE: 'Payment overdue',
+  CANCELED: 'Subscription canceled',
+};
+
+const accountText = {
+  fr: {
+    readerSpace: 'Espace lecteur',
+    hello: 'Bonjour',
+    intro: 'Retrouvez vos guides, votre progression et vos résultats au même endroit.',
+    navLibrary: 'Bibliothèque',
+    navFavorites: 'Favoris',
+    navTools: 'Mes outils',
+    navActivity: 'Activité',
+    navProfile: 'Profil et sécurité',
+    stats: ['Guides accessibles', 'En cours', 'Terminés', 'Moyenne aux quiz'],
+    subscription: 'Abonnement',
+    nextBilling: (d: string) => `Prochaine échéance le ${d}.`,
+    subPitch: `${formatPrice(BRAND.subscriptionCents)}/mois pour lire les ${BOOKS.length} guides en ligne.`,
+    resume: 'Reprendre',
+    continueReading: 'Continuer la lecture',
+    guideNo: 'Guide n°',
+    resumeChapter: (n: number) => `Reprendre au chapitre ${n} →`,
+    pathEyebrow: 'Votre parcours recommandé',
+    pathTitle: 'Une bibliothèque qui suit votre projet',
+    completed: (done: number, total: number) => `${done} / ${total} terminés`,
+    favEyebrow: 'À garder près de vous',
+    favTitle: 'Mes favoris',
+    favEmpty: 'Touchez le cœur d’un guide pour le retrouver ici.',
+    favCta: 'Choisir mes favoris',
+    libraryEyebrow: 'Collection personnelle',
+    libraryTitle: 'Ma bibliothèque',
+    explore: 'Explorer le catalogue →',
+    emptyTitle: 'Votre bibliothèque vous attend.',
+    emptyDesc: 'Achetez un guide ou choisissez l’abonnement complet.',
+    discover: 'Découvrir les guides',
+    readPercent: (p: number) => (p ? `${p} % lu` : 'À commencer'),
+    done: 'Terminé',
+    continue: 'Continuer',
+    read: 'Lire',
+    toolsEyebrow: 'Passer du savoir à l’action',
+    toolsTitle: 'Mes outils immobiliers',
+    toolsDesc: 'Calculez, comparez et conservez votre checklist de projet directement dans votre espace.',
+    toolsLocked: 'Outils verrouillés',
+    toolsUnlockTitle: 'Débloquez la boîte à outils complète',
+    toolsUnlockDesc: (count: number) => `Disponible avec un abonnement actif ou après 3 ebooks achetés. Vous en avez ${count} / 3.`,
+    toolLabels: ['Capacité d’achat', 'Mensualités', 'Taxe de bienvenue', 'Mise de fonds', 'Rentabilité', 'Checklist'],
+    buyEbooks: 'Acheter des ebooks',
+    seeSub: 'Voir l’abonnement',
+    history: 'Historique',
+    activityTitle: 'Mon activité',
+    quizResults: 'Résultats aux quiz',
+    quizEmpty: 'Vos résultats apparaîtront ici après votre premier quiz.',
+    recentPurchases: 'Achats récents',
+    librarySub: 'Abonnement à La Bibliothèque',
+    noPurchases: 'Aucun achat à afficher pour le moment.',
+    settings: 'Paramètres',
+    profileSecurity: 'Profil et sécurité',
+    memberSince: (d: string) => `Membre depuis le ${d}.`,
+  },
+  en: {
+    readerSpace: 'Reader space',
+    hello: 'Hello',
+    intro: 'Find your guides, progress and quiz results in one place.',
+    navLibrary: 'Library',
+    navFavorites: 'Favourites',
+    navTools: 'My tools',
+    navActivity: 'Activity',
+    navProfile: 'Profile & security',
+    stats: ['Accessible guides', 'In progress', 'Completed', 'Quiz average'],
+    subscription: 'Subscription',
+    nextBilling: (d: string) => `Next billing date: ${d}.`,
+    subPitch: `${formatPrice(BRAND.subscriptionCents)}/month to read all ${BOOKS.length} guides online.`,
+    resume: 'Resume',
+    continueReading: 'Continue reading',
+    guideNo: 'Guide No. ',
+    resumeChapter: (n: number) => `Resume at chapter ${n} →`,
+    pathEyebrow: 'Your recommended path',
+    pathTitle: 'A library that follows your project',
+    completed: (done: number, total: number) => `${done} / ${total} completed`,
+    favEyebrow: 'Keep close at hand',
+    favTitle: 'My favourites',
+    favEmpty: 'Tap the heart on a guide to find it here.',
+    favCta: 'Choose my favourites',
+    libraryEyebrow: 'Personal collection',
+    libraryTitle: 'My library',
+    explore: 'Explore the catalogue →',
+    emptyTitle: 'Your library is waiting.',
+    emptyDesc: 'Buy a guide or choose the full subscription.',
+    discover: 'Discover the guides',
+    readPercent: (p: number) => (p ? `${p}% read` : 'Not started'),
+    done: 'Completed',
+    continue: 'Continue',
+    read: 'Read',
+    toolsEyebrow: 'Turn knowledge into action',
+    toolsTitle: 'My real estate tools',
+    toolsDesc: 'Calculate, compare and keep your project checklist directly in your space.',
+    toolsLocked: 'Tools locked',
+    toolsUnlockTitle: 'Unlock the complete tool box',
+    toolsUnlockDesc: (count: number) => `Available with an active subscription or after 3 ebook purchases. You currently have ${count} / 3.`,
+    toolLabels: ['Buying capacity', 'Monthly payments', 'Welcome tax', 'Down payment', 'Profitability', 'Checklist'],
+    buyEbooks: 'Buy ebooks',
+    seeSub: 'View subscription',
+    history: 'History',
+    activityTitle: 'My activity',
+    quizResults: 'Quiz results',
+    quizEmpty: 'Your results will appear here after your first quiz.',
+    recentPurchases: 'Recent purchases',
+    librarySub: 'La Bibliothèque subscription',
+    noPurchases: 'No purchases to show yet.',
+    settings: 'Settings',
+    profileSecurity: 'Profile & security',
+    memberSince: (d: string) => `Member since ${d}.`,
+  },
+};
+
+const date = (value: Date, locale: 'fr' | 'en') => new Intl.DateTimeFormat(locale === 'en' ? 'en-CA' : 'fr-CA', { dateStyle: 'medium' }).format(value);
 
 export default async function AccountPage() {
+  const locale = await getLocale();
+  const t = accountText[locale];
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   if (!userId) redirect('/connexion?next=/compte');
@@ -101,31 +226,31 @@ export default async function AccountPage() {
     <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
       <header className="flex flex-col justify-between gap-5 border-b border-[var(--color-sand)] pb-8 sm:flex-row sm:items-end">
         <div>
-          <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">Espace lecteur</p>
+          <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.readerSpace}</p>
           <h1 className="mt-2 font-display text-4xl text-[var(--color-ink)]">
-            Bonjour{user.name ? `, ${user.name}` : ''}
+            {t.hello}{user.name ? `, ${user.name}` : ''}
           </h1>
           <p className="mt-2 font-body text-[var(--color-ink)]/60">
-            Retrouvez vos guides, votre progression et vos résultats au même endroit.
+            {t.intro}
           </p>
         </div>
-        <SignOutButton />
+        <SignOutButton locale={locale} />
       </header>
 
-      <nav className="mt-6 flex flex-wrap gap-2 font-ui text-sm" aria-label="Sections du compte">
-        <a href="#bibliotheque" className="rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white">Bibliothèque</a>
-        <a href="#favoris" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Favoris</a>
-        <a href="#outils" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Mes outils</a>
-        <a href="#activite" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Activité</a>
-        <a href="#profil" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">Profil et sécurité</a>
+      <nav className="mt-6 flex flex-wrap gap-2 font-ui text-sm" aria-label={locale === 'en' ? 'Account sections' : 'Sections du compte'}>
+        <a href="#bibliotheque" className="rounded-full bg-[var(--color-bordeaux)] px-4 py-2 text-white">{t.navLibrary}</a>
+        <a href="#favoris" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">{t.navFavorites}</a>
+        <a href="#outils" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">{t.navTools}</a>
+        <a href="#activite" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">{t.navActivity}</a>
+        <a href="#profil" className="rounded-full border border-[var(--color-sand)] bg-white px-4 py-2 hover:border-[var(--color-gold)]">{t.navProfile}</a>
       </nav>
 
-      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Résumé du compte">
+      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label={locale === 'en' ? 'Account summary' : 'Résumé du compte'}>
         {[
-          ['Guides accessibles', `${myBooks.length} / ${BOOKS.length}`],
-          ['En cours', String(progressEntries.filter((progress) => !progress.completed).length)],
-          ['Terminés', String(completedCount)],
-          ['Moyenne aux quiz', averageQuiz === null ? '—' : `${averageQuiz} / 10`],
+          [t.stats[0], `${myBooks.length} / ${BOOKS.length}`],
+          [t.stats[1], String(progressEntries.filter((progress) => !progress.completed).length)],
+          [t.stats[2], String(completedCount)],
+          [t.stats[3], averageQuiz === null ? '—' : `${averageQuiz} / 10`],
         ].map(([label, value]) => (
           <div key={label} className="rounded-2xl border border-[var(--color-sand)] bg-white p-5">
             <p className="font-ui text-xs uppercase tracking-[0.12em] text-[var(--color-ink)]/50">{label}</p>
@@ -137,24 +262,24 @@ export default async function AccountPage() {
       <section className="mt-8 overflow-hidden rounded-2xl bg-[var(--color-ink)] text-[var(--color-cream)]">
         <div className="flex flex-col justify-between gap-6 p-6 sm:flex-row sm:items-center sm:p-8">
           <div>
-            <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">Abonnement</p>
-            <p className="mt-2 font-display text-2xl">{STATUS_LABEL[user.subscriptionStatus] ?? user.subscriptionStatus}</p>
+            <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">{t.subscription}</p>
+            <p className="mt-2 font-display text-2xl">{(locale === 'en' ? STATUS_LABEL_EN : STATUS_LABEL)[user.subscriptionStatus] ?? user.subscriptionStatus}</p>
             <p className="mt-2 max-w-xl font-body text-sm text-white/65">
               {subActive && user.currentPeriodEnd
-                ? `Prochaine échéance le ${date(user.currentPeriodEnd)}.`
-                : `${formatPrice(BRAND.subscriptionCents)}/mois pour lire les ${BOOKS.length} guides en ligne.`}
+                ? t.nextBilling(date(user.currentPeriodEnd, locale))
+                : t.subPitch}
             </p>
           </div>
           <div className="[&_button]:border-white/40 [&_button]:text-white [&_button:hover]:bg-white/10">
-            <SubscribeButton active={subActive} />
+            <SubscribeButton active={subActive} locale={locale} />
           </div>
         </div>
       </section>
 
       {continueReading.length > 0 && (
         <section className="mt-12">
-          <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Reprendre</p>
-          <h2 className="mt-1 font-display text-3xl">Continuer la lecture</h2>
+          <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.resume}</p>
+          <h2 className="mt-1 font-display text-3xl">{t.continueReading}</h2>
           <div className="mt-5 grid gap-5 md:grid-cols-3">
             {continueReading.map(({ book, progress }) => {
               const percent = Math.round(((progress.chapterIndex + 1) / progress.chapterCount) * 100);
@@ -165,13 +290,13 @@ export default async function AccountPage() {
                   className="group rounded-2xl border border-[var(--color-sand)] bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <p className="font-ui text-xs uppercase tracking-[0.12em] text-[var(--color-gold)]">
-                    Guide n°{book.number} · {percent} %
+                    {t.guideNo}{book.number} · {percent} %
                   </p>
-                  <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">{book.title}</h3>
+                  <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">{localizeBook(book, locale).title}</h3>
                   <div className="mt-5 h-1.5 overflow-hidden rounded-full bg-[var(--color-sand)]">
                     <div className="h-full rounded-full bg-[var(--color-gold)]" style={{ width: `${percent}%` }} />
                   </div>
-                  <p className="mt-3 font-ui text-sm text-[var(--color-bordeaux)]">Reprendre au chapitre {progress.chapterIndex + 1} →</p>
+                  <p className="mt-3 font-ui text-sm text-[var(--color-bordeaux)]">{t.resumeChapter(progress.chapterIndex + 1)}</p>
                 </Link>
               );
             })}
@@ -183,10 +308,10 @@ export default async function AccountPage() {
         <section className="mt-12 overflow-hidden rounded-3xl border border-[var(--color-sand)] bg-[#f7f2ec] p-6 sm:p-8">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Votre parcours recommandé</p>
-              <h2 className="mt-1 font-display text-3xl">Une bibliothèque qui suit votre projet</h2>
+              <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.pathEyebrow}</p>
+              <h2 className="mt-1 font-display text-3xl">{t.pathTitle}</h2>
             </div>
-            <p className="font-display text-2xl text-[var(--color-bordeaux)]">{journeyCompleted} / {journeyBooks.length} terminés</p>
+            <p className="font-display text-2xl text-[var(--color-bordeaux)]">{t.completed(journeyCompleted, journeyBooks.length)}</p>
           </div>
           <div className="mt-5 h-2 overflow-hidden rounded-full bg-white">
             <div className="h-full rounded-full bg-[var(--color-gold)]" style={{ width: `${(journeyCompleted / journeyBooks.length) * 100}%` }} />
@@ -196,7 +321,7 @@ export default async function AccountPage() {
               <li key={book.slug}>
                 <Link href={`/lire/${book.slug}`} className="flex min-h-14 items-center gap-4 rounded-2xl bg-white px-4 py-3 transition hover:shadow-sm">
                   <span className="font-display text-xl text-[var(--color-gold)]">{String(index + 1).padStart(2, '0')}</span>
-                  <span className="font-body text-[var(--color-bordeaux)]">{book.title}</span>
+                  <span className="font-body text-[var(--color-bordeaux)]">{localizeBook(book, locale).title}</span>
                 </Link>
               </li>
             ))}
@@ -205,22 +330,22 @@ export default async function AccountPage() {
       )}
 
       <section id="favoris" className="scroll-mt-24 pt-12">
-        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">À garder près de vous</p>
-        <h2 className="mt-1 font-display text-3xl">Mes favoris</h2>
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.favEyebrow}</p>
+        <h2 className="mt-1 font-display text-3xl">{t.favTitle}</h2>
         {favoriteBooks.length ? (
           <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
             {favoriteBooks.map((book) => (
               <article key={book.slug} className="relative overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white">
-                <Link href={`/livre/${book.slug}`}><BookCover number={book.number} title={book.title} collection={COLLECTIONS[book.collection]} /></Link>
-                <div className="absolute right-3 top-3"><FavoriteButton slug={book.slug} initialFavorite loggedIn /></div>
-                <Link href={`/livre/${book.slug}`} className="block p-4 font-display text-base leading-tight text-[var(--color-bordeaux)] sm:text-lg">{book.title}</Link>
+                <Link href={`/livre/${book.slug}`}><BookCover number={book.number} title={localizeBook(book, locale).title} collection={locale === 'en' ? COLLECTIONS_EN[book.collection] ?? COLLECTIONS[book.collection] : COLLECTIONS[book.collection]} /></Link>
+                <div className="absolute right-3 top-3"><FavoriteButton slug={book.slug} initialFavorite loggedIn locale={locale} /></div>
+                <Link href={`/livre/${book.slug}`} className="block p-4 font-display text-base leading-tight text-[var(--color-bordeaux)] sm:text-lg">{localizeBook(book, locale).title}</Link>
               </article>
             ))}
           </div>
         ) : (
           <div className="mt-5 rounded-2xl border border-dashed border-[var(--color-sand)] bg-white p-8 text-center">
-            <p className="font-body text-[var(--color-ink)]/60">Touchez le cœur d’un guide pour le retrouver ici.</p>
-            <Link href="/catalogue" className="mt-3 inline-block font-ui text-sm text-[var(--color-bordeaux)] underline">Choisir mes favoris</Link>
+            <p className="font-body text-[var(--color-ink)]/60">{t.favEmpty}</p>
+            <Link href="/catalogue" className="mt-3 inline-block font-ui text-sm text-[var(--color-bordeaux)] underline">{t.favCta}</Link>
           </div>
         )}
       </section>
@@ -228,17 +353,17 @@ export default async function AccountPage() {
       <section id="bibliotheque" className="scroll-mt-24 pt-12">
         <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
           <div>
-            <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Collection personnelle</p>
-            <h2 className="mt-1 font-display text-3xl">Ma bibliothèque</h2>
+            <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.libraryEyebrow}</p>
+            <h2 className="mt-1 font-display text-3xl">{t.libraryTitle}</h2>
           </div>
-          <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">Explorer le catalogue →</Link>
+          <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">{t.explore}</Link>
         </div>
 
         {myBooks.length === 0 ? (
           <div className="mt-5 rounded-2xl border border-dashed border-[var(--color-sand)] bg-white p-10 text-center">
-            <p className="font-display text-2xl text-[var(--color-ink)]">Votre bibliothèque vous attend.</p>
-            <p className="mt-2 font-body text-[var(--color-ink)]/60">Achetez un guide ou choisissez l’abonnement complet.</p>
-            <Link href="/catalogue" className="mt-5 inline-block rounded-full bg-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-white">Découvrir les guides</Link>
+            <p className="font-display text-2xl text-[var(--color-ink)]">{t.emptyTitle}</p>
+            <p className="mt-2 font-body text-[var(--color-ink)]/60">{t.emptyDesc}</p>
+            <Link href="/catalogue" className="mt-5 inline-block rounded-full bg-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-white">{t.discover}</Link>
           </div>
         ) : (
           <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -250,24 +375,24 @@ export default async function AccountPage() {
                 <article key={book.slug} className="grid grid-cols-[92px_1fr] gap-4 rounded-2xl border border-[var(--color-sand)] bg-white p-4">
                   <BookCover
                     number={book.number}
-                    title={book.title}
-                    collection={COLLECTIONS[book.collection]}
+                    title={localizeBook(book, locale).title}
+                    collection={locale === 'en' ? COLLECTIONS_EN[book.collection] ?? COLLECTIONS[book.collection] : COLLECTIONS[book.collection]}
                     className="w-[92px] rounded-lg border border-[var(--color-sand)]"
                   />
                   <div className="flex min-w-0 flex-col">
-                    <p className="font-ui text-[0.65rem] uppercase tracking-[0.12em] text-[var(--color-gold)]">Guide n°{book.number}</p>
-                    <h3 className="mt-1 font-display text-lg leading-snug text-[var(--color-bordeaux)]">{book.title}</h3>
+                    <p className="font-ui text-[0.65rem] uppercase tracking-[0.12em] text-[var(--color-gold)]">{t.guideNo}{book.number}</p>
+                    <h3 className="mt-1 font-display text-lg leading-snug text-[var(--color-bordeaux)]">{localizeBook(book, locale).title}</h3>
                     <div className="mt-auto pt-4">
                       <div className="mb-2 flex justify-between font-ui text-[0.65rem] text-[var(--color-ink)]/50">
-                        <span>{percent ? `${percent} % lu` : 'À commencer'}</span>
-                        {progress?.completed && <span>Terminé</span>}
+                        <span>{t.readPercent(percent)}</span>
+                        {progress?.completed && <span>{t.done}</span>}
                       </div>
                       <div className="mb-3 h-1 overflow-hidden rounded-full bg-[var(--color-sand)]">
                         <div className="h-full bg-[var(--color-gold)]" style={{ width: `${percent}%` }} />
                       </div>
                       <div className="flex gap-2">
                         <Link href={`/lire/${book.slug}`} className="flex-1 rounded-full bg-[var(--color-bordeaux)] py-2 text-center font-ui text-xs font-medium text-white">
-                          {percent ? 'Continuer' : 'Lire'}
+                          {percent ? t.continue : t.read}
                         </Link>
                         {dlIds.has(ebookId) && (
                           <a href={`/api/download?slug=${book.slug}`} className="rounded-full border border-[var(--color-bordeaux)] px-3 py-2 font-ui text-xs text-[var(--color-bordeaux)]">PDF</a>
@@ -283,34 +408,34 @@ export default async function AccountPage() {
       </section>
 
       <section id="outils" className="scroll-mt-24 pt-14">
-        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Passer du savoir à l’action</p>
-        <h2 className="mt-1 font-display text-3xl">Mes outils immobiliers</h2>
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.toolsEyebrow}</p>
+        <h2 className="mt-1 font-display text-3xl">{t.toolsTitle}</h2>
         <p className="mt-2 max-w-2xl font-body text-[var(--color-ink)]/60">
-          Calculez, comparez et conservez votre checklist de projet directement dans votre espace.
+          {t.toolsDesc}
         </p>
         <div className="mt-6">
           {toolsUnlocked ? (
-            <ToolsHub />
+            <ToolsHub locale={locale} />
           ) : (
             <div className="rounded-3xl border border-[var(--color-sand)] bg-white p-6 shadow-[0_12px_40px_rgba(46,31,24,0.06)] sm:p-8">
               <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
                 <div>
-                  <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Outils verrouillés</p>
-                  <h3 className="mt-2 font-display text-2xl text-[var(--color-bordeaux)]">Débloquez la boîte à outils complète</h3>
+                  <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.toolsLocked}</p>
+                  <h3 className="mt-2 font-display text-2xl text-[var(--color-bordeaux)]">{t.toolsUnlockTitle}</h3>
                   <p className="mt-2 max-w-2xl font-body text-[var(--color-ink)]/65">
-                    Disponible avec un abonnement actif ou après 3 ebooks achetés. Vous en avez {paidEbookCount} / 3.
+                    {t.toolsUnlockDesc(paidEbookCount)}
                   </p>
                 </div>
                 <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-sand)] text-2xl text-[var(--color-bordeaux)]" aria-hidden="true">🔒</span>
               </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                {['Capacité d’achat', 'Mensualités', 'Taxe de bienvenue', 'Mise de fonds', 'Rentabilité', 'Checklist'].map((label) => (
+                {t.toolLabels.map((label) => (
                   <div key={label} className="rounded-2xl bg-[#f7f2ec] px-4 py-3 font-ui text-sm text-[var(--color-ink)]/65">{label}</div>
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link href="/catalogue" className="rounded-full bg-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-white">Acheter des ebooks</Link>
-                <Link href="/abonnement" className="rounded-full border border-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)]">Voir l’abonnement</Link>
+                <Link href="/catalogue" className="rounded-full bg-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-white">{t.buyEbooks}</Link>
+                <Link href="/abonnement" className="rounded-full border border-[var(--color-bordeaux)] px-5 py-3 font-ui text-sm font-medium text-[var(--color-bordeaux)]">{t.seeSub}</Link>
               </div>
             </div>
           )}
@@ -318,53 +443,56 @@ export default async function AccountPage() {
       </section>
 
       <section id="activite" className="scroll-mt-24 pt-14">
-        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Historique</p>
-        <h2 className="mt-1 font-display text-3xl">Mon activité</h2>
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.history}</p>
+        <h2 className="mt-1 font-display text-3xl">{t.activityTitle}</h2>
         <div className="mt-5 grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border border-[var(--color-sand)] bg-white p-6">
-            <h3 className="font-display text-xl">Résultats aux quiz</h3>
+            <h3 className="font-display text-xl">{t.quizResults}</h3>
             {quizAttempts.length ? (
               <ul className="mt-4 divide-y divide-[var(--color-sand)]">
                 {quizAttempts.map((attempt) => (
                   <li key={attempt.id} className="flex items-center justify-between gap-4 py-3 first:pt-0">
                     <div>
                       <p className="font-body text-sm text-[var(--color-ink)]">{attempt.guideTitle}</p>
-                      <p className="font-ui text-xs text-[var(--color-ink)]/45">{date(attempt.createdAt)}</p>
+                      <p className="font-ui text-xs text-[var(--color-ink)]/45">{date(attempt.createdAt, locale)}</p>
                     </div>
                     <span className="rounded-full bg-[var(--color-sand)] px-3 py-1 font-display text-lg text-[var(--color-bordeaux)]">{attempt.scoreOn10}/10</span>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p className="mt-4 font-body text-sm text-[var(--color-ink)]/55">Vos résultats apparaîtront ici après votre premier quiz.</p>
+              <p className="mt-4 font-body text-sm text-[var(--color-ink)]/55">{t.quizEmpty}</p>
             )}
           </div>
           <div className="rounded-2xl border border-[var(--color-sand)] bg-white p-6">
-            <h3 className="font-display text-xl">Achats récents</h3>
+            <h3 className="font-display text-xl">{t.recentPurchases}</h3>
             {purchases.length ? (
               <ul className="mt-4 divide-y divide-[var(--color-sand)]">
-                {purchases.map((purchase) => (
-                  <li key={purchase.id} className="flex items-center justify-between gap-4 py-3 first:pt-0">
-                    <div>
-                      <p className="font-body text-sm">{purchase.ebook?.title ?? 'Abonnement à La Bibliothèque'}</p>
-                      <p className="font-ui text-xs text-[var(--color-ink)]/45">{date(purchase.createdAt)}</p>
-                    </div>
-                    <span className="font-ui text-sm font-medium">{formatPrice(purchase.amountCents)}</span>
-                  </li>
-                ))}
+                {purchases.map((purchase) => {
+                  const purchaseBook = purchase.ebook ? bySlug(purchase.ebook.slug) : null;
+                  return (
+                    <li key={purchase.id} className="flex items-center justify-between gap-4 py-3 first:pt-0">
+                      <div>
+                        <p className="font-body text-sm">{purchaseBook ? localizeBook(purchaseBook, locale).title : t.librarySub}</p>
+                        <p className="font-ui text-xs text-[var(--color-ink)]/45">{date(purchase.createdAt, locale)}</p>
+                      </div>
+                      <span className="font-ui text-sm font-medium">{formatPrice(purchase.amountCents)}</span>
+                    </li>
+                  );
+                })}
               </ul>
             ) : (
-              <p className="mt-4 font-body text-sm text-[var(--color-ink)]/55">Aucun achat à afficher pour le moment.</p>
+              <p className="mt-4 font-body text-sm text-[var(--color-ink)]/55">{t.noPurchases}</p>
             )}
           </div>
         </div>
       </section>
 
       <section id="profil" className="scroll-mt-24 pt-14">
-        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">Paramètres</p>
-        <h2 className="mt-1 font-display text-3xl">Profil et sécurité</h2>
-        <p className="mt-2 mb-5 font-body text-[var(--color-ink)]/60">Membre depuis le {date(user.createdAt)}.</p>
-        <AccountSettings name={user.name ?? ''} email={user.email} locale={user.locale} />
+        <p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.settings}</p>
+        <h2 className="mt-1 font-display text-3xl">{t.profileSecurity}</h2>
+        <p className="mt-2 mb-5 font-body text-[var(--color-ink)]/60">{t.memberSince(date(user.createdAt, locale))}</p>
+        <AccountSettings name={user.name ?? ''} email={user.email} locale={user.locale} uiLocale={locale} />
       </section>
     </div>
   );

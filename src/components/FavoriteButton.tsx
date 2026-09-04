@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import type { Locale } from '@/lib/i18n';
 
-export function FavoriteButton({ slug, initialFavorite, loggedIn }: { slug: string; initialFavorite: boolean; loggedIn: boolean }) {
+export function FavoriteButton({ slug, initialFavorite, loggedIn, locale = 'fr' }: { slug: string; initialFavorite: boolean; loggedIn: boolean; locale?: Locale }) {
   const pathname = usePathname();
   const [favorite, setFavorite] = useState(initialFavorite);
   const [busy, setBusy] = useState(false);
@@ -33,7 +34,7 @@ export function FavoriteButton({ slug, initialFavorite, loggedIn }: { slug: stri
       onClick={toggle}
       disabled={busy}
       aria-pressed={favorite}
-      aria-label={favorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
+      aria-label={favorite ? (locale === 'en' ? 'Remove from favourites' : 'Retirer des favoris') : (locale === 'en' ? 'Add to favourites' : 'Ajouter aux favoris')}
       className="flex h-11 w-11 items-center justify-center rounded-full border border-white/70 bg-white/90 text-[var(--color-bordeaux)] shadow-sm backdrop-blur transition hover:scale-105 disabled:opacity-60"
     >
       <svg width="21" height="21" viewBox="0 0 24 24" fill={favorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -42,4 +43,3 @@ export function FavoriteButton({ slug, initialFavorite, loggedIn }: { slug: stri
     </button>
   );
 }
-

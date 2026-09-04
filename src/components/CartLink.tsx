@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CART_CHANGED_EVENT, readCartSlugs } from '@/lib/cart';
+import type { Locale } from '@/lib/i18n';
 
-export function CartLink({ mobile = false }: { mobile?: boolean }) {
+export function CartLink({ mobile = false, locale }: { mobile?: boolean; locale: Locale }) {
   const [count, setCount] = useState(0);
+  const label = locale === 'en' ? 'Cart' : 'Panier';
 
   useEffect(() => {
     const refresh = () => setCount(readCartSlugs().length);
@@ -21,14 +23,14 @@ export function CartLink({ mobile = false }: { mobile?: boolean }) {
   if (mobile) {
     return (
       <Link href="/panier" className="rounded-lg px-2 py-2.5 text-[var(--color-ink)] hover:bg-white">
-        Panier{count ? ` (${count})` : ''}
+        {label}{count ? ` (${count})` : ''}
       </Link>
     );
   }
 
   return (
     <Link href="/panier" className="relative hover:text-[var(--color-bordeaux)]">
-      Panier
+      {label}
       {count > 0 && (
         <span className="absolute -right-4 -top-2 flex h-4 min-w-4 items-center justify-center rounded-full bg-[var(--color-bordeaux)] px-1 text-[0.6rem] leading-none text-white">
           {count}

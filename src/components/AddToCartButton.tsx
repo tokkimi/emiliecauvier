@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { addCartSlug } from '@/lib/cart';
+import type { Locale } from '@/lib/i18n';
 
-export function AddToCartButton({ slug, compact = false }: { slug: string; compact?: boolean }) {
+export function AddToCartButton({ slug, compact = false, locale }: { slug: string; compact?: boolean; locale: Locale }) {
   const [added, setAdded] = useState(false);
 
   function add() {
@@ -21,7 +22,7 @@ export function AddToCartButton({ slug, compact = false }: { slug: string; compa
           : 'w-full rounded-full border border-[var(--color-bordeaux)] py-2.5 font-ui text-xs font-medium text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]'
       }
     >
-      {added ? 'Ajouté' : 'Ajouter au panier'}
+      {added ? (locale === 'en' ? 'Added' : 'Ajouté') : (locale === 'en' ? 'Add to cart' : 'Ajouter au panier')}
     </button>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import type { Locale } from '@/lib/i18n';
 
 const STORAGE_KEY = 'emc-avis-immobilier-v1';
 
@@ -11,12 +12,32 @@ const AVIS =
   "immobilière étant différente, il est recommandé de consulter les professionnels " +
   "appropriés avant de prendre une décision concernant une transaction immobilière.";
 
+const NOTICE_EN =
+  'This guide is provided for informational and educational purposes only. It presents general information about real estate in Quebec and does not constitute personalized real estate, legal, tax or financial advice. Every real estate situation is different, so you should consult the appropriate professionals before making a decision about a real estate transaction.';
+
 /**
  * Fenêtre d'avis important, façon bandeau de cookies mais en modale élégante.
  * S'affiche à l'ouverture d'un guide tant que l'utilisateur n'a pas coché et
  * validé. Le choix est mémorisé (localStorage) pour ne pas réapparaître.
  */
-export function ReaderConsent() {
+export function ReaderConsent({ locale }: { locale: Locale }) {
+  const t = locale === 'en'
+    ? {
+        eyebrow: 'Read before starting',
+        title: 'Important notice',
+        notice: NOTICE_EN,
+        check: 'I have read and understand this notice. I am accessing this guide for informational purposes.',
+        button: 'Open the guide',
+        legal: '© 2026 Emilie Cauvier — La Bibliothèque. All rights reserved. Reproduction, sharing or resale prohibited without written permission.',
+      }
+    : {
+        eyebrow: 'À lire avant de commencer',
+        title: 'Avis important',
+        notice: AVIS,
+        check: 'J’ai lu et je comprends cet avis. J’accède à ce guide à titre informatif.',
+        button: 'Accéder au guide',
+        legal: '© 2026 Emilie Cauvier — La Bibliothèque. Tous droits réservés. Reproduction, partage ou revente interdits sans autorisation écrite.',
+      };
   // null = on ne sait pas encore (évite le flash au montage/SSR)
   const [accepted, setAccepted] = useState<boolean | null>(null);
   const [checked, setChecked] = useState(false);
@@ -56,17 +77,17 @@ export function ReaderConsent() {
         <div className="h-1.5 w-full bg-[var(--color-gold)]" />
         <div className="p-7 sm:p-9">
           <p className="font-ui text-[0.7rem] uppercase tracking-[0.22em] text-[var(--color-gold)]">
-            À lire avant de commencer
+            {t.eyebrow}
           </p>
           <h2
             id="avis-title"
             className="mt-2 font-display text-2xl text-[var(--color-bordeaux)]"
           >
-            Avis important
+            {t.title}
           </h2>
 
           <p className="mt-4 font-body text-[0.95rem] leading-relaxed text-[var(--color-ink)]/85">
-            {AVIS}
+            {t.notice}
           </p>
 
           <label className="mt-6 flex cursor-pointer items-start gap-3 rounded-xl border border-[var(--color-sand)] bg-white px-4 py-3">
@@ -77,7 +98,7 @@ export function ReaderConsent() {
               className="mt-0.5 h-4 w-4 shrink-0 accent-[var(--color-bordeaux)]"
             />
             <span className="font-body text-sm text-[var(--color-ink)]/85">
-              J&apos;ai lu et je comprends cet avis. J&apos;accède à ce guide à titre informatif.
+              {t.check}
             </span>
           </label>
 
@@ -86,12 +107,11 @@ export function ReaderConsent() {
             disabled={!checked}
             className="mt-6 w-full rounded-full bg-[var(--color-bordeaux)] py-3 font-ui text-sm font-medium text-white transition hover:bg-[var(--color-bordeaux-dark)] disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Accéder au guide
+            {t.button}
           </button>
 
           <p className="mt-4 text-center font-ui text-[0.68rem] leading-snug text-[var(--color-ink)]/45">
-            © 2026 Emilie Cauvier — La Bibliothèque. Tous droits réservés. Reproduction,
-            partage ou revente interdits sans autorisation écrite.
+            {t.legal}
           </p>
         </div>
       </div>
