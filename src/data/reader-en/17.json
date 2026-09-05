@@ -1,1 +1,136 @@
-{"number": 17, "title": "Setting the right price", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>The starting price is the decision that most influences the outcome of your sale. Neither the price paid long ago, nor your renovations, nor your financial needs set the value: the market decides. The tool for reading it is called the comparative market analysis (CMA).</p><p>This guide explains how a CMA is built, why the municipal assessment isn't the value, and how the starting price influences the final price.</p><p>Each chapter ends with a lined « My notes » page to help you prepare YOUR pricing strategy.</p>"}, {"title": "What (really) determines value", "objective": "Distinguish market value from false reference points.", "html": "<p class=\"lede\">Distinguish market value from false reference points.</p>\n<p>Market value is the price an informed buyer is willing to pay today, under current market conditions. It has nothing to do with:</p>\n<ul><li>What you paid when you bought (the past doesn't interest the buyer).</li><li>The cost of your renovations (not all of them are recovered equally).</li><li>Your financial needs (the buyer doesn't care).</li><li>The municipal assessment (a tax tool, not a sale price).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Detach yourself from the « emotional » price. The market doesn't pay for your memories or your efforts, it pays what the property is worth today. It's sometimes hard to hear, but it's what gets a home sold.</p></aside>"}, {"title": "The comparative market analysis (CMA)", "objective": "Understand how a fact-based price is built.", "html": "<p class=\"lede\">Understand how a fact-based price is built.</p>\n<p>The CMA compares your property to recent sales of similar properties in the same area: type, size, number of rooms, condition, garage, lot, etc. Adjustments are then made for the differences (a comparable property with an extra garage is worth a bit more, for example).</p>\n<ul><li>RECENT sales (the market moves) that are TRULY comparable.</li><li>Adjustments for objective differences.</li><li>You also look at properties currently for sale (your competition) and those that didn't find a buyer (often overpriced).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Be wary of « for sale » properties as a reference: anyone can ASK a price. It's SOLD properties that tell the true value.</p></aside>"}, {"title": "Municipal assessment vs market value", "objective": "Don't confuse the tax tool with the sale price.", "html": "<p class=\"lede\">Don't confuse the tax tool with the sale price.</p>\n<p>The municipal assessment is used to calculate your taxes; it's established en masse, at a reference date, and can be higher or lower than the actual market value. The municipality even applies a « comparative factor » to try to bring it closer to the market.</p>\n<p>Conclusion: never set your sale price based on the municipal assessment. It can serve as a clue, never as a verdict.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>« My house is assessed at such-and-such by the city » is not a pricing argument. The municipal assessment and market value are two different things; only the market sets the sale price.</p></aside>"}, {"title": "The starting-price strategy", "objective": "Choose a price that maximizes the final result.", "html": "<p class=\"lede\">Choose a price that maximizes the final result.</p>\n<p>A fair price, aligned with the CMA, quickly attracts buyers and can generate competition — which often drives the final price up. A price that's too high scares buyers off, the property stalls, and you end up lowering it… selling for less and later than with a good price from the start.</p>\n<ul><li>Good price from day 1: buzz, showings, offers, sometimes a bidding war.</li><li>Price too high: few showings, the image of a « property that lingers », successive drops.</li><li>The first serious buyer is often the best: don't let them slip away out of excessive optimism.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>The market judges your price in the first two weeks. If showings are rare or bring no offer, it's almost always a matter of price — heed that signal early rather than late.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Ask Emilie for a complete comparative analysis.</li><li>List my renovations and check which ones add value.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Set a starting price aligned with recent sales.</li><li>Define an adjustment plan in case the market doesn't respond.</li></ol>\n<h3>Next</h3>\n<ol><li>Watch the signals (showings, offers) and react early.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Market value: the price an informed buyer pays under current conditions.</li><li>CMA: comparative market analysis, based on recent similar sales.</li><li>Adjustment: a price correction for differences between properties.</li><li>Municipal assessment: a tax value, different from the sale price.</li><li>Starting price: a strategic decision that influences the final price.</li></ul>"}], "qcm": [{"q": "Market value is:", "options": ["A) The price paid long ago", "B) What an informed buyer pays today", "C) The municipal assessment", "D) The cost of renovations"], "answer": 1, "explanation": "It's the current market that decides (ch. 1)."}, {"q": "The CMA compares your property to:", "options": ["A) Houses in another city", "B) Recent similar sales in the area", "C) Fictional properties", "D) Your purchase price"], "answer": 1, "explanation": "Recent comparables and adjustments (ch. 2)."}, {"q": "The best pricing reference is properties that are:", "options": ["A) For sale", "B) Sold", "C) Withdrawn", "D) Dreamed of"], "answer": 1, "explanation": "Anyone can ask a price (ch. 2)."}, {"q": "The municipal assessment is used mainly to:", "options": ["A) Set the sale price", "B) Calculate taxes", "C) Pay the notary", "D) Insure the house"], "answer": 1, "explanation": "It's a tax tool (ch. 3)."}, {"q": "A starting price that's too high often leads to:", "options": ["A) A fast, expensive sale", "B) A property that stalls and sells for less and later", "C) More offers", "D) No consequence"], "answer": 1, "explanation": "It becomes « the one that lingers » (ch. 4)."}, {"q": "The market judges your price mainly:", "options": ["A) After six months", "B) In the first two weeks", "C) Never", "D) At the notary's"], "answer": 1, "explanation": "The first weeks are revealing (ch. 4)."}, {"q": "The cost of your renovations:", "options": ["A) Is always recovered 100%", "B) Is not always recovered equally", "C) Sets the value", "D) Doesn't exist"], "answer": 1, "explanation": "Not all renos add the same value (ch. 1)."}, {"q": "A good price from the start can generate:", "options": ["A) Buyers fleeing", "B) Buzz and sometimes a bidding war", "C) No showings", "D) An immediate drop"], "answer": 1, "explanation": "It creates competition (ch. 4)."}]}
+{
+ "number": 17,
+ "title": "Setting the Right Price",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The starting price is the decision that most influences the outcome of your sale. Neither the price once paid, nor your renovations, nor your financial needs set the value: the market decides. The tool to read it is called the comparative market analysis (CMA).</p><p>This guide explains how a CMA is built, why the municipal assessment isn't the value, and how the starting price influences the final price.</p><p>Each chapter ends with a lined “My notes” page to prepare YOUR pricing strategy.</p><!--enr--><p>Setting the right price is the most important decision of a sale. This guide explains what really determines value, how a comparative analysis is built, why the municipal assessment isn't the price, and how overpricing backfires on the seller.</p><p>The key message: the market rewards a fair price and punishes an inflated one.</p>"
+  },
+  {
+   "title": "What (really) determines value",
+   "objective": "Telling market value apart from false references.",
+   "html": "<p class=\"lede\">Telling market value apart from false references.</p>\n<p>Market value is the price an informed buyer is ready to pay today, under current market conditions. It has nothing to do with:</p>\n<ul><li>What you paid at purchase (the past doesn't interest the buyer).</li><li>The cost of your renovations (not all are recovered equally).</li><li>Your financial needs (the buyer doesn't care).</li><li>The municipal assessment (a tax tool, not a sale price).</li></ul>\n<!--enr--><p>Market value is the price an informed buyer pays today — not your municipal assessment, nor what you invested, nor what you “need”. These false references lead to overpricing. Only recent comparable sales tell the truth of the market.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Detach yourself from the “emotional” price. The market doesn't pay for your memories or your efforts, it pays what the property is worth today. It's sometimes hard to hear, but it's what sells.</p></aside>"
+  },
+  {
+   "title": "The comparative market analysis (CMA)",
+   "objective": "Understanding how a fact-based price is built.",
+   "html": "<p class=\"lede\">Understanding how a fact-based price is built.</p>\n<p>The CMA compares your property to recent sales of similar properties in the same area: type, area, number of rooms, condition, garage, lot, etc. You then adjust for the differences (a comparable property with one more garage is worth a bit more, for example).</p>\n<ul><li>RECENT sales (the market moves) and TRULY comparable.</li><li>Adjustments for objective differences.</li><li>You also look at the properties currently for sale (your competition) and those that didn't find a buyer (often too expensive).</li></ul>\n<!--enr--><p>The CMA compares your property to recent similar sales (area, size, condition), with adjustments for the differences. It's the rational basis for a credible price. A solid CMA protects you as much against overpricing (which makes it linger) as underpricing (which leaves money on the table).</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Be wary of properties “for sale” as a reference: anyone can ASK a price. It's the SOLD properties that tell the true value.</p></aside>"
+  },
+  {
+   "title": "Municipal assessment vs market value",
+   "objective": "Not confusing the tax tool and the sale price.",
+   "html": "<p class=\"lede\">Not confusing the tax tool and the sale price.</p>\n<p>The municipal assessment is used to calculate your taxes; it's established in bulk, at a reference date, and can be higher or lower than the real market value. The municipality also applies a “comparative factor” to try to bring it closer to the market.</p>\n<p>Conclusion: never set your sale price on the municipal assessment. It can serve as a clue, never as a verdict.</p>\n<!--enr--><p>The municipal assessment is used to calculate your taxes: established in bulk and with a lag, it isn't the market price. Never use it to set a sale price or make an offer — it's the number-one misunderstanding, in both directions.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>“My house is assessed at such-and-such by the city” isn't a pricing argument. The municipal assessment and market value are two different things; only the market sets the sale price.</p></aside>"
+  },
+  {
+   "title": "The starting-price strategy",
+   "objective": "Choosing a price that maximizes the final result.",
+   "html": "<p class=\"lede\">Choosing a price that maximizes the final result.</p>\n<p>A fair price, aligned with the CMA, attracts buyers quickly and can generate competition — which often drives the final price up. Too high a price scares buyers off, the property stalls, and you end up lowering it… selling for less and later than with a good price from the start.</p>\n<ul><li>A good price from day 1: buzz, visits, offers, sometimes a bidding war.</li><li>Too high a price: few visits, the image of a “property that lingers”, successive reductions.</li><li>The first serious buyer is often the best: don't let them slip away out of excess optimism.</li></ul>\n<!--enr--><p>The starting-price strategy depends on the market: a fair price, aligned with the CMA, attracts quickly and can prompt several offers. The first weeks are decisive; a well-calibrated price at launch almost always brings more than an inflated one you'll have to lower.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>The market judges your price in the first two weeks. If visits are rare or without an offer, it's almost always a price issue — heed that signal early rather than late.</p></aside>"
+  },
+  {
+   "title": "Why overpricing costs you",
+   "objective": "Understanding the risk of too high a price.",
+   "html": "<p class=\"lede\">Understanding the risk of too high a price.</p>\n<p>People often think a high starting price “leaves room to negotiate”. In reality, it's risky:</p><ul><li>The property attracts fewer visits from the start.</li><li>It accumulates <strong>days on market</strong>, which worries buyers.</li><li>It serves to <strong>sell the others</strong> (yours makes the better-priced neighbour look good).</li><li>Successive reductions send a signal of weakness.</li></ul><p>A fair price from the start generates more interest — and often a better final price.</p><!--enr--><p>Overpricing costs you: fewer visits, days piling up, a signal of weakness, and successive reductions that worry buyers. Worse, your property serves to “sell” the neighbours' better-priced ones. A fair price from the start generates more interest — and often a better final price.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>The market “responds” mostly in the first two or three weeks. Better a fair price that creates buzz than an inflated one that scares people off and that you'll have to lower later.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Ask Emilie for a complete comparative analysis.</li><li>List my renovations and check which ones add value.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Set a starting price aligned with recent sales.</li><li>Define an adjustment plan if the market doesn't respond.</li></ol>\n<h3>Next</h3>\n<ol><li>Watch the signals (visits, offers) and react early.</li></ol><!--enr--><h3>To set my price</h3><ol><li>Have a recent, objective comparative analysis established.</li><li>Ignore the municipal assessment and my past costs; follow the market.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Market value: the price an informed buyer pays under current conditions.</li><li>CMA: comparative market analysis, based on recent similar sales.</li><li>Adjustment: a price correction for the differences between properties.</li><li>Municipal assessment: a tax value, different from the sale price.</li><li>Starting price: a strategic decision that influences the final price.</li></ul><!--enr--><li>Market value: the price an informed buyer pays today.</li><li>CMA: comparative market analysis based on recent similar sales.</li><li>Municipal assessment: a tax value, distinct from the sale price.</li><li>Overpricing: too high a price that makes the property linger and drop.</li><li>Days on market: a key indicator; it lengthens with a poorly calibrated price.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Market value is:",
+   "options": [
+    "A) The price once paid",
+    "B) What an informed buyer pays today",
+    "C) The municipal assessment",
+    "D) The cost of renovations"
+   ],
+   "answer": 1,
+   "explanation": "The current market decides (ch. 1)."
+  },
+  {
+   "q": "The CMA compares your property to:",
+   "options": [
+    "A) Houses in another city",
+    "B) Recent similar sales in the area",
+    "C) Fictional properties",
+    "D) Your purchase price"
+   ],
+   "answer": 1,
+   "explanation": "Recent comparables and adjustments (ch. 2)."
+  },
+  {
+   "q": "The best price reference is properties that are:",
+   "options": [
+    "A) For sale",
+    "B) Sold",
+    "C) Withdrawn",
+    "D) Dreamed of"
+   ],
+   "answer": 1,
+   "explanation": "Anyone can ask a price (ch. 2)."
+  },
+  {
+   "q": "The municipal assessment mainly serves to:",
+   "options": [
+    "A) Set the sale price",
+    "B) Calculate the taxes",
+    "C) Pay the notary",
+    "D) Insure the house"
+   ],
+   "answer": 1,
+   "explanation": "It's a tax tool (ch. 3)."
+  },
+  {
+   "q": "Too high a starting price often leads to:",
+   "options": [
+    "A) A fast, expensive sale",
+    "B) A property that stalls and sells for less and later",
+    "C) More offers",
+    "D) No consequence"
+   ],
+   "answer": 1,
+   "explanation": "It becomes “the one that lingers” (ch. 4)."
+  },
+  {
+   "q": "The market judges your price mostly:",
+   "options": [
+    "A) After six months",
+    "B) In the first two weeks",
+    "C) Never",
+    "D) At the notary"
+   ],
+   "answer": 1,
+   "explanation": "The first weeks are revealing (ch. 4)."
+  },
+  {
+   "q": "The cost of your renovations:",
+   "options": [
+    "A) Is always recovered 100%",
+    "B) Isn't always recovered equally",
+    "C) Sets the value",
+    "D) Doesn't exist"
+   ],
+   "answer": 1,
+   "explanation": "Not all renovations add value the same way (ch. 1)."
+  },
+  {
+   "q": "A good price from the start can generate:",
+   "options": [
+    "A) Flight",
+    "B) Buzz and sometimes a bidding war",
+    "C) No visits",
+    "D) An immediate drop"
+   ],
+   "answer": 1,
+   "explanation": "It creates competition (ch. 4)."
+  }
+ ]
+}
