@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Build English covers and PDFs for La Bibliotheque.
+"""Build English PDFs using reviewed English cover artwork.
 
 Outputs:
-- public/covers-en/<number>.jpg for every catalogue guide
 - storage/pdf-en/<same filename as FR> when src/data/reader-en/<number>.json exists
+
+Front covers are required inputs in public/covers-en, never generated here.
 """
 from __future__ import annotations
 
@@ -18,13 +19,12 @@ import tempfile
 import shutil
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 import pymupdf
 
 
 SITE = Path(__file__).resolve().parents[1]
 READER_EN = SITE / "src" / "data" / "reader-en"
-COVERS_FR = SITE / "public" / "covers"
 COVERS_EN = SITE / "public" / "covers-en"
 OUT = SITE / "storage" / "pdf-en"
 
@@ -219,52 +219,15 @@ def font(name, size):
 
 
 def make_cover(num, meta):
-    COVERS_EN.mkdir(parents=True, exist_ok=True)
-    src = Image.open(COVERS_FR / f"{num}.jpg").convert("RGB")
-    W, H = src.size
-    img = Image.new("RGB", (W, H), (246, 237, 232))
-    draw = ImageDraw.Draw(img)
-
-    # Soft visual memory from the French cover, very faded so old French text
-    # never dominates the English preview.
-    bg = src.resize((W, H), Image.Resampling.LANCZOS).filter(ImageFilter.GaussianBlur(7))
-    img = Image.blend(img, bg, 0.04)
-    draw = ImageDraw.Draw(img)
-    draw.rectangle((0, 0, W, H), fill=(246, 237, 232,)) if False else None
-
-    logo = Image.open(SITE / "public" / "logo-signe-em.png").convert("RGBA")
-    logo.thumbnail((165, 120), Image.Resampling.LANCZOS)
-    img.paste(logo, (78, 72), logo)
-
-    draw.text((W - 150, 85), f"No. {num:02d}", font=font("sans-bold", 24), fill=(105, 29, 43))
-    draw.line((W - 92, 135, W - 92, 245), fill=(105, 29, 43), width=2)
-    draw.text((82, 310), "COLLECTION", font=font("sans-bold", 18), fill=(105, 29, 43))
-    draw.text((82, 342), COLLECTIONS_EN.get(meta["collection"], meta["collection"]).upper(), font=font("sans", 17), fill=(68, 55, 49))
-
-    title_font = font("serif-bold", 58 if len(meta["title"]) < 34 else 50)
-    y = 455
-    for line in wrap_text(draw, meta["title"], title_font, 560)[:5]:
-        draw.text((82, y), line, font=title_font, fill=(105, 29, 43))
-        y += int(title_font.size * 1.03)
-    draw.line((82, y + 22, 160, y + 22), fill=(169, 116, 59), width=3)
-
-    sub_font = font("serif", 25)
-    y += 58
-    for line in wrap_text(draw, meta["subtitle"], sub_font, 520)[:4]:
-        draw.text((82, y), line, font=sub_font, fill=(46, 38, 34))
-        y += 34
-
-    # Large rounded image-like window from the original cover texture.
-    crop = src.crop((int(W * 0.55), int(H * 0.30), W, int(H * 0.90))).filter(ImageFilter.GaussianBlur(0.4))
-    crop = crop.resize((int(W * 0.70), int(H * 0.42)), Image.Resampling.LANCZOS)
-    crop = Image.blend(Image.new("RGB", crop.size, (246, 237, 232)), crop, 0.62)
-    mask = Image.new("L", crop.size, 0)
-    md = ImageDraw.Draw(mask)
-    md.pieslice((-crop.width, -crop.height // 5, crop.width * 2, crop.height * 2), 205, 360, fill=255)
-    img.paste(crop, (W - crop.width, H - crop.height - 150), mask)
-
-    draw.text((82, H - 110), "2026 EDITION", font=font("sans-bold", 18), fill=(96, 75, 64))
-    img.save(COVERS_EN / f"{num}.jpg", quality=92)
+    """Require curated artwork; never draw English text over French covers."""
+    path = COVERS_EN / f"{num}.jpg"
+    if not path.is_file():
+        raise FileNotFoundError(f"Missing approved English cover: {path}")
+    with Image.open(path) as cover:
+        width, height = cover.size
+        if width < 1000 or abs(width / height - 2 / 3) > 0.01:
+            raise ValueError(f"English cover must be high-resolution portrait 2:3: {path}")
+    return path
 
 
 def make_backcover(num, meta) -> Path:

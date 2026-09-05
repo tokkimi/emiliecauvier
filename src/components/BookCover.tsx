@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function BookCover({
   number,
   title,
@@ -15,17 +17,18 @@ export function BookCover({
 }) {
   // Les visuels 2 à 34 contiennent une ancienne étiquette de collection.
   // Ce cartouche piloté par les données la corrige sans masquer l'illustration.
-  const needsCollectionCorrection = number >= 2 && number <= 34;
+  const needsCollectionCorrection = locale === 'fr' && number >= 2 && number <= 34;
 
   return (
     <div
       className={`relative aspect-[2/3] overflow-hidden bg-[#f3eee9] ${className}`}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={locale === 'en' ? `/covers-en/${number}.jpg` : `/covers/${number}.jpg`}
-        alt={`Couverture — ${title}`}
+      <Image
+        src={locale === 'en' ? `/covers-en/${number}.webp` : `/covers/${number}.jpg`}
+        alt={`${locale === 'en' ? 'Cover' : 'Couverture'} — ${title}`}
         loading={loading}
+        fill
+        unoptimized
         className="h-full w-full object-contain"
       />
       {needsCollectionCorrection && (

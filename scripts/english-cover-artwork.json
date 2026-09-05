@@ -1,0 +1,304 @@
+{
+  "method": "Built-in image generation, one reference-guided text-localization per cover. Reviewed artwork replaces the complete cover; no text overlays.",
+  "basePrompt": "Use case: text-localization. Asset: English ebook FRONT COVER, flat full-bleed portrait 2:3. The attached French original is the exact design reference and edit target. Recreate the whole cover cleanly in English: preserve the individual photograph, objects/people, warm lighting, graceful sweeping curved cream/photo boundary, ivory, burgundy and black palette, fine high-contrast editorial serif headline and understated sans-serif subtitle. Preserve the original handwritten burgundy 'Signé PAR Em' logo UNTRANSLATED in exactly its original position. Recompose typography professionally within the original cream space. No overprinting, pasted rectangles, masks, ghost French text, cropped lettering, overlapping text or collages. Keep subtle number and rule at upper right, edition lower left. Translate all readable secondary lettering inside the photographed scene naturally to English. Preserve photograph details, proportions, generous margins and crisp readable lettering.",
+  "specs": [
+    {
+      "number": 1,
+      "title": "Becoming a Homeowner in Quebec",
+      "subtitle": "The complete first-time buyer’s guide — from the idea to the keys"
+    },
+    {
+      "number": 2,
+      "title": "The 5 Mistakes That Cost Buyers $10,000",
+      "subtitle": "Costly first-purchase traps — and how to avoid them"
+    },
+    {
+      "number": 3,
+      "title": "Mortgage Pre-Approval, Decoded",
+      "subtitle": "Understand, prepare for and secure strong financing"
+    },
+    {
+      "number": 4,
+      "title": "The Welcome Tax, Explained",
+      "subtitle": "Quebec land transfer duties — calculation, deadline and special cases"
+    },
+    {
+      "number": 5,
+      "title": "Buying a Condo in Co-Ownership",
+      "subtitle": "Understand the specifics of condos and the rules of co-ownership."
+    },
+    {
+      "number": 6,
+      "title": "Visiting a Property",
+      "subtitle": "The essential checks to help you make the right choice."
+    },
+    {
+      "number": 7,
+      "title": "Writing a Winning Promise to Purchase",
+      "subtitle": "The right words today can make all the difference tomorrow."
+    },
+    {
+      "number": 8,
+      "title": "A Duplex or Triplex to Live In and Rent Out",
+      "subtitle": "The essentials for building a successful project."
+    },
+    {
+      "number": 9,
+      "title": "Buying New or Existing Property",
+      "subtitle": "The essentials to help you make the right choice."
+    },
+    {
+      "number": 10,
+      "title": "Financing Your Down Payment",
+      "subtitle": "The essentials for putting together your down payment."
+    },
+    {
+      "number": 11,
+      "title": "Choosing the Right Neighbourhood",
+      "subtitle": "The essentials for finding the neighbourhood that feels like you."
+    },
+    {
+      "number": 12,
+      "title": "Buying in Montreal",
+      "subtitle": "The essentials for making your project happen in the right city."
+    },
+    {
+      "number": 13,
+      "title": "The Real Costs of Buying",
+      "subtitle": "What we often forget… and what can cost you dearly."
+    },
+    {
+      "number": 14,
+      "title": "Clay Soils, Pyrite and French Drains",
+      "subtitle": "Protect your property from hidden risks and avoid costly repairs."
+    },
+    {
+      "number": 15,
+      "title": "Sell at the Best Price, Without Leaving Money on the Table",
+      "subtitle": "The strategies and preparation that make all the difference when selling your property."
+    },
+    {
+      "number": 16,
+      "title": "Express Home Staging",
+      "subtitle": "Small changes, big impact: prepare your home to impress from the first visit."
+    },
+    {
+      "number": 17,
+      "title": "Setting the Right Price: A Decisive Step",
+      "subtitle": "Position your property at the right price to attract the right buyers and maximize your result."
+    },
+    {
+      "number": 18,
+      "title": "Selling on Your Own or With a Broker: The Right Choice",
+      "subtitle": "Benefits, differences, savings and peace of mind: how to make the best decision for you."
+    },
+    {
+      "number": 19,
+      "title": "The Seller’s Declaration",
+      "subtitle": "Everything you need to know to complete this essential document transparently and avoid unpleasant surprises."
+    },
+    {
+      "number": 20,
+      "title": "Selling Your Condo: The Keys to Success",
+      "subtitle": "Specifics, strategies and practical advice to sell your condo quickly and at the best price."
+    },
+    {
+      "number": 21,
+      "title": "Prepare Your Property for Market Like a Pro",
+      "subtitle": "The essential steps to showcase your property and attract the right buyers from the first visit."
+    },
+    {
+      "number": 22,
+      "title": "Managing Multiple Offers",
+      "subtitle": "For sellers — turn competition into results."
+    },
+    {
+      "number": 23,
+      "title": "Selling an Inherited Property",
+      "subtitle": "Estate sales — sell with peace of mind and at the right price."
+    },
+    {
+      "number": 24,
+      "title": "Selling During a Separation",
+      "subtitle": "Separation or divorce — sell with clarity and peace of mind."
+    },
+    {
+      "number": 25,
+      "title": "The Location Certificate",
+      "subtitle": "When, why and how much."
+    },
+    {
+      "number": 26,
+      "title": "Your First Income Property",
+      "subtitle": "Buy your first plex without costly mistakes."
+    },
+    {
+      "number": 27,
+      "title": "Calculating Profitability",
+      "subtitle": "Cash flow, cap rate and GRM — the numbers that drive decisions."
+    },
+    {
+      "number": 28,
+      "title": "Financing an Income Property",
+      "subtitle": "Down payment, CMHC and financing structure."
+    },
+    {
+      "number": 29,
+      "title": "Taxes for Real Estate Investors",
+      "subtitle": "Rental income, depreciation and capital gains."
+    },
+    {
+      "number": 30,
+      "title": "Tenants and the TAL",
+      "subtitle": "Leases, rent increases and rights in Quebec."
+    },
+    {
+      "number": 31,
+      "title": "Repossession and Eviction",
+      "subtitle": "The Quebec legal framework."
+    },
+    {
+      "number": 32,
+      "title": "Renovating to Create Value",
+      "subtitle": "Flips and added value — without losing money."
+    },
+    {
+      "number": 33,
+      "title": "Short-Term Rentals (Airbnb)",
+      "subtitle": "What is legal in Quebec."
+    },
+    {
+      "number": 34,
+      "title": "Building a Real Estate Portfolio",
+      "subtitle": "From 1 to 5 doors — grow your real estate wealth."
+    },
+    {
+      "number": 35,
+      "title": "Understanding the Real Estate Brokerage Act",
+      "subtitle": "Your rights as a consumer."
+    },
+    {
+      "number": 36,
+      "title": "The Notary’s Role",
+      "subtitle": "What the notary does in a real estate transaction."
+    },
+    {
+      "number": 37,
+      "title": "Mortgage: Fixed or Variable?",
+      "subtitle": "Rate, term and amortization."
+    },
+    {
+      "number": 38,
+      "title": "Home and Title Insurance",
+      "subtitle": "Protect yourself when buying."
+    },
+    {
+      "number": 39,
+      "title": "The Greater Montreal Market",
+      "subtitle": "Read market cycles to buy and sell with better judgment."
+    },
+    {
+      "number": 40,
+      "title": "Buying or Selling in Winter",
+      "subtitle": "Myths and realities of winter real estate in Quebec."
+    },
+    {
+      "number": 41,
+      "title": "Municipal Assessment vs. Market Value",
+      "subtitle": "Two numbers, two uses — understand the difference."
+    },
+    {
+      "number": 42,
+      "title": "Divided or Undivided Co-Ownership?",
+      "subtitle": "Choose wisely — two very different ways to own a condo."
+    },
+    {
+      "number": 43,
+      "title": "Buying as a Couple",
+      "subtitle": "Common-law partners, co-ownership and agreements — protect yourselves as a couple."
+    },
+    {
+      "number": 44,
+      "title": "First Home Purchase for Newcomers",
+      "subtitle": "Buying in Quebec when you come from elsewhere — key steps and local rules."
+    },
+    {
+      "number": 45,
+      "title": "Buying and Selling at the Same Time",
+      "subtitle": "Move without getting stuck — coordinate both transactions."
+    },
+    {
+      "number": 46,
+      "title": "Retirement and Real Estate",
+      "subtitle": "Downsizing, income and estate planning — make real estate work for your retirement."
+    },
+    {
+      "number": 47,
+      "title": "Helping Your Child Buy a Home",
+      "subtitle": "Gift, loan or co-signing — support them without putting yourself at risk."
+    },
+    {
+      "number": 50,
+      "title": "Buying a Cottage",
+      "subtitle": "A second home in Quebec — dreams, reality and essential checks."
+    }
+  ],
+  "sources": {
+    "1": "exec-694affa8-2cbc-4388-821e-e26e38333adf.png",
+    "2": "exec-5ca295e3-21cb-4cff-93ff-c6b53fa52348.png",
+    "3": "exec-d2657c63-d139-4b79-9255-445faffdf7da.png",
+    "4": "exec-47b63f70-906a-4b45-8982-4a590ed37b94.png",
+    "5": "exec-aba49e41-4551-48f0-bebf-5a3e32a97f01.png",
+    "6": "exec-3a72d1e6-b23b-4db0-adff-fae17aa28a14.png",
+    "7": "exec-0df32246-0500-44fd-a99a-257e5c7f0a1b.png",
+    "8": "exec-1d443531-cf56-4ac0-87c4-5912112f2e37.png",
+    "9": "exec-29b756a7-94eb-4d6e-9398-6ee0c235058e.png",
+    "10": "exec-ab84e83c-724d-4309-a1fc-17eef90cc114.png",
+    "11": "exec-06469d50-7e59-4f92-a6fe-a088d7d4845e.png",
+    "12": "exec-f9f8c8a3-9e47-4c02-9fdf-3fd74c72abd9.png",
+    "13": "exec-7b26bb0b-f974-4e1c-834c-e1d6b6d30cca.png",
+    "14": "exec-f92db151-3271-465b-80e0-057f1b4d03df.png",
+    "15": "exec-bc817659-f093-414f-9583-1b6559cd4408.png",
+    "16": "exec-971d3ceb-e79c-4632-b22e-dbdf20aba7cf.png",
+    "17": "exec-5301cbd0-2263-4f9d-b9bb-5a18488c0afd.png",
+    "18": "exec-0a0b8c68-4295-4492-b3a1-cfecd2955a0e.png",
+    "19": "exec-30944331-bdc0-43ab-b5f7-6cd71ac53820.png",
+    "20": "exec-22f3fe6a-d073-42ee-b0a1-b2a874fe9a2a.png",
+    "21": "exec-6b7b6fe9-1a5f-4027-88a3-c587d8920cf1.png",
+    "22": "exec-67f7c71e-1f88-46a2-a5dd-1ff38146946b.png",
+    "23": "exec-3f257723-c40e-4a5c-9866-3104fb6c48d6.png",
+    "24": "exec-bf93a9a8-19ea-45ff-a972-952b9092c0d1.png",
+    "25": "exec-74501f3c-cacc-47b9-9838-8dcfad88a315.png",
+    "26": "exec-20dcf37a-7f7c-4f4a-9d71-c4ea9601c83f.png",
+    "27": "exec-1fffac85-308c-47ee-b427-15107b42ef8e.png",
+    "28": "exec-62326d83-9574-4782-9151-2b077e6174fe.png",
+    "29": "exec-d36a2246-712a-418c-8f23-f5ed0339a697.png",
+    "30": "exec-47248f77-de5a-46bf-9144-924f963552bd.png",
+    "31": "exec-f8221232-4145-487d-821a-0efe06d0109f.png",
+    "32": "exec-9e9426df-082d-456d-ad49-596d600e69e9.png",
+    "33": "exec-d42434f7-f29e-4c02-999a-4e1aaf7581e9.png",
+    "34": "exec-4b95fbde-b43a-4e59-a7be-0e3d27fe291a.png",
+    "35": "exec-8692d621-aa20-4a3c-8ed9-4f0bc84a8bad.png",
+    "36": "exec-1b305423-e6ce-4dcb-b5b6-4149057069ec.png",
+    "37": "exec-9ea4cd6d-9c66-4683-914a-9a1821bdfd49.png",
+    "38": "exec-62c2bb31-a096-4cd3-9f90-ba0888a390e7.png",
+    "39": "exec-16ceb101-aa07-4a7d-9f4c-1894e2c21905.png",
+    "40": "exec-faa245a5-b08f-4e50-b81a-6f6718662933.png",
+    "41": "exec-7223c957-1f8f-4584-b3fb-fda11ec5ab3a.png",
+    "42": "exec-1fe9d15a-80ce-468b-a63a-220c57d496ae.png",
+    "43": "exec-744ec821-0ae2-46eb-9d7c-d053c7342878.png",
+    "44": "exec-4713ebd2-0d12-4482-b702-c5649e445114.png",
+    "45": "exec-0f6da8dc-27c9-4298-b1cd-dfa2790ceaa7.png",
+    "46": "exec-8d85fc99-2967-4444-8df5-71163c6c0442.png",
+    "47": "exec-e3e5b579-acf2-49ff-8475-af975ecace1e.png",
+    "50": "exec-c638bc80-4f24-4f45-a03c-c47f0cab2d6f.png",
+    "back": "exec-53498d73-a2eb-46ce-8943-02db16518352.png"
+  },
+  "revisions": {
+    "5": "Keep this English cover entirely unchanged except the main headline typography. Retypeset the headline cleanly, smaller, entirely inside the cream area with at least 35 pixels clearance from the curved photograph edge. Use these exact three lines: 'Buying' / 'a Condo in' / 'Co-Ownership'. Keep fine high-contrast editorial serif, black first two lines and burgundy final line. Reduce font size as needed. No letter may cross the cream/photo boundary. No white outlines or shadows around text, no patch/mask rectangles, no lettering written on top of existing letters. Preserve original logo, photo, subtitle, collection and edition. Output a complete clean 2:3 portrait cover.",
+    "7": "Preserve this English cover exactly, including all headline typography, logo, layout, photo, people, colours and curve. Make just two small text-localization corrections within photographed objects: on the red book spine replace the remaining French 'PROJETS' with 'PROJECTS'; on the notebook replace the unnatural 'Stress-free quarters' with 'A stress-free move'. Recreate those original ink/print lettering surfaces seamlessly with correct perspective, not overlays or masks. Everything else unchanged. Output complete clean 2:3 portrait cover.",
+    "35": "Use case: text-localization. Preserve this finished English ebook cover exactly: headline, layout, logo, people, photograph, colours, curve, margins and all other text unchanged. Correct one remaining French word in the photographed notebook at bottom left: replace 'Encadrement' with the English word 'Regulation'. Render the replacement as natural handwritten ink on the notebook in the same perspective and style, with a seamless paper surface, no sticker or patch, no overprinted lettering. Deliver the complete portrait cover.",
+    "36": "Edit this complete ebook front cover. Replace the small category line at upper left, currently 'QUÉBEC & LÉGAL', with the NEW WORDS 'LAW & REGULATIONS'. This is a visible wording change, not just accent removal. The new line must read exactly LAW & REGULATIONS in the same small charcoal sans-serif font. Keep COLLECTION on the line above. Preserve everything else including original Signé PAR Em logo, headline The Notary’s Role, all photographs and warm cream curved composition. Deliver a clean complete 2:3 cover with the new category typeset seamlessly, without any visible rectangular patch or overprinted old letters.",
+    "38": "Edit this ebook cover. Change ONLY the category line below COLLECTION: completely remove QUÉBEC & LÉGAL and replace it with DIFFERENT WORDS: LAW & REGULATIONS. The resulting visible printed line MUST say LAW & REGULATIONS in small charcoal sans-serif. Do not retain the old category. All other imagery, titles Home and Title Insurance, subtitle, No.38, signature logo and warm cream curved layout must be preserved. Seamless professional typesetting, no rectangle, no old text showing underneath, no overlays. Deliver complete cover."
+  }
+}
