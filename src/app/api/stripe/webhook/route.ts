@@ -78,6 +78,7 @@ export async function POST(req: Request) {
           await sendPurchaseEmail({
             to: s.customer_details?.email,
             stripeSessionId: s.id,
+            locale: s.metadata?.pdfLocale === 'en' ? 'en' : 'fr',
             guides: purchases
               .map((purchase) =>
                 purchase.ebook

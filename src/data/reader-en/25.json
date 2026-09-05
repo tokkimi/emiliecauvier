@@ -1,1 +1,136 @@
-{"number": 25, "title": "The Certificate of Location", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>The certificate of location is one of the most important — and most misunderstood — documents in a Quebec real-estate transaction. An outdated or non-compliant certificate can delay, complicate, or derail a sale.</p><p>This guide explains what this document is, when it must be renewed, what irregularities it can reveal, and how to plan ahead for it as a seller.</p><p>Informational content: special cases are settled with the notary and the land surveyor. Each chapter ends with a lined « My notes » page.</p>"}, {"title": "What is a certificate of location?", "objective": "Understand the role of this surveying document.", "html": "<p class=\"lede\">Understand the role of this surveying document.</p>\n<p>The certificate of location is a document prepared by a land surveyor that describes the current state of the property: lot boundaries, location of the buildings, easements, any encroachments, and compliance with regulations and titles.</p>\n<p>It includes a plan and a report. It allows the buyer, the lender, and the notary to know exactly what is being sold and whether everything is compliant.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Think of the certificate of location as the property's « ID card ». It is what confirms that what you are selling truly matches the titles and the regulations.</p></aside>"}, {"title": "When is a new certificate required?", "objective": "Know whether yours is still valid.", "html": "<p class=\"lede\">Know whether yours is still valid.</p>\n<p>A certificate can become inadequate if it is too old or if it no longer reflects the current state of the premises. The notary and the lender require a certificate that matches present reality.</p>\n<ul><li>Too old: standards and the state of the premises may have changed.</li><li>Changes since (addition, shed, pool, fence, driveway): the certificate does not show them.</li><li>A regulatory or boundary change: can make it non-compliant.</li></ul>\n<p>When in doubt, order a new certificate from a land surveyor. It takes time: it is best to start early.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>If you have added anything since your certificate (shed, pool, addition), assume it needs updating. Plan ahead: a surveyor does not produce a certificate overnight.</p></aside>"}, {"title": "The irregularities it can reveal", "objective": "Anticipate the problems to resolve before the sale.", "html": "<p class=\"lede\">Anticipate the problems to resolve before the sale.</p>\n<ul><li>Encroachment: a building (yours or a neighbour's) that crosses the boundary.</li><li>Easement: a third party's right over your land (right of way, public utility).</li><li>Non-compliance with setbacks or municipal by-laws.</li><li>A discrepancy between reality and the titles.</li></ul>\n<p>Some irregularities are minor; others require corrective work, regularization, or negotiation. Discovering them early prevents them from blocking the sale at the last minute.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Have the notary review your certificate BEFORE listing. Resolving an irregularity up front is far simpler than discovering it under pressure with an offer in hand.</p></aside>"}, {"title": "Costs, timelines, and planning ahead", "objective": "Plan for this often-overlooked item.", "html": "<p class=\"lede\">Plan for this often-overlooked item.</p>\n<p>A new certificate involves a cost (the surveyor's fees, which vary by property) and, above all, a production timeline. In a sale, that timeline can be critical if you leave it too late.</p>\n<ul><li>Check your certificate as soon as you consider selling.</li><li>Order a new one early if needed.</li><li>Build this cost and timeline into your sale schedule.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Treat the certificate of location as the very first box to check off in your sale. It is the document that, when forgotten, most often delays a signing at the notary's office.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Find my certificate of location and check its date.</li><li>List the additions made since (shed, pool, extension).</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have the notary review the certificate.</li><li>Order a new certificate if needed, early.</li></ol>\n<h3>Then</h3>\n<ol><li>Resolve any irregularity before listing.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Certificate of location: a surveying document describing the state of the property.</li><li>Land surveyor: the professional who produces the certificate.</li><li>Encroachment: a building that crosses a lot boundary.</li><li>Easement: a third party's right over your property.</li><li>Non-compliance: a discrepancy with the regulations or the titles.</li></ul>"}], "qcm": [{"q": "The certificate of location is prepared by:", "options": ["A) The notary", "B) A land surveyor", "C) The inspector", "D) The broker"], "answer": 1, "explanation": "It is a surveying document (ch. 1)."}, {"q": "It describes, among other things:", "options": ["A) The colour of the walls", "B) Boundaries, buildings, easements, and compliance", "C) The rent", "D) The school tax"], "answer": 1, "explanation": "It is the property's « ID card » (ch. 1)."}, {"q": "A certificate can become inadequate if it is:", "options": ["A) Recent", "B) Too old or no longer reflecting the premises", "C) Signed", "D) Colourful"], "answer": 1, "explanation": "It must match present reality (ch. 2)."}, {"q": "An addition such as a pool or a shed:", "options": ["A) Has no effect", "B) May require a new certificate", "C) Is illegal", "D) Lowers the taxes"], "answer": 1, "explanation": "The certificate does not show it (ch. 2)."}, {"q": "An encroachment is:", "options": ["A) A tax", "B) A building that crosses the lot boundary", "C) An insurance policy", "D) A piece of furniture"], "answer": 1, "explanation": "A possible irregularity (ch. 3)."}, {"q": "An easement is:", "options": ["A) A tax", "B) A third party's right over your land", "C) A room", "D) A permit"], "answer": 1, "explanation": "For example, a right of way (ch. 3)."}, {"q": "The certificate should be reviewed by the notary:", "options": ["A) After the sale", "B) Before listing", "C) Never", "D) At move-in"], "answer": 1, "explanation": "Resolving it up front avoids hold-ups (ch. 3)."}, {"q": "The certificate is often the document that:", "options": ["A) Speeds everything up", "B) When forgotten, most delays a signing", "C) Is unimportant", "D) Replaces the inspection"], "answer": 1, "explanation": "To be handled as a priority (ch. 4)."}]}
+{
+ "number": 25,
+ "title": "The certificate of location",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The certificate of location is one of the most important - and most misunderstood - documents in a real estate transaction in Quebec. An expired or non-compliant certificate can delay, complicate or derail a sale.</p><p>This guide explains what this document is, when it must be renewed, what irregularities it may reveal, and how to anticipate it on the seller's side.</p><p>Informative content: special cases are settled with the notary and the land surveyor. Each chapter ends with a lined “My Notes” page.</p><p>The certificate of location is one of the most misunderstood documents - and one most capable of delaying a sale. This guide explains its role, when it needs to be renewed, the irregularities it reveals, and how to anticipate costs and deadlines.</p><p>The key message: we take care of it early, never the day before signing.</p>"
+  },
+  {
+   "title": "What is a certificate of location?",
+   "objective": "Understand the role of this survey document.",
+   "html": "<p class=\"lede\">Understand the role of this survey document.</p>\n<p>The certificate of location is a document prepared by a land surveyor which describes the current state of the property: boundaries of the land, location of buildings, easements, possible encroachments, and compliance with regulations and titles.</p>\n<p>It includes a plan and a report. It allows the buyer, the lender and the notary to know exactly what is being sold and whether everything is compliant.</p>\n<p>The certificate of location is a survey document which describes the state and location of the property (boundaries, buildings, easements, encroachments). The lender and the notary require it: it is a key document which must reflect the current reality at the time of the sale.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>See the certificate of location as the “identity card” of the property. It is he who confirms that what you are selling corresponds to the titles and regulations.</p></aside>"
+  },
+  {
+   "title": "When is a new certificate required?",
+   "objective": "Find out if yours is still valid.",
+   "html": "<p class=\"lede\">Find out if yours is still valid.</p>\n<p>A certificate may become insufficient if it is too old or if it no longer reflects the current state of the premises. The notary and the lender require a certificate that corresponds to the present reality.</p>\n<ul><li>Too old: the standards and the state of the premises may have changed.</li><li>Modifications since (extension, shed, swimming pool, fence, entrance): the certificate does not show them.</li><li>Regulatory or limit change: may make it non-compliant.</li></ul>\n<p>If in doubt, order a new certificate from a land surveyor. This takes time: it's better to start early.</p>\n<p>A certificate becomes insufficient if it is too old or if it no longer corresponds to the condition of the premises (extension, shed, swimming pool, fence, new easement). If in doubt, have it checked early: producing a new certificate takes time that should not be discovered at the last minute.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If you have added anything since your certificate (shed, swimming pool, extension), assume that it needs to be updated. Think ahead: a surveyor does not produce a certificate overnight.</p></aside>"
+  },
+  {
+   "title": "The irregularities it can reveal",
+   "objective": "Anticipate problems to be resolved before the sale.",
+   "html": "<p class=\"lede\">Anticipate problems to be resolved before the sale.</p>\n<ul><li>Encroachment: a building (yours or a neighbor's) that exceeds the limit.</li><li>Servitude: a right of a third party on your land (passage, public utility).</li><li>Non-compliance with margins or municipal regulations.</li><li>Gap between reality and headlines.</li></ul>\n<p>Some irregularities are minor; others require corrections, regularization or negotiation. Discovering them early prevents them from blocking the sale at the last minute.</p>\n<p>The certificate may reveal irregularities to be resolved: encroachment (a building that exceeds a limit), non-compliance with regulations, forgotten easement. It is better to discover them - and deal with them - before the sale than to see them block the transaction at the notary.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Have your certificate read by the notary BEFORE putting it on sale. Resolving an irregularity in advance is much simpler than discovering it under pressure, with an offer in hand.</p></aside>"
+  },
+  {
+   "title": "Costs, deadlines and good anticipation",
+   "objective": "Plan this often forgotten position.",
+   "html": "<p class=\"lede\">Plan this often forgotten position.</p>\n<p>A new certificate represents a cost (surveyor's fees, variable depending on the property) and above all a production time. In a sale, this deadline can be critical if you start it late.</p>\n<ul><li>Check your certificate as soon as you plan to sell.</li><li>Order a new one early if necessary.</li><li>Integrate this cost and this deadline into your sales schedule.</li></ul>\n<p>A new certificate represents a cost (surveyor's fees) and above all a delay. This is an item that is often forgotten: anticipate it from the decision to sell, and negotiate in the promise to purchase that pays for it, to avoid last minute tensions.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Treat the certificate of location as the very first check box in your sale. This is the document which, if forgotten, most often delays a signature at the notary.</p></aside>"
+  },
+  {
+   "title": "When the certificate is no longer enough",
+   "objective": "React to an inadequate certificate.",
+   "html": "<p class=\"lede\">React to an inadequate certificate.</p>\n<p>A certificate of location can be <strong>expired</strong> or no longer reflect reality (after work, an extension, a new fence). Your options:</p><ul><li>Produce a <strong>new certificate</strong> by a land surveyor.</li><li>Consider a <strong>title insurance</strong>, which can sometimes fill the gap depending on the case.</li><li>Negotiate <strong>who pays</strong> the new certificate in the promise to purchase.</li></ul><p>The lender and the notary generally require a certificate that reflects the current state: it is better to resolve the matter early.</p><p>If the certificate is expired or inadequate, there are several options: have a new one produced, or sometimes resort to title insurance depending on the case. Discuss the issue as soon as you promise to purchase, never the day before signing - that's where things most often get stuck.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Discuss the issue of the certificate as soon as you promise to purchase, not the day before signing. Getting a new certificate produced takes time, and it is often negotiable: who pays for it decides at the start.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Find my certificate of location and check its date.</li><li>List additions made since then (shed, swimming pool, extension).</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have the certificate read by the notary.</li><li>Order a new certificate if necessary, early.</li></ol>\n<h3>Then</h3>\n<ol><li>Correct any irregularity before putting it on sale.</li></ol><h3>To anticipate</h3><ol><li>Check as soon as you decide to sell whether my certificate is still valid.</li><li>Address any irregularities in advance and agree who pays for a new certificate.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Certificate of location: survey document describing the state of the property.</li><li>Land surveyor: professional who produces the certificate.</li><li>Encroachment: building which exceeds a land boundary.</li><li>Servitude: right of a third party on your property.</li><li>Non-compliance: deviation from regulations or titles.</li></ul><ul><li>Certificate of location: survey document describing the state and location of the property.</li><li>Land surveyor: professional who produces the certificate.</li><li>Encroachment: construction exceeding a property line.</li><li>Servitude: right encumbering land for the benefit of another.</li><li>Title Insurance: Protection covering certain title or compliance issues.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The certificate of location is prepared by:",
+   "options": [
+    "A) The notary",
+    "B) A land surveyor",
+    "C) The inspector",
+    "D) The broker"
+   ],
+   "answer": 1,
+   "explanation": "It is a survey document (chap. 1)."
+  },
+  {
+   "q": "It describes in particular:",
+   "options": [
+    "A) The color of the walls",
+    "B) Boundaries, buildings, easements and compliance",
+    "C) The rent",
+    "D) School tax"
+   ],
+   "answer": 1,
+   "explanation": "It is the “identity card” of the property (chap. 1)."
+  },
+  {
+   "q": "A certificate may become insufficient if it is:",
+   "options": [
+    "A) Recent",
+    "B) Too old or no longer reflecting the place",
+    "C) Signed",
+    "D) Colorful"
+   ],
+   "answer": 1,
+   "explanation": "It must correspond to present reality (chap. 2)."
+  },
+  {
+   "q": "An addition such as a swimming pool or a shed:",
+   "options": [
+    "A) Has no effect",
+    "B) May require a new certificate",
+    "C) Is illegal",
+    "D) Lower taxes"
+   ],
+   "answer": 1,
+   "explanation": "The certificate does not show this (chap. 2)."
+  },
+  {
+   "q": "An encroachment is:",
+   "options": [
+    "A) A tax",
+    "B) A building that exceeds the land line",
+    "C) Insurance",
+    "D) A piece of furniture"
+   ],
+   "answer": 1,
+   "explanation": "A possible irregularity (chap. 3)."
+  },
+  {
+   "q": "An easement is:",
+   "options": [
+    "A) A tax",
+    "B) A third party's right to your land",
+    "C) One piece",
+    "D) A permit"
+   ],
+   "answer": 1,
+   "explanation": "For example a right of way (chapter 3)."
+  },
+  {
+   "q": "You must have the certificate read by the notary:",
+   "options": [
+    "A) After the sale",
+    "B) Before being put on sale",
+    "C) Never",
+    "D) When moving"
+   ],
+   "answer": 1,
+   "explanation": "Adjusting upstream avoids blockages (chap. 3)."
+  },
+  {
+   "q": "The certificate is often the document which:",
+   "options": [
+    "A) Speeds up everything",
+    "B) Forgotten, delays a signature the most",
+    "C) Is unimportant",
+    "D) Replaces inspection"
+   ],
+   "answer": 1,
+   "explanation": "To be treated as a priority (chap. 4)."
+  }
+ ]
+}

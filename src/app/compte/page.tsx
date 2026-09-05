@@ -336,7 +336,7 @@ export default async function AccountPage() {
           <div className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
             {favoriteBooks.map((book) => (
               <article key={book.slug} className="relative overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white">
-                <Link href={`/livre/${book.slug}`}><BookCover number={book.number} title={localizeBook(book, locale).title} collection={locale === 'en' ? COLLECTIONS_EN[book.collection] ?? COLLECTIONS[book.collection] : COLLECTIONS[book.collection]} /></Link>
+                <Link href={`/livre/${book.slug}`}><BookCover number={book.number} title={localizeBook(book, locale).title} collection={locale === 'en' ? COLLECTIONS_EN[book.collection] ?? COLLECTIONS[book.collection] : COLLECTIONS[book.collection]} locale={locale} /></Link>
                 <div className="absolute right-3 top-3"><FavoriteButton slug={book.slug} initialFavorite loggedIn locale={locale} /></div>
                 <Link href={`/livre/${book.slug}`} className="block p-4 font-display text-base leading-tight text-[var(--color-bordeaux)] sm:text-lg">{localizeBook(book, locale).title}</Link>
               </article>
@@ -377,6 +377,7 @@ export default async function AccountPage() {
                     number={book.number}
                     title={localizeBook(book, locale).title}
                     collection={locale === 'en' ? COLLECTIONS_EN[book.collection] ?? COLLECTIONS[book.collection] : COLLECTIONS[book.collection]}
+                    locale={locale}
                     className="w-[92px] rounded-lg border border-[var(--color-sand)]"
                   />
                   <div className="flex min-w-0 flex-col">
@@ -395,7 +396,7 @@ export default async function AccountPage() {
                           {percent ? t.continue : t.read}
                         </Link>
                         {dlIds.has(ebookId) && (
-                          <a href={`/api/download?slug=${book.slug}`} className="rounded-full border border-[var(--color-bordeaux)] px-3 py-2 font-ui text-xs text-[var(--color-bordeaux)]">PDF</a>
+                          <a href={`/api/download?slug=${book.slug}&lang=${locale}`} className="rounded-full border border-[var(--color-bordeaux)] px-3 py-2 font-ui text-xs text-[var(--color-bordeaux)]">PDF</a>
                         )}
                       </div>
                     </div>

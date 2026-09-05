@@ -1,1 +1,136 @@
-{"number": 28, "title": "Financing an Income Property", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Financing an income property follows different rules from those of a house. Down payment, treatment of rental income, loan insurance: well structured, your financing can make or break the profitability of your project.</p><p>This guide covers the main rules (1 to 4 units vs 5 and more), the down payment, the role of loan-insurance programs, and the importance of a solid structure.</p><p>2026 editorial note: rules and rates evolve; always validate with a mortgage broker. Each chapter ends with a lined « My notes » page.</p>"}, {"title": "1 to 4 units vs 5 units and more", "objective": "Understand the key dividing line in rental financing.", "html": "<p class=\"lede\">Understand the key dividing line in rental financing.</p>\n<p>The fundamental distinction: buildings of 1 to 4 units are financed under rules close to residential, whereas buildings of 5 units and more are considered « commercial » (multi-unit), with different rules, a different down payment, and a different analysis, centred on the building's profitability.</p>\n<ul><li>1 to 4 units: lower down payment, especially if you occupy one unit.</li><li>5 units and more: higher down payment, analysis based on the building's NOI.</li><li>The 5-unit threshold changes your structure considerably.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Going from 4 to 5 units changes everything on the financing side. If you are starting out, a building of 4 units or fewer is often the most accessible entry point.</p></aside>"}, {"title": "The down payment and owner-occupancy", "objective": "Optimize the down payment for your project.", "html": "<p class=\"lede\">Optimize the down payment for your project.</p>\n<p>For a 1-to-4-unit building that you occupy, the down payment can be significantly reduced (see the owner-occupant guide). For a non-occupied rental building, the required down payment is generally higher.</p>\n<ul><li>Owner-occupant (1-4 units): reduced down payment, better terms.</li><li>Non-occupant investor: larger down payment.</li><li>Part of the rental income can help you qualify for your loan.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>If your situation allows it, occupying one unit of your first plex unlocks much more advantageous financing. It is often the best springboard to get started.</p></aside>"}, {"title": "Loan insurance and the treatment of rental income", "objective": "Understand the role of insurance programs.", "html": "<p class=\"lede\">Understand the role of insurance programs.</p>\n<p>Loan insurers (CMHC and others) offer multi-unit programs that can allow a reduced down payment and better terms, in exchange for a premium. The building's rental income is taken into account in the analysis, to varying degrees.</p>\n<p>These programs and their criteria evolve: a mortgage broker who specializes in income properties is your best ally for identifying the best option.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Work with a mortgage broker who is used to rental property. The right insurance program or the right lender can turn a marginal project into a profitable one.</p></aside>"}, {"title": "Building a solid structure", "objective": "Assemble financing that protects profitability.", "html": "<p class=\"lede\">Assemble financing that protects profitability.</p>\n<ul><li>Compare several lenders (rates AND terms, penalties, flexibility).</li><li>Build in a cushion: if rates rise at renewal, does the project still hold?</li><li>Keep liquidity for unexpected costs and repairs.</li><li>Think ahead: a good structure makes the next purchase easier (refinancing).</li></ul>\n<p>Financing is not just a formality: it is a strategic lever that determines your cash flow and your ability to grow.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Don't just chase the lowest rate: think about flexibility and the ability to refinance. Your first structure should open the door to your second building.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Determine the number of units and my status (occupant or not).</li><li>Meet with a mortgage broker who specializes in rental property.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Compare programs and lenders (rates and terms).</li><li>Structure the financing with a cushion for rate increases.</li></ol>\n<h3>Then</h3>\n<ol><li>Secure financing that protects cash flow and growth.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>1-4 units: a financing regime close to residential.</li><li>5 units and more: multi-unit « commercial », analysis based on NOI.</li><li>Down payment: lower if owner-occupant, higher if a pure investor.</li><li>Multi-unit loan insurance: programs (CMHC, etc.) with a reduced down payment, for a premium.</li><li>Refinancing: a lever to finance the next purchase.</li></ul>"}], "qcm": [{"q": "The key dividing line in rental financing is:", "options": ["A) 2 units", "B) 5 units and more (commercial)", "C) 10 units", "D) 1 unit"], "answer": 1, "explanation": "1-4 residential, 5+ commercial (ch. 1)."}, {"q": "Occupying a unit in a 1-4-unit plex:", "options": ["A) Raises the down payment", "B) Lowers the down payment and improves the terms", "C) Is prohibited", "D) Has no effect"], "answer": 1, "explanation": "Owner-occupant status is advantageous (ch. 2)."}, {"q": "For a building of 5+ units, the analysis is based mainly on:", "options": ["A) Your salary alone", "B) The building's profitability (NOI)", "C) The colour", "D) Nothing"], "answer": 1, "explanation": "A commercial approach (ch. 1)."}, {"q": "Loan insurers (CMHC, etc.) can allow:", "options": ["A) No financing", "B) A reduced down payment and better terms, for a premium", "C) Paying less tax", "D) Skipping the notary"], "answer": 1, "explanation": "Multi-unit programs (ch. 3)."}, {"q": "The building's rental income:", "options": ["A) Is ignored", "B) Is taken into account in the analysis", "C) Doubles the down payment", "D) Replaces the loan"], "answer": 1, "explanation": "To varying degrees (ch. 3)."}, {"q": "The best ally for rental financing is:", "options": ["A) No one", "B) A mortgage broker specializing in rental property", "C) The neighbour", "D) The inspector"], "answer": 1, "explanation": "They identify the best option (ch. 3)."}, {"q": "A good structure should provide for:", "options": ["A) No surprises", "B) A cushion if rates rise at renewal", "C) Zero liquidity", "D) The lowest rate only"], "answer": 1, "explanation": "You protect cash flow (ch. 4)."}, {"q": "Financing is:", "options": ["A) A mere formality", "B) A strategic lever for cash flow and growth", "C) Without impact", "D) Decided by the seller"], "answer": 1, "explanation": "It determines profitability and what comes next (ch. 4)."}]}
+{
+ "number": 28,
+ "title": "Financing an income property",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The financing of an income property follows different rules from those of a house. Down payment, taking into account rents, loan insurance: well planned, your financing can make or break the profitability of your project.</p><p>This guide covers the main rules (1 to 4 homes vs. 5 and more), the contribution, the role of loan insurance programs and the importance of good planning.</p><p>2026 edition note: rules and rates are changing; always confirm with a mortgage broker. Each chapter ends with a lined “My Notes” page.</p><p>Financing an income property does not follow the same rules as a residence. This guide clarifies the distinction 1-4 vs 5+ homes, the down payment, the role of loan insurers and how the lender qualifies your file.</p><p>Objective: set up solid financing that protects your profitability, rather than chasing the lowest rate.</p>"
+  },
+  {
+   "title": "1 to 4 dwellings vs 5 dwellings and more",
+   "objective": "Understanding the key dividing line in rental financing.",
+   "html": "<p class=\"lede\">Understand the key dividing line in rental financing.</p>\n<p>The fundamental distinction: buildings with 1 to 4 housing units are financed according to rules close to residential, while buildings with 5 housing units and more are considered “commercial” (multiple housing units), with different rules, capital outlay and analysis, focused on the profitability of the building.</p>\n<ul><li>1 to 4 homes: lower down payment, especially if you occupy a home.</li><li>5 units and more: higher down payment, analysis based on the building's RNE.</li><li>The border of the 5 dwellings changes your setup a lot.</li></ul>\n<p>The key dividing line: 1 to 4 dwellings (rules close to residential, lower down payment if you occupy) vs 5 dwellings and more (commercial financing, higher down payment, analysis based on the income of the building). This distinction changes your entire edit.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>The move from 4 to 5 housing units changes everything in terms of financing. If you're just starting out, a building with 4 units or less is often the most accessible entry point.</p></aside>"
+  },
+  {
+   "title": "Down payment and occupancy",
+   "objective": "Optimize the contribution according to your project.",
+   "html": "<p class=\"lede\">Optimize the contribution according to your project.</p>\n<p>For a building of 1 to 4 units that you occupy, the down payment can be significantly reduced (see the owner-occupant guide). For an unoccupied rental property, the required contribution is generally higher.</p>\n<ul><li>Occupant (1-4 dwellings): reduced contribution, better conditions.</li><li>Non-occupying investor: greater contribution.</li><li>A portion of the rent can help qualify your loan.</li></ul>\n<p>Optimize your contribution according to your project: occupying a 1-4 unit accommodation opens up advantageous rules; a purely rental property requires more. The lender also retains a portion of the rent in your capacity - a lever to be calculated precisely.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If your situation allows it, occupying accommodation in your first plex unlocks much more advantageous financing. This is often the best springboard to start.</p></aside>"
+  },
+  {
+   "title": "Loan insurance and taking into account rents",
+   "objective": "Understand the role of insurance programs.",
+   "html": "<p class=\"lede\">Understand the role of insurance programs.</p>\n<p>Loan insurers (CMHC and others) offer multi-housing programs that can allow for a reduced down payment and better conditions, for a premium. The rents of the building are taken into account in the analysis, to varying degrees.</p>\n<p>These programs and their criteria are evolving: a mortgage broker specializing in income properties is your best ally in identifying the best option.</p>\n<p>Loan insurers (CMHC and others) offer programs that can reduce the down payment or improve the conditions, particularly for rentals. They take into account rents according to precise rules. A specialized mortgage broker knows these programs and their criteria.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Work with a mortgage broker familiar with rentals. The right insurance program or lender can turn a borderline project into a profitable one.</p></aside>"
+  },
+  {
+   "title": "Build a solid assembly",
+   "objective": "Assemble financing that protects profitability.",
+   "html": "<p class=\"lede\">Assemble financing that protects profitability.</p>\n<ul><li>Compare several lenders (rates AND conditions, penalties, flexibility).</li><li>Provide a margin: if rates rise at renewal, does the project hold up?</li><li>Keep cash for unforeseen events and work.</li><li>Think about what’s next: a good arrangement makes the next purchase (refinancing) easier.</li></ul>\n<p>Financing is not just a formality: it is a strategic lever that determines your cash flow and your ability to grow.</p>\n<p>A solid arrangement compares several lenders (rates AND conditions), provides a reserve, and does not bet everything on an optimistic scenario. The best rate with rigid conditions can be expensive at the wrong time: think penalties, portability and accelerated repayments.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don't just choose the lowest rate: think about flexibility and the ability to refinance. Your first montage should open the door to the second building.</p></aside>"
+  },
+  {
+   "title": "Qualification: ratios and stress test",
+   "objective": "Understand how the lender rates you.",
+   "html": "<p class=\"lede\">Understand how the lender evaluates you.</p>\n<p>Obtaining financing depends on how the lender <strong>evaluates your file</strong> :</p><ul><li><strong>Debt ratios</strong> : proportion of your income devoted to debts.</li><li><strong>Taking into account rents</strong> : only part is often retained.</li><li><strong>Resistance test</strong> : your capacity is calculated at a rate higher than the actual rate, to verify that you would sustain an increase.</li></ul><p>Knowing these rules in advance avoids refusals and helps you build a solid case.</p><p>The lender evaluates you via debt ratios, partial consideration of rents, and a stress test (qualification at a higher rate). Knowing these rules in advance avoids refusals: meet a broker specializing in rentals BEFORE shopping.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Meet a mortgage broker specializing in rental real estate BEFORE you shop. It will tell you exactly how much you can borrow and how rents are taken into account - it targets your searches.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Determine the number of accommodations and my status (occupant or not).</li><li>Meet a mortgage broker specializing in rentals.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Compare programs and lenders (rates and conditions).</li><li>Structure a package with a margin for rate increases.</li></ol>\n<h3>Then</h3>\n<ol><li>Secure financing that protects cash flow and growth.</li></ol><h3>Before you shop</h3><ol><li>Meet a mortgage broker specializing in rental real estate.</li><li>Have my capacity calculated (rent included) and compare rates AND conditions.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>1-4 housing units: financing regime close to residential.</li><li>5 dwellings and more: “commercial” multi-dwelling, analysis by the RNE.</li><li>Contribution / capital outlay: lower if occupant, higher if pure investor.</li><li>Multi-housing loan insurance: programs (CMHC, etc.) with reduced contribution, with premium.</li><li>Refinancing: leverage to finance the next purchase.</li></ul><ul><li>1-4 housing units: category close to residential, more flexible financing.</li><li>5 homes and more: commercial financing, based on income.</li><li>Loan insurance: program reducing the down payment or improving the conditions.</li><li>Strength test: qualification at a rate higher than the actual rate.</li><li>Taking into account rents: share of income retained by the lender.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The key dividing line in rental financing is:",
+   "options": [
+    "A) 2 dwellings",
+    "B) 5 dwellings or more (commercial)",
+    "C) 10 housing units",
+    "D) 1 accommodation"
+   ],
+   "answer": 1,
+   "explanation": "1-4 residential, 5+ commercial (chap. 1)."
+  },
+  {
+   "q": "Occupy accommodation in a plex of 1-4:",
+   "options": [
+    "A) Increases intake",
+    "B) Reduces intake and improves conditions",
+    "C) Is prohibited",
+    "D) Has no effect"
+   ],
+   "answer": 1,
+   "explanation": "Occupant status is advantageous (chap. 2)."
+  },
+  {
+   "q": "For a building with 5+ housing units, the analysis is mainly based on:",
+   "options": [
+    "A) Your salary alone",
+    "B) The profitability (RNE) of the building",
+    "C) Color",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Commercial approach (chap. 1)."
+  },
+  {
+   "q": "Loan insurers (CMHC, etc.) can allow:",
+   "options": [
+    "A) No funding",
+    "B) Reduced contribution and better conditions, for a premium",
+    "C) To pay less taxes",
+    "D) To avoid the notary"
+   ],
+   "answer": 1,
+   "explanation": "Multi-housing programs (chap. 3)."
+  },
+  {
+   "q": "The rents for the building:",
+   "options": [
+    "A) Are ignored",
+    "B) Are taken into account in the analysis",
+    "C) Double the contribution",
+    "D) Replace the loan"
+   ],
+   "answer": 1,
+   "explanation": "To varying degrees (chap. 3)."
+  },
+  {
+   "q": "The best ally of rental financing is:",
+   "options": [
+    "A) Person",
+    "B) A mortgage broker specializing in rentals",
+    "C) The neighbor",
+    "D) The inspector"
+   ],
+   "answer": 1,
+   "explanation": "It identifies the best option (chap. 3)."
+  },
+  {
+   "q": "A good assembly must include:",
+   "options": [
+    "A) No unforeseen circumstances",
+    "B) A margin if rates rise at renewal",
+    "C) Zero liquidity",
+    "D) The lowest rate only"
+   ],
+   "answer": 1,
+   "explanation": "We protect the cash flow (chap. 4)."
+  },
+  {
+   "q": "The funding is:",
+   "options": [
+    "A) A simple formality",
+    "B) A strategic lever for cash flow and growth",
+    "C) No impact",
+    "D) Decided by the seller"
+   ],
+   "answer": 1,
+   "explanation": "It determines profitability and what happens next (chap. 4)."
+  }
+ ]
+}

@@ -1,1 +1,158 @@
-{"number": 42, "title": "Divided or Undivided Co-ownership?", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>In Quebec, “co-ownership” covers two quite distinct realities: divided co-ownership (the classic condo) and undivided co-ownership. They look similar on the surface but differ profoundly on the legal, financial, and practical levels.</p><p>This guide compares the two to help you choose with full knowledge — because the difference has real consequences.</p><p>Informational content. Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "Divided Co-ownership (the Classic Condo)", "objective": "Understanding the most common model.", "html": "<p class=\"lede\">Understanding the most common model.</p>\n<p>In divided co-ownership, each unit has its own separate title of ownership and its own lot number. There is a syndicate, a declaration of co-ownership, common charges, and a contingency fund. You finance your unit with your own mortgage.</p>\n<ul><li>A separate title per unit: simpler to finance and resell.</li><li>Syndicate and contingency fund governed by law.</li><li>The most widespread and best-regulated model.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Divided co-ownership is generally simpler to finance and resell, because each unit has its own title. For a first purchase, it's often the most reassuring choice.</p></aside>"}, {"title": "Undivided Co-ownership", "objective": "Understanding this particular model.", "html": "<p class=\"lede\">Understanding this particular model.</p>\n<p>In undivided co-ownership, several people own ONE single building together, without division into separate lots: each holds a share of the whole and enjoys use of a portion according to an indivision agreement. There are no separate titles per unit.</p>\n<ul><li>Often a lower entry price for a given area.</li><li>More complex financing: sometimes a common mortgage or special conditions.</li><li>Rests on an indivision agreement among co-owners: its quality is crucial.</li><li>Resale is sometimes more limited (a smaller pool of buyers).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>In undivided co-ownership, the indivision agreement is EVERYTHING: it settles who pays what, who decides, and how someone exits. Have it reviewed by a notary before you buy; a bad agreement can turn into a nightmare.</p></aside>"}, {"title": "Choosing Well for Your Situation", "objective": "Weighing the benefits and the risks.", "html": "<p class=\"lede\">Weighing the benefits and the risks.</p>\n<ul><li>Divided: simpler, more liquid, better regulated — often the default choice.</li><li>Undivided: sometimes more affordable, but more complex to finance and resell, and highly dependent on the agreement and the other co-owners.</li><li>In both cases: check the documents, finances, and rules before buying.</li></ul>\n<p>The right choice depends on your budget, your tolerance for complexity, and your time horizon.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never choose undivided co-ownership just because it's cheaper up front. The lower price often reflects greater complexity and lower liquidity. Understand the trade-off before you sign.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Confirm the type of co-ownership of the unit you're considering.</li><li>Gather the documents (declaration or agreement).</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have the declaration (divided) or the agreement (undivided) reviewed.</li><li>Check the financing implications.</li></ol>\n<h3>After that</h3>\n<ol><li>Choose with full knowledge, with Emilie and the notary.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Divided co-ownership: the classic condo, a separate title per unit.</li><li>Undivided co-ownership: a share of a single building, without separate lots.</li><li>Indivision agreement: the arrangement governing rights and obligations in undivided co-ownership.</li><li>Contingency fund: collective savings (mainly in divided co-ownership).</li><li>Liquidity: ease of resale, generally better in divided co-ownership.</li></ul>"}], "qcm": [{"q": "In divided co-ownership, each unit has:", "options": ["A) No title", "B) Its own separate title of ownership", "C) A shared title", "D) A lease"], "answer": 1, "explanation": "A separate title and lot (chap. 1)."}, {"q": "Divided co-ownership is generally:", "options": ["A) Harder to finance", "B) Simpler to finance and resell", "C) Prohibited", "D) Without a syndicate"], "answer": 1, "explanation": "Each unit has its own title (chap. 1)."}, {"q": "In undivided co-ownership:", "options": ["A) Each unit has a separate title", "B) You hold a share of a single building", "C) There is only one owner", "D) You rent"], "answer": 1, "explanation": "No separate lots (chap. 2)."}, {"q": "In undivided co-ownership, the crucial document is:", "options": ["A) The declaration of co-ownership", "B) The indivision agreement", "C) The lease", "D) The certificate of location alone"], "answer": 1, "explanation": "It settles everything (chap. 2)."}, {"q": "Undivided co-ownership is often:", "options": ["A) Simpler to finance", "B) More complex to finance and resell", "C) Risk-free", "D) Always better"], "answer": 1, "explanation": "A smaller pool of buyers (chap. 2 and 3)."}, {"q": "Choosing undivided co-ownership just because it's cheaper is:", "options": ["A) Wise", "B) Risky: the price reflects the complexity", "C) Mandatory", "D) Without consequence"], "answer": 1, "explanation": "Understand the trade-off (chap. 3)."}]}
+{
+ "number": 42,
+ "title": "Divided or undivided co-ownership?",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>In Quebec, “co-ownership” covers two very distinct realities: divided co-ownership (the classic condo) and undivided co-ownership. They are similar in appearance but differ profoundly in legal, financial and practical terms.</p><p>This guide compares the two to help you make an informed choice - because the difference has real-world consequences.</p><p>Informative content. Each chapter ends with a lined “My Notes” page.</p><p>In Quebec, “co-ownership” covers two distinct realities: divided (the classic condo) and undivided. They look similar but differ profoundly - legally, financially, on resale. This guide compares them for an informed choice.</p><p>The difference has real consequences: this guide gives you the grid to choose.</p>"
+  },
+  {
+   "title": "Divided co-ownership (the classic condo)",
+   "objective": "Understand the most common model.",
+   "html": "<p class=\"lede\">Understand the most common model.</p>\n<p>In divided co-ownership, each unit has its <strong>own title deed</strong> distinct and its batch number.</p><ul><li>One <strong>union</strong> of co-ownership manages the building.</li><li>One <strong>declaration of co-ownership</strong> regulates rights and obligations.</li><li> <strong>co-ownership charges</strong> and a <strong>provident fund</strong> finance the maintenance.</li></ul><p>You finance your unit with your own mortgage: easier to finance and resell.</p><p>In divided co-ownership (the classic condo), each unit has its own distinct title and lot number, with a syndicate, a declaration and a contingency fund. You finance it with your own mortgage: it's easier to finance and resell.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>In division, read the declaration of co-ownership AND the last minutes of the meeting. They reveal upcoming work, conflicts and the real health of the contingency fund.</p></aside>"
+  },
+  {
+   "title": "Undivided co-ownership",
+   "objective": "Understand this particular model.",
+   "html": "<p class=\"lede\">Understand this particular model.</p>\n<p>In undivided co-ownership, several people own together <strong>ONE building</strong>, without division into separate lots.</p><p>Everyone has a <strong>share</strong> of the whole and enjoys a portion according to a <strong>joint ownership agreement</strong>. There are no separate titles per unit.</p><ul><li>Often a lower entry price for a given sector.</li><li>More complex financing: sometimes a joint mortgage.</li><li>Strong interdependence between co-owners.</li></ul><p>In undivided co-ownership, several people together own ONE building, without separate lots: each person holds a share according to a joint ownership agreement. Entry price sometimes lower, but more complex financing (sometimes a joint mortgage) and strong interdependence between co-owners.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>In undivided ownership, you are linked to the other co-owners, sometimes by a common mortgage. Make sure you know them well and understand the agreement before committing.</p></aside>"
+  },
+  {
+   "title": "Divided or undivided: choose wisely",
+   "objective": "Weigh the benefits and risks.",
+   "html": "<p class=\"lede\">Weigh the benefits and risks.</p>\n<p>The two models are similar in appearance, but differ profoundly:</p><ul><li><strong>Divides</strong> : simpler, more liquid, better structured - often the default choice.</li><li><strong>Undivided</strong> : sometimes more affordable, but more complex to finance and resell, very dependent on the agreement and the other co-owners.</li></ul><p>In both cases: check documents, finances and rules before buying. The right choice depends on your budget and your tolerance for complexity.</p><p>At a comparable price, the division offers more peace of mind and is more easily resold; joint ownership can be interesting but go into it with your eyes open, not just to save money. In both cases, check documents, finances and rules before purchasing.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>At a comparable price, the division offers more peace of mind and is more easily resold. Joint ownership can be interesting, but go into it with your eyes open, not just to save money.</p></aside>"
+  },
+  {
+   "title": "The contingency fund and charges",
+   "objective": "Evaluate the financial health of the co-ownership.",
+   "html": "<p class=\"lede\">Evaluate the financial health of the co-ownership.</p>\n<p>A co-ownership is also a small collective enterprise. Their financial health concerns you directly:</p><ul><li><strong>Monthly charges</strong> : covers routine maintenance and services.</li><li><strong>Contingency fund</strong> : reserve for major repairs (roof, facade, elevator).</li><li><strong>Study of the provident fund</strong> : evaluates whether the reserve is sufficient.</li></ul><p>Underfunded fund announces <strong>special contributions</strong> futures: this is a signal not to be ignored.</p><p>Financial health concerns you directly: monthly charges, contingency fund (reserve for roof, facade, elevator), study of the fund. Abnormally low charges are not a godsend: they often hide insufficient funds, and therefore future special contributions.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Abnormally low charges are not a godsend: they often hide an insufficient contingency fund. You will pay sooner or later, in the form of a special contribution.</p></aside>"
+  },
+  {
+   "title": "Checks before buying",
+   "objective": "Reduce unpleasant surprises.",
+   "html": "<p class=\"lede\">Reduce unpleasant surprises.</p>\n<p>Before signing, whatever the model, do your documentary inspection:</p><ol><li>Read the <strong>declaration</strong> (divides) or the <strong>agreement</strong> (undivided).</li><li>Consult the <strong>minutes</strong> and the <strong>budget</strong>.</li><li>Check the status of the <strong>provident fund</strong> and the planned work.</li><li>Confirm the <strong>regulations</strong> (animals, rental, renovations).</li></ol><p>Have these documents examined by your notary: this is the best defense against costly surprises.</p><p>Before signing, do your documentary inspection: read the declaration (divided) or the agreement (undivided), the minutes, the budget, the state of the fund and the regulations (animals, rental, renovations). Have these documents reviewed by your notary - it's the best defense against surprises.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Always buy a condo “documents in hand”. A poorly read declaration can hide a ban on renting, imminent work or a pending dispute. The notary is your ally here.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Confirm the type of co-ownership of the unit concerned.</li><li>Gather the documents (declaration or agreement).</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have the declaration (divided) or the agreement (undivided) examined.</li><li>Check funding implications.</li></ol>\n<h3>Then</h3>\n<ol><li>Choose with full knowledge of the facts, with Emilie and the notary.</li></ol><h3>Before buying</h3><ol><li>Confirm the type of co-ownership and gather declaration/agreement, finances and minutes.</li><li>Have the documents examined by a notary before lifting my conditions.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Divided co-ownership: classic condo, separate title per unit.</li><li>Undivided co-ownership: share of a single building, without separate lots.</li><li>Joint ownership agreement: agreement regulating undivided rights and obligations.</li><li>Provident fund: collective savings (especially divided).</li><li>Liquidity: ease of resale, generally better in parts.</li></ul><ul><li>Divided co-ownership: classic condo, separate title per unit.</li><li>Undivided co-ownership: share of a single building, without separate lots.</li><li>Joint ownership agreement: agreement regulating undivided rights and obligations.</li><li>Contingency fund: collective reserve for major repairs.</li><li>Special contribution: one-off contribution when the fund is not sufficient.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "In divided co-ownership, each unit has:",
+   "options": [
+    "A) A share",
+    "B) Its own separate title to the property",
+    "C) No title",
+    "D) A lease"
+   ],
+   "answer": 1,
+   "explanation": "Separate title per unit (chap. 1)."
+  },
+  {
+   "q": "In undivided co-ownership, we hold:",
+   "options": [
+    "A) A separate batch",
+    "B) A share of a single building",
+    "C) A lease",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Share of the whole (chap. 2)."
+  },
+  {
+   "q": "The undivided property is supervised by:",
+   "options": [
+    "A) A declaration of co-ownership",
+    "B) A joint ownership agreement",
+    "C) A lease",
+    "D) No documents"
+   ],
+   "answer": 1,
+   "explanation": "Joint ownership agreement (chap. 2)."
+  },
+  {
+   "q": "The division is generally:",
+   "options": [
+    "A) Less liquid",
+    "B) Easier to finance and resell",
+    "C) Prohibited",
+    "D) Without a union"
+   ],
+   "answer": 1,
+   "explanation": "More liquid (chaps. 1 and 3)."
+  },
+  {
+   "q": "The undivided property is often:",
+   "options": [
+    "A) Easier to finance",
+    "B) More affordable but more complex to finance and resell",
+    "C) Without co-owners",
+    "D) Without agreement"
+   ],
+   "answer": 1,
+   "explanation": "More complex (chap. 3)."
+  },
+  {
+   "q": "The contingency fund is used to:",
+   "options": [
+    "A) Pay for groceries",
+    "B) Finance major repairs",
+    "C) Reduce the price",
+    "D) Pay the notary"
+   ],
+   "answer": 1,
+   "explanation": "Reserve for repairs (chap. 4)."
+  },
+  {
+   "q": "Abnormally low charges can hide:",
+   "options": [
+    "A) Insufficient contingency fund",
+    "B) A risk-free bargain",
+    "C) A reduction in taxes",
+    "D) Nothing"
+   ],
+   "answer": 0,
+   "explanation": "Signal of an underfunded fund (chap. 4)."
+  },
+  {
+   "q": "An underfunded fund often announces:",
+   "options": [
+    "A) A reduction in expenses",
+    "B) Future special contributions",
+    "C) A refund",
+    "D) No effect"
+   ],
+   "answer": 1,
+   "explanation": "Special contributions (chap. 4)."
+  },
+  {
+   "q": "Before buying, you must read:",
+   "options": [
+    "A) Nothing",
+    "B) Declaration/convention, minutes and budget",
+    "C) The newspaper",
+    "D) The neighbor's lease"
+   ],
+   "answer": 1,
+   "explanation": "Documentary inspection (chap. 5)."
+  },
+  {
+   "q": "To examine the documents, the best ally is:",
+   "options": [
+    "A) The neighbor",
+    "B) The notary",
+    "C) The insurer",
+    "D) The city"
+   ],
+   "answer": 1,
+   "explanation": "The notary (chap. 5)."
+  }
+ ]
+}

@@ -17,6 +17,7 @@ import { verifyPurchaseDownloadToken } from '@/lib/purchaseDownloadToken';
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
   const slug = searchParams.get('slug');
+  const lang = searchParams.get('lang') === 'en' ? 'en' : 'fr';
   if (!slug) return NextResponse.json({ error: 'slug manquant' }, { status: 400 });
 
   const book = bySlug(slug);
@@ -59,12 +60,19 @@ export async function GET(req: Request) {
   const bucket = process.env.PDF_BUCKET_URL;
   if (bucket) {
     // TODO: générer une URL signée à durée limitée vers le bucket.
-    return NextResponse.redirect(`${bucket.replace(/\/$/, '')}/${ebook.pdfKey ?? book.pdf}`);
+    const key = lang === 'en' ? `en/${book.pdf}` : ebook.pdfKey ?? book.pdf;
+    return NextResponse.redirect(`${bucket.replace(/\/$/, '')}/${key}`);
   }
 
   // Stockage local privé : storage/pdf/<fichier>.pdf (JAMAIS dans public/ —
   // sinon le PDF serait servi sans contrôle d'accès).
-  const file = path.join(process.cwd(), 'storage', 'pdf', book.pdf);
+  let file = lang === 'en'
+    ? path.join(process.cwd(), 'storage', 'pdf-en', book.pdf)
+    : path.join(process.cwd(), 'storage', 'pdf', book.pdf);
+  const servedLang = lang === 'en' && fs.existsSync(file) ? 'en' : 'fr';
+  if (lang === 'en' && servedLang === 'fr') {
+    file = path.join(process.cwd(), 'storage', 'pdf', book.pdf);
+  }
   if (!fs.existsSync(file)) {
     return NextResponse.json(
       { error: 'PDF non disponible sur ce serveur. Déposez-le dans storage/pdf ou configurez PDF_BUCKET_URL.' },
@@ -75,7 +83,7 @@ export async function GET(req: Request) {
   return new NextResponse(new Uint8Array(data), {
     headers: {
       'Content-Type': 'application/pdf',
-      'Content-Disposition': `attachment; filename="${book.slug}.pdf"`,
+      'Content-Disposition': `attachment; filename="${book.slug}-${servedLang}.pdf"`,
       'Cache-Control': 'private, no-store',
     },
   });

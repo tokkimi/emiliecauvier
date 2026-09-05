@@ -1,1 +1,158 @@
-{"number": 38, "title": "Home Insurance and Title Insurance", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Two types of insurance protect your purchase from different angles: home insurance (against damage and loss) and title insurance (against legal problems tied to the property). Understanding them means avoiding costly gaps in coverage.</p><p>This guide explains both, what they cover, and why they matter.</p><p>Informational content. Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "Home Insurance", "objective": "Protecting the building and your belongings.", "html": "<p class=\"lede\">Protecting the building and your belongings.</p>\n<p>Home insurance covers your property and belongings against risks such as fire, water damage, and theft, and includes civil liability. It must be in force as of the possession date — lenders require it.</p>\n<ul><li>Check the coverage, exclusions, and deductibles.</li><li>Certain situations (oil tank, aging roof, flood-prone area) affect insurability and the premium.</li><li>In a co-ownership, the syndicate's insurance covers the building; you insure your belongings and improvements.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Obtain your home insurance BEFORE signing: it must be active on the possession date. A number of properties (old tank, roof nearing end of life) are harder to insure, so check early.</p></aside>"}, {"title": "Title Insurance", "objective": "Protecting yourself against legal problems.", "html": "<p class=\"lede\">Protecting yourself against legal problems.</p>\n<p>Title insurance protects against certain problems related to the property title: title defects, encroachment, non-compliance, fraud, or an irregularity that may have gone undetected. It can sometimes replace or supplement a recent certificate of location, depending on the case.</p>\n<p>It's a one-time protection (single premium) often offered by the notary. It does not replace home insurance.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Title insurance is an inexpensive legal safety net. Discuss it with your notary: in certain situations, it can simplify the transaction and protect you from an unforeseen title problem.</p></aside>"}, {"title": "Covering Yourself Well Without Gaps", "objective": "Combining protections wisely.", "html": "<p class=\"lede\">Combining protections wisely.</p>\n<ul><li>Home: damage, loss, and liability (mandatory for the lender).</li><li>Title: legal ownership problems (optional but useful).</li><li>Make sure no significant risk is left uncovered.</li><li>Reassess your insurance after major renovations.</li></ul>\n<p>Two complementary protections, two kinds of peace of mind.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Take stock once a year and after every major renovation: a value that rises without adjusted coverage is a silent risk.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Get a home insurance quote.</li><li>Check for anything that complicates insurability.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Discuss title insurance with the notary.</li><li>Make sure there are no coverage gaps.</li></ol>\n<h3>After that</h3>\n<ol><li>Reassess your insurance after renovations.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Home insurance: covers damage, loss, and liability; mandatory for the lender.</li><li>Title insurance: covers legal problems tied to the property.</li><li>Deductible: the amount you pay out of pocket on a claim.</li><li>Insurability: how easily a property can be insured, based on its condition and risks.</li><li>Civil liability: protection if you cause damage to others.</li></ul>"}], "qcm": [{"q": "Home insurance covers:", "options": ["A) Title defects", "B) Damage and loss (fire, water damage, theft) and liability", "C) Taxes", "D) Nothing"], "answer": 1, "explanation": "Protection against damage and loss (chap. 1)."}, {"q": "It must be active:", "options": ["A) One year later", "B) As of the possession date", "C) Never", "D) At resale"], "answer": 1, "explanation": "Required by the lender (chap. 1)."}, {"q": "Title insurance protects against:", "options": ["A) Fire", "B) Legal ownership problems (title defect, encroachment)", "C) Theft", "D) Water damage"], "answer": 1, "explanation": "Legal protection (chap. 2)."}, {"q": "Title insurance is often offered by:", "options": ["A) The inspector", "B) The notary", "C) The city", "D) The neighbour"], "answer": 1, "explanation": "Single premium through the notary (chap. 2)."}, {"q": "The two types of insurance are:", "options": ["A) Identical", "B) Complementary", "C) Useless", "D) Prohibited"], "answer": 1, "explanation": "They cover different risks (chap. 3)."}, {"q": "After a major renovation, you should:", "options": ["A) Do nothing", "B) Reassess your insurance", "C) Cancel it", "D) Double the deductible"], "answer": 1, "explanation": "The value changes (chap. 3)."}]}
+{
+ "number": 38,
+ "title": "Home insurance and title insurance",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Two insurance policies protect your purchase from different angles: home insurance (against losses) and title insurance (against legal problems related to the property). Understanding them means avoiding costly protection gaps.</p><p>This guide explains both, what they cover, and why they matter.</p><p>Informative content. Each chapter ends with a lined “My Notes” page.</p><p>Two insurances protect your purchase from different angles: home (against losses) and titles (against legal problems). This guide explains both, how to shop wisely and how to respond after a disaster.</p><p>Understanding them means avoiding costly protection holes.</p>"
+  },
+  {
+   "title": "Home insurance",
+   "objective": "Protect the building and your property.",
+   "html": "<p class=\"lede\">Protect the building and your property.</p>\n<p>Home insurance covers your property and belongings against risks such as fire, water damage or theft, and includes <strong>civil liability</strong> (damage caused to others).</p><p>It must be in force <strong>upon taking possession</strong> - lenders require it before disbursing the mortgage. Take the time to check:</p><ul><li>The <strong>protections</strong> included and the <strong>exclusions</strong>.</li><li>The amount of <strong>franchises</strong>.</li><li>Situations that influence insurability (oil tank, aged roof, flood-prone area).</li></ul><p>Home insurance covers the property and your belongings (fire, water damage, theft) and includes civil liability. It must be active upon taking possession - lenders require it. Check protections, exclusions and deductibles, and report any element that complicates insurability (oil tank, aged roof, flood-prone area).</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Obtain your insurance quote as soon as the promise to purchase is accepted. A property that is difficult to insure, it is better to discover it before signing than after.</p></aside>"
+  },
+  {
+   "title": "Title insurance",
+   "objective": "Protect yourself from legal problems.",
+   "html": "<p class=\"lede\">Protect yourself from legal problems.</p>\n<p>Title insurance is different: it protects against certain <strong>title issues</strong> rather than against material losses.</p><ul><li>Title defect or undetected irregularity.</li><li>Encroachment or non-compliance.</li><li>Real estate fraud.</li></ul><p>It can sometimes replace or supplement a recent certificate of location, depending on the case. This is one-off protection (single premium) often offered by the notary upon signing.</p><p>Title insurance protects against legal title problems: title defect, encroachment, non-compliance, fraud. This is one-off protection (single bonus), often offered by the notary, who can sometimes supplement a certificate of location depending on the case.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Title insurance is not required, but for a few hundred dollars one time, it can save you from costly litigation. Ask your notary if it is relevant in your case.</p></aside>"
+  },
+  {
+   "title": "Two additional protections",
+   "objective": "Combine blankets intelligently.",
+   "html": "<p class=\"lede\">Combine covers intelligently.</p>\n<p>The two insurances do not replace each other: they cover different angles.</p><ul><li><strong>Housing</strong> : claims and liability - mandatory for the lender.</li><li><strong>Titles</strong> : legal property issues - optional but often useful.</li></ul><p>The objective: that no significant risk is left uncovered. Also consider reassessing your coverage after major renovations that increase the value of the property.</p><p>The two do not replace each other: the home covers losses (obligatory for the lender), the titles cover the legal (optional but useful). The objective: that no significant risk remains uncovered. Reevaluate your coverage after major renovations.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>List what each insurance covers, side by side. You'll immediately see if there's a \"gap\" between the two - and that's exactly where the nasty surprises lurk.</p></aside>"
+  },
+  {
+   "title": "Shop carefully for your home insurance",
+   "objective": "Pay the right price for the right protection.",
+   "html": "<p class=\"lede\">Pay the right price for the right protection.</p>\n<p>Premiums vary greatly from one insurer to another for similar coverage. Some reflexes:</p><ul><li>Compare <strong>multiple submissions</strong> for equivalent protection.</li><li>Adjust the <strong>franchise</strong> : higher, it reduces the premium (but increases your share in the event of a claim).</li><li>Take advantage of <strong>discounts</strong> (self-housing group, alarm system, non-smoking).</li><li>Honestly declare <strong>risks</strong> : an omission may void coverage.</li></ul><p>The cheapest protection is only useful if it covers what you really need.</p><p>Premiums vary a lot for similar coverage: compare several quotes, adjust the deductible, take advantage of discounts (consolidation, alarm) and honestly declare the risks (an omission can void coverage). The cheapest one is only useful if it covers what you need.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don’t choose your insurance based on price alone. A deductible that is too high “to save money” can cost you dearly in the event of water damage. Look at the protection before the price.</p></aside>"
+  },
+  {
+   "title": "After a disaster: react without stress",
+   "objective": "Know what to do when the time comes.",
+   "html": "<p class=\"lede\">Know what to do when the time comes.</p>\n<p>Good preparation makes a disaster much less painful:</p><ol><li><strong>Secure</strong> the premises and limit the damage (turn off the water, for example).</li><li><strong>Document</strong> : photos, videos, list of affected assets.</li><li><strong>Notify</strong> quickly your insurer.</li><li>Keep the <strong>received</strong> of the expenses incurred.</li></ol><p>An up-to-date inventory of your goods (photos, invoices) greatly speeds up payment. Do it once, with a clear head, before you need it.</p><p>After a disaster: secure the premises, document (photos, videos, list), quickly notify the insurer and keep the receipts. An up-to-date inventory of your belongings greatly speeds up payment - film a tour of your home once a year, drawers open, before you need it.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Once a year, film a tour of your home, drawers and cupboards open. In the event of a disaster, this video is worth a thousand forms to prove what you owned.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Obtain a home insurance quote.</li><li>Check any element complicating insurability.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Discuss title insurance with the notary.</li><li>Make sure there are no protection holes.</li></ol>\n<h3>Then</h3>\n<ol><li>Reassess your insurance after renovations.</li></ol><h3>To do</h3><ol><li>Obtain a home insurance quote as soon as the promise is accepted.</li><li>Discuss title insurance with the notary and check that no risk is left uncovered.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Home insurance: covers losses and liability, mandatory for the lender.</li><li>Title Insurance: Covers legal issues related to ownership.</li><li>Excess: amount payable by you in the event of a claim.</li><li>Insurability: ease of insuring depending on the condition and risks of the property.</li><li>Civil liability: protection in the event of damage caused to others.</li></ul><ul><li>Home insurance: covers losses and liability, required by the lender.</li><li>Title Insurance: Covers legal issues related to ownership.</li><li>Excess: amount payable by you in the event of a claim.</li><li>Insurability: ease of insuring depending on the condition and risks.</li><li>Civil liability: protection in the event of damage caused to others.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Home insurance covers:",
+   "options": [
+    "A) Title issues",
+    "B) Claims and civil liability",
+    "C) The welcome tax",
+    "D) The notary"
+   ],
+   "answer": 1,
+   "explanation": "Losses and liability (chap. 1)."
+  },
+  {
+   "q": "It must be in force:",
+   "options": [
+    "A) One year after purchase",
+    "B) Upon taking possession",
+    "C) Never",
+    "D) Only for condos"
+   ],
+   "answer": 1,
+   "explanation": "Required by the lender upon possession (chap. 1)."
+  },
+  {
+   "q": "Title insurance protects against:",
+   "options": [
+    "A) The fire",
+    "B) Legal issues related to ownership",
+    "C) Theft",
+    "D) Taxes"
+   ],
+   "answer": 1,
+   "explanation": "Defect of title, fraud, encroachment (chap. 2)."
+  },
+  {
+   "q": "Title insurance is:",
+   "options": [
+    "A) Mandatory",
+    "B) Optional but often useful",
+    "C) Prohibited",
+    "D) Free"
+   ],
+   "answer": 1,
+   "explanation": "Optional, single premium (chap. 2)."
+  },
+  {
+   "q": "The two insurances:",
+   "options": [
+    "A) Replace each other",
+    "B) Cover different angles and complement each other",
+    "C) Are identical",
+    "D) Are useless"
+   ],
+   "answer": 1,
+   "explanation": "Complementary (chap. 3)."
+  },
+  {
+   "q": "After major renovations, you must:",
+   "options": [
+    "A) Do nothing",
+    "B) Reassess your insurance",
+    "C) Terminate",
+    "D) Pay a fine"
+   ],
+   "answer": 1,
+   "explanation": "The value changes (chap. 3)."
+  },
+  {
+   "q": "A higher deductible:",
+   "options": [
+    "A) Increase the premium",
+    "B) Reduces the premium but increases your share of the claim",
+    "C) Has no effect",
+    "D) Is illegal"
+   ],
+   "answer": 1,
+   "explanation": "Premium/deductible arbitration (chap. 4)."
+  },
+  {
+   "q": "Failing to report a risk may:",
+   "options": [
+    "A) Reduce the risk-free premium",
+    "B) Cancel coverage",
+    "C) Double the protection",
+    "D) Be required"
+   ],
+   "answer": 1,
+   "explanation": "Report honestly (chap. 4)."
+  },
+  {
+   "q": "After a disaster, we must first:",
+   "options": [
+    "A) Throw everything away",
+    "B) Secure the premises and document the damage",
+    "C) Wait a year",
+    "D) Sell the house"
+   ],
+   "answer": 1,
+   "explanation": "Secure then document (chap. 5)."
+  },
+  {
+   "q": "To speed up a settlement, it is useful to have:",
+   "options": [
+    "A) No documents",
+    "B) An up-to-date inventory (photos, invoices)",
+    "C) A new notary",
+    "D) A larger mortgage"
+   ],
+   "answer": 1,
+   "explanation": "Prior inventory (chap. 5)."
+  }
+ ]
+}

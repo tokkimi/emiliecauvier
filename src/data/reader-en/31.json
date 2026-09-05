@@ -1,0 +1,136 @@
+{
+ "number": 31,
+ "title": "Repossession of housing and eviction",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Taking back housing to live in it, or evicting to enlarge or change the use: these procedures are possible in Quebec, but strictly regulated. Improvising them exposes you to refusals, delays and disputes.</p><p>This guide clarifies the difference between repossession and eviction, the permitted reasons, notices and deadlines, and tenant protections.</p><p>Informative content, not legal advice: these steps are ideally carried out with advice. Each chapter ends with a lined “My Notes” page.</p><p>Takeover and eviction are sensitive, very supervised processes, where the slightest misstep can cause everything to fail. This guide distinguishes the two, specifies the reasons and eligible persons, the procedure (notices, deadlines, compensation) and the importance of anticipating before purchasing.</p><p>Informative content: these rules being strict and evolving, have your approach validated before acting.</p>"
+  },
+  {
+   "title": "Takeover vs. eviction: two different things",
+   "objective": "Do not confuse these two approaches.",
+   "html": "<p class=\"lede\">Do not confuse these two approaches.</p>\n<p>Repossession of housing allows the owner to take back housing to accommodate himself or an eligible relative (according to the rules). The eviction aims rather to take back the accommodation to enlarge it, subdivide it or change its use. Both have separate rules.</p>\n<p>In both cases, the tenant benefits from protections, and the process requires valid reasons, compliant notices and compliance with deadlines.</p>\n<p>Repossession and eviction are two distinct processes: repossession allows you to take back housing to live there (yourself or an eligible relative); the eviction aims to recover the accommodation for major work, a subdivision or a change of use. The rules and protections differ.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Never assume that buying a building allows you to “empty” a home as you wish. Repossession and eviction are regulated: find out even BEFORE buying if your project depends on it.</p></aside>"
+  },
+  {
+   "title": "Reasons and eligible persons",
+   "objective": "Check that your situation is admissible.",
+   "html": "<p class=\"lede\">Check that your situation is admissible.</p>\n<p>Recovery is generally possible to accommodate the owner or certain relatives defined by law (for example certain family members). The eviction is based on specific reasons (substantial expansion, subdivision, change of use).</p>\n<ul><li>Check that the person to be accommodated is eligible.</li><li>Ensure that the reason for eviction corresponds to those provided for by law.</li><li>A motive of complacency or bad faith can be contested and refused.</li></ul>\n<p>Recovery is generally possible to accommodate the owner or certain relatives (spouse, ascendants/descendants), under conditions. Not all situations are admissible: check the admissibility of your project BEFORE purchasing with a view to it.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>A “facade” motive often turns against the owner. The TAL and the tenants can contest a repossession or eviction where good faith has not been demonstrated.</p></aside>"
+  },
+  {
+   "title": "Notices, deadlines and compensation",
+   "objective": "Follow the procedure to the letter.",
+   "html": "<p class=\"lede\">Follow the procedure to the letter.</p>\n<p>The process requires written notice to the tenant, within specific deadlines before the end of the lease. The tenant can accept or refuse; in the event of refusal (resumption) or in the case of eviction, the procedure can go through the TAL. Compensation may be due to the tenant (particularly in the event of eviction).</p>\n<ul><li>Compliant written opinion, within the deadlines.</li><li>Respect of the tenant's right of refusal (repossession).</li><li>Possible compensation to be expected (especially in case of eviction).</li></ul>\n<p>The procedure requires written notice within specific deadlines, and sometimes the payment of compensation to the tenant. The tenant can accept or contest before the TAL. The slightest deviation in procedure (deadline, form) can cause the process to fail: rigor is essential.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>The slightest formal defect (late notice, poorly written) can cause your approach to fail. Get support: procedural rigor is as important here as the reason.</p></aside>"
+  },
+  {
+   "title": "Anticipate before buying",
+   "objective": "Integrate these rules into your investment decision.",
+   "html": "<p class=\"lede\">Integrate these rules into your investment decision.</p>\n<p>If your project depends on the release of accommodation (to occupy it, expand it or increase the rent), assess the feasibility BEFORE purchasing. A building entirely rented at low rents, with well-protected tenants, does not offer the same flexibility that we sometimes imagine.</p>\n<p>Buy based on the actual situation and your actual rights, not on an optimistic scenario of rapid release.</p>\n<p>If your project depends on the release of accommodation, integrate these rules into your purchasing decision: deadlines, eligibility, risk of dispute, cost of compensation. Buying with the assumption that you will easily “empty” a home is a common and costly mistake.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Buy the building as it is, not as you dream it will become after “vacating” housing. Quebec legal reality strongly protects existing tenants.</p></aside>"
+  },
+  {
+   "title": "Follow the procedure to the letter",
+   "objective": "Avoid errors that invalidate a retake.",
+   "html": "<p class=\"lede\">Avoid errors that invalidate a restart.</p>\n<p>A poorly executed recovery or eviction can be <strong>contested and refused</strong>. Rigor is essential:</p><ul><li>Use the <strong>good pattern</strong> and the correct eligible person.</li><li>Respect the <strong>notice deadlines</strong> to the letter.</li><li>Pour the <strong>compensation</strong> planned, if applicable.</li><li>Act <strong>good faith</strong> : recovery in bad faith exposes you to sanctions.</li></ul><p>If you have the slightest doubt, have your approach validated before sending a notice.</p><p>A poorly executed test can be contested and refused. Use the right reason and the right eligible person, respect the deadlines to the letter, pay the compensation provided and act in good faith - a recovery in bad faith exposes you to sanctions. If you have the slightest doubt, have your opinion validated before sending it.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>A housing recovery depends on the procedural details. A late or poorly written notice can ruin everything. Check your opinion before sending it: it is not easy to catch up.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Clarify whether my project involves resumption or eviction.</li><li>Check the admissibility of the reason and the people.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Get support for drafting opinions and meeting deadlines.</li><li>Evaluate the feasibility before purchasing if my project depends on it.</li></ol>\n<h3>Then</h3>\n<ol><li>Proceed according to the rules, with advice, or adjust my project.</li></ol><h3>Before acting</h3><ol><li>Check the eligibility of my project (reason, person, deadlines).</li><li>Have my opinion validated and follow the procedure to the letter.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Repossession of housing: resumption to accommodate the owner or an eligible relative.</li><li>Eviction: recovery to enlarge, subdivide or change the assignment.</li><li>Notice: compliant written notification, within the stipulated deadlines.</li><li>Compensation: sum sometimes due to the tenant, especially in eviction.</li><li>TAL: court which can decide in the event of a dispute.</li></ul><ul><li>Resumption of housing: taking back housing for accommodation (self or an eligible relative).</li><li>Eviction: recover the accommodation for major work, subdivision, change of use.</li><li>Notice: written notification within specific deadlines.</li><li>Compensation: compensation sometimes due to the tenant.</li><li>Bad faith: non-real recovery, exposing you to sanctions.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Housing recovery aims to:",
+   "options": [
+    "A) Enlarge the accommodation",
+    "B) Accommodate the owner or an eligible relative",
+    "C) Change the assignment",
+    "D) Raise the rent directly"
+   ],
+   "answer": 1,
+   "explanation": "This is the goal of recovery (chap. 1)."
+  },
+  {
+   "q": "Rather, the eviction aims:",
+   "options": [
+    "A) Accommodate the owner",
+    "B) Expand, subdivide or change the assignment",
+    "C) Nothing",
+    "D) Lower the rent"
+   ],
+   "answer": 1,
+   "explanation": "Distinct reasons for recovery (chap. 1)."
+  },
+  {
+   "q": "A reason for complacency:",
+   "options": [
+    "A) Is always accepted",
+    "B) Can be challenged and refused",
+    "C) Is obligatory",
+    "D) Accelerates the process"
+   ],
+   "answer": 1,
+   "explanation": "Good faith must be demonstrated (chap. 2)."
+  },
+  {
+   "q": "The process requires:",
+   "options": [
+    "A) A call",
+    "B) A timely written notice",
+    "C) Nothing",
+    "D) A simple SMS"
+   ],
+   "answer": 1,
+   "explanation": "Strict procedure (chap. 3)."
+  },
+  {
+   "q": "In the event of eviction, there may be:",
+   "options": [
+    "A) No compensation ever",
+    "B) Compensation due to the tenant",
+    "C) A bonus to the owner",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Compensation to be provided (chap. 3)."
+  },
+  {
+   "q": "A formal defect in the notice:",
+   "options": [
+    "A) Has no effect",
+    "B) Can cause the process to fail",
+    "C) Speeds up everything",
+    "D) Is recommended"
+   ],
+   "answer": 1,
+   "explanation": "Procedural rigor is crucial (chap. 3)."
+  },
+  {
+   "q": "If my project depends on freeing up accommodation:",
+   "options": [
+    "A) I buy without checking",
+    "B) I assess feasibility before purchasing",
+    "C) I ignore the law",
+    "D) I force"
+   ],
+   "answer": 1,
+   "explanation": "We buy according to our real rights (chap. 4)."
+  },
+  {
+   "q": "The existing tenants in Quebec are:",
+   "options": [
+    "A) Without protection",
+    "B) Strongly protected",
+    "C) Expelleable at will",
+    "D) Without lease"
+   ],
+   "answer": 1,
+   "explanation": "The frame protects them (chap. 4)."
+  }
+ ]
+}

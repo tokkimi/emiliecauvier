@@ -1,0 +1,136 @@
+{
+ "number": 50,
+ "title": "Buy a chalet",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>A chalet or a second home is a dream for many Quebecers - the Laurentians, the North Shore, a lakeside. But buying in kind involves very different checks than buying a townhouse.</p><p>This guide covers specific financing, verifications specific to rural properties (water, sewer, access, riparian zoning), and the reality of seasonal maintenance.</p><p>Informative content. Each chapter ends with a lined “My Notes” page.</p><p>The chalet is a dream, but a second home meets very different rules from the main residence: financing, rural audits, riverside zoning, maintenance. This guide covers it all, so you can buy with your eyes open.</p><p>The idea: validate the financing, the verifications and the actual use before letting yourself be seduced by the view.</p>"
+  },
+  {
+   "title": "Financing a second home",
+   "objective": "Understand the different rules for primary residence.",
+   "html": "<p class=\"lede\">Understand the different rules for main residence.</p>\n<p>A second home is not always financed like a primary residence: the down payment can be higher and the conditions different, especially for properties that are very remote, seasonal or not habitable all year round.</p>\n<ul><li>Potentially larger down payment.</li><li>Certain properties (seasonal access, not insulated for winter) are more difficult to finance and insure.</li><li>Validate early with a mortgage broker.</li></ul>\n<p>A second home cannot be financed like a primary residence: the down payment is often higher and the conditions different, especially for a 4-season chalet vs. 3 seasons, or depending on access (road maintained all year round?). Validate financing BEFORE falling in love with a chalet.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Check financing BEFORE falling in love with a secluded chalet. A property that is not habitable all year round or has seasonal access can be much more difficult to finance and insure than you might imagine.</p></aside>"
+  },
+  {
+   "title": "Checks specific to rural areas",
+   "objective": "Control what doesn't exist in the city.",
+   "html": "<p class=\"lede\">Control what doesn't exist in the city.</p>\n<ul><li>Water: well (flow, potability, analyses) rather than municipal aqueduct.</li><li>Sewer: septic installation (age, conformity, maintenance) rather than municipal network.</li><li>Access: private road, snow removal, right of way, seasonal access.</li><li>Building: insulation and heating suitable for 4-season use or not.</li></ul>\n<p>A dry well or a non-compliant septic installation can be very expensive: these elements must be checked before purchasing.</p>\n<p>Rural areas require checks that do not exist in the city: water (wells - flow, potability, analyses), sewer (septic tank and sewage field, age and conformity), access and snow removal, electricity, and sometimes easements of passage. These items are expensive to fix: inspect them seriously.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Have the well tested (flow rate and potability) and the septic installation checked by professionals. In rural areas, these are the two positions that reserve the worst - and costly - surprises.</p></aside>"
+  },
+  {
+   "title": "Riparian zoning and regulations",
+   "objective": "Know the rules around a lake or in a protected area.",
+   "html": "<p class=\"lede\">Know the rules around a lake or in a protected area.</p>\n<p>Waterfront properties and natural surroundings are subject to specific rules: riparian protection strips, construction or renovation restrictions near water, flood zones, protected wetlands. These rules limit what you can do.</p>\n<p>Check zoning and environmental constraints with the municipality BEFORE purchasing, especially if you have development projects.</p>\n<p>On the edge of a lake or in a protected area, the regulations are strict: riparian strips, wetlands, permits to build, renovate or cut down trees. What seems trivial can be prohibited. Check with the municipality and the MRC before purchasing and planning work.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Before buying at the water's edge, find out about the riparian protection strip and flood zones. What you dream of building or developing near water is often strictly regulated.</p></aside>"
+  },
+  {
+   "title": "The reality of maintenance and use",
+   "objective": "Buy with knowledge of the actual charge.",
+   "html": "<p class=\"lede\">Buy with knowledge of the actual charge.</p>\n<p>A second home is a second house to maintain: seasonal opening and closing, minimal heating in winter, maintenance of the grounds, remote management. Honestly evaluate the time and budget you will devote to it, and the actual frequency of use.</p>\n<p>Some make their chalet profitable by renting (be careful of the short-term rules, see the dedicated guide). Others keep it purely personal: in any case, it is a commitment, not just a dream.</p>\n<p>A chalet is a second property to maintain, often remotely: seasonal opening/closing, surveillance, frost-proof heating, specific insurance, travel time. Many cabins are used less often than expected: honestly assess the actual load vs. usage.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Be honest about how often you will actually use it. A chalet that is rarely visited but requires maintenance can become a burden; well chosen and realistic, it is a source of lasting happiness.</p></aside>"
+  },
+  {
+   "title": "Family use, rental or both?",
+   "objective": "Clarify the project behind the purchase.",
+   "html": "<p class=\"lede\">Clarify the project behind the purchase.</p>\n<p>Before buying a chalet, clarify what you really want from it - this guides everything else:</p><ul><li><strong>Family use</strong> : favor location, comfort and distance from the house.</li><li><strong>Rental income</strong> : check zoning, tourist demand and rules (see short-term rental).</li><li><strong>Both</strong> : mixed use, to be balanced between family availability and rental schedule.</li></ul><p>A chalet bought “for the family” then rented without checking the rules can quickly turn into a headache.</p><p>Clarify the project behind the purchase: family use (location, comfort, distance), rental income (zoning, demand, short-term rules), or both (to be balanced). A chalet bought “for the family” then rented without checking the rules can quickly turn into a headache.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Be honest about actual usage: many cabins are used less often than expected. If the budget depends on rental income, validate zoning and demand BEFORE purchasing, not after.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Validate the financing of a second home.</li><li>List the rural checks to be planned.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have wells and septic system tested.</li><li>Check riparian zoning and environmental constraints.</li></ol>\n<h3>Then</h3>\n<ol><li>Honestly evaluate use and maintenance before offering.</li></ol><h3>Before buying</h3><ol><li>Validate the financing of a second home and year-round access.</li><li>Check water, sewer, riparian zoning and clarify the intended use.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Secondary residence: chalet or vacation home, private financing.</li><li>Well: water source to test (flow, potability).</li><li>Septic installation: wastewater treatment, to be verified (age, conformity).</li><li>Riparian protection strip: regulated zone at the water's edge.</li><li>Seasonal access: road not maintained in winter, impact on financing and use.</li></ul><ul><li>Secondary residence: vacation property, with different financing.</li><li>Septic tank: autonomous sewer system, to be verified (age, conformity).</li><li>Riparian strip: protected area on the edge of the lake, with strict rules.</li><li>4-season chalet: habitable all year round, vs 3 seasons.</li><li>Right of way: right of access crossing another piece of land.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "A second home is financed:",
+   "options": [
+    "A) Always as a main residence",
+    "B) Sometimes with a higher down payment and other conditions",
+    "C) Without down payment",
+    "D) Free of charge"
+   ],
+   "answer": 1,
+   "explanation": "Different rules (chap. 1)."
+  },
+  {
+   "q": "In rural areas, water often comes:",
+   "options": [
+    "A) From the municipal aqueduct",
+    "B) From a well (to be tested)",
+    "C) Rain only",
+    "D) Out of nowhere"
+   ],
+   "answer": 1,
+   "explanation": "Flow rate and potability to check (chap. 2)."
+  },
+  {
+   "q": "The sewer in rural areas is often:",
+   "options": [
+    "A) Municipal",
+    "B) A septic installation (to be verified)",
+    "C) Non-existent",
+    "D) Shared with the city"
+   ],
+   "answer": 1,
+   "explanation": "Important age and compliance (Chapter 2)."
+  },
+  {
+   "q": "Waterfront properties are subject to:",
+   "options": [
+    "A) No rules",
+    "B) Rules (riparian strip, flood zones)",
+    "C) Less taxes",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Environmental constraints (chap. 3)."
+  },
+  {
+   "q": "Before buying at the water's edge, you must check:",
+   "options": [
+    "A) The color of the dock",
+    "B) Riparian zoning and constraints",
+    "C) Nothing",
+    "D) The weather"
+   ],
+   "answer": 1,
+   "explanation": "What can be developed is framed (chap. 3)."
+  },
+  {
+   "q": "A second home is:",
+   "options": [
+    "A) Maintenance free",
+    "B) A second house to maintain",
+    "C) Always praised",
+    "D) Free to handle"
+   ],
+   "answer": 1,
+   "explanation": "A real commitment (chap. 4)."
+  },
+  {
+   "q": "Before buying a chalet, you must first:",
+   "options": [
+    "A) Praise him immediately",
+    "B) Clarify the intended use (family, rental, mixed)",
+    "C) Ignore zoning",
+    "D) Pay cash"
+   ],
+   "answer": 1,
+   "explanation": "Clarify the project (use chapter)."
+  },
+  {
+   "q": "Relying on rental income from a chalet requires:",
+   "options": [
+    "A) Do not check anything",
+    "B) Validate zoning and demand before purchasing",
+    "C) Buy first, check later",
+    "D) Avoiding insurance"
+   ],
+   "answer": 1,
+   "explanation": "Check before buying (chapter usage)."
+  }
+ ]
+}

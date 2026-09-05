@@ -1,5 +1,8 @@
 import { APP_URL } from '@/lib/stripe';
 import { createPurchaseDownloadToken } from '@/lib/purchaseDownloadToken';
+import { bySlug } from '@/data/books';
+import { localizeBook } from '@/data/booksEn';
+import type { Locale } from '@/lib/i18n';
 
 type PurchasedGuide = {
   purchaseId: string;
@@ -23,10 +26,12 @@ export async function sendPurchaseEmail({
   to,
   guides,
   stripeSessionId,
+  locale = 'fr',
 }: {
   to: string | null | undefined;
   guides: PurchasedGuide[];
   stripeSessionId: string;
+  locale?: Locale;
 }) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey || !to || guides.length === 0) return { sent: false, reason: 'missing_config_or_recipient' };
@@ -34,18 +39,22 @@ export async function sendPurchaseEmail({
   const items = guides
     .map((guide) => {
       const token = createPurchaseDownloadToken(guide.purchaseId, guide.ebookId);
-      const downloadUrl = `${APP_URL}/api/download?slug=${encodeURIComponent(guide.slug)}&purchase=${encodeURIComponent(guide.purchaseId)}&token=${encodeURIComponent(token)}`;
+      const book = bySlug(guide.slug);
+      const title = book ? localizeBook(book, locale).title : guide.title;
+      const downloadUrl = `${APP_URL}/api/download?slug=${encodeURIComponent(guide.slug)}&purchase=${encodeURIComponent(guide.purchaseId)}&token=${encodeURIComponent(token)}&lang=${locale}`;
       return `
         <tr>
           <td style="padding:16px 0;border-bottom:1px solid #eadfd4;">
-            <p style="margin:0 0 8px;font-size:16px;line-height:1.4;color:#6f1828;font-weight:700;">${escapeHtml(guide.title)}</p>
-            <a href="${downloadUrl}" style="display:inline-block;margin-bottom:8px;padding:10px 16px;border-radius:999px;background:#6f1828;color:#ffffff;text-decoration:none;font-size:13px;font-weight:700;">Télécharger le PDF</a>
+            <p style="margin:0 0 8px;font-size:16px;line-height:1.4;color:#6f1828;font-weight:700;">${escapeHtml(title)}</p>
+            <a href="${downloadUrl}" style="display:inline-block;margin-bottom:8px;padding:10px 16px;border-radius:999px;background:#6f1828;color:#ffffff;text-decoration:none;font-size:13px;font-weight:700;">${locale === 'en' ? 'Download the PDF' : 'Télécharger le PDF'}</a>
           </td>
         </tr>`;
     })
     .join('');
 
-  const subject = guides.length > 1 ? 'Vos guides immobiliers sont prêts' : 'Votre guide immobilier est prêt';
+  const subject = locale === 'en'
+    ? guides.length > 1 ? 'Your real estate guides are ready' : 'Your real estate guide is ready'
+    : guides.length > 1 ? 'Vos guides immobiliers sont prêts' : 'Votre guide immobilier est prêt';
   const html = `
     <div style="margin:0;padding:0;background:#f7f2ec;font-family:Arial,Helvetica,sans-serif;color:#241f1d;">
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f7f2ec;padding:32px 16px;">
@@ -55,14 +64,14 @@ export async function sendPurchaseEmail({
               <tr>
                 <td style="padding:28px 28px 18px;background:#6f1828;color:#fffaf4;">
                   <p style="margin:0 0 8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d6b16a;">Guides Immo Québec</p>
-                  <h1 style="margin:0;font-size:28px;line-height:1.15;">Merci pour votre achat</h1>
+                  <h1 style="margin:0;font-size:28px;line-height:1.15;">${locale === 'en' ? 'Thank you for your purchase' : 'Merci pour votre achat'}</h1>
                 </td>
               </tr>
               <tr>
                 <td style="padding:26px 28px;">
-                  <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4b4545;">Vos PDF sont disponibles ci-dessous. Gardez cet email: il vous permet de retrouver vos guides même si vous avez continué sans créer de compte.</p>
+                  <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4b4545;">${locale === 'en' ? 'Your PDFs are available below. Keep this email: it lets you find your guides again even if you continued without creating an account.' : 'Vos PDF sont disponibles ci-dessous. Gardez cet email: il vous permet de retrouver vos guides même si vous avez continué sans créer de compte.'}</p>
                   <table role="presentation" width="100%" cellspacing="0" cellpadding="0">${items}</table>
-                  <p style="margin:22px 0 0;font-size:13px;line-height:1.5;color:#6f625d;">Les liens sont sécurisés et réservés à votre achat. Vous pouvez aussi créer un profil plus tard pour retrouver vos guides dans votre espace lecteur.</p>
+                  <p style="margin:22px 0 0;font-size:13px;line-height:1.5;color:#6f625d;">${locale === 'en' ? 'These links are secure and reserved for your purchase. You can also create a profile later to find your guides in your reader space.' : 'Les liens sont sécurisés et réservés à votre achat. Vous pouvez aussi créer un profil plus tard pour retrouver vos guides dans votre espace lecteur.'}</p>
                 </td>
               </tr>
             </table>

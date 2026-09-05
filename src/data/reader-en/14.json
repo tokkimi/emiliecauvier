@@ -1,1 +1,136 @@
-{"number": 14, "title": "Clay soils, pyrite and the French drain", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Some building risks are specific to Québec and the Montréal region: clay soils, pyrite, an aging French drain, buried tanks, vermiculite. Properly identified, they can be managed; ignored, they cost a fortune.</p><p>This guide teaches you to spot the warning signs, ask the right questions, and target the right professional checks before you buy.</p><p>This content is informational: diagnoses must be made by professionals (inspector, engineer, expert). Each chapter ends with a lined « My notes » page.</p>"}, {"title": "Clay soils and foundation movement", "objective": "Understand why clay moves and what it implies.", "html": "<p class=\"lede\">Understand why clay moves and what it implies.</p>\n<p>A large part of the Montréal, Laval and North Shore region sits on clay soils. Clay swells with water and shrinks in dry periods, which can cause foundation movement, cracks and uneven floors — especially during droughts or with large trees nearby that dry out the soil.</p>\n<ul><li>Warning signs: stair-step cracks, doors/windows that stick, sloping floors.</li><li>Aggravating factors: mature trees near the foundation, poor drainage, droughts.</li><li>When in doubt: have it assessed by a professional (sometimes an engineer).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Not every crack is serious, but some are. In clay areas, have significant cracks assessed by a pro before buying: it's the difference between a cosmetic detail and a major bill.</p></aside>"}, {"title": "Pyrite and pyrrhotite", "objective": "Recognize these mineral risks by area.", "html": "<p class=\"lede\">Recognize these mineral risks by area.</p>\n<p>Pyrite can be present in the backfill under the basement slab in certain areas: as it swells, it lifts and cracks the slab. Pyrrhotite, on the other hand, affects the foundation concrete in certain regions (mostly outside Greater Montréal, but worth knowing) and can degrade it.</p>\n<ul><li>Pyrite warning signs: heaving and cracking of the basement slab, pressure on partition walls.</li><li>Verification: a swelling test of the backfill (petrography) by a specialized laboratory.</li><li>Some areas are more at risk: ask around locally.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>If a basement slab shows cracking and heaving in an area known for pyrite, insist on a test before buying. The cost of the test is trivial compared to redoing a slab.</p></aside>"}, {"title": "The French drain and water management", "objective": "Assess the system that keeps the basement dry.", "html": "<p class=\"lede\">Assess the system that keeps the basement dry.</p>\n<p>The French drain, buried at the base of the foundation, carries water away from the soil. Over time (often a few decades), it can clog or sag, leading to basement infiltration. Replacing it is a costly job (excavation).</p>\n<ul><li>Warning signs: dampness or infiltration in the basement, efflorescence, odors.</li><li>Good surface drainage: ground slope and gutters directing water away from the house.</li><li>A camera can inspect the state of the drain when there's doubt.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>The age of the French drain is a question to ask systematically on a house over 30 years old. A dry basement today doesn't guarantee a drain in good condition.</p></aside>"}, {"title": "Buried tanks, vermiculite and asbestos", "objective": "Spot the other Québec points to watch.", "html": "<p class=\"lede\">Spot the other Québec points to watch.</p>\n<ul><li>Buried oil tank (old oil heating): risk of soil contamination and an insurability issue; its presence must be declared and managed.</li><li>Vermiculite (granular insulation in some older attics/walls): may contain asbestos; have it tested before any work.</li><li>Other asbestos-containing materials in older buildings: take precautions during renovations.</li></ul>\n<p>None of these elements is necessarily a deal-breaker, but each must be identified, assessed and, if needed, costed out before the purchase.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>These points shouldn't make you flee every old house — they should make you ask questions and target the inspection. A well-understood house is a house you buy with peace of mind.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Find out whether the areas I'm targeting are at risk (clay, pyrite).</li><li>List the warning signs to watch for during visits.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Work with the inspector to target the relevant on-site checks.</li><li>Plan specialized tests (pyrite, drain, vermiculite) if necessary.</li></ol>\n<h3>Next</h3>\n<ol><li>Factor any identified risk into my price and conditions strategy.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Clay soil: soil that swells and shrinks, potentially moving the foundation.</li><li>Pyrite: a mineral in the backfill that swells and lifts the basement slab.</li><li>Pyrrhotite: a mineral that can degrade foundation concrete (certain regions).</li><li>French drain: a pipe at the base of the foundation that carries away soil water.</li><li>Vermiculite: old granular insulation that may contain asbestos.</li><li>Buried tank: an old oil tank, a soil and insurance concern.</li></ul>"}], "qcm": [{"q": "Clay soils can cause:", "options": ["A) Nothing", "B) Foundation movement and cracks", "C) Better insulation", "D) Energy savings"], "answer": 1, "explanation": "Clay swells and shrinks (ch. 1)."}, {"q": "An aggravating factor in clay soil is:", "options": ["A) A small lawn", "B) Large trees near the foundation", "C) A new roof", "D) A new door"], "answer": 1, "explanation": "Trees dry out the soil (ch. 1)."}, {"q": "Pyrite mainly affects:", "options": ["A) The roof", "B) The backfill under the basement slab", "C) The windows", "D) The electrical system"], "answer": 1, "explanation": "It swells and lifts the slab (ch. 2)."}, {"q": "To check for pyrite, you do:", "options": ["A) A photo", "B) A swelling test (petrography) in a laboratory", "C) Nothing", "D) A water test"], "answer": 1, "explanation": "A specialized analysis of the backfill (ch. 2)."}, {"q": "The French drain serves to:", "options": ["A) Heat the house", "B) Carry away soil water at the base of the foundation", "C) Insulate the roof", "D) Supply water"], "answer": 1, "explanation": "It keeps the basement dry (ch. 3)."}, {"q": "The age of the drain is a key question on a house over:", "options": ["A) 5 years", "B) 10 years", "C) 30 years", "D) 100 years only"], "answer": 2, "explanation": "It ages over a few decades (ch. 3)."}, {"q": "Vermiculite may contain:", "options": ["A) Gold", "B) Asbestos", "C) Drinking water", "D) Concrete"], "answer": 1, "explanation": "Have it tested before any work (ch. 4)."}, {"q": "A buried oil tank is mainly an issue of:", "options": ["A) Decoration", "B) Soil contamination and insurability", "C) Free heating", "D) Nothing"], "answer": 1, "explanation": "An environmental and insurance risk (ch. 4)."}]}
+{
+ "number": 14,
+ "title": "Clay soils, pyrite and French drain",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Certain building risks are specific to Quebec and the Montreal region: clay soils, pyrite, aging French drain, buried tanks, vermiculite. Well identified, they can be managed; ignored, they are expensive.</p><p>This guide teaches you how to spot the signals, ask the right questions and target professional checks before you buy.</p><p>This content is informative: diagnoses must be made by professionals (inspector, engineer, expert). Each chapter ends with a lined “My Notes” page.</p><p>Quebec buildings have their particularities: clay soils, pyrite and pyrrhotite, French drains, buried reservoirs. Well known, these issues can be managed; ignored, they are expensive. This guide teaches you how to spot them and protect yourself before you buy.</p><p>Objective: transform scary words into concrete verification points for your inspection.</p>"
+  },
+  {
+   "title": "Clay soils and foundation movement",
+   "objective": "Understand why clay moves and what that means.",
+   "html": "<p class=\"lede\">Understand why clay moves and what that implies.</p>\n<p>A large part of the region of Montreal, Laval and the North Shore is based on clay soils. Clay expands with water and shrinks in dry periods, which can cause foundation movement, cracks and uneven floors - especially during droughts or with large trees nearby drying out the soil.</p>\n<ul><li>Signals: stepped cracks, sticking doors/windows, leaning floors.</li><li>Aggravating factors: mature trees near foundations, poor drainage, droughts.</li><li>If in doubt: have it assessed by a professional (sometimes an engineer).</li></ul>\n<p>Clay swells with water and contracts during dry periods, which can cause the foundations to move (cracks, leaning floors). This is not inevitable: good water management around the house (slopes, gutters, stable watering of foundations in drought) strongly limits movement.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Not all cracks are serious, but some are. In clay areas, have major cracks assessed by a professional before purchasing: it's the difference between a cosmetic detail and a major bill.</p></aside>"
+  },
+  {
+   "title": "Pyrite and pyrrhotite",
+   "objective": "Recognize these mineral risks depending on the sector.",
+   "html": "<p class=\"lede\">Recognize these mineral risks depending on the sector.</p>\n<p>Pyrite can be present in the backfill under the basement slabs in certain sectors: as it swells, it lifts and cracks the slab. Pyrrhotite concerns the foundation concrete of certain regions (especially outside Greater Montreal, but be aware) and can degrade it.</p>\n<ul><li>Pyrite signals: lifting and cracking of the basement slab, pushing on the partitions.</li><li>Verification: swelling test of the embankment (petrography) by a specialized laboratory.</li><li>Certain sectors are more at risk: find out locally.</li></ul>\n<p>Pyrite (under slabs) and pyrrhotite (in concrete in certain regions) can, by reacting, crack and lift the concrete. The risk varies depending on the sector and the time of construction. Specialized tests exist: if in doubt, do them before buying.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If a basement slab shows cracking and heaving in an area known for pyrite, request testing before purchasing. The cost of the test is insignificant compared to that of a slab to be redone.</p></aside>"
+  },
+  {
+   "title": "The French drain and water management",
+   "objective": "Evaluate the system that keeps the basement dry.",
+   "html": "<p class=\"lede\">Evaluate the system that keeps the basement dry.</p>\n<p>The French drain, buried at the foot of the foundations, evacuates water from the ground. Over time (often several decades), it can become clogged or sag, causing infiltration into the basement. Its replacement is a costly project (excavation).</p>\n<ul><li>Signals: humidity or infiltration in the basement, efflorescence, odors.</li><li>Good surface drainage: slope of the land and gutters directing water away from the house.</li><li>A camera can inspect the condition of the drain in case of doubt.</li></ul>\n<p>The French drain, buried at the foot of the foundations, evacuates water from the ground; blocked or collapsed, it allows water to infiltrate into the basement. Its replacement is expensive. Observe the clues (moisture, stains, odor) and ask for the age and history of the drain.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>The age of the French drain is a question that should be asked systematically on a house over 30 years old. A dry basement today does not guarantee a drain in good condition.</p></aside>"
+  },
+  {
+   "title": "Buried tanks, vermiculite and asbestos",
+   "objective": "Identify other Quebec vigilance points.",
+   "html": "<p class=\"lede\">Identify other Quebec vigilance points.</p>\n<ul><li>Buried oil tank (former oil heating): risk of soil contamination and insurability issue; its presence must be declared and managed.</li><li>Vermiculite (granular insulation in some attics/old walls): may contain asbestos; to be tested before work.</li><li>Other asbestos materials in older buildings: precautions during renovations.</li></ul>\n<p>None of these elements is necessarily prohibitive, but each must be identified, evaluated and, if necessary, costed before purchase.</p>\n<p>Stay attentive to other points in Quebec: buried oil tank (contamination), vermiculite that may contain asbestos, and old materials at risk. These elements can be managed, but it is better to know them before buying than to discover them while renovating.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>These points shouldn't make you shy away from all old houses - they should make you ask questions and focus the inspection. A well-understood house is a house that you buy with peace of mind.</p></aside>"
+  },
+  {
+   "title": "Detect these risks and protect yourself",
+   "objective": "Check before buying.",
+   "html": "<p class=\"lede\">Check before buying.</p>\n<p>These floor and building problems are managed well... when they are detected in time. Your purchase protections:</p><ul><li><strong>Pre-purchase inspection</strong> by a professional attentive to these regional issues.</li><li><strong>Specialized tests</strong> as needed (pyrite, pyrrhotite, soil).</li><li><strong>Questions for the seller</strong> and careful reading of his statement.</li><li><strong>History</strong> works and repairs.</li></ul><p>An inspection condition in your promise to purchase gives you time to validate all of this.</p><p>Your best protection: an inspection by a professional attentive to these regional issues, targeted tests if necessary, and an inspection condition in your promise to purchase. A few hundred dollars of expertise can avoid tens of thousands in repairs.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Always add an inspection condition to your offer, especially in sectors known for these issues. A few hundred dollars of expertise can save you tens of thousands in repairs.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Identify if my targeted sectors are at risk (clay, pyrite).</li><li>List the signals to watch for during visits.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Target relevant field verifications with the inspector.</li><li>Provide specialized tests (pyrite, drain, vermiculite) if necessary.</li></ol>\n<h3>Then</h3>\n<ol><li>Integrate any identified risks into my pricing and conditions strategy.</li></ol><h3>To protect myself</h3><ol><li>Add an inspection condition and target sector issues.</li><li>Provide specialized tests (pyrite, soil) in case of doubt.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Clay soil: soil which swells and contracts, which can move the foundations.</li><li>Pyrite: mineral from the backfill which swells and raises the basement slab.</li><li>Pyrrhotite: mineral that can degrade foundation concrete (certain regions).</li><li>French drain: pipe at the foot of the foundations evacuating water from the ground.</li><li>Vermiculite: old granular insulation that may contain asbestos.</li><li>Buried tank: old fuel oil tank, soil and insurance issues.</li></ul><ul><li>Clay soil: soil that swells and contracts depending on the humidity, which can move the foundations.</li><li>Pyrite / pyrrhotite: minerals that can cause concrete to swell or crack.</li><li>French drain: peripheral drain evacuating water around the foundations.</li><li>Buried tank: old fuel oil tank, risk of contamination.</li><li>Vermiculite: insulation that may contain asbestos.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Clay soils can cause:",
+   "options": [
+    "A) Nothing",
+    "B) Foundation movements and cracks",
+    "C) Better insulation",
+    "D) Energy savings"
+   ],
+   "answer": 1,
+   "explanation": "Clay expands and contracts (chap. 1)."
+  },
+  {
+   "q": "An aggravating factor in clay soil is:",
+   "options": [
+    "A) A small lawn",
+    "B) Large trees near the foundations",
+    "C) A new roof",
+    "D) A new door"
+   ],
+   "answer": 1,
+   "explanation": "Trees dry out the ground (chap. 1)."
+  },
+  {
+   "q": "Pyrite mainly affects:",
+   "options": [
+    "A) The roof",
+    "B) The backfill under the basement slab",
+    "C) Windows",
+    "D) Electricity"
+   ],
+   "answer": 1,
+   "explanation": "It inflates and lifts the slab (chap. 2)."
+  },
+  {
+   "q": "To check the pyrite, we do:",
+   "options": [
+    "A) A photo",
+    "B) A swelling test (petrography) in the laboratory",
+    "C) Nothing",
+    "D) A water test"
+   ],
+   "answer": 1,
+   "explanation": "Specialized analysis of the embankment (chap. 2)."
+  },
+  {
+   "q": "The French drain is used to:",
+   "options": [
+    "A) Heating the house",
+    "B) Evacuate water from the ground at the foot of the foundations",
+    "C) Insulate the roof",
+    "D) Supply water"
+   ],
+   "answer": 1,
+   "explanation": "It keeps the basement dry (chap. 3)."
+  },
+  {
+   "q": "The age of the drain is a key question on a house over:",
+   "options": [
+    "A) 5 years",
+    "B) 10 years",
+    "C) 30 years",
+    "D) only 100 years"
+   ],
+   "answer": 2,
+   "explanation": "It ages over a few decades (chap. 3)."
+  },
+  {
+   "q": "Vermiculite may contain:",
+   "options": [
+    "A) Gold",
+    "B) Asbestos",
+    "C) Drinking water",
+    "D) Concrete"
+   ],
+   "answer": 1,
+   "explanation": "To be tested before work (chap. 4)."
+  },
+  {
+   "q": "A buried oil tank is above all an issue of:",
+   "options": [
+    "A) Decoration",
+    "B) Soil contamination and insurability",
+    "C) Free heating",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Environmental and insurance risk (chap. 4)."
+  }
+ ]
+}

@@ -1,1 +1,136 @@
-{"number": 27, "title": "Calculating Profitability", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>In rental real estate, profitability isn't guessed: it's calculated. Three simple indicators — cash flow, the capitalization rate (cap rate), and the gross rent multiplier (GRM) — tell you in a few minutes whether a building is worth an offer.</p><p>This guide explains each calculation, with clear examples, so you can compare buildings objectively.</p><p>Each chapter ends with a lined « My notes » page for you to work out YOUR own numbers.</p>"}, {"title": "Net operating income (NOI)", "objective": "Calculate what the building generates before financing.", "html": "<p class=\"lede\">Calculate what the building generates before financing.</p>\n<p>Net operating income (NOI) is the basis for everything: rental income (minus vacancy) less operating expenses (taxes, insurance, maintenance, management, common-area energy) — BUT before mortgage payments.</p>\n<p>Example: rents of $36,000/year − 5% vacancy ($1,800) = $34,200; expenses $12,000; NOI = $22,200.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never confuse gross rents with NOI. A building with high rents but high expenses can generate less NOI than a more modest, efficient one.</p></aside>"}, {"title": "Cash flow", "objective": "Know what actually stays in your pocket.", "html": "<p class=\"lede\">Know what actually stays in your pocket.</p>\n<p>Cash flow is NOI minus mortgage payments (principal + interest). It is the money left each year after paying for EVERYTHING. Positive cash flow is generally the goal; negative cash flow means you are funding the building out of your own pocket.</p>\n<p>Example: NOI $22,200 − mortgage $18,000/year = cash flow of $4,200/year.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Slightly positive or neutral cash flow can be acceptable if the building is appreciating and the tenant is paying down your principal. But large negative cash flow is a risk, especially if rates rise.</p></aside>"}, {"title": "The capitalization rate (cap rate)", "objective": "Compare buildings independently of financing.", "html": "<p class=\"lede\">Compare buildings independently of financing.</p>\n<p>The capitalization rate = NOI ÷ purchase price, expressed as a percentage. It measures the building's return before financing, which lets you compare buildings against one another and against their area.</p>\n<p>Example: NOI $22,200 ÷ price $400,000 = a 5.55% cap rate. A higher cap rate means (all else being equal) a better return — but sometimes more risk or a less desirable area.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Always compare a building's cap rate to those in the same area. An abnormally high cap rate often hides something: a poor neighbourhood, major work ahead, or unsustainable rents.</p></aside>"}, {"title": "The GRM and the limits of ratios", "objective": "Use a quick benchmark and know its limits.", "html": "<p class=\"lede\">Use a quick benchmark and know its limits.</p>\n<p>The gross rent multiplier (GRM) = purchase price ÷ annual gross income. It is a QUICK comparison benchmark (a lower GRM is generally more attractive), but a crude one because it ignores expenses.</p>\n<ul><li>GRM: good for a quick first screen, not for deciding.</li><li>Cap rate and cash flow: more reliable because they account for expenses (and financing, for cash flow).</li><li>Always validate with the real numbers before making an offer.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Use the GRM for an initial screen, never for a final decision. Two buildings with the same GRM can be very different once the real expenses are factored in.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Gather the real rents and expenses of the target building.</li><li>Calculate the NOI.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Calculate cash flow, cap rate, and GRM.</li><li>Compare against other buildings and the area's cap rate.</li></ol>\n<h3>Then</h3>\n<ol><li>Decide whether to offer based on validated numbers, with Emilie.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>NOI: net operating income, income minus expenses, before financing.</li><li>Cash flow: NOI minus mortgage payments.</li><li>Cap rate: NOI ÷ purchase price, the return before financing.</li><li>GRM: price ÷ gross income, a quick comparison benchmark.</li><li>Vacancy: the percentage of lost rent to build into the calculations.</li></ul>"}], "qcm": [{"q": "NOI is calculated:", "options": ["A) After the mortgage", "B) Before mortgage payments", "C) Without expenses", "D) On price alone"], "answer": 1, "explanation": "Income minus expenses, before financing (ch. 1)."}, {"q": "Cash flow is:", "options": ["A) NOI minus the mortgage", "B) Gross rents", "C) The purchase price", "D) The down payment"], "answer": 0, "explanation": "What is left after paying everything (ch. 2)."}, {"q": "Negative cash flow means:", "options": ["A) A gain", "B) That you are funding the building out of pocket", "C) Nothing", "D) An exemption"], "answer": 1, "explanation": "Expenses exceed net income (ch. 2)."}, {"q": "The cap rate is:", "options": ["A) NOI ÷ purchase price", "B) Price ÷ rents", "C) Rents − expenses", "D) Down payment ÷ price"], "answer": 0, "explanation": "The return before financing (ch. 3)."}, {"q": "An abnormally high cap rate can hide:", "options": ["A) A sure bargain", "B) A poor neighbourhood or major work ahead", "C) Nothing", "D) A gift"], "answer": 1, "explanation": "To be compared with the area (ch. 3)."}, {"q": "The GRM is:", "options": ["A) Price ÷ gross income", "B) NOI ÷ price", "C) Annual cash flow", "D) The interest rate"], "answer": 0, "explanation": "A quick benchmark (ch. 4)."}, {"q": "The GRM is mainly used for:", "options": ["A) Deciding on its own", "B) A quick first screen", "C) Calculating tax", "D) Setting the rent"], "answer": 1, "explanation": "It ignores expenses (ch. 4)."}, {"q": "To decide, you rely mainly on:", "options": ["A) The GRM alone", "B) The real cap rate and cash flow", "C) Appearance", "D) Chance"], "answer": 1, "explanation": "They factor in expenses (ch. 4)."}]}
+{
+ "number": 27,
+ "title": "Calculate profitability",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>In rental real estate, profitability cannot be guessed: it can be calculated. Three simple indicators - cash flow, cap rate and gross revenue multiplier (MRB) - tell you in minutes whether a building is worth an offer.</p><p>This guide explains each calculation, with clear examples, to compare buildings objectively.</p><p>Each chapter ends with a lined “My Notes” page to calculate YOUR own numbers.</p><p>The profitability of a building can be calculated, it cannot be guessed. This guide dissects the key indicators - RNE, cashflow, capitalization rate, MRB, return on capital investment - ​​and especially their limits, to decide on the facts.</p><p>The key message: no ratio says everything; it is their combination, crossed with the condition of the building, which informs the decision.</p>"
+  },
+  {
+   "title": "Net operating income (RNE)",
+   "objective": "Calculate what the building generates before financing.",
+   "html": "<p class=\"lede\">Calculate what the building generates before financing.</p>\n<p>The net operating income (RNE) is the basis of everything: rental income (less vacancy) less operating expenses (taxes, insurance, maintenance, management, energy of the commons) - BUT before mortgage payments.</p>\n<p>Example: rents $36,000/year − 5% vacancy ($1,800) = $34,200; expenses $12,000; NOI = $22,200.</p>\n<p>ROI (revenue less operating expenses, before financing) is the basic measure of a building's performance. It allows buildings to be compared with each other without being distorted by the financing method of each. A solid ROI is the foundation of any good investment.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Never confuse gross rents and RNE. A building with high rents but high expenses can generate less RNE than a more modest and efficient building.</p></aside>"
+  },
+  {
+   "title": "The cash flow",
+   "objective": "Know what is actually left in your pockets.",
+   "html": "<p class=\"lede\">Know what's really left in your pockets.</p>\n<p>Cash flow is the RNE minus mortgage payments (capital + interest). This is the money left over each year after paying EVERYTHING. Positive cash flow is generally the goal; a negative cash flow means that you are financing the building out of your own pocket.</p>\n<p>Example: RNE $22,200 − mortgage $18,000/year = cash flow of $4,200/year.</p>\n<p>Cash flow is the RNE minus mortgage payments: the real money that remains (or is missing) each month. Negative cash flow means that you are financing the building out of your own pocket. Aim for at least balance, with room for unforeseen events and vacancy.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>A slightly positive or neutral cash flow may be acceptable if the building increases in value and the tenant repays your capital. But a big negative cash flow is a risk, especially if rates rise.</p></aside>"
+  },
+  {
+   "title": "The capitalization rate (cap rate)",
+   "objective": "Compare buildings regardless of financing.",
+   "html": "<p class=\"lede\">Compare buildings regardless of financing.</p>\n<p>The capitalization rate = RNE ÷ purchase price, expressed as a percentage. It measures the performance of the building before financing, which allows buildings to be compared to each other and to their sector.</p>\n<p>Example: RNE $22,200 ÷ price $400,000 = 5.55% cap rate. A higher cap rate means (all things equal) a better return - but sometimes more risk or a less popular sector.</p>\n<p>The capitalization rate (RNE ÷ price) makes it possible to compare buildings independently of financing, as a “yield” of the building. A higher cap rate can signal better returns… or higher risk. Always compare similar buildings, in similar areas.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Always compare the cap rate of a building to those in the same sector. An abnormally high cap rate often hides something: bad neighborhood, major work ahead, or unsustainable rents.</p></aside>"
+  },
+  {
+   "title": "The MRB and the limits of ratios",
+   "objective": "Use a quick reference and know its limits.",
+   "html": "<p class=\"lede\">Use a quick reference and know its limits.</p>\n<p>The gross revenue multiplier (MRB) = purchase price ÷ annual gross revenue. This is a QUICK benchmark for comparison (a lower MRB is generally more attractive), but crude because it ignores expenses.</p>\n<ul><li>MRB: good for a quick first sort, not for deciding.</li><li>Cap rate and cash flow: more reliable because they take into account expenses (and financing for cash flow).</li><li>Always validate with actual figures before bidding.</li></ul>\n<p>The MRB (price ÷ gross revenues) is a quick but crude benchmark: it ignores expenses. Use it for a first sorting, never to decide. Ratios are tools, not verdicts: always cross-reference them with actual figures and the condition of the building.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Use the MRB for an initial sorting, never for a final decision. Two buildings at the same MRB can be very different once actual expenses are included.</p></aside>"
+  },
+  {
+   "title": "Return on investment and leverage",
+   "objective": "Measure what your invested money brings back.",
+   "html": "<p class=\"lede\">Measure what your invested money brings back.</p>\n<p>Beyond the classic ratios, one figure speaks directly to the investor: the <strong>return on investment</strong> (cash-on-cash) - the annual cash flow compared to the money actually invested.</p><p>This is where the<strong>leverage</strong> : by financing part of the price, you invest less out of your pocket to control a larger asset.</p><ul><li>The lever <strong>amplifies</strong> the return… but also the risk.</li><li>Negative cash flow turns leverage into a burden.</li></ul><p>Return on investment (cash-on-cash) measures what YOUR invested money earns. This is where the leverage effect comes in: financing part of the price amplifies the return… but also the risk. Negative cash flow turns leverage into a burden: always keep a margin.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Leverage is a double-edged sword: it inflates your returns when everything is going well, but amplifies losses if cash flow becomes negative. Always keep a margin to absorb a bad year.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Gather actual rents and expenses for the building in question.</li><li>Calculate the RNE.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Calculate cashflow, cap rate and MRB.</li><li>Compare to buildings and sector cap rate.</li></ol>\n<h3>Then</h3>\n<ol><li>Decide to offer according to validated figures, with Emilie.</li></ol><h3>To analyze a building</h3><ol><li>Calculate RNE, cashflow and return on investment from actual figures.</li><li>Test a rate increase and a vacancy to check my margin.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>RNE: net operating income, revenues less expenses, before financing.</li><li>Cashflow: RNE minus mortgage payments.</li><li>Cap rate: RNE ÷ purchase price, return before financing.</li><li>MRB: price ÷ gross revenue, quick benchmark for comparison.</li><li>Vacancy: percentage of lost rent to be expected in the calculations.</li></ul><ul><li>RNE: revenue less operating expenses, before financing.</li><li>Cashflow: RNE minus mortgage payments.</li><li>Capitalization rate: RNE ÷ price, to compare buildings.</li><li>MRB: price ÷ gross revenues, quick and dirty benchmark.</li><li>Leverage effect: use of financing which amplifies return and risk.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The RNE is calculated:",
+   "options": [
+    "A) After the mortgage",
+    "B) Before mortgage payments",
+    "C) Without expenses",
+    "D) On price alone"
+   ],
+   "answer": 1,
+   "explanation": "Income less expenses, before financing (chap. 1)."
+  },
+  {
+   "q": "The cash flow is:",
+   "options": [
+    "A) The RNE minus the mortgage",
+    "B) Gross rents",
+    "C) The purchase price",
+    "D) The down payment"
+   ],
+   "answer": 0,
+   "explanation": "What remains after all to pay (chap. 2)."
+  },
+  {
+   "q": "Negative cash flow means:",
+   "options": [
+    "A) A gain",
+    "B) That you finance the building out of your own pocket",
+    "C) Nothing",
+    "D) An exemption"
+   ],
+   "answer": 1,
+   "explanation": "Expenses exceed net income (chap. 2)."
+  },
+  {
+   "q": "The cap rate is:",
+   "options": [
+    "A) RNE ÷ purchase price",
+    "B) Price ÷ rents",
+    "C) Rent − expenses",
+    "D) Down payment ÷ price"
+   ],
+   "answer": 0,
+   "explanation": "Return before financing (chap. 3)."
+  },
+  {
+   "q": "An abnormally high cap rate can hide:",
+   "options": [
+    "A) A sure windfall",
+    "B) A bad neighborhood or major work ahead",
+    "C) Nothing",
+    "D) A gift"
+   ],
+   "answer": 1,
+   "explanation": "Compare to the sector (chap. 3)."
+  },
+  {
+   "q": "The MRB is:",
+   "options": [
+    "A) Price ÷ gross revenue",
+    "B) RNE ÷ price",
+    "C) Annual cash flow",
+    "D) The interest rate"
+   ],
+   "answer": 0,
+   "explanation": "A quick reference (chap. 4)."
+  },
+  {
+   "q": "The MRB is mainly used to:",
+   "options": [
+    "A) Decide alone",
+    "B) A first quick sort",
+    "C) Calculate tax",
+    "D) Fix the rent"
+   ],
+   "answer": 1,
+   "explanation": "He ignores expenses (chap. 4)."
+  },
+  {
+   "q": "To decide, we mainly rely on:",
+   "options": [
+    "A) At the MRB alone",
+    "B) At real cap rate and cash flow",
+    "C) Appearance",
+    "D) Random"
+   ],
+   "answer": 1,
+   "explanation": "They include expenses (chap. 4)."
+  }
+ ]
+}

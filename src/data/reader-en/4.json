@@ -1,0 +1,158 @@
+{
+ "number": 4,
+ "title": "The welcome tax explained",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>“Welcome tax”: a nice name for a bill that surprises many buyers a few weeks after moving in. In reality, these are real estate transfer taxes, a very real municipal tax that must be anticipated from the start.</p><p>This guide explains where this tax comes from, on what value it is calculated, how the brackets work (including the upper brackets specific to Montreal), the main cases of exemption, and above all how to budget for it so that you are never caught off guard.</p><p>2026 edition note: provincial bracket thresholds are indexed each year and some municipalities add their own brackets. The amounts below are indicative - always validate the scale in effect for your city and the year of your purchase.</p><p>“Welcome tax”: the nickname is ironic, but the bill is very real. This guide explains where this tax comes from, what value it is calculated on, how to read the progressive scale, and when to pay it - so that it is not a surprise.</p><p>The thresholds and rates (2026 edition) are indexed and vary depending on the municipality: use this guide to understand the mechanism, then validate the exact amount with your notary.</p>"
+  },
+  {
+   "title": "Where does this tax come from?",
+   "objective": "Understand the nature and purpose of transfer taxes.",
+   "html": "<p class=\"lede\">Understand the nature and purpose of transfer taxes.</p>\n<p>Real estate transfer taxes are a tax collected by the municipality each time a building changes ownership. The nickname “welcome tax” comes from the name of a former minister (Jean Bienvenue), and not from a welcome gift - despite what the name suggests.</p>\n<p>This tax finances municipal services. It is due only once, at the time of the transaction, by the buyer. Almost all municipalities in Quebec collect it.</p>\n<p>This tax is not a “trap”: it is an important source of revenue for municipalities, levied only once, upon purchase. Knowing it in advance avoids unpleasant surprises, because it can represent several thousand dollars depending on the price of the property.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don't be fooled by the name: it's not optional and it's not symbolic. On an average priced property, the bill often reaches several thousand dollars.</p></aside>"
+  },
+  {
+   "title": "What value is this calculated on?",
+   "objective": "Knowing which value serves as a basis for the calculation.",
+   "html": "<p class=\"lede\">Know which value serves as a basis for the calculation.</p>\n<p>The tax is calculated on the higher of two values: the price paid for the property, or the municipal assessment adjusted by a “comparative factor” (a coefficient that the municipality applies to bring the assessment roll closer to the market value).</p>\n<p>In other words, if you pay more than the adjusted municipal assessment, the tax is based on your purchase price; otherwise, on the adjusted valuation. We cannot therefore “reduce” the tax by underdeclaring the price.</p>\n<p>Remember the key rule: the rate is applied to the HIGHER of the two values - price paid or adjusted municipal assessment. In other words, paying “under assessment” does not reduce the tax below that adjusted assessment. This is often what explains a higher amount than expected.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Before buying, ask your broker for the municipal assessment and the comparative factor of the target city. We can thus estimate the tax in advance, to the nearest dollar or almost.</p></aside>"
+  },
+  {
+   "title": "Calculation by installments",
+   "objective": "Apply the progressive scale, including the Montreal brackets.",
+   "html": "<p class=\"lede\">Apply the progressive scale, including the Montreal brackets.</p>\n<p>The tax is progressive: each portion of the value is taxed at an increasing rate. Basic provincial scale (2026 edition, indexed thresholds, to be validated):</p>\n<ul><li>0.5% on the first tranche (up to approximately $58,900).</li><li>1.0% on the next portion (up to approximately $294,600).</li><li>1.5% on the portion beyond.</li></ul>\n<p>The City of Montreal adds higher brackets for higher value properties (rates that climb above 1.5%, up to levels of 3% and more for high amounts). Other cities may also adjust their tiers.</p>\n<h3>Indicative example (excluding Montreal, property at $450,000)</h3>\n<ul><li>0.5% × $58,900 ≈ $295</li><li>1.0% × ($294,600 − $58,900) ≈ $2,357</li><li>1.5% × ($450,000 − $294,600) ≈ $2,331</li><li>Approximate total: approximately $4,980 (to be validated depending on the city and year).</li></ul>\n<p>As the scale is progressive, only the portion of value in each bracket is taxed at the corresponding rate - a bit like income tax. Montreal adds higher brackets for high-value properties. Always have the amount estimated BEFORE you offer, to incorporate it into your closing budget.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Always redo the calculation with the scale of YOUR city and the current year. In Montreal in particular, the higher brackets can significantly inflate the bill on an expensive property.</p></aside>"
+  },
+  {
+   "title": "Exemptions and special cases",
+   "objective": "Identify situations where the tax can be reduced, deferred or exempt.",
+   "html": "<p class=\"lede\">Identify situations where the tax can be reduced, deferred or exempt.</p>\n<p>The law provides for certain cases of exemption from transfer taxes, in particular several transfers between related persons. The rules are precise and evolve: they must be confirmed by the notary depending on your situation. Among the frequently discussed cases:</p>\n<ul><li>Transfers between spouses (married, civil union, and in certain cases de facto spouses depending on the conditions).</li><li>Direct line transfers (for example from a parent to a child), under conditions.</li><li>Certain reorganizations or transfers involving related legal entities.</li></ul>\n<p>Please note: some municipalities also apply a “supplementary duty” (a small amount) even when the exemption applies. Never assume an exemption without validation.</p>\n<p>The most common exemptions target transfers between related persons (spouses, direct ascendants/descendants), under specific conditions. They do not apply automatically: you often have to request them and document the link. Your notary is the right person to validate your eligibility.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If your transaction involves the family (donation of property, repurchase from a loved one, transfer between spouses), speak to the notary EARLY: a poorly documented exemption may be refused.</p></aside>"
+  },
+  {
+   "title": "When and how to pay it (and plan for it)",
+   "objective": "Anticipate the deadline to avoid unpleasant surprises.",
+   "html": "<p class=\"lede\">Anticipate the deadline to avoid unpleasant surprises.</p>\n<p>The tax is not paid to the notary at the time of purchase: the municipality sends a separate invoice, generally a few weeks to a few months after the transaction. It is precisely this gap that traps buyers - the bill often arrives once the budget has already been dented by the move and the first expenses.</p>\n<h3>Good habit</h3>\n<ul><li>Estimate the tax BEFORE purchasing, with the help of your broker.</li><li>Set aside the amount in a separate account upon signing.</li><li>Don't count on it for anything else: treat it as already spent.</li></ul>\n<p>Concretely, the invoice arrives by post a few weeks to a few months after the purchase, with a payment deadline. Put the amount aside as soon as the transaction takes place so as not to be caught off guard - this is one of the most common cash flow surprises for new owners.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>On the day of taking possession, immediately transfer the estimated amount of the welcome tax into a separate account. When the bill arrives, it's already paid in your head - and in your budget.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Obtain the municipal assessment and the comparative factor of the target city.</li><li>Estimate my welcome tax for my price range.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Reserve the estimated amount in a separate account upon purchase.</li><li>Validate with the notary any possibility of exemption linked to my situation.</li></ol>\n<h3>Then</h3>\n<ol><li>Check the exact scale at the time of purchase, because the thresholds are indexed each year.</li></ol><h3>Before purchasing</h3><ol><li>Have my welcome tax estimated and added to my closing budget.</li><li>Check with the notary whether an exemption applies to my situation.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Transfer duties: official name of the welcome tax.</li><li>Comparative factor: municipal coefficient which adjusts the assessment towards the market value.</li><li>Valuation role: municipal register of building values.</li><li>Supplementary duty: small amount sometimes collected even in the event of exemption.</li><li>Due date: separate municipal bill, usually a few weeks to a few months after purchase.</li></ul><ul><li>Transfer duties: official name for the “welcome tax”.</li><li>Comparative factor: coefficient which adjusts the municipal assessment towards the market.</li><li>Tax base: the greater of the price paid or the adjusted assessment.</li><li>Progressive scale: increasing rate by value brackets.</li><li>Exemption: case (often between relatives) where the tax is reduced or canceled.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The welcome tax is actually:",
+   "options": [
+    "A) A gift from the municipality",
+    "B) Real estate transfer taxes",
+    "C) A school tax",
+    "D) A penalty"
+   ],
+   "answer": 1,
+   "explanation": "It is a municipal tax on the transfer of property (chap. 1)."
+  },
+  {
+   "q": "It is calculated on:",
+   "options": [
+    "A) Always the price paid",
+    "B) Always the municipal assessment",
+    "C) The greater of the price paid or the adjusted valuation",
+    "D) The down payment"
+   ],
+   "answer": 2,
+   "explanation": "We retain the higher of the two values ​​(chap. 2)."
+  },
+  {
+   "q": "The comparative factor is used to:",
+   "options": [
+    "A) Reduce the tax",
+    "B) Reconciling the municipal assessment to the market value",
+    "C) Calculate the mortgage",
+    "D) Set the interest rate"
+   ],
+   "answer": 1,
+   "explanation": "It is an adjustment coefficient for the assessment role (chap. 2)."
+  },
+  {
+   "q": "The tax scale is:",
+   "options": [
+    "A) A single rate",
+    "B) Progressive, in increasing increments",
+    "C) Fixed at 5%",
+    "D) Free under $500,000"
+   ],
+   "answer": 1,
+   "explanation": "Each slice of value is taxed at an increasing rate (chap. 3)."
+  },
+  {
+   "q": "Montreal is distinguished by:",
+   "options": [
+    "A) No tax",
+    "B) Higher upper brackets",
+    "C) Automatic reimbursement",
+    "D) A rate of 0.1%"
+   ],
+   "answer": 1,
+   "explanation": "The City adds higher levels for high values ​​(chap. 3)."
+  },
+  {
+   "q": "An exemption is sometimes possible for:",
+   "options": [
+    "A) Any purchase",
+    "B) Certain transfers between related parties",
+    "C) Condos only",
+    "D) Investors"
+   ],
+   "answer": 1,
+   "explanation": "Particularly between spouses or in a direct line, under conditions (chap. 4)."
+  },
+  {
+   "q": "Even if you are exempt, you may have to pay:",
+   "options": [
+    "A) Double",
+    "B) A supplementary right in certain cities",
+    "C) Nothing at all, ever",
+    "D) School tax"
+   ],
+   "answer": 1,
+   "explanation": "Some municipalities collect a small supplementary fee (chap. 4)."
+  },
+  {
+   "q": "The tax is paid:",
+   "options": [
+    "A) At the notary upon purchase",
+    "B) By a municipal bill, weeks/months later",
+    "C) Every month",
+    "D) Never"
+   ],
+   "answer": 1,
+   "explanation": "The invoice arrives separately, after the transaction (chap. 5)."
+  },
+  {
+   "q": "The best habit is to:",
+   "options": [
+    "A) Forget it",
+    "B) Put the estimated amount aside upon purchase",
+    "C) Borrow it later",
+    "D) Challenge it"
+   ],
+   "answer": 1,
+   "explanation": "It is treated as already spent (chap. 5)."
+  },
+  {
+   "q": "For an example at $450,000 outside Montreal, the order of magnitude is:",
+   "options": [
+    "A) ~$50",
+    "B) ~$500",
+    "C) ~$5,000",
+    "D) ~$50,000"
+   ],
+   "answer": 2,
+   "explanation": "Approximately $4,980 according to the indicative scale (chap. 3)."
+  }
+ ]
+}

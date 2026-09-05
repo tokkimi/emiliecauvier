@@ -1,1 +1,158 @@
-{"number": 41, "title": "Municipal Assessment vs. Market Value", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>“My house is assessed at such-and-such by the city.” You hear that sentence often — and it leads to plenty of misunderstandings about pricing. The municipal assessment and market value are two different things, with two distinct uses.</p><p>This guide clarifies the difference, explains the comparative factor, and helps you use the right figure at the right time.</p><p>Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "The Municipal Assessment: A Tax Tool", "objective": "Understanding what it's really for.", "html": "<p class=\"lede\">Understanding what it's really for.</p>\n<p>The municipal assessment appears on the assessment roll. It's used to allocate municipal and school taxes. It's established in bulk, as of a reference date, for an entire territory — not property by property at the current price.</p>\n<p>It can therefore be higher or lower than the actual market value, and often with a time lag.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>The municipal assessment answers one question: “how much tax do I pay?” It does not answer “what is my house worth on the market today?” Never confuse the two.</p></aside>"}, {"title": "Market Value: The Market Price", "objective": "Understanding what a buyer actually pays.", "html": "<p class=\"lede\">Understanding what a buyer actually pays.</p>\n<p>Market value is the price an informed buyer is willing to pay today, under current conditions. It's determined by a comparative market analysis (recent similar sales), not by the assessment roll.</p>\n<p>It's this figure — and this figure alone — that should guide a listing price or a purchase offer.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>To buy or sell, rely on market value (a comparative analysis), never on the municipal assessment. The market doesn't consult the assessment roll to decide what to pay.</p></aside>"}, {"title": "The Comparative Factor and Proper Uses", "objective": "Connecting the two concepts correctly.", "html": "<p class=\"lede\">Connecting the two concepts correctly.</p>\n<p>The municipality applies a “comparative factor” to try to bring the assessment roll closer to market value (for example, to calculate the Welcome Tax). This clearly shows that the assessment, on its own, is not the market value.</p>\n<ul><li>Municipal assessment: for taxes, and as the (adjusted) basis for the Welcome Tax.</li><li>Market value: to set a listing price or an offer.</li><li>Never negotiate a price based solely on the municipal assessment.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>If a seller or buyer cites the “municipal assessment” to justify a price, bring the discussion back to comparables. That's the only solid ground for agreeing on a value.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Find my municipal assessment and its date.</li><li>Request a comparative analysis for the market value.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Use market value for any pricing decision.</li><li>Understand the comparative factor for the Welcome Tax.</li></ol>\n<h3>After that</h3>\n<ol><li>Stop confusing the two figures.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Assessment roll: the municipal register of values, the basis for taxes.</li><li>Municipal assessment: a tax value, distinct from the sale price.</li><li>Market value: the price an informed buyer pays today.</li><li>Comparative factor: a coefficient bringing the assessment closer to the market.</li><li>Comparative analysis: recent sales used to determine market value.</li></ul>"}], "qcm": [{"q": "The municipal assessment is mainly used to:", "options": ["A) Set the sale price", "B) Allocate taxes", "C) Insure the house", "D) Pay the notary"], "answer": 1, "explanation": "It's a tax tool (chap. 1)."}, {"q": "It is established:", "options": ["A) Property by property at the current price", "B) In bulk, as of a reference date", "C) Every week", "D) By the buyer"], "answer": 1, "explanation": "Hence the gaps with the market (chap. 1)."}, {"q": "Market value is determined by:", "options": ["A) The assessment roll", "B) A comparative market analysis", "C) The school tax", "D) The municipal assessment"], "answer": 1, "explanation": "Recent similar sales (chap. 2)."}, {"q": "To set a price, you use:", "options": ["A) The municipal assessment", "B) The market value", "C) The comparative factor alone", "D) Luck"], "answer": 1, "explanation": "Market value only (chap. 2)."}, {"q": "The comparative factor is used to:", "options": ["A) Set the sale price", "B) Bring the assessment closer to market value (e.g., the Welcome Tax)", "C) Pay less tax", "D) Nothing"], "answer": 1, "explanation": "A tax adjustment (chap. 3)."}, {"q": "Negotiating a price based solely on the municipal assessment is:", "options": ["A) Recommended", "B) A mistake", "C) Mandatory", "D) Risk-free"], "answer": 1, "explanation": "You rely on comparables (chap. 3)."}]}
+{
+ "number": 41,
+ "title": "Municipal assessment vs. market value",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>“My house is valued at this much in the city. » We hear this phrase often - and it leads to many misunderstandings about prices. Municipal assessment and market value are two different things, with two distinct uses.</p><p>This guide clarifies the difference, explains the comparative factor, and helps you use the right number at the right time.</p><p>Each chapter ends with a lined “My Notes” page.</p><p>“My house is valued at this much in the city”: this sentence leads to many misunderstandings. This guide clarifies the difference between municipal assessment (tax tool) and market value (market price), explains the comparative factor and how to contest an assessment.</p><p>The key message: the right number at the right time.</p>"
+  },
+  {
+   "title": "Municipal assessment: a fiscal tool",
+   "objective": "Understand what it is really for.",
+   "html": "<p class=\"lede\">Understand what it is really used for.</p>\n<p>The municipal assessment appears in <strong>evaluation role</strong>. Its purpose is not to set a selling price: it serves to <strong>distribute taxes</strong> municipal and school.</p><p>It is established “en masse”, on a reference date, for an entire territory - not property by property at the current price. Consequence:</p><ul><li>It may be higher or lower than the actual market value.</li><li>It often shows a time lag.</li></ul><p>The municipal assessment appears on the assessment roll and is used to distribute taxes. Established en masse, on a reference date, with a time lag, it can be higher or lower than the market. “The city values ​​it this much, so it’s worth this much” is the number one misunderstanding.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>“The city values it at this much, so it’s worth that much”: this is the number one misunderstanding. The municipal assessment is used to calculate your taxes, not to set the sale price.</p></aside>"
+  },
+  {
+   "title": "Market value: the market price",
+   "objective": "Understand what a buyer is actually paying.",
+   "html": "<p class=\"lede\">Understand what a buyer actually pays.</p>\n<p>Market value is the price that a <strong>buyer informed</strong> is ready to pay <em>today</em>, under current market conditions.</p><p>It is determined by a <strong>comparative market analysis</strong> (recent sales of similar properties), and not by the assessment roll.</p><p>It is this number - and it alone - which must guide a sale price or a purchase offer.</p><p>Market value is the price an informed buyer pays today, determined by comparative analysis (similar recent sales) - not by role. It is this figure, and it alone, which should guide a sale price or a purchase offer.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>To know the true value of your property, request a comparative analysis based on recent sales in the area. This is the only number that matters when it comes to selling or buying.</p></aside>"
+  },
+  {
+   "title": "The comparative factor and good practices",
+   "objective": "Connect the two concepts correctly.",
+   "html": "<p class=\"lede\">Connect the two concepts correctly.</p>\n<p>The municipality applies a <strong>comparative factor</strong> to try to reconcile the role of assessment with market value - for example in the calculation of the welcome tax.</p><p>This clearly shows that the evaluation, alone, is not the market value. Each number has its use:</p><ul><li><strong>Municipal assessment</strong> : for taxes, and as an (adjusted) basis for the welcome tax.</li><li><strong>Market value</strong> : to set a price, make an offer, negotiate.</li></ul><p>The municipality applies a comparative factor to approximate the role of the market (notably for the welcome tax), which clearly shows that the assessment alone is not the market value. Each number has its use: assessment for taxes, market value to set a price.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>To estimate your welcome tax, remember that we take the higher of the price paid and the municipal assessment adjusted by the comparative factor. This avoids unpleasant surprises.</p></aside>"
+  },
+  {
+   "title": "Contest your municipal assessment",
+   "objective": "Take action if the role seems wrong to you.",
+   "html": "<p class=\"lede\">Take action if the role seems wrong to you.</p>\n<p>If your municipal assessment seems clearly too high compared to the market, you can <strong>contest</strong> - within a specific period following the filing of a new role.</p><ol><li>Compare your assessment to that of similar properties.</li><li>Gather evidence (comparable sales, actual condition of the building).</li><li>Submit a <strong>request for review</strong> with the municipality within the stipulated deadline.</li></ol><p>An assessment that is too high can inflate your taxes year after year: it can be worth the effort.</p><p>If your assessment seems significantly too high compared to the market, you can contest it within a specific period following the filing of a new role: compare with similar properties, gather evidence and file a request for review. An assessment that is too high will inflate your taxes for years.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don’t let the review deadline pass. If your assessment clearly exceeds that of comparable homes, a well-documented appeal can reduce your taxes for years.</p></aside>"
+  },
+  {
+   "title": "The right number at the right time",
+   "objective": "Never confuse the two again.",
+   "html": "<p class=\"lede\">Never confuse the two again.</p>\n<p>In practice, keep this reflex simple depending on the situation:</p><ul><li>I <strong>sell</strong> or I make a <strong>offers</strong> → market value (comparative analysis).</li><li>I check my <strong>taxes</strong> → municipal assessment (role).</li><li>I value my <strong>welcome tax</strong> → the higher of the price paid or the adjusted valuation.</li></ul><p>Both numbers are useful; it's mixing them that leads to pricing errors.</p><p>Keep this reflex: I sell or I offer → market value; I check my taxes → municipal assessment; I estimate my welcome tax → the higher of the price paid or the adjusted assessment. Both numbers are useful; it's mixing them that leads to pricing errors.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Mentally show yourself two drawers: “taxes” for the municipal assessment, “price” for the market value. Never pick from the wrong drawer when negotiating.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Locate my municipal assessment and its date.</li><li>Request a comparative analysis for market value.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Use market value for all pricing decisions.</li><li>Understand the comparative factor for the welcome tax.</li></ol>\n<h3>Then</h3>\n<ol><li>No longer confuse the two numbers.</li></ol><h3>Good reflexes</h3><ol><li>Use market value (comparative analysis) for all pricing decisions.</li><li>Check the dispute deadline if my evaluation clearly exceeds the market.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Assessment roll: municipal register of values, tax base.</li><li>Municipal assessment: tax value, distinct from the sale price.</li><li>Market value: the price an informed buyer pays today.</li><li>Comparative factor: coefficient approximating the market valuation.</li><li>Comparative analysis: recent sales used to determine market value.</li></ul><ul><li>Assessment role: municipal register of values, tax base.</li><li>Municipal assessment: tax value, distinct from the sale price.</li><li>Market value: the price an informed buyer pays today.</li><li>Comparative factor: coefficient approximating the market valuation.</li><li>Request for review: recourse to contest an evaluation.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The municipal assessment is mainly used to:",
+   "options": [
+    "A) Set the selling price",
+    "B) Distribute taxes",
+    "C) Pay the notary",
+    "D) Insure the house"
+   ],
+   "answer": 1,
+   "explanation": "Tax tool (chap. 1)."
+  },
+  {
+   "q": "It is established:",
+   "options": [
+    "A) At today's price, property by property",
+    "B) In mass, on a reference date",
+    "C) By the buyer",
+    "D) Every week"
+   ],
+   "answer": 1,
+   "explanation": "Mass evaluation (chap. 1)."
+  },
+  {
+   "q": "The market value is:",
+   "options": [
+    "A) The number of the role",
+    "B) The price an informed buyer pays today",
+    "C) The welcome tax",
+    "D) Franchise"
+   ],
+   "answer": 1,
+   "explanation": "Real market price (chap. 2)."
+  },
+  {
+   "q": "It is determined by:",
+   "options": [
+    "A) The evaluation role",
+    "B) A comparative market analysis",
+    "C) Chance",
+    "D) The city"
+   ],
+   "answer": 1,
+   "explanation": "Comparable sales (chap. 2)."
+  },
+  {
+   "q": "The comparative factor is used to:",
+   "options": [
+    "A) Hide taxes",
+    "B) Bring the valuation closer to the market (e.g. welcome tax)",
+    "C) Fix insurance",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Valuation/market reconciliation (chap. 3)."
+  },
+  {
+   "q": "To set a selling price, we use:",
+   "options": [
+    "A) Municipal assessment",
+    "B) Market value",
+    "C) School tax",
+    "D) Franchise"
+   ],
+   "answer": 1,
+   "explanation": "Market value (chapters 3 and 5)."
+  },
+  {
+   "q": "A municipal assessment that is too high can:",
+   "options": [
+    "A) Reduce your taxes",
+    "B) Inflate your taxes year after year",
+    "C) Lower the selling price",
+    "D) Being ignored without effect"
+   ],
+   "answer": 1,
+   "explanation": "Fiscal impact (chap. 4)."
+  },
+  {
+   "q": "To contest it, you must:",
+   "options": [
+    "A) Wait ten years",
+    "B) File a request for review within the stipulated time limit",
+    "C) Call the notary",
+    "D) Sell the house"
+   ],
+   "answer": 1,
+   "explanation": "Request for review (chap. 4)."
+  },
+  {
+   "q": "To check your taxes, the correct number is:",
+   "options": [
+    "A) Market value",
+    "B) Municipal assessment",
+    "C) The price paid by the neighbor",
+    "D) Insurance"
+   ],
+   "answer": 1,
+   "explanation": "Municipal assessment (chap. 5)."
+  },
+  {
+   "q": "The welcome tax is based on:",
+   "options": [
+    "A) The lower of the two numbers",
+    "B) The greater of the price paid or the adjusted valuation",
+    "C) Franchise",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "The higher of the two (chapters 3 and 5)."
+  }
+ ]
+}

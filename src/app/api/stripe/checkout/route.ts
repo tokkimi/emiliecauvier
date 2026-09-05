@@ -4,11 +4,14 @@ import { z } from 'zod';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { assertStripe, SUBSCRIPTION_PRICE_ID, APP_URL } from '@/lib/stripe';
+import { bySlug } from '@/data/books';
+import { localizeBook } from '@/data/booksEn';
 
 const schema = z.object({
   mode: z.enum(['unit', 'subscription']),
   slug: z.string().optional(),
   slugs: z.array(z.string()).max(20).optional(),
+  pdfLocale: z.enum(['fr', 'en']).optional(),
 });
 
 async function getOrCreateCustomer(userId: string, email: string) {
@@ -65,6 +68,7 @@ export async function POST(req: Request) {
 
   // ---- Achat à l'unité / panier ----
   const requestedSlugs = [...new Set(parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : [])];
+  const pdfLocale = parsed.data.pdfLocale ?? 'fr';
   if (!requestedSlugs.length) return NextResponse.json({ error: 'Guide manquant.' }, { status: 400 });
 
   const ebooks = await prisma.ebook.findMany({
@@ -73,7 +77,7 @@ export async function POST(req: Request) {
   });
   if (ebooks.length !== requestedSlugs.length) return NextResponse.json({ error: 'Un guide du panier est introuvable.' }, { status: 404 });
 
-  const metadata: Record<string, string> = { kind: ebooks.length > 1 ? 'cart' : 'unit' };
+  const metadata: Record<string, string> = { kind: ebooks.length > 1 ? 'cart' : 'unit', pdfLocale };
   if (userId) metadata.userId = userId;
 
   const unitParams: Stripe.Checkout.SessionCreateParams = {
@@ -81,15 +85,22 @@ export async function POST(req: Request) {
     ...(userId && email
       ? { customer: await getOrCreateCustomer(userId, email) }
       : { customer_creation: 'always' as const }),
-    line_items: ebooks.map((ebook) => ({
-      quantity: 1,
-      price_data: {
-        currency: ebook.currency.toLowerCase(),
-        unit_amount: ebook.priceCents,
-        product_data: { name: ebook.title, description: ebook.subtitle ?? undefined },
-      },
-    })),
-    success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
+    line_items: ebooks.map((ebook) => {
+      const catalogBook = bySlug(ebook.slug);
+      const localized = catalogBook ? localizeBook(catalogBook, pdfLocale) : { title: ebook.title, subtitle: ebook.subtitle ?? '' };
+      return {
+        quantity: 1,
+        price_data: {
+          currency: ebook.currency.toLowerCase(),
+          unit_amount: ebook.priceCents,
+          product_data: {
+            name: localized.title,
+            description: localized.subtitle || undefined,
+          },
+        },
+      };
+    }),
+    success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}&lang=${pdfLocale}`,
     cancel_url: ebooks.length > 1 ? `${APP_URL}/panier` : `${APP_URL}/livre/${ebooks[0].slug}`,
     metadata,
     payment_intent_data: {

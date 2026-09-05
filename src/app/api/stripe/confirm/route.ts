@@ -7,6 +7,7 @@ import { sendPurchaseEmail } from '@/lib/purchaseEmail';
 export async function GET(req: Request) {
   const url = new URL(req.url);
   const sessionId = url.searchParams.get('session_id');
+  const pdfLocale = url.searchParams.get('lang') === 'en' ? 'en' : 'fr';
   if (!sessionId) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
 
   try {
@@ -45,6 +46,7 @@ export async function GET(req: Request) {
     await sendPurchaseEmail({
       to: checkout.customer_details?.email,
       stripeSessionId: checkout.id,
+      locale: checkout.metadata?.pdfLocale === 'en' ? 'en' : pdfLocale,
       guides: purchases
         .map((purchase) =>
           purchase.ebook
@@ -54,7 +56,7 @@ export async function GET(req: Request) {
         .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
     });
 
-    const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}`, req.url));
+    const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}&lang=${checkout.metadata?.pdfLocale === 'en' ? 'en' : pdfLocale}`, req.url));
     const current = req.headers.get('cookie')?.match(new RegExp(`${GUEST_PURCHASE_COOKIE}=([^;]+)`))?.[1];
     const token = addGuestPurchases(current, ebookIds);
     response.cookies.set(GUEST_PURCHASE_COOKIE, token.value, {

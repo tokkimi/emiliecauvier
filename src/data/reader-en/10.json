@@ -1,0 +1,136 @@
+{
+ "number": 10,
+ "title": "Finance your down payment",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The down payment is often the main obstacle to the first purchase. Good news: several tools, which can be combined, can help you build it up more quickly and with a real tax advantage. You still have to orchestrate them in the right order.</p><p>This guide dissects the minimum down payment, loan insurance, HBP, FHSA and family donation, with concrete examples adapted to Quebec.</p><p>2026 edition note: the ceilings (HBP, FHSA) and down payment thresholds are indexed or modified regularly. The amounts below are indicative - validate them with an advisor at the time of your project.</p><p>Each chapter ends with a lined “My Notes” page to build YOUR down payment plan.</p><p>The down payment is often the main obstacle to the first purchase - but several tools, well combined, reduce it: FHSA, HBP, family donations. This guide explains how much you really need and how to put together your down payment intelligently.</p><p>The ceilings and thresholds (2026 edition) are evolving: this guide gives the logic, to be confirmed with your institution or your mortgage broker.</p>"
+  },
+  {
+   "title": "How much do you need?",
+   "objective": "Calculate the minimum down payment and aim for a realistic goal.",
+   "html": "<p class=\"lede\">Calculate the minimum down payment and aim for a realistic objective.</p>\n<p>The minimum down payment depends on the price (2026 edition, to be confirmed): 5% up to $500,000, 10% on the portion from $500,000 to $999,999, and 20% from $1,000,000.</p>\n<ul><li>Example at $400,000: 5% = $20,000.</li><li>Example at $650,000: $25,000 + $15,000 = $40,000.</li><li>Below 20%, loan insurance (CMHC, Sagen, Canada Guaranty) applies and is added to the loan.</li></ul>\n<p>Aiming for 20% avoids loan insurance, but waiting too long to get there also has a cost (paid rent, rising market). Balance is personal.</p>\n<p>The key threshold is 20%: below, loan insurance (CMHC, Sagen, Canada Guaranty) is added to your financing, which increases the cost but allows you to buy sooner. Aim for a realistic goal rather than waiting years to avoid insurance - the market can rise faster than your savings.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don't necessarily wait until you have 20%. Sometimes buying early with 5% and loan insurance is better than paying rent for two more years while prices rise. We do the math together.</p></aside>"
+  },
+  {
+   "title": "FHSA: often the best starting point",
+   "objective": "Use the most advantageous account for a first purchase.",
+   "html": "<p class=\"lede\">Use the most advantageous account for a first purchase.</p>\n<p>The FHSA (tax-free savings account for the purchase of a first property) combines two advantages: your contributions are tax deductible (like an RRSP) and the withdrawal for a first purchase is tax-free (like a TFSA).</p>\n<ul><li>Limit of approximately $8,000 per year, up to $40,000 for life (to be confirmed).</li><li>Ideal to open early: even without contributing the maximum, this launches the account and your rights.</li><li>Combines with HBP for a first purchase.</li></ul>\n<p>The FHSA combines the best of the RRSP and the TFSA: tax-deductible contributions AND tax-free withdrawal for a first purchase, within annual and cumulative limits. It's often the very first account to open when saving for a first property - starting today, to start the meter.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Open a FHSA as soon as the purchase becomes a goal, even with a small amount: you accumulate contribution rights and prepare for a tax-free withdrawal on the big day.</p></aside>"
+  },
+  {
+   "title": "The HBP: mobilize your RRSP",
+   "objective": "Withdraw from your RRSP without immediate tax, then repay.",
+   "html": "<p class=\"lede\">Withdraw from your RRSP without immediate tax, then repay.</p>\n<p>The Home Buyers' Plan (HBP) allows you to withdraw from your RRSP - up to $60,000 per person (amount recently increased, to be confirmed) - without immediate tax, for your down payment. You then repay this amount into your RRSP over 15 years.</p>\n<ul><li>An eligible couple can accumulate two HBPs.</li><li>Funds generally must have been in the RRSP for a certain period of time before withdrawal.</li><li>Annual reimbursement is mandatory; otherwise, the unreimbursed portion is added to your taxable income.</li></ul>\n<p>The HBP allows you to withdraw from your RRSP without immediate tax for the purchase, provided you repay over several years. A missed refund is added to your taxable income. FHSA and HBP can sometimes be combined - an arrangement to be validated with an advisor to maximize your down payment.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>The HBP is a loan that you make to yourself: think about the annual repayment from the start. Well planned, it boosts your down payment without immediate tax bill.</p></aside>"
+  },
+  {
+   "title": "Family donation and order of withdrawals",
+   "objective": "Integrate a donation and orchestrate everything fiscally.",
+   "html": "<p class=\"lede\">Integrate a donation and orchestrate everything fiscally.</p>\n<p>A donation from a close relative is accepted as a down payment by lenders, provided you provide a donation letter confirming that it is not a repayable loan. This is a subject in its own right (see the guide “Helping your child to buy”).</p>\n<h3>Order matters</h3>\n<p>FHSA, HBP, donation, unregistered savings: the order and timing of withdrawals have a real tax impact (deductions, tax refund, future contributions). A financial advisor or mortgage broker helps you sequence to maximize the benefit.</p>\n<p>A donation from a close relative is accepted by lenders with a donation letter confirming that it is non-refundable. The order of withdrawals (FHSA, HBP, donations, savings) has a tax impact: plan it so as not to trigger unnecessary tax or weaken your financing file.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Before withdrawing anything, make a plan with an advisor. The correct FHSA/HBP/donation order can earn you a significant tax refund the following spring.</p></aside>"
+  },
+  {
+   "title": "Beyond the down payment: the necessary cash",
+   "objective": "Provide all the money required for the purchase.",
+   "html": "<p class=\"lede\">Provide all the money required for the purchase.</p>\n<p>The down payment is not the only amount to raise. On the day of the transaction, other amounts are required:</p><ul><li><strong>Notary fees</strong> and disbursements.</li><li><strong>Welcome tax</strong> (billed shortly after purchase).</li><li><strong>Adjustments</strong> (taxes paid in advance by the seller).</li><li><strong>Start-up costs</strong> and small emergency cushion.</li></ul><p>Emptying your accounts to maximize your down payment means risking finding yourself without a margin from the first month.</p><p>Beyond the down payment, plan for closing costs (notary, welcome tax, adjustments) and an emergency cushion. Emptying your accounts to maximize the down payment means risking finding yourself without a margin from the first month of ownership.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Always keep a cushion after purchase. A property reserves its share of little surprises in the first months: it is better to have a slightly more modest down payment and an account that is breathing.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Calculate my minimum down payment and my objective.</li><li>Open a FHSA if you have not already done so.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Meet with an advisor to sequence FHSA, HBP and donation.</li><li>Document any family donation with a donation letter.</li></ol>\n<h3>Then</h3>\n<ol><li>Validate the arrangement with a mortgage broker before making an offer.</li></ol><h3>To build my down payment</h3><ol><li>Open a FHSA now to start the counter, even with small amounts.</li><li>Have an advisor calculate the best FHSA/HBP/donation combination for my situation.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Minimum down payment: 5% (up to $500k), 10% ($500k-$1M), 20% ($1M+), to be confirmed.</li><li>Loan insurance: required with 20% down payment (CMHC, Sagen, Canada Guaranty).</li><li>FHSA: deductible contribution + tax-free withdrawal for a first purchase (~$8,000/year, $40,000 for life).</li><li>HBP: RRSP withdrawal up to $60,000/person, repayable over 15 years (to be confirmed).</li><li>Donation letter: document confirming that a donation is not a repayable loan.</li></ul><ul><li>FHSA: account for first purchase - deductible contribution and tax-free withdrawal.</li><li>HBP: immediate tax-free RRSP withdrawal, to be repaid over several years.</li><li>Loan insurance: required under 20% down payment; is added to the financing.</li><li>Donation letter: document confirming that a family donation is not refundable.</li><li>Closing costs: notary, welcome tax, adjustments - in addition to the down payment.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The minimum down payment under $500,000 is:",
+   "options": [
+    "A) 20%",
+    "B) 10%",
+    "C) 5%",
+    "D) 0%"
+   ],
+   "answer": 2,
+   "explanation": "5% on the portion up to $500,000 (chap. 1)."
+  },
+  {
+   "q": "FHSA combines:",
+   "options": [
+    "A) Nothing special",
+    "B) Contribution deduction AND tax-free withdrawal for a first purchase",
+    "C) A guaranteed interest rate",
+    "D) A welcome tax exemption"
+   ],
+   "answer": 1,
+   "explanation": "The best of both worlds (chap. 2)."
+  },
+  {
+   "q": "The HBP allows you to remove from your:",
+   "options": [
+    "A) TFSA",
+    "B) RRSP, without immediate tax",
+    "C) Checking account only",
+    "D) Contingency fund"
+   ],
+   "answer": 1,
+   "explanation": "RRSP withdrawal repayable over 15 years (chap. 3)."
+  },
+  {
+   "q": "The reimbursement of the HBP is spread over:",
+   "options": [
+    "A) 5 years",
+    "B) 10 years",
+    "C) 15 years",
+    "D) Never"
+   ],
+   "answer": 2,
+   "explanation": "15 years, with mandatory annual repayment (chap. 3)."
+  },
+  {
+   "q": "HBP and FHSA:",
+   "options": [
+    "A) Are incompatible",
+    "B) Can be combined for a first purchase",
+    "C) Cancel each other",
+    "D) Are reserved for investors"
+   ],
+   "answer": 1,
+   "explanation": "Often the most powerful combination (chaps. 2 and 3)."
+  },
+  {
+   "q": "A family donation is accepted as a down payment:",
+   "options": [
+    "A) Unconditionally",
+    "B) With a donation letter confirming that it is not a loan",
+    "C) Never",
+    "D) Only in undeclared cash"
+   ],
+   "answer": 1,
+   "explanation": "The donation letter is required (chap. 4)."
+  },
+  {
+   "q": "If the down payment is below 20%:",
+   "options": [
+    "A) Purchase is impossible",
+    "B) Loan insurance applies and is added to the loan",
+    "C) The rate is zero",
+    "D) The notary pays"
+   ],
+   "answer": 1,
+   "explanation": "CMHC/Sagen/Canada Guaranty (chap. 1)."
+  },
+  {
+   "q": "The order of withdrawals (FHSA, HBP, donation):",
+   "options": [
+    "A) Has no effect",
+    "B) Has a real tax impact to be optimized",
+    "C) Is fixed by law",
+    "D) Depends on the notary"
+   ],
+   "answer": 1,
+   "explanation": "Sequencing optimizes the tax advantage (chap. 4)."
+  }
+ ]
+}

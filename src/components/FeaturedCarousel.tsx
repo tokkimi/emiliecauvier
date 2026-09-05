@@ -50,6 +50,7 @@ export function FeaturedCarousel({ items, locale }: { items: FeaturedItem[]; loc
               number={b.number}
               title={b.title}
               collection={b.collectionLabel}
+              locale={locale}
               className="w-full border-b border-[var(--color-sand)]"
             />
             <div className="flex flex-1 flex-col p-6">

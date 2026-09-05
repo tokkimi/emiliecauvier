@@ -1,1 +1,136 @@
-{"number": 13, "title": "The real costs of buying", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>The listing price is only the beginning. Between the down payment and the keys, a series of very real costs pile up — and forgetting them is one of the main sources of stress in a first purchase.</p><p>This guide gives a complete overview of closing costs and start-up expenses, with ballpark figures to help you budget properly.</p><p>Each chapter ends with a lined « My notes » page to help you build YOUR complete purchase budget.</p>"}, {"title": "The costs paid around the transaction", "objective": "Identify the costs tied directly to the purchase.", "html": "<p class=\"lede\">Identify the costs tied directly to the purchase.</p>\n<ul><li>Notary fees (deed of sale, mortgage deed, title searches).</li><li>Pre-purchase inspection and, if needed, specialized assessments (roofing, pyrite, etc.).</li><li>Up-to-date certificate of location, if a new one is required (land surveyor).</li><li>Property appraisal if the lender requires one.</li><li>Adjustments: municipal/school taxes already paid by the seller, remaining heating oil, condo fees.</li></ul>\n<p>These amounts are generally settled at signing (except the Welcome Tax, which is billed later).</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Ask your notary for an estimated « statement of disbursements » before signing. Seeing all the costs at once avoids a nasty surprise on closing day.</p></aside>"}, {"title": "The Welcome Tax, in a category of its own", "objective": "Never forget this item billed after the purchase.", "html": "<p class=\"lede\">Never forget this item billed after the purchase.</p>\n<p>Transfer duties (the Welcome Tax) are not paid at the notary's office: the municipality sends a separate bill a few weeks to a few months later. On an average-priced property, this often amounts to several thousand dollars (see the dedicated guide for the calculation).</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Set aside the estimated amount of the Welcome Tax as soon as you sign, in a separate account. It's the classic trap: the bill arrives after you've moved in.</p></aside>"}, {"title": "Start-up expenses", "objective": "Plan for the cost of « taking possession ».", "html": "<p class=\"lede\">Plan for the cost of « taking possession ».</p>\n<ul><li>Home insurance active as of possession.</li><li>Hook-ups and transfers (Hydro-Québec, internet, etc.).</li><li>Moving (truck, movers, boxes).</li><li>Locks, first purchases (curtains, missing appliances, small jobs).</li><li>Initial maintenance reserve (~1%/year of the value, to be set aside).</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Keep an emergency cushion AFTER the purchase. Many new owners reach the keys with an empty account; an unexpected expense in the first year isn't a matter of « if », but of « when ».</p></aside>"}, {"title": "Building your complete purchase budget", "objective": "Bring all the items together into a single figure.", "html": "<p class=\"lede\">Bring all the items together into a single figure.</p>\n<p>Your total budget = down payment + closing costs (notary, inspection, adjustments, certificate) + Welcome Tax + start-up expenses + emergency cushion. It's this overall figure, and not the down payment alone, that determines whether you're truly ready.</p>\n<p>By calculating it early, you avoid the most stressful scenario: having just enough for the down payment, and nothing for everything else.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Prepare your complete purchase budget BEFORE shopping seriously. It's what tells you the price range you're genuinely comfortable in — not just your pre-approval.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>List every cost item for my price range.</li><li>Ask for an estimate of the notary fees.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Estimate the Welcome Tax and set it aside mentally.</li><li>Assemble my total purchase budget, cushion included.</li></ol>\n<h3>Next</h3>\n<ol><li>Validate this budget with Emilie and my mortgage broker.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Closing costs: notary, inspection, adjustments, certificate of location.</li><li>Adjustments: reimbursing the seller for amounts paid in advance.</li><li>Statement of disbursements: the notary's estimate of the costs due at signing.</li><li>Welcome Tax: billed separately after the purchase.</li><li>Emergency cushion: reserve for unexpected costs after the purchase.</li></ul>"}], "qcm": [{"q": "Notary fees cover:", "options": ["A) The move", "B) The deed of sale, the mortgage deed and the title searches", "C) The Welcome Tax", "D) Car insurance"], "answer": 1, "explanation": "The notary prepares the deeds and verifies title (ch. 1)."}, {"q": "The adjustments paid to the notary notably concern:", "options": ["A) The wall color", "B) Taxes already paid by the seller, heating oil, condo fees", "C) The rent", "D) The salary"], "answer": 1, "explanation": "You reimburse the seller for what they paid in advance (ch. 1)."}, {"q": "The Welcome Tax is paid:", "options": ["A) At the notary's office", "B) By municipal bill, after the purchase", "C) Every month", "D) Never"], "answer": 1, "explanation": "A separate bill, after the transaction (ch. 2)."}, {"q": "Home insurance must be active:", "options": ["A) One year later", "B) As of possession", "C) Never", "D) Only in winter"], "answer": 1, "explanation": "Mandatory as of possession (ch. 3)."}, {"q": "The initial maintenance reserve is about:", "options": ["A) 0%", "B) 1%/year of the value", "C) 25%", "D) 50%"], "answer": 1, "explanation": "About 1%/year to set aside (ch. 3)."}, {"q": "The total purchase budget includes:", "options": ["A) The down payment alone", "B) Down payment + closing costs + Welcome Tax + start-up + cushion", "C) The mortgage alone", "D) Nothing beyond the price"], "answer": 1, "explanation": "It's the overall figure that matters (ch. 4)."}, {"q": "The classic trap is:", "options": ["A) Too much savings", "B) Having just enough for the down payment and nothing for the rest", "C) Paying cash", "D) Too much insurance"], "answer": 1, "explanation": "People forget the costs beyond the down payment (ch. 4)."}, {"q": "An estimated statement of disbursements comes from:", "options": ["A) The municipality", "B) The notary", "C) The inspector", "D) The neighbor"], "answer": 1, "explanation": "The notary can estimate it before signing (ch. 1)."}]}
+{
+ "number": 13,
+ "title": "The real costs of the purchase",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The displayed price is only the beginning. Between the down payment and the keys, a series of very real costs are added - and forgetting them is one of the main sources of stress when making a first purchase.</p><p>This guide provides a complete overview of closing costs and start-up expenses, with orders of magnitude for proper budgeting.</p><p>Each chapter ends with a lined “My Notes” page to build YOUR complete purchasing budget.</p><p>The displayed price is never the actual cost of a purchase. This guide lists all the costs - around the transaction, the welcome tax, the start-up, then the recurring costs - to build a complete budget without unpleasant surprises.</p><p>The amounts (2026 edition) are orders of magnitude: have your specific case calculated by your notary and your broker.</p>"
+  },
+  {
+   "title": "Fees paid around the transaction",
+   "objective": "Identify costs directly related to the purchase.",
+   "html": "<p class=\"lede\">Identify the costs directly linked to the purchase.</p>\n<ul><li>Notary fees (deed of sale, mortgage deed, verifications).</li><li>Pre-purchase inspection and, if necessary, specialized expertise (roof, pyrite, etc.).</li><li>Up-to-date certificate of location, if a new one is required (land surveyor).</li><li>Appraisal of the property if required by the lender.</li><li>Adjustments: municipal/school taxes already paid by the seller, remaining fuel oil, condo charges.</li></ul>\n<p>These amounts are generally paid upon signature (except the welcome tax, invoiced later).</p>\n<p>These fees all fall around the same time, around the transaction: plan for them in cash, in addition to the down payment. A written estimate from your notary and your broker, from the start, saves you the stressful question of “how much should I bring” the day before signing.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Ask your notary for an estimated “statement of disbursements” before signing. Seeing all the costs at once avoids unpleasant surprises on the big day.</p></aside>"
+  },
+  {
+   "title": "Welcome tax, apart",
+   "objective": "Never forget this post invoiced after purchase.",
+   "html": "<p class=\"lede\">Never forget this item invoiced after the purchase.</p>\n<p>Transfer duties (welcome tax) are not paid at the notary: the municipality sends a separate invoice, a few weeks to a few months later. On an average priced property, this often represents several thousand dollars (see the dedicated guide for the calculation).</p>\n<p>The welcome tax deserves a separate line because it arrives AFTER the purchase, by municipal bill: many forget it in their budget and are surprised. Put the amount aside as soon as the transaction is completed - this is one of the most common cash flow surprises for new owners.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Put the estimated amount of the welcome tax aside upon signing, in a separate account. It's the classic trap: the bill arrives after the move.</p></aside>"
+  },
+  {
+   "title": "Start-up expenses",
+   "objective": "Anticipate the cost of “taking possession”.",
+   "html": "<p class=\"lede\">Anticipate the cost of “taking possession”.</p>\n<ul><li>Home insurance active upon taking possession.</li><li>Connections and transfers (Hydro-Quebec, internet, etc.).</li><li>Moving (truck, movers, boxes).</li><li>Locks, first purchases (curtains, missing appliances, small jobs).</li><li>Initial maintenance reserve (~1%/year of the value, to be provisioned).</li></ul>\n<p>Start-up expenses (insurance, connections, locks, small purchases, initial work) add up quickly in the first weeks. Plan a dedicated envelope so as not to finance your move on credit, at the worst time.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Keep an emergency cushion AFTER purchase. Many new owners arrive at the keys empty-handed; an unforeseen event in the first year is not a question of “if”, but “when”.</p></aside>"
+  },
+  {
+   "title": "Build your complete purchasing budget",
+   "objective": "Combine all positions into one number.",
+   "html": "<p class=\"lede\">Combine all positions into one number.</p>\n<p>Your total budget = down payment + closing costs (notary, inspection, adjustments, certificate) + welcome tax + start-up expenses + emergency cushion. It's this overall number, not just the down payment, that determines whether you're truly ready.</p>\n<p>By calculating it early, you avoid the most stressful scenario: having just enough for the entry, and not everything else.</p>\n<p>Put it all together in one number: down payment + closing costs + startup + cushion. It's that total - not just the sticker price or the mortgage - that determines whether you buy comfortably or tight. A complete, written budget protects you from unpleasant surprises.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Make your complete purchasing budget BEFORE shopping seriously. It's what tells you what price range you're actually comfortable in - not just your pre-approval.</p></aside>"
+  },
+  {
+   "title": "After purchase: recurring costs",
+   "objective": "Forecast the actual cost of the property.",
+   "html": "<p class=\"lede\">Forecast the actual cost of the property.</p>\n<p>Purchase costs are one-off; owning property is also <strong>recurring costs</strong> to include in your monthly budget:</p><ul><li><strong>Taxes</strong> municipal and school.</li><li><strong>Home insurance</strong>.</li><li><strong>Energy</strong> (heating, electricity).</li><li><strong>Maintenance</strong> current and co-ownership charges, if applicable.</li></ul><p>An “affordable” upfront purchase can become burdensome if these recurring costs are underestimated.</p><p>Owning also means recurring costs: municipal and school taxes, insurance, energy, maintenance, co-ownership charges if applicable. An “affordable” purchase at the start can become burdensome if these monthly costs are underestimated: calculate them before committing.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Add up all the actual monthly costs, not just the mortgage, before committing. It is this total that will determine whether you live comfortably or tightly in your new property.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>List all expense items for my price range.</li><li>Request an estimate of the notary's fees.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Estimate the welcome tax and reserve it mentally.</li><li>Assemble my total purchasing budget, cushion included.</li></ol>\n<h3>Then</h3>\n<ol><li>Validate this budget with Emilie and my mortgage broker.</li></ol><h3>For a budget without surprises</h3><ol><li>Obtain a written estimate of all my closing costs before bidding.</li><li>Reserve the welcome tax and a cushion upon transaction.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Closing costs: notary, inspection, adjustments, certificate of location.</li><li>Adjustments: reimbursement to the seller of sums paid in advance.</li><li>Statement of disbursements: notarial estimate of costs upon signature.</li><li>Welcome tax: charged separately after purchase.</li><li>Emergency cushion: reserve for unforeseen events after purchase.</li></ul><ul><li>Closing costs: notary, welcome tax, adjustments, inspection, insurance.</li><li>Adjustments: taxes and fees paid in advance by the seller, refunded pro rata.</li><li>Recurring costs: taxes, insurance, energy, maintenance, co-ownership charges.</li><li>Emergency cushion: reserve for unforeseen events in the first months.</li><li>Taking possession: moment when insurance and connections must be active.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The notary's fees cover:",
+   "options": [
+    "A) The move",
+    "B) The deed of sale, the mortgage deed and the verifications",
+    "C) The welcome tax",
+    "D) Car insurance"
+   ],
+   "answer": 1,
+   "explanation": "The notary prepares the deeds and verifies the titles (chap. 1)."
+  },
+  {
+   "q": "The adjustments to the notary concern in particular:",
+   "options": [
+    "A) The color of the walls",
+    "B) Taxes already paid by the seller, fuel oil, condo charges",
+    "C) The rent",
+    "D) Salary"
+   ],
+   "answer": 1,
+   "explanation": "The seller is reimbursed for what he paid in advance (chap. 1)."
+  },
+  {
+   "q": "The welcome tax is paid:",
+   "options": [
+    "A) At the notary",
+    "B) By municipal invoice, after purchase",
+    "C) Every month",
+    "D) Never"
+   ],
+   "answer": 1,
+   "explanation": "Separate invoice, after the transaction (chap. 2)."
+  },
+  {
+   "q": "Home insurance must be active:",
+   "options": [
+    "A) One year later",
+    "B) Upon taking possession",
+    "C) Never",
+    "D) Only in winter"
+   ],
+   "answer": 1,
+   "explanation": "Obligatory upon possession (chap. 3)."
+  },
+  {
+   "q": "The starting maintenance reserve is approximately:",
+   "options": [
+    "A) 0%",
+    "B) 1%/year of the value",
+    "C) 25%",
+    "D) 50%"
+   ],
+   "answer": 1,
+   "explanation": "Around 1%/year to be provisioned (chap. 3)."
+  },
+  {
+   "q": "The total purchasing budget includes:",
+   "options": [
+    "A) The down payment alone",
+    "B) Down payment + closing costs + welcome tax + startup + cushion",
+    "C) The mortgage alone",
+    "D) Nothing more than the price"
+   ],
+   "answer": 1,
+   "explanation": "It is the overall figure that counts (chap. 4)."
+  },
+  {
+   "q": "The classic trap is:",
+   "options": [
+    "A) Too much saving",
+    "B) Have just enough for the entrance and nothing for the rest",
+    "C) Pay cash",
+    "D) Too much insurance"
+   ],
+   "answer": 1,
+   "explanation": "We forget the costs beyond the down payment (chap. 4)."
+  },
+  {
+   "q": "An estimated statement of disbursements comes from:",
+   "options": [
+    "A) The municipality",
+    "B) The notary",
+    "C) The inspector",
+    "D) The neighbor"
+   ],
+   "answer": 1,
+   "explanation": "The notary can estimate it before signing (chap. 1)."
+  }
+ ]
+}

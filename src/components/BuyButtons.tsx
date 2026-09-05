@@ -47,7 +47,7 @@ export function BuyButtons({
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode: 'unit', slug }),
+        body: JSON.stringify({ mode: 'unit', slug, pdfLocale: locale }),
       });
       const data = await res.json();
       if (data.url) window.location.href = data.url;
@@ -75,7 +75,7 @@ export function BuyButtons({
         </Link>
         {canDownload ? (
           <a
-            href={`/api/download?slug=${slug}`}
+            href={`/api/download?slug=${slug}&lang=${locale}`}
             className="block rounded-full border border-[var(--color-bordeaux)] py-3 text-center font-ui text-sm text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
           >
             {t.downloadPdf}

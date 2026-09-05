@@ -87,6 +87,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             number={book.number}
             title={loc.title}
             collection={col(book.collection)}
+            locale={locale}
             loading="eager"
             className="mx-auto mb-5 w-full max-w-[260px] rounded-2xl border border-[var(--color-sand)] shadow-sm"
           />

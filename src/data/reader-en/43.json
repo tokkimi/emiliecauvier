@@ -1,1 +1,158 @@
-{"number": 43, "title": "Buying as a Couple", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Buying a property as a couple is a wonderful milestone — and an important legal decision. Especially for common-law partners, whose rights differ from those of married couples, it's essential to structure the purchase properly to protect yourselves.</p><p>This guide covers the ways of holding property as a couple, the importance of an agreement, and the protections to put in place.</p><p>Informational content, not legal advice: consult a notary. Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "Married vs. Common-Law Partners", "objective": "Understanding why status changes everything.", "html": "<p class=\"lede\">Understanding why status changes everything.</p>\n<p>In Quebec, married or civil-union couples benefit from protective rules (the family patrimony) that govern the family residence. Common-law partners, however, do NOT have these automatic protections: in the event of separation or death, their rights depend mainly on what is written down (title, agreement, will).</p>\n<p>Many common-law partners are unaware of this reality and end up with nothing. The good news: you can protect yourself with the right documents.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>If you're common-law partners, don't assume you're protected “like married couples”: you're not, automatically. What you put in writing makes all the difference.</p></aside>"}, {"title": "How to Hold the Property", "objective": "Choosing the ownership structure.", "html": "<p class=\"lede\">Choosing the ownership structure.</p>\n<ul><li>In undivided ownership, in equal shares (50/50) or according to each person's contribution.</li><li>The title of ownership must clearly reflect who owns what.</li><li>If only one partner is on the title, the other may end up with no right to the property, even after years and payments.</li></ul>\n<p>How the property is registered on the title is a defining decision: make it with full knowledge, with the notary.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Make sure the title truly reflects your agreement. If one of you contributes more to the down payment, say so and document it: memory and love don't hold up in court.</p></aside>"}, {"title": "The Agreement Between Partners", "objective": "Planning for the unexpected in writing.", "html": "<p class=\"lede\">Planning for the unexpected in writing.</p>\n<p>An agreement (often called an indivision agreement or a cohabitation agreement) sets out in advance: the division of shares, who pays what (mortgage, taxes, upkeep), what happens in the event of separation (buyout, sale, timelines) and in the event of death (together with the will).</p>\n<p>It's a bit like insurance: you hope never to use it, but it avoids painful conflicts if life changes.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Draw up an agreement BEFORE buying, while all is well. Writing it calmly together is infinitely easier than negotiating in the pain of a separation.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Clarify our status and our actual protections.</li><li>Decide on the division of shares.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have an agreement drafted by a notary.</li><li>Update our wills accordingly.</li></ol>\n<h3>After that</h3>\n<ol><li>Register the property on the title in line with our agreement.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Family patrimony: protections for married / civil-union couples.</li><li>Common-law partners: without automatic protections; the written record prevails.</li><li>Undivided ownership: ownership by several people, in equal shares or by contribution.</li><li>Indivision agreement: the arrangement governing shares, payments, and exits.</li><li>Title of ownership: must reflect the couple's actual agreement.</li></ul>"}], "qcm": [{"q": "Common-law partners in Quebec:", "options": ["A) Have the same protections as married couples", "B) Do not have these automatic protections", "C) Cannot buy", "D) Are always 50/50"], "answer": 1, "explanation": "Their rights depend on the written record (chap. 1)."}, {"q": "The family patrimony protects:", "options": ["A) Common-law partners", "B) Married or civil-union couples", "C) Everyone", "D) No one"], "answer": 1, "explanation": "Not common-law partners (chap. 1)."}, {"q": "If only one partner is on the title:", "options": ["A) The other is automatically a co-owner", "B) The other may end up with no right to the property", "C) Nothing changes", "D) The city decides"], "answer": 1, "explanation": "The title is decisive (chap. 2)."}, {"q": "The division of shares can be:", "options": ["A) Impossible", "B) 50/50 or according to each person's contribution", "C) Always imposed", "D) Secret"], "answer": 1, "explanation": "To be decided and documented (chap. 2)."}, {"q": "An agreement between partners provides for:", "options": ["A) The colour of the walls", "B) Shares, payments, separation, and death", "C) The interest rate", "D) Nothing"], "answer": 1, "explanation": "It anticipates the unexpected (chap. 3)."}, {"q": "The best time for the agreement is:", "options": ["A) After a separation", "B) Before buying, while all is well", "C) Never", "D) At resale"], "answer": 1, "explanation": "Easier with a cool head (chap. 3)."}]}
+{
+ "number": 43,
+ "title": "Buy for two",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Buying property as a couple is a great step - and an important legal decision. Especially for common-law couples, whose rights differ from those of married couples, it is essential to properly structure the purchase to protect yourself.</p><p>This guide covers ways to hold property jointly, the importance of an agreement, and the protections to provide.</p><p>Informative content, not legal advice: consult a notary. Each chapter ends with a lined “My Notes” page.</p><p>Buying as a couple is a great step - and an important legal decision, especially for common-law couples, whose rights differ from those of married couples. This guide covers ways of holding together, the importance of an agreement and the protections to provide.</p><p>Informative content, not legal advice: consult a notary.</p>"
+  },
+  {
+   "title": "Married and common-law partners",
+   "objective": "Understand why status changes everything.",
+   "html": "<p class=\"lede\">Understand why status changes everything.</p>\n<p>In Quebec, married or civilly united couples benefit from protection rules (<strong>family heritage</strong>) which surround the family residence.</p><p>The <strong>de facto spouses</strong>, they do not have <em>not</em> these automatic protections: in the event of separation or death, their rights depend above all on what is <strong>writes</strong> (title, agreement, will).</p><p>Many common-law partners are unaware of this reality - and discover it at the worst time.</p><p>In Quebec, married and civil unions benefit from protections for family assets; de facto spouses, no - their rights depend mainly on the writing (title, agreement, will). Many people ignore it and discover it at the worst time: for an unmarried couple, everything depends on the documents.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>“We've been together for 15 years, it's like a marriage. » No: in Quebec, de facto union does not create the same rights. For an unmarried couple, everything depends on the documents.</p></aside>"
+  },
+  {
+   "title": "How to hold property",
+   "objective": "Choose the detention structure.",
+   "html": "<p class=\"lede\">Choose the holding structure.</p>\n<p>How to register the property on title is a decision <strong>structuring</strong> :</p><ul><li>In <strong>joint ownership</strong>, in equal shares (50/50) or according to each person's contribution.</li><li>The <strong>title</strong> must clearly reflect who owns what.</li></ul><p>If only one spouse has title, the other may find themselves without rights to the property - even after years and numerous payments. Make this choice with full knowledge of the facts.</p><p>The way of registering the property in the title is structuring: in joint ownership, in equal shares or according to the contribution of each person. If only one spouse is on title, the other may find themselves without rights - even after years of payments. If you pay half, make sure you get the title.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If you pay half the mortgage, make sure you're on title. Contributing financially without appearing on the title is the classic scenario where you lose everything when you separate.</p></aside>"
+  },
+  {
+   "title": "The agreement between spouses",
+   "objective": "Plan for the unexpected in writing.",
+   "html": "<p class=\"lede\">Plan for the unexpected in writing.</p>\n<p>An agreement (often a <strong>joint ownership agreement</strong> or a cohabitation contract) specifies in advance what could otherwise be settled in court:</p><ul><li>The <strong>distribution of shares</strong>.</li><li>Who pays what (mortgage, taxes, maintenance).</li><li>What happens in the event of <strong>separation</strong> (purchase, sale, deadlines).</li><li>What happens in the event of <strong>death</strong> (with the will).</li></ul><p>It's a bit like insurance: you hope you'll never use it, but it avoids painful conflicts.</p><p>An agreement (of joint ownership or cohabitation) specifies in advance what would otherwise be settled in court: distribution of shares, who pays what, and what happens in the event of separation or death. Write it when everything is going well, not in the middle of a breakup.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Write the agreement WHEN things are going well, not when things are going badly. Calmly discussing the “what if one day…” when purchasing is infinitely simpler than in the middle of a breakup.</p></aside>"
+  },
+  {
+   "title": "Protecting the survivor: will and insurance",
+   "objective": "Also think about the death, not just the breakup.",
+   "html": "<p class=\"lede\">Also think about the death, not just the breakup.</p>\n<p>For de facto spouses especially, the death of one partner can leave the other in a precarious situation if there is nothing planned.</p><ul><li><strong>Will</strong> : without it, a de facto spouse does not automatically inherit.</li><li><strong>Life insurance</strong> : can allow the survivor to repurchase the share or repay the mortgage.</li><li><strong>Clause in the agreement</strong> : coordinate with the will.</li></ul><p>These tools, put in place together, form a real safety net.</p><p>Also think about death: without a will, a common-law partner does not automatically inherit. Life insurance can allow the survivor to buy back the share or repay the mortgage, avoiding a fire sale. Coordinate agreement, will and insurance.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Life insurance that covers the balance of the mortgage prevents the survivor from having to sell in disaster. This is often one of a couple's best peace of mind purchases.</p></aside>"
+  },
+  {
+   "title": "Buying together, step by step",
+   "objective": "Structuring the purchase calmly.",
+   "html": "<p class=\"lede\">Structure the purchase calmly.</p>\n<p>For a well-planned purchase for two, follow this logical order:</p><ol><li><strong>Clarify</strong> your status and your real protections.</li><li>Decide on <strong>distribution of shares</strong>.</li><li>Have a written <strong>convention</strong> by a notary.</li><li>Update your <strong>wills</strong> accordingly.</li><li>Register the property in <strong>title</strong> in accordance with the agreement.</li></ol><p>A little rigor at the start protects your relationship - and your assets - for a long time.</p><p>For a well-planned joint purchase: clarify your status, decide on the distribution, have an agreement drawn up by a notary, update your wills, and register the property on the title in accordance with the agreement. It's not a lack of trust, it's mutual respect.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Treat the purchase together as a small joint project: a written agreement, clear roles, up-to-date documents. It's not a lack of trust, it's mutual respect.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Clarify our status and our real protections.</li><li>Decide on the distribution of shares.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have an agreement drawn up by a notary.</li><li>Update our wills accordingly.</li></ol>\n<h3>Then</h3>\n<ol><li>Register the property on title in accordance with our agreement.</li></ol><h3>To structure well</h3><ol><li>Clarify our status and decide on the distribution of shares.</li><li>Have an agreement drawn up and our wills updated.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Family assets: protections for married couples/civil unions.</li><li>De facto spouses: without automatic protections; the written word takes precedence.</li><li>Joint ownership: joint ownership, in equal shares or according to contribution.</li><li>Joint ownership agreement: agreement regulating shares, payments and exits.</li><li>Property title: must reflect the real agreement of the couple.</li></ul><ul><li>Family assets: protections for married couples/civil unions.</li><li>De facto spouses: without automatic protections; the written word takes precedence.</li><li>Joint ownership: joint ownership, in equal shares or according to contribution.</li><li>Joint ownership agreement: agreement regulating shares, payments and exits.</li><li>Property title: must reflect the real agreement of the couple.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Married couples benefit from:",
+   "options": [
+    "A) No protection",
+    "B) Protection of family assets",
+    "C) Reduced taxes",
+    "D) A free mortgage"
+   ],
+   "answer": 1,
+   "explanation": "Family heritage (chap. 1)."
+  },
+  {
+   "q": "Common law spouses:",
+   "options": [
+    "A) Have the same protections as married couples",
+    "B) Do not have automatic protections; the written word takes precedence",
+    "C) Cannot buy",
+    "D) Automatically inherit"
+   ],
+   "answer": 1,
+   "explanation": "Writing takes precedence (chap. 1)."
+  },
+  {
+   "q": "If only one spouse is in title:",
+   "options": [
+    "A) The other is automatically protected",
+    "B) The other may find himself without rights to the property",
+    "C) The city decides",
+    "D) Nothing changes"
+   ],
+   "answer": 1,
+   "explanation": "The title is structuring (chap. 2)."
+  },
+  {
+   "q": "In joint ownership, the shares can be:",
+   "options": [
+    "A) Always 50/50 necessarily",
+    "B) Equal or according to the contribution of each",
+    "C) Set by the city",
+    "D) Non-existent"
+   ],
+   "answer": 1,
+   "explanation": "Equal or according to the contribution (chap. 2)."
+  },
+  {
+   "q": "The agreement between spouses specifies:",
+   "options": [
+    "A) The color of the walls",
+    "B) Shares, payments, separation and death",
+    "C) Municipal taxes",
+    "D) The interest rate"
+   ],
+   "answer": 1,
+   "explanation": "It regulates the scenarios (chap. 3)."
+  },
+  {
+   "q": "The best time to draw up the agreement is:",
+   "options": [
+    "A) In the middle of a breakup",
+    "B) When all is well, to purchase",
+    "C) Never",
+    "D) After ten years"
+   ],
+   "answer": 1,
+   "explanation": "Anticipate (chap. 3)."
+  },
+  {
+   "q": "Without a will, a common-law partner:",
+   "options": [
+    "A) Automatically inherits",
+    "B) Does not automatically inherit",
+    "C) Pay less taxes",
+    "D) Becomes married"
+   ],
+   "answer": 1,
+   "explanation": "The will is essential (chap. 4)."
+  },
+  {
+   "q": "Life insurance can allow the survivor to:",
+   "options": [
+    "A) Avoid the notary",
+    "B) Redeem the share or repay the mortgage",
+    "C) Double your taxes",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Safety net (chap. 4)."
+  },
+  {
+   "q": "The title deed must:",
+   "options": [
+    "A) Ignore the agreement",
+    "B) Reflect the real understanding of the couple",
+    "C) Be in the name of the bank",
+    "D) Stay empty"
+   ],
+   "answer": 1,
+   "explanation": "Title/agreement consistency (chapters 2 and 5)."
+  },
+  {
+   "q": "Structuring the purchase as a couple means above all:",
+   "options": [
+    "A) A lack of confidence",
+    "B) Mutual respect and foresight",
+    "C) A waste of time",
+    "D) Illegal"
+   ],
+   "answer": 1,
+   "explanation": "Foresight and respect (chap. 5)."
+  }
+ ]
+}

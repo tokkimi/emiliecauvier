@@ -11,9 +11,10 @@ export async function generateMetadata() {
   return { title: locale === 'en' ? 'Purchase confirmed' : 'Achat confirmé' };
 }
 
-export default async function PurchaseConfirmedPage({ searchParams }: { searchParams: Promise<{ slug?: string; slugs?: string }> }) {
+export default async function PurchaseConfirmedPage({ searchParams }: { searchParams: Promise<{ slug?: string; slugs?: string; lang?: string }> }) {
   const locale = await getLocale();
-  const { slug, slugs } = await searchParams;
+  const { slug, slugs, lang } = await searchParams;
+  const pdfLocale = lang === 'en' ? 'en' : 'fr';
   const requestedSlugs = [...new Set((slugs ? slugs.split(',') : slug ? [slug] : []).map((item) => item.trim()).filter(Boolean))];
   const books = requestedSlugs.map((item) => bySlug(item)).filter((book): book is NonNullable<typeof book> => Boolean(book));
   if (!books.length) notFound();
@@ -72,7 +73,7 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
       )}
       <div className="mx-auto mt-8 grid max-w-md gap-3 sm:grid-cols-2">
         <Link href={`/lire/${firstBook.slug}`} className="rounded-full bg-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm font-medium text-white">{plural ? t.readFirst : t.readNow}</Link>
-        {!plural && <a href={`/api/download?slug=${firstBook.slug}`} className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-[var(--color-bordeaux)]">{t.download}</a>}
+        {!plural && <a href={`/api/download?slug=${firstBook.slug}&lang=${pdfLocale}`} className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-[var(--color-bordeaux)]">{t.download}</a>}
         {plural && <Link href={loggedIn ? '/compte#bibliotheque' : '/catalogue'} className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-[var(--color-bordeaux)]">{loggedIn ? t.library : t.catalogue}</Link>}
       </div>
       <p className="mt-8 font-ui text-sm text-[var(--color-ink)]/55">

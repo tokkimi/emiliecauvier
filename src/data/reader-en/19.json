@@ -1,1 +1,136 @@
-{"number": 19, "title": "The seller's declaration", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>In Québec, a seller has legal obligations toward the buyer, notably the duty not to conceal defects. The seller's declaration is the tool that protects you… provided it's filled out honestly and completely.</p><p>This guide explains the legal warranty of quality, the notion of a latent defect, the role of the seller's declaration, and how to reduce your risk of a lawsuit after the sale.</p><p>Informational content, not legal advice: validate your situation with your broker and your notary. Each chapter ends with a lined « My notes » page.</p>"}, {"title": "The legal warranty of quality", "objective": "Understand what the seller commits to by default.", "html": "<p class=\"lede\">Understand what the seller commits to by default.</p>\n<p>In Québec, a real-estate sale generally comes with a legal warranty of quality: the seller warrants that the property is free of latent defects that would make it unfit for its use, or so diminish its usefulness that the buyer would not have bought it, or not at that price.</p>\n<p>A latent defect is a serious flaw, not apparent on a normal examination, existing before the sale and unknown to the buyer. If such a defect appears after the sale, the buyer may have recourse against the seller.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Selling « without legal warranty, at the buyer's own risk » exists, but it changes everything for the buyer (and often the price). Never insert such a clause without understanding its consequences with your notary.</p></aside>"}, {"title": "The seller's declaration", "objective": "Use this transparency tool to your advantage.", "html": "<p class=\"lede\">Use this transparency tool to your advantage.</p>\n<p>The seller's declaration is a form where you record what you know about the property: past infiltration, repairs, renovations (with or without a permit), known problems, presence of vermiculite, a tank, etc. Well filled out, it informs the buyer and greatly reduces the risk of a dispute.</p>\n<ul><li>Disclose what you know, honestly and completely.</li><li>Conceal nothing: hiding a known problem is the surest way to expose yourself to a lawsuit.</li><li>When in doubt about a point, it's better to mention it than to leave it out.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Transparency is your best insurance. An informed buyer who buys with full knowledge has far less recourse than a buyer who discovers a problem you knew about and didn't declare.</p></aside>"}, {"title": "Reducing your risk of a lawsuit", "objective": "Protect yourself before, during and after the sale.", "html": "<p class=\"lede\">Protect yourself before, during and after the sale.</p>\n<ul><li>Gather your proof: repair invoices, permits, expert reports.</li><li>Encourage the buyer to have an inspection done: a defect that's « apparent » during a normal inspection isn't a latent defect.</li><li>Answer questions honestly and make no false statements.</li><li>Keep a copy of all documents and of the signed declaration.</li></ul>\n<p>A complete file and total transparency are your best safeguards against a claim after the sale.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Keep all your invoices and reports, even after the sale. If a dispute arises, proving that you repaired something properly or disclosed a problem makes all the difference.</p></aside>"}, {"title": "What to do if a problem arises", "objective": "React correctly to a claim.", "html": "<p class=\"lede\">React correctly to a claim.</p>\n<p>If a buyer alleges a latent defect after the sale, they generally have to notify you (often in writing) and give you the chance to observe the problem before undertaking any work. Don't react in a panic.</p>\n<ul><li>Consult a professional quickly (notary, lawyer) to learn your rights.</li><li>Don't acknowledge or settle anything hastily without advice.</li><li>Rely on your declaration and your proof.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Faced with a claim, the worst reaction is to panic and act alone. Quick legal advice keeps you from admitting a liability you may not have.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>List all known problems, repairs and renovations.</li><li>Gather invoices, permits and expert reports.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Fill out the seller's declaration honestly, with my broker.</li><li>Encourage the buyer to have the property inspected.</li></ol>\n<h3>Next</h3>\n<ol><li>Keep a copy of all documents after the sale.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Legal warranty of quality: protection for the buyer against latent defects.</li><li>Latent defect: a serious flaw, not apparent, pre-existing and unknown to the buyer.</li><li>Seller's declaration: a form recording what the seller knows about the property.</li><li>Sale without legal warranty: a clause that transfers the risk to the buyer.</li><li>Proof: invoices, permits and reports kept for your protection.</li></ul>"}], "qcm": [{"q": "The legal warranty of quality protects against:", "options": ["A) Apparent defects", "B) Serious latent defects predating the sale", "C) The weather", "D) Taxes"], "answer": 1, "explanation": "A serious flaw, not apparent, pre-existing and unknown (ch. 1)."}, {"q": "A latent defect is a flaw:", "options": ["A) Visible to the eye", "B) Not apparent on a normal examination, serious and pre-existing", "C) Created by the buyer", "D) Of no importance"], "answer": 1, "explanation": "These criteria define it (ch. 1)."}, {"q": "The seller's declaration serves to:", "options": ["A) Set the price", "B) Record what you know about the property", "C) Pay the notary", "D) Insure the house"], "answer": 1, "explanation": "It's a transparency tool (ch. 2)."}, {"q": "Hiding a known problem:", "options": ["A) Protects you", "B) Exposes you to a lawsuit", "C) Raises the price", "D) Has no effect"], "answer": 1, "explanation": "Concealment is the main risk (ch. 2)."}, {"q": "A defect detected during a normal inspection:", "options": ["A) Remains a latent defect", "B) Is not a latent defect", "C) Doubles the warranty", "D) Cancels the sale"], "answer": 1, "explanation": "An apparent defect isn't « latent » (ch. 3)."}, {"q": "A good protective habit is:", "options": ["A) Throwing away your invoices", "B) Keeping invoices, permits and reports", "C) Documenting nothing", "D) Lying in the declaration"], "answer": 1, "explanation": "Proof protects you in a dispute (ch. 3)."}, {"q": "If the buyer alleges a defect, they generally have to:", "options": ["A) Do the work first", "B) Notify you and let you observe it", "C) Sue you without notice", "D) Do nothing"], "answer": 1, "explanation": "Notice and a chance to observe are required (ch. 4)."}, {"q": "Faced with a claim, you should:", "options": ["A) Panic and settle alone", "B) Consult a professional quickly", "C) Ignore it", "D) Admit everything"], "answer": 1, "explanation": "Legal advice keeps you from admitting undue liability (ch. 4)."}]}
+{
+ "number": 19,
+ "title": "The seller's declaration",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>In Quebec, a seller has legal obligations towards the buyer, in particular not to hide defects. The seller's declaration is the tool that protects you... provided it is completed honestly and completely.</p><p>This guide explains the legal guarantee of quality, the concept of hidden defect, the role of the seller's declaration, and how to reduce your risk of prosecution after the sale.</p><p>Informative content, not legal advice: validate your situation with your broker and your notary. Each chapter ends with a lined “My Notes” page.</p><p>The seller's declaration is not a formality: it is your shield against lawsuits after the sale. This guide explains the legal guarantee, how to complete the declaration to your advantage, reduce your risk and what to do if a problem arises.</p><p>The common thread: transparency protects the seller as much as the buyer.</p>"
+  },
+  {
+   "title": "The legal guarantee of quality",
+   "objective": "Understand what the seller agrees to by default.",
+   "html": "<p class=\"lede\">Understand what the seller commits to by default.</p>\n<p>In Quebec, a real estate sale is generally accompanied by a legal guarantee of quality: the seller guarantees that the property is free from hidden defects which would make it unfit for its use or would reduce its usefulness so much that the buyer would not have purchased it, or not at that price.</p>\n<p>A hidden defect is a serious defect, not apparent during normal examination, existing before the sale and unknown to the buyer. If such a defect appears after the sale, the buyer may have recourse against the seller.</p>\n<p>By default, a sale is accompanied by a legal guarantee of quality: you are responsible for hidden defects which make the property unfit for its use. Understanding it means understanding why transparency protects both the seller and the buyer.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Selling “without legal guarantee, at the buyer’s own risk” exists, but changes everything for the buyer (and often the price). Never enter such a clause without understanding the consequences with your notary.</p></aside>"
+  },
+  {
+   "title": "The seller's declaration",
+   "objective": "Use this transparency tool to your advantage.",
+   "html": "<p class=\"lede\">Use this transparency tool to your advantage.</p>\n<p>The seller's declaration is a form where you record what you know about the property: past infiltrations, repairs, renovations (with or without permits), known problems, presence of vermiculite, tank, etc. When completed, it informs the buyer and greatly reduces the risk of litigation.</p>\n<ul><li>Disclose what you know, honestly and completely.</li><li>Don't hide anything: Hiding a known problem is the best way to expose yourself to a lawsuit.</li><li>If in doubt about a point, it is better to mention it than to ignore it.</li></ul>\n<p>The seller's declaration is your transparency tool: you record what you know (repairs, losses, infiltrations, disputes). Properly completed, it greatly reduces your risk of prosecution, because the buyer buys with full knowledge of the facts.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Transparency is your best insurance. An informed buyer who buys knowingly has far less recourse than a buyer who discovers a problem you knew about and didn't report.</p></aside>"
+  },
+  {
+   "title": "Reduce your risk of prosecution",
+   "objective": "Protect yourself before, during and after the sale.",
+   "html": "<p class=\"lede\">Protect yourself before, during and after the sale.</p>\n<ul><li>Gather your evidence: repair invoices, permits, expert reports.</li><li>Encourage the buyer to have an inspection: a defect “apparent” during a normal inspection is not a hidden defect.</li><li>Answer the questions honestly and do not make false statements.</li><li>Keep a copy of all documents and the signed declaration.</li></ul>\n<p>A complete file and total transparency are your best defenses against a claim after the sale.</p>\n<p>Reduce your risk upstream: collect invoices, permits, reports and guarantees; report any known issues; keep evidence. A complete file is your best defense if a dispute arises after the sale.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Keep all your invoices and reports, even after the sale. If a dispute arises, proving that you repaired properly or disclosed a problem makes all the difference.</p></aside>"
+  },
+  {
+   "title": "What to do if a problem arises",
+   "objective": "Respond correctly to a complaint.",
+   "html": "<p class=\"lede\">React correctly to a complaint.</p>\n<p>If a buyer alleges a hidden defect after the sale, he must generally notify you (often in writing) and give you the opportunity to notice the problem before undertaking work. Do not react in panic.</p>\n<ul><li>Consult a professional (notary, lawyer) quickly to find out your rights.</li><li>Do not recognize or resolve anything hastily without advice.</li><li>Support your statement and your evidence.</li></ul>\n<p>If a buyer alleges a hidden defect after the sale, the procedure to follow matters: he must generally notify you quickly and let you notice it before carrying out any work. Don’t react alone in panic - document and consult before committing.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>When faced with a complaint, the worst reaction is to panic and act alone. Prompt legal advice prevents you from admitting liability you may not have.</p></aside>"
+  },
+  {
+   "title": "Complete your declaration honestly",
+   "objective": "State what you know, correctly.",
+   "html": "<p class=\"lede\">State what you know, correctly.</p>\n<p>The seller's declaration is a key document: it records what you <strong>know</strong> of the property. The golden rule: <strong>transparency</strong>.</p><ul><li>Mention the <strong>known issues</strong>, past and present (infiltrations, repairs, disasters).</li><li>Do not <strong>conceal</strong> a known defect: this is the number one source of lawsuits.</li><li>In case of doubt, the<strong>write</strong> rather than keep quiet.</li><li>Keep the <strong>proofs</strong> of the work carried out.</li></ul><p>An honest and complete declaration is your best protection against a dispute after the sale.</p><p>The golden rule: when in doubt, declare. Keeping a known issue quiet so as to “do no harm to the sale” is exactly what leads to costly lawsuits. An honest and complete declaration is the seller's best protection.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>If in doubt, declare. Keeping quiet about a problem you know about so as to “not hurt the sale” is exactly what leads to costly lawsuits. Transparency protects the seller as much as the buyer.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>List all known issues, repairs and renovations.</li><li>Gather invoices, permits and expert reports.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Complete the seller's declaration honestly, with my broker.</li><li>Encourage the buyer to have the property inspected.</li></ol>\n<h3>Then</h3>\n<ol><li>Keep a copy of all documents after the sale.</li></ol><h3>Before selling</h3><ol><li>Gather invoices, permits and reports of work carried out.</li><li>Complete the declaration honestly, declaring any known problems.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Legal guarantee of quality: protection of the buyer against hidden defects.</li><li>Hidden defect: serious, non-apparent defect, previous and unknown to the buyer.</li><li>Seller's declaration: form recording what the seller knows about the property.</li><li>Sale without legal guarantee: clause which transfers the risk to the buyer.</li><li>Evidence: invoices, permits and reports kept for protection.</li></ul><ul><li>Legal guarantee: seller's liability for hidden defects, by default.</li><li>Hidden defect: non-apparent defect making the property unfit for its use.</li><li>Seller's declaration: written record of what the seller knows.</li><li>Sale without legal guarantee: sale “at the buyer’s risk”, to be regulated.</li><li>Evidence: Invoices and reports retained to protect against a claim.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The legal guarantee of quality protects against:",
+   "options": [
+    "A) Apparent defects",
+    "B) Serious hidden defects prior to the sale",
+    "C) The weather",
+    "D) Taxes"
+   ],
+   "answer": 1,
+   "explanation": "Serious, non-apparent, previous and unknown defect (chap. 1)."
+  },
+  {
+   "q": "A hidden defect is a defect:",
+   "options": [
+    "A) Visible to the eye",
+    "B) Not apparent on normal, severe, and previous examination",
+    "C) Created by the buyer",
+    "D) Unimportant"
+   ],
+   "answer": 1,
+   "explanation": "These criteria define it (chap. 1)."
+  },
+  {
+   "q": "The seller's declaration serves to:",
+   "options": [
+    "A) Set the price",
+    "B) Record what you know about the property",
+    "C) Pay the notary",
+    "D) Insure the house"
+   ],
+   "answer": 1,
+   "explanation": "It is a transparency tool (chap. 2)."
+  },
+  {
+   "q": "Hide a known issue:",
+   "options": [
+    "A) Protects you",
+    "B) Exposes you to a lawsuit",
+    "C) Increase the price",
+    "D) Has no effect"
+   ],
+   "answer": 1,
+   "explanation": "Concealment is the main risk (chap. 2)."
+  },
+  {
+   "q": "A defect detected during a normal inspection:",
+   "options": [
+    "A) There remains a hidden defect",
+    "B) Is not a hidden defect",
+    "C) Double the guarantee",
+    "D) Cancels the sale"
+   ],
+   "answer": 1,
+   "explanation": "An apparent defect is not “hidden” (chap. 3)."
+  },
+  {
+   "q": "A good protective reflex is:",
+   "options": [
+    "A) Throw away your invoices",
+    "B) Keep invoices, permits and reports",
+    "C) Do not document anything",
+    "D) Lying in the declaration"
+   ],
+   "answer": 1,
+   "explanation": "Evidence protects in the event of litigation (chap. 3)."
+  },
+  {
+   "q": "If the buyer claims a defect, he must generally:",
+   "options": [
+    "A) Do the work first",
+    "B) Notify you and let you see",
+    "C) Sue you without notice",
+    "D) Do nothing"
+   ],
+   "answer": 1,
+   "explanation": "Notice and opportunity to observe are required (chap. 4)."
+  },
+  {
+   "q": "When faced with a complaint, you must:",
+   "options": [
+    "A) Panic and settle alone",
+    "B) Quickly consult a professional",
+    "C) Ignore",
+    "D) Admit everything"
+   ],
+   "answer": 1,
+   "explanation": "Legal advice avoids admitting undue liability (chap. 4)."
+  }
+ ]
+}

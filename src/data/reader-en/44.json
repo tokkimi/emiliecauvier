@@ -1,1 +1,158 @@
-{"number": 44, "title": "First Purchase for Newcomers", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Buying a first property in Quebec when you've just arrived comes with particular challenges: building local credit, understanding a different system, and navigating vocabulary and rules specific to the province. With the right support, it's entirely achievable.</p><p>This guide provides newcomers with reference points: credit and financing, Quebec particularities, and steps to get prepared.</p><p>Informational content. Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "Building Your Credit and Financing File", "objective": "Becoming financeable within the local system.", "html": "<p class=\"lede\">Becoming financeable within the local system.</p>\n<p>Lenders look at your Canadian credit, your income, and your stability. A local credit history can take time to build; some programs exist for newcomers, with special conditions.</p>\n<ul><li>Start building credit early (a card, on-time payments).</li><li>Gather proof of income and employment.</li><li>Explore newcomer programs with a mortgage broker.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Start building your Canadian credit as soon as you arrive, even modestly: it's the key to getting good financing later. A mortgage broker knows the programs suited to newcomers.</p></aside>"}, {"title": "Understanding Quebec's Particularities", "objective": "Learning the local rules of the game.", "html": "<p class=\"lede\">Learning the local rules of the game.</p>\n<ul><li>The role of the notary (mandatory) and the real estate broker (regulated by the OACIQ).</li><li>The Welcome Tax, and municipal and school taxes.</li><li>Divided/undivided co-ownership, leases, and rental rules if it's a plex.</li><li>Particularities of the building stock (clay soils, French drain, heating, winter).</li></ul>\n<p>These elements often differ from what exists elsewhere: understanding them avoids many surprises.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Don't assume the system works “the same as in your home country.” Ask lots of questions: a good broker and a notary take the time to explain each step to newcomers.</p></aside>"}, {"title": "Getting Prepared and Surrounding Yourself Well", "objective": "Moving forward with confidence.", "html": "<p class=\"lede\">Moving forward with confidence.</p>\n<p>Like any first-time buyer, prepare your budget, get a pre-approval, and define your criteria and target areas. As a bonus, surround yourself with professionals who understand your journey and can guide you (a broker, a mortgage broker, a notary).</p>\n<p>Taking the time to learn the local market before buying is an investment that pays off.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Surround yourself with patient professionals who take the time to explain things plainly. Buying within a system you're just discovering is perfectly doable — with the right people around you.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Start or build up my Canadian credit.</li><li>Gather my proof of income and employment.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Meet with a mortgage broker (newcomer programs).</li><li>Learn about Quebec's particularities.</li></ol>\n<h3>After that</h3>\n<ol><li>Get a pre-approval and start my search with Emilie.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Canadian credit: a local history, the key to financing.</li><li>Newcomer programs: adapted loan conditions, through a broker.</li><li>OACIQ: the body that regulates real estate brokers.</li><li>Welcome Tax: municipal transfer duties.</li><li>Pre-approval: an amount and rate confirmed before you shop.</li></ul>"}], "qcm": [{"q": "Lenders look mainly at:", "options": ["A) Your country of origin", "B) Your Canadian credit, income, and stability", "C) Your accent", "D) Nothing"], "answer": 1, "explanation": "Local credit and income (chap. 1)."}, {"q": "Building Canadian credit:", "options": ["A) Is pointless", "B) Takes time; start early", "C) Is instant", "D) Is prohibited"], "answer": 1, "explanation": "You start as soon as you arrive (chap. 1)."}, {"q": "In Quebec, the sale is signed before:", "options": ["A) A foreign lawyer", "B) A notary", "C) No one", "D) The city"], "answer": 1, "explanation": "The notary is mandatory (chap. 2)."}, {"q": "The real estate broker is regulated by:", "options": ["A) The police", "B) The OACIQ", "C) No one", "D) The bank"], "answer": 1, "explanation": "Public protection (chap. 2)."}, {"q": "A good approach is to:", "options": ["A) Assume everything is the same as elsewhere", "B) Ask lots of questions and surround yourself well", "C) Ask nothing", "D) Avoid the professionals"], "answer": 1, "explanation": "You learn the local system (chap. 2 and 3)."}, {"q": "Like any first-time buyer, you should:", "options": ["A) Ignore the budget", "B) Prepare a budget and a pre-approval", "C) Buy at random", "D) Avoid pre-approval"], "answer": 1, "explanation": "The basics stay the same (chap. 3)."}]}
+{
+ "number": 44,
+ "title": "First purchase for newcomers",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Buying a first property in Quebec when you have just arrived involves particular challenges: building local credit, understanding a different system, and navigating vocabulary and rules specific to the province. Well accompanied, it is completely accessible.</p><p>This guide provides guidelines for newcomers: credit and financing, Quebec specificities, and steps to prepare.</p><p>Informative content. Each chapter ends with a lined “My Notes” page.</p><p>Buying a first property in Quebec as a newcomer involves particular challenges: building local credit, understanding a different system, learning your own vocabulary. Well accompanied, it is completely accessible. This guide gives the key points.</p><p>Informative content: validate your situation with the professionals concerned.</p>"
+  },
+  {
+   "title": "Building your credit and financing file",
+   "objective": "Make yourself financeable in the local system.",
+   "html": "<p class=\"lede\">Make yourself financeable in the local system.</p>\n<p>Lenders look at your <strong>Canadian credit</strong>, your income and your stability. A local credit history can take time to build.</p><ul><li>Start building credit early (card, on-time payments).</li><li>Gather proof of income and employment.</li><li>Explore the <strong>programs for newcomers</strong>, under special conditions.</li></ul><p>The more solid and documented your file is, the simpler and more advantageous the financing will be.</p><p>Lenders look at your Canadian credit, your income and your stability. A local history takes time to build: open a card when you arrive and pay it in full each month. Some programs for newcomers offer adapted conditions, via a mortgage broker.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Open a credit card upon arrival and pay it in full each month. Building a Canadian history takes months: start well before you think about buying.</p></aside>"
+  },
+  {
+   "title": "Understanding Quebec specificities",
+   "objective": "Learn the rules of the local game.",
+   "html": "<p class=\"lede\">Learn the rules of the local game.</p>\n<p>The Quebec system has its particularities, often different from what exists elsewhere:</p><ul><li>Role of <strong>notary</strong> (mandatory) and <strong>broker</strong> (supervised by the OACIQ).</li><li><strong>Welcome tax</strong>, municipal and school taxes.</li><li>Co-ownership <strong>divides/undivides</strong>, leases and rental rules if plex.</li><li>Particularities of the building (clay soils, French drain, heating, winter).</li></ul><p>Understanding them in advance avoids many costly surprises.</p><p>The Quebec system has its particularities: mandatory notary, broker supervised by the OACIQ, welcome tax, divided/undivided co-ownership, leases if plex, and a building specific to the climate (clay soils, French drain, winter). Learning the local vocabulary already means avoiding half of the mistakes.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Take the time to learn the local vocabulary: “welcome tax”, “certificate of location”, “conditions of the promise to purchase”. Understanding words already means avoiding half of the mistakes.</p></aside>"
+  },
+  {
+   "title": "Prepare yourself and surround yourself well",
+   "objective": "Move forward with confidence.",
+   "html": "<p class=\"lede\">Move forward with confidence.</p>\n<p>As any first buyer, prepare the foundations:</p><ul><li>Establish a <strong>budget</strong> realistic.</li><li>Obtain a <strong>pre-approval</strong> mortgage.</li><li>Define your <strong>criteria</strong> and your sectors.</li></ul><p>As a bonus, surround yourself with professionals who understand your journey (broker, mortgage broker, notary). Learning the local market before you buy is an investment that pays off.</p><p>As any first buyer, lay the foundations: realistic budget, pre-approval, criteria and sectors. As a bonus, surround yourself with professionals used to supporting newcomers - a good broker will explain not only the houses, but the entire system around them.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Choose professionals used to supporting newcomers. A good broker will explain not only the houses, but the whole system around them - it's invaluable.</p></aside>"
+  },
+  {
+   "title": "Down payment and available assistance",
+   "objective": "Gather and optimize your input.",
+   "html": "<p class=\"lede\">Gather and optimize your contribution.</p>\n<p>The <strong>down payment \nMinimum</strong> depends on the price of the property; below a certain threshold, a <strong>loan insurance</strong> is added to the financing.</p><ul><li>Save early and automate your payments.</li><li>Check your eligibility for <strong>assistance programs</strong> and incentives (depending on your status and situation).</li><li>A <strong>donation</strong> family is accepted with a donation letter.</li></ul><p>A mortgage broker can help you put everything together in the most advantageous way.</p><p>The minimum down payment depends on the price; below 20%, loan insurance is added. Save early, check your eligibility for assistance programs, and know that a family donation is accepted with a donation letter. A mortgage broker helps you put everything together advantageously.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Find out about programs for first-time buyers and newcomers: some offer favorable conditions. A mortgage broker knows what you are entitled to.</p></aside>"
+  },
+  {
+   "title": "From research to taking possession",
+   "objective": "Follow the route step by step.",
+   "html": "<p class=\"lede\">Follow the route step by step.</p>\n<p>Once financed and well supported, the purchasing process follows a clear logic:</p><ol><li><strong>Visit</strong> according to your criteria and sectors.</li><li>Make a <strong>promise to purchase</strong> with the right conditions (financing, inspection).</li><li>Carry out the<strong>inspection</strong> and lift the conditions.</li><li>Sign with the <strong>notary</strong> and take possession.</li></ol><p>At each stage, ask your questions: no one expects a newcomer to already know the entire system.</p><p>The route follows a clear logic: visit according to your criteria, make a promise to purchase with the right conditions (financing, inspection), lift the conditions after inspection, then sign with the notary. At each stage, ask your questions: no one expects a newcomer to already know everything.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don't be afraid to ask “too many” questions. A good professional would rather answer your questions a thousand times than see you sign without understanding. This is your biggest purchase.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Start or consolidate my Canadian credit.</li><li>Gather my proof of income and employment.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Meet a mortgage broker (newcomer programs).</li><li>Inform me about Quebec specificities.</li></ol>\n<h3>Then</h3>\n<ol><li>Obtain pre-approval and launch my search with Emilie.</li></ol><h3>To prepare myself</h3><ol><li>Build my Canadian credit and gather my proof of income.</li><li>Meet with a mortgage broker (newcomer programs) and obtain pre-approval.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Canadian credit: local history, key to financing.</li><li>Newcomer programs: adapted loan conditions, via a broker.</li><li>OACIQ: organization governing real estate brokers.</li><li>Welcome tax: municipal transfer taxes.</li><li>Pre-approval: amount and rate confirmed before shopping.</li></ul><ul><li>Canadian credit: local history, key to financing.</li><li>Newcomer programs: adapted loan conditions, via a broker.</li><li>OACIQ: organization governing real estate brokers.</li><li>Welcome tax: municipal transfer taxes.</li><li>Pre-approval: amount and rate confirmed before shopping.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Lenders mainly look at:",
+   "options": [
+    "A) Your credit from another country",
+    "B) Your Canadian credit, income and stability",
+    "C) Your age",
+    "D) Your hobbies"
+   ],
+   "answer": 1,
+   "explanation": "Canadian credit (chap. 1)."
+  },
+  {
+   "q": "To build local credit, you must:",
+   "options": [
+    "A) Wait ten years",
+    "B) Start early (card, on-time payments)",
+    "C) Avoid all credit",
+    "D) Pay cash"
+   ],
+   "answer": 1,
+   "explanation": "Start early (chap. 1)."
+  },
+  {
+   "q": "In Quebec, the notary is:",
+   "options": [
+    "A) Optional",
+    "B) Mandatory for sale",
+    "C) Prohibited",
+    "D) The seller"
+   ],
+   "answer": 1,
+   "explanation": "Mandatory notary (chap. 2)."
+  },
+  {
+   "q": "The welcome tax is:",
+   "options": [
+    "A) A gift",
+    "B) Municipal transfer duties",
+    "C) Insurance",
+    "D) Rent"
+   ],
+   "answer": 1,
+   "explanation": "Transfer duties (chap. 2)."
+  },
+  {
+   "q": "Before shopping, it is wise to have:",
+   "options": [
+    "A) No preparation",
+    "B) A budget and pre-approval",
+    "C) A single visit",
+    "D) A mover"
+   ],
+   "answer": 1,
+   "explanation": "Budget + pre-approval (chap. 3)."
+  },
+  {
+   "q": "Surrounding yourself well means choosing professionals who:",
+   "options": [
+    "A) Ignoring your background",
+    "B) Understand the journey of newcomers",
+    "C) Speak quickly",
+    "D) Do not respond"
+   ],
+   "answer": 1,
+   "explanation": "Adapted support (chap. 3)."
+  },
+  {
+   "q": "Below a certain down payment threshold:",
+   "options": [
+    "A) Purchase is prohibited",
+    "B) Loan insurance is added to the financing",
+    "C) Taxes disappear",
+    "D) The notary is free"
+   ],
+   "answer": 1,
+   "explanation": "Loan insurance (chap. 4)."
+  },
+  {
+   "q": "A family donation for the down payment:",
+   "options": [
+    "A) Is refused",
+    "B) Is accepted with a donation letter",
+    "C) Double the taxes",
+    "D) Is illegal"
+   ],
+   "answer": 1,
+   "explanation": "Donation letter (chap. 4)."
+  },
+  {
+   "q": "A prudent purchase promise includes:",
+   "options": [
+    "A) No conditions",
+    "B) Conditions (financing, inspection)",
+    "C) A secret price",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Protective conditions (chap. 5)."
+  },
+  {
+   "q": "For a newcomer, asking questions is:",
+   "options": [
+    "A) Embarrassing",
+    "B) Normal and encouraged",
+    "C) Prohibited",
+    "D) Useless"
+   ],
+   "answer": 1,
+   "explanation": "No one expects him to know everything (chap. 5)."
+  }
+ ]
+}

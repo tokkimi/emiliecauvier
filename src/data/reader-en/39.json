@@ -1,1 +1,158 @@
-{"number": 39, "title": "The Greater Montreal Market", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>The real estate market moves in cycles: periods that favour sellers, periods that favour buyers, and transitions in between. Understanding these dynamics in Greater Montreal helps you decide with discernment rather than following the crowd's emotions.</p><p>This guide explains the phases of the market, the indicators to watch, and how to act according to the context — without trying to perfectly “time” the market.</p><p>Informational content. Each chapter ends with a lined “My Notes” page.</p>"}, {"title": "Buyer's Market, Seller's Market", "objective": "Recognizing which type of market you're in.", "html": "<p class=\"lede\">Recognizing which type of market you're in.</p>\n<p>In a seller's market, demand exceeds supply: few properties, quick sales, and possible bidding wars. In a buyer's market, supply exceeds demand: more choice, longer timelines, and downward negotiation. Between the two lies a balanced market.</p>\n<ul><li>Key indicator: the number of months of inventory (how long it would take to sell off the properties on the market).</li><li>Average time on market and sold price / asking price ratio.</li><li>These dynamics vary by area and property type.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Adapt your strategy to the type of market. In a seller's market, you offer quickly and cleanly; in a buyer's market, you take your time and negotiate. The same behaviour doesn't work in both.</p></aside>"}, {"title": "The Factors That Move the Market", "objective": "Understanding the forces at play.", "html": "<p class=\"lede\">Understanding the forces at play.</p>\n<ul><li>Interest rates: they strongly influence borrowing capacity and demand.</li><li>Economy and employment: confidence, incomes, migration.</li><li>Supply: housing starts, land availability, regulation.</li><li>Demographics and neighbourhoods: some areas stay sought-after regardless of the cycle.</li></ul>\n<p>No single factor tells the whole story; it's their combination that shapes the market.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Watch interest rates above all: they're the most powerful short-term lever on demand and therefore on prices. But never base a life decision on a single variable.</p></aside>"}, {"title": "Acting Without Trying to Guess the Peak", "objective": "Deciding based on your needs, not on speculation.", "html": "<p class=\"lede\">Deciding based on your needs, not on speculation.</p>\n<p>No one perfectly “times” the market. For most households, the right decision depends mainly on their personal situation (need, stability, capacity) and their time horizon, rather than on an attempt to predict the peak or the trough.</p>\n<p>Real estate generally rewards patience and long-term holding, which smooth out the cycles.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Don't wait indefinitely for “the perfect moment”: it's only recognizable in hindsight. A good property bought for the right reasons, with a long horizon, rides out the cycles.</p></aside>"}, {"title": "Action Plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Identify the current type of market in my area.</li><li>Track inventory, timelines, and the sold/asking price ratio.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Understand the effect of rates on my project.</li><li>Clarify my needs and my time horizon.</li></ol>\n<h3>After that</h3>\n<ol><li>Decide based on my situation, with Emilie's insight into the local market.</li></ol>"}, {"title": "Resources & Glossary", "objective": "", "html": "<ul><li>Seller's market: demand &gt; supply, quick sales.</li><li>Buyer's market: supply &gt; demand, downward negotiation.</li><li>Months of inventory: estimated time to sell off the properties on the market.</li><li>Interest rates: a major lever on demand and prices.</li><li>Long-term horizon: holding that smooths out the cycles.</li></ul>"}], "qcm": [{"q": "In a seller's market:", "options": ["A) Supply exceeds demand", "B) Demand exceeds supply, with quick sales", "C) Nothing sells", "D) Prices collapse"], "answer": 1, "explanation": "Few properties, possible bidding wars (chap. 1)."}, {"q": "A key market indicator is:", "options": ["A) The colour of the houses", "B) The number of months of inventory", "C) The weather", "D) The broker's name"], "answer": 1, "explanation": "Time to sell off the supply (chap. 1)."}, {"q": "The most powerful short-term lever is:", "options": ["A) The paint", "B) Interest rates", "C) The holiday season", "D) The colour"], "answer": 1, "explanation": "They influence demand (chap. 2)."}, {"q": "Perfectly timing the market is:", "options": ["A) Easy", "B) Nearly impossible; you decide based on your needs", "C) Guaranteed", "D) Mandatory"], "answer": 1, "explanation": "Your personal situation comes first (chap. 3)."}, {"q": "Real estate mainly rewards:", "options": ["A) Quick speculation", "B) Patience and long-term holding", "C) Impatience", "D) Luck"], "answer": 1, "explanation": "The long term smooths out the cycles (chap. 3)."}, {"q": "Your strategy should:", "options": ["A) Be the same in every market", "B) Adapt to the type of market", "C) Ignore the market", "D) Follow emotion"], "answer": 1, "explanation": "Buyers vs. sellers (chap. 1)."}]}
+{
+ "number": 39,
+ "title": "The Greater Montreal Market",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>The real estate market moves in cycles: periods favorable to sellers, periods favorable to buyers, and transitions. Understanding these dynamics in Greater Montreal helps to decide with discernment rather than following collective emotion.</p><p>This guide explains the market phases, the indicators to watch, and how to act according to the context - without trying to perfectly “time” the market.</p><p>Informative content. Each chapter ends with a lined “My Notes” page.</p><p>The market moves in cycles: periods favorable to sellers, buyers, and transitions. This guide explains how to recognize the type of market, the factors that move it, the indicators to follow and how to act without trying to guess the top.</p><p>The message: decide with discernment, according to your situation, rather than following collective emotion.</p>"
+  },
+  {
+   "title": "Buyers' market, sellers' market",
+   "objective": "Recognize what market you are in.",
+   "html": "<p class=\"lede\">Recognize which market you are in.</p>\n<p>The market oscillates between two extremes, with an equilibrium in the middle:</p><ul><li><strong>Sellers' market</strong> : demand exceeds supply. Few properties, quick sales, possible bidding wars.</li><li><strong>Buyers' market</strong> : supply exceeds demand. More choice, longer deadlines, downward negotiation.</li><li><strong>Balanced market</strong> : between the two.</li></ul><p>The key index is the <strong>number of months of inventory</strong> : how long it would take to sell all the properties for sale at the current rate.</p><p>The most telling indicator is the number of months of inventory: low, it signals a seller's market (rapid sales, overbidding); high, a buyers' market (choice, negotiation). Don't be fooled by national headlines: One neighborhood may favor sellers while another favors buyers.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Don't be fooled by national headlines: the market is local. One neighborhood in Montreal may favor sellers while another favors buyers. Look at YOUR sector numbers.</p></aside>"
+  },
+  {
+   "title": "Factors that move the market",
+   "objective": "Understand the forces at play.",
+   "html": "<p class=\"lede\">Understand the forces at play.</p>\n<p>No single factor says everything; it is their combination that shapes the market:</p><ul><li><strong>Interest rate</strong> : they strongly influence borrowing capacity and therefore demand.</li><li><strong>Economy and employment</strong> : trust, income, migration.</li><li><strong>Offer</strong> : construction starts, land availability, regulations.</li><li><strong>Demographics and sectors</strong> : certain neighborhoods remain sought after whatever the cycle.</li></ul><p>Understanding these levers helps you interpret what you see rather than reacting on the spot.</p><p>No single factor says everything: interest rate (the No. 1 lever on demand), economy and employment, supply (construction starts, regulations), demographics and attractiveness of sectors. It is their combination that shapes the market. When rates rise, price pressure often eases.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>When rates rise, borrowing capacity falls and pressure on prices often eases. When they go down, it's the opposite. Follow the rates: This is the number one factor.</p></aside>"
+  },
+  {
+   "title": "Indicators to watch",
+   "objective": "Read the market with numbers.",
+   "html": "<p class=\"lede\">Read the market with numbers.</p>\n<p>To situate yourself, a few simple and public indicators are better than impressions:</p><ul><li><strong>Month of inventory</strong> : low = sellers' market, high = buyers' market.</li><li><strong>Average sales time</strong> : how many days on the market.</li><li><strong>Ratio sold price / asking price</strong> : above 100% signals overbidding.</li><li><strong>Median price</strong> by property type and sector.</li></ul><p>Tracked over time, these figures tell the trend better than a single spectacular sale.</p><p>To situate yourself, a few public indicators are better than impressions: months of inventory, average sales time, sold/asked price ratio (above 100% = overbidding), median price by type and sector. Monitored over time, they tell the story of the trend better than a spectacular sale.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>A single house sold for a very high price (or a very low price) does not make a trend. Look at the median price and sales time over several months: that's the real story of the market.</p></aside>"
+  },
+  {
+   "title": "Act without trying to guess the summit",
+   "objective": "Decide according to your needs, not speculation.",
+   "html": "<p class=\"lede\">Decide according to your needs, not speculation.</p>\n<p>No one “times” the market perfectly - neither the experts nor the banks. For most households, the right decision depends above all on:</p><ul><li>of their <strong>personal situation</strong> (need, stability, capacity);</li><li>of their <strong>horizon</strong> detention.</li></ul><p>Real estate generally rewards patience and long-term holding, which smooths out cycles. Waiting for “the perfect low” often leads to missing good opportunities.</p><p>No one “times” the market perfectly - neither the experts nor the banks. For most households, the right decision depends above all on their situation (needs, stability, capacity) and their horizon. Patience and long holding smooth the cycles.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>The better question is not “is this the right time for the market?” » but “is this the right time for ME?” \". Real need and long holding almost always beat speculation.</p></aside>"
+  },
+  {
+   "title": "Greater Montreal: markets within the market",
+   "objective": "Nuance according to the sector.",
+   "html": "<p class=\"lede\">Nuance according to the sector.</p>\n<p>The “Montreal market” does not really exist: it is a mosaic of local markets with distinct dynamics.</p><ul><li><strong>Property type</strong> : condos, plexes and single-family homes are not moving at the same pace.</li><li><strong>Sector</strong> : center, suburbs, suburbs and regions each have their own logic.</li><li><strong>Price segment</strong> : entry-level and high-end react differently to rates.</li></ul><p>Comparing your project to good local data avoids false conclusions drawn from overly broad statistics.</p><p>The “Montreal market” does not really exist: it is a mosaic of local markets (property type, sector, price segment) with distinct dynamics. Comparing your project to the right local data - recent comparables in YOUR sector - avoids false conclusions.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Ask your broker for comparable sales over the last three to six months in YOUR sector and for YOUR property type. It's a hundred times more useful than a provincial statistic.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Identify the current type of market in my sector.</li><li>Monitor inventory, deadlines and sold/asked price ratio.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Understand the effect of rates on my project.</li><li>Clarify my needs and my horizon.</li></ol>\n<h3>Then</h3>\n<ol><li>Decide according to my situation, with Emilie's insight into the local market.</li></ol><h3>To read the market</h3><ol><li>Identify the type of market in my sector (inventory, deadlines, price ratio).</li><li>Decide according to my needs and my horizon, with recent local comparables.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Sellers' market: demand &gt; supply, rapid sales.</li><li>Buyers' market: supply &gt; demand, downward negotiation.</li><li>Month of inventory: estimated time to sell properties for sale.</li><li>Interest rate: major lever on demand and prices.</li><li>Long-term horizon: holding that smooths the cycles.</li></ul><ul><li>Sellers' market: demand &gt; supply, rapid sales.</li><li>Buyers' market: supply &gt; demand, downward negotiation.</li><li>Month of inventory: estimated time to sell properties for sale.</li><li>Sold/asked price ratio: above 100% = overbidding.</li><li>Comparable: similar recent sales in your sector.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "In a seller's market:",
+   "options": [
+    "A) Supply exceeds demand",
+    "B) Demand exceeds supply, rapid sales",
+    "C) Nothing sells",
+    "D) Prices are zero"
+   ],
+   "answer": 1,
+   "explanation": "Demand > supply (chap. 1)."
+  },
+  {
+   "q": "In buyers' market:",
+   "options": [
+    "A) Frequent overbidding",
+    "B) More choice, trading down",
+    "C) No ownership",
+    "D) Prices set by the city"
+   ],
+   "answer": 1,
+   "explanation": "Supply > demand (chap. 1)."
+  },
+  {
+   "q": "Months of inventory measure:",
+   "options": [
+    "A) The age of the houses",
+    "B) The time to sell properties for sale",
+    "C) Taxes",
+    "D) The interest rate"
+   ],
+   "answer": 1,
+   "explanation": "Key indicator (chapters 1 and 3)."
+  },
+  {
+   "q": "The number one factor on demand is often:",
+   "options": [
+    "A) The color of the houses",
+    "B) Interest rates",
+    "C) The season",
+    "D) The name of the streets"
+   ],
+   "answer": 1,
+   "explanation": "Rates (chap. 2)."
+  },
+  {
+   "q": "A sold/asked price ratio above 100% indicates:",
+   "options": [
+    "A) Discounts",
+    "B) Outbidding",
+    "C) A dead market",
+    "D) An error"
+   ],
+   "answer": 1,
+   "explanation": "Overbidding (chap. 3)."
+  },
+  {
+   "q": "To read a trend, we look at:",
+   "options": [
+    "A) Only one sale",
+    "B) Median price and lead times over several months",
+    "C) Rumors",
+    "D) The weather"
+   ],
+   "answer": 1,
+   "explanation": "Data over time (chap. 3)."
+  },
+  {
+   "q": "“Timer” perfectly the market is:",
+   "options": [
+    "A) Easy",
+    "B) Practically impossible",
+    "C) Guaranteed by banks",
+    "D) Mandatory"
+   ],
+   "answer": 1,
+   "explanation": "Nobody succeeds (chap. 4)."
+  },
+  {
+   "q": "For most households, the decision depends mainly on:",
+   "options": [
+    "A) Speculation",
+    "B) Their situation and their horizon",
+    "C) Neighbors",
+    "D) Chance"
+   ],
+   "answer": 1,
+   "explanation": "Needs and horizon (chap. 4)."
+  },
+  {
+   "q": "The “Montreal market” is in reality:",
+   "options": [
+    "A) A single uniform market",
+    "B) A mosaic of local markets",
+    "C) Non-existent",
+    "D) Same everywhere"
+   ],
+   "answer": 1,
+   "explanation": "Markets within the market (chap. 5)."
+  },
+  {
+   "q": "The most useful way to situate your project is:",
+   "options": [
+    "A) A provincial statistic",
+    "B) Recent comparables in your sector and type",
+    "C) A national headline",
+    "D) No data"
+   ],
+   "answer": 1,
+   "explanation": "Targeted local data (chap. 5)."
+  }
+ ]
+}

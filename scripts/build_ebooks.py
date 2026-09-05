@@ -125,7 +125,7 @@ AVIS = ("Ce guide est fourni à titre informatif et éducatif uniquement. Il pr�
         "immobilière étant différente, il est recommandé de consulter les professionnels "
         "appropriés avant de prendre une décision concernant une transaction immobilière.")
 
-COPYRIGHT = ("© 2026 Émilie Cauvier — La Bibliothèque. Tous droits réservés. "
+COPYRIGHT = ("© 2026 Emilie Cauvier — La Bibliothèque. Tous droits réservés. "
              "Toute reproduction, distribution, partage ou revente, en tout ou en partie, "
              "par quelque moyen que ce soit, est strictement interdit sans autorisation "
              "écrite préalable. Ce guide est destiné à l'usage personnel de l'acheteur.")

@@ -53,6 +53,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
   const router = useRouter();
   const t = tx[locale];
   const [slugs, setSlugs] = useState<string[]>([]);
+  const [pdfLocale, setPdfLocale] = useState<Locale>(locale);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -80,7 +81,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode: 'unit', slugs: items.map((item) => item.slug) }),
+        body: JSON.stringify({ mode: 'unit', slugs: items.map((item) => item.slug), pdfLocale }),
       });
       const data = await res.json();
       if (!res.ok || !data.url) throw new Error(data.error ?? t.paymentUnavailable);
@@ -133,6 +134,25 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
             <div className="flex items-center justify-between border-b border-[var(--color-sand)] pb-4">
               <span className="font-ui text-sm text-[var(--color-ink)]/60">{t.guide(items.length)}</span>
               <strong className="font-display text-2xl text-[var(--color-bordeaux)]">{formatPrice(total)}</strong>
+            </div>
+            <label className="mt-5 block font-ui text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-gold)]">
+              {locale === 'en' ? 'PDF language' : 'Langue des PDF'}
+            </label>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              {(['fr', 'en'] as Locale[]).map((lang) => (
+                <button
+                  key={lang}
+                  type="button"
+                  onClick={() => setPdfLocale(lang)}
+                  className={`rounded-full border px-4 py-2 font-ui text-sm transition ${
+                    pdfLocale === lang
+                      ? 'border-[var(--color-bordeaux)] bg-[var(--color-bordeaux)] text-white'
+                      : 'border-[var(--color-sand)] bg-white text-[var(--color-ink)]/70 hover:border-[var(--color-bordeaux)]'
+                  }`}
+                >
+                  {lang === 'fr' ? 'Français' : 'English'}
+                </button>
+              ))}
             </div>
 
             {loggedIn ? (

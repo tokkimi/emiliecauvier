@@ -1,1 +1,136 @@
-{"number": 29, "title": "Taxation for the Real-Estate Investor", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Taxation can make a big difference in the real return of an income property. Well understood, it reduces your tax legally; ignored, it holds unpleasant surprises.</p><p>This guide presents the main principles: how rental income is taxed, deductible expenses, depreciation, capital gains on resale, and the question of holding personally vs through a corporation.</p><p>Informational content, not tax advice: every situation differs, consult an accountant or tax specialist. Each chapter ends with a lined « My notes » page.</p>"}, {"title": "Rental income and deductible expenses", "objective": "Understand what is taxed and what is deductible.", "html": "<p class=\"lede\">Understand what is taxed and what is deductible.</p>\n<p>Rental income is taxable, but you deduct the expenses incurred to earn that income. The net income (rents minus deductible expenses) is added to your taxable income.</p>\n<ul><li>Deductible: mortgage interest, taxes, insurance, maintenance and repairs, management, common-area energy, etc.</li><li>Key distinction: a repair (immediately deductible) vs an improvement (a capital expenditure, depreciable).</li><li>Keep all your invoices and maintain rigorous records.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Keep clean books from day one. Every invoice kept is a potential deduction; every deduction forgotten is tax paid needlessly.</p></aside>"}, {"title": "Depreciation (CCA)", "objective": "Understand this powerful tool… and its pitfalls.", "html": "<p class=\"lede\">Understand this powerful tool… and its pitfalls.</p>\n<p>The capital cost allowance (CCA) lets you deduct part of the building's value (not the land) each year, reducing your taxable income. It is a powerful tool, but a double-edged one.</p>\n<p>On resale, the depreciation claimed can be « recaptured » and taxed. Depreciation therefore defers tax more than it eliminates it: use it strategically, ideally on the advice of a tax specialist.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Depreciation is not « free » tax savings: it is often deferred tax. Use it knowingly, with an accountant's advice, according to your time horizon.</p></aside>"}, {"title": "Capital gains on resale", "objective": "Anticipate the tax on the gain.", "html": "<p class=\"lede\">Anticipate the tax on the gain.</p>\n<p>When you resell a rental building at a profit, part of the gain (the capital gain) is taxable. A rental building does not benefit from the principal-residence exemption (except for the portion you occupy, if any).</p>\n<p>Planning (timing of the sale, ownership structure, carried-forward losses) can influence the tax. Here again, a tax specialist is a worthwhile investment.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Plan the taxation of the resale BEFORE you sell. The timing and manner of the sale can significantly change the tax on your gain.</p></aside>"}, {"title": "Personal ownership or through a corporation", "objective": "Choose the right structure for your project.", "html": "<p class=\"lede\">Choose the right structure for your project.</p>\n<p>You can hold a building in your personal name or through a corporation (incorporation). Each option has tax, legal, and financing implications. Incorporation can offer advantages (protection, planning) but also added costs and complexity.</p>\n<p>The right choice depends on the size of your project, your time horizon, and your overall situation. It is a decision to make with an accountant and a notary/lawyer.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Don't incorporate « by default » or « because you heard it somewhere ». For a first building, personal ownership is often simpler; incorporation makes sense as the portfolio grows.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Set up rigorous record-keeping.</li><li>List my deductible expenses.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Consult an accountant about depreciation and the ownership structure.</li><li>Plan my medium-term tax strategy.</li></ol>\n<h3>Then</h3>\n<ol><li>Review the planning before any resale.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Net rental income: rents minus deductible expenses, taxable.</li><li>Repair vs improvement: immediately deductible vs a capital expenditure.</li><li>CCA (depreciation): a deduction on the building, with recapture on resale.</li><li>Capital gain: the taxable gain on the resale of a rental property.</li><li>Incorporation: ownership through a corporation, with advantages and costs.</li></ul>"}], "qcm": [{"q": "Rental income is:", "options": ["A) Non-taxable", "B) Taxable, after deducting expenses", "C) Always exempt", "D) Taxed at 0%"], "answer": 1, "explanation": "Net income = rents − deductible expenses (ch. 1)."}, {"q": "A repair is:", "options": ["A) Depreciable only", "B) Generally deductible immediately", "C) Non-deductible", "D) A capital gain"], "answer": 1, "explanation": "To be distinguished from an improvement (ch. 1)."}, {"q": "Depreciation (CCA) applies to:", "options": ["A) The land", "B) The building (not the land)", "C) The rents", "D) The down payment"], "answer": 1, "explanation": "Land is not depreciated (ch. 2)."}, {"q": "On resale, the depreciation claimed can be:", "options": ["A) Forgotten", "B) Recaptured and taxed", "C) Doubled as a deduction", "D) Refunded"], "answer": 1, "explanation": "Depreciation defers the tax (ch. 2)."}, {"q": "Does a rental building benefit from the principal-residence exemption?", "options": ["A) Yes, entirely", "B) No (except for the occupied portion, if any)", "C) Always", "D) Never, no rule applies"], "answer": 1, "explanation": "Rental property is taxed on the gain (ch. 3)."}, {"q": "The capital gain should be anticipated:", "options": ["A) After the sale", "B) Before the sale", "C) Never", "D) Only at the notary's"], "answer": 1, "explanation": "Planning influences the tax (ch. 3)."}, {"q": "For a first building, ownership is often:", "options": ["A) Always through a corporation", "B) Personal, which is simpler", "C) Prohibited", "D) Anonymous"], "answer": 1, "explanation": "Incorporation comes with growth (ch. 4)."}, {"q": "The best way to decide on taxation is:", "options": ["A) To guess", "B) To consult an accountant/tax specialist", "C) To copy a friend", "D) To ignore it"], "answer": 1, "explanation": "Every situation differs (all chapters)."}]}
+{
+ "number": 29,
+ "title": "Taxation of the real estate investor",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Taxation can make a big difference in the real yield of an income property. Properly understood, it legally reduces your tax; ignored, it reserves unpleasant surprises.</p><p>This guide presents the main principles: the taxation of rental income, deductible expenses, depreciation, capital gains on resale, and the question of personal versus company ownership.</p><p>Informative content, not tax advice: each situation differs, consult an accountant or tax specialist. Each chapter ends with a lined “My Notes” page.</p><p>Taxation can make or break the performance of a building. This guide covers deductible income and expenses, depreciation and its pitfalls, capital gains on resale, and the choice between personal and corporate ownership.</p><p>Informative content: taxation being technical and evolving, always have your situation validated by a specialized accountant.</p>"
+  },
+  {
+   "title": "Rental income and deductible expenses",
+   "objective": "Understand what is imposed and what is deduced.",
+   "html": "<p class=\"lede\">Understand what is imposed and what is deducted.</p>\n<p>Rental income is taxable, but you deduct the expenses incurred to earn this income. Net income (rent minus deductible expenses) is added to your taxable income.</p>\n<ul><li>Deductible: mortgage interest, taxes, insurance, maintenance and repairs, management, energy of the commons, etc.</li><li>Key distinction: a repair (immediately deductible) vs an improvement (capital expenditure, depreciable).</li><li>Keep all your invoices and keep rigorous records.</li></ul>\n<p>Rents are taxable, but many expenses are deducted: mortgage interest, taxes, insurance, maintenance, management, paid utilities. Distinguishing a (deductible) repair from a (capitalized) improvement is essential - and a frequent source of error.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Keep clean accounts from day one. Every invoice kept is a potential deduction; every forgotten deduction is overpaid tax.</p></aside>"
+  },
+  {
+   "title": "Depreciation (DPA)",
+   "objective": "Understanding this powerful tool… and its pitfalls.",
+   "html": "<p class=\"lede\">Understanding this powerful tool… and its pitfalls.</p>\n<p>The capital cost allowance (CCA) allows you to deduct part of the value of the building (not the land) each year, reducing your taxable income. It is a powerful tool, but double-edged.</p>\n<p>On resale, the depreciation taken can be “recovered” and taxed. Depreciation therefore defers tax more than it eliminates it: to be used with a strategy, ideally recommended by a tax specialist.</p>\n<p>The depreciation deduction (DPA) allows a portion of the value of the building to be deducted each year, reducing the tax on rentals. But be careful: it can be “recovered” and imposed on resale. Powerful, the DPA is used with an accountant, not blindly.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Depreciation is not “free” tax savings: it is often deferred tax. Use it knowingly, with the advice of an accountant, according to your horizon.</p></aside>"
+  },
+  {
+   "title": "Capital gain on resale",
+   "objective": "Anticipate capital gains tax.",
+   "html": "<p class=\"lede\">Anticipate capital gains tax.</p>\n<p>When you resell a rental property for a profit, part of the gain (the capital gain) is taxable. A rental property does not benefit from the principal residence exemption (except for the portion you occupy, if applicable).</p>\n<p>Planning (timing of sale, holding structure, loss carryforwards) can influence tax. Here again, a tax specialist is a profitable investment.</p>\n<p>On resale at a profit, part of the capital gain is taxable (depending on the acquisition value and the rules in force). Anticipate this tax in your exit strategy: the “profit” displayed is not the net amount, once tax and depreciation recovery are taken into account.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Plan resale taxes BEFORE selling. When and how you sell can significantly change the tax on your gain.</p></aside>"
+  },
+  {
+   "title": "Personal or corporate ownership",
+   "objective": "Choose the right structure according to your project.",
+   "html": "<p class=\"lede\">Choose the right structure according to your project.</p>\n<p>You can own a building in your personal name or via a company (incorporation). Each option has tax, legal and financing implications. Incorporation can offer benefits (protection, planning) but also increased costs and complexity.</p>\n<p>The right choice depends on the size of your project, your horizon and your overall situation. This is a decision to be made with an accountant and a notary/lawyer.</p>\n<p>Holding in personal name is simple; Holding through a corporation offers other tax and liability opportunities, but with increased costs and complexity. The right choice depends on the size of your project and your situation - a decision to validate with an accountant and a notary.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>Do not incorporate “by default” or “because we heard it”. For a first building, personal ownership is often simpler; incorporation takes on its meaning as the portfolio grows.</p></aside>"
+  },
+  {
+   "title": "Records, receipts and good accountant",
+   "objective": "Keep accounts that protect you.",
+   "html": "<p class=\"lede\">Keep accounts that protect you.</p>\n<p>Real estate taxation does not forgive improvisation. A <strong>bookkeeping</strong> rigorous is your best ally:</p><ul><li>Keep <strong>all receipts</strong> and invoices (expenses, work).</li><li>Separate the finances of the building from your finances <strong>personal</strong>.</li><li>Distinguish <strong>repair</strong> (deductible) and <strong>improvement</strong> (capitalized).</li><li>Surround yourself with a <strong>accountant</strong> who knows real estate.</li></ul><p>Impeccable records legitimately reduce your taxes and protect you in the event of an audit.</p><p>Real estate taxation does not forgive improvisation: keep all receipts, separate the finances of the building from your personal finances, and surround yourself with an accountant who knows real estate. Clean records legitimately reduce your taxes and protect you in the event of an audit.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's advice</span><p>A good accountant specializing in real estate often pays himself through the deductions he finds and the errors he avoids. Don't tinker with your rental tax: it's a false economy.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Implement rigorous record keeping.</li><li>List my deductible expenses.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Consult an accountant on depreciation and holding structure.</li><li>Plan my medium-term tax strategy.</li></ol>\n<h3>Then</h3>\n<ol><li>Review the planning before any resale.</li></ol><h3>To manage my taxes properly</h3><ol><li>Keep separate records and keep all receipts from the first month.</li><li>Consult a specialized accountant (DPA, holding structure, exit).</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Net rental income: rent less deductible expenses, taxable.</li><li>Repair vs improvement: immediate deductible vs capital expenditure.</li><li>DPA (depreciation): deduction on the building, with recovery on resale.</li><li>Capital gain: taxable capital gain on the resale of rental property.</li><li>Incorporation: ownership by company, with advantages and costs.</li></ul><ul><li>Deductible expense: cost subtracted from taxable rental income.</li><li>DPA: depreciation deduction, recoverable on resale.</li><li>Capital gain: taxable profit realized on the sale.</li><li>Repair vs. improvement: immediately deductible vs. capitalized.</li><li>Holding by company: structure offering other tax options, more complex.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "Rental income is:",
+   "options": [
+    "A) Non-taxable",
+    "B) Taxable, after deduction of expenses",
+    "C) Exempt always",
+    "D) Taxed at 0%"
+   ],
+   "answer": 1,
+   "explanation": "Net income = rent − deductible expenses (chap. 1)."
+  },
+  {
+   "q": "A repair is:",
+   "options": [
+    "A) Depreciable only",
+    "B) Generally deductible immediately",
+    "C) Non-deductible",
+    "D) A capital gain"
+   ],
+   "answer": 1,
+   "explanation": "To be distinguished from an improvement (chap. 1)."
+  },
+  {
+   "q": "Depreciation (DPA) covers:",
+   "options": [
+    "A) The land",
+    "B) The building (not the land)",
+    "C) Rents",
+    "D) The down payment"
+   ],
+   "answer": 1,
+   "explanation": "Land does not depreciate (chap. 2)."
+  },
+  {
+   "q": "On resale, the depreciation taken can be:",
+   "options": [
+    "A) Forgotten",
+    "B) Recovered and imposed",
+    "C) Doubled in deduction",
+    "D) Reimbursed"
+   ],
+   "answer": 1,
+   "explanation": "Depreciation defers tax (chap. 2)."
+  },
+  {
+   "q": "Does a rental property benefit from the principal residence exemption?",
+   "options": [
+    "A) Yes, totally",
+    "B) No (except occupied portion if applicable)",
+    "C) Always",
+    "D) Never any rules"
+   ],
+   "answer": 1,
+   "explanation": "The rental is taxed on the gain (chap. 3)."
+  },
+  {
+   "q": "The capital gain is anticipated:",
+   "options": [
+    "A) After the sale",
+    "B) Before the sale",
+    "C) Never",
+    "D) To the notary only"
+   ],
+   "answer": 1,
+   "explanation": "Planning influences tax (chap. 3)."
+  },
+  {
+   "q": "For a first building, the holding is often:",
+   "options": [
+    "A) Always in society",
+    "B) Personal, simpler",
+    "C) Prohibited",
+    "D) Anonymous"
+   ],
+   "answer": 1,
+   "explanation": "Incorporation comes with growth (chap. 4)."
+  },
+  {
+   "q": "The best way to decide on taxation is:",
+   "options": [
+    "A) Guess",
+    "B) Consult an accountant/tax professional",
+    "C) Copy a friend",
+    "D) Ignore"
+   ],
+   "answer": 1,
+   "explanation": "Each situation differs (all chapters)."
+  }
+ ]
+}

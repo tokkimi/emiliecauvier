@@ -2,12 +2,14 @@ export function BookCover({
   number,
   title,
   collection,
+  locale = 'fr',
   className = '',
   loading = 'lazy',
 }: {
   number: number;
   title: string;
   collection: string;
+  locale?: 'fr' | 'en';
   className?: string;
   loading?: 'eager' | 'lazy';
 }) {
@@ -21,7 +23,7 @@ export function BookCover({
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`/covers/${number}.jpg`}
+        src={locale === 'en' ? `/covers-en/${number}.jpg` : `/covers/${number}.jpg`}
         alt={`Couverture — ${title}`}
         loading={loading}
         className="h-full w-full object-contain"
