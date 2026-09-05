@@ -1,1 +1,136 @@
-{"number": 26, "title": "Your First Income Property", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>Investing in a first income property is one of the best ways to build wealth in Quebec. But a plex is not a house: you buy it like a business, with numbers, not with your heart.</p><p>This guide gives you the basics: how to evaluate a building, calculate its profitability, finance it, and avoid the classic first-time investor mistakes.</p><p>Each chapter ends with a lined « My notes » page.</p>"}, {"title": "Think like an investor", "objective": "Adopt the business logic of rental real estate.", "html": "<p class=\"lede\">Adopt the business logic of rental real estate.</p>\n<p>An income property is judged on its numbers: rental income, expenses, financing, and the cash flow that is left over. You don't buy a plex because it's pretty, but because its numbers hold up.</p>\n<ul><li>Income: current and potential rents.</li><li>Expenses: taxes, insurance, maintenance, management, vacancy, bad debt.</li><li>Financing: down payment, mortgage payments.</li><li>Cash flow: what is left once everything is paid.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Fall in love with the numbers, not the bricks. An ordinary building with solid numbers is a far better investment than a beautiful plex that loses money every month.</p></aside>"}, {"title": "Evaluate a building before making an offer", "objective": "Carry out the checks specific to rental property.", "html": "<p class=\"lede\">Carry out the checks specific to rental property.</p>\n<ul><li>Analyze the leases, current rents vs the market, and the payment history.</li><li>Check the condition of the building (roof, structure, plumbing, electrical): repairs across several units are expensive.</li><li>Obtain the actual expenses (taxes, insurance, common-area energy, maintenance).</li><li>Factor vacancy and bad debt into the projections.</li></ul>\n<p>In Quebec, remember: leases run with the building. You inherit the tenants and their terms.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Demand the real numbers (leases, expenses, invoices), not the seller's optimistic projections. A building is bought on verified data, not on promises.</p></aside>"}, {"title": "The classic first-time investor mistakes", "objective": "Avoid the most common pitfalls.", "html": "<p class=\"lede\">Avoid the most common pitfalls.</p>\n<ul><li>Overestimating income and underestimating expenses.</li><li>Forgetting vacancy, management, and the reserve for major work.</li><li>Assuming you can easily raise rents or evict tenants (the rules are strict).</li><li>Neglecting the inspection: a building hides more systems than a house.</li></ul>\n<p>A good project stays profitable even with a vacancy and a major repair in the same year. If it only works in the perfect scenario, it is too risky.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Build your numbers conservatively: realistic rents, complete expenses, a cushion for the unexpected. The seller's « on paper » profitability is almost always rosier than reality.</p></aside>"}, {"title": "From analysis to offer", "objective": "Structure an investor's offer.", "html": "<p class=\"lede\">Structure an investor's offer.</p>\n<p>Once the numbers are validated, make a conditional offer: inspection, financing, and review of the leases and documents. These conditions protect you if the actual numbers differ from what was advertised.</p>\n<p>The first building is a school: well chosen and well managed, it partly finances your learning curve and opens the door to the second.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Always have the leases and expenses reviewed BEFORE your conditions expire. Discovering an inflated rent or a hidden expense after the purchase is too late.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Define my budget and my investor borrowing capacity.</li><li>Learn to read a building's leases and expenses.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Analyze 2-3 buildings on their real numbers.</li><li>Make a conditional offer on the best file.</li></ol>\n<h3>Then</h3>\n<ol><li>Have the property inspected and validate the leases before removing my conditions.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>Cash flow: the money left over after all expenses and financing.</li><li>Leases: contracts that run with the building in Quebec.</li><li>Vacancy: periods without a tenant to budget for.</li><li>Bad debt: unpaid rent to plan for.</li><li>Repair reserve: a provision for major repairs.</li></ul>"}], "qcm": [{"q": "An income property is judged mainly on:", "options": ["A) Its appearance", "B) Its numbers (income, expenses, cash flow)", "C) Its colour", "D) The neighbourhood alone"], "answer": 1, "explanation": "You buy it like a business (ch. 1)."}, {"q": "In Quebec, leases:", "options": ["A) Are cancelled on sale", "B) Run with the building", "C) Get rewritten", "D) Disappear"], "answer": 1, "explanation": "You inherit the tenants (ch. 2)."}, {"q": "A classic mistake is:", "options": ["A) Underestimating income", "B) Overestimating income and underestimating expenses", "C) Providing for a reserve", "D) Getting an inspection"], "answer": 1, "explanation": "The most common pitfall (ch. 3)."}, {"q": "A good project must hold up:", "options": ["A) Only if everything is perfect", "B) Even with vacancy and a major repair", "C) Without tenants", "D) Without a reserve"], "answer": 1, "explanation": "You test a conservative scenario (ch. 3)."}, {"q": "The numbers to use are:", "options": ["A) The seller's projections", "B) Verified real data", "C) Optimistic estimates", "D) None"], "answer": 1, "explanation": "Actual leases and expenses (ch. 2)."}, {"q": "An investor's offer should be:", "options": ["A) Unconditional", "B) Conditional (inspection, financing, leases)", "C) Verbal", "D) Random"], "answer": 1, "explanation": "The conditions protect you (ch. 4)."}, {"q": "Assuming you can easily evict is:", "options": ["A) Realistic", "B) Risky: the rules are strict", "C) Guaranteed", "D) Unimportant"], "answer": 1, "explanation": "Repossession/eviction is regulated (ch. 3)."}, {"q": "Cash flow is:", "options": ["A) The purchase price", "B) What is left once everything is paid", "C) The down payment", "D) The tax"], "answer": 1, "explanation": "The net cash flow (ch. 1)."}]}
+{
+ "number": 26,
+ "title": "Your First Income Property",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>Investing in a first income property is one of the best ways to build wealth in Quebec. But a plex isn't a house: you buy it like a business, with numbers, not with your heart.</p><p>This guide gives you the basics: assessing a building, calculating its profitability, financing it, and avoiding the classic first-time investor mistakes.</p><p>Each chapter ends with a lined “My notes” page.</p><!--enr--><p>Buying a first income property means going from buyer to investor — then to manager. This guide teaches you to think in numbers, to check a building before making an offer, to avoid the classic mistakes and to manage once you're the owner.</p><p>The through-line: emotion chooses a house, the numbers choose a building.</p>"
+  },
+  {
+   "title": "Thinking like an investor",
+   "objective": "Adopting the business logic of rental real estate.",
+   "html": "<p class=\"lede\">Adopting the business logic of rental real estate.</p>\n<p>An income property is judged on its numbers: rental income, expenses, financing, and the cash flow that's left. You don't buy a plex because it's pretty, but because its numbers hold up.</p>\n<ul><li>Income: current and potential rents.</li><li>Expenses: taxes, insurance, maintenance, management, vacancy, bad debts.</li><li>Financing: down payment, mortgage payments.</li><li>Cash flow: what's left once everything is paid.</li></ul>\n<!--enr--><p>An income property isn't a home: it's judged on its numbers, not on the crush. Income, expenses, cash flow and return come before the décor. Adopting this business logic from the first visit is what sets the investor apart from the merely emotional buyer.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Fall in love with the numbers, not the bricks. An ordinary building with solid numbers is a far better investment than a beautiful plex that loses money every month.</p></aside>"
+  },
+  {
+   "title": "Assessing a building before making an offer",
+   "objective": "Doing the checks specific to rentals.",
+   "html": "<p class=\"lede\">Doing the checks specific to rentals.</p>\n<ul><li>Analyze the leases, the current rents vs the market, the payment history.</li><li>Check the building's condition (roof, structure, plumbing, electrical): repairs across several units are expensive.</li><li>Obtain the real expenses (taxes, insurance, common-area energy, maintenance).</li><li>Account for vacancy and bad debts in the projections.</li></ul>\n<p>In Quebec, remember: the leases follow the building. You inherit the tenants and their conditions.</p>\n<!--enr--><p>Before making an offer, check the concrete facts: leases and current rents vs the market, expense history (taxes, insurance, energy, maintenance), the building's condition and upcoming work. A rent “below market” isn't an automatic gift — the increase rules govern the raise.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Require the real numbers (leases, expenses, invoices), not the seller's optimistic projections. A building is bought on verified data, not on promises.</p></aside>"
+  },
+  {
+   "title": "The classic first-time investor mistakes",
+   "objective": "Avoiding the most frequent traps.",
+   "html": "<p class=\"lede\">Avoiding the most frequent traps.</p>\n<ul><li>Overestimating income and underestimating expenses.</li><li>Forgetting vacancy, management and the reserve for major work.</li><li>Assuming you can easily raise rents or evict (strict rules).</li><li>Neglecting the inspection: a building hides more systems than a house.</li></ul>\n<p>A good project stays profitable even with a vacancy and a major repair in the same year. If it only holds up in the perfect scenario, it's too risky.</p>\n<!--enr--><p>The classic beginner mistakes: overestimating income, underestimating expenses, forgetting vacancy and maintenance, and neglecting the rental rules. A realistic budget, with a reserve, keeps you from discovering that your “good deal” loses money every month.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Build your numbers carefully: realistic rents, complete expenses, a margin for surprises. The seller's “on-paper” profitability is almost always prettier than reality.</p></aside>"
+  },
+  {
+   "title": "From analysis to offer",
+   "objective": "Structuring an investor's offer.",
+   "html": "<p class=\"lede\">Structuring an investor's offer.</p>\n<p>Once the numbers are validated, make a conditional offer: inspection, financing, and review of the leases and documents. These conditions protect you if the real numbers differ from what was advertised.</p>\n<p>The first building is a school: well chosen and well managed, it partly funds your own rise in skill and opens the door to the second.</p>\n<!--enr--><p>Once the numbers are validated, structure an investor's offer: inspection and financing conditions, review of the leases and financial statements, sufficient deadlines. You don't buy a building on the seller's word — you buy it on verified documents.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Always have the leases and expenses examined BEFORE your conditions expire. Discovering an inflated rent or a hidden expense after the purchase is too late.</p></aside>"
+  },
+  {
+   "title": "After the purchase: managing your first building",
+   "objective": "Going from buyer to landlord.",
+   "html": "<p class=\"lede\">Going from buyer to landlord.</p>\n<p>Buying a building also means becoming a <strong>manager</strong>. A few foundations to start well:</p><ul><li>Take over the current <strong>leases</strong> and get to know your tenants.</li><li>Keep simple <strong>accounting</strong> from the first month.</li><li>Build a <strong>reserve</strong> for maintenance and surprises.</li><li>React <strong>quickly</strong> to requests (good service reduces turnover).</li></ul><p>Rigorous management from the start makes the difference between a profitable investment and a source of stress.</p><!--enr--><p>After the purchase, you become a manager: take over the leases, keep accounting from the first month, build a maintenance reserve and react quickly to requests. Rigorous management makes the difference between a profitable investment and a source of stress.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Treat your building like a small business from day one: a dedicated account, up-to-date numbers and a maintenance reserve. That seriousness will also make financing the next one easier.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Define my budget and my investor borrowing capacity.</li><li>Learn to read a building's leases and expenses.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Analyze 2-3 buildings on their real numbers.</li><li>Make a conditional offer on the best file.</li></ol>\n<h3>Next</h3>\n<ol><li>Have it inspected and validate the leases before fulfilling my conditions.</li></ol><!--enr--><h3>Before making an offer</h3><ol><li>Obtain the leases, rents, and the building's expense history.</li><li>Build my realistic budget (with vacancy and a reserve) and validate my financing.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Cash flow: the money left after all expenses and the financing.</li><li>Leases: contracts that follow the building in Quebec.</li><li>Vacancy: periods without a tenant, to be budgeted.</li><li>Bad debts: unpaid rents to plan for.</li><li>Work reserve: a provision for major repairs.</li></ul><!--enr--><li>Income property: a property bought to generate rents.</li><li>Cash flow: what's left after all expenses and the mortgage.</li><li>Vacancy: a period without a tenant, to be budgeted.</li><li>Maintenance reserve: a sum set aside for repairs.</li><li>Lease: a rental contract that follows the building at sale.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "An income property is judged above all on:",
+   "options": [
+    "A) Its appearance",
+    "B) Its numbers (income, expenses, cash flow)",
+    "C) Its colour",
+    "D) The neighbourhood alone"
+   ],
+   "answer": 1,
+   "explanation": "You buy it like a business (ch. 1)."
+  },
+  {
+   "q": "In Quebec, the leases:",
+   "options": [
+    "A) Are cancelled at sale",
+    "B) Follow the building",
+    "C) Are rewritten",
+    "D) Disappear"
+   ],
+   "answer": 1,
+   "explanation": "You inherit the tenants (ch. 2)."
+  },
+  {
+   "q": "A classic mistake is:",
+   "options": [
+    "A) Underestimating income",
+    "B) Overestimating income and underestimating expenses",
+    "C) Planning a reserve",
+    "D) Getting an inspection"
+   ],
+   "answer": 1,
+   "explanation": "The most frequent trap (ch. 3)."
+  },
+  {
+   "q": "A good project should hold up:",
+   "options": [
+    "A) Only if everything is perfect",
+    "B) Even with a vacancy and a major repair",
+    "C) Without tenants",
+    "D) Without a reserve"
+   ],
+   "answer": 1,
+   "explanation": "You test a cautious scenario (ch. 3)."
+  },
+  {
+   "q": "The numbers to use are:",
+   "options": [
+    "A) The seller's projections",
+    "B) The real verified data",
+    "C) Optimistic estimates",
+    "D) None"
+   ],
+   "answer": 1,
+   "explanation": "Real leases and expenses (ch. 2)."
+  },
+  {
+   "q": "An investor's offer should be:",
+   "options": [
+    "A) Without conditions",
+    "B) Conditional (inspection, financing, leases)",
+    "C) Verbal",
+    "D) Random"
+   ],
+   "answer": 1,
+   "explanation": "The conditions protect you (ch. 4)."
+  },
+  {
+   "q": "Assuming you can easily evict is:",
+   "options": [
+    "A) Realistic",
+    "B) Risky: the rules are strict",
+    "C) Guaranteed",
+    "D) Unimportant"
+   ],
+   "answer": 1,
+   "explanation": "Repossession/eviction is regulated (ch. 3)."
+  },
+  {
+   "q": "Cash flow is:",
+   "options": [
+    "A) The purchase price",
+    "B) What's left once everything is paid",
+    "C) The down payment",
+    "D) The tax"
+   ],
+   "answer": 1,
+   "explanation": "The net cash flow (ch. 1)."
+  }
+ ]
+}

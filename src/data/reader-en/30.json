@@ -1,1 +1,136 @@
-{"number": 30, "title": "Tenants and the Rental Tribunal (TAL)", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>In Quebec, the landlord-tenant relationship is governed by precise rules and by the Rental Tribunal (TAL). Knowing them means avoiding conflicts, costly mistakes, and unpleasant surprises.</p><p>This guide covers the lease, tenant selection, rent increases, each party's rights and obligations, and the role of the TAL.</p><p>Informational content, not legal advice. Each chapter ends with a lined « My notes » page.</p>"}, {"title": "The lease and tenant selection", "objective": "Start on solid ground.", "html": "<p class=\"lede\">Start on solid ground.</p>\n<p>The lease (often the official TAL form) sets the terms of the tenancy: rent, term, conditions, building rules. Rigorous tenant selection is your best protection against problems.</p>\n<ul><li>Check references and payment history (within the bounds of the law).</li><li>Complete a clear and thorough lease.</li><li>Provide the mandatory documents and the building rules, where applicable.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>A good, well-chosen tenant is worth more than a unit rented quickly and carelessly. Take the time to select: it is your best insurance against unpaid rent and conflicts.</p></aside>"}, {"title": "The rent increase", "objective": "Increase rent correctly, within the rules.", "html": "<p class=\"lede\">Increase rent correctly, within the rules.</p>\n<p>A rent increase is regulated: it is done at lease renewal, with notice within the required timeframes, and the tenant has the right to refuse it. In the event of disagreement, the amount can be set by the TAL, which applies criteria (expenses, work, etc.).</p>\n<ul><li>Respect the notice periods for an increase.</li><li>Justify the increase (rises in taxes, insurance, major work).</li><li>Know that the tenant can refuse and that the TAL can decide.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never improvise an increase « by feel ». Respect the deadlines and document your justifications: that is what holds up if the file goes to the TAL.</p></aside>"}, {"title": "Each party's rights and obligations", "objective": "Know the framework to avoid disputes.", "html": "<p class=\"lede\">Know the framework to avoid disputes.</p>\n<ul><li>Landlord: provide a unit in good condition, carry out necessary repairs, respect the tenant's peaceful enjoyment of the premises.</li><li>Tenant: pay the rent on time, maintain the unit, respect the rules.</li><li>Access to the unit: the landlord must follow notice rules to visit or carry out work.</li></ul>\n<p>Most conflicts arise from a lack of awareness of these rules on both sides. Knowing them saves you a great deal of trouble.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Scrupulously respect the rules on access to the unit. Entering without proper notice is a common mistake that can put you in the wrong, even for a good reason.</p></aside>"}, {"title": "The role of the TAL", "objective": "Understand the tribunal that settles disputes.", "html": "<p class=\"lede\">Understand the tribunal that settles disputes.</p>\n<p>The Rental Tribunal (TAL) settles disputes between landlords and tenants: rent setting, non-payment, repossession of a unit, repairs, lease termination, etc. You file an application, and the tribunal renders a decision.</p>\n<p>Documenting your files well (leases, notices, communications, proof of payment or of work) is essential if you have to go before the TAL.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Document everything, all the time: leases, notices, exchanges, invoices. At the TAL, the party with written evidence is in a far stronger position than the one recounting from memory.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Put in place a rigorous selection process.</li><li>Use a clear and compliant lease.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Systematically document notices, communications, and invoices.</li><li>Learn about the increase deadlines and the access rules.</li></ol>\n<h3>Then</h3>\n<ol><li>Consult as needed on a proceeding before the TAL, files in hand.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>TAL: the Rental Tribunal, which settles rental disputes.</li><li>Lease: the tenancy contract, often the official TAL form.</li><li>Notice of increase: a notification governed by deadlines.</li><li>Peaceful enjoyment: the tenant's right to the quiet use of the unit.</li><li>Access rules: the notice conditions for visiting or carrying out work.</li></ul>"}], "qcm": [{"q": "In Quebec, rental disputes are settled by:", "options": ["A) The municipality", "B) The Rental Tribunal (TAL)", "C) The notary", "D) The police"], "answer": 1, "explanation": "The TAL is the competent tribunal (ch. 4)."}, {"q": "The best protection against problems is:", "options": ["A) Renting quickly", "B) Rigorous tenant selection", "C) No lease", "D) A high rent"], "answer": 1, "explanation": "A good, well-chosen tenant (ch. 1)."}, {"q": "A rent increase is done:", "options": ["A) Any time", "B) At renewal, with notice within the deadlines", "C) Without notice", "D) It is prohibited"], "answer": 1, "explanation": "Governed by deadlines (ch. 2)."}, {"q": "The tenant can:", "options": ["A) Always accept", "B) Refuse the increase, with the TAL able to decide", "C) Do nothing", "D) Set the rent alone"], "answer": 1, "explanation": "Refusal is possible (ch. 2)."}, {"q": "The landlord must, among other things:", "options": ["A) Ignore repairs", "B) Provide a unit in good condition and respect peaceful enjoyment", "C) Enter without notice", "D) Increase rent by feel"], "answer": 1, "explanation": "Basic obligations (ch. 3)."}, {"q": "To visit or carry out work, the landlord must:", "options": ["A) Enter freely", "B) Follow notice rules", "C) Notify the city", "D) Do nothing"], "answer": 1, "explanation": "Access rules to respect (ch. 3)."}, {"q": "Before the TAL, the major asset is:", "options": ["A) Memory", "B) Well-documented files", "C) Charm", "D) Luck"], "answer": 1, "explanation": "Written evidence prevails (ch. 4)."}, {"q": "Conflicts often arise from:", "options": ["A) A good lease", "B) A lack of awareness of the rules on both sides", "C) Too much documentation", "D) Nothing"], "answer": 1, "explanation": "Knowing the framework avoids trouble (ch. 3)."}]}
+{
+ "number": 30,
+ "title": "Tenants and the Administrative Housing Tribunal (TAL)",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>In Quebec, the landlord-tenant relationship is governed by precise rules and by the Administrative Housing Tribunal (TAL). Knowing them means avoiding conflicts, costly mistakes and nasty surprises.</p><p>This guide covers the lease, tenant selection, rent increases, everyone's rights and obligations, and the TAL's role.</p><p>Informational content, not legal advice. Each chapter ends with a lined “My notes” page.</p><!--enr--><p>Becoming a landlord means entering a precise legal framework. This guide covers the lease and tenant selection, the rent increase, everyone's rights and obligations, the TAL's role and how to react to late payments and conflicts.</p><p>The through-line: good practices at the start and rigorous written records avoid most disputes.</p>"
+  },
+  {
+   "title": "The lease and tenant selection",
+   "objective": "Starting on solid foundations.",
+   "html": "<p class=\"lede\">Starting on solid foundations.</p>\n<p>The lease (often the TAL's official form) governs the rental: rent, term, conditions, building bylaws. Rigorous tenant selection is your best protection against problems.</p>\n<ul><li>Check references and payment history (in compliance with the law).</li><li>Fill out a clear, complete lease.</li><li>Provide the mandatory documents and the building bylaws, where applicable.</li></ul>\n<!--enr--><p>It all starts with the lease (often the TAL's official form) and rigorous selection: verification of income, references and credit file, in compliance with the law. A good tenant well chosen at the start is worth more than ten trips to the tribunal later.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>A good tenant well chosen is worth more than a unit rented quickly and badly. Take the time to select: it's your best insurance against unpaid rent and conflicts.</p></aside>"
+  },
+  {
+   "title": "The rent increase",
+   "objective": "Raising properly, by the rules.",
+   "html": "<p class=\"lede\">Raising properly, by the rules.</p>\n<p>The rent increase is governed: it happens at the lease renewal, with a notice within the required deadlines, and the tenant has the right to refuse it. In case of disagreement, the setting can be brought to the TAL, which applies criteria (expenses, work, etc.).</p>\n<ul><li>Respect the increase-notice deadlines.</li><li>Justify the increase (tax increases, insurance, major work).</li><li>Know that the tenant can refuse and that the TAL can rule.</li></ul>\n<!--enr--><p>The rent increase is governed: it happens at the lease renewal, with a notice within the deadlines, and the tenant can accept it, refuse it or leave. Criteria (work, taxes, insurance) guide a reasonable raise. Improvising a raise exposes you to a refusal at the TAL.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never improvise an increase “by feel”. Respect the deadlines and document your justifications: that's what holds up if the file goes to the TAL.</p></aside>"
+  },
+  {
+   "title": "Everyone's rights and obligations",
+   "objective": "Knowing the framework to avoid disputes.",
+   "html": "<p class=\"lede\">Knowing the framework to avoid disputes.</p>\n<ul><li>Landlord: provide a unit in good condition, carry out the necessary repairs, respect peaceful enjoyment of the premises.</li><li>Tenant: pay the rent on time, maintain the unit, respect the bylaws.</li><li>Access to the unit: the landlord must respect notice rules to visit or do work.</li></ul>\n<p>Most conflicts arise from a lack of knowledge of these rules on both sides. Knowing them saves you a lot of trouble.</p>\n<!--enr--><p>Everyone has their rights and obligations: the landlord provides a unit in good condition and respects peaceful enjoyment; the tenant pays on time, maintains and respects the lease. Knowing this framework avoids most disputes — most arise from a misunderstanding of the rules.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Scrupulously respect the rules of access to the unit. Entering without a compliant notice is a frequent mistake that can put you in the wrong, even for a good reason.</p></aside>"
+  },
+  {
+   "title": "The role of the TAL",
+   "objective": "Understanding the tribunal that settles disputes.",
+   "html": "<p class=\"lede\">Understanding the tribunal that settles disputes.</p>\n<p>The Administrative Housing Tribunal (TAL) settles disputes between landlords and tenants: rent setting, non-payment, repossession of a dwelling, repairs, lease termination, etc. You file an application, and the tribunal renders a decision.</p>\n<p>Documenting your files well (leases, notices, communications, proof of payment or of work) is essential if you have to go to the TAL.</p>\n<!--enr--><p>The Administrative Housing Tribunal (TAL) settles disputes between landlords and tenants (unpaid rents, repossessions, repairs, increases). Its decisions are binding. A documented file (lease, notices, written exchanges) is your best asset if you have to resort to it.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Document everything, all the time: leases, notices, exchanges, invoices. At the TAL, the one with the written proof is in a far better position than the one recounting from memory.</p></aside>"
+  },
+  {
+   "title": "Late payments and conflicts: reacting well",
+   "objective": "Acting correctly when a problem arises.",
+   "html": "<p class=\"lede\">Acting correctly when a problem arises.</p>\n<p>Even with good selection, difficulties can arise. The key: react <strong>early and by the rules</strong>:</p><ul><li>Communicate <strong>quickly</strong> and in writing as soon as there's a late payment.</li><li>Document the <strong>exchanges</strong> and the breaches.</li><li>Know the <strong>recourses</strong> and deadlines provided by law.</li><li>Go through the <strong>Administrative Housing Tribunal</strong> if needed, with a solid file.</li></ul><p>Staying calm, sticking to the facts and respecting the procedure protects your rights as well as the tenant's.</p><!--enr--><p>Faced with a late payment or a conflict, react early and by the rules: communicate in writing at the first late payment, document everything, know your recourses and their deadlines. Don't wait three months of unpaid rent: a firm but courteous written reminder settles most situations before they escalate.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Don't wait three months of unpaid rent to act. A written reminder at the first late payment, courteous but firm, settles most situations before they escalate.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Put a rigorous selection process in place.</li><li>Use a clear, compliant lease.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Systematically document notices, communications and invoices.</li><li>Learn about the increase deadlines and the access rules.</li></ol>\n<h3>Next</h3>\n<ol><li>Consult if needed on a TAL application, files in hand.</li></ol><!--enr--><h3>As a landlord</h3><ol><li>Use the official lease and select rigorously (income, references, credit).</li><li>Document all exchanges and know the notice and recourse deadlines.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>TAL: Administrative Housing Tribunal, settles rental disputes.</li><li>Lease: a rental contract, often the TAL's official form.</li><li>Increase notice: a notification governed by deadlines.</li><li>Peaceful enjoyment: the tenant's right to quiet use of the unit.</li><li>Access rules: the notice conditions to visit or do work.</li></ul><!--enr--><li>Lease: a rental contract, often the TAL's official form.</li><li>Renewal: the renewal of the lease, the moment of the increase.</li><li>Peaceful enjoyment: the tenant's right to quiet use of the unit.</li><li>TAL: Administrative Housing Tribunal, which settles disputes.</li><li>Notice: a written notification (increase, repossession) within precise deadlines.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "In Quebec, rental disputes are settled by:",
+   "options": [
+    "A) The municipality",
+    "B) The Administrative Housing Tribunal (TAL)",
+    "C) The notary",
+    "D) The police"
+   ],
+   "answer": 1,
+   "explanation": "The TAL is the competent tribunal (ch. 4)."
+  },
+  {
+   "q": "The best protection against problems is:",
+   "options": [
+    "A) Renting quickly",
+    "B) Rigorous tenant selection",
+    "C) No lease",
+    "D) A high rent"
+   ],
+   "answer": 1,
+   "explanation": "A good tenant well chosen (ch. 1)."
+  },
+  {
+   "q": "The rent increase happens:",
+   "options": [
+    "A) Any time",
+    "B) At renewal, with a notice within the deadlines",
+    "C) Without notice",
+    "D) It's forbidden"
+   ],
+   "answer": 1,
+   "explanation": "Governed by deadlines (ch. 2)."
+  },
+  {
+   "q": "The tenant can:",
+   "options": [
+    "A) Always accept",
+    "B) Refuse the increase, with the TAL able to rule",
+    "C) Do nothing",
+    "D) Set the rent alone"
+   ],
+   "answer": 1,
+   "explanation": "A refusal is possible (ch. 2)."
+  },
+  {
+   "q": "The landlord must notably:",
+   "options": [
+    "A) Ignore repairs",
+    "B) Provide a unit in good condition and respect peaceful enjoyment",
+    "C) Enter without notice",
+    "D) Raise by feel"
+   ],
+   "answer": 1,
+   "explanation": "Basic obligations (ch. 3)."
+  },
+  {
+   "q": "To visit or do work, the landlord must:",
+   "options": [
+    "A) Enter freely",
+    "B) Respect notice rules",
+    "C) Notify the city",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Access rules to respect (ch. 3)."
+  },
+  {
+   "q": "Before the TAL, the major asset is:",
+   "options": [
+    "A) Memory",
+    "B) Well-documented files",
+    "C) Charm",
+    "D) Chance"
+   ],
+   "answer": 1,
+   "explanation": "Written proof prevails (ch. 4)."
+  },
+  {
+   "q": "Conflicts often arise:",
+   "options": [
+    "A) From a good lease",
+    "B) From a lack of knowledge of the rules on both sides",
+    "C) From too much documentation",
+    "D) From nothing"
+   ],
+   "answer": 1,
+   "explanation": "Knowing the framework avoids trouble (ch. 3)."
+  }
+ ]
+}

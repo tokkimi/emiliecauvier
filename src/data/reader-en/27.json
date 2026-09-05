@@ -1,1 +1,136 @@
-{"number": 27, "title": "Calculating Profitability", "chapters": [{"title": "Introduction", "objective": "", "html": "<p>In rental real estate, profitability isn't guessed: it's calculated. Three simple indicators — cash flow, the capitalization rate (cap rate), and the gross rent multiplier (GRM) — tell you in a few minutes whether a building is worth an offer.</p><p>This guide explains each calculation, with clear examples, so you can compare buildings objectively.</p><p>Each chapter ends with a lined « My notes » page for you to work out YOUR own numbers.</p>"}, {"title": "Net operating income (NOI)", "objective": "Calculate what the building generates before financing.", "html": "<p class=\"lede\">Calculate what the building generates before financing.</p>\n<p>Net operating income (NOI) is the basis for everything: rental income (minus vacancy) less operating expenses (taxes, insurance, maintenance, management, common-area energy) — BUT before mortgage payments.</p>\n<p>Example: rents of $36,000/year − 5% vacancy ($1,800) = $34,200; expenses $12,000; NOI = $22,200.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never confuse gross rents with NOI. A building with high rents but high expenses can generate less NOI than a more modest, efficient one.</p></aside>"}, {"title": "Cash flow", "objective": "Know what actually stays in your pocket.", "html": "<p class=\"lede\">Know what actually stays in your pocket.</p>\n<p>Cash flow is NOI minus mortgage payments (principal + interest). It is the money left each year after paying for EVERYTHING. Positive cash flow is generally the goal; negative cash flow means you are funding the building out of your own pocket.</p>\n<p>Example: NOI $22,200 − mortgage $18,000/year = cash flow of $4,200/year.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Slightly positive or neutral cash flow can be acceptable if the building is appreciating and the tenant is paying down your principal. But large negative cash flow is a risk, especially if rates rise.</p></aside>"}, {"title": "The capitalization rate (cap rate)", "objective": "Compare buildings independently of financing.", "html": "<p class=\"lede\">Compare buildings independently of financing.</p>\n<p>The capitalization rate = NOI ÷ purchase price, expressed as a percentage. It measures the building's return before financing, which lets you compare buildings against one another and against their area.</p>\n<p>Example: NOI $22,200 ÷ price $400,000 = a 5.55% cap rate. A higher cap rate means (all else being equal) a better return — but sometimes more risk or a less desirable area.</p>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Always compare a building's cap rate to those in the same area. An abnormally high cap rate often hides something: a poor neighbourhood, major work ahead, or unsustainable rents.</p></aside>"}, {"title": "The GRM and the limits of ratios", "objective": "Use a quick benchmark and know its limits.", "html": "<p class=\"lede\">Use a quick benchmark and know its limits.</p>\n<p>The gross rent multiplier (GRM) = purchase price ÷ annual gross income. It is a QUICK comparison benchmark (a lower GRM is generally more attractive), but a crude one because it ignores expenses.</p>\n<ul><li>GRM: good for a quick first screen, not for deciding.</li><li>Cap rate and cash flow: more reliable because they account for expenses (and financing, for cash flow).</li><li>Always validate with the real numbers before making an offer.</li></ul>\n<aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Use the GRM for an initial screen, never for a final decision. Two buildings with the same GRM can be very different once the real expenses are factored in.</p></aside>"}, {"title": "Action plan", "objective": "", "html": "<p class=\"lede\">Your next steps, in concrete terms.</p>\n<h3>This week</h3>\n<ol><li>Gather the real rents and expenses of the target building.</li><li>Calculate the NOI.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Calculate cash flow, cap rate, and GRM.</li><li>Compare against other buildings and the area's cap rate.</li></ol>\n<h3>Then</h3>\n<ol><li>Decide whether to offer based on validated numbers, with Emilie.</li></ol>"}, {"title": "Resources & glossary", "objective": "", "html": "<ul><li>NOI: net operating income, income minus expenses, before financing.</li><li>Cash flow: NOI minus mortgage payments.</li><li>Cap rate: NOI ÷ purchase price, the return before financing.</li><li>GRM: price ÷ gross income, a quick comparison benchmark.</li><li>Vacancy: the percentage of lost rent to build into the calculations.</li></ul>"}], "qcm": [{"q": "NOI is calculated:", "options": ["A) After the mortgage", "B) Before mortgage payments", "C) Without expenses", "D) On price alone"], "answer": 1, "explanation": "Income minus expenses, before financing (ch. 1)."}, {"q": "Cash flow is:", "options": ["A) NOI minus the mortgage", "B) Gross rents", "C) The purchase price", "D) The down payment"], "answer": 0, "explanation": "What is left after paying everything (ch. 2)."}, {"q": "Negative cash flow means:", "options": ["A) A gain", "B) That you are funding the building out of pocket", "C) Nothing", "D) An exemption"], "answer": 1, "explanation": "Expenses exceed net income (ch. 2)."}, {"q": "The cap rate is:", "options": ["A) NOI ÷ purchase price", "B) Price ÷ rents", "C) Rents − expenses", "D) Down payment ÷ price"], "answer": 0, "explanation": "The return before financing (ch. 3)."}, {"q": "An abnormally high cap rate can hide:", "options": ["A) A sure bargain", "B) A poor neighbourhood or major work ahead", "C) Nothing", "D) A gift"], "answer": 1, "explanation": "To be compared with the area (ch. 3)."}, {"q": "The GRM is:", "options": ["A) Price ÷ gross income", "B) NOI ÷ price", "C) Annual cash flow", "D) The interest rate"], "answer": 0, "explanation": "A quick benchmark (ch. 4)."}, {"q": "The GRM is mainly used for:", "options": ["A) Deciding on its own", "B) A quick first screen", "C) Calculating tax", "D) Setting the rent"], "answer": 1, "explanation": "It ignores expenses (ch. 4)."}, {"q": "To decide, you rely mainly on:", "options": ["A) The GRM alone", "B) The real cap rate and cash flow", "C) Appearance", "D) Chance"], "answer": 1, "explanation": "They factor in expenses (ch. 4)."}]}
+{
+ "number": 27,
+ "title": "Calculating Rental Profitability",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>In rental real estate, profitability isn't guessed: it's calculated. Three simple indicators — cash flow, the capitalization rate (cap rate) and the gross rent multiplier (GRM) — tell you in a few minutes whether a building deserves an offer.</p><p>This guide explains each calculation, with clear examples, to compare buildings objectively.</p><p>Each chapter ends with a lined “My notes” page to calculate YOUR own numbers.</p><!--enr--><p>A building's profitability is calculated, not guessed. This guide breaks down the key indicators — NOI, cash flow, capitalization rate, GRM, return on down payment — and above all their limits, to decide on facts.</p><p>The key message: no single ratio tells everything; it's the whole set, cross-checked with the building's condition, that informs the decision.</p>"
+  },
+  {
+   "title": "Net operating income (NOI)",
+   "objective": "Calculating what the building generates before financing.",
+   "html": "<p class=\"lede\">Calculating what the building generates before financing.</p>\n<p>Net operating income (NOI) is the basis of everything: rental income (minus vacancy) minus operating expenses (taxes, insurance, maintenance, management, common-area energy) — BUT before the mortgage payments.</p>\n<p>Example: rents $36,000/year − 5% vacancy ($1,800) = $34,200; expenses $12,000; NOI = $22,200.</p>\n<!--enr--><p>The NOI (income minus operating expenses, before financing) is the base measure of a building's performance. It lets you compare buildings to one another without being skewed by each one's financing. A solid NOI is the foundation of any good investment.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Never confuse gross rents and NOI. A building with big rents but high expenses can generate less NOI than a more modest, efficient one.</p></aside>"
+  },
+  {
+   "title": "Cash flow",
+   "objective": "Knowing what actually stays in your pockets.",
+   "html": "<p class=\"lede\">Knowing what actually stays in your pockets.</p>\n<p>Cash flow is NOI minus the mortgage payments (principal + interest). It's the money left each year after paying EVERYTHING. Positive cash flow is generally the goal; negative cash flow means you're funding the building out of your own pocket.</p>\n<p>Example: NOI $22,200 − mortgage $18,000/year = cash flow of $4,200/year.</p>\n<!--enr--><p>Cash flow is NOI minus the mortgage payments: the real money left (or missing) each month. Negative cash flow means you're funding the building out of your own pocket. Aim at least for break-even, with a margin for surprises and vacancy.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Slightly positive or neutral cash flow can be acceptable if the building is gaining value and the tenant is paying down your principal. But large negative cash flow is a risk, especially if rates rise.</p></aside>"
+  },
+  {
+   "title": "The capitalization rate (cap rate)",
+   "objective": "Comparing buildings independently of financing.",
+   "html": "<p class=\"lede\">Comparing buildings independently of financing.</p>\n<p>The capitalization rate = NOI ÷ purchase price, expressed as a percentage. It measures the building's return before financing, which lets you compare buildings to one another and to their area.</p>\n<p>Example: NOI $22,200 ÷ price $400,000 = a 5.55% cap rate. A higher cap rate means (all else equal) a better return — but sometimes more risk or a less sought-after area.</p>\n<!--enr--><p>The capitalization rate (NOI ÷ price) lets you compare buildings independently of financing, like a building's “return”. A higher cap rate can signal a better return… or higher risk. Always compare similar buildings, in similar areas.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Always compare a building's cap rate with those of the same area. An abnormally high cap rate often hides something: a bad neighbourhood, major work coming, or unsustainable rents.</p></aside>"
+  },
+  {
+   "title": "The GRM and the limits of ratios",
+   "objective": "Using a quick benchmark and knowing its limits.",
+   "html": "<p class=\"lede\">Using a quick benchmark and knowing its limits.</p>\n<p>The gross rent multiplier (GRM) = purchase price ÷ annual gross income. It's a QUICK comparison benchmark (a lower GRM is generally more attractive), but crude because it ignores expenses.</p>\n<ul><li>GRM: good for a first quick sort, not for deciding.</li><li>Cap rate and cash flow: more reliable because they account for expenses (and financing for cash flow).</li><li>Always validate with the real numbers before making an offer.</li></ul>\n<!--enr--><p>The GRM (price ÷ gross income) is a quick benchmark, but crude: it ignores expenses. Use it for a first sort, never to decide. Ratios are tools, not verdicts: always cross-check them with the real numbers and the building's condition.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Use the GRM for a first sort, never for a final decision. Two buildings with the same GRM can be very different once the real expenses are included.</p></aside>"
+  },
+  {
+   "title": "Return on down payment and leverage",
+   "objective": "Measuring what your invested money brings in.",
+   "html": "<p class=\"lede\">Measuring what your invested money brings in.</p>\n<p>Beyond the classic ratios, one figure speaks directly to the investor: the <strong>return on down payment</strong> (cash-on-cash) — the annual cash flow relative to the money actually invested.</p><p>That's where <strong>leverage</strong> comes in: by financing part of the price, you invest less of your own money to control a bigger asset.</p><ul><li>Leverage <strong>amplifies</strong> the return… but also the risk.</li><li>Negative cash flow turns leverage into a burden.</li></ul><!--enr--><p>The return on down payment (cash-on-cash) measures what YOUR invested money brings in. That's where leverage comes in: financing part of the price amplifies the return… but also the risk. Negative cash flow turns leverage into a burden: always keep a margin.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Leverage is a double-edged sword: it inflates your returns when all goes well, but amplifies losses if cash flow turns negative. Always keep a margin to absorb a bad year.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Gather the real rents and expenses of the target building.</li><li>Calculate the NOI.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Calculate cash flow, cap rate and GRM.</li><li>Compare to the buildings and the cap rate of the area.</li></ol>\n<h3>Next</h3>\n<ol><li>Decide whether to make an offer based on validated numbers, with Emilie.</li></ol><!--enr--><h3>To analyze a building</h3><ol><li>Calculate NOI, cash flow and return on down payment from the real numbers.</li><li>Test a rate increase and a vacancy to check my margin.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>NOI: net operating income, income minus expenses, before financing.</li><li>Cash flow: NOI minus the mortgage payments.</li><li>Cap rate: NOI ÷ purchase price, the return before financing.</li><li>GRM: price ÷ gross income, a quick comparison benchmark.</li><li>Vacancy: the percentage of lost rents to include in the calculations.</li></ul><!--enr--><li>NOI: income minus operating expenses, before financing.</li><li>Cash flow: NOI minus the mortgage payments.</li><li>Capitalization rate: NOI ÷ price, to compare buildings.</li><li>GRM: price ÷ gross income, a quick, crude benchmark.</li><li>Leverage: the use of financing that amplifies return and risk.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "The NOI is calculated:",
+   "options": [
+    "A) After the mortgage",
+    "B) Before the mortgage payments",
+    "C) Without the expenses",
+    "D) On the price alone"
+   ],
+   "answer": 1,
+   "explanation": "Income minus expenses, before financing (ch. 1)."
+  },
+  {
+   "q": "Cash flow is:",
+   "options": [
+    "A) NOI minus the mortgage",
+    "B) The gross rents",
+    "C) The purchase price",
+    "D) The down payment"
+   ],
+   "answer": 0,
+   "explanation": "What's left after paying everything (ch. 2)."
+  },
+  {
+   "q": "Negative cash flow means:",
+   "options": [
+    "A) A gain",
+    "B) That you're funding the building out of your pocket",
+    "C) Nothing",
+    "D) An exemption"
+   ],
+   "answer": 1,
+   "explanation": "Expenses exceed the net income (ch. 2)."
+  },
+  {
+   "q": "The cap rate is:",
+   "options": [
+    "A) NOI ÷ purchase price",
+    "B) Price ÷ rents",
+    "C) Rents − expenses",
+    "D) Down payment ÷ price"
+   ],
+   "answer": 0,
+   "explanation": "The return before financing (ch. 3)."
+  },
+  {
+   "q": "An abnormally high cap rate can hide:",
+   "options": [
+    "A) A sure bargain",
+    "B) A bad neighbourhood or major work coming",
+    "C) Nothing",
+    "D) A gift"
+   ],
+   "answer": 1,
+   "explanation": "To compare to the area (ch. 3)."
+  },
+  {
+   "q": "The GRM is:",
+   "options": [
+    "A) Price ÷ gross income",
+    "B) NOI ÷ price",
+    "C) Annual cash flow",
+    "D) The interest rate"
+   ],
+   "answer": 0,
+   "explanation": "A quick benchmark (ch. 4)."
+  },
+  {
+   "q": "The GRM mainly serves for:",
+   "options": [
+    "A) Deciding on its own",
+    "B) A first quick sort",
+    "C) Calculating tax",
+    "D) Setting the rent"
+   ],
+   "answer": 1,
+   "explanation": "It ignores the expenses (ch. 4)."
+  },
+  {
+   "q": "To decide, you rely mainly on:",
+   "options": [
+    "A) The GRM alone",
+    "B) The real cap rate and cash flow",
+    "C) Appearance",
+    "D) Chance"
+   ],
+   "answer": 1,
+   "explanation": "They include the expenses (ch. 4)."
+  }
+ ]
+}
