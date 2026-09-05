@@ -1,0 +1,136 @@
+{
+ "number": 50,
+ "title": "Buying a Cottage",
+ "chapters": [
+  {
+   "title": "Introduction",
+   "objective": "",
+   "html": "<p>A cottage or second home is a dream for many Quebecers — the Laurentians, the North Shore, a lakeside. But buying in the country involves checks quite different from those of a city house.</p><p>This guide covers the particular financing, the checks specific to rural properties (water, sewer, access, shoreline zoning), and the reality of seasonal maintenance.</p><p>Informational content. Each chapter ends with a lined “My notes” page.</p><!--enr--><p>The cottage is a dream, but a second home follows rules quite different from a principal residence: financing, rural checks, shoreline zoning, maintenance. This guide covers it all, so you buy with your eyes open.</p><p>The idea: validate the financing, the checks and the real use before letting yourself be won over by the view.</p>"
+  },
+  {
+   "title": "Financing a second home",
+   "objective": "Understanding the rules that differ from a principal residence.",
+   "html": "<p class=\"lede\">Understanding the rules that differ from a principal residence.</p>\n<p>A second home isn't always financed like a principal residence: the down payment can be higher and the conditions different, especially for very remote, seasonal or non-year-round properties.</p>\n<ul><li>A potentially larger down payment.</li><li>Some properties (seasonal access, not insulated for winter) are harder to finance and insure.</li><li>Confirm early with a mortgage broker.</li></ul>\n<!--enr--><p>A second home isn't financed like a principal residence: the down payment is often higher and the conditions different, especially for a four-season vs three-season cottage, or depending on access (a year-round maintained road?). Validate the financing BEFORE falling in love with a cottage.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Check the financing BEFORE falling in love with a remote cottage. A property that isn't habitable year-round or has seasonal access can be far harder to finance and insure than you'd imagine.</p></aside>"
+  },
+  {
+   "title": "The checks specific to rural properties",
+   "objective": "Checking what doesn't exist in the city.",
+   "html": "<p class=\"lede\">Checking what doesn't exist in the city.</p>\n<ul><li>Water: a well (flow, potability, tests) rather than a municipal water main.</li><li>Sewer: a septic system (age, compliance, maintenance) rather than a municipal network.</li><li>Access: private road, snow removal, right-of-way easements, seasonal access.</li><li>Building: insulation and heating suited to four-season use or not.</li></ul>\n<p>A dried-up well or a non-compliant septic system can be very costly: these elements must be checked before buying.</p>\n<!--enr--><p>Rural properties impose checks that don't exist in the city: water (a well — flow, potability, tests), sewer (a septic tank and leaching field, age and compliance), access and snow removal, electricity, and sometimes rights-of-way. These elements are costly to fix: inspect them seriously.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Have the well tested (flow and potability) and the septic system checked by professionals. In the country, those are the two items that hold the worst — and most costly — surprises.</p></aside>"
+  },
+  {
+   "title": "Shoreline zoning and regulation",
+   "objective": "Knowing the rules by a lake or in a protected zone.",
+   "html": "<p class=\"lede\">Knowing the rules by a lake or in a protected zone.</p>\n<p>Waterfront and natural-setting properties are subject to specific rules: shoreline protection strips, restrictions on building or renovating near the water, flood zones, protected wetlands. These rules limit what you'll be able to do.</p>\n<p>Check the zoning and the environmental constraints with the municipality BEFORE buying, especially if you have development plans.</p>\n<!--enr--><p>By a lake or in a protected zone, the regulation is strict: shoreline buffers, wetlands, permits to build, renovate or cut down trees. What seems harmless can be prohibited. Look into it with the municipality and the RCM before buying and planning any work.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Before buying on the water, look into the shoreline protection strip and the flood zones. What you dream of building or arranging near the water is often strictly regulated.</p></aside>"
+  },
+  {
+   "title": "The reality of maintenance and use",
+   "objective": "Buying with knowledge of the real burden.",
+   "html": "<p class=\"lede\">Buying with knowledge of the real burden.</p>\n<p>A second home is a second house to maintain: seasonal opening and closing, minimal heating in winter, grounds upkeep, remote management. Honestly assess the time and budget you'll devote to it, and the real frequency of use.</p>\n<p>Some make their cottage pay through rental (mind the short-term rules, see the dedicated guide). Others keep it purely personal: in every case, it's a commitment, not just a dream.</p>\n<!--enr--><p>A cottage is a second property to maintain, often remotely: seasonal opening/closing, monitoring, freeze-protection heating, specific insurance, travel time. Many cottages are used less often than expected: honestly assess the real burden vs the use.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Be honest about how often you'll really use it. A cottage that's little used but has to be maintained can become a burden; well chosen and realistic, it's a source of lasting happiness.</p></aside>"
+  },
+  {
+   "title": "Family use, rental or both?",
+   "objective": "Clarifying the project behind the purchase.",
+   "html": "<p class=\"lede\">Clarifying the project behind the purchase.</p>\n<p>Before buying a cottage, clarify what you really expect from it — that guides everything else:</p><ul><li><strong>Family use</strong>: favour location, comfort and distance from home.</li><li><strong>Rental income</strong>: check the zoning, tourist demand and the rules (see short-term rentals).</li><li><strong>Both</strong>: a mixed use, to balance between family availability and the rental calendar.</li></ul><p>A cottage bought “for the family” then rented without checking the rules can quickly turn into a headache.</p><!--enr--><p>Clarify the project behind the purchase: family use (location, comfort, distance), rental income (zoning, demand, short-term rules), or both (to balance). A cottage bought “for the family” then rented without checking the rules can quickly turn into a headache.</p><aside class=\"tip\"><span class=\"tip__label\">Emilie's tip</span><p>Be honest about the real use: many cottages are used less often than expected. If the budget depends on rental income, validate the zoning and the demand BEFORE buying, not after.</p></aside>"
+  },
+  {
+   "title": "Action plan",
+   "objective": "",
+   "html": "<p class=\"lede\">Your next steps, concretely.</p>\n<h3>This week</h3>\n<ol><li>Validate the financing of a second home.</li><li>List the rural checks to plan for.</li></ol>\n<h3>Within 30 days</h3>\n<ol><li>Have the well and septic system tested.</li><li>Check shoreline zoning and environmental constraints.</li></ol>\n<h3>Next</h3>\n<ol><li>Honestly assess the use and maintenance before making an offer.</li></ol><!--enr--><h3>Before buying</h3><ol><li>Validate the financing of a second home and year-round access.</li><li>Check water, sewer, shoreline zoning and clarify the planned use.</li></ol>"
+  },
+  {
+   "title": "Resources & glossary",
+   "objective": "",
+   "html": "<ul><li>Second home: a cottage or vacation home, with particular financing.</li><li>Well: a water source to test (flow, potability).</li><li>Septic system: wastewater treatment, to check (age, compliance).</li><li>Shoreline protection strip: a regulated zone at the water's edge.</li><li>Seasonal access: a road not maintained in winter, affecting financing and use.</li></ul><!--enr--><li>Second home: a vacation property, with different financing.</li><li>Septic tank: a standalone sewer system, to check (age, compliance).</li><li>Shoreline buffer: a protected zone at the lake's edge, with strict rules.</li><li>Four-season cottage: habitable year-round, vs three-season.</li><li>Right-of-way easement: a right of access crossing another lot.</li>"
+  }
+ ],
+ "qcm": [
+  {
+   "q": "A second home is financed:",
+   "options": [
+    "A) Always like a principal residence",
+    "B) Sometimes with a higher down payment and other conditions",
+    "C) With no down payment",
+    "D) For free"
+   ],
+   "answer": 1,
+   "explanation": "Different rules (ch. 1)."
+  },
+  {
+   "q": "In the country, water often comes from:",
+   "options": [
+    "A) The municipal water main",
+    "B) A well (to test)",
+    "C) Rain only",
+    "D) Nowhere"
+   ],
+   "answer": 1,
+   "explanation": "Flow and potability to check (ch. 2)."
+  },
+  {
+   "q": "The sewer in the country is often:",
+   "options": [
+    "A) Municipal",
+    "B) A septic system (to check)",
+    "C) Non-existent",
+    "D) Shared with the city"
+   ],
+   "answer": 1,
+   "explanation": "Age and compliance matter (ch. 2)."
+  },
+  {
+   "q": "Waterfront properties are subject to:",
+   "options": [
+    "A) No rules",
+    "B) Rules (shoreline buffer, flood zones)",
+    "C) Lower taxes",
+    "D) Nothing"
+   ],
+   "answer": 1,
+   "explanation": "Environmental constraints (ch. 3)."
+  },
+  {
+   "q": "Before buying on the water, you must check:",
+   "options": [
+    "A) The colour of the dock",
+    "B) The shoreline zoning and the constraints",
+    "C) Nothing",
+    "D) The weather"
+   ],
+   "answer": 1,
+   "explanation": "What you can arrange is regulated (ch. 3)."
+  },
+  {
+   "q": "A second home is:",
+   "options": [
+    "A) Maintenance-free",
+    "B) A second house to maintain",
+    "C) Always rented",
+    "D) Free to manage"
+   ],
+   "answer": 1,
+   "explanation": "A real commitment (ch. 4)."
+  },
+  {
+   "q": "Before buying a cottage, you must first:",
+   "options": [
+    "A) Rent it out right away",
+    "B) Clarify the planned use (family, rental, mixed)",
+    "C) Ignore the zoning",
+    "D) Pay cash"
+   ],
+   "answer": 1,
+   "explanation": "Clarify the project (usage ch.)."
+  },
+  {
+   "q": "Counting on a cottage's rental income requires you to:",
+   "options": [
+    "A) Check nothing",
+    "B) Validate the zoning and the demand before buying",
+    "C) Buy first, check later",
+    "D) Avoid insurance"
+   ],
+   "answer": 1,
+   "explanation": "Check before buying (usage ch.)."
+  }
+ ]
+}
