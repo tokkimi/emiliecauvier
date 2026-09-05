@@ -1,0 +1,338 @@
+[
+  {
+    "number": 1,
+    "slug": "devenir-proprietaire-au-quebec",
+    "title": "Becoming a Homeowner in Quebec",
+    "subtitle": "The complete first-time buyer’s guide — from the idea to the keys",
+    "collection": "Buyers"
+  },
+  {
+    "number": 2,
+    "slug": "cinq-erreurs-a-10000-de-l-acheteur",
+    "title": "The 5 Mistakes That Cost Buyers $10,000",
+    "subtitle": "Costly first-purchase traps — and how to avoid them",
+    "collection": "Buyers"
+  },
+  {
+    "number": 3,
+    "slug": "la-preapprobation-hypothecaire-decodee",
+    "title": "Mortgage Pre-Approval, Decoded",
+    "subtitle": "Understand, prepare for and secure strong financing",
+    "collection": "Buyers"
+  },
+  {
+    "number": 4,
+    "slug": "la-taxe-de-bienvenue-expliquee",
+    "title": "The Welcome Tax, Explained",
+    "subtitle": "Quebec land transfer duties — calculation, deadline and special cases",
+    "collection": "Buyers"
+  },
+  {
+    "number": 5,
+    "slug": "acheter-en-copropriete-condo",
+    "title": "Buying a Condo in Co-Ownership",
+    "subtitle": "Declaration, contingency fund and fees — buy with no bad surprises",
+    "collection": "Buyers"
+  },
+  {
+    "number": 6,
+    "slug": "checklist-visite-inspection",
+    "title": "Property Visit & Inspection Checklist",
+    "subtitle": "The buyer’s checklist for seeing past the decor",
+    "collection": "Buyers"
+  },
+  {
+    "number": 7,
+    "slug": "promesse-achat-gagnante",
+    "title": "Writing a Strong Promise to Purchase",
+    "subtitle": "Price, conditions, deadlines and offer strategy — without trapping yourself",
+    "collection": "Buyers"
+  },
+  {
+    "number": 8,
+    "slug": "duplex-triplex-habiter-louer",
+    "title": "Buying a Duplex or Triplex to Live In and Rent Out",
+    "subtitle": "Become an owner-occupant while tenants help pay the mortgage",
+    "collection": "Buyers"
+  },
+  {
+    "number": 9,
+    "slug": "acheter-neuf-vs-ancien-gcr",
+    "title": "Buying New vs. Existing Property",
+    "subtitle": "New construction, GCR warranty and resale homes — how to choose well",
+    "collection": "Buyers"
+  },
+  {
+    "number": 10,
+    "slug": "financer-mise-de-fonds-rap-celiapp-don",
+    "title": "Financing Your Down Payment",
+    "subtitle": "HBP, FHSA and family gifts — build your down payment wisely",
+    "collection": "Buyers"
+  },
+  {
+    "number": 11,
+    "slug": "choisir-son-quartier-laval-rive-nord",
+    "title": "Choosing the Right Neighbourhood",
+    "subtitle": "Laval and the North Shore — find the area that fits your life",
+    "collection": "Buyers"
+  },
+  {
+    "number": 12,
+    "slug": "acheter-a-montreal-arrondissements",
+    "title": "Buying in Montréal",
+    "subtitle": "The borough guide — finding your neighbourhood in the city",
+    "collection": "Buyers"
+  },
+  {
+    "number": 13,
+    "slug": "les-vrais-frais-de-l-achat",
+    "title": "The Real Costs of Buying",
+    "subtitle": "Notary, inspection, adjustments and more — the full budget, no surprises",
+    "collection": "Buyers"
+  },
+  {
+    "number": 14,
+    "slug": "sols-argileux-pyrite-drain-francais",
+    "title": "Clay soils, pyrite and French drains",
+    "subtitle": "The Québec-specific field checks — buying with your eyes open",
+    "collection": "Buyers"
+  },
+  {
+    "number": 15,
+    "slug": "vendre-au-meilleur-prix-7-etapes",
+    "title": "Selling at the Best Price",
+    "subtitle": "The 7-step game plan — from pricing to closing",
+    "collection": "Sellers"
+  },
+  {
+    "number": 16,
+    "slug": "home-staging-express",
+    "title": "Express home staging",
+    "subtitle": "Getting your property sale-ready in a weekend, room by room, on a budget",
+    "collection": "Sellers"
+  },
+  {
+    "number": 17,
+    "slug": "fixer-le-bon-prix-analyse-comparative",
+    "title": "Setting the right price",
+    "subtitle": "The comparative market analysis explained — selling at fair value",
+    "collection": "Sellers"
+  },
+  {
+    "number": 18,
+    "slug": "vendre-seul-duproprio-vs-courtier",
+    "title": "Selling on Your Own or With a Broker",
+    "subtitle": "DuProprio vs. a real estate broker — the real math, no myths",
+    "collection": "Sellers"
+  },
+  {
+    "number": 19,
+    "slug": "declaration-du-vendeur-vices-caches",
+    "title": "The Seller’s Declaration",
+    "subtitle": "Avoid latent defects and lawsuits — sell with peace of mind",
+    "collection": "Sellers"
+  },
+  {
+    "number": 20,
+    "slug": "vendre-son-condo",
+    "title": "Selling your condo",
+    "subtitle": "Documents, fees and co-ownership-specific pitfalls",
+    "collection": "Sellers"
+  },
+  {
+    "number": 21,
+    "slug": "photos-video-marketing",
+    "title": "Photos, Video and Marketing",
+    "subtitle": "Selling in the digital age — the first showing happens online",
+    "collection": "Sellers"
+  },
+  {
+    "number": 22,
+    "slug": "gerer-les-offres-multiples-vendeur",
+    "title": "Handling Multiple Offers as a Seller",
+    "subtitle": "Turn competition into a better outcome, without losing control",
+    "collection": "Sellers"
+  },
+  {
+    "number": 23,
+    "slug": "vendre-propriete-heritee-succession",
+    "title": "Selling an inherited property",
+    "subtitle": "Estate — selling an inherited property with peace of mind",
+    "collection": "Sellers"
+  },
+  {
+    "number": 24,
+    "slug": "vendre-separation-divorce",
+    "title": "Selling during a separation",
+    "subtitle": "Separation or divorce — selling the property with clarity and calm",
+    "collection": "Sellers"
+  },
+  {
+    "number": 25,
+    "slug": "certificat-de-localisation",
+    "title": "The location certificate",
+    "subtitle": "When, why and how much — the document that can block a sale",
+    "collection": "Sellers"
+  },
+  {
+    "number": 26,
+    "slug": "premier-immeuble-a-revenus",
+    "title": "Your First Income Property",
+    "subtitle": "Buy your first plex without costly mistakes — profitability, financing, management",
+    "collection": "Investors"
+  },
+  {
+    "number": 27,
+    "slug": "calculer-la-rentabilite",
+    "title": "Calculating Rental Profitability",
+    "subtitle": "Cash flow, cap rate and GRM — the numbers that drive the decision",
+    "collection": "Investors"
+  },
+  {
+    "number": 28,
+    "slug": "financer-immeuble-a-revenus",
+    "title": "Financing an Income Property",
+    "subtitle": "Down payment, CMHC and structure — get the right rental financing",
+    "collection": "Investors"
+  },
+  {
+    "number": 29,
+    "slug": "fiscalite-investisseur-immobilier",
+    "title": "Taxes for Real Estate Investors",
+    "subtitle": "Rental income, expenses, depreciation and capital gains in Quebec",
+    "collection": "Investors"
+  },
+  {
+    "number": 30,
+    "slug": "locataires-et-tal",
+    "title": "Tenants and the TAL",
+    "subtitle": "Leases, rent increases and rights — manage tenants properly in Quebec",
+    "collection": "Investors"
+  },
+  {
+    "number": 31,
+    "slug": "reprise-de-logement-et-eviction",
+    "title": "Repossession and Eviction",
+    "subtitle": "The Quebec legal framework — understand your rights and limits",
+    "collection": "Investors"
+  },
+  {
+    "number": 32,
+    "slug": "renover-pour-creer-de-la-valeur-flip",
+    "title": "Renovating to Create Value",
+    "subtitle": "Flips and added value — renovate strategically, not at a loss",
+    "collection": "Investors"
+  },
+  {
+    "number": 33,
+    "slug": "location-court-terme-airbnb-legalite",
+    "title": "Short-Term Rentals and Airbnb",
+    "subtitle": "What is legal in Quebec before you get into short-term rentals",
+    "collection": "Investors"
+  },
+  {
+    "number": 34,
+    "slug": "batir-un-portefeuille-immobilier",
+    "title": "Building a Real Estate Portfolio",
+    "subtitle": "From 1 to 5 doors — grow your real estate wealth step by step",
+    "collection": "Investors"
+  },
+  {
+    "number": 35,
+    "slug": "comprendre-la-loi-sur-le-courtage",
+    "title": "Understanding the Real Estate Brokerage Act",
+    "subtitle": "Your consumer rights — how real estate brokerage is regulated in Quebec",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 36,
+    "slug": "le-role-du-notaire",
+    "title": "The Notary’s Role",
+    "subtitle": "What the notary does in a Quebec real estate transaction",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 37,
+    "slug": "hypotheque-fixe-vs-variable",
+    "title": "Mortgage: fixed or variable?",
+    "subtitle": "Rate, term and amortization — understanding and choosing your loan",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 38,
+    "slug": "assurance-habitation-et-titres",
+    "title": "Home and title insurance",
+    "subtitle": "Protecting yourself well — the insurance to know when buying",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 39,
+    "slug": "marche-grand-montreal-cycles",
+    "title": "The Greater Montreal Market",
+    "subtitle": "Read market cycles to buy and sell with better judgment",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 40,
+    "slug": "acheter-vendre-en-hiver",
+    "title": "Buying or Selling in Winter",
+    "subtitle": "Myths and realities of winter real estate in Quebec",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 41,
+    "slug": "evaluation-municipale-vs-valeur-marchande",
+    "title": "Municipal Assessment vs. Market Value",
+    "subtitle": "Two numbers, two uses — stop confusing them",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 42,
+    "slug": "copropriete-divise-vs-indivise",
+    "title": "Divided vs. Undivided Co-Ownership",
+    "subtitle": "Two very different ways to own a condo — choose the right one",
+    "collection": "Québec & Legal"
+  },
+  {
+    "number": 43,
+    "slug": "acheter-a-deux",
+    "title": "Buying as a Couple",
+    "subtitle": "Common-law partners, undivided co-ownership and agreements — protect yourselves",
+    "collection": "Life situations"
+  },
+  {
+    "number": 44,
+    "slug": "premier-achat-nouveaux-arrivants",
+    "title": "First Home Purchase for Newcomers",
+    "subtitle": "Buying in Quebec when you come from elsewhere — key steps and local rules",
+    "collection": "Life situations"
+  },
+  {
+    "number": 45,
+    "slug": "acheter-et-vendre-en-meme-temps",
+    "title": "Buying and Selling at the Same Time",
+    "subtitle": "Move without getting stuck — coordinate both transactions",
+    "collection": "Life situations"
+  },
+  {
+    "number": 46,
+    "slug": "retraite-et-immobilier-downsizing",
+    "title": "Retirement, Real Estate and Downsizing",
+    "subtitle": "Downsize, free up cash and make real estate work for retirement",
+    "collection": "Life situations"
+  },
+  {
+    "number": 47,
+    "slug": "aider-son-enfant-a-acheter",
+    "title": "Helping Your Child Buy a Home",
+    "subtitle": "Gift, loan or co-signing — support them without putting yourself at risk",
+    "collection": "Life situations"
+  },
+  {
+    "number": 50,
+    "slug": "acheter-un-chalet-residence-secondaire",
+    "title": "Buying a Cottage or Second Home",
+    "subtitle": "A second home in Quebec — dream, reality and essential checks",
+    "collection": "Special topics"
+  }
+]
