@@ -9,7 +9,7 @@ import { formatPrice, BRAND } from '@/lib/format';
 import { getLocale, getT } from '@/lib/i18n';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
-import { hasAccess, canDownload } from '@/lib/entitlements';
+import { hasAccess, canDownload, ownedDownloadLangs } from '@/lib/entitlements';
 import { BuyButtons } from '@/components/BuyButtons';
 import { BookCover } from '@/components/BookCover';
 
@@ -42,6 +42,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
   const access = dbEbook ? await hasAccess(userId, dbEbook.id) : false;
   const downloadable = dbEbook ? await canDownload(userId, dbEbook.id) : false;
+  const downloadLangs = downloadable && dbEbook ? [...(await ownedDownloadLangs(userId, dbEbook.id))] : [];
 
   const related = BOOKS.filter((b) => b.collection === book.collection && b.slug !== slug).slice(0, 3);
 
@@ -94,7 +95,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
             <p className="mt-1 font-ui text-sm text-[var(--color-ink)]/60">{t.book_lifetime}</p>
 
-            <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} loggedIn={Boolean(userId)} locale={locale} />
+            <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} downloadLangs={downloadLangs} loggedIn={Boolean(userId)} locale={locale} />
 
             <div className="mt-6 border-t border-[var(--color-sand)] pt-5">
               <p className="font-ui text-sm text-[var(--color-ink)]/70">

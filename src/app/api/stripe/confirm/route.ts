@@ -28,6 +28,11 @@ export async function GET(req: Request) {
       purchases = legacy ? [legacy] : [];
     }
 
+    const guestItems = purchases
+      .map((purchase) =>
+        purchase.ebook ? { id: purchase.ebook.id, lang: (purchase.language === 'en' ? 'en' : 'fr') as 'fr' | 'en' } : null,
+      )
+      .filter((item): item is { id: string; lang: 'fr' | 'en' } => Boolean(item));
     const ebookIds = purchases.map((purchase) => purchase.ebook?.id).filter((id): id is string => Boolean(id));
     const slugs = purchases.map((purchase) => purchase.ebook?.slug).filter((slug): slug is string => Boolean(slug));
     if (!ebookIds.length || !slugs.length) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
@@ -48,15 +53,24 @@ export async function GET(req: Request) {
       guides: purchases
         .map((purchase) =>
           purchase.ebook
-            ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
+            ? {
+                purchaseId: purchase.id,
+                ebookId: purchase.ebook.id,
+                slug: purchase.ebook.slug,
+                title: purchase.ebook.title,
+                language: (purchase.language === 'en' ? 'en' : 'fr') as 'fr' | 'en',
+              }
             : null,
         )
-        .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
+        .filter(
+          (guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string; language: 'fr' | 'en' } =>
+            Boolean(guide),
+        ),
     });
 
     const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}`, req.url));
     const current = req.headers.get('cookie')?.match(new RegExp(`${GUEST_PURCHASE_COOKIE}=([^;]+)`))?.[1];
-    const token = addGuestPurchases(current, ebookIds);
+    const token = addGuestPurchases(current, guestItems);
     response.cookies.set(GUEST_PURCHASE_COOKIE, token.value, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',

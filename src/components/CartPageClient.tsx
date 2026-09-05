@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { CART_CHANGED_EVENT, readCartSlugs, removeCartSlug } from '@/lib/cart';
+import { CART_CHANGED_EVENT, readCart, removeCartItem, setCartItemLang, type CartItem, type CartLang } from '@/lib/cart';
 import { formatPrice } from '@/lib/format';
 import type { Locale } from '@/lib/i18n';
 
@@ -31,6 +31,9 @@ const tx = {
     paymentUnavailable: 'Paiement indisponible.',
     guestNote: 'Avec un compte, les guides apparaissent dans votre profil. Sans compte, l’accès reste disponible sur cet appareil et par le courriel de paiement.',
     guide: (count: number) => `${count} guide${count > 1 ? 's' : ''}`,
+    edition: 'Édition',
+    editionFr: 'Français',
+    editionEn: 'English',
   },
   en: {
     eyebrow: 'Your cart',
@@ -46,30 +49,45 @@ const tx = {
     paymentUnavailable: 'Payment unavailable.',
     guestNote: 'With an account, your guides appear in your profile. Without an account, access remains available on this device and through the payment email.',
     guide: (count: number) => `${count} guide${count > 1 ? 's' : ''}`,
+    edition: 'Edition',
+    editionFr: 'Français',
+    editionEn: 'English',
   },
 };
 
 export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[]; loggedIn: boolean; locale: Locale }) {
   const router = useRouter();
   const t = tx[locale];
-  const [slugs, setSlugs] = useState<string[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   const items = useMemo(() => {
     const bySlug = new Map(books.map((book) => [book.slug, book]));
-    return slugs.map((slug) => bySlug.get(slug)).filter((book): book is CartBook => Boolean(book));
-  }, [books, slugs]);
+    return cart
+      .map((entry) => {
+        const book = bySlug.get(entry.slug);
+        return book ? { ...book, lang: entry.lang } : null;
+      })
+      .filter((book): book is CartBook & { lang: CartLang } => Boolean(book));
+  }, [books, cart]);
   const total = items.reduce((sum, item) => sum + item.priceCents, 0);
 
   useEffect(() => {
-    setSlugs(readCartSlugs());
+    setCart(readCart());
+    const refresh = () => setCart(readCart());
+    window.addEventListener(CART_CHANGED_EVENT, refresh);
+    return () => window.removeEventListener(CART_CHANGED_EVENT, refresh);
   }, []);
 
   function remove(slug: string) {
-    removeCartSlug(slug);
-    setSlugs(readCartSlugs());
-    window.dispatchEvent(new Event(CART_CHANGED_EVENT));
+    removeCartItem(slug);
+    setCart(readCart());
+  }
+
+  function changeLang(slug: string, lang: CartLang) {
+    setCartItemLang(slug, lang);
+    setCart(readCart());
   }
 
   async function checkout() {
@@ -80,7 +98,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode: 'unit', slugs: items.map((item) => item.slug) }),
+        body: JSON.stringify({ mode: 'unit', items: items.map((item) => ({ slug: item.slug, lang: item.lang })) }),
       });
       const data = await res.json();
       if (!res.ok || !data.url) throw new Error(data.error ?? t.paymentUnavailable);
@@ -120,6 +138,24 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
                     {book.title}
                   </Link>
                   <p className="mt-1 line-clamp-2 font-body text-sm text-[var(--color-ink)]/60">{book.subtitle}</p>
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    <span className="font-ui text-[0.62rem] uppercase tracking-[0.14em] text-[var(--color-ink)]/45">{t.edition}</span>
+                    <div className="flex rounded-full border border-[var(--color-sand)] p-0.5 font-ui text-xs">
+                      {(['fr', 'en'] as const).map((l) => (
+                        <button
+                          key={l}
+                          type="button"
+                          onClick={() => changeLang(book.slug, l)}
+                          aria-pressed={book.lang === l}
+                          className={`rounded-full px-2.5 py-1 transition ${
+                            book.lang === l ? 'bg-[var(--color-bordeaux)] text-white' : 'text-[var(--color-ink)]/60 hover:text-[var(--color-bordeaux)]'
+                          }`}
+                        >
+                          {l === 'fr' ? t.editionFr : t.editionEn}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
                   <button onClick={() => remove(book.slug)} className="mt-3 font-ui text-xs text-[var(--color-ink)]/45 hover:text-[var(--color-bordeaux)]">
                     {t.remove}
                   </button>

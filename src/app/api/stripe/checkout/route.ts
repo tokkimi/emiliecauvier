@@ -4,11 +4,15 @@ import { z } from 'zod';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { assertStripe, SUBSCRIPTION_PRICE_ID, APP_URL } from '@/lib/stripe';
+import { getLocale } from '@/lib/i18n';
+import { BOOKS_EN } from '@/data/booksEn';
 
+const langSchema = z.enum(['fr', 'en']);
 const schema = z.object({
   mode: z.enum(['unit', 'subscription']),
   slug: z.string().optional(),
   slugs: z.array(z.string()).max(20).optional(),
+  items: z.array(z.object({ slug: z.string(), lang: langSchema.default('fr') })).max(20).optional(),
 });
 
 async function getOrCreateCustomer(userId: string, email: string) {
@@ -64,7 +68,19 @@ export async function POST(req: Request) {
   }
 
   // ---- Achat à l'unité / panier ----
-  const requestedSlugs = [...new Set(parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : [])];
+  // Chaque article porte sa langue (édition FR ou EN). Repli : anciens appels
+  // `slug`/`slugs` sans langue → langue du site.
+  const siteLocale = await getLocale();
+  const rawItems = parsed.data.items?.length
+    ? parsed.data.items
+    : (parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : []).map((slug) => ({
+        slug,
+        lang: siteLocale,
+      }));
+  // Un guide n'apparaît qu'une fois (dernière langue choisie conservée).
+  const langBySlug = new Map<string, 'fr' | 'en'>();
+  for (const item of rawItems) langBySlug.set(item.slug, item.lang === 'en' ? 'en' : 'fr');
+  const requestedSlugs = [...langBySlug.keys()];
   if (!requestedSlugs.length) return NextResponse.json({ error: 'Guide manquant.' }, { status: 400 });
 
   const ebooks = await prisma.ebook.findMany({
@@ -76,19 +92,28 @@ export async function POST(req: Request) {
   const metadata: Record<string, string> = { kind: ebooks.length > 1 ? 'cart' : 'unit' };
   if (userId) metadata.userId = userId;
 
+  const editionLabel = (lang: 'fr' | 'en') => (lang === 'en' ? 'English edition' : 'édition française');
+  const lineTitle = (ebook: (typeof ebooks)[number], lang: 'fr' | 'en') => {
+    const title = lang === 'en' ? BOOKS_EN[ebook.slug]?.title ?? ebook.title : ebook.title;
+    return `${title} — ${editionLabel(lang)}`;
+  };
+
   const unitParams: Stripe.Checkout.SessionCreateParams = {
     mode: 'payment',
     ...(userId && email
       ? { customer: await getOrCreateCustomer(userId, email) }
       : { customer_creation: 'always' as const }),
-    line_items: ebooks.map((ebook) => ({
-      quantity: 1,
-      price_data: {
-        currency: ebook.currency.toLowerCase(),
-        unit_amount: ebook.priceCents,
-        product_data: { name: ebook.title, description: ebook.subtitle ?? undefined },
-      },
-    })),
+    line_items: ebooks.map((ebook) => {
+      const lang = langBySlug.get(ebook.slug) ?? 'fr';
+      return {
+        quantity: 1,
+        price_data: {
+          currency: ebook.currency.toLowerCase(),
+          unit_amount: ebook.priceCents,
+          product_data: { name: lineTitle(ebook, lang), description: ebook.subtitle ?? undefined },
+        },
+      };
+    }),
     success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: ebooks.length > 1 ? `${APP_URL}/panier` : `${APP_URL}/livre/${ebooks[0].slug}`,
     metadata,
@@ -114,6 +139,7 @@ export async function POST(req: Request) {
           ebookId: ebook.id,
           type: 'ONE_TIME',
           status: 'PENDING',
+          language: langBySlug.get(ebook.slug) ?? 'fr',
           amountCents: ebook.priceCents,
           currency: ebook.currency,
           stripeSessionId: checkout.id,

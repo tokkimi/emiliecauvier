@@ -1,14 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { addCartSlug } from '@/lib/cart';
+import { addCartItem } from '@/lib/cart';
 import type { Locale } from '@/lib/i18n';
 
 export function AddToCartButton({ slug, compact = false, locale }: { slug: string; compact?: boolean; locale: Locale }) {
   const [added, setAdded] = useState(false);
 
   function add() {
-    addCartSlug(slug);
+    // Ajout rapide : l'édition suit la langue du site (modifiable dans le panier).
+    addCartItem(slug, locale === 'en' ? 'en' : 'fr');
     setAdded(true);
   }
 

@@ -95,6 +95,35 @@ export async function downloadableEbookIds(userId: string | undefined): Promise<
   return ids;
 }
 
+/**
+ * Langues (éditions PDF) TÉLÉCHARGEABLES par l'utilisateur pour cet ebook.
+ * Une édition = un achat. Admin et coffret donnent les deux langues.
+ */
+export async function ownedDownloadLangs(
+  userId: string | undefined,
+  ebookId: string,
+): Promise<Set<'fr' | 'en'>> {
+  const langs = new Set<'fr' | 'en'>();
+  if (!userId) return langs;
+
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { role: true },
+  });
+  if (!user) return langs;
+  if (user.role === 'ADMIN') return new Set(['fr', 'en']);
+
+  const purchases = await prisma.purchase.findMany({
+    where: { userId, status: 'PAID', OR: [{ ebookId }, { type: 'BUNDLE' }] },
+    select: { type: true, language: true },
+  });
+  for (const p of purchases) {
+    if (p.type === 'BUNDLE') return new Set(['fr', 'en']);
+    langs.add(p.language === 'en' ? 'en' : 'fr');
+  }
+  return langs;
+}
+
 export async function subscriptionActive(userId: string | undefined): Promise<boolean> {
   if (!userId) return false;
   const user = await prisma.user.findUnique({

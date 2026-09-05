@@ -2,19 +2,21 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { addCartSlug } from '@/lib/cart';
+import { addCartItem, type CartLang } from '@/lib/cart';
 import type { Locale } from '@/lib/i18n';
 
 export function BuyButtons({
   slug,
   hasAccess,
   canDownload,
+  downloadLangs = [],
   loggedIn,
   locale,
 }: {
   slug: string;
   hasAccess: boolean;
   canDownload: boolean;
+  downloadLangs?: string[];
   loggedIn: boolean;
   locale: Locale;
 }) {
@@ -35,7 +37,11 @@ export function BuyButtons({
     redirect: locale === 'en' ? 'Redirecting…' : 'Redirection…',
     paymentUnavailable: locale === 'en' ? 'Payment is unavailable right now.' : 'Paiement indisponible pour le moment.',
     networkError: locale === 'en' ? 'Network error. Please try again.' : 'Erreur réseau. Réessayez.',
+    editionLabel: locale === 'en' ? 'PDF edition' : 'Édition du PDF',
+    editionFr: 'Français',
+    editionEn: 'English',
   };
+  const [lang, setLang] = useState<CartLang>(locale === 'en' ? 'en' : 'fr');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [added, setAdded] = useState(false);
@@ -47,7 +53,7 @@ export function BuyButtons({
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ mode: 'unit', slug }),
+        body: JSON.stringify({ mode: 'unit', items: [{ slug, lang }] }),
       });
       const data = await res.json();
       if (data.url) window.location.href = data.url;
@@ -60,11 +66,35 @@ export function BuyButtons({
   }
 
   function addToCart() {
-    addCartSlug(slug);
+    addCartItem(slug, lang);
     setAdded(true);
   }
 
+  // Sélecteur d'édition FR/EN (segmenté).
+  const editionPicker = (
+    <div>
+      <p className="mb-1.5 font-ui text-xs uppercase tracking-[0.14em] text-[var(--color-ink)]/55">{t.editionLabel}</p>
+      <div className="flex rounded-full border border-[var(--color-sand)] p-0.5 font-ui text-sm">
+        {(['fr', 'en'] as const).map((l) => (
+          <button
+            key={l}
+            type="button"
+            onClick={() => setLang(l)}
+            aria-pressed={lang === l}
+            className={`flex-1 rounded-full px-3 py-1.5 transition ${
+              lang === l ? 'bg-[var(--color-bordeaux)] text-white' : 'text-[var(--color-ink)]/65 hover:text-[var(--color-bordeaux)]'
+            }`}
+          >
+            {l === 'fr' ? t.editionFr : t.editionEn}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+
   if (hasAccess) {
+    const langs = (downloadLangs.length ? downloadLangs : ['fr']).filter((l) => l === 'fr' || l === 'en');
+    const langName = (l: string) => (l === 'en' ? t.editionEn : t.editionFr);
     return (
       <div className="mt-6 space-y-3">
         <Link
@@ -74,17 +104,30 @@ export function BuyButtons({
           {t.readOnline}
         </Link>
         {canDownload ? (
-          <a
-            href={`/api/download?slug=${slug}`}
-            className="block rounded-full border border-[var(--color-bordeaux)] py-3 text-center font-ui text-sm text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
-          >
-            {t.downloadPdf}
-          </a>
+          langs.length > 1 ? (
+            langs.map((l) => (
+              <a
+                key={l}
+                href={`/api/download?slug=${slug}&lang=${l}`}
+                className="block rounded-full border border-[var(--color-bordeaux)] py-3 text-center font-ui text-sm text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
+              >
+                {t.downloadPdf} · {langName(l)}
+              </a>
+            ))
+          ) : (
+            <a
+              href={`/api/download?slug=${slug}&lang=${langs[0]}`}
+              className="block rounded-full border border-[var(--color-bordeaux)] py-3 text-center font-ui text-sm text-[var(--color-bordeaux)] transition hover:bg-[var(--color-sand)]"
+            >
+              {t.downloadPdf}
+            </a>
+          )
         ) : (
           <div className="rounded-2xl border border-dashed border-[var(--color-sand)] bg-[var(--color-sand)]/40 p-4">
             <p className="font-ui text-xs text-[var(--color-ink)]/70">
               {t.subscriptionNotice}
             </p>
+            <div className="mt-3">{editionPicker}</div>
             <button
               onClick={buy}
               disabled={loading}
@@ -102,6 +145,7 @@ export function BuyButtons({
 
   return (
     <div className="mt-6 space-y-3">
+      {editionPicker}
       <button
         onClick={buy}
         disabled={loading}

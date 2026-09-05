@@ -81,10 +81,19 @@ export async function POST(req: Request) {
             guides: purchases
               .map((purchase) =>
                 purchase.ebook
-                  ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
+                  ? {
+                      purchaseId: purchase.id,
+                      ebookId: purchase.ebook.id,
+                      slug: purchase.ebook.slug,
+                      title: purchase.ebook.title,
+                      language: (purchase.language === 'en' ? 'en' : 'fr') as 'fr' | 'en',
+                    }
                   : null,
               )
-              .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
+              .filter(
+                (guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string; language: 'fr' | 'en' } =>
+                  Boolean(guide),
+              ),
           });
         } else if (s.metadata?.purchaseId) {
           await prisma.purchase.update({

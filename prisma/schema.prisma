@@ -202,6 +202,9 @@ model Purchase {
   type   PurchaseType
   status PurchaseStatus @default(PENDING)
 
+  // Langue de l'édition achetée (PDF téléchargeable). Une seule version par achat.
+  language String @default("fr")
+
   amountCents Int
   currency    String @default("CAD")
 
