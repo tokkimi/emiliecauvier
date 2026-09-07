@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@keyframes subscription-demo-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes subscription-demo-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.subscription-demo-enter { animation: subscription-demo-enter 450ms ease-out; }
+.subscription-demo-progress { transform-origin: left; animation: subscription-demo-progress 1.4s ease-out; }
+
 /* ---- Charte Emilie Cauvier — La Bibliothèque ---- */
 @theme {
   --color-bordeaux: #6e1226;

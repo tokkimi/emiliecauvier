@@ -3,6 +3,7 @@ import { createPurchaseDownloadToken } from '@/lib/purchaseDownloadToken';
 import { bySlug } from '@/data/books';
 import { localizeBook } from '@/data/booksEn';
 import type { Locale } from '@/lib/i18n';
+import { loadPurchaseAttachments } from '@/lib/purchaseAttachments';
 
 type PurchasedGuide = {
   purchaseId: string;
@@ -37,7 +38,11 @@ export async function sendPurchaseEmail({
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey || !to || guides.length === 0) return { sent: false, reason: 'missing_config_or_recipient' };
 
-  const items = guides
+  let batches;
+  try { batches = await loadPurchaseAttachments(guides.map(guide => guide.slug), locale); }
+  catch { console.error('Purchase PDF attachments unavailable'); return { sent: false, reason: 'attachment_error' }; }
+
+  const items = [...guides].sort((a,b) => a.purchaseId.localeCompare(b.purchaseId))
     .map((guide) => {
       const token = createPurchaseDownloadToken(guide.purchaseId, guide.ebookId, guide.createdAt.getTime());
       const book = bySlug(guide.slug);
@@ -70,9 +75,10 @@ export async function sendPurchaseEmail({
               </tr>
               <tr>
                 <td style="padding:26px 28px;">
-                  <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4b4545;">${locale === 'en' ? 'Your PDFs are available below. Keep this email: it lets you find your guides again even if you continued without creating an account.' : 'Vos PDF sont disponibles ci-dessous. Gardez cet email: il vous permet de retrouver vos guides même si vous avez continué sans créer de compte.'}</p>
+                  <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4b4545;">${locale === 'en' ? 'Your purchased PDFs are attached to this email. Save them to your device to keep them, with or without an account. Secure download links are also provided below.' : 'Les PDF achetés sont joints à ce courriel. Enregistrez-les sur votre appareil pour les conserver, avec ou sans compte. Vous trouverez aussi les liens de téléchargement sécurisés ci-dessous.'}</p>
+                  ${batches.length > 1 ? `<p style="font-size:14px;line-height:1.5;">${locale === 'en' ? `Your order is split into ${batches.length} emails to keep the attachments manageable. Each email contains different PDFs; keep all parts.` : `Votre commande est répartie dans ${batches.length} courriels pour limiter la taille des pièces jointes. Chaque courriel contient des PDF différents : conservez toutes les parties.`}</p>` : ''}
                   <table role="presentation" width="100%" cellspacing="0" cellpadding="0">${items}</table>
-                  <p style="margin:22px 0 0;font-size:13px;line-height:1.5;color:#6f625d;">${locale === 'en' ? 'These links are secure and reserved for your purchase. You can also create a profile later to find your guides in your reader space.' : 'Les liens sont sécurisés et réservés à votre achat. Vous pouvez aussi créer un profil plus tard pour retrouver vos guides dans votre espace lecteur.'}</p>
+                  <p style="margin:22px 0 0;font-size:13px;line-height:1.5;color:#6f625d;">${locale === 'en' ? 'These personal download links are valid for one year from purchase. The PDF attachments can be kept without a time limit. If you purchased while logged in, your guides are also in your account.' : 'Ces liens personnels sont valables un an à partir de l’achat. Les PDF joints peuvent être conservés sans limite de durée. Si vous avez acheté en étant connecté, vos guides figurent aussi dans votre compte.'}</p>
                 </td>
               </tr>
             </table>
@@ -81,21 +87,25 @@ export async function sendPurchaseEmail({
       </table>
     </div>`;
 
+  const emailIds: string[] = [];
+  for (const [index, attachments] of batches.entries()) {
   let response: Response;
   try {
+    if (index > 0) await new Promise(resolve => setTimeout(resolve, 600));
     response = await fetch('https://api.resend.com/emails', {
       signal: AbortSignal.timeout(10000),
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
-        'Idempotency-Key': `purchase-email-${stripeSessionId}`,
+        'Idempotency-Key': `purchase-pdf-v2-${stripeSessionId}-${locale}-${index + 1}`,
       },
       body: JSON.stringify({
         from: process.env.PURCHASE_EMAIL_FROM || DEFAULT_FROM,
         to,
-        subject,
+        subject: batches.length > 1 ? `${subject} (${index + 1}/${batches.length})` : subject,
         html,
+        attachments,
       }),
     });
   } catch (err) {
@@ -104,10 +114,14 @@ export async function sendPurchaseEmail({
   }
 
   if (!response.ok) {
-    const body = await response.text().catch(() => '');
-    console.error('Purchase email failed', response.status, body);
+    console.error('Purchase email failed', response.status);
     return { sent: false, reason: 'provider_error' };
   }
+  const result = await response.json().catch(() => null) as { id?: string } | null;
+  if (!result?.id) return { sent: false, reason: 'invalid_provider_response' };
+  emailIds.push(result.id);
+  }
 
-  return { sent: true };
+  // Accepted by the provider, not a claim of delivery to the recipient's inbox.
+  return { sent: true, emailIds, attachmentCount: batches.reduce((count, batch) => count + batch.length, 0) };
 }

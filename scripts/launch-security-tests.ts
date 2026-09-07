@@ -38,7 +38,7 @@ async function main() {
   };
   db.$transaction = async (fn:any) => fn(db);
   (globalThis as any).prisma = db;
-  globalThis.fetch = (async () => { emails++; return new Response('{}', {status:failEmail?503:200}); }) as typeof fetch;
+  globalThis.fetch = (async () => { emails++; return new Response('{"id":"test-email"}', {status:failEmail?503:200}); }) as typeof fetch;
   const { stripe } = await import('../src/lib/stripe');
   let event:any;
   stripe.webhooks.constructEvent = (() => event) as any;

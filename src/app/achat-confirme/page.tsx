@@ -11,9 +11,9 @@ export async function generateMetadata() {
   return { title: locale === 'en' ? 'Purchase confirmed' : 'Achat confirmé' };
 }
 
-export default async function PurchaseConfirmedPage({ searchParams }: { searchParams: Promise<{ slug?: string; slugs?: string; lang?: string }> }) {
+export default async function PurchaseConfirmedPage({ searchParams }: { searchParams: Promise<{ slug?: string; slugs?: string; lang?: string; email?: string }> }) {
   const locale = await getLocale();
-  const { slug, slugs, lang } = await searchParams;
+  const { slug, slugs, lang, email } = await searchParams;
   const pdfLocale = lang === 'en' ? 'en' : 'fr';
   const requestedSlugs = [...new Set((slugs ? slugs.split(',') : slug ? [slug] : []).map((item) => item.trim()).filter(Boolean))];
   const books = requestedSlugs.map((item) => bySlug(item)).filter((book): book is NonNullable<typeof book> => Boolean(book));
@@ -61,12 +61,17 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
       <p className="mx-auto mt-4 max-w-lg font-body text-lg text-[var(--color-ink)]/70">
         {plural ? t.thanksPlural : t.thanksSingle}
       </p>
+      <p className="mt-5 rounded-2xl border border-[var(--color-sand)] bg-white p-4 font-ui text-sm leading-relaxed text-[var(--color-ink)]/75" role="status">
+        {email === 'accepted'
+          ? locale === 'en' ? 'Your email with PDF attachments has been accepted by our email service. Check your inbox and spam folder. Large orders may arrive in several emails.' : 'Votre courriel avec les PDF en pièces jointes a été accepté par notre service d’envoi. Vérifiez votre boîte de réception et les indésirables. Une commande volumineuse peut arriver en plusieurs courriels.'
+          : locale === 'en' ? 'Email delivery is not yet confirmed. Download and save each PDF below now. If no email arrives, contact us with your payment receipt.' : 'L’envoi du courriel n’est pas encore confirmé. Téléchargez et enregistrez chaque PDF ci-dessous dès maintenant. Si aucun courriel n’arrive, contactez-nous avec votre reçu de paiement.'}
+      </p>
       {plural && (
         <ul className="mx-auto mt-6 max-w-md space-y-2 rounded-2xl border border-[var(--color-sand)] bg-white p-4 text-left">
           {books.map((book) => (
             <li key={book.slug} className="flex items-center justify-between gap-3 border-b border-[var(--color-sand)] py-2 last:border-b-0">
               <span className="font-body text-sm text-[var(--color-ink)]">{localizeBook(book, locale).title}</span>
-              <Link href={`/lire/${book.slug}`} className="shrink-0 font-ui text-xs text-[var(--color-bordeaux)] underline">{t.read}</Link>
+              <div className="flex shrink-0 flex-col items-end gap-2 font-ui text-xs text-[var(--color-bordeaux)]"><Link href={`/lire/${book.slug}`} className="underline">{t.read}</Link><a href={`/api/download?slug=${book.slug}&lang=${pdfLocale}`} className="underline">{t.download}</a></div>
             </li>
           ))}
         </ul>

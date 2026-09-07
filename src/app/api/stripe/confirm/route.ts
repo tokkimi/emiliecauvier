@@ -46,7 +46,7 @@ export async function GET(req: Request) {
       },
     });
 
-    await sendPurchaseEmail({
+    const emailResult = await sendPurchaseEmail({
       to: checkout.customer_details?.email,
       stripeSessionId: checkout.id,
       locale: checkout.metadata?.pdfLocale === 'en' ? 'en' : checkout.metadata?.pdfLocale === 'fr' ? 'fr' : pdfLocale,
@@ -59,7 +59,7 @@ export async function GET(req: Request) {
         .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string; createdAt: Date } => Boolean(guide)),
     });
 
-    const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}&lang=${checkout.metadata?.pdfLocale === 'en' ? 'en' : pdfLocale}`, req.url));
+    const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}&lang=${checkout.metadata?.pdfLocale === 'en' ? 'en' : checkout.metadata?.pdfLocale === 'fr' ? 'fr' : pdfLocale}&email=${emailResult.sent ? 'accepted' : 'pending'}`, req.url));
     const current = req.headers.get('cookie')?.match(new RegExp(`${GUEST_PURCHASE_COOKIE}=([^;]+)`))?.[1];
     const token = addGuestPurchases(current, ebookIds);
     response.cookies.set(GUEST_PURCHASE_COOKIE, token.value, {
