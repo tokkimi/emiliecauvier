@@ -2,15 +2,12 @@ import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 import { prisma } from './db';
+import { allowAttempt, attemptKey, passwordVersion, signingSecret } from './security';
 
-// AUTH_SECRET est requis en production. On fournit un secret de repli pour que
-// l'app démarre en démo sans configuration — À REMPLACER par un vrai secret
-// (openssl rand -base64 32) via la variable d'environnement AUTH_SECRET.
-const AUTH_SECRET = process.env.AUTH_SECRET || 'demo-secret-a-remplacer-par-openssl-rand-base64-32';
-
-export const { handlers, auth, signIn, signOut } = NextAuth({
+// Lazy configuration: builds do not require secrets; production requests fail closed.
+export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
   trustHost: true,
-  secret: AUTH_SECRET,
+  secret: signingSecret(),
   // Cookie persistante : la session reste ouverte sur l'appareil jusqu'à la
   // déconnexion explicite (renouvelée à chaque activité, validité maximale 1 an).
   session: { strategy: 'jwt', maxAge: 60 * 60 * 24 * 365, updateAge: 60 * 60 * 24 },
@@ -21,7 +18,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       async authorize(creds) {
         const email = String(creds?.email ?? '').toLowerCase().trim();
         const password = String(creds?.password ?? '');
-        if (!email || !password) return null;
+        if (!email || email.length > 254 || !password || Buffer.byteLength(password, 'utf8') > 72) return null;
+        if (!allowAttempt(attemptKey('login', email), 20)) return null;
         const user = await prisma.user.findUnique({ where: { email } });
         if (!user) return null;
         const ok = await bcrypt.compare(password, user.passwordHash);
@@ -36,6 +34,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         token.uid = (user as { id: string }).id;
         token.role = (user as { role?: string }).role ?? 'USER';
       }
+      if (typeof token.uid !== 'string') return null;
+      const current = await prisma.user.findUnique({ where: { id: token.uid }, select: { role: true, name: true, passwordHash: true } });
+      if (!current) return null;
+      const version = passwordVersion(current.passwordHash);
+      if (typeof token.passwordVersion === 'string' && token.passwordVersion !== version) return null;
+      token.passwordVersion = version;
+      token.role = current.role;
+      token.name = current.name;
       return token;
     },
     async session({ session, token }) {
@@ -46,4 +52,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       return session;
     },
   },
-});
+}));

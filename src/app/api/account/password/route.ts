@@ -1,3 +1,4 @@
+import { sameOriginRequest, allowAttempt, attemptKey } from '@/lib/security';
 import { NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import { z } from 'zod';
@@ -5,14 +6,16 @@ import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 
 const passwordSchema = z.object({
-  currentPassword: z.string().min(1),
-  newPassword: z.string().min(10).max(72),
+  currentPassword: z.string().min(1).max(72),
+  newPassword: z.string().min(10).max(72).refine(value => Buffer.byteLength(value, 'utf8') <= 72),
 });
 
 export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   const session = await auth();
   const userId = (session?.user as { id?: string } | undefined)?.id;
   if (!userId) return NextResponse.json({ error: 'Non autorisé.' }, { status: 401 });
+  if (!allowAttempt(attemptKey('password', userId), 10)) return NextResponse.json({ error: 'Trop de tentatives. Réessayez plus tard.' }, { status: 429 });
 
   const parsed = passwordSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) {

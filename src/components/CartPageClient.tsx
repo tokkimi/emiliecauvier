@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { CART_CHANGED_EVENT, readCartSlugs, removeCartSlug } from '@/lib/cart';
 import { formatPrice } from '@/lib/format';
 import type { Locale } from '@/lib/i18n';
+import { BookCover } from '@/components/BookCover';
 
 type CartBook = {
   slug: string;
@@ -111,10 +112,10 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
         <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_320px]">
           <div className="space-y-3">
             {items.map((book) => (
-              <article key={book.slug} className="flex gap-4 rounded-2xl border border-[var(--color-sand)] bg-white p-4">
-                <div className="flex h-20 w-14 shrink-0 items-center justify-center rounded-lg bg-[var(--color-bordeaux)] font-display text-xl text-white">
-                  {book.number}
-                </div>
+              <article key={book.slug} className="relative flex gap-3 rounded-2xl border border-[var(--color-sand)] bg-white p-4 shadow-[0_4px_20px_rgba(46,31,24,0.025)] sm:gap-4">
+                <Link href={`/livre/${book.slug}`} className="w-16 shrink-0 self-start overflow-hidden rounded-lg shadow-sm sm:w-20">
+                  <BookCover number={book.number} title={book.title} collection={book.collection} locale={pdfLocale} />
+                </Link>
                 <div className="min-w-0 flex-1">
                   <p className="font-ui text-[0.62rem] uppercase tracking-[0.14em] text-[var(--color-gold)]">{book.collection}</p>
                   <Link href={`/livre/${book.slug}`} className="mt-1 block font-display text-xl leading-tight text-[var(--color-bordeaux)] hover:underline">
@@ -125,7 +126,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
                     {t.remove}
                   </button>
                 </div>
-                <p className="shrink-0 font-ui text-sm font-semibold text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
+                <p className="shrink-0 font-ui text-xs font-semibold text-[var(--color-ink)] sm:text-sm">{formatPrice(book.priceCents)}</p>
               </article>
             ))}
           </div>
@@ -143,6 +144,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
                 <button
                   key={lang}
                   type="button"
+                  aria-pressed={pdfLocale === lang}
                   onClick={() => setPdfLocale(lang)}
                   className={`rounded-full border px-4 py-2 font-ui text-sm transition ${
                     pdfLocale === lang

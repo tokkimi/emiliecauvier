@@ -1,9 +1,11 @@
 import { NextResponse } from 'next/server';
+import { sameOriginRequest } from '@/lib/security';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { assertStripe, APP_URL } from '@/lib/stripe';
 
-export async function POST() {
+export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   if (!userId) return NextResponse.json({ error: 'Connexion requise.' }, { status: 401 });

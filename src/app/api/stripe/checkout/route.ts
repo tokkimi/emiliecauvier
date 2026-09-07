@@ -1,3 +1,4 @@
+import { sameOriginRequest } from '@/lib/security';
 import { NextResponse } from 'next/server';
 import type Stripe from 'stripe';
 import { z } from 'zod';
@@ -24,6 +25,7 @@ async function getOrCreateCustomer(userId: string, email: string) {
 }
 
 export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   const email = session?.user?.email;

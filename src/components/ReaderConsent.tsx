@@ -73,7 +73,7 @@ export function ReaderConsent({ locale }: { locale: Locale }) {
       <div className="absolute inset-0 bg-[var(--color-ink)]/55 backdrop-blur-sm" />
 
       {/* Carte */}
-      <div className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-[var(--color-cream)] shadow-2xl">
+      <div className="relative max-h-[calc(100dvh-2rem)] w-full max-w-lg overflow-y-auto overscroll-contain rounded-2xl border border-[var(--color-sand)] bg-[var(--color-cream)] shadow-2xl">
         <div className="h-1.5 w-full bg-[var(--color-gold)]" />
         <div className="p-7 sm:p-9">
           <p className="font-ui text-[0.7rem] uppercase tracking-[0.22em] text-[var(--color-gold)]">

@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import type { Locale } from '@/lib/i18n';
+import { safeRedirect } from '@/lib/safeRedirect';
 
 const inputCls =
   'mt-1 w-full rounded-lg border border-[var(--color-sand)] bg-white px-4 py-2.5 font-body text-[var(--color-ink)] outline-none focus:border-[var(--color-bordeaux)]';
@@ -49,7 +50,7 @@ const tx = {
 export function LoginForm({ locale }: { locale: Locale }) {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get('next') ?? '/compte';
+  const next = safeRedirect(params.get('next'));
   const t = tx[locale];
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -59,6 +60,7 @@ export function LoginForm({ locale }: { locale: Locale }) {
     setLoading(true);
     setError('');
     const form = new FormData(e.currentTarget);
+    try {
     const res = await signIn('credentials', {
       email: form.get('email'),
       password: form.get('password'),
@@ -67,6 +69,7 @@ export function LoginForm({ locale }: { locale: Locale }) {
     setLoading(false);
     if (res?.error) setError(t.badCredentials);
     else router.push(next);
+    } catch { setError(t.badCredentials); } finally { setLoading(false); }
   }
 
   return (
@@ -85,7 +88,7 @@ export function LoginForm({ locale }: { locale: Locale }) {
       </button>
       <p className="text-center font-ui text-sm text-[var(--color-ink)]/60">
         {t.noAccount}{' '}
-        <Link href="/inscription" className="text-[var(--color-bordeaux)] hover:underline">
+        <Link href={`/inscription?next=${encodeURIComponent(next)}`} className="text-[var(--color-bordeaux)] hover:underline">
           {t.signup}
         </Link>
       </p>
@@ -97,7 +100,7 @@ export function RegisterForm({ locale }: { locale: Locale }) {
   const router = useRouter();
   const params = useSearchParams();
   const plan = params.get('plan');
-  const next = params.get('next') ?? '/compte';
+  const next = safeRedirect(params.get('next'));
   const t = tx[locale];
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -110,6 +113,7 @@ export function RegisterForm({ locale }: { locale: Locale }) {
     const email = form.get('email');
     const password = form.get('password');
 
+    try {
     const res = await fetch('/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -123,7 +127,8 @@ export function RegisterForm({ locale }: { locale: Locale }) {
     }
 
     // Connexion automatique.
-    await signIn('credentials', { email, password, redirect: false });
+    const login = await signIn('credentials', { email, password, redirect: false });
+    if (login?.error) { router.push(`/connexion?next=${encodeURIComponent(next)}`); return; }
 
     // Si l'utilisateur venait pour l'abonnement, on lance directement le checkout.
     if (plan === 'abonnement') {
@@ -140,6 +145,7 @@ export function RegisterForm({ locale }: { locale: Locale }) {
     }
     setLoading(false);
     router.push(next);
+    } catch { setError(t.registerError); } finally { setLoading(false); }
   }
 
   return (
@@ -151,7 +157,7 @@ export function RegisterForm({ locale }: { locale: Locale }) {
       )}
       <label className="block font-ui text-sm text-[var(--color-ink)]/80">
         {t.name}
-        <input name="name" type="text" className={inputCls} autoComplete="name" />
+        <input name="name" type="text" maxLength={80} className={inputCls} autoComplete="name" />
       </label>
       <label className="block font-ui text-sm text-[var(--color-ink)]/80">
         {t.email}
@@ -159,7 +165,7 @@ export function RegisterForm({ locale }: { locale: Locale }) {
       </label>
       <label className="block font-ui text-sm text-[var(--color-ink)]/80">
         {t.passwordMin}
-        <input name="password" type="password" required minLength={8} className={inputCls} autoComplete="new-password" />
+        <input name="password" type="password" required minLength={8} maxLength={72} className={inputCls} autoComplete="new-password" />
       </label>
       {error && <p className="font-ui text-sm text-red-600">{error}</p>}
       <button disabled={loading} className={btnCls}>

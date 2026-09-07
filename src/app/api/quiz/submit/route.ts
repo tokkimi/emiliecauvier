@@ -1,3 +1,4 @@
+import { sameOriginRequest } from '@/lib/security';
 import { NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
@@ -11,6 +12,7 @@ import { getQuiz, scoreOutOf10 } from '@/lib/quizzes';
  * bonnes réponses pour l'affichage (vert).
  */
 export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   let body: { slug?: string; answers?: unknown };
   try {
     body = await req.json();

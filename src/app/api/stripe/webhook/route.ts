@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import type Stripe from 'stripe';
 import { assertStripe } from '@/lib/stripe';
-import { prisma } from '@/lib/db';
+import { prisma as database } from '@/lib/db';
+import type { Prisma } from '@/generated/prisma';
 import { sendPurchaseEmail } from '@/lib/purchaseEmail';
 
 // Stripe a besoin du corps brut pour vérifier la signature.
@@ -24,7 +25,7 @@ function mapSubStatus(s: Stripe.Subscription.Status): 'ACTIVE' | 'TRIALING' | 'P
   }
 }
 
-async function recordDailyRevenue(field: 'oneTimeCents' | 'subscriptionCents', cents: number) {
+async function recordDailyRevenue(prisma: Prisma.TransactionClient, field: 'oneTimeCents' | 'subscriptionCents', cents: number) {
   const date = new Date();
   date.setUTCHours(0, 0, 0, 0);
   await prisma.dailyRevenue.upsert({
@@ -35,7 +36,8 @@ async function recordDailyRevenue(field: 'oneTimeCents' | 'subscriptionCents', c
 }
 
 export async function POST(req: Request) {
-  const stripe = assertStripe();
+  let stripe;
+  try { stripe = assertStripe(); } catch { return NextResponse.json({ error: 'Paiement indisponible.' }, { status: 503 }); }
   const sig = req.headers.get('stripe-signature');
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
   if (!sig || !secret) return NextResponse.json({ error: 'Signature manquante.' }, { status: 400 });
@@ -45,23 +47,38 @@ export async function POST(req: Request) {
   try {
     event = stripe.webhooks.constructEvent(raw, sig, secret);
   } catch (err) {
-    return NextResponse.json({ error: `Signature invalide: ${(err as Error).message}` }, { status: 400 });
+    return NextResponse.json({ error: 'Signature invalide.' }, { status: 400 });
   }
 
+  // Network calls are outside the DB transaction. Replayed event IDs are serialized
+  // with a transaction-scoped PostgreSQL lock and a durable existing analytics row.
+  const checkoutEvent = event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded';
+  const checkout = checkoutEvent ? event.data.object as Stripe.Checkout.Session : null;
+  if (checkout && checkout.payment_status !== 'paid' && checkout.payment_status !== 'no_payment_required') {
+    return NextResponse.json({ received: true });
+  }
+  const subscription = checkout?.metadata?.kind === 'subscription' && typeof checkout.subscription === 'string'
+    ? await stripe.subscriptions.retrieve(checkout.subscription) : null;
+  const dedupeKey = checkout ? `checkout:${checkout.id}` : event.type === 'invoice.paid' ? `invoice:${(event.data.object as Stripe.Invoice).id}` : event.id;
+  await database.$transaction(async (prisma) => {
+    await prisma.$queryRaw`SELECT pg_advisory_xact_lock(hashtext(${dedupeKey}))::text`;
+    const processed = await prisma.analyticsEvent.findFirst({ where: { name: 'stripe_event_processed', path: dedupeKey }, select: { id: true } });
+    if (processed) return;
   switch (event.type) {
-    case 'checkout.session.completed': {
+    case 'checkout.session.completed':
+    case 'checkout.session.async_payment_succeeded': {
       const s = event.data.object as Stripe.Checkout.Session;
       const kind = s.metadata?.kind;
       const userId = s.metadata?.userId;
 
       if (kind === 'unit' || kind === 'cart') {
         const purchases = await prisma.purchase.findMany({
-          where: { stripeSessionId: s.id },
+          where: { stripeSessionId: s.id, status: { in: ['PENDING', 'PAID'] } },
           include: { ebook: { select: { id: true, slug: true, title: true } } },
         });
         if (purchases.length) {
           await prisma.purchase.updateMany({
-            where: { id: { in: purchases.map((purchase) => purchase.id) } },
+            where: { id: { in: purchases.map((purchase) => purchase.id) }, status: 'PENDING' },
             data: {
               status: 'PAID',
               stripePaymentId: (s.payment_intent as string) ?? undefined,
@@ -75,21 +92,10 @@ export async function POST(req: Request) {
               }),
             ),
           );
-          await sendPurchaseEmail({
-            to: s.customer_details?.email,
-            stripeSessionId: s.id,
-            locale: s.metadata?.pdfLocale === 'en' ? 'en' : 'fr',
-            guides: purchases
-              .map((purchase) =>
-                purchase.ebook
-                  ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
-                  : null,
-              )
-              .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
-          });
+
         } else if (s.metadata?.purchaseId) {
-          await prisma.purchase.update({
-            where: { id: s.metadata.purchaseId },
+          await prisma.purchase.updateMany({
+            where: { id: s.metadata.purchaseId, status: 'PENDING' },
             data: {
               status: 'PAID',
               stripePaymentId: (s.payment_intent as string) ?? undefined,
@@ -99,13 +105,16 @@ export async function POST(req: Request) {
           await prisma.analyticsEvent.create({
             data: { userId, name: 'purchase', ebookId: s.metadata.ebookId, meta: { amount: s.amount_total } },
           });
+        } else {
+          throw new Error('Purchase not ready; retry webhook.');
         }
-        await recordDailyRevenue('oneTimeCents', s.amount_total ?? 0);
+        await recordDailyRevenue(prisma, 'oneTimeCents', s.amount_total ?? 0);
       }
 
       if (kind === 'subscription' && userId) {
         const subId = s.subscription as string;
-        const sub = await stripe.subscriptions.retrieve(subId);
+        const sub = subscription;
+        if (!sub) throw new Error('Subscription unavailable');
         await prisma.user.update({
           where: { id: userId },
           data: {
@@ -124,7 +133,7 @@ export async function POST(req: Request) {
             stripeSessionId: s.id,
           },
         });
-        await recordDailyRevenue('subscriptionCents', s.amount_total ?? 1900);
+        await recordDailyRevenue(prisma, 'subscriptionCents', s.amount_total ?? 1900);
       }
       break;
     }
@@ -149,11 +158,30 @@ export async function POST(req: Request) {
       const inv = event.data.object as Stripe.Invoice;
       // Renouvellements d'abonnement (hors 1er paiement déjà compté au checkout).
       if (inv.billing_reason === 'subscription_cycle') {
-        await recordDailyRevenue('subscriptionCents', inv.amount_paid ?? 0);
+        await recordDailyRevenue(prisma, 'subscriptionCents', inv.amount_paid ?? 0);
       }
       break;
     }
   }
 
+    await prisma.analyticsEvent.create({ data: { name: 'stripe_event_processed', path: dedupeKey } });
+  }, { timeout: 15000 });
+
+  // Retry mail independently of payment recording. Stripe retries non-2xx responses.
+  if (checkout && ['unit', 'cart'].includes(checkout.metadata?.kind ?? '')) {
+    const purchases = await database.purchase.findMany({
+      orderBy: { id: 'asc' },
+      where: { stripeSessionId: checkout.id, status: 'PAID' },
+      include: { ebook: { select: { id: true, slug: true, title: true } } },
+    });
+    if (!purchases.length) return NextResponse.json({ error: 'Commande en cours de préparation.' }, { status: 503 });
+    const email = await sendPurchaseEmail({
+      to: checkout.customer_details?.email,
+      stripeSessionId: checkout.id,
+      locale: checkout.metadata?.pdfLocale === 'en' ? 'en' : 'fr',
+      guides: purchases.flatMap(p => p.ebook ? [{ purchaseId: p.id, ebookId: p.ebook.id, slug: p.ebook.slug, title: p.ebook.title, createdAt: p.createdAt }] : []),
+    });
+    if (!email.sent) return NextResponse.json({ error: 'Livraison du courriel à réessayer.' }, { status: 503 });
+  }
   return NextResponse.json({ received: true });
 }

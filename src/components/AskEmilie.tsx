@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useEffect, useState, useRef } from 'react';
 import type { Locale } from '@/lib/i18n';
 
 type Reply = { answer: string; guides: { slug: string; title: string; pages: string }[] };
@@ -45,12 +45,25 @@ export function AskEmilie({ locale }: { locale: Locale }) {
   const [reply, setReply] = useState<Reply | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const dialog = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!open) return;
     const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = previous; };
+    const focused = document.activeElement as HTMLElement | null;
+    dialog.current?.querySelector<HTMLButtonElement>('button')?.focus({ preventScroll: true });
+    const keyboard = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setOpen(false);
+      if (event.key !== 'Tab') return;
+      const targets = dialog.current?.querySelectorAll<HTMLElement>('a[href], button:not(:disabled), textarea');
+      if (!targets?.length) return;
+      const first = targets[0], last = targets[targets.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
+    document.addEventListener('keydown', keyboard);
+    return () => { document.body.style.overflow = previous; document.removeEventListener('keydown', keyboard); focused?.focus({ preventScroll: true }); };
   }, [open]);
 
   async function ask(event: FormEvent) {
@@ -69,7 +82,7 @@ export function AskEmilie({ locale }: { locale: Locale }) {
   return (
     <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
       {open && (
-        <section role="dialog" aria-label={t.aria} className="flex max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] max-w-[390px] flex-col overflow-hidden rounded-3xl border border-white/60 bg-[var(--color-cream)]/95 shadow-2xl backdrop-blur-xl sm:mb-3 sm:max-h-[720px]">
+        <section ref={dialog} role="dialog" aria-modal="true" aria-label={t.aria} className="flex max-h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] max-w-[390px] flex-col overflow-hidden rounded-3xl border border-white/60 bg-[var(--color-cream)]/95 shadow-2xl backdrop-blur-xl sm:mb-3 sm:max-h-[min(720px,calc(100dvh-8rem))]">
           <header className="flex items-center justify-between bg-[#4b4545] px-5 py-4 text-white">
             <div className="flex items-center gap-3">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -95,13 +108,13 @@ export function AskEmilie({ locale }: { locale: Locale }) {
           </form>
         </section>
       )}
-      <button onClick={() => setOpen((value) => !value)} aria-expanded={open} className={`${open ? 'hidden sm:flex' : 'flex'} min-h-16 items-center gap-3 rounded-[28px] border border-white/40 bg-[#4b4545]/95 px-3 pr-5 text-left text-white shadow-xl backdrop-blur transition hover:-translate-y-0.5`}>
+      <button onClick={() => setOpen((value) => !value)} aria-label={t.aria} aria-expanded={open} className={`${open ? 'hidden sm:flex' : 'flex'} min-h-16 items-center gap-3 rounded-[28px] border border-white/40 bg-[#4b4545]/95 px-2 text-left text-white shadow-xl backdrop-blur transition hover:-translate-y-0.5 sm:px-3 sm:pr-5`}>
         <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-cream)] p-1.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo-bibliotheque.png" alt="" className="h-full w-full object-contain" />
         </span>
-        <span><strong className="block font-ui text-sm">{t.title}</strong><span className="font-ui text-[0.68rem] text-white/60">{t.badge}</span></span>
-        <span className="ml-1 h-3 w-3 rounded-full border-2 border-white/50 bg-[#9be3a6] shadow-[0_0_0_5px_rgba(155,227,166,0.15)]" />
+        <span className="hidden sm:block"><strong className="block font-ui text-sm">{t.title}</strong><span className="font-ui text-[0.68rem] text-white/60">{t.badge}</span></span>
+        <span className="ml-1 hidden h-3 w-3 rounded-full border-2 border-white/50 bg-[#9be3a6] shadow-[0_0_0_5px_rgba(155,227,166,0.15)] sm:block" />
       </button>
     </div>
   );

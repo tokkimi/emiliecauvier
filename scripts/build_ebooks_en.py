@@ -5,7 +5,7 @@
 Outputs:
 - storage/pdf-en/<same filename as FR> when src/data/reader-en/<number>.json exists
 
-Front covers are required inputs in public/covers-en, never generated here.
+Front and back covers are approved inputs in public/covers-en, never generated here.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ import tempfile
 import shutil
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 import pymupdf
 
 
@@ -187,37 +187,6 @@ COPYRIGHT = (
 )
 
 
-def wrap_text(draw, text, font, max_width):
-    words = text.split()
-    lines, current = [], ""
-    for word in words:
-        test = word if not current else f"{current} {word}"
-        if draw.textbbox((0, 0), test, font=font)[2] <= max_width:
-            current = test
-        else:
-            if current:
-                lines.append(current)
-            current = word
-    if current:
-        lines.append(current)
-    return lines
-
-
-def font(name, size):
-    base = Path("C:/Windows/Fonts")
-    candidates = {
-        "serif": ["georgia.ttf", "times.ttf"],
-        "serif-bold": ["georgiab.ttf", "timesbd.ttf"],
-        "sans": ["arial.ttf"],
-        "sans-bold": ["arialbd.ttf"],
-    }[name]
-    for candidate in candidates:
-        p = base / candidate
-        if p.exists():
-            return ImageFont.truetype(str(p), size)
-    return ImageFont.load_default()
-
-
 def make_cover(num, meta):
     """Require curated artwork; never draw English text over French covers."""
     path = COVERS_EN / f"{num}.jpg"
@@ -231,20 +200,14 @@ def make_cover(num, meta):
 
 
 def make_backcover(num, meta) -> Path:
-    path = OUT / f"backcover-{num:02d}.jpg"
-    W, H = 1023, 1537
-    img = Image.new("RGB", (W, H), (246, 237, 232))
-    d = ImageDraw.Draw(img)
-    logo = Image.open(SITE / "public" / "logo-bibliotheque.png").convert("RGBA")
-    logo.thumbnail((240, 240), Image.Resampling.LANCZOS)
-    img.paste(logo, ((W - logo.width) // 2, 220), logo)
-    d.text((W // 2, 520), "Make informed decisions.", font=font("serif-bold", 56), fill=(105, 29, 43), anchor="mm")
-    d.text((W // 2, 600), "Choose with confidence.", font=font("serif-bold", 56), fill=(105, 29, 43), anchor="mm")
-    d.text((W // 2, 680), "Move forward without regret.", font=font("serif-bold", 56), fill=(105, 29, 43), anchor="mm")
-    d.text((W // 2, 850), "La Bibliotheque - Guides immo Quebec", font=font("sans-bold", 28), fill=(32, 26, 22), anchor="mm")
-    d.text((W // 2, 905), "guidesimmoquebec.com", font=font("sans", 25), fill=(105, 29, 43), anchor="mm")
-    d.text((W // 2, H - 165), f"Guide No. {num:02d} - {meta['title']}", font=font("sans", 18), fill=(95, 82, 72), anchor="mm")
-    img.save(path, quality=92)
+    """Use the approved Emilie portrait artwork unchanged for every guide."""
+    path = COVERS_EN / "back.jpg"
+    if not path.is_file():
+        raise FileNotFoundError(f"Missing approved English back cover: {path}")
+    with Image.open(path) as cover:
+        width, height = cover.size
+        if width < 1000 or abs(width / height - 2 / 3) > 0.01:
+            raise ValueError(f"English back cover must be high-resolution portrait 2:3: {path}")
     return path
 
 

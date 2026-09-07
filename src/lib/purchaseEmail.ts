@@ -9,6 +9,7 @@ type PurchasedGuide = {
   ebookId: string;
   slug: string;
   title: string;
+  createdAt: Date;
 };
 
 const DEFAULT_FROM = 'Guides Immo Québec <noreply@guidesimmoquebec.com>';
@@ -38,7 +39,7 @@ export async function sendPurchaseEmail({
 
   const items = guides
     .map((guide) => {
-      const token = createPurchaseDownloadToken(guide.purchaseId, guide.ebookId);
+      const token = createPurchaseDownloadToken(guide.purchaseId, guide.ebookId, guide.createdAt.getTime());
       const book = bySlug(guide.slug);
       const title = book ? localizeBook(book, locale).title : guide.title;
       const downloadUrl = `${APP_URL}/api/download?slug=${encodeURIComponent(guide.slug)}&purchase=${encodeURIComponent(guide.purchaseId)}&token=${encodeURIComponent(token)}&lang=${locale}`;
@@ -83,6 +84,7 @@ export async function sendPurchaseEmail({
   let response: Response;
   try {
     response = await fetch('https://api.resend.com/emails', {
+      signal: AbortSignal.timeout(10000),
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,

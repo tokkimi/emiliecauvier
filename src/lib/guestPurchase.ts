@@ -1,4 +1,5 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
+import { signingSecret } from './security';
 
 export const GUEST_PURCHASE_COOKIE = 'emilie_guest_library';
 const MAX_AGE_SECONDS = 60 * 60 * 24 * 365;
@@ -6,7 +7,7 @@ const MAX_AGE_SECONDS = 60 * 60 * 24 * 365;
 type GuestLibrary = { ebookIds: string[]; exp: number };
 
 function secret() {
-  return process.env.AUTH_SECRET || 'demo-secret-a-remplacer-par-openssl-rand-base64-32';
+  return signingSecret();
 }
 
 function sign(encoded: string) {
@@ -14,7 +15,7 @@ function sign(encoded: string) {
 }
 
 export function readGuestLibrary(value: string | undefined): GuestLibrary | null {
-  if (!value) return null;
+  if (!value || value.length > 8192 || value.split('.').length !== 2) return null;
   const [encoded, signature] = value.split('.');
   if (!encoded || !signature) return null;
   const expected = sign(encoded);
@@ -23,7 +24,7 @@ export function readGuestLibrary(value: string | undefined): GuestLibrary | null
   if (actualBuffer.length !== expectedBuffer.length || !timingSafeEqual(actualBuffer, expectedBuffer)) return null;
   try {
     const parsed = JSON.parse(Buffer.from(encoded, 'base64url').toString('utf8')) as GuestLibrary;
-    if (!Array.isArray(parsed.ebookIds) || parsed.exp < Date.now()) return null;
+    if (!Array.isArray(parsed.ebookIds) || !parsed.ebookIds.every(id => typeof id === 'string') || !Number.isFinite(parsed.exp) || parsed.exp <= Date.now()) return null;
     return parsed;
   } catch {
     return null;

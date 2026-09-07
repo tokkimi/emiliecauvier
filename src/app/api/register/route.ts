@@ -1,16 +1,18 @@
+import { sameOriginRequest, allowAttempt, attemptKey } from '@/lib/security';
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import bcrypt from 'bcryptjs';
 import { prisma } from '@/lib/db';
 
 const schema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8, 'Le mot de passe doit contenir au moins 8 caractères.'),
-  name: z.string().optional(),
-  source: z.string().optional(),
+  email: z.string().trim().email().max(254),
+  password: z.string().min(8, 'Le mot de passe doit contenir au moins 8 caractères.').max(72).refine(value => Buffer.byteLength(value, 'utf8') <= 72, 'Mot de passe trop long.'),
+  name: z.string().trim().max(80).optional(),
+  source: z.string().max(100).optional(),
 });
 
 export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   let body: unknown;
   try {
     body = await req.json();
@@ -24,6 +26,9 @@ export async function POST(req: Request) {
   }
 
   const email = parsed.data.email.toLowerCase().trim();
+  if (!allowAttempt(attemptKey('register', req.headers.get('x-forwarded-for')?.split(',')[0] ?? 'unknown'), 10)) {
+    return NextResponse.json({ error: 'Trop de tentatives. Réessayez dans quelques minutes.' }, { status: 429, headers: { 'Retry-After': '900' } });
+  }
   const existing = await prisma.user.findUnique({ where: { email } });
   if (existing) {
     return NextResponse.json({ error: 'Un compte existe déjà avec cet email.' }, { status: 409 });

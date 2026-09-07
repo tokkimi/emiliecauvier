@@ -1,4 +1,5 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
+import { signingSecret } from './security';
 
 const MAX_AGE_SECONDS = 60 * 60 * 24 * 365;
 
@@ -9,25 +10,25 @@ type PurchaseDownloadPayload = {
 };
 
 function secret() {
-  return process.env.AUTH_SECRET || 'demo-secret-a-remplacer-par-openssl-rand-base64-32';
+  return signingSecret();
 }
 
 function sign(encoded: string) {
   return createHmac('sha256', secret()).update(encoded).digest('base64url');
 }
 
-export function createPurchaseDownloadToken(purchaseId: string, ebookId: string) {
+export function createPurchaseDownloadToken(purchaseId: string, ebookId: string, issuedAt = Date.now()) {
   const payload: PurchaseDownloadPayload = {
     purchaseId,
     ebookId,
-    exp: Date.now() + MAX_AGE_SECONDS * 1000,
+    exp: issuedAt + MAX_AGE_SECONDS * 1000,
   };
   const encoded = Buffer.from(JSON.stringify(payload)).toString('base64url');
   return `${encoded}.${sign(encoded)}`;
 }
 
 export function verifyPurchaseDownloadToken(value: string | null | undefined, purchaseId: string, ebookId: string) {
-  if (!value) return false;
+  if (!value || value.length > 2048 || value.split('.').length !== 2) return false;
   const [encoded, signature] = value.split('.');
   if (!encoded || !signature) return false;
   const expected = sign(encoded);

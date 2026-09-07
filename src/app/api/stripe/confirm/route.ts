@@ -9,6 +9,7 @@ export async function GET(req: Request) {
   const sessionId = url.searchParams.get('session_id');
   const pdfLocale = url.searchParams.get('lang') === 'en' ? 'en' : 'fr';
   if (!sessionId) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
+  if (!/^cs_[a-zA-Z0-9_]{10,250}$/.test(sessionId)) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
 
   try {
     const checkout = await assertStripe().checkout.sessions.retrieve(sessionId);
@@ -17,6 +18,7 @@ export async function GET(req: Request) {
       return NextResponse.redirect(new URL('/catalogue?paiement=incomplet', req.url));
     }
     let purchases = await prisma.purchase.findMany({
+      orderBy: { id: 'asc' },
       where: { stripeSessionId: checkout.id },
       include: { ebook: { select: { id: true, slug: true, title: true } } },
     });
@@ -29,12 +31,13 @@ export async function GET(req: Request) {
       purchases = legacy ? [legacy] : [];
     }
 
+    purchases = purchases.filter(purchase => purchase.status !== 'REFUNDED' && purchase.status !== 'FAILED');
     const ebookIds = purchases.map((purchase) => purchase.ebook?.id).filter((id): id is string => Boolean(id));
     const slugs = purchases.map((purchase) => purchase.ebook?.slug).filter((slug): slug is string => Boolean(slug));
     if (!ebookIds.length || !slugs.length) return NextResponse.redirect(new URL('/catalogue?paiement=introuvable', req.url));
 
     await prisma.purchase.updateMany({
-      where: { id: { in: purchases.map((purchase) => purchase.id) } },
+      where: { id: { in: purchases.map((purchase) => purchase.id) }, status: 'PENDING' },
       data: {
         status: 'PAID',
         stripeSessionId: checkout.id,
@@ -46,14 +49,14 @@ export async function GET(req: Request) {
     await sendPurchaseEmail({
       to: checkout.customer_details?.email,
       stripeSessionId: checkout.id,
-      locale: checkout.metadata?.pdfLocale === 'en' ? 'en' : pdfLocale,
+      locale: checkout.metadata?.pdfLocale === 'en' ? 'en' : checkout.metadata?.pdfLocale === 'fr' ? 'fr' : pdfLocale,
       guides: purchases
         .map((purchase) =>
           purchase.ebook
-            ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title }
+            ? { purchaseId: purchase.id, ebookId: purchase.ebook.id, slug: purchase.ebook.slug, title: purchase.ebook.title, createdAt: purchase.createdAt }
             : null,
         )
-        .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string } => Boolean(guide)),
+        .filter((guide): guide is { purchaseId: string; ebookId: string; slug: string; title: string; createdAt: Date } => Boolean(guide)),
     });
 
     const response = NextResponse.redirect(new URL(`/achat-confirme?slugs=${encodeURIComponent(slugs.join(','))}&lang=${checkout.metadata?.pdfLocale === 'en' ? 'en' : pdfLocale}`, req.url));

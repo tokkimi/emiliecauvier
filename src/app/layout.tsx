@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     'Guides immobiliers pratiques pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (9,95 $ CAD) ou par abonnement (19 $/mois).',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'https://www.guidesimmoquebec.com'),
   openGraph: {
     type: 'website',
     locale: 'fr_CA',
@@ -37,8 +37,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:font-ui focus:text-sm">{locale === 'en' ? 'Skip to content' : 'Aller au contenu'}</a>
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
         <section className="border-t border-[var(--color-sand)] bg-[#f6f1eb]">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 text-center sm:flex-row sm:py-12 sm:text-left">
             <blockquote className="max-w-3xl font-display text-2xl italic leading-relaxed text-[var(--color-bordeaux)] sm:text-3xl">

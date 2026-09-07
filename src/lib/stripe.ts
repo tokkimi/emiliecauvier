@@ -8,7 +8,7 @@ export const stripe = key
   : (null as unknown as Stripe);
 
 export const SUBSCRIPTION_PRICE_ID = process.env.STRIPE_PRICE_SUBSCRIPTION ?? '';
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000';
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? (process.env.NODE_ENV === 'production' ? 'https://www.guidesimmoquebec.com' : 'http://localhost:3000');
 
 export function assertStripe(): Stripe {
   if (!stripe) throw new Error('Stripe non configuré (STRIPE_SECRET_KEY manquant).');

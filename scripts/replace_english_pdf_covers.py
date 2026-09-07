@@ -2,6 +2,7 @@
 """Replace approved English cover pages without reflowing any ebook content.
 
 Usage: python scripts/replace_english_pdf_covers.py front|back
+For a specifically approved French front: front --locale fr --numbers 50
 Requires the reviewed artwork in public/covers-en. Existing PDFs are backed up
 outside the repository before replacement. All retained pages are checked both
 by extracted text and by rendered pixels before each atomic file replacement.
@@ -31,9 +32,12 @@ def fingerprint(page):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('side', choices=['front', 'back'])
+    parser.add_argument('--locale', choices=['en', 'fr'], default='en')
     parser.add_argument('--numbers', type=int, nargs='+', help='Optional pilot subset before the full batch.')
     args = parser.parse_args()
-    pdfs = sorted((ROOT / 'storage/pdf-en').glob('*.pdf'))
+    if args.locale == 'fr' and (args.side != 'front' or not args.numbers):
+        raise ValueError('French changes require an explicit front-cover subset.')
+    pdfs = sorted((ROOT / ('storage/pdf-en' if args.locale == 'en' else 'storage/pdf')).glob('*.pdf'))
     if len(pdfs) != 48:
         raise ValueError(f'Expected 48 PDFs, found {len(pdfs)}')
     if args.numbers:
@@ -41,7 +45,7 @@ def main():
         pdfs = [pdf for pdf in pdfs if int(pdf.name.split('_', 1)[0]) in requested]
         if len(pdfs) != len(requested):
             raise ValueError('One or more requested guide numbers are missing.')
-    artwork = ROOT / 'public/covers-en'
+    artwork = ROOT / ('public/covers-en' if args.locale == 'en' else 'public/covers')
     for pdf in pdfs:
         number = int(pdf.name.split('_', 1)[0])
         image = artwork / (f'{number}.jpg' if args.side == 'front' else 'back.jpg')
@@ -50,7 +54,7 @@ def main():
         pix = pymupdf.Pixmap(str(image))
         if pix.width < 1000 or abs(pix.width / pix.height - 2 / 3) > 0.01:
             raise ValueError(f'Cover must be high-resolution portrait 2:3: {image}')
-    backup = Path(tempfile.mkdtemp(prefix=f'emilie-en-{args.side}-backup-'))
+    backup = Path(tempfile.mkdtemp(prefix=f'emilie-{args.locale}-{args.side}-backup-'))
     print(f'Original PDFs backed up in {backup}', flush=True)
     report = []
     for pdf in pdfs:

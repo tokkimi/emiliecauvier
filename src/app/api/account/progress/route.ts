@@ -1,3 +1,4 @@
+import { sameOriginRequest } from '@/lib/security';
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { auth } from '@/lib/auth';
@@ -12,6 +13,7 @@ const progressSchema = z.object({
 });
 
 export async function POST(req: Request) {
+  if (!sameOriginRequest(req)) return NextResponse.json({ error: 'Origine non autorisée.' }, { status: 403 });
   const session = await auth();
   const userId = (session?.user as { id?: string } | undefined)?.id;
   if (!userId) return NextResponse.json({ error: 'Non autorisé.' }, { status: 401 });

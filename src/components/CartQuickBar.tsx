@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { CART_CHANGED_EVENT, readCartSlugs } from '@/lib/cart';
 import type { Locale } from '@/lib/i18n';
 
 export function CartQuickBar({ locale }: { locale: Locale }) {
+  const pathname = usePathname();
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -19,7 +21,7 @@ export function CartQuickBar({ locale }: { locale: Locale }) {
     };
   }, []);
 
-  if (!count) return null;
+  if (!count || pathname === '/panier' || pathname === '/achat-confirme') return null;
 
   return (
     <div className="fixed bottom-4 left-4 right-24 z-40 sm:bottom-6 sm:left-1/2 sm:right-auto sm:-translate-x-1/2">

@@ -16,6 +16,7 @@
 
 :root {
   color-scheme: light;
+  accent-color: var(--color-bordeaux);
 }
 
 html {
@@ -27,6 +28,24 @@ body {
   color: var(--color-ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: #6e1226; color: #fffaf4; }
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--color-bordeaux);
+  outline-offset: 4px;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+input, select, textarea { max-width: 100%; }
+main { min-width: 0; }
+@media (max-width: 767px) {
+  /* Prevent Safari focus zoom without disabling the user's pinch zoom. */
+  input:not([type='checkbox']):not([type='radio']), select, textarea { font-size: 16px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
 h1, h2, h3, .font-display {
