@@ -36,10 +36,10 @@ export function CookieConsent({ locale }: { locale: Locale }) {
 
   if (!visible) return null;
   return (
-    <aside aria-label={t.aria} className="fixed bottom-4 left-4 right-4 z-[60] mx-auto max-w-3xl rounded-3xl border border-white/60 bg-white/75 p-5 shadow-2xl backdrop-blur-2xl sm:bottom-6 sm:p-6">
-      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-        <div><p className="font-display text-xl text-[var(--color-bordeaux)]">{t.title}</p><p className="mt-1 max-w-xl font-body text-sm leading-relaxed text-[var(--color-ink)]/65">{t.desc}</p></div>
-        <div className="flex shrink-0 flex-col gap-2 sm:w-48"><button onClick={() => choose('preferences')} className="min-h-11 rounded-full bg-[var(--color-bordeaux)] px-4 font-ui text-xs font-medium text-white">{t.preferences}</button><button onClick={() => choose('essential')} className="min-h-11 rounded-full border border-[var(--color-bordeaux)] px-4 font-ui text-xs text-[var(--color-bordeaux)]">{t.essential}</button></div>
+    <aside aria-label={t.aria} className="fixed bottom-[max(12px,env(safe-area-inset-bottom))] left-3 right-3 z-[60] mx-auto max-h-[70dvh] max-w-3xl overflow-y-auto rounded-2xl border border-white/80 bg-white/85 p-4 shadow-[0_8px_32px_rgba(46,31,24,0.15)] backdrop-blur-2xl sm:bottom-6 sm:rounded-3xl sm:p-6">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-5">
+        <div><p className="font-display text-lg text-[var(--color-bordeaux)] sm:text-xl">{t.title}</p><p className="mt-1 max-w-xl font-body text-sm leading-snug text-[var(--color-ink)]/75 sm:leading-relaxed">{t.desc}</p></div>
+        <div className="grid shrink-0 grid-cols-2 gap-2 sm:w-48 sm:grid-cols-1"><button onClick={() => choose('preferences')} className="min-h-11 rounded-full bg-[var(--color-bordeaux)] px-3 py-2 font-ui text-xs font-medium text-white">{t.preferences}</button><button onClick={() => choose('essential')} className="min-h-11 rounded-full border border-[var(--color-bordeaux)] px-3 py-2 font-ui text-xs text-[var(--color-bordeaux)]">{t.essential}</button></div>
       </div>
     </aside>
   );

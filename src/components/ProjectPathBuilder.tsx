@@ -82,7 +82,7 @@ const tx = {
   },
 };
 
-export function ProjectPathBuilder({ loggedIn, locale }: { loggedIn: boolean; locale: Locale }) {
+export function ProjectPathBuilder({ loggedIn, locale, embedded = false }: { loggedIn: boolean; locale: Locale; embedded?: boolean }) {
   const router = useRouter();
   const [answers, setAnswers] = useState<ProjectAnswers>({ stage: 'acheter', area: 'montreal', propertyType: 'condo', budget: '500-700' });
   const [feedback, setFeedback] = useState('');
@@ -103,13 +103,15 @@ export function ProjectPathBuilder({ loggedIn, locale }: { loggedIn: boolean; lo
   }
 
   return (
-    <section className="bg-[#f3ece5]">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
+    <section className={embedded ? '' : 'bg-[#f3ece5]'}>
+      <div className={embedded ? 'grid items-start gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10' : 'mx-auto grid max-w-6xl gap-10 px-5 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:py-24'}>
         <div>
+          {!embedded && <>
           <p className="font-ui text-xs uppercase tracking-[0.22em] text-[var(--color-gold)]">{t.eyebrow}</p>
           <h2 className="mt-4 font-display text-4xl leading-tight text-[var(--color-bordeaux)] sm:text-5xl">{t.title}</h2>
           <p className="mt-5 font-body text-lg text-[var(--color-ink)]/70">{t.desc}</p>
-          <div className="mt-8 grid grid-cols-2 gap-3">
+          </>}
+          <div className={`${embedded ? 'rounded-2xl border border-white/80 bg-white/40 p-4 sm:p-6' : 'mt-8'} grid grid-cols-2 gap-4`}>
             <label className="font-ui text-xs text-[var(--color-ink)]/60">{t.objective}
               <select value={answers.stage} onChange={(event) => update('stage', event.target.value)} className={`mt-2 ${fieldClass}`}>
                 <option value="acheter">{t.options.acheter}</option><option value="vendre">{t.options.vendre}</option><option value="investir">{t.options.investir}</option><option value="proprietaire">{t.options.proprietaire}</option><option value="marche">{t.options.marche}</option>
@@ -133,7 +135,7 @@ export function ProjectPathBuilder({ loggedIn, locale }: { loggedIn: boolean; lo
           </div>
         </div>
 
-        <div className="rounded-3xl border border-white/80 bg-white/80 p-5 shadow-xl shadow-[#6e1226]/5 backdrop-blur sm:p-8">
+        <div className="rounded-3xl border border-[var(--color-sand)] bg-white p-5 shadow-[0_8px_32px_rgba(46,31,24,0.04)] sm:p-8">
           <div className="flex items-end justify-between gap-4">
             <div><p className="font-ui text-xs uppercase tracking-[0.16em] text-[var(--color-gold)]">{t.recommended}</p><h3 className="mt-1 font-display text-2xl">{t.ordered}</h3></div>
             <span className="font-ui text-xs text-[var(--color-ink)]/45">{t.progress}</span>

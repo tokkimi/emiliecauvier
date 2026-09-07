@@ -38,13 +38,13 @@ export function FeaturedCarousel({ items, locale }: { items: FeaturedItem[]; loc
 
       <div
         ref={ref}
-        className="flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth pb-3 pt-1 sm:gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {items.map((b) => (
           <Link
             key={b.slug}
             href={`/livre/${b.slug}`}
-            className="group flex w-[72vw] max-w-[280px] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white transition hover:-translate-y-1 hover:shadow-lg sm:w-[300px]"
+            className="group flex w-[calc((100%-12px)/2)] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[var(--color-sand)] bg-white shadow-[0_3px_12px_rgba(46,31,24,0.025)] transition duration-300 hover:-translate-y-1 hover:shadow-md sm:w-[calc((100%-40px)/3)] lg:w-[calc((100%-60px)/4)]"
           >
             <BookCover
               number={b.number}
@@ -53,14 +53,14 @@ export function FeaturedCarousel({ items, locale }: { items: FeaturedItem[]; loc
               locale={locale}
               className="w-full border-b border-[var(--color-sand)]"
             />
-            <div className="flex flex-1 flex-col p-6">
-              <span className="font-ui text-[0.68rem] uppercase tracking-[0.16em] text-[var(--color-gold)]">
+            <div className="flex flex-1 flex-col p-3 sm:p-5">
+              <span className="font-ui text-[0.6rem] uppercase tracking-[0.12em] text-[var(--color-gold)] sm:text-[0.68rem]">
                 {b.collectionLabel}
               </span>
-              <h3 className="mt-2 font-display text-xl text-[var(--color-bordeaux)] group-hover:underline">
+              <h3 className="mt-2 font-display text-base leading-snug text-[var(--color-bordeaux)] underline-offset-4 group-hover:underline sm:text-xl">
                 {b.title}
               </h3>
-              <p className="mt-2 flex-1 font-body text-sm text-[var(--color-ink)]/70">{b.subtitle}</p>
+              <p className="mt-2 flex-1 font-body text-sm leading-snug text-[var(--color-ink)]/70">{b.subtitle}</p>
               <span className="mt-4 font-ui text-sm font-medium text-[var(--color-ink)]">{b.price}</span>
             </div>
           </Link>
