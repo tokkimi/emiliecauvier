@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { bySlug } from '@/data/books';
-import { localizeBook } from '@/data/booksEn';
+import { bySlug, COLLECTIONS } from '@/data/books';
+import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
 import { ClearCartOnSuccess } from '@/components/ClearCartOnSuccess';
 import { auth } from '@/lib/auth';
 import { getLocale } from '@/lib/i18n';
+import { BookCover } from '@/components/BookCover';
 
 export async function generateMetadata() {
   const locale = await getLocale();
@@ -27,11 +28,11 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
     ? {
         eyebrow: 'Payment confirmed',
         title: plural ? 'Your guides are ready.' : 'Your guide is ready.',
-        thanksPlural: 'Thank you for purchasing the selected guides. You can start reading immediately.',
-        thanksSingle: <>Thank you for purchasing <strong>{firstTitle}</strong>. You can read it now or download the PDF.</>,
-        read: 'Read',
+        thanksPlural: 'Thank you for your purchase. Download your PDFs below or open your online library.',
+        thanksSingle: <>Thank you for purchasing <strong>{firstTitle}</strong>. Download your PDF below or open your online library.</>,
+        read: 'Read online',
         readFirst: 'Read the first guide',
-        readNow: 'Read now',
+        readNow: 'Read online',
         download: 'Download the PDF',
         library: 'View my library',
         catalogue: 'Back to catalogue',
@@ -41,11 +42,11 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
     : {
         eyebrow: 'Paiement confirmé',
         title: plural ? 'Vos guides sont prêts.' : 'Votre guide est prêt.',
-        thanksPlural: 'Merci pour votre achat des guides sélectionnés. Vous pouvez lire immédiatement.',
-        thanksSingle: <>Merci pour votre achat de <strong>{firstTitle}</strong>. Vous pouvez lire immédiatement ou télécharger le PDF.</>,
-        read: 'Lire',
+        thanksPlural: 'Merci pour votre achat. Téléchargez vos PDF ci-dessous ou accédez à votre bibliothèque en ligne.',
+        thanksSingle: <>Merci pour votre achat de <strong>{firstTitle}</strong>. Téléchargez votre PDF ci-dessous ou accédez à votre bibliothèque en ligne.</>,
+        read: 'Lire en ligne',
         readFirst: 'Lire le premier guide',
-        readNow: 'Lire maintenant',
+        readNow: 'Lire en ligne',
         download: 'Télécharger le PDF',
         library: 'Voir ma bibliothèque',
         catalogue: 'Retour au catalogue',
@@ -66,23 +67,17 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
           ? locale === 'en' ? 'Your email with PDF attachments has been accepted by our email service. Check your inbox and spam folder. Large orders may arrive in several emails.' : 'Votre courriel avec les PDF en pièces jointes a été accepté par notre service d’envoi. Vérifiez votre boîte de réception et les indésirables. Une commande volumineuse peut arriver en plusieurs courriels.'
           : locale === 'en' ? 'Email delivery is not yet confirmed. Download and save each PDF below now. If no email arrives, contact us with your payment receipt.' : 'L’envoi du courriel n’est pas encore confirmé. Téléchargez et enregistrez chaque PDF ci-dessous dès maintenant. Si aucun courriel n’arrive, contactez-nous avec votre reçu de paiement.'}
       </p>
-      {plural && (
-        <ul className="mx-auto mt-6 max-w-md space-y-2 rounded-2xl border border-[var(--color-sand)] bg-white p-4 text-left">
+      <p className="mt-4 font-ui text-sm leading-relaxed text-[var(--color-ink)]/65">{locale === 'en' ? 'Download without an account. To read online and save your progress, use your free account with the checkout email. If needed, the next step links your purchase to your profile.' : 'Téléchargez sans compte. Pour lire en ligne et enregistrer votre progression, utilisez votre compte gratuit avec l’email du paiement. Au besoin, l’étape suivante rattache l’achat à votre profil.'}</p>
+        <ul className="mx-auto mt-6 space-y-4 text-left">
           {books.map((book) => (
-            <li key={book.slug} className="flex items-center justify-between gap-3 border-b border-[var(--color-sand)] py-2 last:border-b-0">
-              <span className="font-body text-sm text-[var(--color-ink)]">{localizeBook(book, locale).title}</span>
-              <div className="flex shrink-0 flex-col items-end gap-2 font-ui text-xs text-[var(--color-bordeaux)]"><Link href={`/lire/${book.slug}`} className="underline">{t.read}</Link><a href={`/api/download?slug=${book.slug}&lang=${pdfLocale}`} className="underline">{t.download}</a></div>
+            <li key={book.slug} className="rounded-2xl border border-[var(--color-sand)] bg-white p-5 shadow-sm">
+              <div className="flex items-center gap-4"><div className="w-16 shrink-0 overflow-hidden rounded-md"><BookCover number={book.number} title={localizeBook(book, pdfLocale).title} collection={(pdfLocale === 'en' ? COLLECTIONS_EN : COLLECTIONS)[book.collection]} locale={pdfLocale} /></div><div><span className="font-display text-xl text-[var(--color-bordeaux)]">{localizeBook(book, locale).title}</span><p className="mt-1 font-ui text-xs text-[var(--color-ink)]/55">PDF · {pdfLocale === 'en' ? 'English' : 'Français'}</p></div></div>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2"><a href={`/api/download?slug=${book.slug}&lang=${pdfLocale}`} className="rounded-full bg-[var(--color-bordeaux)] px-4 py-3 text-center font-ui text-sm text-white">{t.download}</a><Link href={`/recuperer-achat?slug=${book.slug}`} className="rounded-full border border-[var(--color-bordeaux)] px-4 py-3 text-center font-ui text-sm text-[var(--color-bordeaux)]">{t.read}</Link></div>
             </li>
           ))}
         </ul>
-      )}
-      <div className="mx-auto mt-8 grid max-w-md gap-3 sm:grid-cols-2">
-        <Link href={`/lire/${firstBook.slug}`} className="rounded-full bg-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm font-medium text-white">{plural ? t.readFirst : t.readNow}</Link>
-        {!plural && <a href={`/api/download?slug=${firstBook.slug}&lang=${pdfLocale}`} className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-[var(--color-bordeaux)]">{t.download}</a>}
-        {plural && <Link href={loggedIn ? '/compte#bibliotheque' : '/catalogue'} className="rounded-full border border-[var(--color-bordeaux)] px-6 py-3 font-ui text-sm text-[var(--color-bordeaux)]">{loggedIn ? t.library : t.catalogue}</Link>}
-      </div>
       <p className="mt-8 font-ui text-sm text-[var(--color-ink)]/55">
-        {t.devicePrompt} <Link href="/inscription" className="text-[var(--color-bordeaux)] underline">{t.createProfile}</Link>.
+        <Link href={loggedIn ? '/compte#bibliotheque' : `/recuperer-achat?slug=${firstBook.slug}`} className="text-[var(--color-bordeaux)] underline">{loggedIn ? t.library : t.createProfile}</Link>
       </p>
     </div>
   );

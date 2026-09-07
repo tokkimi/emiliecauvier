@@ -3,6 +3,7 @@ import { assertStripe } from '@/lib/stripe';
 import { prisma } from '@/lib/db';
 import { addGuestPurchases, GUEST_PURCHASE_COOKIE } from '@/lib/guestPurchase';
 import { sendPurchaseEmail } from '@/lib/purchaseEmail';
+import { createPurchaseClaim, PURCHASE_CLAIM_COOKIE } from '@/lib/purchaseClaim';
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -69,6 +70,8 @@ export async function GET(req: Request) {
       path: '/',
       maxAge: token.maxAge,
     });
+    const claim = createPurchaseClaim(purchases.map(purchase => purchase.id));
+    response.cookies.set(PURCHASE_CLAIM_COOKIE, claim.value, { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax', path: '/', maxAge: claim.maxAge });
     return response;
   } catch {
     return NextResponse.redirect(new URL('/catalogue?paiement=erreur', req.url));

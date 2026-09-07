@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { bySlug } from '@/data/books';
 import { localizeBook } from '@/data/booksEn';
@@ -46,8 +46,9 @@ export default async function ReaderPage({
   const userId = (session?.user as { id?: string })?.id;
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
   const guestLibrary = (await cookies()).get(GUEST_PURCHASE_COOKIE)?.value;
+  if (!userId && dbEbook && guestHasAccess(guestLibrary, dbEbook.id) && apercu !== '1') redirect(`/recuperer-achat?slug=${slug}`);
   const access = dbEbook
-    ? guestHasAccess(guestLibrary, dbEbook.id) || (await hasAccess(userId, dbEbook.id))
+    ? await hasAccess(userId, dbEbook.id)
     : false;
 
   const previewOnly = !access || apercu === '1';
