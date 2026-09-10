@@ -14,12 +14,13 @@ export async function SiteFooter() {
           <p className="mt-2 font-ui text-sm text-white/60">
             {t.footer_tagline_1}
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
           <a
             href="https://www.instagram.com/guidesimmoquebec/"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram Guides Immo Québec"
-            className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-2 font-ui text-xs text-white/75 transition hover:border-[var(--color-gold-soft)] hover:text-white"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 px-3 py-2 font-ui text-xs text-white/75 transition hover:border-[var(--color-gold-soft)] hover:text-white"
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.7">
               <rect x="3" y="3" width="18" height="18" rx="5" />
@@ -28,6 +29,19 @@ export async function SiteFooter() {
             </svg>
             @guidesimmoquebec
           </a>
+          <a
+            href="https://www.facebook.com/guidesimmoquebec/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook Guides Immo Québec"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/20 px-3 py-2 font-ui text-xs text-white/75 transition hover:border-[var(--color-gold-soft)] hover:text-white"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
+              <path d="M13.5 22v-9h3l.5-3.5h-3.5v-2c0-1 .3-1.7 1.8-1.7H17V2.7c-.8-.1-1.6-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.4v2.6H7.5V13h2.8v9z" />
+            </svg>
+            Facebook
+          </a>
+          </div>
         </div>
         <div className="font-ui text-sm sm:text-right">
           <p className="mb-3 uppercase tracking-[0.16em] text-[var(--color-gold-soft)]">{t.footer_navigate}</p>
