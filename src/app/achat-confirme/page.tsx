@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { bySlug, COLLECTIONS } from '@/data/books';
 import { localizeBook, COLLECTIONS_EN } from '@/data/booksEn';
-import { ClearCartOnSuccess } from '@/components/ClearCartOnSuccess';
 import { auth } from '@/lib/auth';
 import { getLocale } from '@/lib/i18n';
 import { BookCover } from '@/components/BookCover';
@@ -56,7 +55,6 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
 
   return (
     <div className="mx-auto max-w-2xl px-5 py-20 text-center">
-      <ClearCartOnSuccess />
       <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.eyebrow}</p>
       <h1 className="mt-3 font-display text-4xl text-[var(--color-bordeaux)]">{t.title}</h1>
       <p className="mx-auto mt-4 max-w-lg font-body text-lg text-[var(--color-ink)]/70">

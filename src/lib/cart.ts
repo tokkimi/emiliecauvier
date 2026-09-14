@@ -28,3 +28,11 @@ export function removeCartSlug(slug: string) {
 export function clearCartSlugs() {
   writeCartSlugs([]);
 }
+
+/** Remove only confirmed purchases, preserving items added during checkout. */
+export function removePurchasedCartSlugs(purchasedSlugs: string[]) {
+  const purchased = new Set(purchasedSlugs);
+  const current = readCartSlugs();
+  const remaining = current.filter(slug => !purchased.has(slug));
+  if (remaining.length !== current.length) writeCartSlugs(remaining);
+}

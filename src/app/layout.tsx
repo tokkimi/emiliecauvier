@@ -5,6 +5,7 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { AskEmilie } from '@/components/AskEmilie';
 import { CookieConsent } from '@/components/CookieConsent';
 import { CartQuickBar } from '@/components/CartQuickBar';
+import { CartPurchaseSync } from '@/components/CartPurchaseSync';
 import { getLocale } from '@/lib/i18n';
 
 export const metadata: Metadata = {
@@ -56,6 +57,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         </section>
         <SiteFooter />
         <CartQuickBar locale={locale} />
+        <CartPurchaseSync />
         <AskEmilie locale={locale} />
         <CookieConsent locale={locale} />
       </body>

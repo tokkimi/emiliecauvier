@@ -65,7 +65,16 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
   const total = items.reduce((sum, item) => sum + item.priceCents, 0);
 
   useEffect(() => {
-    setSlugs(readCartSlugs());
+    const refresh = () => setSlugs(readCartSlugs());
+    refresh();
+    window.addEventListener(CART_CHANGED_EVENT, refresh);
+    window.addEventListener('storage', refresh);
+    window.addEventListener('pageshow', refresh);
+    return () => {
+      window.removeEventListener(CART_CHANGED_EVENT, refresh);
+      window.removeEventListener('storage', refresh);
+      window.removeEventListener('pageshow', refresh);
+    };
   }, []);
 
   function remove(slug: string) {
