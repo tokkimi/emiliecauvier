@@ -2,6 +2,7 @@ import { prisma } from '@/lib/db';
 import { BRAND } from '@/lib/format';
 import type { Role, SubscriptionStatus } from '@/generated/prisma';
 import type { HubActionResult, HubRow, HubSnapshot } from './types';
+import { refundPayment, stripeBlocks } from './stripe';
 
 // Sections du back-office Guides Immo Québec, exposées à la console centrale.
 // Mêmes données que /admin ; seules les données de cette boutique sont lues ici.
@@ -19,7 +20,7 @@ const collectionLabel: Record<string, string> = {
 export async function guidesSnapshot(): Promise<HubSnapshot> {
   const since30 = new Date(Date.now() - 30 * 86400000);
   const since90 = new Date(Date.now() - 90 * 86400000);
-  const [users, ebooks, purchases, daily, newsletter, quizzes, progress, events, downloads, paidAgg, oneTimeAgg, subAgg, refundAgg, sales30] = await Promise.all([
+  const [users, ebooks, purchases, daily, newsletter, quizzes, progress, events, downloads, paidAgg, oneTimeAgg, subAgg, refundAgg, sales30, stripeSection, downloadLog] = await Promise.all([
     prisma.user.findMany({
       orderBy: { createdAt: 'desc' }, take: 500,
       select: { id: true, email: true, name: true, role: true, subscriptionStatus: true, currentPeriodEnd: true, source: true, createdAt: true, _count: { select: { purchases: true } } },
@@ -37,6 +38,8 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
     prisma.purchase.aggregate({ _sum: { amountCents: true }, where: { status: 'PAID', type: 'SUBSCRIPTION' } }),
     prisma.purchase.aggregate({ _sum: { amountCents: true }, where: { status: 'REFUNDED' } }),
     prisma.purchase.aggregate({ _sum: { amountCents: true }, where: { status: 'PAID', createdAt: { gte: since30 } } }),
+    stripeBlocks(),
+    prisma.downloadEvent.findMany({ orderBy: { createdAt: 'desc' }, take: 200, include: { user: { select: { email: true } }, ebook: { select: { title: true } } } }),
   ]);
   const byMonth = await prisma
     .$queryRawUnsafe<{ month: string; total: bigint }[]>(
@@ -60,6 +63,9 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
     type: typeLabel[p.type] ?? p.type,
     status: statusLabel[p.status] ?? p.status,
     amount: p.amountCents,
+    _actions: p.status === 'PAID' && p.amountCents > 0 && p.stripePaymentId?.startsWith('pi_')
+      ? [{ label: 'Rembourser', action: 'refund', payload: { id: p.id }, confirm: `Rembourser ${(p.amountCents / 100).toFixed(2)} $ à ${p.user?.email ?? p.guestEmail ?? 'ce client'} ? Opération définitive chez Stripe.`, tone: 'danger' as const }]
+      : undefined,
   }));
   const saleColumns = [
     { key: 'date', label: 'Date', format: 'datetime' as const },
@@ -86,7 +92,7 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
             { label: 'Guides publiés', value: `${published}/${ebooks.length}` },
             { label: 'Téléchargements 30 j', value: downloads },
           ] },
-          { type: 'table', title: 'Dernières ventes', columns: saleColumns, rows: saleRows.filter((r) => r.status === 'Payé').slice(0, 8), empty: 'Aucune vente pour l’instant.' },
+          { type: 'table', title: 'Dernières ventes', columns: saleColumns, rows: saleRows.filter((r) => r.status === 'Payé').slice(0, 8).map(({ _actions, ...r }) => r), empty: 'Aucune vente pour l’instant.' },
         ],
       },
       {
@@ -96,7 +102,7 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
         ],
       },
       {
-        id: 'guides', label: 'Guides', icon: '▤', badge: ebooks.length,
+        id: 'guides', label: 'Guides', icon: 'library', badge: ebooks.length,
         blocks: [
           { type: 'links', title: 'Catalogue', items: [{ label: 'Ajouter un guide', href: `${SITE}/admin/livres/new` }] },
           {
@@ -166,8 +172,9 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
           },
         ],
       },
+      { id: 'stripe', label: 'Encaissements Stripe', icon: 'receipt', blocks: stripeSection },
       {
-        id: 'reading', label: 'Lecture & quiz', icon: '✎',
+        id: 'reading', label: 'Lecture & quiz', icon: 'book',
         blocks: [
           {
             type: 'table', title: 'Derniers quiz',
@@ -180,6 +187,12 @@ export async function guidesSnapshot(): Promise<HubSnapshot> {
             columns: [{ key: 'date', label: 'Dernière lecture', format: 'datetime' }, { key: 'user', label: 'Lecteur' }, { key: 'guide', label: 'Guide' }, { key: 'progress', label: 'Chapitre', align: 'right' }, { key: 'done', label: 'Terminé', format: 'badge' }],
             rows: progress.map((r) => ({ date: r.updatedAt.toISOString(), user: r.user.email, guide: r.ebook.title, progress: `${r.chapterIndex + 1}/${r.chapterCount}`, done: r.completed ? 'Oui' : 'En cours' })),
             empty: 'Aucune lecture en cours.',
+          },
+          {
+            type: 'table', title: 'Téléchargements PDF',
+            columns: [{ key: 'date', label: 'Date', format: 'datetime' }, { key: 'user', label: 'Client' }, { key: 'guide', label: 'Guide' }],
+            rows: downloadLog.map((d) => ({ date: d.createdAt.toISOString(), user: d.user.email, guide: d.ebook.title })),
+            empty: 'Aucun téléchargement.',
           },
         ],
       },
@@ -241,6 +254,17 @@ export async function guidesAction(action: string, p: Record<string, unknown>): 
     const currentPeriodEnd = status === 'ACTIVE' ? new Date(Date.now() + 30 * 86400000) : null;
     await prisma.user.update({ where: { id: id(p.userId) }, data: { subscriptionStatus: status, currentPeriodEnd } });
     return { ok: true, message: status === 'ACTIVE' ? 'Abonnement offert pour 30 jours.' : 'Abonnement retiré.' };
+  }
+  if (action === 'refund') {
+    const purchase = await prisma.purchase.findUnique({ where: { id: id(p.id) } });
+    if (!purchase || purchase.status !== 'PAID' || !purchase.stripePaymentId?.startsWith('pi_')) throw new HubError('Achat non remboursable.');
+    try {
+      await refundPayment(purchase.stripePaymentId);
+    } catch (e) {
+      throw new HubError(e instanceof Error ? e.message : 'Remboursement refusé par Stripe.');
+    }
+    await prisma.purchase.update({ where: { id: purchase.id }, data: { status: 'REFUNDED' } });
+    return { ok: true, message: 'Remboursement envoyé ; l’achat est marqué remboursé.' };
   }
   if (action === 'grant') {
     await prisma.purchase.create({ data: { userId: id(p.userId), ebookId: id(p.ebookId), type: 'ONE_TIME', status: 'PAID', amountCents: 0 } });
