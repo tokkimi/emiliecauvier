@@ -1,5 +1,7 @@
 'use client';
 
+import { track } from '@/lib/measurement';
+
 import { useState } from 'react';
 import { signOut } from 'next-auth/react';
 import type { Locale } from '@/lib/i18n';
@@ -11,6 +13,7 @@ export function SubscribeButton({ active, locale }: { active: boolean; locale: L
   async function go(mode: 'subscription' | 'portal') {
     setLoading(true);
     try {
+      if (mode === 'subscription') track('begin_checkout', { items: [{ item_id: 'subscription', item_name: 'Abonnement', price: 19, quantity: 1 }], value: 19 });
       const url = mode === 'subscription' ? '/api/stripe/checkout' : '/api/stripe/portal';
       const res = await fetch(url, {
         method: 'POST',

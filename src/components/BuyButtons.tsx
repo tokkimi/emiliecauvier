@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { addCartSlug } from '@/lib/cart';
+import { trackItems } from '@/lib/measurement-items';
+import { addCartSlug, readCartSlugs } from '@/lib/cart';
 import type { Locale } from '@/lib/i18n';
 
 export function BuyButtons({
@@ -44,6 +45,7 @@ export function BuyButtons({
     setLoading(true);
     setError('');
     try {
+      trackItems('begin_checkout', [slug], locale);
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -60,6 +62,7 @@ export function BuyButtons({
   }
 
   function addToCart() {
+    if (!readCartSlugs().includes(slug)) trackItems('add_to_cart', [slug], locale);
     addCartSlug(slug);
     setAdded(true);
   }

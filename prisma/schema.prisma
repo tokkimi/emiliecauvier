@@ -275,3 +275,15 @@ model DailyRevenue {
 
   @@index([date])
 }
+
+model ChapterLead {
+  id               String    @id @default(cuid())
+  email            String
+  guideSlug        String
+  locale           String
+  marketingOptInAt DateTime?
+  createdAt        DateTime  @default(now())
+
+  @@unique([email, guideSlug])
+  @@index([createdAt])
+}

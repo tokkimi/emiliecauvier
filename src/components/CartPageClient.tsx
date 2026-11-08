@@ -1,5 +1,7 @@
 'use client';
 
+import { trackItems } from '@/lib/measurement-items';
+
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -88,6 +90,7 @@ export function CartPageClient({ books, loggedIn, locale }: { books: CartBook[];
     setLoading(true);
     setError('');
     try {
+      trackItems('begin_checkout', items.map(item => item.slug), pdfLocale, total / 100);
       const res = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

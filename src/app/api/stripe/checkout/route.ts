@@ -5,12 +5,14 @@ import { z } from 'zod';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { assertStripe, SUBSCRIPTION_PRICE_ID, APP_URL } from '@/lib/stripe';
-import { bySlug } from '@/data/books';
+import { packTotals } from '@/lib/packs';
+import { BOOKS, COLLECTIONS, bySlug } from '@/data/books';
 import { localizeBook } from '@/data/booksEn';
 
 const schema = z.object({
   mode: z.enum(['unit', 'subscription']),
   slug: z.string().optional(),
+  pack: z.string().optional(),
   slugs: z.array(z.string()).max(20).optional(),
   pdfLocale: z.enum(['fr', 'en']).optional(),
 });
@@ -53,7 +55,7 @@ export async function POST(req: Request) {
       mode: 'subscription',
       customer: customerId,
       line_items: [{ price: SUBSCRIPTION_PRICE_ID, quantity: 1 }],
-      success_url: `${APP_URL}/compte?success=abonnement`,
+      success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${APP_URL}/#abonnement`,
       metadata: { userId, kind: 'subscription' },
     };
@@ -69,7 +71,11 @@ export async function POST(req: Request) {
   }
 
   // ---- Achat à l'unité / panier ----
-  const requestedSlugs = [...new Set(parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : [])];
+  const pack = parsed.data.pack;
+  if (pack && !Object.hasOwn(COLLECTIONS, pack)) return NextResponse.json({ error: 'Pack introuvable.' }, { status: 404 });
+  const requestedSlugs = pack
+    ? BOOKS.filter(book => book.collection === pack).map(book => book.slug)
+    : [...new Set(parsed.data.slugs?.length ? parsed.data.slugs : parsed.data.slug ? [parsed.data.slug] : [])];
   const pdfLocale = parsed.data.pdfLocale ?? 'fr';
   if (!requestedSlugs.length) return NextResponse.json({ error: 'Guide manquant.' }, { status: 400 });
 
@@ -77,7 +83,17 @@ export async function POST(req: Request) {
     where: { slug: { in: requestedSlugs }, isPublished: true },
     orderBy: { number: 'asc' },
   });
-  if (ebooks.length !== requestedSlugs.length) return NextResponse.json({ error: 'Un guide du panier est introuvable.' }, { status: 404 });
+  if (!pack && ebooks.length !== requestedSlugs.length) return NextResponse.json({ error: 'Un guide du panier est introuvable.' }, { status: 404 });
+
+  const totals = pack ? packTotals(ebooks) : null;
+  if (pack && !totals) return NextResponse.json({ error: 'Ce pack n’est plus disponible.' }, { status: 409 });
+  let cumulative = 0;
+  const amounts = ebooks.map(ebook => {
+    if (!totals) return ebook.priceCents;
+    const previous = Math.floor(cumulative * totals.packTotal / totals.unitTotal);
+    cumulative += ebook.priceCents;
+    return Math.floor(cumulative * totals.packTotal / totals.unitTotal) - previous;
+  });
 
   const metadata: Record<string, string> = { kind: ebooks.length > 1 ? 'cart' : 'unit', pdfLocale };
   if (userId) metadata.userId = userId;
@@ -87,14 +103,14 @@ export async function POST(req: Request) {
     ...(userId && email
       ? { customer: await getOrCreateCustomer(userId, email) }
       : { customer_creation: 'always' as const }),
-    line_items: ebooks.map((ebook) => {
+    line_items: ebooks.map((ebook, index) => {
       const catalogBook = bySlug(ebook.slug);
       const localized = catalogBook ? localizeBook(catalogBook, pdfLocale) : { title: ebook.title, subtitle: ebook.subtitle ?? '' };
       return {
         quantity: 1,
         price_data: {
           currency: ebook.currency.toLowerCase(),
-          unit_amount: ebook.priceCents,
+          unit_amount: amounts[index],
           product_data: {
             name: localized.title,
             description: localized.subtitle || undefined,
@@ -120,14 +136,14 @@ export async function POST(req: Request) {
   }
 
   await prisma.$transaction(
-    ebooks.map((ebook) =>
+    ebooks.map((ebook, index) =>
       prisma.purchase.create({
         data: {
           userId: userId ?? null,
           ebookId: ebook.id,
           type: 'ONE_TIME',
           status: 'PENDING',
-          amountCents: ebook.priceCents,
+          amountCents: amounts[index],
           currency: ebook.currency,
           stripeSessionId: checkout.id,
         },

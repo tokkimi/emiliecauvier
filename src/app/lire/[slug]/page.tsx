@@ -10,6 +10,8 @@ import { loadReaderLocalized } from '@/lib/reader';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { hasAccess } from '@/lib/entitlements';
+import { ChapterAccess } from '@/components/ChapterAccess';
+import { PREVIEW_COOKIE, readPreview } from '@/lib/preview-access';
 import { Reader } from '@/components/Reader';
 import { cookies } from 'next/headers';
 import { GUEST_PURCHASE_COOKIE, guestHasAccess } from '@/lib/guestPurchase';
@@ -21,7 +23,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const book = bySlug(slug);
-  return { title: book ? `Lecture — ${book.title}` : 'Lecture' };
+  const locale = await getLocale();
+  const label = locale === 'en' ? 'Read' : 'Lecture';
+  return { title: book ? `${label} — ${localizeBook(book, locale).title}` : label, robots: { index: false } };
 }
 
 export default async function ReaderPage({
@@ -45,13 +49,18 @@ export default async function ReaderPage({
   const session = await auth();
   const userId = (session?.user as { id?: string })?.id;
   const dbEbook = await prisma.ebook.findUnique({ where: { slug } }).catch(() => null);
-  const guestLibrary = (await cookies()).get(GUEST_PURCHASE_COOKIE)?.value;
+  const cookieStore = await cookies();
+  const guestLibrary = cookieStore.get(GUEST_PURCHASE_COOKIE)?.value;
   if (!userId && dbEbook && guestHasAccess(guestLibrary, dbEbook.id) && apercu !== '1') redirect(`/recuperer-achat?slug=${slug}`);
   const access = dbEbook
     ? await hasAccess(userId, dbEbook.id)
     : false;
 
   const previewOnly = !access || apercu === '1';
+
+  if (previewOnly && !access && !guestHasAccess(guestLibrary, dbEbook?.id ?? '') && !readPreview(cookieStore.get(PREVIEW_COOKIE)?.value).includes(slug)) {
+    return <ChapterAccess slug={slug} title={loc.title} locale={locale} />;
+  }
 
   // En aperçu, on ne transmet JAMAIS le HTML des chapitres verrouillés au
   // navigateur : seul le 1ᵉʳ chapitre garde son contenu, le reste est vidé.

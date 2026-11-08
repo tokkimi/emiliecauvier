@@ -7,7 +7,9 @@ import { CollectionShelf } from '@/components/CollectionShelf';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 
-export const metadata: Metadata = { title: 'Catalogue' };
+export async function generateMetadata(): Promise<Metadata> {
+  return { title: await getLocale() === 'en' ? 'Catalog' : 'Catalogue' };
+}
 
 export default async function CataloguePage({
   searchParams,

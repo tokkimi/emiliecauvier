@@ -1,3 +1,5 @@
+import { ReaderReviews } from '@/components/ReaderReviews';
+import { testimonials } from '@/data/reviews';
 import Link from 'next/link';
 import { BOOKS, COLLECTIONS, type Collection } from '@/data/books';
 import { BRAND, formatPrice } from '@/lib/format';
@@ -166,6 +168,7 @@ export default async function HomePage() {
       </section>
 
       {/* ABONNEMENT */}
+      <ReaderReviews reviews={testimonials[locale]} locale={locale} testimonials />
       <section id="abonnement" className="bg-[var(--color-ink)] text-[var(--color-cream)]">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12">
           <div>

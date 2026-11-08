@@ -1,3 +1,8 @@
+import { createHash } from 'node:crypto';
+import { cookies } from 'next/headers';
+import { prisma } from '@/lib/db';
+import { PURCHASE_CLAIM_COOKIE, readPurchaseClaim } from '@/lib/purchaseClaim';
+import { PurchaseMeasurement } from '@/components/Measurement';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { bySlug, COLLECTIONS } from '@/data/books';
@@ -18,6 +23,15 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
   const requestedSlugs = [...new Set((slugs ? slugs.split(',') : slug ? [slug] : []).map((item) => item.trim()).filter(Boolean))];
   const books = requestedSlugs.map((item) => bySlug(item)).filter((book): book is NonNullable<typeof book> => Boolean(book));
   if (!books.length) notFound();
+  const claim = (await cookies()).get(PURCHASE_CLAIM_COOKIE)?.value;
+  const purchaseIds = claim ? readPurchaseClaim(claim) : [];
+  const purchases = purchaseIds.length ? await prisma.purchase.findMany({
+    where: { id: { in: purchaseIds }, status: 'PAID' },
+    select: { stripeSessionId: true, amountCents: true, currency: true, ebook: { select: { slug: true, title: true } } },
+  }).catch(() => []) : [];
+  const transaction = purchases[0]?.stripeSessionId;
+  const verified = transaction && purchases.length === books.length && purchases.every(purchase =>
+    purchase.stripeSessionId === transaction && purchase.currency.toUpperCase() === 'CAD' && books.some(book => book.slug === purchase.ebook?.slug));
   const firstBook = books[0];
   const plural = books.length > 1;
   const session = await auth().catch(() => null);
@@ -55,6 +69,11 @@ export default async function PurchaseConfirmedPage({ searchParams }: { searchPa
 
   return (
     <div className="mx-auto max-w-2xl px-5 py-20 text-center">
+      {verified && <PurchaseMeasurement
+        id={createHash('sha256').update(transaction).digest('hex')}
+        items={purchases.map(purchase => ({ item_id: purchase.ebook!.slug, item_name: purchase.ebook!.title, quantity: 1, price: purchase.amountCents / 100 }))}
+        value={purchases.reduce((sum, purchase) => sum + purchase.amountCents, 0) / 100}
+      />}
       <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.eyebrow}</p>
       <h1 className="mt-3 font-display text-4xl text-[var(--color-bordeaux)]">{t.title}</h1>
       <p className="mx-auto mt-4 max-w-lg font-body text-lg text-[var(--color-ink)]/70">

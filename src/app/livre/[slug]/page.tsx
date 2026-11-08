@@ -11,6 +11,10 @@ import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
 import { hasAccess, canDownload } from '@/lib/entitlements';
 import { BuyButtons } from '@/components/BuyButtons';
+import { ReaderReviews } from '@/components/ReaderReviews';
+import { guideReviews } from '@/data/reviews';
+import { ViewGuideMeasurement } from '@/components/Measurement';
+import { SITE_URL } from '@/lib/site';
 import { BookCover } from '@/components/BookCover';
 
 export async function generateMetadata({
@@ -21,8 +25,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const book = bySlug(slug);
   if (!book) return { title: 'Guide introuvable' };
-  const loc = localizeBook(book, await getLocale());
-  return { title: loc.title, description: loc.subtitle };
+  const locale = await getLocale();
+  const loc = localizeBook(book, locale);
+  const url = `${SITE_URL}/livre/${book.slug}`;
+  const image = locale === 'en' ? `/covers-en/${book.number}.webp` : `/covers/${book.number}.jpg`;
+  return {
+    title: loc.title,
+    description: loc.subtitle,
+    alternates: { canonical: url },
+    openGraph: { type: 'website', siteName: 'Guides Immo Québec', locale: locale === 'en' ? 'en_CA' : 'fr_CA', title: loc.title, description: loc.subtitle, url, images: [image] },
+  };
 }
 
 export default async function BookPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -43,11 +55,33 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   const access = dbEbook ? await hasAccess(userId, dbEbook.id) : false;
   const downloadable = dbEbook ? await canDownload(userId, dbEbook.id) : false;
 
+  const url = `${SITE_URL}/livre/${book.slug}`;
+  const reviews = guideReviews[slug]?.[locale] ?? [];
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: loc.title,
+    description: loc.subtitle,
+    sku: book.slug,
+    image: `${SITE_URL}${locale === 'en' ? `/covers-en/${book.number}.webp` : `/covers/${book.number}.jpg`}`,
+    brand: { '@type': 'Brand', name: BRAND.name },
+    ...(reviews.length ? { aggregateRating: {
+      '@type': 'AggregateRating', ratingValue: reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length, reviewCount: reviews.length,
+    } } : {}),
+    ...(dbEbook?.isPublished ? {
+      offers: {
+        '@type': 'Offer', url, price: (dbEbook.priceCents / 100).toFixed(2),
+        priceCurrency: dbEbook.currency.toUpperCase(), availability: 'https://schema.org/InStock',
+      },
+    } : {}),
+  };
   const related = BOOKS.filter((b) => b.collection === book.collection && b.slug !== slug).slice(0, 3);
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
-      <Link href="/catalogue" className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
+      <ViewGuideMeasurement slug={book.slug} title={loc.title} priceCents={dbEbook?.priceCents ?? book.priceCents} />
+      <script type="application/ld+json"  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, String.raw`\u003c`) }} />
+      <Link href="/catalogue"  className="font-ui text-sm text-[var(--color-bordeaux)] hover:underline">
         {t.book_back}
       </Link>
 
@@ -92,7 +126,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
             className="mx-auto mb-5 w-full max-w-[260px] rounded-2xl border border-[var(--color-sand)] shadow-sm"
           />
           <div className="rounded-2xl border border-[var(--color-sand)] bg-white p-7 shadow-sm">
-            <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(book.priceCents)}</p>
+            <p className="font-display text-3xl text-[var(--color-ink)]">{formatPrice(dbEbook?.priceCents ?? book.priceCents)}</p>
             <p className="mt-1 font-ui text-sm text-[var(--color-ink)]/60">{t.book_lifetime}</p>
 
             <BuyButtons slug={book.slug} hasAccess={access} canDownload={downloadable} loggedIn={Boolean(userId)} locale={locale} />
@@ -127,6 +161,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
+      <ReaderReviews reviews={reviews} locale={locale} />
     </div>
   );
 }

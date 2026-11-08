@@ -1,3 +1,4 @@
+import { auth } from '@/lib/auth';
 import { NextResponse } from 'next/server';
 import { assertStripe } from '@/lib/stripe';
 import { prisma } from '@/lib/db';
@@ -15,6 +16,17 @@ export async function GET(req: Request) {
   try {
     const checkout = await assertStripe().checkout.sessions.retrieve(sessionId);
     const kind = checkout.metadata?.kind;
+    if (kind === 'subscription') {
+      const session = await auth();
+      const ownerId = (session?.user as { id?: string } | undefined)?.id;
+      const response = NextResponse.redirect(new URL('/compte?success=abonnement', req.url));
+      if (ownerId && checkout.metadata?.userId === ownerId && checkout.payment_status === 'paid') {
+        response.cookies.set('guidimo_subscription_checkout', checkout.id, {
+          httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'lax', path: '/compte', maxAge: 600,
+        });
+      }
+      return response;
+    }
     if (checkout.payment_status !== 'paid' || (kind !== 'unit' && kind !== 'cart')) {
       return NextResponse.redirect(new URL('/catalogue?paiement=incomplet', req.url));
     }

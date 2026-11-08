@@ -3,27 +3,34 @@ import './globals.css';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
 import { AskEmilie } from '@/components/AskEmilie';
+import { Measurement } from '@/components/Measurement';
 import { CookieConsent } from '@/components/CookieConsent';
 import { CartQuickBar } from '@/components/CartQuickBar';
 import { CartPurchaseSync } from '@/components/CartPurchaseSync';
+import { SHARE_IMAGE, SITE_URL } from '@/lib/site';
 import { getLocale } from '@/lib/i18n';
 
-export const metadata: Metadata = {
+export async function generateMetadata(): Promise<Metadata> {
+  const en = await getLocale() === 'en';
+  const title = en ? 'The Library — Québec Real Estate Guides' : 'La Bibliothèque — Guides immobiliers du Québec';
+  return {
   title: {
-    default: 'La Bibliothèque — Guides immobiliers du Québec',
-    template: '%s · La Bibliothèque',
+    default: title,
+    template: en ? '%s · The Library' : '%s · La Bibliothèque',
   },
   description:
-    'Guides immobiliers pratiques pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (9,95 $ CAD) ou par abonnement (19 $/mois).',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'https://www.guidesimmoquebec.com'),
+    en ? 'Practical real estate guides for Greater Montréal: buy, sell and invest.' : 'Guides immobiliers pratiques pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (9,95 $ CAD) ou par abonnement (19 $/mois).',
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     type: 'website',
-    locale: 'fr_CA',
+    locale: en ? 'en_CA' : 'fr_CA',
+    images: [SHARE_IMAGE],
     siteName: 'Guides Immo Québec',
-    title: 'La Bibliothèque — Guides immobiliers du Québec',
-    description: 'Guides immobiliers pratiques pour acheter, vendre et investir au Québec.',
+    title,
+    description: en ? 'Practical guides for buying, selling and investing in Québec.' : 'Guides immobiliers pratiques pour acheter, vendre et investir au Québec.',
   },
-};
+  };
+}
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale();
@@ -59,6 +66,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <CartQuickBar locale={locale} />
         <CartPurchaseSync />
         <AskEmilie locale={locale} />
+        <Measurement />
         <CookieConsent locale={locale} />
       </body>
     </html>

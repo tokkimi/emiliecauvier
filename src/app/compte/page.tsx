@@ -1,5 +1,9 @@
 export const dynamic = 'force-dynamic';
 
+import { cookies } from 'next/headers';
+import { createHash } from 'node:crypto';
+import { assertStripe } from '@/lib/stripe';
+import { PurchaseMeasurement } from '@/components/Measurement';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { auth } from '@/lib/auth';
@@ -157,6 +161,12 @@ export default async function AccountPage() {
   const userId = (session?.user as { id?: string })?.id;
   if (!userId) redirect('/connexion?next=/compte');
 
+  const session_id = (await cookies()).get('guidimo_subscription_checkout')?.value;
+  const checkout = /^cs_[a-zA-Z0-9_]{10,250}$/.test(session_id ?? '')
+    ? await Promise.resolve().then(() => assertStripe().checkout.sessions.retrieve(session_id!)).catch(() => null)
+    : null;
+  const paidSubscription = checkout?.payment_status === 'paid' && checkout.metadata?.userId === userId
+    && checkout.metadata.kind === 'subscription' && checkout.currency === 'cad' && checkout.amount_total !== null;
   const user = await prisma.user.findUnique({ where: { id: userId } });
   if (!user) redirect('/connexion');
 
@@ -224,6 +234,11 @@ export default async function AccountPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-10 sm:py-14">
+      {paidSubscription && <PurchaseMeasurement
+        id={createHash('sha256').update(checkout.id).digest('hex')}
+        items={[{ item_id: 'subscription', item_name: locale === 'en' ? 'Subscription' : 'Abonnement', quantity: 1, price: checkout.amount_total! / 100 }]}
+        value={checkout.amount_total! / 100}
+      />}
       <header className="flex flex-col justify-between gap-5 border-b border-[var(--color-sand)] pb-8 sm:flex-row sm:items-end">
         <div>
           <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.readerSpace}</p>

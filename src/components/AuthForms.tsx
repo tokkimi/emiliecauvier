@@ -1,5 +1,7 @@
 'use client';
 
+import { track } from '@/lib/measurement';
+
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState } from 'react';
@@ -126,12 +128,14 @@ export function RegisterForm({ locale }: { locale: Locale }) {
       return;
     }
 
+    track('sign_up');
     // Connexion automatique.
     const login = await signIn('credentials', { email, password, redirect: false });
     if (login?.error) { router.push(`/connexion?next=${encodeURIComponent(next)}`); return; }
 
     // Si l'utilisateur venait pour l'abonnement, on lance directement le checkout.
     if (plan === 'abonnement') {
+      track('begin_checkout', { items: [{ item_id: 'subscription', item_name: 'Abonnement', price: 19, quantity: 1 }], value: 19 });
       const co = await fetch('/api/stripe/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

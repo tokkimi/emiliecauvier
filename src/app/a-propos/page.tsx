@@ -1,17 +1,25 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getT } from '@/lib/i18n';
+import { SITE_URL } from '@/lib/site';
+import { getLocale, getT } from '@/lib/i18n';
 
-export const metadata: Metadata = {
-  title: 'À propos · About',
+export async function generateMetadata(): Promise<Metadata> {
+  if (await getLocale() === 'en') return { title: 'About', description: 'Meet Emilie Cauvier, a residential and commercial real estate broker in Greater Montréal.' };
+  return {
+  title: 'À propos',
   description:
     'Courtier immobilier résidentiel & commercial dans le Grand Montréal, Emilie Cauvier accompagne acheteurs, vendeurs et investisseurs — et partage son expérience du terrain dans La Bibliothèque.',
-};
+  };
+}
 
 export default async function AproposPage() {
   const t = await getT();
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'Person', name: 'Emilie Cauvier',
+        url: `${SITE_URL}/a-propos`, image: `${SITE_URL}/photos/emilie-1.jpg`,
+      }).replace(/</g, String.raw`\u003c`) }} />
       {/* BIO */}
       <section className="mx-auto max-w-3xl px-5 pt-16 pb-16">
         <div className="space-y-5 font-body text-lg leading-relaxed text-[var(--color-ink)]/85">
