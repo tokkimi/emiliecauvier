@@ -53,6 +53,7 @@ export async function POST(req: Request) {
     const customerId = await getOrCreateCustomer(userId, email);
     const params: Stripe.Checkout.SessionCreateParams = {
       mode: 'subscription',
+      payment_method_types: ['card'],
       customer: customerId,
       line_items: [{ price: SUBSCRIPTION_PRICE_ID, quantity: 1 }],
       success_url: `${APP_URL}/api/stripe/confirm?session_id={CHECKOUT_SESSION_ID}`,
@@ -100,6 +101,7 @@ export async function POST(req: Request) {
 
   const unitParams: Stripe.Checkout.SessionCreateParams = {
     mode: 'payment',
+    payment_method_types: ['card'],
     ...(userId && email
       ? { customer: await getOrCreateCustomer(userId, email) }
       : { customer_creation: 'always' as const }),
