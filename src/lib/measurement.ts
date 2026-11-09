@@ -3,7 +3,7 @@
 export const CONSENT_KEY = 'guidimo-measurement-v1';
 export const CONSENT_EVENT = 'guidimo-consent-change';
 export const GA_ID = process.env.NEXT_PUBLIC_GA4_ID ?? '';
-export const META_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? '';
+export const META_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '1437784654713890';
 const gaEnabled = /^G-[A-Z0-9]+$/.test(GA_ID);
 const metaEnabled = /^\d{5,25}$/.test(META_ID);
 
