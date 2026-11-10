@@ -55,6 +55,7 @@ export async function SiteFooter() {
       </div>
       <div className="border-t border-white/10 py-5 text-center font-ui text-xs text-white/40">
         © {new Date().getFullYear()} {BRAND.author}. {t.footer_legal}
+        <span className="mt-1 block" style={{ fontSize: "9px", opacity: 0.6 }}>Made by Alexia Naudy</span>
       </div>
     </footer>
   );
