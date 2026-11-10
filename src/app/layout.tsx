@@ -21,6 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
   description:
     en ? 'Practical real estate guides for Greater Montréal: buy, sell and invest.' : 'Guides immobiliers pratiques pour le Grand Montréal : acheter, vendre, investir. Lecture en ligne + PDF téléchargeable. À l\'unité (9,95 $ CAD) ou par abonnement (19 $/mois).',
   metadataBase: new URL(SITE_URL),
+  creator: 'Alexia Naudy',
   openGraph: {
     type: 'website',
     locale: en ? 'en_CA' : 'fr_CA',
