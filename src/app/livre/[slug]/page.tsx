@@ -12,7 +12,7 @@ import { prisma } from '@/lib/db';
 import { hasAccess, canDownload } from '@/lib/entitlements';
 import { BuyButtons } from '@/components/BuyButtons';
 import { ReaderReviews } from '@/components/ReaderReviews';
-import { guideReviews } from '@/data/reviews';
+import { guideReviews, testimonials } from '@/data/reviews';
 import { ViewGuideMeasurement } from '@/components/Measurement';
 import { SITE_URL } from '@/lib/site';
 import { BookCover } from '@/components/BookCover';
@@ -56,7 +56,8 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   const downloadable = dbEbook ? await canDownload(userId, dbEbook.id) : false;
 
   const url = `${SITE_URL}/livre/${book.slug}`;
-  const reviews = guideReviews[slug]?.[locale] ?? [];
+  const guideSpecificReviews = guideReviews[slug]?.[locale] ?? [];
+  const reviews = guideSpecificReviews.length ? guideSpecificReviews : testimonials[locale].slice(0, 3);
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -65,7 +66,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
     sku: book.slug,
     image: `${SITE_URL}${locale === 'en' ? `/covers-en/${book.number}.webp` : `/covers/${book.number}.jpg`}`,
     brand: { '@type': 'Brand', name: BRAND.name },
-    ...(reviews.length ? { aggregateRating: {
+    ...(guideSpecificReviews.length ? { aggregateRating: {
       '@type': 'AggregateRating', ratingValue: reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length, reviewCount: reviews.length,
     } } : {}),
     ...(dbEbook?.isPublished ? {
@@ -161,7 +162,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
-      <ReaderReviews reviews={reviews} locale={locale} />
+      <ReaderReviews reviews={reviews} locale={locale} testimonials={!guideSpecificReviews.length} />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 export const CONSENT_KEY = 'guidimo-measurement-v1';
 export const CONSENT_EVENT = 'guidimo-consent-change';
-export const GA_ID = process.env.NEXT_PUBLIC_GA4_ID ?? '';
+export const GA_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-1838RTPELS';
 export const META_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '1437784654713890';
 const gaEnabled = /^G-[A-Z0-9]+$/.test(GA_ID);
 const metaEnabled = /^\d{5,25}$/.test(META_ID);
@@ -31,7 +31,7 @@ export function track(event: 'page_view' | 'view_item' | 'add_to_cart' | 'begin_
   const w = window as MeasurementWindow;
   if (gaEnabled && !w.gtag) {
     const layer = w.dataLayer ??= [];
-    w.gtag = function () { layer.push(arguments); };
+    w.gtag = (...args: unknown[]) => { layer.push(args); };
     w.gtag('js', new Date());
     w.gtag('config', GA_ID, { send_page_view: false, allow_google_signals: false });
     const script = document.createElement('script');

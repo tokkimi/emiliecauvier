@@ -6,6 +6,8 @@ import { getLocale, getT } from '@/lib/i18n';
 import { CollectionShelf } from '@/components/CollectionShelf';
 import { auth } from '@/lib/auth';
 import { prisma } from '@/lib/db';
+import { ReaderReviews } from '@/components/ReaderReviews';
+import { testimonials } from '@/data/reviews';
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: await getLocale() === 'en' ? 'Catalog' : 'Catalogue' };
@@ -40,7 +42,8 @@ export default async function CataloguePage({
     });
 
   return (
-    <div className="mx-auto max-w-6xl px-5 py-14">
+    <div className="py-14">
+      <div className="mx-auto max-w-6xl px-5">
       <p className="font-ui text-xs uppercase tracking-[0.2em] text-[var(--color-gold)]">{t.cat_eyebrow}</p>
       <h1 className="mt-2 font-display text-4xl text-[var(--color-ink)]">{t.cat_title}</h1>
       <p className="mt-3 max-w-2xl font-body text-[var(--color-ink)]/70">{t.cat_intro}</p>
@@ -115,6 +118,8 @@ export default async function CataloguePage({
       {books.length === 0 && (
         <p className="mt-16 text-center font-body text-[var(--color-ink)]/60">{t.cat_none}</p>
       )}
+      </div>
+      <ReaderReviews reviews={testimonials[locale]} locale={locale} testimonials />
     </div>
   );
 }
