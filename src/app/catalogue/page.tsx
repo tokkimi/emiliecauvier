@@ -95,6 +95,7 @@ export default async function CataloguePage({
           favoriteSlugs={favoriteSlugs}
           loggedIn={Boolean(userId)}
           locale={locale}
+          layout="grid"
         />
       ) : (
         collections.map((currentCollection) => {
